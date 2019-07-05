@@ -1,0 +1,114 @@
+﻿<%--
+=========================================================================================================
+  Module      : デフォルトページマスタ(DefaultPage.master)
+ ･･･････････････････････････････････････････････････････････････････････････････････････････････････････
+  Copyright   : Copyright w2solution Co.,Ltd. 2009 All Rights Reserved.
+=========================================================================================================
+--%>
+<%@ Register TagPrefix="uc" TagName="HeaderScriptDeclaration" Src="~/Form/Common/HeaderScriptDeclaration.ascx" %>
+<%@ Register TagPrefix="uc" TagName="BodyHeaderMain" Src="~/Form/Common/BodyHeaderMain.ascx" %>
+<%@ Register TagPrefix="uc" TagName="BodyFooterMain" Src="~/Form/Common/BodyFooterMain.ascx" %>
+<%@ master language="C#" autoeventwireup="true" inherits="Form_Common_DefaultPage, App_Web_defaultpage.master.2af06a88" %>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>タイトルはページ生成時に置き換えられます</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<%
+	SetCssLink("lCommonCss", Constants.PATH_ROOT + "Css/common.css?20180216");
+	SetCssLink("lPrintCss", Constants.PATH_ROOT + "Css/imports/print.css");
+	SetCssLink("lTooltipCss", Constants.PATH_ROOT + "Css/tooltip.css");
+	SetCssLink("styleCss", Constants.PATH_ROOT + "Css/style.css");
+	SetCssLink("slickCss", Constants.PATH_ROOT + "Css/slick.css");
+	SetCssLink("slickthemeCss", Constants.PATH_ROOT + "Css/slick-theme.css");
+%>
+<link id="lCommonCss" rel="stylesheet" type="text/css" media="screen,print" />
+<link id="lPrintCss" rel="stylesheet" type="text/css"  media="print" />
+<link id="lTooltipCss" rel="stylesheet" type="text/css"  media="all" />
+<link id="styleCss" rel="stylesheet" type="text/css"  media="all" />
+<link id="slickCss" rel="stylesheet" type="text/css"  media="all" />
+<link id="slickthemeCss" rel="stylesheet" type="text/css"  media="all" />
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700&display=swap" rel="stylesheet">
+<%-- 各種Js読み込み --%>
+<uc:HeaderScriptDeclaration id="HeaderScriptDeclaration" runat="server"></uc:HeaderScriptDeclaration>
+
+<asp:ContentPlaceHolder id="head" runat="server">
+</asp:ContentPlaceHolder>
+
+<script runat="server">
+  protected bool IsNotDefaultPage()
+  {
+    if ((Request.Url.AbsolutePath != Constants.PATH_ROOT)
+        && Request.Url.AbsolutePath != (Constants.PATH_ROOT + "Default.aspx")
+        && Request.Url.AbsolutePath != (Constants.PATH_ROOT + "default.aspx"))
+    {
+        return true;
+    }
+
+    return false;
+  }
+</script>
+
+<%-- ThickBox --%>
+<script type="text/javascript">
+<!--
+	var site_path_root = '<%= Constants.PATH_ROOT %>';
+//-->
+</script>
+<script type="text/javascript" charset="Shift_JIS" src="<%= Constants.PATH_ROOT %>Js/ThickBox/thickbox.js"></script>
+<script type="text/javascript" charset="Shift_JIS" src="<%= Constants.PATH_ROOT %>Js/slick.min.js"></script>
+<%
+	SetCssLink("lThickBoxCss", Constants.PATH_ROOT + "Js/ThickBox/thickbox.css");
+%>
+<link id="lThickBoxCss" rel="stylesheet" href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + "Js/ThickBox/thickbox.css") %>" type="text/css" media="all" />
+</head>
+<body onload="<%= OnLoadEvents %>">
+<%
+	// テキストボックスでEnterキー押下時、意図しないSubmitを防止する（Safari、Opera対策）
+	if (Regex.IsMatch(StringUtility.ToEmpty(Request.UserAgent), "safari|opera", RegexOptions.IgnoreCase))
+	{
+		form1.Attributes.Add("onkeypress", "return ((event.keyCode != 13) || (window.event.srcElement.type != 'text'));");
+	}	
+%>
+<form id="form1" onsubmit="return (document.getElementById('__EVENTVALIDATION') != null);" runat="server">
+
+<script type="text/javascript">
+<!--
+	// クリックジャック攻撃対策
+	CheckClickJack('<%= Constants.PATH_ROOT + Constants.PAGE_FRONT_BLANK %>');
+//-->
+</script>
+
+<%-- スクリプトマネージャ --%>
+<asp:ScriptManager ID="smScriptManager" runat="server" OnAsyncPostBackError="smScriptManager_AsyncPostBackError"></asp:ScriptManager>
+
+<div class="pageWrap">
+<%--▽ヘッダーエリア▽--%>
+<uc:BodyHeaderMain id="BodyHeaderMain" runat="server"></uc:BodyHeaderMain>
+<%--△ヘッダーエリア△--%>
+
+<div id="Wrap">
+<div class="wrapBottom">
+<div class="wrapTop">
+	
+	<div id="Contents">
+		<%--▽コンテンツエリア▽--%>
+		<asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder>
+		<%--△コンテンツエリア△--%>
+	</div>
+	
+</div><!--wrapTop-->
+</div><!--wrapBottom-->
+</div><!--Wrap-->
+
+    <%--▽フッターエリア▽--%>
+    <uc:BodyFooterMain id="BodyFooterMain" runat="server"></uc:BodyFooterMain>
+    <%--△フッターエリア△--%>
+</div><!--pageWrap-->
+
+</form>
+</body>
+</html>
