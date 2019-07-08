@@ -177,6 +177,19 @@
 		</div>
 	</td>
 </tr>
+<tr>
+	<td>
+		<div class="searchBox_list searchBox_edition">
+			<p class="searchBox_list--ttl">見出しは検討</p>
+			<asp:RadioButtonList ID="edition" DataTextField="edition" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--edition">
+				<asp:ListItem></asp:ListItem>
+				<asp:ListItem>EDITION - 1</asp:ListItem>
+				<asp:ListItem>EDITION - 2</asp:ListItem>
+				<asp:ListItem>EDITION - 3</asp:ListItem>
+			</asp:RadioButtonList>
+		</div>
+	</td>
+</tr>
 </tbody>
 </table>
 <div class="button">

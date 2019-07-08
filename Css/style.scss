@@ -1876,6 +1876,26 @@ $bp768: 768px;  // スマホ
 							}
 						}
 					}
+
+					&--edition{
+						li{
+							cursor: pointer;
+
+							input{
+								border-radius: 0;
+								appearance: none;
+							}
+
+							&.on{
+								background-color: inherit;
+								border: 3px solid rgba(0,0,0,.8);
+							}
+
+							&:first-child{
+								display: none;
+							}
+						}
+					}
 				}
 			}
 

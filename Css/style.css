@@ -2225,6 +2225,26 @@ textarea::focus {
   background-image: url("../Contents/ImagesPkg/user/productlist/material06.jpg");
 }
 
+#Wrap .pageCts_pdList--search .searchBox_list--edition li {
+  cursor: pointer;
+}
+
+#Wrap .pageCts_pdList--search .searchBox_list--edition li input {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#Wrap .pageCts_pdList--search .searchBox_list--edition li.on {
+  background-color: inherit;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+}
+
+#Wrap .pageCts_pdList--search .searchBox_list--edition li:first-child {
+  display: none;
+}
+
 #Wrap .pageCts_pdList--cts {
   width: 987px;
 }
