@@ -59,14 +59,48 @@
 			$(".sortChange .sortTtl").removeClass('on');
 		});
 
-		$(".searchBox_list--ttl").on("click", function () {
-			$(this).toggleClass('on');
-			$(this).nextAll('.searchBox_list--column').slideToggle('slow');
+		if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+			$(".searchBox_list--ttl").on("click", function () {
+				$(this).toggleClass('on');
+				$(this).nextAll('.searchBox_list--column').slideToggle('slow');
+			});
+
+			$(".searchBox_list--column li").not('on').on("click", function () {
+				$(this).siblings().removeClass('on');
+				$(this).addClass('on');
+			});
+		}
+
+		if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+
+			var selectedItem = $(".searchBox_list--column li.on").text()
+	        var selectBox = $(".searchBox_list--column")
+	        var selectItems = $(".searchBox_list--column li")
+	        var display = $(".searchBox_list--ttlSelect")
+
+	        display.text(selectedItem)
+	        selectBox.hide();
+
+	        display.on("click",function(){
+	            $(this).toggleClass('on');
+	            $(this).nextAll(".searchBox_list--column").not('.searchBox_list--color').slideToggle('slow');
+	        })
+
+	        selectItems.on("click",function(){
+	            $(this).siblings().removeClass("on");
+	            $(this).addClass("on");
+	            $(this).parent(".searchBox_list--column").not('.searchBox_list--color').slideUp('slow');
+	            $(this).parent().siblings(".searchBox_list--ttlSelect").text($(this).text());
+	            $(this).parent().siblings(".searchBox_list--ttlSelect").toggleClass('on');
+	        })
+		}
+
+		$(".searchBtnSp").on("click", function () {
+			$(".searchBox").addClass('on');
 		});
 
-		$(".searchBox_list--column li").not('on').on("click", function () {
-			$(".searchBox_list--column li").removeClass('on');
-			$(this).addClass('on');
+		$(".searchBtnCloseSp").on("click", function () {
+			$(".searchBox").removeClass('on');
 		});
 
 		$("span.total_counts").prependTo(".breadcrumb_num span");
@@ -191,30 +225,44 @@
 		if(document.URL.match("cat=&")) {
 			$('.pdList_conditions dd.pdList_conditions--category').text('すべてのカテゴリ');
 			$('.breadcrumb ul li p').text('すべてのカテゴリ');
+			$('.searchBox_list--category li:nth-child(1)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=001")) {
 			$('.pdList_conditions dd.pdList_conditions--category').text('トップス');
 			$('.breadcrumb ul li p').text('トップス');
+			$('.searchBox_list--category li:nth-child(2)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=002")) {
 			$('.pdList_conditions dd.pdList_conditions--category').text('アウター');
 			$('.breadcrumb ul li p').text('アウター');
+			$('.searchBox_list--category li:nth-child(3)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=003")) {
 			$('.pdList_conditions dd.pdList_conditions--category').text('ワンピース');
 			$('.breadcrumb ul li p').text('ワンピース');
+			$('.searchBox_list--category li:nth-child(4)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=004")) {
 			$('.pdList_conditions dd.pdList_conditions--category').text('パンツ');
 			$('.breadcrumb ul li p').text('パンツ');
+			$('.searchBox_list--category li:nth-child(5)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=005")) {
 			$('.pdList_conditions dd.pdList_conditions--category').text('スカート');
 			$('.breadcrumb ul li p').text('スカート');
+			$('.searchBox_list--category li:nth-child(6)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=006")) {
 			$('.pdList_conditions dd.pdList_conditions--category').text('グッズ');
 			$('.breadcrumb ul li p').text('グッズ');
+			$('.searchBox_list--category li:nth-child(7)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("col=blue")) {
 			$('.pdList_conditions dd.pdList_conditions--color').text('\u00a0/ 青系');
@@ -231,29 +279,44 @@
 		if(document.URL.match("col=white")) {
 			$('.pdList_conditions dd.pdList_conditions--color').text('\u00a0/ 白系');
 		}
+		if(document.URL.match("&_material=&")) {
+			$('.searchBox_list--material li:nth-child(1)').addClass("on");
+		}
 		if(document.URL.match("&_material=ハミルトンラムウール")) {
 			$('.pdList_conditions dd.pdList_conditions--tag').text('\u00a0/ ハミルトンラムウール');
+			$('.searchBox_list--material li:nth-child(2)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
 		if(document.URL.match("&_material=ペルビアンコットン")) {
 			$('.pdList_conditions dd.pdList_conditions--tag').text('\u00a0/ ペルビアンコットン');
+			$('.searchBox_list--material li:nth-child(3)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
 		if(document.URL.match("&_material=メリノウール")) {
 			$('.pdList_conditions dd.pdList_conditions--tag').text('\u00a0/ メリノウール');
+			$('.searchBox_list--material li:nth-child(4)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
 		if(document.URL.match("&_material=ワンコットン")) {
 			$('.pdList_conditions dd.pdList_conditions--tag').text('\u00a0/ ワンコットン');
+			$('.searchBox_list--material li:nth-child(5)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
 		if(document.URL.match("&_material=フォークランドウール")) {
 			$('.pdList_conditions dd.pdList_conditions--tag').text('\u00a0/ フォークランドウール');
+			$('.searchBox_list--material li:nth-child(6)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
 		if(document.URL.match("&_material=タスマニアンウール")) {
 			$('.pdList_conditions dd.pdList_conditions--tag').text('\u00a0/ タスマニアンウール');
+			$('.searchBox_list--material li:nth-child(7)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
 	});
 
 </script>
 
-<div class="page pageCts topSpace">
+<div class="page topSpace">
 	<table id="tblLayout" class="tblLayout_ProductList">
 	<tr>
 	<td>
@@ -262,6 +325,7 @@
 		<%-- ▽レイアウト領域：レフトエリア▽ --%>
 		<div class="pageCts_pdList">
 			<div class="pageCts_pdList--search">
+				<p class="sp_contents searchBtnSp"><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_search_white.png" alt="">商品を絞り込む</p>
 				<uc:BodyProductAdvancedSearchBox runat="server" />
 			</div>
 				<%-- △レイアウト領域△ --%>
@@ -270,6 +334,10 @@
 			<div class="pageCts_pdList--cts">
 
 				<div class="pdList_sortBox">
+
+					<!--▽ ソートコントロール ▽-->
+					<uc:BodyProductSortBox CategoryName="<%# this.CategoryName %>" runat="server"></uc:BodyProductSortBox>
+					<!--△ ソートコントロール △-->
 
 					<!--▽ 上部カテゴリリンク ▽-->
 					<div class="breadcrumb">
@@ -281,18 +349,6 @@
 						<div class="breadcrumb_num"><p><span></span>件</p></div>
 					</div>
 					<!--△ 上部カテゴリリンク △-->
-
-					<!--▽ カテゴリHTML領域 ▽-->
-					<uc:BodyProductCategoryHtml runat="server" />
-					<!--△ カテゴリHTML領域 △-->
-
-					<!--▽ 商品グループページHTML領域 ▽-->
-					<uc:BodyProductGroupContentsHtml runat="server" />
-					<!--△ 商品グループページHTML領域 △-->
-
-					<!--▽ ソートコントロール ▽-->
-					<uc:BodyProductSortBox CategoryName="<%# this.CategoryName %>" runat="server"></uc:BodyProductSortBox>
-					<!--△ ソートコントロール △-->
 				</div>
 
 				<div class="pdList_conditions">
@@ -340,10 +396,10 @@
 					<!-- 商品画像表示 -->
 					<li class="pdList_thumb">
 					<% if(Constants.LAYER_DISPLAY_VARIATION_IMAGES_ENABLED){ %>
-					<uc:BodyProductVariationImages ImageSize="L" ProductMaster="<%# Container.DataItem %>" VariationList="<%# this.ProductVariationList %>" VariationNo="<%# Container.ItemIndex.ToString() %>" runat="server" />
+					<uc:BodyProductVariationImages ImageSize="LL" ProductMaster="<%# Container.DataItem %>" VariationList="<%# this.ProductVariationList %>" VariationNo="<%# Container.ItemIndex.ToString() %>" runat="server" />
 					<% } else { %>
 					<a href='<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrl(Container.DataItem, true)) %>'>
-					<w2c:ProductImage ImageSize="L" ProductMaster="<%# Container.DataItem %>" IsVariation="false" runat="server" /></a>
+					<w2c:ProductImage ImageSize="LL" ProductMaster="<%# Container.DataItem %>" IsVariation="false" runat="server" /></a>
 					<% } %>
 					<%-- ▽在庫切れ可否▽ --%>
 					<p visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLDOUT</p>
@@ -636,10 +692,10 @@
 					<ul>
 					<li class="pdList_thumb">
 						<% if(Constants.LAYER_DISPLAY_VARIATION_IMAGES_ENABLED){ %>
-						<uc:BodyProductVariationImages ImageSize="L" ProductMaster="<%# Container.DataItem %>" VariationList="<%# this.ProductVariationList %>" VariationNo="<%# Container.ItemIndex.ToString() %>" runat="server" />
+						<uc:BodyProductVariationImages ImageSize="LL" ProductMaster="<%# Container.DataItem %>" VariationList="<%# this.ProductVariationList %>" VariationNo="<%# Container.ItemIndex.ToString() %>" runat="server" />
 						<% } else { %>
 						<a href='<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrl(Container.DataItem, true)) %>'>
-						<w2c:ProductImage ImageSize="L" ProductMaster="<%# Container.DataItem %>" IsVariation="false" runat="server" /></a>
+						<w2c:ProductImage ImageSize="LL" ProductMaster="<%# Container.DataItem %>" IsVariation="false" runat="server" /></a>
 						<% } %><span visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLDOUT</span>
 					</li>
 					<li class="pdList_material">

@@ -23,21 +23,30 @@
 <%-- ▽編集可能領域：コンテンツ▽ --%>
 <div id="dvProductAdvancedSearch" runat="server" class="dvProductAdvancedSearch">
 <div class="searchBox">
+<p class="sp_contents searchBtnCloseSp">商品を絞り込む</p>
 <table>
 <tbody>
 <tr>
 	<th style="display: none;">フリーワード</th>
-	<td style="display: none;" class="sort-word">
-		<w2c:ExtendedTextBox ID="tbSearchWord" type="search" runat="server" MaxLength="250" placeholder="検索キーワード"></w2c:ExtendedTextBox>
+	<td class="sort-word">
+		<div class="searchBox_list searchBox_keyword">
+			<p class="searchBox_list--ttl">キーワード</p>
+			<div class="searchBox_list--input">
+				<w2c:ExtendedTextBox ID="tbSearchWord" type="search" runat="server" placeholder="キーワードまたは商品番号を入力"></w2c:ExtendedTextBox>
+			</div>
+		</div>
 	</td>
+</tr>
+<tr>
 	<th style="display: none;">カテゴリー</th>
 	<td class="sort-category">
 		<div class="searchBox_list searchBox_category">
 			<p class="searchBox_list--ttl">カテゴリー</p>
+			<p class="searchBox_list--ttlSelect sp_contents"></p>
 			<asp:DropDownList ID="ddlCategories" Style="display:none;" Runat="server"></asp:DropDownList>
-			<ul class="searchBox_list--column">
+			<ul class="searchBox_list--column searchBox_list--category">
 				<li>
-					<p>すべてのカテゴリ</p>
+					<p>すべて</p>
 				</li>
 				<li>
 					<p>トップス</p>
@@ -165,6 +174,7 @@
 	<td>
 		<div class="searchBox_list searchBox_material">
 			<p class="searchBox_list--ttl">素材</p>
+			<p class="searchBox_list--ttlSelect sp_contents"></p>
 			<asp:RadioButtonList ID="material" DataTextField="material" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--material">
 				<asp:ListItem></asp:ListItem>
 				<asp:ListItem>ハミルトンラムウール</asp:ListItem>
@@ -177,7 +187,7 @@
 		</div>
 	</td>
 </tr>
-<tr>
+<!-- <tr>
 	<td>
 		<div class="searchBox_list searchBox_edition">
 			<p class="searchBox_list--ttl">見出しは検討</p>
@@ -189,11 +199,11 @@
 			</asp:RadioButtonList>
 		</div>
 	</td>
-</tr>
+</tr> -->
 </tbody>
 </table>
-<div class="button">
-	<asp:LinkButton ID="lbSearch" runat="server" OnClick="lbSearch_Click" CssClass="btn-sort-search btn btn-mid btn-inverse">絞り込む</asp:LinkButton>
+<div class="searchBox_submit">
+	<asp:LinkButton ID="lbSearch" runat="server" OnClick="lbSearch_Click"><span class="pc_contents">絞り込む</span><span class="sp_contents">この条件で絞り込む</span></asp:LinkButton>
 </div>
 </div>
 </div>

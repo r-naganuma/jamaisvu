@@ -252,37 +252,37 @@
 								<h3>カテゴリー</h3>
 								<ul>
 									<li>
-										<a href="">
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&pgi=&cicon=&dosp=&dpcnt=20&img=1&max=9999999&min=0&sort=07&swrd=&udns=0&fpfl=0&col=&pno=1">
 											すべて
 										</a>
 									</li>
 									<li>
-										<a href="">
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=001&pgi=&cicon=&dosp=&dpcnt=15&img=1&max=&min=&sort=07&swrd=&udns=0&fpfl=0&col=&pno=1">
 											トップス
 										</a>
 									</li>
 									<li>
-										<a href="">
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=002&pgi=&cicon=&dosp=&dpcnt=15&img=1&max=&min=&sort=07&swrd=&udns=0&fpfl=0&col=&pno=1">
 											アウター
 										</a>
 									</li>
 									<li>
-										<a href="">
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=003&pgi=&cicon=&dosp=&dpcnt=15&img=1&max=&min=&sort=07&swrd=&udns=0&fpfl=0&col=&pno=1">
 											ワンピース
 										</a>
 									</li>
 									<li>
-										<a href="">
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=004&pgi=&cicon=&dosp=&dpcnt=15&img=1&max=&min=&sort=07&swrd=&udns=0&fpfl=0&col=&pno=1">
 											パンツ
 										</a>
 									</li>
 									<li>
-										<a href="">
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=005&pgi=&cicon=&dosp=&dpcnt=15&img=1&max=&min=&sort=07&swrd=&udns=0&fpfl=0&col=&pno=1">
 											スカート
 										</a>
 									</li>
 									<li>
-										<a href="">
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=006&pgi=&cicon=&dosp=&dpcnt=15&img=1&max=&min=&sort=07&swrd=&udns=0&fpfl=0&col=&pno=1">
 											グッズ
 										</a>
 									</li>
