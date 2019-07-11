@@ -65,7 +65,17 @@
 				$(this).nextAll('.searchBox_list--column').slideToggle('slow');
 			});
 
-			$(".searchBox_list--column li").not('on').on("click", function () {
+			$(".searchBox_list--category li").not('on').on("click", function () {
+				$(this).siblings().removeClass('on');
+				$(this).addClass('on');
+			});
+
+			$(".searchBox_list--size li").not('on').on("click", function () {
+				$(this).siblings().removeClass('on');
+				$(this).addClass('on');
+			});
+
+			$(".searchBox_list--material li").not('on').on("click", function () {
 				$(this).siblings().removeClass('on');
 				$(this).addClass('on');
 			});
@@ -73,9 +83,9 @@
 
 		if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
 
-			var selectedItem = $(".searchBox_list--column li.on").text()
-	        var selectBox = $(".searchBox_list--column")
-	        var selectItems = $(".searchBox_list--column li")
+			var selectedItem = $(".searchBox_list--column li.on").not('.searchBox_list--color').text()
+	        var selectBox = $(".searchBox_list--column").not('.searchBox_list--color')
+	        var selectItems = $(".searchBox_list--column li").not('.searchBox_list--color li')
 	        var display = $(".searchBox_list--ttlSelect")
 
 	        display.text(selectedItem)
@@ -95,12 +105,26 @@
 	        })
 		}
 
+		$(".searchBox_list--color li").not('on').on("click", function () {
+			$(this).siblings().removeClass('on');
+			$(this).toggleClass('on');
+		});
+
+		$(".searchBox_list--color li").click(function(){
+		    if($(this).hasClass('on')){   
+		    }else{
+		    	$('select[name="ctl00$ContentPlaceHolder1$ctl00$ddlColors"] option').prop("selected",false);
+		    }
+		});
+
 		$(".searchBtnSp").on("click", function () {
 			$(".searchBox").addClass('on');
+			$(".searchBox").show();
 		});
 
 		$(".searchBtnCloseSp").on("click", function () {
 			$(".searchBox").removeClass('on');
+			$(".searchBox").hide();
 		});
 
 		$("span.total_counts").prependTo(".breadcrumb_num span");
@@ -264,20 +288,25 @@
 			$('.searchBox_list--category li:nth-child(7)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
-		if(document.URL.match("col=blue")) {
-			$('.pdList_conditions dd.pdList_conditions--color').text('\u00a0/ 青系');
-		}
 		if(document.URL.match("col=red")) {
 			$('.pdList_conditions dd.pdList_conditions--color').text('\u00a0/ 赤系');
+			$('.searchBox_list--color li:nth-child(1)').addClass("on");
 		}
 		if(document.URL.match("col=yellow")) {
 			$('.pdList_conditions dd.pdList_conditions--color').text('\u00a0/ 黄色系');
+			$('.searchBox_list--color li:nth-child(3)').addClass("on");
 		}
-		if(document.URL.match("col=black")) {
-			$('.pdList_conditions dd.pdList_conditions--color').text('\u00a0/ 黒系');
+		if(document.URL.match("col=blue")) {
+			$('.pdList_conditions dd.pdList_conditions--color').text('\u00a0/ 青系');
+			$('.searchBox_list--color li:nth-child(6)').addClass("on");
 		}
 		if(document.URL.match("col=white")) {
 			$('.pdList_conditions dd.pdList_conditions--color').text('\u00a0/ 白系');
+			$('.searchBox_list--color li:nth-child(9)').addClass("on");
+		}
+		if(document.URL.match("col=black")) {
+			$('.pdList_conditions dd.pdList_conditions--color').text('\u00a0/ 黒系');
+			$('.searchBox_list--color li:nth-child(10)').addClass("on");
 		}
 		if(document.URL.match("&_material=&")) {
 			$('.searchBox_list--material li:nth-child(1)').addClass("on");
@@ -311,6 +340,22 @@
 			$('.pdList_conditions dd.pdList_conditions--tag').text('\u00a0/ タスマニアンウール');
 			$('.searchBox_list--material li:nth-child(7)').addClass("on");
 			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
+		}
+		if(document.URL.match("&_size=&")) {
+			$('.searchBox_list--size li:nth-child(2)').addClass("on");
+			$('.searchBox_list--size').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--size li.on').text());
+		}
+		if(document.URL.match("&_size=REGULAR")) {
+			$('.searchBox_list--size li:nth-child(3)').addClass("on");
+			$('.searchBox_list--size').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--size li.on').text());
+		}
+		if(document.URL.match("&_size=LOOSE")) {
+			$('.searchBox_list--size li:nth-child(4)').addClass("on");
+			$('.searchBox_list--size').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--size li.on').text());
+		}
+		if(document.URL.match("&_size=FREE")) {
+			$('.searchBox_list--size li:nth-child(5)').addClass("on");
+			$('.searchBox_list--size').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--size li.on').text());
 		}
 	});
 
@@ -435,25 +480,25 @@
 
 					<%-- ▽商品会員ランク価格有効▽ --%>
 					<p visible='<%# GetProductMemberRankPriceValid(Container.DataItem) %>' runat="server">
-					<span class="productPrice"><strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）</strike></span><br />
-					<span>会員ランク価格:<%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem)) %></span>(<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>)
+					<span class="productPrice"><strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</strike></span><br />
+					<span>会員ランク価格:<%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem)) %></span>(tax in)
 					</p>
 					<%-- △商品会員ランク価格有効△ --%>
 					<%-- ▽商品セール価格有効▽ --%>
 					<p visible='<%# GetProductTimeSalesValid(Container.DataItem) %>' runat="server">
-					<span class="productPrice"><strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）</strike></span><br />
-					<span>タイムセールス価格:<%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %></span>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）
+					<span class="productPrice"><strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</strike></span><br />
+					<span>タイムセールス価格:<%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %></span>(tax in)
 					</p>
 					<%-- △商品セール価格有効△ --%>
 					<%-- ▽商品特別価格有効▽ --%>
 					<p visible='<%# GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">
-					<span class="productPrice"><strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）</strike></span><br />
-					<span>特別価格:<%#: CurrencyManager.ToPrice(ProductPage.GetProductSpecialPriceNumeric(Container.DataItem)) %></span>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）
+					<span class="productPrice"><strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</strike></span><br />
+					<span>特別価格:<%#: CurrencyManager.ToPrice(ProductPage.GetProductSpecialPriceNumeric(Container.DataItem)) %></span>(tax in)
 					</p>
 					<%-- △商品特別価格有効△ --%>
 					<%-- ▽商品通常価格有効▽ --%>
 					<p visible='<%# GetProductNormalPriceValid(Container.DataItem) %>' runat="server">
-					<span class="productPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %></span>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）
+					<span class="productPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %></span>(tax in)
 					</p>
 					<%-- △商品通常価格有効△ --%>
 					<%-- ▽商品定期購入価格▽ --%>
@@ -708,25 +753,25 @@
 
 						<%-- ▽商品会員ランク価格有効▽ --%>
 						<p visible='<%# GetProductMemberRankPriceValid(Container.DataItem) %>' runat="server">
-						<span style="text-decoration: line-through"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）</span><br />
-						<span style="color: #f00;"><%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem)) %>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）</span>
+						<span style="text-decoration: line-through"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span><br />
+						<span style="color: #f00;"><%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem)) %>(tax in)</span>
 						</p>
 
 						<%-- ▽商品セール価格有効▽ --%>
 						<p visible='<%# GetProductTimeSalesValid(Container.DataItem) %>' runat="server">
-							<span style="text-decoration: line-through"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）</span><br />
-							<span style="color: #f00;"><%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）</span>
+							<span style="text-decoration: line-through"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span><br />
+							<span style="color: #f00;"><%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %>(tax in)</span>
 						</p>
 
 						<%-- ▽商品特別価格有効▽ --%>
 						<p visible='<%# GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">
-						<span style="text-decoration: line-through"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）</span><br />
-						<span style="color: #f00;"><%#: CurrencyManager.ToPrice(ProductPage.GetProductSpecialPriceNumeric(Container.DataItem)) %>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）</span>
+						<span style="text-decoration: line-through"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span><br />
+						<span style="color: #f00;"><%#: CurrencyManager.ToPrice(ProductPage.GetProductSpecialPriceNumeric(Container.DataItem)) %>(tax in)</span>
 						</p>
 
 						<%-- ▽商品通常価格有効▽ --%>
 						<p visible='<%# GetProductNormalPriceValid(Container.DataItem) %>' runat="server">
-						<%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>（<%# WebSanitizer.HtmlEncode(GetTaxIncludeString(Container.DataItem)) %>）
+						<%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)
 						</p>
 						<%-- ▽定期購入価格有効▽ --%>
 						<% if (Constants.FIXEDPURCHASE_OPTION_ENABLED) {%>

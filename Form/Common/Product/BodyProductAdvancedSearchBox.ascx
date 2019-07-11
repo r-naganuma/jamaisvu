@@ -71,6 +71,19 @@
 	</td>
 </tr>
 <tr>
+	<td class="sort-size">
+		<div class="searchBox_list searchBox_size">
+			<p class="searchBox_list--ttl">価格タイプ</p>
+			<p class="searchBox_list--ttlSelect sp_contents"></p>
+			<ul class="searchBox_list--column searchBox_list--size">
+				<li></li>
+				<li><input id="ctl00_ContentPlaceHolder1_ctl00_size_1" type="radio" name="ctl00$ContentPlaceHolder1$ctl00$size" value="すべて"><label>すべて</label></li>
+				<li><input id="ctl00_ContentPlaceHolder1_ctl00_size_2" type="radio" name="ctl00$ContentPlaceHolder1$ctl00$size" value="REGULAR"><label>セール</label></li>
+			</ul>
+		</div>
+	</td>
+</tr>
+<tr>
 	<th style="display: none;">カラー</th>
 	<td>
 		<div class="searchBox_list searchBox_color">
@@ -171,6 +184,21 @@
 </tr>
 <% } %>
 <tr>
+	<td class="sort-size">
+		<div class="searchBox_list searchBox_size">
+			<p class="searchBox_list--ttl">サイズ</p>
+			<p class="searchBox_list--ttlSelect sp_contents"></p>
+			<asp:RadioButtonList ID="size" DataTextField="size" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--size">
+				<asp:ListItem></asp:ListItem>
+				<asp:ListItem>すべて</asp:ListItem>
+				<asp:ListItem>REGULAR</asp:ListItem>
+				<asp:ListItem>LOOSE</asp:ListItem>
+				<asp:ListItem>FREE</asp:ListItem>
+			</asp:RadioButtonList>
+		</div>
+	</td>
+</tr>
+<tr>
 	<td>
 		<div class="searchBox_list searchBox_material">
 			<p class="searchBox_list--ttl">素材</p>
@@ -227,22 +255,21 @@
 	$("[name=iColor]").each(function (i) {
 		e = $("#" + $("[name=iColor]")[i].id);
 		if ($("[name=iColor]")[i].getAttribute("data-color") == requestColor) {
-			e.css('outline', 'thin solid #000000');
 		}
 		e.on('click', function (elem) {
 			var data = elem.target.getAttribute("data-color");
 			var ddl = $("#<%# ddlColors.ClientID %>");
 			if (data != ddl.val()) {
-				ddl.val(data);
-				$(this).css('outline', 'thin solid #000000');
+				ddl.val(data).prop("selected", true);
+				$(".searchBox_list--color li").addClass('on');
 			} else {
-				ddl.val("");
-				$(this).css('outline', '');
+				ddl.val("").prop("selected", false);
+				$(".searchBox_list--color li").removeClass('on');
 			}
 			$("[name=iColor]").each(function (i) {
 				var e2 = $("#" + $("[name=iColor]")[i].id);
 				if ($("[name=iColor]")[i].getAttribute("data-color") != data) {
-					e2.css('outline', '');
+					$(".searchBox_list--color li").removeClass('on');
 				}
 			});
 		});

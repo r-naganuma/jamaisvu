@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+=========================================================================================================
+  Module      : 商品のカラー設定XML(ProductColors.xml)
+ ･･･････････････････････････････････････････････････････････････････････････････････････････････････････
+  Copyright   : Copyright w2solution Co.,Ltd. 2018 All Rights Reserved.
+=========================================================================================================
+-->
+<ProductColors>
+  <!--
+  ここは、カラー検索に使用するカラーの設定です。
+  ■フォーマット
+    <ProductColor id="[一意なID]" filename="[カラー画像のファイル名]" dispname="[表示名]"></ProductColor>
+    ※上から順に表示されます。
+    
+  ■カラー画像の設置場所
+    Contents/ProductColorImages/
+  -->
+  <ProductColor id="red" filename="color_red.png" dispname="レッド"></ProductColor>
+  <ProductColor id="orange" filename="color_orange.png" dispname="オレンジ"></ProductColor>
+  <ProductColor id="yellow" filename="color_yellow.png" dispname="イエロー"></ProductColor>
+  <ProductColor id="pink" filename="color_pink.png" dispname="ピンク"></ProductColor>
+  <ProductColor id="green" filename="color_green.png" dispname="グリーン"></ProductColor>
+  <ProductColor id="blue" filename="color_blue.png" dispname="ブルー"></ProductColor>
+  <ProductColor id="purple" filename="color_purple.png" dispname="パープル"></ProductColor>
+  <ProductColor id="beige" filename="color_beige.png" dispname="ベージュ"></ProductColor>
+  <ProductColor id="white" filename="color_white.png" dispname="ホワイト"></ProductColor>
+  <ProductColor id="black" filename="color_black.png" dispname="ブラック"></ProductColor>
+  <ProductColor id="gray" filename="color_gray.png" dispname="グレー"></ProductColor>
+  <ProductColor id="brown" filename="color_brown.png" dispname="ブラウン"></ProductColor>
+</ProductColors>

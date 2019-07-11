@@ -1780,12 +1780,11 @@ $bp768: 768px;  // スマホ
 		overflow: hidden;
 		padding: 0 40px;
 		box-sizing: border-box;
-		width: 100%;
+		width: 100vw;
 
 		@include bp768 {
 			display: block;
 			padding: 0 18px;
-			width: 100vw;
 		};
 
 		&--search{
@@ -1850,13 +1849,11 @@ $bp768: 768px;  // スマホ
 
 			.searchBox{
 				@include bp768 {
-					opacity: 0;
-					height: 0;
+					display: none;
 				};
 
 				&.on{
 					@include bp768 {
-						animation: fade_in .2s ease 0s forwards;
 						z-index: 1001;
 						transition: all .5s;
 						background-color: #fff;
@@ -1865,6 +1862,7 @@ $bp768: 768px;  // スマホ
 						right: 0;
 						bottom: 0;
 						overflow-y: auto;
+						overflow-x: hidden;
 						-webkit-overflow-scrolling: touch;
 						width: 100%;
 					};
@@ -1975,6 +1973,18 @@ $bp768: 768px;  // スマホ
 					box-sizing: border-box;
 					width: 100%;
 				};
+
+				&.searchBox_color{
+					@include bp768 {
+						align-items: flex-start;
+					};
+
+					.searchBox_list--ttl{
+						@include bp768 {
+							margin-top: 5px;
+						};
+					}
+				}
 
 				&--ttl{
 					line-height: 1;
@@ -2177,6 +2187,7 @@ $bp768: 768px;  // スマホ
 					@include bp768 {
 						display: block !important;
 						padding: 0;
+						width: 75%;
 					};
 
 					li{
@@ -2187,7 +2198,7 @@ $bp768: 768px;  // スマホ
 
 						@include bp768 {
 							width: 32px;
-							margin: 0 12px 12px 0;
+							margin: 0 7px 7px 0;
 						};
 
 						&.on{
@@ -2212,6 +2223,94 @@ $bp768: 768px;  // スマホ
 					}
 				}
 
+				&--size{
+
+					@include bp768 {
+						padding: 10px 0 0;
+						width: 75%;
+						margin-left: auto;
+					};
+
+					li{
+
+						padding-top: 0;
+						padding-bottom: 0;
+
+						input{
+							border-radius: 0;
+							appearance: none;
+
+							@include bp768 {
+								opacity: 0;
+							};
+						}
+
+						label{
+							width: 100%;
+							display: block;
+							padding: 0;
+							margin: 0;
+							height: 27px;
+							line-height: 15px;
+
+							@include bp768 {
+								margin: -8px 0 0;
+								height: 32px;
+								line-height: 28px;
+							};
+						}
+
+						&.on{
+							background-color: rgba(234,230,229,.5);
+							position: relative;
+
+							&::before{
+								display: block;
+								content: "";
+								position: absolute;
+								top: 18px;
+								right: 5px;
+								width: 12px;
+								height: 12px;
+								border-top: 1px solid #2E0E02;
+								transform: rotate(-45deg);
+
+								@include bp768 {
+									content: none;
+								};
+							}
+
+							&::after{
+								display: block;
+								content: "";
+								position: absolute;
+								top: 18px;
+								right: 13px;
+								width: 12px;
+								height: 12px;
+								border-top: 1px solid #2E0E02;
+								transform: rotate(45deg);
+
+								@include bp768 {
+									content: none;
+								};
+							}
+						}
+
+						&:hover{
+							background-color: rgba(234,230,229,.5);
+
+							@include bp768 {
+								background-color: inherit;
+							};
+						}
+
+						&:first-child{
+							display: none;
+						}
+					}
+				}
+
 				&--material{
 					padding: 16px 0 0;
 
@@ -2231,9 +2330,25 @@ $bp768: 768px;  // スマホ
 						text-indent: -9999px;
 						cursor: pointer;
 
+						@include bp768 {
+							background-size: contain;
+						};
+
 						input{
 							border-radius: 0;
 							appearance: none;
+
+							@include bp768 {
+								opacity: 0;
+							};
+						}
+
+						label{
+							width: 100%;
+							display: block;
+							padding: 0;
+							margin: -13px 0 0;
+							height: 100%;
 						}
 
 						&.on{
@@ -2357,7 +2472,7 @@ $bp768: 768px;  // スマホ
 
 					@include bp768 {
 						width: 100%;
-						margin: 0 0 20px;
+						margin: 0 0 40px;
 					};
 
 					&--list{
