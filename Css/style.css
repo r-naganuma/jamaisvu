@@ -2775,7 +2775,7 @@ textarea::focus {
 
 @media (max-width: 768px) {
   #Wrap .pageCts_pdList--search .searchBox_list--material li {
-    background-size: contain;
+    height: 68px;
   }
 }
 
@@ -3081,18 +3081,21 @@ textarea::focus {
 @media (max-width: 768px) {
   #Wrap .pageCts_pdList--cts .pdList_conditions dl dt {
     font-size: 12px;
+    line-height: 1.5;
     margin-right: 18px;
+    width: 55px;
   }
 }
 
-#Wrap .pageCts_pdList--cts .pdList_conditions dl dd {
+#Wrap .pageCts_pdList--cts .pdList_conditions dl dd span {
   font-size: 14px;
   line-height: 1;
 }
 
 @media (max-width: 768px) {
-  #Wrap .pageCts_pdList--cts .pdList_conditions dl dd {
+  #Wrap .pageCts_pdList--cts .pdList_conditions dl dd span {
     font-size: 12px;
+    line-height: 1.5;
   }
 }
 

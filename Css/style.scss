@@ -2331,7 +2331,7 @@ $bp768: 768px;  // スマホ
 						cursor: pointer;
 
 						@include bp768 {
-							background-size: contain;
+							height: 68px;
 						};
 
 						input{
@@ -2590,17 +2590,22 @@ $bp768: 768px;  // スマホ
 
 						@include bp768 {
 							font-size: 12px;
+							line-height: 1.5;
 							margin-right: 18px;
+							width: 55px;
 						};
 					}
 
 					dd{
-						font-size: 14px;
-						line-height: 1;
+						span{
+							font-size: 14px;
+							line-height: 1;
 
-						@include bp768 {
-							font-size: 12px;
-						};
+							@include bp768 {
+								font-size: 12px;
+								line-height: 1.5;
+							};
+						}
 					}
 				}
 			}
