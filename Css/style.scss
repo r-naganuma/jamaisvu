@@ -2304,10 +2304,6 @@ $bp768: 768px;  // スマホ
 								background-color: inherit;
 							};
 						}
-
-						&:first-child{
-							display: none;
-						}
 					}
 				}
 
@@ -2366,30 +2362,26 @@ $bp768: 768px;  // スマホ
 						}
 
 						&:first-child{
-							background-image: url("../Contents/ImagesPkg/user/productlist/material00.jpg");
-						}
-
-						&:nth-child(2){
 							background-image: url("../Contents/ImagesPkg/user/productlist/material01.jpg");
 						}
 
-						&:nth-child(3){
+						&:nth-child(2){
 							background-image: url("../Contents/ImagesPkg/user/productlist/material02.jpg");
 						}
 
-						&:nth-child(4){
+						&:nth-child(3){
 							background-image: url("../Contents/ImagesPkg/user/productlist/material03.jpg");
 						}
 
-						&:nth-child(5){
+						&:nth-child(4){
 							background-image: url("../Contents/ImagesPkg/user/productlist/material04.jpg");
 						}
 
-						&:nth-child(6){
+						&:nth-child(5){
 							background-image: url("../Contents/ImagesPkg/user/productlist/material05.jpg");
 						}
 
-						&:nth-child(7){
+						&:nth-child(6){
 							background-image: url("../Contents/ImagesPkg/user/productlist/material06.jpg");
 						}
 					}

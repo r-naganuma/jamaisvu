@@ -188,13 +188,11 @@
 		<div class="searchBox_list searchBox_size">
 			<p class="searchBox_list--ttl">サイズ</p>
 			<p class="searchBox_list--ttlSelect sp_contents"></p>
-			<asp:RadioButtonList ID="size" DataTextField="size" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--size">
-				<asp:ListItem></asp:ListItem>
-				<asp:ListItem>すべて</asp:ListItem>
+			<asp:CheckBoxList ID="size" DataTextField="size" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--size">
 				<asp:ListItem>REGULAR</asp:ListItem>
 				<asp:ListItem>LOOSE</asp:ListItem>
 				<asp:ListItem>FREE</asp:ListItem>
-			</asp:RadioButtonList>
+			</asp:CheckBoxList>
 		</div>
 	</td>
 </tr>
@@ -203,15 +201,14 @@
 		<div class="searchBox_list searchBox_material">
 			<p class="searchBox_list--ttl">素材</p>
 			<p class="searchBox_list--ttlSelect sp_contents"></p>
-			<asp:RadioButtonList ID="material" DataTextField="material" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--material">
-				<asp:ListItem></asp:ListItem>
+			<asp:CheckBoxList ID="material" DataTextField="material" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--material">
 				<asp:ListItem>ハミルトンラムウール</asp:ListItem>
 				<asp:ListItem>ペルビアンコットン</asp:ListItem>
 				<asp:ListItem>メリノウール</asp:ListItem>
 				<asp:ListItem>ワンコットン</asp:ListItem>
 				<asp:ListItem>フォークランドウール</asp:ListItem>
 				<asp:ListItem>タスマニアンウール</asp:ListItem>
-			</asp:RadioButtonList>
+			</asp:CheckBoxList>
 		</div>
 	</td>
 </tr>

@@ -2746,10 +2746,6 @@ textarea::focus {
   }
 }
 
-#Wrap .pageCts_pdList--search .searchBox_list--size li:first-child {
-  display: none;
-}
-
 #Wrap .pageCts_pdList--search .searchBox_list--material {
   padding: 16px 0 0;
 }
@@ -2815,30 +2811,26 @@ textarea::focus {
 }
 
 #Wrap .pageCts_pdList--search .searchBox_list--material li:first-child {
-  background-image: url("../Contents/ImagesPkg/user/productlist/material00.jpg");
-}
-
-#Wrap .pageCts_pdList--search .searchBox_list--material li:nth-child(2) {
   background-image: url("../Contents/ImagesPkg/user/productlist/material01.jpg");
 }
 
-#Wrap .pageCts_pdList--search .searchBox_list--material li:nth-child(3) {
+#Wrap .pageCts_pdList--search .searchBox_list--material li:nth-child(2) {
   background-image: url("../Contents/ImagesPkg/user/productlist/material02.jpg");
 }
 
-#Wrap .pageCts_pdList--search .searchBox_list--material li:nth-child(4) {
+#Wrap .pageCts_pdList--search .searchBox_list--material li:nth-child(3) {
   background-image: url("../Contents/ImagesPkg/user/productlist/material03.jpg");
 }
 
-#Wrap .pageCts_pdList--search .searchBox_list--material li:nth-child(5) {
+#Wrap .pageCts_pdList--search .searchBox_list--material li:nth-child(4) {
   background-image: url("../Contents/ImagesPkg/user/productlist/material04.jpg");
 }
 
-#Wrap .pageCts_pdList--search .searchBox_list--material li:nth-child(6) {
+#Wrap .pageCts_pdList--search .searchBox_list--material li:nth-child(5) {
   background-image: url("../Contents/ImagesPkg/user/productlist/material05.jpg");
 }
 
-#Wrap .pageCts_pdList--search .searchBox_list--material li:nth-child(7) {
+#Wrap .pageCts_pdList--search .searchBox_list--material li:nth-child(6) {
   background-image: url("../Contents/ImagesPkg/user/productlist/material06.jpg");
 }
 
