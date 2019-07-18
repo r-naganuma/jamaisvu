@@ -10,6 +10,10 @@
 	src: url('../Font/gillsans.otf') format("opentype");
 }
 
+body{
+    font-family: 'gillsans', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
 a {
 	text-decoration: none;
 	-webkit-transition: all 0.2s linear;
@@ -2215,6 +2219,14 @@ $bp768: 768px;  // スマホ
 							}
 						}
 
+						&:nth-child(4n){
+							margin-right: 0;
+
+							@include bp768 {
+								margin-right: 7px;
+							};
+						}
+
 						&:nth-child(6n){
 							@include bp768 {
 								margin-right: 0;
@@ -2757,11 +2769,11 @@ $bp768: 768px;  // スマホ
 	};
 
 	&_logo{
-		width: 84px;
+		width: 84px !important;
 		display: block;
 
 		@include bp768 {
-			width: 100%;
+			width: 100% !important;
 			padding-right: 282px;
 			box-sizing: border-box;
 			position: absolute;

@@ -9,6 +9,10 @@
   src: url("../Font/gillsans.otf") format("opentype");
 }
 
+body {
+  font-family: 'gillsans', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
 a {
   text-decoration: none;
   -webkit-transition: all 0.2s linear;
@@ -2642,6 +2646,16 @@ textarea::focus {
   border: 1px solid #fff;
 }
 
+#Wrap .pageCts_pdList--search .searchBox_list--color li:nth-child(4n) {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  #Wrap .pageCts_pdList--search .searchBox_list--color li:nth-child(4n) {
+    margin-right: 7px;
+  }
+}
+
 @media (max-width: 768px) {
   #Wrap .pageCts_pdList--search .searchBox_list--color li:nth-child(6n) {
     margin-right: 0;
@@ -3268,13 +3282,13 @@ textarea::focus {
 }
 
 .footer_logo {
-  width: 84px;
+  width: 84px !important;
   display: block;
 }
 
 @media (max-width: 768px) {
   .footer_logo {
-    width: 100%;
+    width: 100% !important;
     padding-right: 282px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

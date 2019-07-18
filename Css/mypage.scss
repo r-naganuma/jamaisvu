@@ -1,0 +1,623 @@
+@charset "utf-8";
+
+/*====================================================================
+*    mixin
+/*==================================================================*/
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+@mixin font-weight($weight) {
+  $weights: (
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700
+  );
+  
+  $output: $weight;
+  @if map-has-key($weights, $weight) {
+    $output: map-get($weights, $weight);
+  }
+  
+  font-weight: $output;
+}
+
+#Wrap{
+
+	.userWrap{
+		width: 1200px;
+		margin: 0 auto;
+		color: #333;
+		font-size: 14px;
+		letter-spacing: 0.08em;
+		@include font-weight(regular);
+
+		/*====================================================================
+		*    Log in
+		/*==================================================================*/
+
+		.loginWrap{
+			width: 777px;
+			margin: 0 auto;
+
+			h2{
+				font-size: 18px;
+				text-align: center;
+				margin-bottom: 40px;
+				@include font-weight(bold);
+				letter-spacing: 0.04em;
+				line-height: 1;
+			}
+
+			&_box{
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 80px;
+
+				.loginTtl{
+					line-height: 1;
+					color: #3D3D3D;
+					text-align: center;
+					margin-bottom: 40px;
+					@include font-weight(bold);
+				}
+
+				&--left{
+					width: 320px;
+
+					ul{
+						li{
+							margin-bottom: 25px;
+
+							p{
+								line-height: 1;
+								margin-bottom: 8px;
+							}
+
+							input{
+								width: 100%;
+								border: 1px solid #C0B6B3;
+								border-radius: 2px;
+								padding: 10px 15px;
+								box-sizing: border-box;
+								font-size: 13px;
+								color: #333;
+								letter-spacing: 0.08em;
+								line-height: 1;
+
+								&::placeholder{
+									color: #C6C6C6;
+								}
+							}
+
+							.loginCheck{
+								input{
+									width: 16px;
+									height: 16px;
+									margin-right: 15px;
+									padding: 0;
+									vertical-align: middle;
+								}
+
+								label{
+									font-size: 12px;
+								}
+							}
+						}
+					}
+
+					.loginPsForget{
+						text-align: center;
+						text-decoration: underline;
+						color: #968680;
+						line-height: 1;
+					}
+				}
+
+				&--right{
+					width: 320px;
+				}
+
+				.loginBtn{
+					color: #fff;
+					text-align: center;
+					width: 100%;
+					height: 64px;
+					line-height: 64px;
+					background: #2E0E02;
+					position: relative;
+					margin: 40px 0 25px;
+					border-radius: 2px;
+
+					&::after{
+						content: "";
+						position: absolute;
+						top: 0;
+						right: 24px;
+						bottom: 0;
+						margin: auto;
+						display: block;
+						width: 10px;
+						height: 10px;
+						-moz-transform: rotate(45deg);
+						-webkit-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						transform: rotate(45deg);
+						border-top: 1.5px solid #fff;
+						border-right: 1.5px solid #fff;
+					}
+				}
+			}
+		}
+
+		/*====================================================================
+		*    会員登録
+		/*==================================================================*/
+
+		.registWrap{
+			width: 800px;
+			margin: 0 auto;
+
+			h2{
+				font-size: 18px;
+				text-align: center;
+				margin-bottom: 40px;
+				@include font-weight(bold);
+				letter-spacing: 0.04em;
+				line-height: 1;
+			}
+
+			.registStep{
+				width: 529px;
+				margin: 0 auto 60px;
+			}
+
+			.catchTxt{
+				text-align: center;
+				line-height: 25.2px;
+				margin-bottom: 40px;
+			}
+
+			&_box{
+				h3{
+					@include font-weight(bold);
+					padding: 0 0 0 40px;
+					line-height: 1;
+					margin: 0 0 17px;
+					box-sizing: border-box;
+				}
+
+				&--input{
+					padding: 40px;
+					margin-bottom: 40px;
+					box-sizing: border-box;
+					border-top: 1px solid #EAE6E5;
+					border-bottom: 1px solid #EAE6E5;
+
+					.inputBox{
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						flex-wrap: wrap;
+						font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+						&_left{
+							width: 222px;
+							margin-bottom: 24px;
+
+							&.must{
+								position: relative;
+
+								&::after{
+									content: "必須";
+									position: absolute;
+									top: 0;
+									bottom: 0;
+									right: 0;
+									margin: auto;
+									color: #fff;
+									width: 36px;
+									height: 18px;
+									line-height: 18px;
+									font-size: 10px;
+									text-align: center;
+									background: #AD2E24;
+									border-radius: 2px;
+								}
+							}
+
+							&.noCenter{
+								margin-top: -50px;
+							}
+
+							&.noCenter02{
+								margin-top: -33px;
+							}
+						}
+
+						&_right{
+							width: 484px;
+							margin-bottom: 24px;
+
+							input{
+								width: 100%;
+								border: 1px solid #C0B6B3;
+								border-radius: 2px;
+								padding: 10px 15px;
+								box-sizing: border-box;
+								font-size: 13px;
+								color: #333;
+								letter-spacing: 0.08em;
+								line-height: 1;
+
+								&::placeholder{
+									color: #C6C6C6;
+								}
+							}
+
+							select{
+								width: 100%;
+								font-size: 13px;
+							    letter-spacing: 0.08em;
+								padding: 10px 15px;
+								border-radius: 2px;
+							    -moz-appearance: none;
+							    -webkit-appearance: none;
+							    appearance: none;
+							    background: url(../../Contents/ImagesPkg/user/common/arrow_down.svg) no-repeat right 16px top 13px;
+							    border: 1px solid #C0B6B3;
+							    cursor: pointer;
+							}
+
+							.nameArea{
+								display: flex;
+								justify-content: space-between;
+								align-items: center;
+
+								dt{
+									width: 34px;
+									margin-right: 8px;
+									text-align: right;
+								}
+
+								dd{
+									width: 190px;
+								}
+							}
+
+							.radioBtn input{
+								display: none;
+							}
+							.radioBtn input + label{
+								padding-left: 32px;
+								vertical-align: middle;
+								position: relative;
+								padding-top: 4px;
+								margin-right: 50px;
+
+								@include bp768 {
+									display: table-cell;
+									padding-top: 8px;
+								};
+
+							&::before{
+								content: "";
+								display: block;
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 24px;
+								height: 24px;
+								border: 1px solid #968680;
+								border-radius: 50%;
+								background: #fff;
+								box-sizing: border-box;
+
+								@include bp768 {
+									width: 25px;
+									height: 25px;
+								};
+							}
+							}
+							.radioBtn input:checked + label::after{
+								content: "";
+								display: block;
+								position: absolute;
+								top: 6px;
+								left: 6px;
+								width: 12px;
+								height: 12px;
+								background: #2E0E02;
+								border-radius: 50%;
+
+								@include bp768 {
+									top: 4px;
+									left: 4px;
+									width: 17px;
+									height: 17px;
+								};
+							}
+							.radioBtn input:checked + label.on::after{
+								content: "";
+							}
+
+							.birthArea{
+								display: flex;
+								align-items: center;
+
+								dt{
+									width: 80px;
+									margin-right: 8px;
+
+									&.long{
+										width: 120px;
+									}
+								}
+
+								dd{
+									margin-right: 24px;
+								}
+							}
+
+							.zipArea{
+								display: flex;
+								align-items: center;
+
+								dt{
+									width: 68px;
+								}
+
+								dd{
+									margin: 0 8px;
+								}
+							}
+
+							.checkBox input{
+								display: none;
+							}
+							.checkBox input + label{
+								padding-left: 32px;
+								vertical-align: middle;
+								position: relative;
+								padding-top: 4px;
+								margin-right: 50px;
+
+								@include bp768 {
+									display: table-cell;
+									padding-top: 8px;
+								};
+
+							&::before{
+								content: "";
+								display: block;
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 24px;
+								height: 24px;
+								border: 1px solid #968680;
+								border-radius: 50%;
+								background: #fff;
+								box-sizing: border-box;
+
+								@include bp768 {
+									width: 25px;
+									height: 25px;
+								};
+							}
+							}
+							.checkBox input:checked + label::after{
+								content: "";
+								display: block;
+								position: absolute;
+								top: 6px;
+								left: 6px;
+								width: 12px;
+								height: 12px;
+								background: #2E0E02;
+								border-radius: 50%;
+
+								@include bp768 {
+									top: 4px;
+									left: 4px;
+									width: 17px;
+									height: 17px;
+								};
+							}
+							.checkBox input:checked + label.on::after{
+								content: "";
+							}
+
+							.noticeArea{
+								margin-top: 16px;
+
+								p{
+									font-size: 11px;
+									color: #878787;
+									letter-spacing: 0.06em;
+									line-height: 17.6px;
+								}
+							}
+						}
+
+						&.inputBox_confirm{
+							align-items: flex-start;
+
+							.inputBox_left{
+								line-height: 25.2px;
+							}
+
+							.inputBox_right{
+								line-height: 25.2px;
+							}
+						}
+					}
+				}
+
+				&--ps{
+					margin-top: 60px;
+				}
+
+				.agreementTxt{
+					margin-bottom: 40px;
+
+					p{
+						text-align: center;
+						line-height: 1;
+
+						a{
+							color: #968680;
+							display: inline;
+							text-decoration: underline;
+						}
+					}
+				}
+
+				.completeTxt01{
+					text-align: center;
+					@include font-weight(bold);
+					font-size: 18px;
+					line-height: 1;
+					letter-spacing: 0.04em;
+					margin-bottom: 40px;
+				}
+
+				.completeTxt02{
+					text-align: center;
+					line-height: 25.2px;
+					margin-bottom: 60px;
+				}
+
+				.remindTxt{
+					text-align: center;
+					line-height: 25.2px;
+					margin-bottom: 60px;
+
+					.remindSpan01{
+						@include font-weight(bold);
+					}
+
+					.remindSpan02{
+						color: #878787;
+					}
+				}
+
+				.psCompleteTxt{
+					text-align: center;
+					line-height: 25.2px;
+					margin-bottom: 40px;
+				}
+			}
+		}
+
+		.userBread{
+			width: 1120px;
+			margin: 0 auto 40px;
+
+			ul{
+				text-align: right;
+
+				li{
+					font-size: 12px;
+					letter-spacing: 0.08em;
+					color: #C6C6C6;
+					line-height: 1;
+					display: inline-block;
+
+					a{
+						font-size: 12px;
+						letter-spacing: 0.08em;
+						color: #C6C6C6;
+						line-height: 1;
+						display: inline;
+					}
+				}
+			}
+		}
+
+		#Foot{
+			border-top: none;
+
+			.sec--news{
+				display: none;
+			}
+		}
+
+		.submitBtnBox{
+			width: 320px;
+			margin: 40px auto 80px;
+		}
+
+		.allBtnBox{
+			width: 696px;
+			margin: 60px auto 80px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.prevBtn{
+			color: #2E0E02;
+			text-align: center;
+			width: 320px;
+			height: 64px;
+			line-height: 64px;
+			background: #fff;
+			position: relative;
+			border-radius: 2px;
+			border: 1px solid #2E0E02;
+
+			&::after{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 24px;
+				bottom: 0;
+				margin: auto;
+				display: block;
+				width: 10px;
+				height: 10px;
+				-moz-transform: rotate(-135deg);
+				-webkit-transform: rotate(-135deg);
+				-ms-transform: rotate(-135deg);
+				transform: rotate(-135deg);
+				border-top: 1.5px solid #2E0E02;
+				border-right: 1.5px solid #2E0E02;
+			}
+		}
+
+		.nextBtn{
+			color: #fff;
+			text-align: center;
+			width: 320px;
+			height: 64px;
+			line-height: 64px;
+			background: #2E0E02;
+			position: relative;
+			border-radius: 2px;
+			border: 1px solid #2E0E02;
+
+			&::after{
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 24px;
+				bottom: 0;
+				margin: auto;
+				display: block;
+				width: 10px;
+				height: 10px;
+				-moz-transform: rotate(45deg);
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+				border-top: 1.5px solid #fff;
+				border-right: 1.5px solid #fff;
+			}
+		}
+	}
+}
