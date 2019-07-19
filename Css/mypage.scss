@@ -619,5 +619,123 @@ $bp768: 768px;  // スマホ
 				border-right: 1.5px solid #fff;
 			}
 		}
+
+		/*====================================================================
+		*    My Page
+		/*==================================================================*/
+
+		.mypageWrap{
+			display: flex;
+			justify-content: space-between;
+			width: 1120px;
+			margin: 0 auto 80px;
+
+			.mypageMenu{
+				width: 180px;
+				padding-top: 67px;
+
+				&_ttl{
+					font-size: 13px;
+					padding-bottom: 15px;
+					@include font-weight(bold);
+					border-bottom: 1px solid #EAE6E5;
+					line-height: 1;
+				}
+
+				ul{
+					margin-bottom: 40px;
+
+					li{
+						height: 48px;
+
+						a{
+							line-height: 48px;
+							font-size: 13px;
+							padding: 0 15px;
+							box-sizing: border-box;
+
+							&:hover{
+								background: rgba(234,230,229,.5);
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+
+			.mypageCts{
+				width: 860px;
+
+				h2{
+					font-size: 18px;
+					text-align: center;
+					margin-bottom: 40px;
+					@include font-weight(bold);
+					letter-spacing: 0.04em;
+					line-height: 1;
+				}
+
+				&_topBox{
+					background: rgba(234,230,229,.2);
+					padding: 25px 40px;
+					box-sizing: border-box;
+
+					&--ttl{
+						padding-bottom: 20px;
+						@include font-weight(bold);
+						border-bottom: 1px solid #EAE6E5;
+						margin-bottom: 20px;
+						line-height: 1;
+					}
+
+					ul{
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+						align-items: flex-end;
+
+						li{
+							line-height: 1;
+							margin-bottom: 25px;
+
+							&:nth-child(3n + 1){
+								width: 155px;
+							}
+							
+							&:nth-child(3n +2){
+								width: 120px;
+								font-size: 18px;
+								@include font-weight(bold);
+
+								span{
+									font-size: 14px;
+								}
+							}
+							
+							&:nth-child(3n){
+								width: 505px;
+								font-size: 12px;
+							}
+						}
+					}
+
+					.aboutRank{
+						margin-top: 15px;
+
+						a{
+							text-align: right;
+							color: #2E0E02;
+							line-height: 2;
+							font-size: 12px;
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+
+		.displayNone{
+			display: none;
+		}
 	}
 }

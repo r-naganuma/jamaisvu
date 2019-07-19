@@ -1,18 +1,4 @@
 function initializeFunctionJs() {
-	// ヘッダーメイン
-	$(".mainVisual").slick({
-	    autoplay:true,
-	    autoplaySpeed:6000,
-	    dots:true,
-	    arrows:false,
-	    infinite: true,
-	    swipe: true,
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    draggable: false,
-	    variableWidth: false,
-	    vertical: true
-	});
 
     var txt = '0';
     var elem = null;

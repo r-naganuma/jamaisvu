@@ -61,6 +61,24 @@
         <%-- △HISTORY△ --%>
     </div>
 </div>
+<script type="text/javascript">
+$(function(){
+    // ヘッダーメイン
+    $(".mainVisual").slick({
+        autoplay:true,
+        autoplaySpeed:6000,
+        dots:true,
+        arrows:false,
+        infinite: true,
+        swipe: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: false,
+        variableWidth: false,
+        vertical: true
+    });
+})
+</script>
 <!--- page end --->
 
 <script runat="server">
@@ -120,7 +138,6 @@ if (lCategoryRecommendByRecommendEngineUserControls.Count > 0)
 }
 <%-- △編集可能領域△ --%>
 }
-
 </script>
 
 <%-- CRITEOタグ --%>

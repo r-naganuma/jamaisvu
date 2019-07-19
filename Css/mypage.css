@@ -15,6 +15,9 @@
   /*====================================================================
 		*    会員登録
 		/*==================================================================*/
+  /*====================================================================
+		*    My Page
+		/*==================================================================*/
 }
 
 #Wrap .userWrap .loginWrap {
@@ -663,4 +666,131 @@
   transform: rotate(45deg);
   border-top: 1.5px solid #fff;
   border-right: 1.5px solid #fff;
+}
+
+#Wrap .userWrap .mypageWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 1120px;
+  margin: 0 auto 80px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageMenu {
+  width: 180px;
+  padding-top: 67px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageMenu_ttl {
+  font-size: 13px;
+  padding-bottom: 15px;
+  font-weight: 700;
+  border-bottom: 1px solid #EAE6E5;
+  line-height: 1;
+}
+
+#Wrap .userWrap .mypageWrap .mypageMenu ul {
+  margin-bottom: 40px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageMenu ul li {
+  height: 48px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageMenu ul li a {
+  line-height: 48px;
+  font-size: 13px;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#Wrap .userWrap .mypageWrap .mypageMenu ul li a:hover {
+  background: rgba(234, 230, 229, 0.5);
+  opacity: 1;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts {
+  width: 860px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts h2 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts_topBox {
+  background: rgba(234, 230, 229, 0.2);
+  padding: 25px 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts_topBox--ttl {
+  padding-bottom: 20px;
+  font-weight: 700;
+  border-bottom: 1px solid #EAE6E5;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts_topBox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts_topBox ul li {
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts_topBox ul li:nth-child(3n + 1) {
+  width: 155px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts_topBox ul li:nth-child(3n +2) {
+  width: 120px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts_topBox ul li:nth-child(3n +2) span {
+  font-size: 14px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts_topBox ul li:nth-child(3n) {
+  width: 505px;
+  font-size: 12px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts_topBox .aboutRank {
+  margin-top: 15px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts_topBox .aboutRank a {
+  text-align: right;
+  color: #2E0E02;
+  line-height: 2;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+#Wrap .userWrap .displayNone {
+  display: none;
 }
