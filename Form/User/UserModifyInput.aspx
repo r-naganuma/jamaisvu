@@ -19,7 +19,7 @@
 	<div class="registWrap_box">
 
 		<h3>会員情報</h3>
-		<div class="registWrap_box--input">
+		<div class="registWrap_box--input noBorderB">
 			<%if (this.IsEasyUser) {%>
 			<p style="margin:5px;padding:5px;text-align:center;background-color:#ffff80;border:1px solid #D4440D;border-color:#E5A500;color:#CC7600;">ご購入手続きに必要な会員情報が不足しています。</p>
 			<%} %>

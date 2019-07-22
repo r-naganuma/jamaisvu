@@ -505,6 +505,38 @@
   line-height: 25.2px;
 }
 
+#Wrap .userWrap .registWrap_box--input.noBorderB {
+  border-bottom: none;
+  margin-bottom: 60px;
+  padding-bottom: 0;
+}
+
+#Wrap .userWrap .registWrap_box--input .couponArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 13px;
+  letter-spacing: 0;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
+#Wrap .userWrap .registWrap_box--input .couponArea_left {
+  width: 130px;
+  margin-bottom: 10px;
+  line-height: 19.5px;
+}
+
+#Wrap .userWrap .registWrap_box--input .couponArea_right {
+  width: 650px;
+  margin-bottom: 10px;
+  line-height: 19.5px;
+}
+
 #Wrap .userWrap .registWrap_box--ps {
   margin-top: 60px;
 }
@@ -711,6 +743,11 @@
 #Wrap .userWrap .mypageWrap .mypageMenu ul li a:hover {
   background: rgba(234, 230, 229, 0.5);
   opacity: 1;
+  color: #333;
+}
+
+#Wrap .userWrap .mypageWrap .mypageMenu ul li.on {
+  background: rgba(234, 230, 229, 0.5);
 }
 
 #Wrap .userWrap .mypageWrap .mypageCts {
@@ -779,16 +816,56 @@
   font-size: 12px;
 }
 
-#Wrap .userWrap .mypageWrap .mypageCts_topBox .aboutRank {
+#Wrap .userWrap .mypageWrap .mypageCts .aboutRank {
   margin-top: 15px;
 }
 
-#Wrap .userWrap .mypageWrap .mypageCts_topBox .aboutRank a {
+#Wrap .userWrap .mypageWrap .mypageCts .aboutRank a {
   text-align: right;
   color: #2E0E02;
   line-height: 2;
   font-size: 12px;
   text-decoration: underline;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts .favoriteArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts .favoriteArea ul {
+  width: 200px;
+  margin: 0 20px 40px 0;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts .favoriteArea ul:nth-child(4n) {
+  margin-right: 0;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts .favoriteArea ul li.favoriteAreaPic {
+  margin-bottom: 15px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts .favoriteArea ul li.favoriteAreaName {
+  margin-bottom: 8px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts .favoriteArea ul li.favoriteAreaName a {
+  line-height: 1;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts .favoriteArea ul li.favoriteAreaPrice p {
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
 }
 
 #Wrap .userWrap .displayNone {

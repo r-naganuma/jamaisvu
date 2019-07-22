@@ -457,6 +457,33 @@ $bp768: 768px;  // スマホ
 							}
 						}
 					}
+
+					&.noBorderB{
+						border-bottom: none;
+						margin-bottom: 60px;
+						padding-bottom: 0;
+					}
+
+					.couponArea{
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+						font-size: 13px;
+						letter-spacing: 0;
+						font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+						&_left{
+							width: 130px;
+							margin-bottom: 10px;
+							line-height: 19.5px;
+						}
+
+						&_right{
+							width: 650px;
+							margin-bottom: 10px;
+							line-height: 19.5px;
+						}
+					}
 				}
 
 				&--ps{
@@ -657,7 +684,12 @@ $bp768: 768px;  // スマホ
 							&:hover{
 								background: rgba(234,230,229,.5);
 								opacity: 1;
+								color: #333;
 							}
+						}
+
+						&.on{
+							background: rgba(234,230,229,.5);
 						}
 					}
 				}
@@ -718,16 +750,56 @@ $bp768: 768px;  // スマホ
 							}
 						}
 					}
+				}
 
-					.aboutRank{
-						margin-top: 15px;
+				.aboutRank{
+					margin-top: 15px;
 
-						a{
-							text-align: right;
-							color: #2E0E02;
-							line-height: 2;
-							font-size: 12px;
-							text-decoration: underline;
+					a{
+						text-align: right;
+						color: #2E0E02;
+						line-height: 2;
+						font-size: 12px;
+						text-decoration: underline;
+					}
+				}
+
+				.favoriteArea{
+					display: flex;
+					flex-wrap: wrap;
+
+					ul{
+						width: 200px;
+						margin: 0 20px 40px 0;
+
+						&:nth-child(4n){
+							margin-right: 0;
+						}
+
+						li{
+							&.favoriteAreaPic{
+								margin-bottom: 15px;
+							}
+
+							&.favoriteAreaName{
+								margin-bottom: 8px;
+
+								a{
+									line-height: 1;
+									text-overflow: ellipsis;
+									overflow: hidden;
+									white-space: nowrap;
+									font-size: 12px;
+								}
+							}
+
+							&.favoriteAreaPrice{
+								p{
+									@include font-weight(bold);
+									line-height: 1;
+				    				font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+				    			}
+							}
 						}
 					}
 				}

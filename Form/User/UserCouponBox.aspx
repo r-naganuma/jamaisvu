@@ -14,66 +14,81 @@
 <%-- UPDATE PANEL開始 --%>
 <asp:UpdatePanel ID="upUpdatePanel" runat="server">
 <ContentTemplate>
-<div id="dvUserFltContents">
-	<h2>クーポンBOX</h2>
-	<div class="unit">
-		<h4 style="margin: 0px 0px 10px 0px;">
-		<%-- 利用可能クーポンなし--%>
-		<% if(StringUtility.ToEmpty(this.AlertMessage) != "") {%>
-			<%: this.AlertMessage %>
-		<%} else {%>
-			ご利用いただけるクーポンの一覧です。
-		<%} %>
-		</h4>
+<div class="registWrap mypageCts">
+	<h2>クーポン</h2>
+	<p class="catchTxt">
+	<%-- 利用可能クーポンなし--%>
+	<% if(StringUtility.ToEmpty(this.AlertMessage) != "") {%>
+		<%: this.AlertMessage %>
+	<%} else {%>
+		現在ご利用いただけるクーポンです。<br>
+		ご利用の際はご注文画面から設定できます。
+	<%} %>
+	</p>
+	<div class="registWrap_box">
 		<asp:Repeater ID="rCouponList" ItemType="UserCouponDetailInfo" Runat="server">
-			<HeaderTemplate>
-			<div id="sortBox" class="clearFix">
-				<%-- ページャ --%>
-				<div id="pagination" class="above clearFix"><%= this.PagerHtml %></div>
-			</div>
-			<table>
-				<tr>
-					<th style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:130px;">クーポンコード</th>
-					<th style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:200px;">クーポン名</th>
-					<th style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:70px;">割引金額<br />/割引率</th>
-					<th style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:70px;">利用可能回数</th>
-					<th style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:250px;">有効期限</th>
-				</tr>
-			</HeaderTemplate>
 			<ItemTemplate>
-				<tr>
-					<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:130px;">
+			<h3><%#: Item.CouponDispName %></h3>
+			<div class="registWrap_box--input">
+				<dl class="couponArea">
+					<dt class="couponArea_left">クーポンコード</dt>
+					<dd class="couponArea_right">
 					<span runat="server" visible="<%# (Item.ExpireEnd < DateTime.Now) %>">
 						[有効期限切れ]<br />
 					</span>
-					<%#: Item.CouponCode %></td>
-					<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:200px;"
-						title="<%#: Item.CouponDispDiscription %>">
-						<%#: Item.CouponDispName %>
-					</td>
-					<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:70px;">
+					<%#: Item.CouponCode %></dd>
+					<dt class="couponArea_left">内容</dt>
+					<dd class="couponArea_right">
 						<%#: (StringUtility.ToEmpty(Item.DiscountPrice) != "")
 								? CurrencyManager.ToPrice(Item.DiscountPrice)
 								: (StringUtility.ToEmpty(Item.DiscountRate) != "")
 									? StringUtility.ToEmpty(Item.DiscountRate) + "%"
 									: "-" %>
-					</td>
-					<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:70px;">
+					</dd>
+					<dt class="couponArea_left">ご利用回数</dt>
+					<dd class="couponArea_right">
 						<%#: GetCouponCount(Item) %>
-					</td>
-					<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:200px;">
+					</dd>
+					<dt class="couponArea_left">有効期限</dt>
+					<dd class="couponArea_right">
 						<%#: DateTimeUtility.ToStringFromRegion(Item.ExpireEnd, DateTimeUtility.FormatType.LongDateHourMinute1Letter) %>
-					</td>
-				</tr>
+					</dd>
+					<dt class="couponArea_left">ご利用条件</dt>
+					<dd class="couponArea_right">
+						<%#: Item.CouponDiscription %>
+					</dd>
+				</dl>
+			</div>
 			</ItemTemplate>
-			<FooterTemplate>
-				</table>
-			</FooterTemplate>
 		</asp:Repeater>
 	<%-- ページャ--%>
-	<div id="pagination" class="below clearFix"><%= this.PagerHtml %></div>
+	<!-- <div id="pagination" class="below clearFix"><%= this.PagerHtml %></div>-->
+		<div class="aboutRank">
+			<a href="">クーポンについて</a>
+		</div>
 	</div>
+</div>
 </div>
 </ContentTemplate>
 </asp:UpdatePanel>
+
+<div class="userBread">
+	<ul>
+		<li>
+			<a href="<%= WebSanitizer.HtmlEncode(this.UnsecurePageProtocolAndHost + Constants.PATH_ROOT) %>">
+				トップ
+			</a>
+		</li>
+		<li> >
+			<a href="/Form/User/MyPage.aspx">
+				マイページ
+			</a>
+		</li>
+		<li> >
+			<a href="#">
+				クーポン
+			</a>
+		</li>
+	</ul>
+</div>
 </asp:Content>
