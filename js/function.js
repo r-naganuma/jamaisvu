@@ -9,8 +9,9 @@ function initializeFunctionJs() {
 
 	//ヘッダーメニューマウスオーバー
 	if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
-		$('.header__icon--search').hover(function(){
-			$(this).toggleClass('on');
+		$('.icnSerachBtn').hover(function(){
+			$(this).hide();
+			$('.header__icon--search').addClass('on');
 		});
 	}
 
@@ -26,6 +27,11 @@ function initializeFunctionJs() {
 			$(this).removeClass('active');
 			clearTimeout(sethover);
 		}
+	});
+
+	$('.nav_box.loginAfter h3').click(function(){
+		$(this).toggleClass("on");
+		$(this).next("ul").slideToggle(500);
 	});
 
 	// もっと見る

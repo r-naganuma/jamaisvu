@@ -93,6 +93,21 @@ textarea::focus {
 /*====================================================================
 *    mixin
 /*==================================================================*/
+$bp1200: 1200px;
+
+@mixin bp1200 {
+  @media (max-width: ($bp1200)) {
+    @content;
+  }
+}
+$bp1000: 1000px;
+
+@mixin bp1000 {
+  @media (max-width: ($bp1000)) {
+    @content;
+  }
+}
+
 $bp768: 768px;  // スマホ
 
 @mixin bp768 {
@@ -129,6 +144,14 @@ $bp768: 768px;  // スマホ
 	};
 }
 
+.md_contents {
+  display: none!important;
+
+	@include bp1000 {
+		display: block!important;
+	};
+}
+
 .sp_contents {
   display: none!important;
 
@@ -142,6 +165,22 @@ $bp768: 768px;  // スマホ
 
 	@include bp768 {
 		display: none!important;
+	};
+}
+
+.pc_flexOnly {
+	display: flex!important;
+
+	@include bp1000 {
+		display: none!important;
+	};
+}
+
+.md_flex {
+	display: none!important;
+
+	@include bp1000 {
+		display: flex!important;
 	};
 }
 
@@ -415,7 +454,7 @@ $bp768: 768px;  // スマホ
 		justify-content: space-between;
 		padding: 30px 40px;
 
-		@include bp768 {
+		@include bp1000 {
 			display: block;
 			padding: 16px 18px;
 			box-sizing: border-box;
@@ -425,21 +464,21 @@ $bp768: 768px;  // スマホ
 	&__left {
 		display: flex;
 
-		@include bp768 {
+		@include bp1000 {
 			display: block;
 		};
 	}
 
 	&__logo {
-		@include bp768 {
-			width: 28%;
-			margin: 0 auto;
+		@include bp1000 {
+			width: 32%;
+			margin: 8px auto 0;
 		};
 
 		img{
-			width: 84px;
+			width: 140px;
 
-			@include bp768 {
+			@include bp1000 {
 				width: 100%;
 			};
 		}
@@ -555,7 +594,7 @@ $bp768: 768px;  // スマホ
 		margin-left: 20px;
 		position: relative;
 
-		@include bp768 {
+		@include bp1000 {
 			margin: 0;
 			position: inherit;
 		};
@@ -576,7 +615,7 @@ $bp768: 768px;  // スマホ
 				animation: mrgL .5s ease 0s forwards;
 
 				.search_textBox{
-					display: block;
+					display: flex;
 					animation: searchTxt .5s ease 0s forwards;
 					position: absolute;
 					top: 0;
@@ -597,12 +636,12 @@ $bp768: 768px;  // スマホ
 			}
 
 			&--sp{
-				@include bp768 {
+				@include bp1000 {
 					position: relative;
 				};
 
 				img {
-					@include bp768 {
+					@include bp1000 {
 						width: 17.68px;
 						position: absolute;
 						top: 15px;
@@ -611,16 +650,17 @@ $bp768: 768px;  // スマホ
 				}
 
 				.search_textBox{
-					@include bp768 {
+					@include bp1000 {
 						border: 1px solid #C6C6C6;
 						border-radius: 2px;
-						padding: 14.5px 10px 14.5px 50px;
+						padding: 10px 10px 10px 50px;
 						margin-bottom: 20px;
+						box-sizing: border-box;
 					};
 				}
 
 				input{
-					@include bp768 {
+					@include bp1000 {
 						background: transparent;
 						color: #2E0E02;
 						font-size: 13px;
@@ -628,7 +668,7 @@ $bp768: 768px;  // スマホ
 					};
 
 					::placeholder {
-						@include bp768 {
+						@include bp1000 {
 							color: #C6C6C6;
 						};
 					}
@@ -637,7 +677,7 @@ $bp768: 768px;  // スマホ
 		}
 
 		&--wishlist{
-			@include bp768 {
+			@include bp1000 {
 				position: absolute;
 				top: 16px;
 				right: 70px;
@@ -646,14 +686,14 @@ $bp768: 768px;  // スマホ
 			img{
 				width: 21.5px;
 
-				@include bp768 {
+				@include bp1000 {
 					width: 28px;
 				};
 			}
 		}
 
 		&--cart{
-			@include bp768 {
+			@include bp1000 {
 				position: absolute;
 				top: 16px;
 				right: 18px;
@@ -662,7 +702,7 @@ $bp768: 768px;  // スマホ
 			img{
 				width: 19.5px;
 
-				@include bp768 {
+				@include bp1000 {
 					width: 28px;
 				};
 			}
@@ -681,13 +721,13 @@ $bp768: 768px;  // スマホ
 	}
 	/*   ハンバーガーボタン3本線   */
 	button.btn_menu {
-		@include bp768 {
+		@include bp1000 {
 			display: block;
 			background: none;
 			border: none;
 			padding: 0;
 			width: 28px;
-			color: #fff;
+			color: #2E0E02;
 			cursor: pointer;
 			z-index: 1002;
 			outline: none;
@@ -697,10 +737,10 @@ $bp768: 768px;  // スマホ
 		};
 
 		span.bar {
-			@include bp768 {
+			@include bp1000 {
 				display: block;
 				height: 2px;
-				background-color: #fff;
+				background-color: #2E0E02;
 				margin: 0 0 12px 0;
 				transition: all 0.2s;
 				transform-origin: 0 0;
@@ -708,32 +748,32 @@ $bp768: 768px;  // スマホ
 		}
 
 		&.active {
-			@include bp768 {
+			@include bp1000 {
 				animation: burgur 0.2s ease-in 0s both;
 			};
 
 			span.bar {
-				@include bp768 {
+				@include bp1000 {
 					width: 30px;
 					margin: 0;
 				};
 
 				&.bar1 {
-					@include bp768 {
+					@include bp1000 {
 						transform: rotate(0deg);
 						animation: rotate 0.4s ease-in .1s both;
 					};
 				}
 
 				&.bar2 {
-					@include bp768 {
+					@include bp1000 {
 						transform: rotate(0deg);
 						animation: rotate2 0.4s ease-in .1s both;
 					};
 				}
 
 				&.bar3 {
-					@include bp768 {
+					@include bp1000 {
 						position: absolute;
 						top: 21px;
 						right: 0;
@@ -745,7 +785,7 @@ $bp768: 768px;  // スマホ
 		}
 	}
 	&__menu {
-		@include bp768 {
+		@include bp1000 {
 			width: 100vw;
 			opacity: 0;
 			transition: all .5s;
@@ -761,7 +801,7 @@ $bp768: 768px;  // スマホ
 		};
 
 		&.open {
-			@include bp768 {
+			@include bp1000 {
         		animation: fade_in .2s ease 0s forwards;
 			};
 
@@ -777,7 +817,7 @@ $bp768: 768px;  // スマホ
 
 				.nav_logo{
 					width: 100%;
-					padding-right: 160px;
+					padding-right: 154px;
 					box-sizing: border-box;
 					margin-bottom: 24px;
 				}
@@ -786,6 +826,18 @@ $bp768: 768px;  // スマホ
 					border-bottom: 1px solid #EAE6E5;
 					margin-bottom: 40px;
 					letter-spacing: 0.04em;
+
+					&.loginAfter{
+						border-bottom: 1px solid #968680;
+						width: 80vw;
+						position: relative;
+						left: 50%;
+						transform: translateX(-50%);
+						box-sizing: border-box;
+						padding: 13px 18px;
+						box-sizing: border-box;
+						margin-bottom: 30px;
+					}
 
 					&--member{
 						padding-bottom: 6px;
@@ -849,32 +901,120 @@ $bp768: 768px;  // スマホ
 						color: #3D3D3D;
 						font-size: 13px;
 						line-height: 1;
-						padding-bottom: 20px;
-						margin-bottom: 20px;
-						border-bottom: 1px solid #EAE6E5;
+						padding: 0 18px 10px;
+						border-bottom: 1px solid #968680;
 						@include font-weight(bold);
+						width: 80vw;
+						position: relative;
+						left: 50%;
+						transform: translateX(-50%);
+						box-sizing: border-box;
 					}
 
 					ul{
 						li{
-							margin-bottom: 20px;
+							border-bottom: 1px solid #EAE6E5;
+							width: 80vw;
+							position: relative;
+							left: 50%;
+							transform: translateX(-50%);
+							box-sizing: border-box;
+							padding: 13px 18px;
+							box-sizing: border-box;
 
 							a{
 								color: #3D3D3D;
 								line-height: 1;
 							}
+
+							.navUpdate{
+								position: absolute;
+								top: 8.5px;
+								right: 18px;
+								width: 65px;
+								background: #AD2E24;
+								border-radius: 2px;
+								padding: 5px 0;
+								box-sizing: border-box;
+
+								p{
+									text-align: center;
+									font-size: 12px;
+									color: #fff;
+									line-height: 1;
+									letter-spacing: 0.04em;
+								}
+							}
+						}
+					}
+
+					&.loginAfter{
+						h3{
+							position: relative;
+
+							&::after {
+							    content: "";
+							    position: absolute;
+							    top: 0;
+							    right: 18px;
+							    margin: auto;
+							    z-index: 1;
+							    display: block;
+							    width: 9px;
+							    height: 9px;
+							    -webkit-transform: rotate(135deg);
+							    -ms-transform: rotate(135deg);
+							    transform: rotate(135deg);
+							    border-top: 1.5px solid #3D3D3D;
+							    border-right: 1.5px solid #3D3D3D;
+							}
+
+							&.on{
+								&::after {
+								    -webkit-transform: rotate(135deg);
+								    -ms-transform: rotate(135deg);
+								    transform: rotate(135deg);
+								    -webkit-animation: arrowRotate .5s ease 0s forwards;
+								    animation: arrowRotate .5s ease 0s forwards;
+								    top: 7px;
+								}
+							}
+						}
+
+						ul{
+							display: none;
 						}
 					}
 				}
 
+				.navNewsLetter{
+					width: 100%;
+					height: 40px;
+					margin: 40px 0;
+
+					a{
+						line-height: 40px;
+						font-size: 12px;
+						letter-spacing: 0.08em;
+					}
+				}
+
 				.nav_sns{
-					display: flex;
-					margin-top: 67.5px;
+					text-align: center;
 
 					li{
 						width: 28px;
 						margin-right: 30px;
+						display: inline-block;
+
+						&:last-child{
+							margin-right: 0;
+						}
 					}
+				}
+
+				.loginAfterBox{
+					margin-bottom: 60px;
 				}
 			}
 		}
@@ -1195,6 +1335,10 @@ $bp768: 768px;  // スマホ
 				width: 1200px;
 				margin: 0 auto;
 
+				@include bp1200 {
+					width: 100%;
+				};
+
 				@include bp768 {
 					display: block;
 					width: 100%;
@@ -1303,7 +1447,7 @@ $bp768: 768px;  // スマホ
 			width: 1168px;
 			flex-shrink: 0;
 
-			@include bp768 {
+			@include bp1200 {
 				width: 100%;
 				flex-shrink: inherit;
 			};
@@ -1321,6 +1465,10 @@ $bp768: 768px;  // スマホ
 			.topicsContent__list-item {
 				margin-right: 10px;
 				position: relative;
+
+				@include bp1200 {
+					margin-right: 1%;
+				};
 
 				@include bp768 {
 					margin-right: 0;
@@ -1350,6 +1498,10 @@ $bp768: 768px;  // スマホ
 				&.item-1 {
 					width: 380px;
 
+					@include bp1200 {
+						width: 32.5%;
+					};
+
 					@include bp768 {
 						width: 100%;
 					};
@@ -1358,6 +1510,11 @@ $bp768: 768px;  // スマホ
 				&.item-2 {
 					width: 380px;
 					height: 285px;
+
+					@include bp1200 {
+						width: 32.5%;
+						height: 100%;
+					};
 
 					@include bp768 {
 						width: 100%;
@@ -1370,6 +1527,11 @@ $bp768: 768px;  // スマホ
 					height: 285px;
 					margin-right: 0;
 
+					@include bp1200 {
+						width: 32.5%;
+						height: 100%;
+					};
+
 					@include bp768 {
 						width: 100%;
 						height: auto;
@@ -1381,6 +1543,12 @@ $bp768: 768px;  // スマホ
 					margin-right: 0;
 					margin-left: 390px;
 					margin-top: -283px;
+
+					@include bp1200 {
+						width: 65%;
+						margin-left: 33.4%;
+						margin-top: -23.7%;
+					};
 
 					@include bp768 {
 						width: 100%;
@@ -1404,6 +1572,10 @@ $bp768: 768px;  // スマホ
 				width: 1200px;
 				margin: 0 auto 140px;
 
+				@include bp1200 {
+					width: 100%;
+				};
+
 				@include bp768 {
 					display: block;
 					width: 100%;
@@ -1413,7 +1585,7 @@ $bp768: 768px;  // スマホ
 				.newarrivalsContent{
 					width: 1080px;
 
-					@include bp768 {
+					@include bp1200 {
 						width: 100%;
 					};
 
@@ -1476,6 +1648,10 @@ $bp768: 768px;  // スマホ
 					&__img-large{
 						width: 544px;
 
+						@include bp1200 {
+							width: 50%;
+						};
+
 						@include bp768 {
 							width: 100%;
 							margin-bottom: 20px;
@@ -1485,6 +1661,10 @@ $bp768: 768px;  // スマホ
 					&__img-little{
 						width: 320px;
 						margin: 0 100px;
+
+						@include bp1200 {
+							width: 29.63%;
+						};
 
 						@include bp768 {
 							width: 85%;
@@ -1589,6 +1769,10 @@ $bp768: 768px;  // スマホ
 				width: 1200px;
 				margin: 0 auto 80px;
 
+				@include bp1200 {
+					width: 100%;
+				};
+
 				@include bp768 {
 					display: block;
 					width: 100%;
@@ -1600,6 +1784,10 @@ $bp768: 768px;  // スマホ
 				.rankingContent{
 					width: 1080px;
 					order: 1;
+
+					@include bp1200 {
+						width: 100%;
+					};
 
 					@include bp768 {
 						width: 100%;
@@ -1619,7 +1807,7 @@ $bp768: 768px;  // スマホ
 							margin-bottom: 50px;
 							position: relative;
 
-							@include bp768 {
+							@include bp1200 {
 								width: 47.5%;
 							};
 
@@ -2141,38 +2329,14 @@ $bp768: 768px;  // スマホ
 						&.on{
 							background-color: rgba(234,230,229,.5);
 							position: relative;
+							background-image: url("../Contents/ImagesPkg/user/productlist/btn_off.png");
+							background-repeat: no-repeat;
+							background-position: right 13px top 16px;
+							background-size: 9px 9px;
 
-							&::before{
-								display: block;
-								content: "";
-								position: absolute;
-								top: 18px;
-								right: 5px;
-								width: 12px;
-								height: 12px;
-								border-top: 1px solid #2E0E02;
-								transform: rotate(-45deg);
-
-								@include bp768 {
-									content: none;
-								};
-							}
-
-							&::after{
-								display: block;
-								content: "";
-								position: absolute;
-								top: 18px;
-								right: 13px;
-								width: 12px;
-								height: 12px;
-								border-top: 1px solid #2E0E02;
-								transform: rotate(45deg);
-
-								@include bp768 {
-									content: none;
-								};
-							}
+							@include bp768 {
+								background-image: none;
+							};
 						}
 
 						&:hover{
@@ -2235,7 +2399,7 @@ $bp768: 768px;  // スマホ
 					}
 				}
 
-				&--size{
+				&--price{
 
 					@include bp768 {
 						padding: 10px 0 0;
@@ -2244,13 +2408,16 @@ $bp768: 768px;  // スマホ
 					};
 
 					li{
+						padding: 0;
 
-						padding-top: 0;
-						padding-bottom: 0;
+						&:first-child{
+							display: none;
+						}
 
 						input{
 							border-radius: 0;
 							appearance: none;
+
 
 							@include bp768 {
 								opacity: 0;
@@ -2260,53 +2427,92 @@ $bp768: 768px;  // スマホ
 						label{
 							width: 100%;
 							display: block;
-							padding: 0;
-							margin: 0;
-							height: 27px;
+						    padding: 13px 8px;
+							margin: -13px 0 0 0;
+							height: 40px;
 							line-height: 15px;
+							box-sizing: border-box;
 
 							@include bp768 {
 								margin: -8px 0 0;
 								height: 32px;
 								line-height: 28px;
+								padding: 0 8px;
 							};
 						}
 
 						&.on{
 							background-color: rgba(234,230,229,.5);
 							position: relative;
+							background-image: url("../Contents/ImagesPkg/user/productlist/btn_off.png");
+							background-repeat: no-repeat;
+							background-position: right 13px top 16px;
+							background-size: 9px 9px;
 
-							&::before{
-								display: block;
-								content: "";
-								position: absolute;
-								top: 18px;
-								right: 5px;
-								width: 12px;
-								height: 12px;
-								border-top: 1px solid #2E0E02;
-								transform: rotate(-45deg);
+							@include bp768 {
+								background-image: none;
+							};
+						}
 
-								@include bp768 {
-									content: none;
-								};
-							}
+						&:hover{
+							background-color: rgba(234,230,229,.5);
 
-							&::after{
-								display: block;
-								content: "";
-								position: absolute;
-								top: 18px;
-								right: 13px;
-								width: 12px;
-								height: 12px;
-								border-top: 1px solid #2E0E02;
-								transform: rotate(45deg);
+							@include bp768 {
+								background-color: inherit;
+							};
+						}
+					}
+				}
 
-								@include bp768 {
-									content: none;
-								};
-							}
+				&--size{
+
+					@include bp768 {
+						padding: 10px 0 0;
+						width: 75%;
+						margin-left: auto;
+					};
+
+					li{
+						padding: 0;
+
+						input{
+							border-radius: 0;
+							appearance: none;
+
+
+							@include bp768 {
+								opacity: 0;
+							};
+						}
+
+						label{
+							width: 100%;
+							display: block;
+						    padding: 13px 8px;
+							margin: -13px 0 0 0;
+							height: 40px;
+							line-height: 15px;
+							box-sizing: border-box;
+
+							@include bp768 {
+								margin: -8px 0 0;
+								height: 32px;
+								line-height: 28px;
+								padding: 0 8px;
+							};
+						}
+
+						&.on{
+							background-color: rgba(234,230,229,.5);
+							position: relative;
+							background-image: url("../Contents/ImagesPkg/user/productlist/btn_off.png");
+							background-repeat: no-repeat;
+							background-position: right 13px top 16px;
+							background-size: 9px 9px;
+
+							@include bp768 {
+								background-image: none;
+							};
 						}
 
 						&:hover{
@@ -2357,19 +2563,20 @@ $bp768: 768px;  // スマホ
 							padding: 0;
 							margin: -13px 0 0;
 							height: 100%;
-						}
-
-						&.on{
 							position: relative;
 
-							&::after{
-								content: "";
-								position: absolute;
-								top: 2px;
-								left: 2px;
-								bottom: 2px;
-								right: 2px;
-								border: 1px solid #fff;
+							&.on{
+								position: relative;
+
+								&::after{
+									content: "";
+									position: absolute;
+									top: 2px;
+									left: 2px;
+									bottom: 2px;
+									right: 2px;
+									border: 1px solid #fff;
+								}
 							}
 						}
 
@@ -2769,12 +2976,12 @@ $bp768: 768px;  // スマホ
 	};
 
 	&_logo{
-		width: 84px !important;
+		width: 140px !important;
 		display: block;
 
 		@include bp768 {
 			width: 100% !important;
-			padding-right: 282px;
+			padding-right: 247px;
 			box-sizing: border-box;
 			position: absolute;
 			bottom: 55px;

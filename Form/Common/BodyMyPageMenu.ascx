@@ -26,10 +26,19 @@ $(function(){
     if(document.URL.match("FavoriteList.aspx")) {
     	$("li.myPegeFavoBtn").addClass("on");
     }
+    if(document.URL.match("UserCreditCardList.aspx")) {
+    	$("li.myPegeCreditBtn").addClass("on");
+    }
+    if(document.URL.match("UserCreditCardInput.aspx")) {
+    	$("li.myPegeCreditBtn").addClass("on");
+    }
+    if(document.URL.match("UserCreditCardConfirm.aspx")) {
+    	$("li.myPegeCreditBtn").addClass("on");
+    }
 })
 </script>
 <div class="mypageWrap topSpace">
-	<div class="mypageMenu">
+	<div class="mypageMenu pc_contents">
 		<p class="mypageMenu_ttl">会員情報</p>
 		<ul>
 			<li class="myPegeTopBtn"><a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_MYPAGE) %>">

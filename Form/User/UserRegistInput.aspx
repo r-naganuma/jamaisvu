@@ -14,7 +14,8 @@
 	<h2>会員登録</h2>
 
 	<%-- 会員登録系パンくず --%>
-	<img src="../../Contents/ImagesPkg/user/user/registration_step01.png" class="registStep" alt="会員情報入力" />
+	<img src="../../Contents/ImagesPkg/user/user/registration_step01.png" class="registStep pc_contents" alt="会員情報入力" />
+	<img src="../../Contents/ImagesPkg/user/user/registration_step01_sp.png" class="registStep sp_contents" alt="会員情報入力" />
 
 	<div class="registWrap_box">
 		<% if (Constants.PAYPAL_LOGINPAYMENT_ENABLED) { %>

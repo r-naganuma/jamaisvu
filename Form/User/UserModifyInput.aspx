@@ -603,7 +603,7 @@
 			<%if (Constants.LOGIN_ID_USE_MAILADDRESS_ENABLED == false) { %>
 			<dl class="inputBox">
 					<%-- ログインID --%>
-					<dt class="inputBox_left must"><%: ReplaceTag("@@User.login_id.name@@") %>
+					<dt class="inputBox_left"><%: ReplaceTag("@@User.login_id.name@@") %>
 					</dt>
 					<dd class="inputBox_right">
 						<% SetMaxLength(this.WtbUserLoginId, "@@User.login_id.length_max@@"); %>
@@ -624,7 +624,7 @@
 			<dl class="inputBox">
 				<%-- ソーシャルログイン連携されている場合はパスワードスキップ --%>
 				<%if (this.IsVisible_UserPassword){ %>
-					<dt class="inputBox_left must">現在のパスワード</dt>
+					<dt class="inputBox_left">現在のパスワード</dt>
 					<dd class="inputBox_right">
 						<% SetMaxLength(this.WtbUserPasswordBefore, "@@User.password.length_max@@"); %>
 						<asp:TextBox id="tbUserPasswordBefore" Runat="server" TextMode="Password" autocomplete="off" placeholder="半角英数字で入力してください" CssClass="loginPass"></asp:TextBox>
@@ -639,7 +639,7 @@
 							CssClass="error_inline" />
 					</dd>
 				<% } %>
-					<dt class="inputBox_left must">新しいパスワード</dt>
+					<dt class="inputBox_left">新しいパスワード</dt>
 					<dd class="inputBox_right">
 						<% SetMaxLength(this.WtbUserPassword, "@@User.password.length_max@@"); %>
 						<asp:TextBox id="tbUserPassword" Runat="server" TextMode="Password" autocomplete="off" placeholder="半角英数字で入力してください" CssClass="loginPass"></asp:TextBox>
@@ -653,7 +653,7 @@
 							ClientValidationFunction="ClientValidate"
 							CssClass="error_inline" />
 					</dd>
-					<dt class="inputBox_left must noCenter">新しいパスワード（確認）</dt>
+					<dt class="inputBox_left noCenter">新しいパスワード（確認）</dt>
 					<dd class="inputBox_right">
 						<% SetMaxLength(this.WtbUserPasswordConf, "@@User.password.length_max@@"); %>
 						<asp:TextBox id="tbUserPasswordConf" Runat="server" TextMode="Password" autocomplete="off" placeholder="半角英数字で入力してください" CssClass="loginPass"></asp:TextBox>

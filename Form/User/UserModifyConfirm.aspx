@@ -34,8 +34,8 @@
 				</dt>
 				<dd class="inputBox_right">
 					<% if (this.IsUserAddrJp) { %>
-					（<%: this.UserInput.NameKana1 %>
-					<%: this.UserInput.NameKana2 %>）
+					<%: this.UserInput.NameKana1 %>
+					<%: this.UserInput.NameKana2 %>
 					<% } %>
 				</dd>
 				<dt class="inputBox_left must">
@@ -109,7 +109,7 @@
 					<% } %>
 					<%: this.UserInput.AddrCountryName %>
 				</dd>
-				<dt class="inputBox_left must">
+				<dt class="inputBox_left">
 					<!-- 企業名 -->
 					会社・部署
 				</dt>
@@ -124,14 +124,14 @@
 				<%-- ユーザー拡張項目　HasInput:true(入力画面)/false(確認画面)　HasRegist:true(新規登録)/false(登録編集) --%>
 				<uc:BodyUserExtendModify ID="ucBodyUserExtendModify" runat="server" HasInput="false" HasRegist="false" />
 			<%if (Constants.LOGIN_ID_USE_MAILADDRESS_ENABLED == false) { %>
-				<dt class="inputBox_left must">
+				<dt class="inputBox_left">
 				<%-- ログインID --%>
 				<%: ReplaceTag("@@User.login_id.name@@") %>
 				</dt>
 				<dd class="inputBox_right">
 					<%: this.UserInput.LoginId %></dd>
 			<%} %>
-				<dt class="inputBox_left must">
+				<dt class="inputBox_left">
 				<%-- パスワード --%>
 				<%: ReplaceTag("@@User.password.name@@") %>
 				</dt>

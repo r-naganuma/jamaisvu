@@ -1,26 +1,26 @@
 ﻿<%--
 =========================================================================================================
-  Module      : パスワード変更完了画面(PasswordModifyComplete.aspx)
+  Module      : 会員退会完了画面(UserWithdrawalComplete.aspx)
  ･･･････････････････････････････････････････････････････････････････････････････････････････････････････
-  Copyright   : Copyright w2solution Co.,Ltd. 2010 All Rights Reserved.
+  Copyright   : Copyright w2solution Co.,Ltd. 2009 All Rights Reserved.
 =========================================================================================================
 --%>
-<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_PasswordModifyComplete, App_Web_passwordmodifycomplete.aspx.b2a7112d" title="パスワード変更完了ページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_UserWithdrawalComplete, App_Web_userwithdrawalcomplete.aspx.b2a7112d" title="退会完了ページ" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<div class="registWrap topSpace">
-	<h2>パスワード変更完了</h2>
+<div class="registWrap mypageCts">
+	<h2>退会手続き完了</h2>
 
 	<div class="registWrap_box">
 		<p class="psCompleteTxt">
-			パスワード変更を完了しました。<br>
-			引き続き、<%= WebSanitizer.HtmlEncode(ShopMessage.GetMessage("ShopName")) %>でのお買い物を<br class="pc_contents">お楽しみください。
+			退会処理が完了いたしました。<br>
+			<%= WebSanitizer.HtmlEncode(ShopMessage.GetMessage("ShopName")) %>をご利用いただき<br>
+			誠にありがとうございました。
 		</p>
 		<div class="submitBtnBox">
-			<asp:LinkButton ID="lbTopPage" runat="server" OnClick="lbTopPage_Click" class="prevBtn">
-				トップページへ戻る
-			</asp:LinkButton>
+			<asp:LinkButton ID="lbTopPage" runat="server" OnClick="lbTopPage_Click" class="prevBtn">トップページへ戻る</asp:LinkButton>
 		</div>
 	</div>
+</div>
 </div>
 
 <div class="userBread">
@@ -31,13 +31,18 @@
 			</a>
 		</li>
 		<li> >
-			<a href="#">
-				パスワード変更
+			<a href="/Form/User/MyPage.aspx">
+				マイページ
 			</a>
 		</li>
 		<li> >
 			<a href="#">
-				パスワード変更完了
+				退会手続き
+			</a>
+		</li>
+		<li> >
+			<a href="#">
+				完了
 			</a>
 		</li>
 	</ul>

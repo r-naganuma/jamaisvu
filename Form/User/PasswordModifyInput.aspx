@@ -24,7 +24,7 @@
 				<dt class="inputBox_left">
 					<%: ReplaceTag("@@User.login_id.name@@") %>
 				</dt>
-				<dd class="inputBox_right">
+				<dd class="inputBox_right noBBsp">
 					<%: this.LoginId %>
 				</dd>
 				<%-- かんたん会員の場合は、生年月日や電話番号による確認をスキップ --%>
@@ -34,7 +34,7 @@
 					<%: ReplaceTag("@@User.birth.name@@") %>
 					
 				</dt>
-				<dd class="inputBox_right">
+				<dd class="inputBox_right noBBsp">
 					<asp:TextBox ID="tbBirth" Runat="server" placeholder="例）19700101" CssClass="loginId" MaxLength="8"></asp:TextBox>
 					<asp:CustomValidator ID="cvBirth" runat="Server"
 						ControlToValidate="tbBirth"
@@ -49,7 +49,7 @@
 					<%: ReplaceTag("@@User.tel1.name@@") %>
 					
 				</dt>
-				<dd class="inputBox_right">
+				<dd class="inputBox_right noBBsp">
 					<asp:TextBox ID="tbTel1_1" Runat="server" CssClass="tel1" MaxLength="6" Type="tel"></asp:TextBox> -
 					<asp:TextBox ID="tbTel1_2" Runat="server" CssClass="tel2" MaxLength="4" Type="tel"></asp:TextBox> -
 					<asp:TextBox ID="tbTel1_3" Runat="server" CssClass="tel3" MaxLength="4" Type="tel"></asp:TextBox>
@@ -81,7 +81,7 @@
 					新しい<%: ReplaceTag("@@User.password.name@@") %>
 					
 				</dt>
-				<dd class="inputBox_right">
+				<dd class="inputBox_right noBBsp">
 					<asp:TextBox ID="tbPassword" Runat="server" placeholder="半角英数字で入力してください" TextMode="Password" autocomplete="off" CssClass="loginId" MaxLength="15"></asp:TextBox>
 					<asp:CustomValidator ID="cvPassword" runat="Server"
 						ControlToValidate="tbPassword"

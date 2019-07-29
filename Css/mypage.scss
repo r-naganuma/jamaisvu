@@ -3,6 +3,21 @@
 /*====================================================================
 *    mixin
 /*==================================================================*/
+$bp1200: 1200px;
+
+@mixin bp1200 {
+  @media (max-width: ($bp1200)) {
+    @content;
+  }
+}
+$bp1000: 1000px;
+
+@mixin bp1000 {
+  @media (max-width: ($bp1000)) {
+    @content;
+  }
+}
+
 $bp768: 768px;  // スマホ
 
 @mixin bp768 {
@@ -36,6 +51,14 @@ $bp768: 768px;  // スマホ
 		font-size: 14px;
 		letter-spacing: 0.08em;
 		@include font-weight(regular);
+			
+		@include bp1200 {
+			width: 100%;
+		};
+
+		@include bp768 {
+			font-size: 13px;
+		};
 
 		/*====================================================================
 		*    Log in
@@ -45,6 +68,12 @@ $bp768: 768px;  // スマホ
 			width: 777px;
 			margin: 0 auto;
 
+			@include bp768 {
+				width: 100%;
+				padding: 80px 18px 0;
+				box-sizing: border-box;
+			};
+
 			h2{
 				font-size: 18px;
 				text-align: center;
@@ -52,6 +81,10 @@ $bp768: 768px;  // スマホ
 				@include font-weight(bold);
 				letter-spacing: 0.04em;
 				line-height: 1;
+
+				@include bp768 {
+					margin-bottom: 50px;
+				};
 			}
 
 			&_box{
@@ -59,20 +92,44 @@ $bp768: 768px;  // スマホ
 				justify-content: space-between;
 				margin-bottom: 80px;
 
+				@include bp768 {
+					display: block;
+				};
+
 				.loginTtl{
 					line-height: 1;
 					color: #3D3D3D;
 					text-align: center;
 					margin-bottom: 40px;
 					@include font-weight(bold);
+
+					@include bp768 {
+						font-size: 14px;
+						margin-bottom: 32px;
+					};
 				}
 
 				&--left{
 					width: 320px;
 
+					@include bp768 {
+						width: 100%;
+						margin-bottom: 80px;
+					};
+
 					ul{
 						li{
 							margin-bottom: 25px;
+
+							@include bp768 {
+								margin-bottom: 16px;
+							};
+
+							&:nth-child(3){
+								@include bp768 {
+									margin: 24px 0;
+								};
+							}
 
 							p{
 								line-height: 1;
@@ -89,6 +146,7 @@ $bp768: 768px;  // スマホ
 								color: #333;
 								letter-spacing: 0.08em;
 								line-height: 1;
+								appearance: none;
 
 								&::placeholder{
 									color: #C6C6C6;
@@ -116,11 +174,19 @@ $bp768: 768px;  // スマホ
 						text-decoration: underline;
 						color: #968680;
 						line-height: 1;
+
+						@include bp768 {
+							font-size: 12px;
+						};
 					}
 				}
 
 				&--right{
 					width: 320px;
+
+					@include bp768 {
+						width: 100%;
+					};
 				}
 
 				.loginBtn{
@@ -133,6 +199,13 @@ $bp768: 768px;  // スマホ
 					position: relative;
 					margin: 40px 0 25px;
 					border-radius: 2px;
+
+					@include bp768 {
+						width: 70%;
+						height: 48px;
+						line-height: 48px;
+						margin: 24px auto 20px;
+					};
 
 					&::after{
 						content: "";
@@ -150,6 +223,20 @@ $bp768: 768px;  // スマホ
 						transform: rotate(45deg);
 						border-top: 1.5px solid #fff;
 						border-right: 1.5px solid #fff;
+
+						@include bp768 {
+							right: 16px;
+							width: 6px;
+							height: 6px;
+							border-top: 1px solid #fff;
+							border-right: 1px solid #fff;
+						};
+					}
+
+					&.addressBtn{
+						@include bp768 {
+							width: 100%;
+						};
 					}
 				}
 			}
@@ -163,6 +250,12 @@ $bp768: 768px;  // スマホ
 			width: 800px;
 			margin: 0 auto;
 
+			@include bp768 {
+				width: 100%;
+				padding: 80px 18px 0;
+				box-sizing: border-box;
+			};
+
 			h2{
 				font-size: 18px;
 				text-align: center;
@@ -170,17 +263,29 @@ $bp768: 768px;  // スマホ
 				@include font-weight(bold);
 				letter-spacing: 0.04em;
 				line-height: 1;
+
+				@include bp768 {
+					margin-bottom: 30px;
+				};
 			}
 
 			.registStep{
 				width: 529px;
 				margin: 0 auto 60px;
+
+				@include bp768 {
+					width: 100%;
+				};
 			}
 
 			.catchTxt{
 				text-align: center;
 				line-height: 25.2px;
 				margin-bottom: 40px;
+
+				@include bp768 {
+					line-height: 26px;
+				};
 			}
 
 			&_box{
@@ -190,6 +295,22 @@ $bp768: 768px;  // スマホ
 					line-height: 1;
 					margin: 0 0 17px;
 					box-sizing: border-box;
+
+					@include bp768 {
+						padding: 0;
+					};
+
+					.historyTtlSpan{
+						@include font-weight(normal);
+						margin-left: 24px;
+						font-size: 12px;
+						line-height: 1;
+
+						@include bp768 {
+							margin: 8px 30px 0 0;
+							display: inline-block;
+						};
+					}
 				}
 
 				&--input{
@@ -199,6 +320,11 @@ $bp768: 768px;  // スマホ
 					border-top: 1px solid #EAE6E5;
 					border-bottom: 1px solid #EAE6E5;
 
+					@include bp768 {
+						padding: 17px 0 0;
+						border-bottom: none;
+					};
+
 					.inputBox{
 						display: flex;
 						justify-content: space-between;
@@ -206,9 +332,24 @@ $bp768: 768px;  // スマホ
 						flex-wrap: wrap;
 						font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
 
+						@include bp768 {
+							display: block;
+						};
+
 						&_left{
 							width: 222px;
 							margin-bottom: 24px;
+							@include font-weight(regular);
+
+							@include bp1200 {
+								width: 30%;
+							};
+
+							@include bp768 {
+								width: auto;
+								margin-bottom: 16px;
+								display: inline-block;
+							};
 
 							&.must{
 								position: relative;
@@ -228,21 +369,49 @@ $bp768: 768px;  // スマホ
 									text-align: center;
 									background: #AD2E24;
 									border-radius: 2px;
+
+									@include bp768 {
+										right: -45px;
+									};
 								}
 							}
 
 							&.noCenter{
 								margin-top: -50px;
+
+								@include bp768 {
+									margin-top: 0;
+								};
 							}
 
 							&.noCenter02{
 								margin-top: -33px;
+
+								@include bp768 {
+									margin-top: 0;
+								};
 							}
 						}
 
 						&_right{
 							width: 484px;
 							margin-bottom: 24px;
+
+							@include bp1200 {
+								width: 60%;
+							};
+
+							@include bp768 {
+								width: 100%;
+								padding-bottom: 24px;
+								margin-bottom: 15px;
+								border-bottom: 1px solid #EAE6E5;
+							};
+
+							&.noBBsp{
+								margin-bottom: 0;
+								border-bottom: none;
+							}
 
 							input{
 								width: 100%;
@@ -254,6 +423,7 @@ $bp768: 768px;  // スマホ
 								color: #333;
 								letter-spacing: 0.08em;
 								line-height: 1;
+								appearance: none;
 
 								&::placeholder{
 									color: #C6C6C6;
@@ -272,21 +442,44 @@ $bp768: 768px;  // スマホ
 							    background: url(../../Contents/ImagesPkg/user/common/arrow_down.svg) no-repeat right 16px top 13px;
 							    border: 1px solid #C0B6B3;
 							    cursor: pointer;
+								appearance: none;
+
+								@include bp768 {
+							    	background: url(../../Contents/ImagesPkg/user/common/arrow_down.svg) no-repeat right 8px top 16px;
+							    	background-size: 13.5px 7.5px;
+								};
 							}
 
 							.nameArea{
 								display: flex;
 								justify-content: space-between;
 								align-items: center;
+								flex-wrap: wrap;
+
+								@include bp768 {
+									margin-top: -16px;
+								};
 
 								dt{
 									width: 34px;
 									margin-right: 8px;
 									text-align: right;
+
+									@include bp768 {
+										width: 15%;
+										margin-right: 0;
+										text-align: left;
+										margin-top: 16px;
+									};
 								}
 
 								dd{
 									width: 190px;
+
+									@include bp768 {
+										width: 85%;
+										margin-top: 16px;
+									};
 								}
 							}
 
@@ -300,11 +493,6 @@ $bp768: 768px;  // スマホ
 								padding-top: 4px;
 								margin-right: 50px;
 
-								@include bp768 {
-									display: table-cell;
-									padding-top: 8px;
-								};
-
 							&::before{
 								content: "";
 								display: block;
@@ -317,11 +505,6 @@ $bp768: 768px;  // スマホ
 								border-radius: 50%;
 								background: #fff;
 								box-sizing: border-box;
-
-								@include bp768 {
-									width: 25px;
-									height: 25px;
-								};
 							}
 							}
 							.radioBtn input:checked + label::after{
@@ -334,13 +517,6 @@ $bp768: 768px;  // スマホ
 								height: 12px;
 								background: #2E0E02;
 								border-radius: 50%;
-
-								@include bp768 {
-									top: 4px;
-									left: 4px;
-									width: 17px;
-									height: 17px;
-								};
 							}
 							.radioBtn input:checked + label.on::after{
 								content: "";
@@ -354,13 +530,27 @@ $bp768: 768px;  // スマホ
 									width: 80px;
 									margin-right: 8px;
 
+									@include bp768 {
+										width: 23%;
+									};
+
 									&.long{
 										width: 120px;
+
+										@include bp768 {
+											width: 30%;
+										};
 									}
 								}
 
 								dd{
 									margin-right: 24px;
+
+									&:last-child{
+										@include bp768 {
+											margin-right: 0;
+										};
+									}
 								}
 							}
 
@@ -370,6 +560,10 @@ $bp768: 768px;  // スマホ
 
 								dt{
 									width: 68px;
+
+									@include bp768 {
+										width: 20%;
+									};
 								}
 
 								dd{
@@ -387,11 +581,6 @@ $bp768: 768px;  // スマホ
 								padding-top: 4px;
 								margin-right: 50px;
 
-								@include bp768 {
-									display: table-cell;
-									padding-top: 8px;
-								};
-
 							&::before{
 								content: "";
 								display: block;
@@ -404,11 +593,6 @@ $bp768: 768px;  // スマホ
 								border-radius: 50%;
 								background: #fff;
 								box-sizing: border-box;
-
-								@include bp768 {
-									width: 25px;
-									height: 25px;
-								};
 							}
 							}
 							.checkBox input:checked + label::after{
@@ -421,13 +605,6 @@ $bp768: 768px;  // スマホ
 								height: 12px;
 								background: #2E0E02;
 								border-radius: 50%;
-
-								@include bp768 {
-									top: 4px;
-									left: 4px;
-									width: 17px;
-									height: 17px;
-								};
 							}
 							.checkBox input:checked + label.on::after{
 								content: "";
@@ -456,6 +633,180 @@ $bp768: 768px;  // スマホ
 								line-height: 25.2px;
 							}
 						}
+
+						&.tableInputBox{
+							.inputBox_left{
+								display: inline-block;
+							}
+
+							.inputBox_right{
+								display: inline-block;
+								margin-left: 70px;
+
+								@include bp768 {
+									margin-left: 0;
+								};
+							}
+						}
+
+						&.orderDetailArea{
+
+							tr{
+								border-bottom: 1px solid #EAE6E5;
+								width: 820px;
+								display: block;
+								margin: 0 -40px;
+								padding: 24px 0 0 40px;
+
+								@include bp1200 {
+									width: 100%;
+								};
+
+								@include bp768 {
+									border-bottom: none;
+									margin: 0;
+									padding: 24px 0 0 0;
+								};
+
+								&.noBorderB {
+								    border-bottom: none;
+								}
+							}
+
+							.inputBox_left{
+								@include font-weight(bold);
+								width: 125px;
+								vertical-align: top;
+
+								@include bp1200 {
+									width: 20%;
+								};
+
+								@include bp768 {
+									width: 100%;
+								};
+							}
+
+							.inputBox_right{
+								width: 650px;
+								margin-left: 0;
+
+								@include bp1200 {
+									width: 75%;
+								};
+
+								@include bp768 {
+									width: 100%;
+									margin-bottom: 0;
+								};
+
+								.orderDetailAbout{
+									display: flex;
+									justify-content: space-between;
+									flex-wrap: wrap;
+
+									dt{
+										width: 120px;
+										margin: 6px 0;
+
+										@include bp1200 {
+											width: 32.5%;
+										};
+									}
+
+									dd{
+										width: 530px;
+										margin: 6px 0;
+
+										@include bp1200 {
+											width: 67.5%;
+										};
+									}
+								}
+
+								.itemTtl{
+									margin-bottom: 24px; 
+								}
+
+								.itemTtl_name{
+									letter-spacing: 0;
+									font-size: 14px;
+									line-height: 22.4px;
+									margin-bottom: 15px;
+
+									@include bp768 {
+										font-size: 13px;
+										line-height: 19.5px;
+										margin-bottom: 8px;
+									};
+								}
+
+								.itemTtl_pdc{
+									letter-spacing: 0;
+									font-size: 11px;
+									line-height: 18px;
+									font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+								}
+
+								.orderDetailSumBox{
+									width: 220px;
+									margin-top: 40px;
+
+									@include bp768 {
+										width: 100%;
+										margin-top: 32px;
+										background: #EAE6E5;
+										padding: 20px 40px;
+										box-sizing: border-box;
+									};
+
+									.orderSum{
+										display: flex;
+										justify-content: space-between;
+										flex-wrap: wrap;
+
+										dt{
+											width: 60%;
+											line-height: 1;
+											margin-bottom: 14px;
+
+											.taxSmall{
+												font-size: 11px;
+											}
+										}
+
+										dd{
+											width: 40%;
+											text-align: right;
+											line-height: 1;
+											margin-bottom: 14px;
+										}
+
+										.discountTxt{
+											color: #AD2E24;
+										}
+
+										&.resultOrder{
+											border-top: 1px solid #2E0E02;
+											padding-top: 16px;
+											margin-top: 6px;
+
+											dt{
+												margin-bottom: 0;
+											}
+
+											dd{
+												margin-bottom: 0;
+											}
+										}
+									}
+								}
+
+								&.noBorderB{
+									border-bottom: none;
+								}
+							}
+						}
 					}
 
 					&.noBorderB{
@@ -472,30 +823,235 @@ $bp768: 768px;  // スマホ
 						letter-spacing: 0;
 						font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
 
+						@include bp768 {
+							display: block;
+							border-bottom: 1px solid #EAE6E5;
+						};
+
 						&_left{
 							width: 130px;
 							margin-bottom: 10px;
 							line-height: 19.5px;
+							color: #3D3D3D;
+
+							@include bp1200 {
+								width: 25%;
+							};
+
+							@include bp768 {
+								width: auto;
+								margin-bottom: 0;
+								color: #878787;
+								line-height: 2;
+							};
 						}
 
 						&_right{
 							width: 650px;
 							margin-bottom: 10px;
 							line-height: 19.5px;
+
+							@include bp1200 {
+								width: 75%;
+							};
+
+							@include bp768 {
+								width: auto;
+								margin-bottom: 25px;
+								line-height: 2;
+							};
+						}
+					}
+
+					&.orderHistoryList{
+						display: flex;
+						justify-content: space-between;
+
+						@include bp768 {
+							display: block;
+							border-bottom: 1px solid #EAE6E5;
+							padding-bottom: 24px;
+						};
+
+						.orderHistoryList_left{
+							width: 376px;
+
+							@include bp768 {
+								width: 100%;
+							};
+
+							&--column{
+								display: flex;
+								justify-content: space-between;
+								margin-bottom: 24px;
+
+								.itemImage{
+									width: 120px;
+
+									@include bp768 {
+										width: 23.5%;
+									};
+								}
+
+								.itemTtl{
+									width: 240px;
+
+									@include bp768 {
+										width: 71%;
+									};
+
+									&_name{
+										letter-spacing: 0;
+										font-size: 14px;
+										line-height: 22.4px;
+										margin-bottom: 15px;
+
+										@include bp768 {
+											font-size: 13px;
+											line-height: 19.5px;
+											margin-bottom: 8px;
+										};
+									}
+
+									&_pdc{
+										letter-spacing: 0;
+										font-size: 11px;
+										line-height: 18px;
+										font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+									}
+								}
+							}
+						}
+
+						.orderHistoryList_right{
+							width: 300px;
+							background: rgba(234,230,229,.5);
+							padding: 24px;
+							box-sizing: border-box;
+
+							@include bp768 {
+								width: 100%;
+							};
+
+							dl{
+								display: flex;
+								justify-content: space-between;
+								flex-wrap: wrap;
+								margin-bottom: 24px;
+
+								@include bp768 {
+									margin-bottom: 16px;
+								};
+
+								dt{
+									width: 112px;
+									@include font-weight(bold);
+									font-size: 14px;
+									line-height: 1;
+									color: #3D3D3D;
+									margin-bottom: 10px;
+
+									@include bp768 {
+										width: 40%;
+										font-size: 13px;
+									};
+								}
+
+								dd{
+									width: 140px;
+									font-size: 14px;
+									line-height: 1;
+									color: #3D3D3D;
+									font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+									margin-bottom: 10px;
+
+									@include bp768 {
+										width: 60%;
+										font-size: 13px;
+									};
+								}
+							}
+
+							.orderHistoryBtnDetail{
+								width: 120px;
+								height: 32px;
+								line-height: 32px;
+								text-align: center;
+								background: #2E0E02;
+								font-size: 12px;
+								color: #fff;
+								margin: auto;
+
+								@include bp768 {
+									width: 40%;
+								};
+							}
+						}
+					}
+
+					&.creditListBox{
+						#ctl00_ContentPlaceHolder1_upUpdatePanel{
+							@include bp1200 {
+								width: 100%;
+							};
+
+							tr{
+								@include bp1200 {
+									width: 100vw;
+									display: inline-block;
+								};
+
+								@include bp768 {
+									width: 100%;
+								};
+
+								.inputBox_left{
+									@include bp1200 {
+										width: 20%;
+									};
+
+									@include bp768 {
+										width: auto;
+									};
+								}
+
+								.inputBox_right{
+									@include bp1200 {
+										width: 35%;
+									};
+
+									@include bp768 {
+										width: 100%;
+									};
+								}
+							}
 						}
 					}
 				}
 
 				&--ps{
 					margin-top: 60px;
+
+					@include bp768 {
+						margin-top: 0;
+					};
 				}
 
 				.agreementTxt{
 					margin-bottom: 40px;
 
+					@include bp768 {
+						margin-bottom: 30px;
+					};
+
 					p{
 						text-align: center;
 						line-height: 1;
+
+						@include bp768 {
+							text-align: left;
+							line-height: 2;
+						};
 
 						a{
 							color: #968680;
@@ -545,6 +1101,18 @@ $bp768: 768px;  // スマホ
 		.userBread{
 			width: 1120px;
 			margin: 0 auto 40px;
+			
+			@include bp1200 {
+				width: 100%;
+				padding: 0 40px;
+				box-sizing: border-box;
+			};
+			
+			@include bp768 {
+				width: 100%;
+				margin: 0 auto 20px;
+				padding: 0 18px;
+			};
 
 			ul{
 				text-align: right;
@@ -555,6 +1123,10 @@ $bp768: 768px;  // スマホ
 					color: #C6C6C6;
 					line-height: 1;
 					display: inline-block;
+			
+					@include bp768 {
+						font-size: 11px;
+					};
 
 					a{
 						font-size: 12px;
@@ -562,6 +1134,10 @@ $bp768: 768px;  // スマホ
 						color: #C6C6C6;
 						line-height: 1;
 						display: inline;
+			
+						@include bp768 {
+							font-size: 11px;
+						};
 					}
 				}
 			}
@@ -569,6 +1145,10 @@ $bp768: 768px;  // スマホ
 
 		#Foot{
 			border-top: none;
+
+			@include bp768 {
+			    border-top: 1px solid #ccc;
+			};
 
 			.sec--news{
 				display: none;
@@ -578,6 +1158,10 @@ $bp768: 768px;  // スマホ
 		.submitBtnBox{
 			width: 320px;
 			margin: 40px auto 80px;
+
+			@include bp768 {
+				width: 70%;
+			};
 		}
 
 		.allBtnBox{
@@ -585,6 +1169,26 @@ $bp768: 768px;  // スマホ
 			margin: 60px auto 80px;
 			display: flex;
 			justify-content: space-between;
+
+			@include bp768 {
+				width: 70%;
+				flex-wrap: wrap;
+			};
+
+			a{
+				&:first-child{
+					@include bp768 {
+						order: 2;
+					};
+				}
+
+				&:last-child{
+					@include bp768 {
+						order: 1;
+						margin-bottom: 16px;
+					};
+				}
+			}
 		}
 
 		.prevBtn{
@@ -597,6 +1201,12 @@ $bp768: 768px;  // スマホ
 			position: relative;
 			border-radius: 2px;
 			border: 1px solid #2E0E02;
+
+			@include bp768 {
+				width: 100%;
+				height: 48px;
+				line-height: 48px;
+			};
 
 			&::after{
 				content: "";
@@ -614,6 +1224,13 @@ $bp768: 768px;  // スマホ
 				transform: rotate(-135deg);
 				border-top: 1.5px solid #2E0E02;
 				border-right: 1.5px solid #2E0E02;
+
+				@include bp768 {
+					width: 6px;
+					height: 6px;
+					border-top: 1px solid #2E0E02;
+					border-right: 1px solid #2E0E02;
+				};
 			}
 		}
 
@@ -627,6 +1244,12 @@ $bp768: 768px;  // スマホ
 			position: relative;
 			border-radius: 2px;
 			border: 1px solid #2E0E02;
+
+			@include bp768 {
+				width: 100%;
+				height: 48px;
+				line-height: 48px;
+			};
 
 			&::after{
 				content: "";
@@ -644,6 +1267,13 @@ $bp768: 768px;  // スマホ
 				transform: rotate(45deg);
 				border-top: 1.5px solid #fff;
 				border-right: 1.5px solid #fff;
+
+				@include bp768 {
+					width: 6px;
+					height: 6px;
+					border-top: 1px solid #fff;
+					border-right: 1px solid #fff;
+				};
 			}
 		}
 
@@ -656,6 +1286,19 @@ $bp768: 768px;  // スマホ
 			justify-content: space-between;
 			width: 1120px;
 			margin: 0 auto 80px;
+			
+			@include bp1200 {
+				width: 100%;
+				padding-left: 40px;
+				padding-right: 40px;
+				box-sizing: border-box;
+			};
+
+			@include bp768 {
+				display: block;
+				padding-left: 0;
+				padding-right: 0;
+			};
 
 			.mypageMenu{
 				width: 180px;
@@ -695,8 +1338,33 @@ $bp768: 768px;  // スマホ
 				}
 			}
 
+			#ctl00_ContentPlaceHolder1_upUpdatePanel{
+				@include bp1200 {
+					width: 75%;
+				};
+
+				@include bp768 {
+					width: 100%;
+				};
+
+				.mypageCts{
+					@include bp1200 {
+						width: 100%;
+					};
+				}
+			}
+
 			.mypageCts{
 				width: 860px;
+
+				@include bp1200 {
+					width: 75%;
+				};
+
+				@include bp768 {
+					width: 100%;
+					padding-top: 0;
+				};
 
 				h2{
 					font-size: 18px;
@@ -705,6 +1373,10 @@ $bp768: 768px;  // スマホ
 					@include font-weight(bold);
 					letter-spacing: 0.04em;
 					line-height: 1;
+
+					@include bp768 {
+						margin-bottom: 50px;
+					};
 				}
 
 				&_topBox{
@@ -712,12 +1384,21 @@ $bp768: 768px;  // スマホ
 					padding: 25px 40px;
 					box-sizing: border-box;
 
+					@include bp768 {
+						padding: 25px 18px;
+					};
+
 					&--ttl{
 						padding-bottom: 20px;
 						@include font-weight(bold);
 						border-bottom: 1px solid #EAE6E5;
 						margin-bottom: 20px;
 						line-height: 1;
+
+						@include bp768 {
+							padding-bottom: 15px;
+							margin-bottom: 40px;
+						};
 					}
 
 					ul{
@@ -726,18 +1407,44 @@ $bp768: 768px;  // スマホ
 						flex-wrap: wrap;
 						align-items: flex-end;
 
+						@include bp768 {
+							justify-content: inherit;
+						};
+
 						li{
 							line-height: 1;
 							margin-bottom: 25px;
 
+							@include bp768 {
+								margin-bottom: 40px;
+							};
+
 							&:nth-child(3n + 1){
 								width: 155px;
+
+								@include bp1200 {
+									width: 20%;
+								};
+
+								@include bp768 {
+									width: 100%;
+									margin-bottom: 12px;
+								};
 							}
 							
 							&:nth-child(3n +2){
 								width: 120px;
 								font-size: 18px;
 								@include font-weight(bold);
+
+								@include bp1200 {
+									width: 20%;
+								};
+
+								@include bp768 {
+									width: auto;
+									line-height: 2;
+								};
 
 								span{
 									font-size: 14px;
@@ -747,6 +1454,21 @@ $bp768: 768px;  // スマホ
 							&:nth-child(3n){
 								width: 505px;
 								font-size: 12px;
+
+								@include bp1200 {
+									width: 60%;
+								};
+
+								@include bp768 {
+									width: auto;
+									line-height: 2;
+								};
+							}
+							
+							&:nth-child(5){
+								@include bp768 {
+									margin-bottom: 0;
+								};
 							}
 						}
 					}
@@ -754,6 +1476,10 @@ $bp768: 768px;  // スマホ
 
 				.aboutRank{
 					margin-top: 15px;
+
+					@include bp768 {
+						margin-top: 0;
+					};
 
 					a{
 						text-align: right;
@@ -768,21 +1494,49 @@ $bp768: 768px;  // スマホ
 					display: flex;
 					flex-wrap: wrap;
 
+					@include bp768 {
+						justify-content: space-between;
+					};
+
 					ul{
 						width: 200px;
 						margin: 0 20px 40px 0;
+						position: relative;
+
+						@include bp1200 {
+							width: 22%;
+						};
+
+						@include bp768 {
+							width: 49%;
+							margin: 0 0 40px 0;
+						};
 
 						&:nth-child(4n){
 							margin-right: 0;
 						}
 
+						&:nth-last-child(-n + 2){
+							@include bp768 {
+								margin: 0 0 20px 0;
+							};
+						}
+
 						li{
 							&.favoriteAreaPic{
 								margin-bottom: 15px;
+
+								@include bp768 {
+									margin-bottom: 10px;
+								};
 							}
 
 							&.favoriteAreaName{
 								margin-bottom: 8px;
+
+								@include bp768 {
+									margin-bottom: 5px;
+								};
 
 								a{
 									line-height: 1;
@@ -798,8 +1552,45 @@ $bp768: 768px;  // スマホ
 									@include font-weight(bold);
 									line-height: 1;
 				    				font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+									@include bp768 {
+										font-size: 14px;
+									};
 				    			}
 							}
+
+							&.favoriteAreaDelete{
+								position: absolute;
+								top: 8px;
+								right: 8px;
+								width: 20px;
+
+								@include bp768 {
+									width: 16px;
+								};
+							}
+						}
+					}
+				}
+
+				.MypageCreditBox{
+					position: relative;
+
+					&_delete{
+						position: absolute;
+						top: 0;
+						right: 40px;
+
+						a{
+							color: #3D3D3D;
+							font-size: 11px;
+							line-height: 18px;
+							position: relative;
+							background: url(../../Contents/ImagesPkg/user/user/btn_off.pngg) no-repeat left top;
+							background-size: 18px 18px;
+							width: 45px;
+							text-align: right;
+							padding-top: 5px;
 						}
 					}
 				}
@@ -810,4 +1601,12 @@ $bp768: 768px;  // スマホ
 			display: none;
 		}
 	}
+}
+
+.mrgB0{
+	margin-bottom: 0 !important;
+}
+
+.pdgT0{
+	padding-top: 0 !important;
 }

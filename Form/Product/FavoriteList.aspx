@@ -72,9 +72,9 @@
 								<% } %>
 								<%-- △商品定期購入価格△ --%>
 							</li>
-							<li class="delete">
+							<li class="favoriteAreaDelete">
 								<!-- ///// お気に入りから削除 ///// -->
-								<asp:LinkButton id="lbDelete" Text="削除" CssClass="btn btn-mini" CommandArgument="<%# Eval(Constants.FIELD_FAVORITE_PRODUCT_ID) %>" OnClientClick="return confirm('本当に削除してもよろしいですか？')" OnClick="lbDelete_Click" runat="server"></asp:LinkButton>
+								<asp:LinkButton id="lbDelete" CommandArgument="<%# Eval(Constants.FIELD_FAVORITE_PRODUCT_ID) %>" OnClientClick="return confirm('本当に削除してもよろしいですか？')" OnClick="lbDelete_Click" runat="server"><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_star_favo.png" alt="削除"></asp:LinkButton>
 							</li>
 						</ul>
 				</ItemTemplate>

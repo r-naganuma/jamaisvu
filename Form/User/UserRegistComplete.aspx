@@ -12,7 +12,8 @@
 	<h2>会員登録</h2>
 
 	<%-- 会員登録系パンくず --%>
-	<img src="../../Contents/ImagesPkg/user/user/registration_step03.png" class="registStep" alt="登録完了" />
+	<img src="../../Contents/ImagesPkg/user/user/registration_step03.png" class="registStep pc_contents" alt="登録完了" />
+	<img src="../../Contents/ImagesPkg/user/user/registration_step03_sp.png" class="registStep sp_contents" alt="登録完了" />
 
 	<div class="registWrap_box">
 		<%-- メッセージ --%>
@@ -20,10 +21,8 @@
 			ご登録ありがとうございます
 		</p>
 		<p class="completeTxt02">
-			<%= WebSanitizer.HtmlEncode(ShopMessage.GetMessage("ShopName")) %>へのご登録ありがとうございます。<br>
-			登録完了メールをご登録のメールアドレスに送信しました。<br><br>
-			メールが届かない場合は、ご登録のメールアドレスが間違っている可能性がございます。<br>
-			マイページの「登録内容の確認・変更」からご確認ください。<br><br>
+			<%= WebSanitizer.HtmlEncode(ShopMessage.GetMessage("ShopName")) %>へのご登録ありがとうございます。<br class="pc_contents">登録完了メールをご登録のメールアドレスに送信しました。<br><br>
+			メールが届かない場合は、ご登録のメールアドレスが間違っている可能性がございます。<br class="pc_contents">マイページの「登録内容の確認・変更」からご確認ください。<br><br>
 			引き続き、お買い物をお楽しみください。
 		</p>
 		<div class="submitBtnBox">

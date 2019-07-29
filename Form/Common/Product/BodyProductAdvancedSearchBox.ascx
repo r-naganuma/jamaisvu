@@ -71,15 +71,23 @@
 	</td>
 </tr>
 <tr>
-	<td class="sort-size">
-		<div class="searchBox_list searchBox_size">
+	<td>
+		<!-- <div class="searchBox_list searchBox_price">
 			<p class="searchBox_list--ttl">価格タイプ</p>
 			<p class="searchBox_list--ttlSelect sp_contents"></p>
-			<ul class="searchBox_list--column searchBox_list--size">
-				<li></li>
-				<li><input id="ctl00_ContentPlaceHolder1_ctl00_size_1" type="radio" name="ctl00$ContentPlaceHolder1$ctl00$size" value="すべて"><label>すべて</label></li>
-				<li><input id="ctl00_ContentPlaceHolder1_ctl00_size_2" type="radio" name="ctl00$ContentPlaceHolder1$ctl00$size" value="REGULAR"><label>セール</label></li>
+			<ul class="searchBox_list--column searchBox_list--price">
+				<li><input id="priceAll" type="radio" name="searchPrice" value=""><label for="priceAll">すべて</label></li>
+				<li><input id="priceSale" type="radio" name="searchPrice" value="2"><label for="priceSale">セール</label></li>
 			</ul>
+		</div> -->
+		<div class="searchBox_list searchBox_price">
+			<p class="searchBox_list--ttl">価格タイプ</p>
+			<p class="searchBox_list--ttlSelect sp_contents">すべて</p>
+			<asp:RadioButtonList ID="sale" DataTextField="sale" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--price">
+				<asp:ListItem></asp:ListItem>
+				<asp:ListItem>すべて</asp:ListItem>
+				<asp:ListItem>セール</asp:ListItem>
+			</asp:RadioButtonList>
 		</div>
 	</td>
 </tr>
@@ -187,7 +195,7 @@
 	<td class="sort-size">
 		<div class="searchBox_list searchBox_size">
 			<p class="searchBox_list--ttl">サイズ</p>
-			<p class="searchBox_list--ttlSelect sp_contents"></p>
+			<p class="searchBox_list--ttlSelect sp_contents">すべて</p>
 			<asp:CheckBoxList ID="size" DataTextField="size" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--size">
 				<asp:ListItem>REGULAR</asp:ListItem>
 				<asp:ListItem>LOOSE</asp:ListItem>
@@ -200,7 +208,7 @@
 	<td>
 		<div class="searchBox_list searchBox_material">
 			<p class="searchBox_list--ttl">素材</p>
-			<p class="searchBox_list--ttlSelect sp_contents"></p>
+			<p class="searchBox_list--ttlSelect sp_contents">すべて</p>
 			<asp:CheckBoxList ID="material" DataTextField="material" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--material">
 				<asp:ListItem>ハミルトンラムウール</asp:ListItem>
 				<asp:ListItem>ペルビアンコットン</asp:ListItem>

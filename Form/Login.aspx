@@ -124,7 +124,7 @@
 				</div>
 			</div>
 			<% } %>
-			<p><a href="<%= Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_REGIST_INPUT + "?" + Constants.REQUEST_KEY_NEXT_URL + "=" + Server.UrlEncode(Request[Constants.REQUEST_KEY_NEXT_URL]) %>" class="loginBtn">メールアドレスで新規会員登録</a></p>
+			<p><a href="<%= Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_REGIST_INPUT + "?" + Constants.REQUEST_KEY_NEXT_URL + "=" + Server.UrlEncode(Request[Constants.REQUEST_KEY_NEXT_URL]) %>" class="loginBtn addressBtn">メールアドレスで新規会員登録</a></p>
 		</div>
 	</div>
 </div>

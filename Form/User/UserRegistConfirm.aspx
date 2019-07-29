@@ -12,7 +12,8 @@
 	<h2>会員登録</h2>
 
 	<%-- 会員登録系パンくず --%>
-	<img src="../../Contents/ImagesPkg/user/user/registration_step02.png" class="registStep" alt="会員情報確認" />
+	<img src="../../Contents/ImagesPkg/user/user/registration_step02.png" class="registStep pc_contents" alt="会員情報確認" />
+	<img src="../../Contents/ImagesPkg/user/user/registration_step02_sp.png" class="registStep sp_contents" alt="会員情報確認" />
 
 	<p class="catchTxt">
 		ご入力内容をご確認ください。<br>
