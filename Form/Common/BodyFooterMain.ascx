@@ -82,11 +82,6 @@
 			</li>
 			<li>
 				<a href="" target="_blank">
-					<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_twitter.png" alt="Twitter">
-				</a>
-			</li>
-			<li>
-				<a href="" target="_blank">
 					<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_fb.png" alt="Facebook">
 				</a>
 			</li>

@@ -11,13 +11,12 @@
 <%-- ▲削除禁止：クレジットカードTokenコントロール▲ --%>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <div class="registWrap mypageCts">
-	<h2>クレジットカード情報変更</h2>
+	<h2>クレジットカード情報追加</h2>
 
-	<p class="catchTxt">変更内容をご入力ください。<br>
-	有効期限を変更される場合も必ずカード番号を再度ご入力ください。</p>
+	<p class="catchTxt">登録内容をご入力ください。<br>
+	登録名はサイト内の表示に使われる名称です。</p>
 
 	<div class="registWrap_box">
-		<h3>クレジットカード情報</h3>
 		<div class="registWrap_box--input creditListBox">
 			
 			<%-- UPDATE PANEL開始 --%>
@@ -25,7 +24,7 @@
 			<ContentTemplate>
 			<table cellspacing="0" class="inputBox tableInputBox">
 				<tr>
-					<th class="inputBox_left must">カード登録名</th>
+					<th class="inputBox_left must">登録名</th>
 					<td class="inputBox_right">
 						<asp:TextBox id="tbUserCreditCardName" Runat="server" maxlength="30" CssClass="nameCreditCard"></asp:TextBox>
 						<asp:CustomValidator ID="cvUserCreditCardName" runat="Server"

@@ -18,45 +18,42 @@
 		<!-- <strong>
 			<span><asp:Literal ID="lDeleteMessage" Runat="server" Text="登録クレジットカードを削除致しました。" Visible="false"></asp:Literal></span>
 		</strong> -->
-		<div class="submitBtnBox">
-			<asp:LinkButton id="lbInsert" runat="server" OnClick="lbInsert_Click" class="nextBtn">クレジットカードの追加</asp:LinkButton>
-		</div>
 		<asp:Repeater id="rUserCreditCardList" ItemType="w2.App.Common.Order.UserCreditCard" runat="server" OnItemCommand="rUserCreditCardList_ItemCommand">
 			<ItemTemplate>
 				<div class="MypageCreditBox">
 					<h3><%#: Item.CardDispName %></h3>
 					<div class="registWrap_box--input">
-						<dl class="inputBox">
+						<dl class="inputBox inputBox_confirm noSepa">
 							<%if (OrderCommon.CreditCompanySelectable) {%>
-							<dt>
+							<dt class="inputBox_left">
 								カード会社
 							</dt>
-							<dd>
+							<dd class="inputBox_right">
 								<%#: Item.CompanyName %>
 							</dd>
 							<%} %>
-							<dt>
+							<dt class="inputBox_left">
 								カード名義
 							</dt>
-							<dd>
+							<dd class="inputBox_right">
 								<%#: Item.AuthorName %>
 							</dd>
-							<dt>
+							<dt class="inputBox_left">
 								カード番号
 							</dt>
-							<dd>
+							<dd class="inputBox_right">
 								**** **** **** <%#: Item.LastFourDigit %>
 							</dd>
-							<dt>
+							<dt class="inputBox_left">
 								有効期限
 							</dt>
-							<dd>
+							<dd class="inputBox_right">
 								<%#: Item.ExpirationMonth %> 月　/　<%#: Item.ExpirationYear %> 年
 							</dd>
-							<dt>
+							<dt class="inputBox_left">
 								セキュリティコード
 							</dt>
-							<dd>
+							<dd class="inputBox_right">
 								***
 							</dd>
 						</dl>
@@ -69,8 +66,9 @@
 		</asp:Repeater>
 		<!-- <asp:Literal ID="lErrorMessage" Runat="server"></asp:Literal> -->
 
-		<div class="submitBtnBox">
+		<div class="allBtnBox">
 			<a href="javascript:history.back()" class="prevBtn">戻る</a>
+			<asp:LinkButton id="lbInsert" runat="server" OnClick="lbInsert_Click" class="nextBtn">クレジットカードの追加</asp:LinkButton>
 		</div>
 	</div>
 </div>

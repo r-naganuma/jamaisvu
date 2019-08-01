@@ -21,7 +21,7 @@
 <%@ Register TagPrefix="uc" TagName="Parts000TMPL_003" Src="~/Page/Parts/Parts000TMPL_003.ascx" %>
 <%-- △ユーザーコントロール宣言領域△ --%>
 <%@ Register TagPrefix="uc" TagName="Criteo" Src="~/Form/Common/Criteo.ascx" %>
-<%@ page language="C#" masterpagefile="~/Form/Common/DefaultPage.master" autoeventwireup="true" inherits="Default, App_Web_default.aspx.cdcab7d2" title="ｗ２ショッピングデモサイト トップページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/DefaultPage.master" autoeventwireup="true" inherits="Default, App_Web_default.aspx.cdcab7d2" title="Jamais Vu オンラインストア" %>
 <%--
 
 下記は保持用のダミー情報です。削除しないでください。

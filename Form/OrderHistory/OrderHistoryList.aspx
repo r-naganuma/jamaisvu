@@ -45,10 +45,14 @@
 									<div class="orderHistoryList_left--column">
 										<a href='<%#: Constants.PATH_ROOT + Constants.PAGE_FRONT_ORDER_HISTORY_DETAIL + "?" + Constants.REQUEST_KEY_ORDER_ID + "=" + HttpUtility.UrlEncode((string)DataBinder.Eval(((RepeaterItem)Container.Parent.Parent).DataItem, Constants.FIELD_ORDER_ORDER_ID)) %>'></a>
 										<div class="itemImage">
-											<w2c:ProductImage ImageSize="L" ProductMaster="<%# Item.DataSource %>" IsVariation="true" runat="server" Visible="true" />
+											<a href='<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrl(Container.DataItem)) %>'>
+												<w2c:ProductImage ImageSize="L" ProductMaster="<%# Item.DataSource %>" IsVariation="true" runat="server" Visible="true" />
+											</a>
 										</div>
 										<div class="itemTtl">
-											<p class="itemTtl_name"><%#: Item.ProductName %></p>
+											<a href='<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrl(Container.DataItem)) %>'>
+												<p class="itemTtl_name"><%#: Item.ProductName %></p>
+											</a>
 											<p class="itemTtl_pdc">
 												価格　：<%#: Item.ItemPrice %><br>
 												数量　：<%#: Item.ItemQuantity %></p>

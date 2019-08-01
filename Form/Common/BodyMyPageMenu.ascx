@@ -35,6 +35,24 @@ $(function(){
     if(document.URL.match("UserCreditCardConfirm.aspx")) {
     	$("li.myPegeCreditBtn").addClass("on");
     }
+    if(document.URL.match("UserShippingList.aspx")) {
+    	$("li.myPegeAddressBtn").addClass("on");
+    }
+    if(document.URL.match("UserShippingInput.aspx")) {
+    	$("li.myPegeAddressBtn").addClass("on");
+    }
+    if(document.URL.match("UserShippingConfirm.aspx")) {
+    	$("li.myPegeAddressBtn").addClass("on");
+    }
+    if(document.URL.match("OrderHistory")) {
+    	$("li.myPegeHistoryBtn").addClass("on");
+    }
+    if(document.URL.match("UserWithdrawalInput.aspx")) {
+    	$("li.myPegeWithdrawalBtn").addClass("on");
+    }
+    if(document.URL.match("UserWithdrawalComplete.aspx")) {
+    	$("li.myPegeWithdrawalBtn").addClass("on");
+    }
 })
 </script>
 <div class="mypageWrap topSpace">
@@ -49,6 +67,8 @@ $(function(){
 			<li class="myPegeCreditBtn"><a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_CREDITCARD_LIST) %>">
 				クレジットカード情報</a></li>
 			<%} %>
+			<li class="myPegeAddressBtn"><a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_SHIPPING_LIST) %>">
+				お届け先情報</a></li>
 			<%if (Constants.W2MP_COUPON_OPTION_ENABLED) { %>
 			<li class="myPegeCouponBtn"><a href="<%: Constants.PATH_ROOT + Constants.PAGE_FRONT_COUPON_BOX %>">
 				クーポン</a></li>
@@ -82,8 +102,6 @@ $(function(){
 	        </li>
 			<li class="myPegeWithdrawalBtn"><a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_WITHDRAWAL_INPUT) %>">
 				退会手続き</a></li>
-			<li style="display: none;"><a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_SHIPPING_LIST) %>">
-				アドレス帳</a></li>
 			<%if (Constants.W2MP_POINT_OPTION_ENABLED) { %>
 			<li style="display: none;"><a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_USERPOINTHISTORY_LIST) %>">
 				ポイント履歴一覧</a></li>

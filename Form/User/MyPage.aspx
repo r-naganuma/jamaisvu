@@ -12,28 +12,13 @@
 	<div class="mypageCts">
 		<h2>マイページ</h2>
 		<div class="mypageCts_topBox">
-			<p class="mypageCts_topBox--ttl">ポイント・会員ランク</p>
+			<p class="mypageCts_topBox--ttl">会員ランク</p>
 			<%if (this.LastLoggedinDate != "") { %>
 				<h4 style="display: none;">前回ログイン日時：<%: DateTimeUtility.ToStringFromRegion(this.LastLoggedinDate, DateTimeUtility.FormatType.LongDateHourMinute1Letter) %>
 				</h4>
 			<%} %>
-			<%-- ▽ポイントオプション利用時▽ --%>
-			<%if (Constants.W2MP_POINT_OPTION_ENABLED) {%>
-			<ul>
-				<li>
-					保有ポイント
-				</li>
-				<li>
-					<%: GetNumeric(this.LoginUserPointUsable) %> <span class="pointTxt">ポイント</span>
-				</li>
-				<li>
-					（有効期限 <%: DateTimeUtility.ToStringFromRegion(this.LoginUserPointExpiry, DateTimeUtility.FormatType.LongDate1Letter) %>）
-				</li>
-			<%} %>
 			<%if (HasLoginMemberRank()) { %>
-				<li>
-					会員ランク
-				</li>
+			<ul>
 				<li>
 					<%: this.MemberRankName %>
 				</li>
@@ -55,7 +40,6 @@
 			<%} %>
 			</ul>
 			<div class="aboutRank">
-				<a href="">ポイントについて</a>
 				<a href="">会員ランクについて</a>
 			</div>
 		</div>

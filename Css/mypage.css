@@ -388,6 +388,12 @@
   position: relative;
 }
 
+@media (max-width: 768px) {
+  #Wrap .userWrap .registWrap_box--input .inputBox_left.must {
+    padding-left: 45px;
+  }
+}
+
 #Wrap .userWrap .registWrap_box--input .inputBox_left.must::after {
   content: "必須";
   position: absolute;
@@ -407,7 +413,8 @@
 
 @media (max-width: 768px) {
   #Wrap .userWrap .registWrap_box--input .inputBox_left.must::after {
-    right: -45px;
+    right: inherit;
+    left: 0;
   }
 }
 
@@ -451,9 +458,11 @@
   }
 }
 
-#Wrap .userWrap .registWrap_box--input .inputBox_right.noBBsp {
-  margin-bottom: 0;
-  border-bottom: none;
+@media (max-width: 768px) {
+  #Wrap .userWrap .registWrap_box--input .inputBox_right.noBBsp {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 #Wrap .userWrap .registWrap_box--input .inputBox_right input {
@@ -930,6 +939,12 @@
 
 #Wrap .userWrap .registWrap_box--input .inputBox.orderDetailArea .inputBox_right.noBorderB {
   border-bottom: none;
+}
+
+#Wrap .userWrap .registWrap_box--input .inputBox.noSepa {
+  -webkit-box-pack: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
 }
 
 #Wrap .userWrap .registWrap_box--input.noBorderB {
@@ -1848,6 +1863,7 @@
 
 #Wrap .userWrap .mypageWrap .mypageCts .MypageCreditBox {
   position: relative;
+  margin-bottom: 60px;
 }
 
 #Wrap .userWrap .mypageWrap .mypageCts .MypageCreditBox_delete {
@@ -1861,11 +1877,27 @@
   font-size: 11px;
   line-height: 18px;
   position: relative;
-  background: url(../../Contents/ImagesPkg/user/user/btn_off.pngg) no-repeat left top;
+  background: url(../../Contents/ImagesPkg/user/user/btn_off.png) no-repeat left 4px;
   background-size: 18px 18px;
   width: 45px;
   text-align: right;
   padding-top: 5px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts .MypageCreditBox_edit {
+  position: absolute;
+  top: 183px;
+  right: 40px;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts .MypageCreditBox_edit a {
+  color: #2E0E02;
+  font-size: 12px;
+  background: #F4F2F2;
+  width: 64px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
 }
 
 #Wrap .userWrap .displayNone {

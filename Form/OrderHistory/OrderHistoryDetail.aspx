@@ -517,7 +517,7 @@
 								</td>
 							</tr>
 							<% if (Constants.DISPLAY_CORPORATION_ENABLED){ %>
-							<tr>
+							<tr style="display: none;">
 								<%-- 企業名・部署名 --%>
 								<th><%: ReplaceTag("@@User.company_name.name@@")%>・
 									<%: ReplaceTag("@@User.company_post_name.name@@")%></th>
@@ -878,7 +878,7 @@
 							</td>
 						</tr>
 						<div visible='<%# (string)GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_ORDERSHIPPING_SHIPPING_METHOD) != Constants.FLG_SHOPSHIPPINGSHIPPINGCOMPANY_SHIPPING_KBN_MAIL %>' runat="server">
-							<tr runat="server" visible='<%# (string)GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_SHOPSHIPPING_SHIPPING_DATE_SET_FLG) == Constants.FLG_SHOPSHIPPING_SHIPPING_DATE_SET_FLG_VALID %>'>
+							<tr style="display: none;" runat="server" visible='<%# (string)GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_SHOPSHIPPING_SHIPPING_DATE_SET_FLG) == Constants.FLG_SHOPSHIPPING_SHIPPING_DATE_SET_FLG_VALID %>'>
 								<th>配送希望日</th>
 								<td>
 									<asp:DropDownList ID="ddlShippingDateList" Visible="false" runat="server" DataSource="<%# GetListShippingDate() %>" DataTextField="text" DataValueField="value"></asp:DropDownList>
@@ -890,7 +890,7 @@
 									<asp:Label ID="lShippingDateErrorMessage" CssClass="fred" runat="server" Visible="false"></asp:Label>
 								</td>
 							</tr>
-							<tr id="trShippingDateInput" visible='false'  runat="server">
+							<tr style="display: none;" id="trShippingDateInput" visible='false'  runat="server">
 								<th></th>
 								<td>
 									<div id="divShippingDateUpdateButtons" style="display: block"> 
@@ -910,7 +910,7 @@
 									<%#: DateTimeUtility.ToStringFromRegion(GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_ORDERSHIPPING_SCHEDULED_SHIPPING_DATE), DateTimeUtility.FormatType.LongDateWeekOfDay2Letter, ReplaceTag("@@DispText.shipping_date_list.none@@")) %>
 								</td>
 							</tr>
-							<tr runat="server" visible='<%# (string)GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_DELIVERYCOMPANY_SHIPPING_TIME_SET_FLG) == Constants.FLG_DELIVERYCOMPANY_SHIPPING_TIME_SET_FLG_VALID %>'>
+							<tr style="display: none;" runat="server" visible='<%# (string)GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_DELIVERYCOMPANY_SHIPPING_TIME_SET_FLG) == Constants.FLG_DELIVERYCOMPANY_SHIPPING_TIME_SET_FLG_VALID %>'>
 								<th>配送希望時間帯</th>
 								<td>
 									<asp:DropDownList ID="ddlShippingTimeList" Visible="false" runat="server" DataSource='<%# GetShippingTimeList((string)GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_ORDERSHIPPING_DELIVERY_COMPANY_ID)) %>' DataTextField="text" DataValueField="value" ></asp:DropDownList>
@@ -921,7 +921,7 @@
 									<div style="text-align:right; padding-top:30px;"><%#: this.ExplanationShippingTimes[Container.ItemIndex] %></div>
 								</td>
 							</tr>
-							<tr id="trShippingTimeInput" visible='false'  runat="server">
+							<tr style="display: none;" id="trShippingTimeInput" visible='false'  runat="server">
 								<th></th>
 								<td>
 									<div id="divShippingTimeUpdateButtons" style="display: block"> 

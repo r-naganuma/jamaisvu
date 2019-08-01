@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+=========================================================================================================
+  Module      : エラーメッセージXML(ErrorMessages.xml)
+ ･･･････････････････････････････････････････････････････････････････････････････････････････････････････
+  Copyright   : Copyright w2solution Co.,Ltd. 2009 All Rights Reserved.
+=========================================================================================================
+-->
+<ErrorMessages>
+
+  <!--===============================================================================-->
+  <!-- システム系エラー -->
+  <!--===============================================================================-->
+  <ERRMSG_404_ERROR><![CDATA[該当ページが見つかりませんでした。]]></ERRMSG_404_ERROR>
+
+  <!--===============================================================================-->
+  <!-- 共通系エラー -->
+  <!--===============================================================================-->
+  <ERRMSG_FRONT_NO_PARAM>
+    <![CDATA[必要なパラメタ情報が取得できませんでした。
+  処理のはじめからやり直してください。]]>
+  </ERRMSG_FRONT_NO_PARAM>
+  <ERRMSG_FRONT_IRREGULAR_PARAMETER_ERROR><![CDATA[不正なパラメタです。]]></ERRMSG_FRONT_IRREGULAR_PARAMETER_ERROR>
+
+  <!--===============================================================================-->
+  <!-- セッション系エラー -->
+  <!--===============================================================================-->
+  <ERRMSG_FRONT_NO_USER_SESSION><![CDATA[この機能を利用するにはログインが必要です。]]></ERRMSG_FRONT_NO_USER_SESSION>
+  <ERRMSG_FRONT_INCORRECT_NEXTURL_SESSION>
+    <![CDATA[必要なパラメタ情報が取得できませんでした。
+  処理のはじめからデータを入力しなおしてください。]]>
+  </ERRMSG_FRONT_INCORRECT_NEXTURL_SESSION>
+  <ERRMSG_FRONT_CART_SESSION_VANISHED>
+    <![CDATA[一定時間操作がなかったためカート情報(及びログイン情報)が消失しました。
+  お手数ですが、はじめからやり直して頂くようお願い致します。]]>
+  </ERRMSG_FRONT_CART_SESSION_VANISHED>
+  <ERRMSG_FRONT_CART_ALREADY_ORDERED>
+    <![CDATA[カートに商品が入っていません。すでに注文完了している可能性があります。
+  注文時にお送りしているメールをご確認ください。]]>
+  </ERRMSG_FRONT_CART_ALREADY_ORDERED>
+
+  <!--===============================================================================-->
+  <!-- ユーザー情報系エラー -->
+  <!--===============================================================================-->
+  <ERRMSG_FRONT_USER_LOGIN_ERROR>
+    <![CDATA[ログインIDまたはパスワードが違います。
+  ユーザログインに失敗しました。]]>
+  </ERRMSG_FRONT_USER_LOGIN_ERROR>
+  <ERRMSG_FRONT_USER_LOGIN_IN_MAILADDR_ERROR>
+    <![CDATA[メールアドレスまたはパスワードが違います。
+  ユーザログインに失敗しました。]]>
+  </ERRMSG_FRONT_USER_LOGIN_IN_MAILADDR_ERROR>
+  <ERRMSG_FRONT_COOPERATE_WITH_SOMEONE>
+    <![CDATA[認証を行いましたがすでに別のユーザーに連携されているため、連携できません。]]>
+  </ERRMSG_FRONT_COOPERATE_WITH_SOMEONE>
+  <ERRMSG_FRONT_USER_LOGIN_ACCOUNT_LOCK><![CDATA[誤ったユーザIDとパスワードで一定回数以上ログインが行われました。
+  セキュリティ確保のため、一旦ログイン処理を停止させていただきます。
+  ご登録いただいているユーザ ID とパスワードをお確かめのうえ、
+  時間をおいてから再度お試しください。
+  ]]></ERRMSG_FRONT_USER_LOGIN_ACCOUNT_LOCK>
+  <ERRMSG_FRONT_PASSWORD_REMINDER_NO_USER><![CDATA[該当する会員情報が取得できませんでした。]]></ERRMSG_FRONT_PASSWORD_REMINDER_NO_USER>
+  <ERRMSG_FRONT_ZIPCODE_NO_ADDR><![CDATA[該当する住所が取得できませんでした。]]></ERRMSG_FRONT_ZIPCODE_NO_ADDR>
+  <ERRMSG_FRONT_USERSHIPPING_NO_SHIPPING><![CDATA[現在、アドレス帳には配送先情報が登録されていません。]]></ERRMSG_FRONT_USERSHIPPING_NO_SHIPPING>
+  <ERRMSG_FRONT_USERCREDITCARD_NO_CARD><![CDATA[現在、クレジットカードは登録されていません。]]></ERRMSG_FRONT_USERCREDITCARD_NO_CARD>
+  <ERRMSG_FRONT_USER_POINT_HISTORY_UNDISP><![CDATA[現在、ポイント履歴はありません。]]></ERRMSG_FRONT_USER_POINT_HISTORY_UNDISP>
+  <ERRMSG_FRONT_MAILMAGAZINE_CANCEL_NO_MAILADDR><![CDATA[入力されたメールアドレスは存在しません。]]></ERRMSG_FRONT_MAILMAGAZINE_CANCEL_NO_MAILADDR>
+  <ERRMSG_FRONT_MAILMAGAZINE_CANCEL_NO_USER><![CDATA[入力されたメールアドレスは既に配信解除されています。]]></ERRMSG_FRONT_MAILMAGAZINE_CANCEL_NO_USER>
+  <ERRMSG_FRONT_PASSWORD_BEFORE_CHECK><![CDATA[変更前パスワードが正しくありません。]]></ERRMSG_FRONT_PASSWORD_BEFORE_CHECK>
+  <ERRMSG_FRONT_PASSWORDREMINDER_AUTHENTICATION_NO_KEY><![CDATA[本人認証に失敗しました。
+  もう一度パスワードリマインダー画面からやり直して下さい。]]></ERRMSG_FRONT_PASSWORDREMINDER_AUTHENTICATION_NO_KEY>
+  <ERRMSG_FRONT_PASSWORDREMINDER_CHANGE_TRIAL_LIMIT_COUNT_OVER><![CDATA[パスワード変更試行回数がオーバーしました。
+  お手数ですが、再度ログインページの「パスワードを忘れた方はこちら」から
+  設定をお願いします。]]></ERRMSG_FRONT_PASSWORDREMINDER_CHANGE_TRIAL_LIMIT_COUNT_OVER>
+  <ERRMSG_FRONT_SERIALKEY_AUTH_FAILURE><![CDATA[認証に失敗しました。注文番号およびシリアルキーを確認してください。]]></ERRMSG_FRONT_SERIALKEY_AUTH_FAILURE>
+  <ERRMSG_FRONT_SERIALKEY_KEY_CANCELLED><![CDATA[認証に失敗しました。このシリアルキーは無効になっています。]]></ERRMSG_FRONT_SERIALKEY_KEY_CANCELLED>
+  <ERRMSG_FRONT_SERIALKEY_KEY_EXPIRED><![CDATA[認証に失敗しました。シリアルキーの有効期限が切れています。]]></ERRMSG_FRONT_SERIALKEY_KEY_EXPIRED>
+  <ERRMSG_FRONT_SERIALKEY_AUTH_FAILURE_EMPTY_URL><![CDATA[このデジタルコンテンツにはダウンロードURLが設定されていません。]]></ERRMSG_FRONT_SERIALKEY_AUTH_FAILURE_EMPTY_URL>
+
+  <!--  シングルサインオン系エラー -->
+  <ERRMSG_FRONT_USER_LOGIN_FOR_SINGLESIGNON><![CDATA[ログイン認証に失敗しました。]]></ERRMSG_FRONT_USER_LOGIN_FOR_SINGLESIGNON>
+
+  <!--===============================================================================-->
+  <!-- 商品系エラー -->
+  <!--===============================================================================-->
+  <ERRMSG_FRONT_PRODUCT_NO_ITEM><![CDATA[該当する商品がありません。]]></ERRMSG_FRONT_PRODUCT_NO_ITEM>
+  <ERRMSG_FRONT_PRODUCT_UNDISP><![CDATA[該当商品が表示できませんでした。]]></ERRMSG_FRONT_PRODUCT_UNDISP>
+  <ERRMSG_FRONT_PRODUCTSEARCH_WORDS_NUMOVER>
+    <![CDATA[商品検索は５ワードまでとなります。
+  検索ワードを５つに絞って再度検索してください。]]>
+  </ERRMSG_FRONT_PRODUCTSEARCH_WORDS_NUMOVER>
+
+  <ERRMSG_FRONT_PRODUCTSET_NOPRODUCT><![CDATA[対象商品が見つかりませんでした。]]></ERRMSG_FRONT_PRODUCTSET_NOPRODUCT>
+  <ERRMSG_FRONT_PRODUCTSET_UNSELECTED_PRODUCT><![CDATA[セット購入する商品を最低１つは選択してください。]]></ERRMSG_FRONT_PRODUCTSET_UNSELECTED_PRODUCT>
+
+  <ERRMSG_FRONT_CLOSEDMARKET_PASSOWRD_ERROR><![CDATA[パスワードが間違っています。]]></ERRMSG_FRONT_CLOSEDMARKET_PASSOWRD_ERROR>
+  <ERRMSG_FRONT_CLOSEDMARKET_PREPARING_ERROR><![CDATA[当闇市は準備中の為ログインできません。]]></ERRMSG_FRONT_CLOSEDMARKET_PREPARING_ERROR>
+  <ERRMSG_FRONT_CLOSEDMARKET_ENDED_ERROR><![CDATA[当闇市は開催終了した為ログインできません。]]></ERRMSG_FRONT_CLOSEDMARKET_ENDED_ERROR>
+  <ERRMSG_FRONT_CLOSEDMARKET_INVALID_ERROR><![CDATA[当闇市は有効ではない為ログインできません。]]></ERRMSG_FRONT_CLOSEDMARKET_INVALID_ERROR>
+
+  <!--===============================================================================-->
+  <!-- マイページ系エラー -->
+  <!--===============================================================================-->
+  <ERRMSG_FRONT_FAVORITE_NO_ITEM><![CDATA[現在、お気に入りリストには商品が入っていません。]]></ERRMSG_FRONT_FAVORITE_NO_ITEM>
+  <ERRMSG_FRONT_ORDERHISTORY_NO_ITEM><![CDATA[現在、注文履歴はありません。 ]]></ERRMSG_FRONT_ORDERHISTORY_NO_ITEM>
+  <ERRMSG_FRONT_ORDERHISTORY_UNDISP><![CDATA[該当注文履歴が表示できませんでした。]]></ERRMSG_FRONT_ORDERHISTORY_UNDISP>
+  <ERRMSG_FRONT_COUPONBOX_NO_ITEM><![CDATA[現在、ご利用いただけるクーポンはありません。]]></ERRMSG_FRONT_COUPONBOX_NO_ITEM>
+
+  <ERRMSG_FRONT_FIXEDPURCHASE_UNDISP><![CDATA[該当定期購入情報が表示できませんでした。]]></ERRMSG_FRONT_FIXEDPURCHASE_UNDISP>
+  <ERRMSG_FRONT_FIXEDPURCHASE_CARD_AUTH_SUCCESS><![CDATA[クレジットカードの登録が完了しました。]]></ERRMSG_FRONT_FIXEDPURCHASE_CARD_AUTH_SUCCESS>
+  <ERRMSG_FRONT_FIXEDPURCHASE_CARD_AUTH_FAILED>
+    <![CDATA[クレジットカードの登録に失敗しました。
+  カード情報に誤りがあるかカードが利用できない可能性があります。]]>
+  </ERRMSG_FRONT_FIXEDPURCHASE_CARD_AUTH_FAILED>
+
+  <!-- 受信メールデータなしエラー -->
+  <ERRMSG_FRONT_USERRECIEVEMAIL_NO_LIST><![CDATA[現在、受信したメールはありません。]]></ERRMSG_FRONT_USERRECIEVEMAIL_NO_LIST>
+  <ERRMSG_FRONT_USERRECIEVEMAIL_NO_ITEM><![CDATA[該当受信メール情報を表示できませんでした。]]></ERRMSG_FRONT_USERRECIEVEMAIL_NO_ITEM>
+  <!-- 入荷お知らせメール申し込みデータなしエラー -->
+  <ERRMSG_FRONT_USERPRODUCTARRIVALMAIL_NO_ITEM><![CDATA[現在、入荷お知らせメール申し込み商品はありません。]]></ERRMSG_FRONT_USERPRODUCTARRIVALMAIL_NO_ITEM>
+  <!-- 次回購入ポイント利用の変更なしエラー -->
+  <ERRMSG_FRONT_NEXTSHIPPINGUSEPOINT_NO_CHANGE_ERROR><![CDATA[利用ポイント数が変更されませんでした。]]></ERRMSG_FRONT_NEXTSHIPPINGUSEPOINT_NO_CHANGE_ERROR>
+  <!-- ポイント利用の商品合計金額オーバーエラー -->
+  <ERRMSG_FRONT_NEXTSHIPPINGUSEPOINT_CHANGE_OVER_USER_POINT><![CDATA[利用ポイントの更新差分がユーザの利用可能ポイント数より大きな数値を設定しましたので、ご確認お願いいたします。]]></ERRMSG_FRONT_NEXTSHIPPINGUSEPOINT_CHANGE_OVER_USER_POINT>
+  <!-- 次回購入の利用ポイントの更新失敗エラー -->
+  <ERRMSG_FRONT_NEXT_SHIPPING_USE_POINT_UPDATE_ALERT><![CDATA[次回購入の利用ポイントの更新に失敗しました。管理者にご確認ください。]]></ERRMSG_FRONT_NEXT_SHIPPING_USE_POINT_UPDATE_ALERT>
+  <!-- 定期購入情報のキャンセル失敗エラー -->
+  <ERRMSG_FRONT_FIXED_PURCHASE_CANCEL_ALERT><![CDATA[定期購入情報の解約に失敗しました。管理者にご確認ください。]]></ERRMSG_FRONT_FIXED_PURCHASE_CANCEL_ALERT>
+  <!-- 定期購入配送間隔（日・月）利用不可エラー -->
+  <ERRMSG_FRONT_FIXED_PURCHASE_SPECIFIC_MONTH_DATE_INTERVAL_INVALID>
+    <![CDATA[規定の配送パターンと異なる配送間隔@@ 1 @@はご利用いただけません。]]>
+  </ERRMSG_FRONT_FIXED_PURCHASE_SPECIFIC_MONTH_DATE_INTERVAL_INVALID>
+
+  <!-- 支払い方法による変更NGアラート -->
+  <ERRMSG_FRONT_MODIFY_NG_PAYMENT_ALERT><![CDATA[お支払い方法が[@@ 1 @@]のため変更できません。]]></ERRMSG_FRONT_MODIFY_NG_PAYMENT_ALERT>
+  <!-- 注文ステータスによる変更NGアラート -->
+  <ERRMSG_FRONT_MODIFY_NG_ORDER_STATUS_ALERT><![CDATA[ご注文状況が[@@ 1 @@]のため変更できません。]]></ERRMSG_FRONT_MODIFY_NG_ORDER_STATUS_ALERT>
+  <!-- 配送方法による変更NGアラート -->
+  <ERRMSG_FRONT_MODIFY_NG_SHIPPING_METHOD_ALERT><![CDATA[配送方法が[@@ 1 @@]のため変更できません。]]></ERRMSG_FRONT_MODIFY_NG_SHIPPING_METHOD_ALERT>
+  <!-- 更新期限超過による変更NGアラート -->
+  <ERRMSG_FRONT_MODIFY_NG_DAY_OVER_ALERT><![CDATA[更新期限を過ぎたため変更できません。]]></ERRMSG_FRONT_MODIFY_NG_DAY_OVER_ALERT>
+  <!-- モール注文による変更NGアラート -->
+  <ERRMSG_FRONT_MODIFY_NG_MALL_ALERT><![CDATA[自社サイト以外の注文のため変更できません。]]></ERRMSG_FRONT_MODIFY_NG_MALL_ALERT>
+
+
+  <!--===============================================================================-->
+  <!-- 注文同梱系エラー -->
+  <!--===============================================================================-->
+  <!-- 注文同梱対象間での配送種別不一致エラー -->
+  <ERRMSG_FRONT_ORDERCOMBINE_SHIPPING_TYPE_DISAGREEMENT><![CDATA[注文同梱対象に指定された注文の配送種別が異なります。]]></ERRMSG_FRONT_ORDERCOMBINE_SHIPPING_TYPE_DISAGREEMENT>
+  <!-- 注文同梱エラー -->
+  <ERRMSG_FRONT_ORDERCOMBINE_ERROR><![CDATA[注文同梱に失敗しました。]]></ERRMSG_FRONT_ORDERCOMBINE_ERROR>
+
+
+  <!-- 支払い方法による変更NGアラート -->
+  <ERRMSG_FRONT_MODIFY_NG_PAYMENT_ALERT><![CDATA[お支払い方法が[@@ 1 @@]のため変更できません。]]></ERRMSG_FRONT_MODIFY_NG_PAYMENT_ALERT>
+  <!-- 注文ステータスによる変更NGアラート -->
+  <ERRMSG_FRONT_MODIFY_NG_ORDER_STATUS_ALERT><![CDATA[ご注文状況が[@@ 1 @@]のため変更できません。]]></ERRMSG_FRONT_MODIFY_NG_ORDER_STATUS_ALERT>
+  <!-- 配送方法による変更NGアラート -->
+  <ERRMSG_FRONT_MODIFY_NG_SHIPPING_METHOD_ALERT><![CDATA[配送方法が[@@ 1 @@]のため変更できません。]]></ERRMSG_FRONT_MODIFY_NG_SHIPPING_METHOD_ALERT>
+  <!-- 更新期限超過による変更NGアラート -->
+  <ERRMSG_FRONT_MODIFY_NG_DAY_OVER_ALERT><![CDATA[更新期限を過ぎたため変更できません。]]></ERRMSG_FRONT_MODIFY_NG_DAY_OVER_ALERT>
+  <!-- モール注文による変更NGアラート -->
+  <ERRMSG_FRONT_MODIFY_NG_MALL_ALERT><![CDATA[自社サイト以外の注文のため変更できません。]]></ERRMSG_FRONT_MODIFY_NG_MALL_ALERT>
+
+  <!--===============================================================================-->
+  <!-- 注文系エラー -->
+  <!--===============================================================================-->
+  <!-- 注文方法の保存：ユーザー配送先情報登録なしエラー -->
+  <ERRMSG_FRONT_USER_DEFAULT_ORDER_SETTING_USERSHIPPING_NO_SHIPPING><![CDATA[既定の配送先住所をご登録希望の場合は、マイページのアドレス帳よりアドレス帳情報をご登録してください。]]></ERRMSG_FRONT_USER_DEFAULT_ORDER_SETTING_USERSHIPPING_NO_SHIPPING>
+  <!-- 注文方法の保存：ユーザークレジットカード情報登録なしエラー -->
+  <ERRMSG_FRONT_USER_DEFAULT_ORDER_SETTING_USERCREDITCARD_NO_CARD><![CDATA[マイページの「登録クレジットカード」より、クレジットカード情報を登録して下さい。]]></ERRMSG_FRONT_USER_DEFAULT_ORDER_SETTING_USERCREDITCARD_NO_CARD>
+  <!-- PayPal：ログイン必須エラー -->
+  <ERRMSG_FRONT_PAYPAL_NEEDS_LOGIN_ERROR><![CDATA[決済の利用にはPayPalログインが必要です。]]></ERRMSG_FRONT_PAYPAL_NEEDS_LOGIN_ERROR>
+
+  <!--===============================================================================-->
+  <!-- レコメンド系エラー -->
+  <!--===============================================================================-->
+  <!-- レコメンド商品の注文失敗(注文情報更新失敗)エラー -->
+  <ERRMSG_FRONT_RECOMMEND_CANNOT_CREATE_UPDATED_ORDER><![CDATA[注文内容をおすすめ商品の購入に変更する際にエラーが発生しました。管理者にお問い合わせください。（元の注文は正常に受付完了しています。）]]></ERRMSG_FRONT_RECOMMEND_CANNOT_CREATE_UPDATED_ORDER>
+  <ERRMSG_FRONT_RECOMMEND_CANNOT_CANCEL_UPSELL_TARGET_ORDER><![CDATA[注文内容をおすすめ商品の購入に変更する際にエラーが発生しました。元の注文とおすすめ商品の注文両方が確定している状態になっています。大変お手数ですが管理者にお問い合わせください。]]></ERRMSG_FRONT_RECOMMEND_CANNOT_CANCEL_UPSELL_TARGET_ORDER>
+
+  <!-- 配送先に選択できない国エラー -->
+  <ERRMSG_FRONT_SHIPPING_COUNTRY_UNAVAILABLE><![CDATA[選択された国には配送を行うことができません。<br />別の配送先を選択してください。]]></ERRMSG_FRONT_SHIPPING_COUNTRY_UNAVAILABLE>
+
+  <!--===============================================================================-->
+  <!-- 楽天IDConnnect連携エラー -->
+  <!--===============================================================================-->
+  <ERRMSG_RAKUTEN_ID_CONNECT_CONNECTED><![CDATA[楽天IDで会員登録済みの為、ログインしてください。]]></ERRMSG_RAKUTEN_ID_CONNECT_CONNECTED>
+  <ERRMSG_RAKUTEN_ID_CONNECT_NOT_CONNECTED><![CDATA[楽天IDで会員未登録の為、会員登録を行ってください。]]></ERRMSG_RAKUTEN_ID_CONNECT_NOT_CONNECTED>
+  <ERRMSG_RAKUTEN_ID_CONNECT_USER_REGISTERED><![CDATA[すでに会員のため、通常ログイン後にマイページにて紐付けてください。]]></ERRMSG_RAKUTEN_ID_CONNECT_USER_REGISTERED>
+
+</ErrorMessages>

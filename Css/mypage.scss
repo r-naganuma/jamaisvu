@@ -354,6 +354,10 @@ $bp768: 768px;  // スマホ
 							&.must{
 								position: relative;
 
+								@include bp768 {
+									padding-left: 45px;
+								};
+
 								&::after{
 									content: "必須";
 									position: absolute;
@@ -371,7 +375,8 @@ $bp768: 768px;  // スマホ
 									border-radius: 2px;
 
 									@include bp768 {
-										right: -45px;
+										right: inherit;
+										left: 0;
 									};
 								}
 							}
@@ -409,8 +414,10 @@ $bp768: 768px;  // スマホ
 							};
 
 							&.noBBsp{
-								margin-bottom: 0;
-								border-bottom: none;
+								@include bp768 {
+									margin-bottom: 0;
+									border-bottom: none;
+								};
 							}
 
 							input{
@@ -806,6 +813,10 @@ $bp768: 768px;  // スマホ
 									border-bottom: none;
 								}
 							}
+						}
+
+						&.noSepa{
+							justify-content: inherit;
 						}
 					}
 
@@ -1575,6 +1586,7 @@ $bp768: 768px;  // スマホ
 
 				.MypageCreditBox{
 					position: relative;
+					margin-bottom: 60px;
 
 					&_delete{
 						position: absolute;
@@ -1586,11 +1598,27 @@ $bp768: 768px;  // スマホ
 							font-size: 11px;
 							line-height: 18px;
 							position: relative;
-							background: url(../../Contents/ImagesPkg/user/user/btn_off.pngg) no-repeat left top;
+							background: url(../../Contents/ImagesPkg/user/user/btn_off.png) no-repeat left 4px;
 							background-size: 18px 18px;
 							width: 45px;
 							text-align: right;
 							padding-top: 5px;
+						}
+					}
+
+					&_edit{
+						position: absolute;
+						top: 183px;
+						right: 40px;
+
+						a{
+							color: #2E0E02;
+							font-size: 12px;
+							background: #F4F2F2;
+							width: 64px;
+							height: 32px;
+							line-height: 32px;
+							text-align: center;
 						}
 					}
 				}
