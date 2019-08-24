@@ -1,0 +1,1376 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'baskerville';
+  src: url("../Font/baskerville.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'gillsans';
+  src: url("../Font/gillsans.otf") format("opentype");
+}
+
+/*====================================================================
+*    mixin
+/*==================================================================*/
+#Wrap {
+  /*====================================================================
+	*    カスタムページ ALL
+	/*==================================================================*/
+}
+
+#Wrap .LPpageWrap {
+  width: 100%;
+  margin: 0 auto;
+  color: #333;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  overflow: hidden;
+  /*====================================================================
+		*    パンくず
+		/*==================================================================*/
+  /*====================================================================
+		*    コンセプト
+		/*==================================================================*/
+}
+
+@media (max-width: 1200px) {
+  #Wrap .LPpageWrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap {
+    font-size: 13px;
+  }
+}
+
+#Wrap .LPpageWrap h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+#Wrap .LPpageWrap h2.aboutTtl {
+  margin-bottom: 43px;
+}
+
+#Wrap .LPpageWrap h2.aboutTtl span {
+  font-size: 18px;
+  display: block;
+  margin-top: 15px;
+}
+
+#Wrap .LPpageWrap img {
+  width: 100%;
+  display: block;
+}
+
+#Wrap .LPpageWrap .userBread {
+  width: 1120px;
+  margin: 0 auto 40px;
+}
+
+@media (max-width: 1200px) {
+  #Wrap .LPpageWrap .userBread {
+    width: 100%;
+    padding: 0 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .userBread {
+    width: 100%;
+    margin: 0 auto 20px;
+    padding: 0 18px;
+  }
+}
+
+#Wrap .LPpageWrap .userBread ul {
+  text-align: right;
+}
+
+#Wrap .LPpageWrap .userBread ul li {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #C6C6C6;
+  line-height: 1;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .userBread ul li {
+    font-size: 11px;
+  }
+}
+
+#Wrap .LPpageWrap .userBread ul li a {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #C6C6C6;
+  line-height: 1;
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .userBread ul li a {
+    font-size: 11px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox {
+  margin: 0 auto 80px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox {
+    width: 100%;
+    padding: 0 18px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_header {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_header {
+    width: 100vw;
+    margin: 0 0 40px -18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_header img {
+    height: 280px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_header h3 {
+  font-size: 28px;
+  line-height: 1;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Noto Serif JP', serif;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_header h3 {
+    line-height: 44.8px;
+    margin-top: 30px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_header h3 span {
+  color: #968680;
+  font-size: 18px;
+  letter-spacing: 0.16em;
+  display: block;
+  margin-bottom: 15px;
+  line-height: 1;
+  font-family: 'gillsans', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_header h3 span {
+    margin-bottom: 12px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_where {
+  width: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto 80px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_where {
+    display: block;
+    width: 100%;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_where--pic {
+  width: 100%;
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_where--pic {
+    width: 100vw;
+    margin: 0 0 40px -18px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_where--txt {
+  width: 600px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_where--txt {
+    width: 100%;
+    margin: 0 0 32px 0;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_where--txt h4 {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
+#Wrap .LPpageWrap .conceptBox_where--txt h4 span {
+  font-size: 16px;
+  color: #968680;
+  display: block;
+  margin-top: 10px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  letter-spacing: 0.16em;
+}
+
+#Wrap .LPpageWrap .conceptBox_where--txt p {
+  line-height: 2;
+  margin-top: 32px;
+}
+
+#Wrap .LPpageWrap .conceptBox_where--map {
+  width: 440px;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_where--map {
+    width: 100%;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_quality {
+  width: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto 140px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_quality {
+    width: 100%;
+    display: block;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_quality--pic {
+  width: 400px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_quality--pic {
+    width: 100vw;
+    margin: 0 0 40px -18px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_quality--txt {
+  width: 600px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_quality--txt {
+    width: 100%;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_quality--txt h4 {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
+#Wrap .LPpageWrap .conceptBox_quality--txt h4 span {
+  font-size: 16px;
+  color: #968680;
+  display: block;
+  margin-top: 10px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  letter-spacing: 0.16em;
+}
+
+#Wrap .LPpageWrap .conceptBox_quality--txt p {
+  line-height: 2;
+  margin-top: 32px;
+}
+
+#Wrap .LPpageWrap .conceptBox_feature {
+  width: 1080px;
+  margin: 0 auto 120px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature {
+    width: 100%;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_feature h4 {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature h4 {
+    margin-bottom: 40px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_feature h4 span {
+  font-size: 16px;
+  color: #968680;
+  display: block;
+  margin-top: 10px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  letter-spacing: 0.16em;
+}
+
+#Wrap .LPpageWrap .conceptBox_feature h5 {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  font-family: 'Noto Serif JP', serif;
+  margin-bottom: 70px;
+  padding: 36px 0 0 78px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature h5 {
+    font-size: 24px;
+    line-height: 38.4px;
+    margin: 0 0 24px -18px;
+    padding: 21px 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 100vw;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_feature h5 span {
+  font-size: 140px;
+  color: #EAE6E5;
+  display: block;
+  font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  letter-spacing: -0.04em;
+  position: absolute;
+  top: -18px;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature h5 span {
+    top: 35px;
+    left: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature h5.oneline {
+    margin-bottom: 36px;
+    padding-top: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature h5.aboutMenu {
+    text-align: left;
+    padding-left: 58px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature--box {
+    display: block;
+    margin-bottom: 60px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--box--pic {
+  width: 480px;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature--box--pic {
+    width: 100%;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--box--pic.ord1 {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-left: 78px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature--box--pic.ord1 {
+    margin-left: 0;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--box--txt {
+  width: 480px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-left: 78px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature--box--txt {
+    width: 100%;
+    margin: 32px 0 0 0;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--box--txt p {
+  line-height: 2;
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--box--txt p + p {
+  margin-top: 32px;
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--box--txt.noPic {
+  width: 100%;
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--box--txt.ord2 {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  margin-left: 0;
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--btn {
+  width: 320px;
+  height: 64px;
+  margin: 0 auto;
+  position: relative;
+  border: #2E0E02 1px solid;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature--btn {
+    width: 240px;
+    height: 48px;
+    background: #2E0E02;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 23px;
+  margin: auto;
+  z-index: 1;
+  display: block;
+  width: 7px;
+  height: 7px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 2px solid #2E0E02;
+  border-right: 2px solid #2E0E02;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature--btn:after {
+    right: 15px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--btn:hover::after {
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--btn a {
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  line-height: 64px;
+  color: #2E0E02;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature--btn a {
+    font-size: 13px;
+    line-height: 48px;
+    color: #fff;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #2E0E02;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_feature--btn a::after {
+    content: none;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--btn a:hover::after {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+#Wrap .LPpageWrap .conceptBox_feature--btn a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+#Wrap .LPpageWrap .conceptBox_item {
+  width: 1080px;
+  margin: 0 auto 120px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_item {
+    width: 100%;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_item--ttl {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 40px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_item--ttl {
+    width: 100vw;
+    margin: 0 0 32px -18px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_item--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_item--box {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_item--box--list {
+  width: 258px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_item--box--list {
+    width: 49%;
+    margin-bottom: 42px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_item--box--list .itemName {
+  font-size: 12px;
+  line-height: 1;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 8px 0 4px;
+}
+
+#Wrap .LPpageWrap .conceptBox_item--box--list .price {
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_item--box--list .price {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_item--box--list:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_item--btn {
+  width: 320px;
+  height: 64px;
+  margin: 0 auto;
+  position: relative;
+  border: #2E0E02 1px solid;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_item--btn {
+    width: 240px;
+    height: 48px;
+    background: #2E0E02;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_item--btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 23px;
+  margin: auto;
+  z-index: 1;
+  display: block;
+  width: 7px;
+  height: 7px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 2px solid #2E0E02;
+  border-right: 2px solid #2E0E02;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_item--btn:after {
+    right: 15px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_item--btn:hover::after {
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+#Wrap .LPpageWrap .conceptBox_item--btn a {
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  line-height: 64px;
+  color: #2E0E02;
+  letter-spacing: 0.28em;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_item--btn a {
+    font-size: 13px;
+    line-height: 48px;
+    color: #fff;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_item--btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #2E0E02;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_item--btn a::after {
+    content: none;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_item--btn a:hover::after {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+#Wrap .LPpageWrap .conceptBox_item--btn a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+#Wrap .LPpageWrap .conceptBox_other {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_other {
+    width: 100%;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_other--ttl {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 40px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  text-align: center;
+}
+
+#Wrap .LPpageWrap .conceptBox_other--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_other--box {
+    display: block;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_other--box--list {
+  width: 520px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_other--box--list {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_other--box--list .btnTxt {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  background: rgba(255, 255, 255, 0.65);
+  width: 440px;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_other--box--list .btnTxt {
+    top: 20px;
+    left: 26px;
+    width: 84%;
+    height: 75%;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_other--box--list .btnTxt p {
+  color: #2E0E02;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.28em;
+  line-height: 28px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_other--box--list:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_history {
+  width: 1080px;
+  margin: 0 auto 140px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_history {
+    width: 100%;
+    margin: 0 auto 150px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_history h4 {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  margin-bottom: 40px;
+}
+
+#Wrap .LPpageWrap .conceptBox_history h4 span {
+  font-size: 16px;
+  color: #968680;
+  display: block;
+  margin-top: 10px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  letter-spacing: 0.16em;
+}
+
+#Wrap .LPpageWrap .conceptBox_history--table {
+  border-left: 1px solid #C0B6B3;
+  padding: 0.1px 0 35px 28px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_history--table {
+    padding: 0.1px 0 28px 28px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_history--table dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 11px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_history--table dl {
+    margin-top: 15px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_history--table dl::before {
+  content: "";
+  top: 7px;
+  left: -36px;
+  position: absolute;
+  border-radius: 50%;
+  background: #968680;
+  width: 16px;
+  height: 16px;
+}
+
+#Wrap .LPpageWrap .conceptBox_history--table dl dt {
+  width: 72px;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_history--table dl dt {
+    width: 21%;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_history--table dl dd {
+  line-height: 28px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_history--table dl dd {
+    width: 79%;
+    line-height: 2;
+    font-size: 13px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_history--table dl.mrgT19 {
+  margin-top: 19px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_history--table dl.mrgT19 {
+    margin-top: 35px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_history--table dl.mrgT27 {
+  margin-top: 27px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_history--table dl.mrgT27 {
+    margin-top: 35px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_history--table dl.mrgT59 {
+  margin-top: 59px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_history--table dl.mrgT59 {
+    margin-top: 35px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_aboutHeader {
+  width: 1000px;
+  margin: 0 auto 30px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_aboutHeader {
+    width: 100%;
+    margin: 0 auto 60px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_aboutHeader img {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_aboutHeader img {
+    margin-bottom: 40px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_aboutHeader--txt {
+  line-height: 2;
+  margin: 40px 0 120px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_aboutHeader--txt {
+    text-align: left;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_aboutHeader--ttl {
+  font-size: 28px;
+  line-height: 1;
+  color: #3D3D3D;
+  font-family: 'Noto Serif JP', serif;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_aboutHeader--ttl {
+    font-size: 24px;
+    line-height: 38.4px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_desc {
+  margin: 0 auto 120px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_desc {
+    margin: 140px auto 100px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_desc--ttl {
+  font-size: 28px;
+  line-height: 1;
+  font-family: 'Noto Serif JP', serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_desc--ttl {
+    font-size: 24px;
+    line-height: 38.4px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_desc--txt {
+  line-height: 2;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_desc--txt {
+    text-align: left;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_category {
+  margin: 0 auto 80px;
+  background: rgba(234, 230, 229, 0.3);
+  padding: 60px 0 50px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_category {
+    margin: 0 0 60px -18px;
+    padding: 66px 18px 40px;
+    width: 100vw;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_category h4 {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_category h4 {
+    font-size: 24px;
+    margin-bottom: 33px;
+    text-align: center;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_category ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 780px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_category ul {
+    width: 100%;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_category ul li {
+  width: 240px;
+  height: 64px;
+  margin: 0 auto 30px;
+  position: relative;
+  border: #2E0E02 1px solid;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_category ul li {
+    width: 47%;
+    background: #2E0E02;
+    margin: 0 0 20px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_category ul li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 23px;
+  margin: auto;
+  z-index: 1;
+  display: block;
+  width: 7px;
+  height: 7px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 2px solid #2E0E02;
+  border-right: 2px solid #2E0E02;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_category ul li:after {
+    right: 15px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_category ul li:hover::after {
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+#Wrap .LPpageWrap .conceptBox_category ul li a {
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  line-height: 64px;
+  color: #2E0E02;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_category ul li a {
+    font-size: 13px;
+    color: #fff;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_category ul li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #2E0E02;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_category ul li a::after {
+    content: none;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_category ul li a:hover::after {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+#Wrap .LPpageWrap .conceptBox_category ul li a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+#Wrap .LPpageWrap .conceptBox_aboutOther {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_aboutOther {
+    width: 100%;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_aboutOther--ttl {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 40px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  text-align: center;
+}
+
+#Wrap .LPpageWrap .conceptBox_aboutOther--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_aboutOther--box {
+    display: block;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_aboutOther--box--list {
+  width: 340px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_aboutOther--box--list {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_aboutOther--box--list img {
+  height: 240px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_aboutOther--box--list img {
+    height: auto;
+    -o-object-fit: inherit;
+    object-fit: inherit;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_aboutOther--box--list .btnTxt {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: rgba(255, 255, 255, 0.65);
+  width: 280px;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_aboutOther--box--list .btnTxt {
+    top: 20px;
+    left: 26px;
+    width: 84%;
+    height: 75%;
+  }
+}
+
+#Wrap .LPpageWrap .conceptBox_aboutOther--box--list .btnTxt p {
+  color: #2E0E02;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.28em;
+  line-height: 28px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .conceptBox_aboutOther--box--list:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mrgB0 {
+  margin-bottom: 0 !important;
+}
+
+.pdgT0 {
+  padding-top: 0 !important;
+}

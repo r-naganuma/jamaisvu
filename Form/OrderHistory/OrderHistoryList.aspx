@@ -22,6 +22,18 @@
 <%-- CART：カート一覧画面 CSCART:クロスセルカート画面 その他：画面遷移しない --%>
 <asp:HiddenField ID="hfIsRedirectAfterAddProduct" Value="CART" runat="server" />
 
+<script type="text/javascript">
+	$(function () {
+
+		$(".itemTtl_pdc span").each(function(){
+	        addFigure($(this));
+	    });
+
+	    function addFigure(elem){
+	        elem.text(elem.text().replace( /(\d)(?=(\d\d\d)+(?!\d))/g, '$1,' ).replace(".000", ""));
+	    }
+	});
+</script>
 <div class="registWrap mypageCts">
 	<h2>購入履歴</h2>
 
@@ -54,7 +66,7 @@
 												<p class="itemTtl_name"><%#: Item.ProductName %></p>
 											</a>
 											<p class="itemTtl_pdc">
-												価格　：<%#: Item.ItemPrice %><br>
+												価格　：¥<span><%#: Item.ItemPrice %></span>（税込）<br>
 												数量　：<%#: Item.ItemQuantity %></p>
 										</div>
 									</div>
@@ -76,12 +88,12 @@
 								<dd>
 									<%#: CurrencyManager.ToPrice(Eval(Constants.FIELD_ORDER_ORDER_PRICE_TOTAL)) %>（税込）
 								</dd>
-								<dt>
+								<!-- <dt>
 									お支払い方法
 								</dt>
 								<dd>
-
-								</dd>
+									<%#: Eval(Constants.FIELD_ORDER_ORDER_PAYMENT_KBN) %>
+								</dd> -->
 								<dt>
 									配送希望日
 								</dt>
@@ -94,6 +106,9 @@
 					</div>
 				</ItemTemplate>
 			</asp:Repeater>
+
+			<p class="catchTxt">ログインせずにご注文いただいた場合、こちらの注文履歴には反映されません。<br>
+			配信される「注文確定メール」より、内容をご確認ください。</p>
 		
 		<%-- 注文商品一覧 --%>
 		<div class="dvFavoriteList" style="display: none;">
@@ -290,15 +305,12 @@
 		
 		<%-- 購入履歴なし--%>
 		<% if(StringUtility.ToEmpty(this.AlertMessage) != "") {%>
-			<%= this.AlertMessage %>
+			<p class="fwBold"><%= this.AlertMessage %></p>
 		<%} %>
 
 		<%-- ページャ--%>
 		<!-- <div id="pagination" class="below clearFix"><%= this.PagerHtml %></div> -->
 	</div>
-
-	<p class="catchTxt">ログインせずにご注文いただいた場合、こちらの注文履歴には反映されません。<br>
-	配信される「注文確定メール」より、内容をご確認ください。</p>
 
 	<div class="submitBtnBox">
 		<a href="javascript:history.back()" class="prevBtn">戻る</a>

@@ -29,38 +29,28 @@
 	<div class="footer_box">
 		<ul class="footer_box--list">
 			<li>
-				<a href="">
-					初めての方へ
+				<a href="<%= Constants.PATH_ROOT %>Page/userGuide/">
+					ご利用ガイド
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="<%= Constants.PATH_ROOT %>Page/sizeGuide/">
 					サイズガイド
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="<%= Constants.PATH_ROOT %>Page/terms/">
 					利用規約
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href="<%= Constants.PATH_ROOT %>Page/privacy_policy/">
 					プライバシーポリシー
 				</a>
 			</li>
 			<li>
-				<a href="">
-					個人情報取扱方針
-				</a>
-			</li>
-			<li>
-				<a href="">
+				<a href="<%= Constants.PATH_ROOT %>Page/law/">
 					特定商取引法に基づく表示
-				</a>
-			</li>
-			<li>
-				<a href="">
-					企業情報
 				</a>
 			</li>
 			<li>
@@ -71,17 +61,17 @@
 		</ul>
 		<ul class="footer_box--list">
 			<li>
-				<a href="" target="_blank">
+				<a href="https://www.instagram.com/jamaisvu_jp/?hl=ja" target="_blank">
 					<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_insta.png" alt="Instagram">
 				</a>
 			</li>
 			<li>
-				<a href="" target="_blank">
+				<a href="https://line.me/R/ti/p/%40461wwkgx" target="_blank">
 					<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_line.png" alt="LINE">
 				</a>
 			</li>
 			<li>
-				<a href="" target="_blank">
+				<a href="https://www.facebook.com/JAMAIS-VU-2244865452308305/?modal=admin_todo_tour" target="_blank">
 					<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_fb.png" alt="Facebook">
 				</a>
 			</li>

@@ -101,7 +101,7 @@
   <!-- マイページ系エラー -->
   <!--===============================================================================-->
   <ERRMSG_FRONT_FAVORITE_NO_ITEM><![CDATA[現在、お気に入りリストには商品が入っていません。]]></ERRMSG_FRONT_FAVORITE_NO_ITEM>
-  <ERRMSG_FRONT_ORDERHISTORY_NO_ITEM><![CDATA[現在、注文履歴はありません。 ]]></ERRMSG_FRONT_ORDERHISTORY_NO_ITEM>
+  <ERRMSG_FRONT_ORDERHISTORY_NO_ITEM><![CDATA[購入履歴がありません。]]></ERRMSG_FRONT_ORDERHISTORY_NO_ITEM>
   <ERRMSG_FRONT_ORDERHISTORY_UNDISP><![CDATA[該当注文履歴が表示できませんでした。]]></ERRMSG_FRONT_ORDERHISTORY_UNDISP>
   <ERRMSG_FRONT_COUPONBOX_NO_ITEM><![CDATA[現在、ご利用いただけるクーポンはありません。]]></ERRMSG_FRONT_COUPONBOX_NO_ITEM>
 

@@ -1,0 +1,1179 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'baskerville';
+	src: url('../Font/baskerville.otf') format("opentype");
+}
+
+@font-face {
+	font-family: 'gillsans';
+	src: url('../Font/gillsans.otf') format("opentype");
+}
+
+/*====================================================================
+*    mixin
+/*==================================================================*/
+$bp1200: 1200px;
+
+@mixin bp1200 {
+  @media (max-width: ($bp1200)) {
+    @content;
+  }
+}
+$bp1000: 1000px;
+
+@mixin bp1000 {
+  @media (max-width: ($bp1000)) {
+    @content;
+  }
+}
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+@mixin font-weight($weight) {
+  $weights: (
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700
+  );
+  
+  $output: $weight;
+  @if map-has-key($weights, $weight) {
+    $output: map-get($weights, $weight);
+  }
+  
+  font-weight: $output;
+}
+
+#Wrap{
+
+	/*====================================================================
+	*    カスタムページ ALL
+	/*==================================================================*/
+
+	.LPpageWrap{
+		width: 100%;
+		margin: 0 auto;
+		color: #333;
+		font-size: 14px;
+		letter-spacing: 0.08em;
+		@include font-weight(regular);
+		overflow: hidden;
+			
+		@include bp1200 {
+			width: 100%;
+		};
+
+		@include bp768 {
+			font-size: 13px;
+		};
+
+		h2{
+			font-size: 32px;
+			text-align: center;
+			margin-bottom: 50px;
+			@include font-weight(regular);
+			letter-spacing: 0.1em;
+			line-height: 1;
+			font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+			@include bp768 {
+				font-size: 24px;
+				margin-bottom: 40px;
+			};
+
+			&.aboutTtl{
+				margin-bottom: 43px;
+
+				span{
+					font-size: 18px;
+					display: block;
+					margin-top: 15px;
+				}
+			}
+		}
+
+		img{
+			width: 100%;
+			display: block;
+		}
+
+		/*====================================================================
+		*    パンくず
+		/*==================================================================*/
+
+		.userBread{
+			width: 1120px;
+			margin: 0 auto 40px;
+			
+			@include bp1200 {
+				width: 100%;
+				padding: 0 40px;
+				box-sizing: border-box;
+			};
+			
+			@include bp768 {
+				width: 100%;
+				margin: 0 auto 20px;
+				padding: 0 18px;
+			};
+
+			ul{
+				text-align: right;
+
+				li{
+					font-size: 12px;
+					letter-spacing: 0.08em;
+					color: #C6C6C6;
+					line-height: 1;
+					display: inline-block;
+			
+					@include bp768 {
+						font-size: 11px;
+					};
+
+					a{
+						font-size: 12px;
+						letter-spacing: 0.08em;
+						color: #C6C6C6;
+						line-height: 1;
+						display: inline;
+			
+						@include bp768 {
+							font-size: 11px;
+						};
+					}
+				}
+			}
+		}
+
+		/*====================================================================
+		*    コンセプト
+		/*==================================================================*/
+
+		.conceptBox{
+			margin: 0 auto 80px;
+			overflow: hidden;
+
+			@include bp768 {
+				width: 100%;
+				padding: 0 18px;
+				box-sizing: border-box;
+			};
+
+			&_header{
+				width: 100%;
+				margin-bottom: 60px;
+
+				@include bp768 {
+					width: 100vw;
+					margin: 0 0 40px -18px;
+				};
+
+				img{
+					@include bp768 {
+						height: 280px;
+						object-fit: cover;
+					};
+				}
+
+				h3{
+					font-size: 28px;
+					line-height: 1;
+					text-align: center;
+					margin-top: 50px;
+					font-family: 'Noto Serif JP', serif;
+
+					@include bp768 {
+						line-height: 44.8px;
+						margin-top: 30px;
+					};
+
+					span{
+						color: #968680;
+						font-size: 18px;
+						letter-spacing: 0.16em;
+						display: block;
+						margin-bottom: 15px;
+						line-height: 1;
+						font-family: 'gillsans', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+						@include bp768 {
+							margin-bottom: 12px;
+						};
+					}
+				}
+			}
+
+			&_where{
+				width: 1080px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin: 0 auto 80px;
+
+				@include bp768 {
+					display: block;
+					width: 100%;
+				};
+
+				&--pic{
+					width: 100%;
+					order: 3;
+					margin-top: 40px;
+
+					@include bp768 {
+						width: 100vw;
+						margin: 0 0 40px -18px;
+					};
+				}
+
+				&--txt{
+					width: 600px;
+					order: 1;
+
+					@include bp768 {
+						width: 100%;
+						margin: 0 0 32px 0;
+					};
+
+					h4{
+						font-size: 32px;
+						@include font-weight(regular);
+						letter-spacing: 0.1em;
+						line-height: 1;
+						font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+						span{
+							font-size: 16px;
+							color: #968680;
+							display: block;
+							margin-top: 10px;
+							font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+							letter-spacing: 0.16em;
+						}
+					}
+
+					p{
+						line-height: 2;
+						margin-top: 32px;
+					}
+				}
+
+				&--map{
+					width: 440px;
+					order: 2;
+
+					@include bp768 {
+						width: 100%;
+					};
+				}
+			}
+
+			&_quality{
+				width: 1080px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin: 0 auto 140px;
+
+				@include bp768 {
+					width: 100%;
+					display: block;
+				};
+
+				&--pic{
+					width: 400px;
+
+					@include bp768 {
+						width: 100vw;
+						margin: 0 0 40px -18px;
+					};
+				}
+
+				&--txt{
+					width: 600px;
+
+					@include bp768 {
+						width: 100%;
+					};
+
+					h4{
+						font-size: 32px;
+						@include font-weight(regular);
+						letter-spacing: 0.1em;
+						line-height: 1;
+						font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+						span{
+							font-size: 16px;
+							color: #968680;
+							display: block;
+							margin-top: 10px;
+							font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+							letter-spacing: 0.16em;
+						}
+					}
+
+					p{
+						line-height: 2;
+						margin-top: 32px;
+					}
+				}
+			}
+
+			&_feature{
+				width: 1080px;
+				margin: 0 auto 120px;
+
+				@include bp768 {
+					width: 100%;
+				};
+
+				h4{
+					font-size: 32px;
+					@include font-weight(regular);
+					letter-spacing: 0.1em;
+					line-height: 1;
+					font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+					margin-bottom: 60px;
+					text-align: center;
+
+					@include bp768 {
+						margin-bottom: 40px;
+					};
+
+					span{
+						font-size: 16px;
+						color: #968680;
+						display: block;
+						margin-top: 10px;
+						font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+						letter-spacing: 0.16em;
+					}
+				}
+
+				h5{
+					font-size: 28px;
+					@include font-weight(regular);
+					letter-spacing: 0.1em;
+					line-height: 1;
+					font-family: 'Noto Serif JP', serif;
+					margin-bottom: 70px;
+					padding: 36px 0 0 78px;
+					position: relative;
+
+					@include bp768 {
+						font-size: 24px;
+						line-height: 38.4px;
+						margin: 0 0 24px -18px;
+						padding: 21px 0 0 0;
+						position: relative;
+						text-align: center;
+						width: 100vw;
+					};
+
+					span{
+						font-size: 140px;
+						color: #EAE6E5;
+						display: block;
+						font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+						letter-spacing: -0.04em;
+						position: absolute;
+						top: -18px;
+						left: 0;
+						z-index: -1;
+
+						@include bp768 {
+							top: 35px;
+							left: -20px;
+						};
+					}
+
+					&.oneline{
+						@include bp768 {
+							margin-bottom: 36px;
+							padding-top: 35px;
+						};
+					}
+
+					&.aboutMenu{
+						@include bp768 {
+							text-align: left;
+							padding-left: 58px;
+						};
+					}
+				}
+
+				&--box{
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 80px;
+
+					@include bp768 {
+						display: block;
+						margin-bottom: 60px;
+					};
+
+					&--pic{
+						width: 480px;
+						order: 2;
+
+						@include bp768 {
+							width: 100%;
+						};
+
+						&.ord1{
+							order: 1;
+							margin-left: 78px;
+
+							@include bp768 {
+								margin-left: 0;
+							};
+						}
+					}
+
+					&--txt{
+						width: 480px;
+						order: 1;
+						margin-left: 78px;
+
+						@include bp768 {
+							width: 100%;
+							margin: 32px 0 0 0;
+						};
+
+						p{
+							line-height: 2;
+
+							&+p{
+								margin-top: 32px;
+							}
+						}
+
+						&.noPic{
+							width: 100%;
+						}
+
+						&.ord2{
+							order: 2;
+							margin-left: 0;
+						}
+					}
+				}
+
+				&--btn{
+					width: 320px;
+					height: 64px;
+					margin: 0 auto;
+					position: relative;
+					border: #2E0E02 1px solid;
+					border-radius: 2px;
+
+					@include bp768 {
+						width: 240px;
+						height: 48px;
+						background: #2E0E02;
+					};
+
+					&:after {
+						content: "";
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						right: 23px;
+						margin: auto;
+						z-index: 1;
+						display: block;
+						width: 7px;
+						height: 7px;
+						-moz-transform: rotate(45deg);
+						-webkit-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						transform: rotate(45deg);
+						border-top: 2px solid #2E0E02;
+						border-right: 2px solid #2E0E02;
+
+						@include bp768 {
+							right: 15px;
+							border-top: 2px solid #fff;
+							border-right: 2px solid #fff;
+						};
+					}
+
+				    &:hover::after {
+						border-top: 2px solid #fff;
+						border-right: 2px solid #fff;
+				    }
+
+					a {
+						font-size: 14px;
+						text-align: center;
+						position: relative;
+						line-height: 64px;
+						color: #2E0E02;
+
+						@include bp768 {
+							font-size: 13px;
+							line-height: 48px;
+							color: #fff;
+						};
+
+					    &::after{
+							content: "";
+							position: absolute;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							left: 0;
+							z-index: -1;
+							background: #2E0E02;
+							transform-origin: right top;
+							transform: scale(0, 1);
+							transition: transform .3s;
+
+							@include bp768 {
+								content: none;
+							};
+					    }
+
+					    &:hover::after {
+							transform-origin: left top;
+							transform: scale(1, 1);
+					    }
+
+					    &:hover{
+					      opacity: 1;
+					      color: #fff;
+					    }
+					}
+				}
+			}
+
+			&_item{
+				width: 1080px;
+				margin: 0 auto 120px;
+
+				@include bp768 {
+					width: 100%;
+				};
+
+				&--ttl{
+					font-size: 16px;
+					@include font-weight(bold);
+					line-height: 1;
+					margin-bottom: 40px;
+					font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+					text-align: center;
+
+					@include bp768 {
+						width: 100vw;
+						margin: 0 0 32px -18px;
+					};
+				}
+
+				&--box{
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 60px;
+
+					@include bp768 {
+						flex-wrap: wrap;
+					};
+
+					&--list{
+						width: 258px;
+
+						@include bp768 {
+							width: 49%;
+							margin-bottom: 42px;
+						};
+
+						.itemName{
+							font-size: 12px;
+							line-height: 1;
+							text-overflow: ellipsis;
+							overflow: hidden;
+							white-space: nowrap;
+							margin: 8px 0 4px;
+						}
+
+						.price{
+							@include font-weight(bold);
+							line-height: 1;
+							font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+							@include bp768 {
+								font-size: 14px;
+							};
+						}
+
+						&:nth-last-child(-n + 2){
+							@include bp768 {
+								margin-bottom: 0;
+							};
+						}
+					}
+				}
+
+				&--btn{
+					width: 320px;
+					height: 64px;
+					margin: 0 auto;
+					position: relative;
+					border: #2E0E02 1px solid;
+					border-radius: 2px;
+
+					@include bp768 {
+						width: 240px;
+						height: 48px;
+						background: #2E0E02;
+					};
+
+					&:after {
+						content: "";
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						right: 23px;
+						margin: auto;
+						z-index: 1;
+						display: block;
+						width: 7px;
+						height: 7px;
+						-moz-transform: rotate(45deg);
+						-webkit-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						transform: rotate(45deg);
+						border-top: 2px solid #2E0E02;
+						border-right: 2px solid #2E0E02;
+
+						@include bp768 {
+							right: 15px;
+							border-top: 2px solid #fff;
+							border-right: 2px solid #fff;
+						};
+					}
+
+				    &:hover::after {
+						border-top: 2px solid #fff;
+						border-right: 2px solid #fff;
+				    }
+
+					a {
+						font-size: 15px;
+						text-align: center;
+						position: relative;
+						line-height: 64px;
+						color: #2E0E02;
+						letter-spacing: 0.28em;
+
+						@include bp768 {
+							font-size: 13px;
+							line-height: 48px;
+							color: #fff;
+						};
+
+					    &::after{
+							content: "";
+							position: absolute;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							left: 0;
+							z-index: -1;
+							background: #2E0E02;
+							transform-origin: right top;
+							transform: scale(0, 1);
+							transition: transform .3s;
+
+							@include bp768 {
+								content: none;
+							};
+					    }
+
+					    &:hover::after {
+							transform-origin: left top;
+							transform: scale(1, 1);
+					    }
+
+					    &:hover{
+					      opacity: 1;
+					      color: #fff;
+					    }
+					}
+				}
+			}
+
+			&_other{
+				width: 1080px;
+				margin: 0 auto;
+
+				@include bp768 {
+					width: 100%;
+				};
+
+				&--ttl{
+					font-size: 16px;
+					@include font-weight(bold);
+					line-height: 1;
+					margin-bottom: 40px;
+					font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+					text-align: center;
+				}
+
+				&--box{
+					display: flex;
+					justify-content: space-between;
+
+					@include bp768 {
+						display: block;
+					};
+
+					&--list{
+						width: 520px;
+						position: relative;
+
+						@include bp768 {
+							width: 100%;
+							margin-bottom: 20px;
+						};
+
+						.btnTxt{
+							position: absolute;
+							top: 30px;
+							left: 40px;
+							background: rgba(255,255,255,.65);
+							width: 440px;
+							height: 180px;
+							display: flex;
+							align-items: center;
+							margin: auto;
+
+							@include bp768 {
+								top: 20px;
+								left: 26px;
+								width: 84%;
+								height: 75%;
+							};
+
+							p{
+								color: #2E0E02;
+								font-size: 18px;
+								text-align: center;
+								letter-spacing: 0.28em;
+								line-height: 28px;
+								margin: auto;
+							}
+						}
+
+						&:last-child{
+							@include bp768 {
+								margin-bottom: 0;
+							};
+						}
+					}
+				}
+			}
+
+			&_history{
+				width: 1080px;
+				margin: 0 auto 140px;
+
+				@include bp768 {
+					width: 100%;
+					margin: 0 auto 150px;
+				};
+
+				h4{
+					font-size: 32px;
+					@include font-weight(regular);
+					letter-spacing: 0.1em;
+					line-height: 1;
+					font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+					margin-bottom: 40px;
+
+					span{
+						font-size: 16px;
+						color: #968680;
+						display: block;
+						margin-top: 10px;
+						font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+						letter-spacing: 0.16em;
+					}
+				}
+
+				&--table{
+					border-left: 1px solid #C0B6B3;
+					padding: 0.1px 0 35px 28px;
+
+					@include bp768 {
+						padding: 0.1px 0 28px 28px;
+					};
+
+					dl{
+						display: flex;
+						position: relative;
+						margin-top: 11px;
+
+						@include bp768 {
+							margin-top: 15px;
+						};
+
+						&::before{
+							content: "";
+							top: 7px;
+							left: -36px;
+							position: absolute;
+							border-radius: 50%;
+							background: #968680;
+							width: 16px;
+							height: 16px;
+						}
+
+						dt{
+							width: 72px;
+							line-height: 28px;
+							font-size: 18px;
+
+							@include bp768 {
+								width: 21%;
+							};
+						}
+
+						dd{
+							line-height: 28px;
+							font-size: 14px;
+
+							@include bp768 {
+								width: 79%;
+								line-height: 2;
+								font-size: 13px;
+							};
+						}
+
+						&.mrgT19{
+							margin-top: 19px;
+
+							@include bp768 {
+								margin-top: 35px;
+							};
+						}
+
+						&.mrgT27{
+							margin-top: 27px;
+
+							@include bp768 {
+								margin-top: 35px;
+							};
+						}
+
+						&.mrgT59{
+							margin-top: 59px;
+
+							@include bp768 {
+								margin-top: 35px;
+							};
+						}
+					}
+				}
+			}
+
+			&_aboutHeader{
+				width: 1000px;
+				margin: 0 auto 30px;
+
+				@include bp768 {
+					width: 100%;
+					margin: 0 auto 60px;
+				};
+
+				img{
+					margin-bottom: 50px;
+
+					@include bp768 {
+						margin-bottom: 40px;
+					};
+				}
+
+				&--txt{
+					line-height: 2;
+					margin: 40px 0 120px;
+					text-align: center;
+
+					@include bp768 {
+						text-align: left;
+					};
+				}
+
+				&--ttl{
+					font-size: 28px;
+					line-height: 1;
+					color: #3D3D3D;
+					font-family: 'Noto Serif JP', serif;
+					text-align: center;
+
+					@include bp768 {
+						font-size: 24px;
+						line-height: 38.4px;
+					};
+				}
+			}
+
+			&_desc{
+				margin: 0 auto 120px;
+
+				@include bp768 {
+					margin: 140px auto 100px;
+				};
+
+				&--ttl{
+					font-size: 28px;
+					line-height: 1;
+					font-family: 'Noto Serif JP', serif;
+					text-align: center;
+					margin-bottom: 40px;
+
+					@include bp768 {
+						font-size: 24px;
+						line-height: 38.4px;
+					};
+				}
+
+				&--txt{
+					line-height: 2;
+					text-align: center;
+
+					@include bp768 {
+						text-align: left;
+					};
+				}
+			}
+
+			&_category{
+				margin: 0 auto 80px;
+				background: rgba(234,230,229,.3);
+				padding: 60px 0 50px;
+				position: relative;
+				z-index: 1;
+
+				@include bp768 {
+					margin: 0 0 60px -18px;
+					padding: 66px 18px 40px;
+					width: 100vw;
+					box-sizing: border-box;
+				};
+
+				h4{
+					font-size: 32px;
+					@include font-weight(regular);
+					letter-spacing: 0.1em;
+					line-height: 1;
+					font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+					margin-bottom: 40px;
+					text-align: center;
+
+					@include bp768 {
+						font-size: 24px;
+						margin-bottom: 33px;
+						text-align: center;
+					};
+				}
+
+				ul{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					width: 780px;
+					margin: 0 auto;
+
+					@include bp768 {
+						width: 100%;
+					};
+
+					li{
+						width: 240px;
+						height: 64px;
+						margin: 0 auto 30px;
+						position: relative;
+						border: #2E0E02 1px solid;
+						border-radius: 2px;
+
+						@include bp768 {
+							width: 47%;
+							background: #2E0E02;
+							margin: 0 0 20px;
+						};
+
+						&:after {
+							content: "";
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							right: 23px;
+							margin: auto;
+							z-index: 1;
+							display: block;
+							width: 7px;
+							height: 7px;
+							-moz-transform: rotate(45deg);
+							-webkit-transform: rotate(45deg);
+							-ms-transform: rotate(45deg);
+							transform: rotate(45deg);
+							border-top: 2px solid #2E0E02;
+							border-right: 2px solid #2E0E02;
+
+							@include bp768 {
+								right: 15px;
+								border-top: 2px solid #fff;
+								border-right: 2px solid #fff;
+							};
+						}
+
+					    &:hover::after {
+							border-top: 2px solid #fff;
+							border-right: 2px solid #fff;
+					    }
+
+						a {
+							font-size: 14px;
+							text-align: center;
+							position: relative;
+							line-height: 64px;
+							color: #2E0E02;
+
+							@include bp768 {
+								font-size: 13px;
+								color: #fff;
+							};
+
+						    &::after{
+								content: "";
+								position: absolute;
+								top: 0;
+								right: 0;
+								bottom: 0;
+								left: 0;
+								z-index: -1;
+								background: #2E0E02;
+								transform-origin: right top;
+								transform: scale(0, 1);
+								transition: transform .3s;
+
+								@include bp768 {
+									content: none;
+								};
+						    }
+
+						    &:hover::after {
+								transform-origin: left top;
+								transform: scale(1, 1);
+						    }
+
+						    &:hover{
+						      opacity: 1;
+						      color: #fff;
+						    }
+						}
+					}
+				}
+			}
+
+			&_aboutOther{
+				width: 1080px;
+				margin: 0 auto;
+
+				@include bp768 {
+					width: 100%;
+				};
+
+				&--ttl{
+					font-size: 16px;
+					@include font-weight(bold);
+					line-height: 1;
+					margin-bottom: 40px;
+					font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+					text-align: center;
+				}
+
+				&--box{
+					display: flex;
+					justify-content: space-between;
+
+					@include bp768 {
+						display: block;
+					};
+
+					&--list{
+						width: 340px;
+						position: relative;
+
+						@include bp768 {
+							width: 100%;
+							margin-bottom: 20px;
+						};
+
+						img{
+							height: 240px;
+							object-fit: cover;
+
+							@include bp768 {
+								height: auto;
+								object-fit: inherit;
+							};
+						}
+
+						.btnTxt{
+							position: absolute;
+							top: 30px;
+							left: 30px;
+							background: rgba(255,255,255,.65);
+							width: 280px;
+							height: 180px;
+							display: flex;
+							align-items: center;
+							margin: auto;
+
+							@include bp768 {
+								top: 20px;
+								left: 26px;
+								width: 84%;
+								height: 75%;
+							};
+
+							p{
+								color: #2E0E02;
+								font-size: 18px;
+								text-align: center;
+								letter-spacing: 0.28em;
+								line-height: 28px;
+								margin: auto;
+							}
+						}
+
+						&:last-child{
+							@include bp768 {
+								margin-bottom: 0;
+							};
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.mrgB0{
+	margin-bottom: 0 !important;
+}
+
+.pdgT0{
+	padding-top: 0 !important;
+}

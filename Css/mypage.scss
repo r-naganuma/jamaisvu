@@ -107,6 +107,13 @@ $bp768: 768px;  // スマホ
 						font-size: 14px;
 						margin-bottom: 32px;
 					};
+
+					&_catch{
+						text-align: center;
+						font-size: 12px;
+						line-height: 1;
+						margin: -16px 0 24px;
+					}
 				}
 
 				&--left{
@@ -187,6 +194,84 @@ $bp768: 768px;  // スマホ
 					@include bp768 {
 						width: 100%;
 					};
+
+					.socialBox{
+						margin-bottom: 92px;
+
+						@include bp768 {
+							margin-bottom: 40px;
+						};
+
+						li{
+							margin-bottom: 24px;
+							border-radius: 2px;
+							width: 100%;
+							height: 48px;
+
+							@include bp768 {
+								margin-bottom: 16px;
+							};
+
+							&:nth-child(1){
+								background: #2E4387;
+							}
+
+							&:nth-child(2){
+								margin-bottom: 0;
+								background: #3986E5;
+							}
+
+							a{
+								font-size: 14px;
+								line-height: 48px;
+								padding: 0 16px;
+								box-sizing: border-box;
+								position: relative;
+								color: #fff;
+								font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+								@include bp768 {
+									height: 48px;
+								};
+
+								&::after{
+									content: "";
+									position: absolute;
+									top: 0;
+									right: 24px;
+									bottom: 0;
+									margin: auto;
+									display: block;
+									width: 10px;
+									height: 10px;
+									-moz-transform: rotate(45deg);
+									-webkit-transform: rotate(45deg);
+									-ms-transform: rotate(45deg);
+									transform: rotate(45deg);
+									border-top: 1.5px solid #fff;
+									border-right: 1.5px solid #fff;
+
+									@include bp768 {
+										right: 16px;
+										width: 6px;
+										height: 6px;
+										border-top: 1px solid #fff;
+										border-right: 1px solid #fff;
+									};
+								}
+
+								img{
+									width: 28px;
+									margin: -5px 16px 0 0;
+									display: inline;
+
+									@include bp768 {
+										margin: -5px 22px 0 0;
+									};
+								}
+							}
+						}
+					}
 				}
 
 				.loginBtn{
@@ -387,6 +472,14 @@ $bp768: 768px;  // スマホ
 								@include bp768 {
 									margin-top: 0;
 								};
+
+								&2{
+									margin-top: -120px;
+
+									@include bp768 {
+										margin-top: 0;
+									};
+								}
 							}
 
 							&.noCenter02{
@@ -455,6 +548,23 @@ $bp768: 768px;  // スマホ
 							    	background: url(../../Contents/ImagesPkg/user/common/arrow_down.svg) no-repeat right 8px top 16px;
 							    	background-size: 13.5px 7.5px;
 								};
+							}
+
+							textarea{
+								width: 100%;
+								border: 1px solid #C0B6B3;
+								border-radius: 2px;
+								padding: 10px 15px;
+								box-sizing: border-box;
+								font-size: 13px;
+								color: #333;
+								letter-spacing: 0.08em;
+								line-height: 1;
+								appearance: none;
+
+								&::placeholder{
+									color: #C6C6C6;
+								}
 							}
 
 							.nameArea{
@@ -564,6 +674,7 @@ $bp768: 768px;  // スマホ
 							.zipArea{
 								display: flex;
 								align-items: center;
+								flex-wrap: wrap;
 
 								dt{
 									width: 68px;
@@ -582,11 +693,10 @@ $bp768: 768px;  // スマホ
 								display: none;
 							}
 							.checkBox input + label{
-								padding-left: 32px;
+								padding-left: 28px;
 								vertical-align: middle;
 								position: relative;
-								padding-top: 4px;
-								margin-right: 50px;
+								margin-right: 66px;
 
 							&::before{
 								content: "";
@@ -594,10 +704,10 @@ $bp768: 768px;  // スマホ
 								position: absolute;
 								top: 0;
 								left: 0;
-								width: 24px;
-								height: 24px;
-								border: 1px solid #968680;
-								border-radius: 50%;
+								width: 20px;
+								height: 20px;
+								border: 1px solid #C0B6B3;
+								border-radius: 3px;
 								background: #fff;
 								box-sizing: border-box;
 							}
@@ -606,12 +716,12 @@ $bp768: 768px;  // スマホ
 								content: "";
 								display: block;
 								position: absolute;
-								top: 6px;
-								left: 6px;
+								top: 4px;
+								left: 4px;
 								width: 12px;
 								height: 12px;
 								background: #2E0E02;
-								border-radius: 50%;
+								border-radius: 3px;
 							}
 							.checkBox input:checked + label.on::after{
 								content: "";
@@ -877,11 +987,13 @@ $bp768: 768px;  // スマホ
 					&.orderHistoryList{
 						display: flex;
 						justify-content: space-between;
+						padding-top: 24px;
+						padding-bottom: 24px;
+						margin-bottom: 50px;
 
 						@include bp768 {
 							display: block;
 							border-bottom: 1px solid #EAE6E5;
-							padding-bottom: 24px;
 						};
 
 						.orderHistoryList_left{
@@ -936,12 +1048,14 @@ $bp768: 768px;  // スマホ
 
 						.orderHistoryList_right{
 							width: 300px;
+							height: 176px;
 							background: rgba(234,230,229,.5);
 							padding: 24px;
 							box-sizing: border-box;
 
 							@include bp768 {
 								width: 100%;
+								height: auto;
 							};
 
 							dl{
@@ -1106,6 +1220,43 @@ $bp768: 768px;  // スマホ
 					line-height: 25.2px;
 					margin-bottom: 40px;
 				}
+
+				&--inquiryNote{
+					margin: 24px 0 60px;
+
+					@include bp768 {
+						margin: 60px 0;
+					};
+
+					p{
+						font-size: 12px;
+						line-height: 2;
+						color: #3D3D3D;
+					}
+				}
+			}
+
+			&.inquiryWrap{
+				.registWrap_box--input{
+					border-top: none;
+					border-bottom: none;
+					padding: 0 38px;
+
+					@include bp768 {
+						border-top: 1px solid #EAE6E5;
+						border-bottom: none;
+						padding: 17px 0 0;
+						margin-top: 50px;
+					};
+
+					.inputBox_confirm{
+						.inputBox_left{
+							@include bp768 {
+								color: #878787;
+							};
+						}
+					}
+				}
 			}
 		}
 
@@ -1149,6 +1300,12 @@ $bp768: 768px;  // スマホ
 						@include bp768 {
 							font-size: 11px;
 						};
+					}
+
+					&:last-child{
+						a{
+							color: #878787;
+						}
 					}
 				}
 			}
@@ -1212,6 +1369,7 @@ $bp768: 768px;  // スマホ
 			position: relative;
 			border-radius: 2px;
 			border: 1px solid #2E0E02;
+			z-index: 0;
 
 			@include bp768 {
 				width: 100%;
@@ -1243,6 +1401,39 @@ $bp768: 768px;  // スマホ
 					border-right: 1px solid #2E0E02;
 				};
 			}
+
+		    &:hover::after {
+				border-top: 1.5px solid #fff;
+				border-right: 1.5px solid #fff;
+		    }
+
+		    &::before{
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				background: #2E0E02;
+				transform-origin: right top;
+				transform: scale(0, 1);
+				transition: transform .3s;
+
+				@include bp768 {
+					content: none;
+				};
+		    }
+
+		    &:hover::before {
+				transform-origin: left top;
+				transform: scale(1, 1);
+		    }
+
+		    &:hover{
+		      opacity: 1;
+		      color: #fff;
+		    }
 		}
 
 		.nextBtn{
@@ -1255,6 +1446,7 @@ $bp768: 768px;  // スマホ
 			position: relative;
 			border-radius: 2px;
 			border: 1px solid #2E0E02;
+			z-index: 0;
 
 			@include bp768 {
 				width: 100%;
@@ -1286,6 +1478,39 @@ $bp768: 768px;  // スマホ
 					border-right: 1px solid #fff;
 				};
 			}
+
+			&:hover::after {
+				border-top: 1.5px solid #2E0E02;
+				border-right: 1.5px solid #2E0E02;
+		    }
+
+		    &::before{
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				background: #fff;
+				transform-origin: right top;
+				transform: scale(0, 1);
+				transition: transform .3s;
+
+				@include bp768 {
+					content: none;
+				};
+		    }
+
+		    &:hover::before {
+				transform-origin: left top;
+				transform: scale(1, 1);
+		    }
+
+		    &:hover{
+		      opacity: 1;
+		      color: #2E0E02;
+		    }
 		}
 
 		/*====================================================================
@@ -1588,10 +1813,25 @@ $bp768: 768px;  // スマホ
 					position: relative;
 					margin-bottom: 60px;
 
+					@include bp768 {
+						margin-bottom: 40px;
+					};
+
+					.inputBox{
+						@include bp768 {
+							border-bottom: 1px solid #EAE6E5;
+						};
+					}
+
 					&_delete{
 						position: absolute;
 						top: 0;
 						right: 40px;
+
+						@include bp768 {
+							top: -6px;
+							right: 0;
+						};
 
 						a{
 							color: #3D3D3D;
@@ -1611,6 +1851,13 @@ $bp768: 768px;  // スマホ
 						top: 183px;
 						right: 40px;
 
+						@include bp768 {
+							position: inherit;
+							top: inherit;
+							right: inherit;
+							margin: 16px 0 0;
+						};
+
 						a{
 							color: #2E0E02;
 							font-size: 12px;
@@ -1619,7 +1866,23 @@ $bp768: 768px;  // スマホ
 							height: 32px;
 							line-height: 32px;
 							text-align: center;
+							margin-left: auto;
 						}
+					}
+
+					.inputBox_left{
+						@include bp768 {
+							color: #878787;
+							margin-bottom: 5px;
+						};
+					}
+
+					.inputBox_right{
+						@include bp768 {
+							margin-bottom: 27px;
+							padding-bottom: 0;
+							border-bottom: none;
+						};
 					}
 				}
 			}
@@ -1628,6 +1891,10 @@ $bp768: 768px;  // スマホ
 		.displayNone{
 			display: none;
 		}
+	}
+
+	.fwBold{
+		@include font-weight(bold);
 	}
 }
 

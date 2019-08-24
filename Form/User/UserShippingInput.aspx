@@ -9,7 +9,7 @@
 <%@ Register TagPrefix="uc" TagName="Layer" Src="~/Form/Common/Layer/SearchResultLayer.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <div class="registWrap mypageCts">
-	<h2>お届け先情報変更</h2>
+	<h2>お届け先情報入力</h2>
 
 	<div class="registWrap_box">
 		<h3>アドレス帳情報</h3>
@@ -71,7 +71,7 @@
 				</dd>
 			<% if (this.IsShippingAddrJp) { %>
 				<%-- 氏名（かな） --%>
-				<dt class="inputBox_left must">ふりがな</dt>
+				<dt class="inputBox_left must">かな</dt>
 				<dd class="inputBox_right">
 					<dl class="nameArea">
 						<dt>
@@ -279,7 +279,7 @@
 						CssClass="error_inline" />
 				</dd>
 				<%-- ビル・マンション名 --%>
-				<dt class="inputBox_left must">
+				<dt class="inputBox_left">
 					住所（建物名）
 					<% if (this.IsShippingAddrJp == false) { %><% } %>
 				</dt>

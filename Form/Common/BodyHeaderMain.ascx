@@ -26,9 +26,72 @@
 <%-- ▽編集可能領域：共通ヘッダ領域▽ --%>
 <script type="text/javascript">
 $(function () {
-	$("#search_btnSp").click(function(){
-		$("#ctl00_BodyHeaderMain_tbSearchWord").attr("value",$("#ctl00_BodyHeaderMain_tbSearchWord2").val())
-		__doPostBack('ctl00$BodyHeaderMain$lbSearch','')
+    "use strict";
+
+	var txt = '0';
+	var elem = null;
+	$('.icnBag:contains(' + txt + ')').each(function () {
+	  if ($(this).text() == txt) elem = $(this);
+	  elem.css('display', 'none');
+	});
+	$(".header__nav--list li").hover(function () {
+	  $(this).toggleClass("on");
+	});
+
+	if (document.URL.match("lookbook")) {
+	  $(".header__nav--list li:nth-child(3)").addClass("on");
+	}
+
+	if (document.URL.match("Concept")) {
+	  $(".header__nav--list li:nth-child(4)").addClass("on");
+	} //ヘッダーメニューマウスオーバー
+
+
+	if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
+	  $('.icnSerachBtn').hover(function () {
+	    $('.header__icon--search').addClass('on');
+	    $('.icnSerachBtn').hide();
+	  });
+	  $('.search_textBox').hover(function () {}, function () {
+	    $('.header__icon--search').removeClass('on');
+	    $('.icnSerachBtn').show();
+	  });
+	}
+
+	var timeBomb;
+	$('.header__nav--list li.menuOpen').hover(
+	  function() {
+	    timeBomb = setTimeout(function() {
+	      $(".header__nav--hov").slideDown(500);
+	      $(this).addClass('active');
+	    }, 200)
+	  }, function() {
+	    $(".header__nav--hov").slideUp(500);
+	    $(this).removeClass('active');
+	    clearTimeout(timeBomb)
+	  }
+	)
+
+	$('.nav_box.loginAfter h3').click(function () {
+	  $(this).toggleClass("on");
+	  $(this).next("ul").slideToggle(500);
+	});
+	$("#search_btnSp").click(function () {
+	  $("#ctl00_BodyHeaderMain_tbSearchWord").attr("value", $("#ctl00_BodyHeaderMain_tbSearchWord2").val());
+
+	  __doPostBack('ctl00$BodyHeaderMain$lbSearch', '');
+	});
+	$("#ctl00_BodyHeaderMain_tbSearchWord2").keypress(function(e){
+	  if(e.which == 13){
+	    $("#search_btnSp").click();
+	  }
+	});
+	var state = false;
+	$('.btn_menu').click(function () {
+	  $(this).toggleClass('active');
+	  $(".header__menu").toggleClass('open');
+	  $("#Wrap").toggleClass('open');
+
 	});
 });
 </script>
@@ -60,32 +123,47 @@ $(function () {
 											</li>
 											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=001&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
-													トップス
-												</a>
-											</li>
-											<li>
-												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=002&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 													アウター
 												</a>
 											</li>
 											<li>
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=002&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+													シャツ・ブラウス
+												</a>
+											</li>
+											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=003&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
-													ワンピース
+													ニット
 												</a>
 											</li>
 											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=004&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
-													パンツ
+													カットソー
 												</a>
 											</li>
 											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=005&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
-													スカート
+													ワンピース
 												</a>
 											</li>
 											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=006&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
-													グッズ
+													スカート
+												</a>
+											</li>
+											<li>
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=007&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+													パンツ
+												</a>
+											</li>
+											<li>
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=008&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+													帽子
+												</a>
+											</li>
+											<li>
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=009&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+													靴下
 												</a>
 											</li>
 										</ul>
@@ -97,12 +175,14 @@ $(function () {
 												</a>
 											</li>
 											<li>
-												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&cicon=2&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
 													セール
 												</a>
 											</li>
 										</ul>
-										<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_item.jpg" alt="">
+										<div class="hov_inner--pic">
+											<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_item.jpg" alt="">
+										</div>
 									</div>
 								</div>
 							</li>
@@ -110,13 +190,10 @@ $(function () {
 								<a href="">TOPICS</a>
 							</li>
 							<li>
-								<a href="">LOOKBOOK</a>
+								<a href="<%= Constants.PATH_ROOT %>Page/lookbook/">LOOKBOOK</a>
 							</li>
 							<li>
-								<a href="">CONCEPT</a>
-							</li>
-							<li>
-								<a href="">COLUMN</a>
+								<a href="<%= Constants.PATH_ROOT %>Page/Concept/about.aspx">CONCEPT</a>
 							</li>
 						</ul>
 					</nav>
@@ -125,9 +202,9 @@ $(function () {
 				<div class="header__right">
 					<p>
 						<%if (this.IsLoggedIn) { %>
-							<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_MYPAGE) %>" class="nav_loginTxt--member">新規登録/ログイン</a>
+							<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_MYPAGE) %>" class="nav_loginTxt--member">マイページ</a>
 						<% }else{ %>
-							<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_LOGIN + "?" + Constants.REQUEST_KEY_NEXT_URL + "=" + HttpUtility.UrlEncode(this.NextUrl)) %>">新規登録/ログイン</a>
+							<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_LOGIN + "?" + Constants.REQUEST_KEY_NEXT_URL + "=" + HttpUtility.UrlEncode(this.NextUrl)) %>">新規会員登録/ログイン</a>
 						<% } %>
 					</p>
 					<div class="header__icon header__icon--search">
@@ -198,8 +275,7 @@ $(function () {
 							<%if (this.IsLoggedIn) { %>
 							<div class="loginAfterBox">
 								<div class="nav_loginTxt loginAfter">
-									<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_MYPAGE) %>" class="nav_loginTxt--member">ようこそ、<%= WebSanitizer.HtmlEncode(this.LoginUserName) %>さん
-									<span><%= WebSanitizer.HtmlEncode(GetNumeric(this.LoginUserPointUsable)) %>ポイント</span></a>
+									<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_MYPAGE) %>" class="nav_loginTxt--member">ようこそ、<%= WebSanitizer.HtmlEncode(this.LoginUserName) %>さん</a>
 								</div>
 
 								<div class="nav_box loginAfter">
@@ -218,6 +294,11 @@ $(function () {
 										<li>
 											<a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_CREDITCARD_LIST) %>">
 												クレジットカード情報
+											</a>
+										</li>
+										<li>
+											<a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_SHIPPING_LIST) %>">
+												お届け先情報
 											</a>
 										</li>
 										<li>
@@ -267,7 +348,7 @@ $(function () {
 							</div>
 							<% }else{ %>
 								<p class="nav_loginTxt">
-									<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_LOGIN + "?" + Constants.REQUEST_KEY_NEXT_URL + "=" + HttpUtility.UrlEncode(this.NextUrl)) %>" class="nav_loginTxt--guest">新規登録/ログイン</a>
+									<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_LOGIN + "?" + Constants.REQUEST_KEY_NEXT_URL + "=" + HttpUtility.UrlEncode(this.NextUrl)) %>" class="nav_loginTxt--guest">新規会員登録/ログイン</a>
 								</p>
 							<% } %>
 							
@@ -319,7 +400,7 @@ $(function () {
 										</div>
 									</li>
 									<li>
-										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&cicon=2&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
 											セール
 										</a>
 									</li>
@@ -336,32 +417,47 @@ $(function () {
 									</li>
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=001&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
-											トップス
-										</a>
-									</li>
-									<li>
-										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=002&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 											アウター
 										</a>
 									</li>
 									<li>
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=002&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+											シャツ・ブラウス
+										</a>
+									</li>
+									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=003&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
-											ワンピース
+											ニット
 										</a>
 									</li>
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=004&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
-											パンツ
+											カットソー
 										</a>
 									</li>
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=005&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
-											スカート
+											ワンピース
 										</a>
 									</li>
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=006&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
-											グッズ
+											スカート
+										</a>
+									</li>
+									<li>
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=007&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+											パンツ
+										</a>
+									</li>
+									<li>
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=008&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+											帽子
+										</a>
+									</li>
+									<li>
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=009&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+											靴下
 										</a>
 									</li>
 								</ul>
@@ -371,12 +467,12 @@ $(function () {
 								<h3>特集</h3>
 								<ul>
 									<li>
-										<a href="">
+										<a href="<%= Constants.PATH_ROOT %>Page/Concept/about.aspx">
 											コンセプト
 										</a>
 									</li>
 									<li>
-										<a href="">
+										<a href="<%= Constants.PATH_ROOT %>Page/lookbook/">
 											ルックブック
 										</a>
 									</li>

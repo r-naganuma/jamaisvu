@@ -18,20 +18,14 @@
 <ul class="mainVisual">
     <li>
         <a href="">
-            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_1.png" alt="">
+            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_1.jpg" alt="">
             <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_1_sp.jpg" alt="">
         </a>
     </li>
     <li>
         <a href="">
-            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_1.png" alt="">
-            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_1_sp.jpg" alt="">
-        </a>
-    </li>
-    <li>
-        <a href="">
-            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_1.png" alt="">
-            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_1_sp.jpg" alt="">
+            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_2.jpg" alt="">
+            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_2_sp.jpg" alt="">
         </a>
     </li>
 </ul>

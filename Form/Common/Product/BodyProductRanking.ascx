@@ -50,14 +50,21 @@ this.DataKbn = "111";
                     <div class="rankingContent__list-item">
                         <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/rank_no<%# Container.ItemIndex+1 %>.png" alt="" class="rankingContent__list-item--num">
                         <% if(Constants.LAYER_DISPLAY_VARIATION_IMAGES_ENABLED){ %>
-						<uc:BodyProductVariationImages ImageSize="<%# this.ImageSize %>" ProductMaster="<%# Container.DataItem %>" VariationList="<%# this.ProductVariationList %>" VariationNo="<%# Container.ItemIndex.ToString() %>" runat="server" />
+                    	<div class="rankingContent__list-item--pic">
+							<uc:BodyProductVariationImages ImageSize="<%# this.ImageSize %>" ProductMaster="<%# Container.DataItem %>" VariationList="<%# this.ProductVariationList %>" VariationNo="<%# Container.ItemIndex.ToString() %>" runat="server" />
+							<%-- ▽在庫切れ可否▽ --%>
+							<span visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLD OUT</span>
+							<%-- △在庫切れ可否△ --%>
+						</div>
 						<% } else { %>
-						<a href='<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrl(Container.DataItem)) %>'>
-						<w2c:ProductImage ImageSize="<%# this.ImageSize %>" ProductMaster="<%# Container.DataItem %>" IsVariation="false" runat="server" /></a>
+						<div class="rankingContent__list-item--pic">
+							<a href='<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrl(Container.DataItem)) %>'>
+							<w2c:ProductImage ImageSize="<%# this.ImageSize %>" ProductMaster="<%# Container.DataItem %>" IsVariation="false" runat="server" /></a>
+							<%-- ▽在庫切れ可否▽ --%>
+							<span visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLD OUT</span>
+							<%-- △在庫切れ可否△ --%>
+						</div>
 						<% } %>
-						<%-- ▽在庫切れ可否▽ --%>
-						<span visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLDOUT</span>
-						<%-- △在庫切れ可否△ --%>
 
                         <a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrl(Container.DataItem)) %>" class="rankingContent__itemName"><%# WebSanitizer.HtmlEncode(GetKeyValue(Container.DataItem, Constants.FIELD_PRODUCT_NAME)) %></a>
 

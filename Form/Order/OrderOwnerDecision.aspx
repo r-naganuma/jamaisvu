@@ -56,38 +56,23 @@
 			</div><!--dvLoginWrap-->
 			<div class="loginWrap_box--right">
 				<p class="loginTtl">外部サイトのIDで会員登録・ログイン</p>
-				<p><a href="<%= Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_REGIST_INPUT + "?" + Constants.REQUEST_KEY_NEXT_URL + "=" + Server.UrlEncode(Request[Constants.REQUEST_KEY_NEXT_URL]) %>" class="loginBtn">メールアドレスで新規会員登録</a></p>
-				<%if (this.CartList.HasFixedPurchase == false) { %>
-				<p><asp:LinkButton ID="lbOrderShipping" runat="server" onclick="lbOrderShipping_Click" class="loginBtn">ゲスト購入はこちら</asp:LinkButton></p>
-				<%} %>
-				<% if (Constants.COMMON_SOCIAL_LOGIN_ENABLED) { %>
-				<div style="margin-top:20px;" class="dvSocialLoginCooperation">
-				<h3>ソーシャルログイン</h3>
-					<p>ソーシャルログイン連携によるログインは、こちらから行ってください。</p>
-					<ul style="display:flex;margin-bottom:20px;flex-wrap:wrap">
-						<% if (Constants.SOCIAL_LOGIN_ENABLED) { %>
+				<p class="loginTtl_catch">お持ちのアカウントで会員登録・ログインできます。</p>
+				<div class="socialBox">
+					<ul>
 						<%-- Facebook --%>
-						<li style="padding: 0 0.5em;">
-							<a style="width: 170px;background-color: #305097;border: none;border-radius:5px;color: white;padding: 1em 2em;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;"
-								href="<%=w2.App.Common.User.SocialLogin.Util.SocialLoginUtil.GetAuthenticateUrl(
-										w2.App.Common.User.SocialLogin.Helper.SocialLoginApiProviderType.Facebook,
-										Constants.PAGE_FRONT_SOCIAL_LOGIN_ORDER_CALLBACK,
-										Constants.PAGE_FRONT_SOCIAL_LOGIN_ORDER_CALLBACK,
-										true,
-										Request.Url.Authority) %>">Facebookで新規登録/ログイン</a>
+						<li>
+							<a href="https://api.socialplus.jp/jamaisvu/jamaisvu/facebook/authenticate?extended_profile=true&display=page&callback=https://jamaisvu.co.jp/Form/User/UserRegistInput.aspx&registration=true&trcode=fb">
+								<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/fb_white.png" alt="Facebook">Facebookでログイン
+							</a>
 						</li>
 						<%-- Twitter --%>
-						<li style="padding: 0 0.5em;">
-							<a style="width: 170px;background-color: #1da1f2;border: none;border-radius:5px;color: white;padding: 1em 2em;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;"
-								href="<%=w2.App.Common.User.SocialLogin.Util.SocialLoginUtil.GetAuthenticateUrl(
-										w2.App.Common.User.SocialLogin.Helper.SocialLoginApiProviderType.Twitter,
-										Constants.PAGE_FRONT_SOCIAL_LOGIN_ORDER_CALLBACK,
-										Constants.PAGE_FRONT_SOCIAL_LOGIN_ORDER_CALLBACK,
-										true,
-										Request.Url.Authority) %>">Twitterで新規登録/ログイン</a>
+						<li>
+							<a href="https://api.socialplus.jp/jamaisvu/jamaisvu/twitter/authenticate?callback=https://jamaisvu.co.jp/Form/User/UserRegistInput.aspx">
+								<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/tw_white.png" alt="Twitter">Twitterでログイン
+							</a>
 						</li>
 						<%-- Yahoo --%>
-						<li style="padding: 0 0.5em;">
+						<li style="display: none;">
 							<a style="width: 170px;background-color:#ff0020;border:none;border-radius:5px;color:white;padding:1em 2em;text-align:center;text-decoration:none;display: inline-block;font-size:12px;font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;"
 								href="<%= w2.App.Common.User.SocialLogin.Util.SocialLoginUtil.GetAuthenticateUrl(
 										w2.App.Common.User.SocialLogin.Helper.SocialLoginApiProviderType.Yahoo,
@@ -97,7 +82,7 @@
 										Request.Url.Authority) %>">Yahoo!で新規登録/ログイン</a>
 						</li>
 						<%-- LINE --%>
-						<li style="padding: 0 0.5em;">
+						<li style="display: none;">
 							<a style="width: 170px;background-color: #00c300;border: none;border-radius:5px;color: white;padding: 1em 2em;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;"
 								href="<%=w2.App.Common.User.SocialLogin.Util.SocialLoginUtil.GetAuthenticateUrl(
 										w2.App.Common.User.SocialLogin.Helper.SocialLoginApiProviderType.Line,
@@ -107,7 +92,6 @@
 										Request.Url.Authority) %>">LINEで新規登録/ログイン</a>
 							<p style="margin:3px 0 4px;">※LINE連携時に友だち追加します</p>
 						</li>
-						<% } %>
 						<%-- Amazon --%>
 						<% if (this.IsVisibleAmazonPayButton || this.IsVisibleAmazonLoginButton) { %>
 						<li style="padding: 0 0.5em;">
@@ -145,7 +129,10 @@
 						<% } %>
 					</ul>
 				</div>
-				<% } %>
+				<p><a href="<%= Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_REGIST_INPUT + "?" + Constants.REQUEST_KEY_NEXT_URL + "=" + Server.UrlEncode(Request[Constants.REQUEST_KEY_NEXT_URL]) %>" class="loginBtn addressBtn">メールアドレスで新規会員登録</a></p>
+				<%if (this.CartList.HasFixedPurchase == false) { %>
+				<p><asp:LinkButton ID="lbOrderShipping" runat="server" onclick="lbOrderShipping_Click" class="loginBtn addressBtn">ゲスト購入はこちら</asp:LinkButton></p>
+				<%} %>
 			</div>
 		</div>
 	</div>

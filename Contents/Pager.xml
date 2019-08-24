@@ -58,14 +58,14 @@
   <DefaultListPagerSetting>
     <!-- 前へリンク -->
     <PageBackNormal><![CDATA[前の@@display_max@@件]]></PageBackNormal>
-    <PageBackAnchor><![CDATA[<a href="@@url@@">前の@@display_max@@件</a>]]></PageBackAnchor>
+    <PageBackAnchor><![CDATA[<a href="@@url@@"></a>]]></PageBackAnchor>
     <!-- 次へリンク -->
     <PageNextNormal><![CDATA[]]></PageNextNormal>
-    <PageNextAnchor><![CDATA[<a href="@@url@@">次の@@display_max@@件</a>]]></PageNextAnchor>
+    <PageNextAnchor><![CDATA[<a href="@@url@@" class="pagination_next"></a>]]></PageNextAnchor>
     <!-- 数字リンク -->
     <PageNumNormal><![CDATA[<span class="pagination_counts">@@page_num@@</span>]]></PageNumNormal>
-    <PageNumAnchor><![CDATA[<a href="@@url@@">@@page_num@@</a>]]></PageNumAnchor>
-    <PageNumSeperator><![CDATA[ | ]]></PageNumSeperator>
+    <PageNumAnchor><![CDATA[<a href="@@url@@" class="pagination_link">@@page_num@@</a>]]></PageNumAnchor>
+    <PageNumSeperator><![CDATA[]]></PageNumSeperator>
     <PageNumOmitSeperator><![CDATA[ ... ]]></PageNumOmitSeperator>
     <!-- ページャテンプレート -->
     <Template>
@@ -78,7 +78,7 @@
         </div>
         <div class="pagination_box--right">
           <@@PageNumLink@@>
-          <span class="pagination_next"><@@PageNextLink@@></span>
+          <@@PageNextLink@@>
         </div>
       </div>]]>
     </Template>
@@ -88,14 +88,14 @@
   <ProductReviewPagerSetting>
     <!-- 前へリンク -->
     <PageBackNormal><![CDATA[前の@@display_max@@件]]></PageBackNormal>
-    <PageBackAnchor><![CDATA[<a href="@@url@@#aProductReview">前の@@display_max@@件</a>]]></PageBackAnchor>
+    <PageBackAnchor><![CDATA[<a href="@@url@@"></a>]]></PageBackAnchor>
     <!-- 次へリンク -->
     <PageNextNormal><![CDATA[次の@@display_max@@件]]></PageNextNormal>
-    <PageNextAnchor><![CDATA[<a href="@@url@@#aProductReview">次の@@display_max@@件</a>]]></PageNextAnchor>
+    <PageNextAnchor><![CDATA[<a href="@@url@@" class="pagination_next"></a>]]></PageNextAnchor>
     <!-- 数字リンク -->
     <PageNumNormal><![CDATA[<span class="pagination_counts">@@page_num@@</span>]]></PageNumNormal>
-    <PageNumAnchor><![CDATA[<a href="@@url@@#aProductReview">@@page_num@@</a>]]></PageNumAnchor>
-    <PageNumSeperator><![CDATA[ | ]]></PageNumSeperator>
+    <PageNumAnchor><![CDATA[<a href="@@url@@#aProductReview" class="pagination_link">@@page_num@@</a>]]></PageNumAnchor>
+    <PageNumSeperator><![CDATA[]]></PageNumSeperator>
     <PageNumOmitSeperator><![CDATA[ ... ]]></PageNumOmitSeperator>
     <!-- ページャテンプレート -->
     <Template>
@@ -108,7 +108,7 @@
         </div>
         <div class="pagination_box--right">
           <@@PageNumLink@@>
-          <span class="pagination_next"><@@PageNextLink@@></span>
+          <@@PageNextLink@@>
         </div>
       </div>]]>
     </Template>

@@ -2,12 +2,14 @@
 
 @font-face {
 	font-family: 'baskerville';
-	src: url('../Font/baskerville.otf') format("opentype");
+	src: url("../Font/baskerville.woff") format('woff'),
+		 url('../Font/baskerville.otf') format("opentype");
 }
 
 @font-face {
 	font-family: 'gillsans';
-	src: url('../Font/gillsans.otf') format("opentype");
+	src: url("../Font/gillsans.woff") format('woff'),
+		 url('../Font/gillsans.otf') format("opentype");
 }
 
 body{
@@ -93,6 +95,13 @@ textarea::focus {
 /*====================================================================
 *    mixin
 /*==================================================================*/
+$bp1280: 1280px;
+
+@mixin bp1280 {
+  @media (max-width: ($bp1280)) {
+    @content;
+  }
+}
 $bp1200: 1200px;
 
 @mixin bp1200 {
@@ -350,7 +359,7 @@ $bp768: 768px;  // スマホ
 			display: inline;
 			font-size: 12px;
 			line-height: 1;
-			color: #878787;
+			color: #C6C6C6;
 
 			@include bp768 {
 				font-size: 11px;
@@ -365,6 +374,12 @@ $bp768: 768px;  // スマホ
 			@include bp768 {
 				font-size: 11px;
 			};
+		}
+
+		&:last-child{
+			a{
+				color: #878787;
+			}
 		}
 	}
 }
@@ -409,6 +424,19 @@ $bp768: 768px;  // スマホ
 	}
 
 	&_counts{
+		font-size: 12px;
+		line-height: 1;
+		color: #3D3D3D;
+		margin-right: 22px;
+
+		@include bp768 {
+			font-size: 16px;
+			margin-right: 35px;
+		};
+	}
+
+	&_link{
+		display: inline;
 		font-size: 12px;
 		line-height: 1;
 		color: #3D3D3D;
@@ -472,7 +500,7 @@ $bp768: 768px;  // スマホ
 	&__logo {
 		@include bp1000 {
 			width: 32%;
-			margin: 8px auto 0;
+			margin: 5px auto 0;
 		};
 
 		img{
@@ -503,7 +531,11 @@ $bp768: 768px;  // スマホ
 
 					&:hover{
 						opacity: 1;
+					}
+				}
 
+				&.on{
+					a{
 						&::after{
 							content: "";
 							position: absolute;
@@ -567,7 +599,7 @@ $bp768: 768px;  // スマホ
 					}
 				}
 
-				img{
+				&--pic{
 					width: 183px;
 					margin-left: auto;
 				}
@@ -587,6 +619,7 @@ $bp768: 768px;  // スマホ
 
 		p{
 			padding-top: 3px;
+			margin-right: 20px;
 		}
 	}
 
@@ -601,6 +634,11 @@ $bp768: 768px;  // スマホ
 
 		&--search{
 			padding-top: 3px;
+			height: 17.5px;
+
+			@include bp1000 {
+				height: auto;
+			};
 
 			img {
 				width: 17.5px;
@@ -644,7 +682,7 @@ $bp768: 768px;  // スマホ
 					@include bp1000 {
 						width: 17.68px;
 						position: absolute;
-						top: 15px;
+						top: 10px;
 						left: 16px;
 					};
 				}
@@ -653,7 +691,7 @@ $bp768: 768px;  // スマホ
 					@include bp1000 {
 						border: 1px solid #C6C6C6;
 						border-radius: 2px;
-						padding: 10px 10px 10px 50px;
+						padding: 7px 10px 10px 50px;
 						margin-bottom: 20px;
 						box-sizing: border-box;
 					};
@@ -700,7 +738,7 @@ $bp768: 768px;  // スマホ
 			};
 
 			img{
-				width: 19.5px;
+				width: 24px;
 
 				@include bp1000 {
 					width: 28px;
@@ -741,9 +779,10 @@ $bp768: 768px;  // スマホ
 				display: block;
 				height: 2px;
 				background-color: #2E0E02;
-				margin: 0 0 12px 0;
+				margin: 0 0 9px 0;
 				transition: all 0.2s;
 				transform-origin: 0 0;
+				border-radius: 2px;
 			};
 		}
 
@@ -810,10 +849,10 @@ $bp768: 768px;  // スマホ
 				background: #fff;
 				padding: 24px 18px 60px;
 				box-sizing: border-box;
-				transform: translateX(-1000px);
+				transform: translateX(-400px);
 				animation: nav 0.3s ease-in 0s forwards;
 				position: relative;
-				z-index: 1000;
+				z-index: 1003;
 
 				.nav_logo{
 					width: 100%;
@@ -1046,6 +1085,10 @@ $bp768: 768px;  // スマホ
         transform: rotate(0deg);
         margin: 0 0 8px 0;
     }
+    50%{
+        transform: rotate(0deg);
+        margin: 0 0 8px 0;
+    }
     100%{
         transform: rotate(45deg);
         margin: 0 0 14px 0;
@@ -1055,6 +1098,9 @@ $bp768: 768px;  // スマホ
 
 @keyframes rotate2{
     0%{
+        transform: rotate(0deg) translateX(0);
+    }
+    50%{
         transform: rotate(0deg) translateX(0);
     }
     100%{
@@ -1067,6 +1113,9 @@ $bp768: 768px;  // スマホ
     0%{
         transform: rotate(0deg);
     }
+    50%{
+        transform: rotate(0deg);
+    }
     100%{
         transform: rotate(-45deg);
         background-color: #fff;
@@ -1077,6 +1126,9 @@ $bp768: 768px;  // スマホ
     0%{
 		left: 20px;
     }
+    80%{
+		left: 20px;
+    }
     100%{
 		left: 88%;
     }
@@ -1084,7 +1136,7 @@ $bp768: 768px;  // スマホ
 
 @keyframes nav{
     0%{
-		transform: translateX(-1000px);
+		transform: translateX(-400px);
     }
     100%{
 		transform: translateX(0);
@@ -1130,19 +1182,37 @@ $bp768: 768px;  // スマホ
     	display: block;
     }
 
+	&.open{
+		position: relative;
+		z-index: 0;
+	}
+
 	/*---------------*/
 	/*--- pageTop ---*/
 	/*---------------*/
 
 	.pageTop {
 		.mainVisual {
-			width: 100%;
+			width: 100vw;
 			margin-bottom: 0;
+			height: 100vh !important;
 
 			@include bp768 {
-				height: 100vh !important;
+				width: 100%;
 				margin-bottom: 90px;
 			};
+
+			img{
+				height: 100vh;
+				object-fit: cover;
+				object-position: 50%;
+
+				@include bp768 {
+					height: auto;
+					object-fit: inherit;
+					object-position: inherit;
+				};
+			}
 
 			.slick-slide{
 				border: none;
@@ -1153,7 +1223,7 @@ $bp768: 768px;  // スマホ
 				top: 40%;
 				margin: auto;
 				right: 40px;
-				z-index: 2;
+				z-index: 1;
 				width: 6px;
 
 				@include bp768 {
@@ -1249,53 +1319,147 @@ $bp768: 768px;  // スマホ
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			padding: 65px 0;
+			padding: 80px 0 100px;
+			position: relative;
+			z-index: 0;
+			margin-top: -2px;
 
 			@include bp768 {
-				margin-bottom: 60px;
+				margin-bottom: 90px;
+				padding: 60px 0 44px;
+				margin-top: 0;
 			};
 
-			p {
-				color: #fff;
-				text-align: center;
-				font-size: 14px;
-				line-height: 2;
+			.sec__title{
+				font-size: 16px;
+				margin-bottom: 30px;
 
 				@include bp768 {
-					font-size: 13px;
+					font-size: 14px;
+					margin-bottom: 40px;
 				};
-				
-				+ p {
-					margin-top: 24px;
-				}
 			}
 
-			.concept__list {
-				display: flex;
-				justify-content: space-between;
-				width: 580px;
-				flex-wrap: wrap;
-				margin: 40px auto 0;
+			.concept_txt1 {
+				color: #fff;
+				text-align: center;
+				font-size: 22px;
+				line-height: 39.6px;
+
+				@include bp768 {
+					font-size: 20px;
+					line-height: 36px;
+				};
+			}
+
+			.concept_txt2 {
+				color: #fff;
+				text-align: center;
+				font-size: 22px;
+				line-height: 1;
+				font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+				margin: 24px 0 48px;
+
+				@include bp768 {
+					font-size: 20px;
+					margin: 16px 0 40px;
+				};
+			}
+
+			.concept_txt3 {
+				color: #fff;
+				text-align: center;
+				font-size: 13px;
+				line-height: 23.4px;
+				margin: 0 0 32px;
 
 				@include bp768 {
 					width: 100%;
 					padding: 0 18px;
 					box-sizing: border-box;
+					text-align: left;
+				};
+			}
+
+			.concept_txt4 {
+				color: #fff;
+				text-align: center;
+				font-size: 13px;
+				line-height: 23.4px;
+
+				@include bp768 {
+					width: 100%;
+					padding: 0 18px;
+					box-sizing: border-box;
+					text-align: left;
+				};
+			}
+
+			.concept__list {
+				display: flex;
+				justify-content: space-between;
+				width: 640px;
+				flex-wrap: wrap;
+				margin: 60px auto 0;
+
+				@include bp768 {
+					width: 100%;
+					padding: 0 18px;
+					box-sizing: border-box;
+					display: block;
+					margin: 40px auto 0;
 				};
 			
 				.concept__list-item {
-					width: 180px;
-					margin-bottom: 20px;
+					width: 200px;
+					position: relative;
 
 					@include bp768 {
-						width: 48%;
-						margin-bottom: 18px;
+						width: 100%;
+						margin-bottom: 16px;
 					};
+
+					&:after {
+						content: "";
+						position: absolute;
+						bottom: 11.5px;
+						right: 0;
+						left: 0;
+						margin: auto;
+						z-index: 1;
+						display: block;
+						width: 7px;
+						height: 7px;
+						-moz-transform: rotate(135deg);
+						-webkit-transform: rotate(135deg);
+						-ms-transform: rotate(135deg);
+						transform: rotate(135deg);
+						border-top: 2px solid #fff;
+						border-right: 2px solid #fff;
+
+						@include bp768 {
+							right: 15px;
+							bottom: 0;
+							left: inherit;
+							top: 0;
+							border-top: 1px solid #fff;
+							border-right: 1px solid #fff;
+							-moz-transform: rotate(45deg);
+							-webkit-transform: rotate(45deg);
+							-ms-transform: rotate(45deg);
+							transform: rotate(45deg);
+						};
+					}
+
+				    &:hover::after {
+						border-top: 2px solid #2E0E02;
+						border-right: 2px solid #2E0E02;
+				    }
 					
 					a {
 						width: 100%;
 						border: 1px solid #fff;
-						height: 120px;
+						height: 100px;
 						display: flex;
 						align-items: center;
 						justify-content: center;
@@ -1305,12 +1469,41 @@ $bp768: 768px;  // スマホ
 						font-size: 15px;
 						letter-spacing: 0.28em;
 						line-height: 22.5px;
+						position: relative;
 
 						@include bp768 {
-							height: 80px;
+							height: 64px;
 							font-size: 14px;
-							line-height: 21px;
+							line-height: 64px;
 						};
+
+					    &::after{
+							content: "";
+							position: absolute;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							left: 0;
+							z-index: -1;
+							background: #fff;
+							transform-origin: right top;
+							transform: scale(0, 1);
+							transition: transform .3s;
+
+							@include bp768 {
+								content: none;
+							};
+					    }
+
+					    &:hover::after {
+							transform-origin: left top;
+							transform: scale(1, 1);
+					    }
+
+					    &:hover{
+					      opacity: 1;
+					      color: #2E0E02;
+					    }
 					}
 				}
 			}
@@ -1348,9 +1541,9 @@ $bp768: 768px;  // スマホ
 
 		.sec--category{
 			width: 100%;
-			padding: 0 18px;
+			padding: 60px 18px 54px;
 			box-sizing: border-box;
-			margin-bottom: 55px;
+			background: #EAE6E5;
 
 			.category_top{
 				display: flex;
@@ -1394,11 +1587,12 @@ $bp768: 768px;  // スマホ
 
 			.category_bottom{
 				display: flex;
+				justify-content: space-between;
 				flex-wrap: wrap;
 
 				li{
 					width: 23.6%;
-					margin: 0 6px 6px 0;
+					margin: 0 0 6px 0;
 					height: 48px;
 					background: #2E0E02;
 					border-radius: 2px;
@@ -1409,10 +1603,11 @@ $bp768: 768px;  // スマホ
 						font-size: 12px;
 						line-height: 48px;
 						position: relative;
-					}
 
-					&:nth-child(4n){
-						margin-right: 0;
+						&.lh{
+							line-height: 18px;
+							padding-top: 6px;
+						}
 					}
 				}
 			}
@@ -1420,7 +1615,7 @@ $bp768: 768px;  // スマホ
 
 		.sec--lookbook {
 			background-image: url("../Contents/ImagesPkg/user/top/bg_lookbook.jpg");
-			min-height: 640px;
+			height: 640px;
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -1816,13 +2011,38 @@ $bp768: 768px;  // スマホ
 								position: absolute;
 								top: -16px;
 								left: -16px;
-								z-index: 2;
+								z-index: 1;
 
 								@include bp768 {
 									width: 43.5px;
 									top: -10px;
 									left: -10px;
 								};
+							}
+
+							&--pic{
+								position: relative;
+
+								.soldout{
+									display: block;
+									position: absolute;
+									bottom: 0;
+									left: 0;
+									width: 100%;
+									height: 80px;
+									background: rgba(46,14,2,.75);
+									line-height: 80px;
+									font-size: 18px;
+									text-align: center;
+									letter-spacing: 0.16em;
+									color: #fff;
+
+									@include bp768 {
+										height: 32px;
+										line-height: 32px;
+										font-size: 12px;
+									};
+								}
 							}
 						}
 					}
@@ -1981,15 +2201,18 @@ $bp768: 768px;  // スマホ
 
 		&--search{
 			width: 180px;
-			margin-right: 40px;
 
 			@include bp768 {
 				width: 100%;
-				margin-right: 0;
 			};
 
 			td{
 				padding: 0;
+			}
+
+			&.is-fixed{
+				position: fixed;
+				top: 100px;
 			}
 
 			.searchBtnSp{
@@ -2106,7 +2329,7 @@ $bp768: 768px;  // スマホ
 
 					@include bp768 {
 						width: 64%;
-						margin: 48px auto 0;
+						margin: 0 auto 60px;
 					};
 
 					a{
@@ -2156,21 +2379,12 @@ $bp768: 768px;  // スマホ
 				margin-bottom: 40px;
 
 				@include bp768 {
-					margin-bottom: 32px;
-					display: flex;
-					justify-content: space-between;
-					flex-wrap: wrap;
-					align-items: center;
-					padding: 0 18px;
+					padding: 0 28px;
 					box-sizing: border-box;
 					width: 100%;
 				};
 
 				&.searchBox_color{
-					@include bp768 {
-						align-items: flex-start;
-					};
-
 					.searchBox_list--ttl{
 						@include bp768 {
 							margin-top: 5px;
@@ -2187,9 +2401,8 @@ $bp768: 768px;  // スマホ
 					position: relative;
 
 					@include bp768 {
-						padding: 0;
-						border-bottom: none;
-						width: 25%;
+						padding: 0 0 13px;
+						box-sizing: border-box;
 					};
 
 					&:after{
@@ -2207,7 +2420,9 @@ $bp768: 768px;  // スマホ
 						border-right: 1.5px solid #3D3D3D;
 
 						@include bp768 {
-							content: none;
+							right: 16px;
+							border-top: 1.5px solid #2E0E02;
+							border-right: 1.5px solid #2E0E02;
 						};
 					}
 
@@ -2219,70 +2434,46 @@ $bp768: 768px;  // スマホ
 							left: 0;
 							width: 0px;
 							animation: borderSearch .5s ease 0s forwards;
-							border-bottom: 1.5px solid #333;
-
-							@include bp768 {
-								content: none;
-							};
+							border-bottom: 1.5px solid #968680;
 						}
 
 						&::after{
 							transform: rotate(135deg);
 							animation: arrowRotate .5s ease 0s forwards;
 							top: 7px;
+						}
+					}
 
+					&.simpleTtl{
+						@include bp768 {
+							padding-bottom: 8px;
+							border-bottom: none;
+						};
+
+						&:after{
 							@include bp768 {
 								content: none;
 							};
 						}
-					}
-
-					&Select{
-						line-height: 1;
-						padding: 0 16px 10px;
-						box-sizing: border-box;
-						border-bottom: 1px solid #EAE6E5;
-						cursor: pointer;
-						position: relative;
-						width: 75%;
-
-						&:after{
-							content: "";
-							position: absolute;
-							top: 0;
-							right: 16px;
-							margin: auto;
-							z-index: 1;
-							display: block;
-							width: 9px;
-							height: 9px;
-							transform: rotate(135deg);
-							border-top: 1.5px solid #2E0E02;
-							border-right: 1.5px solid #2E0E02;
-						}
 
 						&.on{
 							&::before{
-								content: "";
-								position: absolute;
-								bottom: -1.5px;
-								left: 0;
-								width: 0px;
-								animation: borderSearch .5s ease 0s forwards;
-								border-bottom: 1.5px solid #333;
+								@include bp768 {
+									content: none;
+								};
 							}
 
 							&::after{
-								transform: rotate(135deg);
-								animation: arrowRotate .5s ease 0s forwards;
-								top: 7px;
+								@include bp768 {
+									content: none;
+								};
 							}
 						}
 					}
 				}
 
 				&--input{
-					width: 75%;
+					width: 100%;
 
 					input{
 						border-radius: 2px;
@@ -2308,7 +2499,7 @@ $bp768: 768px;  // スマホ
 						cursor: pointer;
 
 						@include bp768 {
-							padding: 10px 16px;
+							padding: 15px 24px;
 						};
 
 						p{
@@ -2320,31 +2511,17 @@ $bp768: 768px;  // スマホ
 				&--category{
 
 					@include bp768 {
-						padding: 10px 0 0;
-						width: 75%;
-						margin-left: auto;
+						width: 100%;
 					};
 
 					li{
 						&.on{
 							background-color: rgba(234,230,229,.5);
 							position: relative;
-							background-image: url("../Contents/ImagesPkg/user/productlist/btn_off.png");
-							background-repeat: no-repeat;
-							background-position: right 13px top 16px;
-							background-size: 9px 9px;
-
-							@include bp768 {
-								background-image: none;
-							};
 						}
 
 						&:hover{
 							background-color: rgba(234,230,229,.5);
-
-							@include bp768 {
-								background-color: inherit;
-							};
 						}
 					}
 				}
@@ -2355,7 +2532,7 @@ $bp768: 768px;  // スマホ
 					@include bp768 {
 						display: block !important;
 						padding: 0;
-						width: 75%;
+						width: 100%;
 					};
 
 					li{
@@ -2365,8 +2542,8 @@ $bp768: 768px;  // スマホ
 						margin: 6.5px;
 
 						@include bp768 {
-							width: 32px;
-							margin: 0 7px 7px 0;
+							width: 13.5%;
+							margin: 0 6px 7px 0;
 						};
 
 						&.on{
@@ -2402,9 +2579,7 @@ $bp768: 768px;  // スマホ
 				&--price{
 
 					@include bp768 {
-						padding: 10px 0 0;
-						width: 75%;
-						margin-left: auto;
+						width: 100%;
 					};
 
 					li{
@@ -2434,32 +2609,20 @@ $bp768: 768px;  // スマホ
 							box-sizing: border-box;
 
 							@include bp768 {
-								margin: -8px 0 0;
-								height: 32px;
+								margin: -6px 0 0;
+								height: 34px;
 								line-height: 28px;
-								padding: 0 8px;
+								padding: 0 24px;
 							};
 						}
 
 						&.on{
 							background-color: rgba(234,230,229,.5);
 							position: relative;
-							background-image: url("../Contents/ImagesPkg/user/productlist/btn_off.png");
-							background-repeat: no-repeat;
-							background-position: right 13px top 16px;
-							background-size: 9px 9px;
-
-							@include bp768 {
-								background-image: none;
-							};
 						}
 
 						&:hover{
 							background-color: rgba(234,230,229,.5);
-
-							@include bp768 {
-								background-color: inherit;
-							};
 						}
 					}
 				}
@@ -2467,9 +2630,7 @@ $bp768: 768px;  // スマホ
 				&--size{
 
 					@include bp768 {
-						padding: 10px 0 0;
-						width: 75%;
-						margin-left: auto;
+						width: 100%;
 					};
 
 					li{
@@ -2495,23 +2656,26 @@ $bp768: 768px;  // スマホ
 							box-sizing: border-box;
 
 							@include bp768 {
-								margin: -8px 0 0;
-								height: 32px;
+								margin: -6px 0 0;
+								height: 34px;
 								line-height: 28px;
-								padding: 0 8px;
+								padding: 0 24px;
 							};
 						}
 
 						&.on{
-							background-color: rgba(234,230,229,.5);
+							background-color: rgba(234,230,229,.5) !important;
 							position: relative;
-							background-image: url("../Contents/ImagesPkg/user/productlist/btn_off.png");
+							background-image: none;
 							background-repeat: no-repeat;
 							background-position: right 13px top 16px;
 							background-size: 9px 9px;
+							animation: btnOff .5s ease 0s forwards;
 
 							@include bp768 {
-								background-image: none;
+								background-position: right 16px top 16px;
+								background-size: 7.5px 7.5px;
+								animation: btnOff 0s ease .2s forwards;
 							};
 						}
 
@@ -2526,31 +2690,17 @@ $bp768: 768px;  // スマホ
 				}
 
 				&--material{
-					padding: 16px 0 0;
-
 					@include bp768 {
-						padding: 10px 0 0;
-						width: 75%;
-						margin-left: auto;
+						width: 100%;
 					};
 
 					li{
 						padding: 0;
-						margin: 4px 0;
-						width: 100%;
-						background-size: cover;
-						background-repeat: no-repeat;
-						height: 48px;
-						text-indent: -9999px;
-						cursor: pointer;
-
-						@include bp768 {
-							height: 68px;
-						};
 
 						input{
 							border-radius: 0;
 							appearance: none;
+
 
 							@include bp768 {
 								opacity: 0;
@@ -2559,49 +2709,45 @@ $bp768: 768px;  // スマホ
 
 						label{
 							width: 100%;
-							display: block;
-							padding: 0;
-							margin: -13px 0 0;
-							height: 100%;
+							display: flex;
+							align-items: center;
+						    padding: 0 34px 0 8px;
+							margin: -13px 0 0 0;
+							height: 60px;
+							box-sizing: border-box;
+							line-height: 23.4px;
+
+							@include bp768 {
+								display: block;
+								margin: -6px 0 0;
+								height: 34px;
+								line-height: 28px;
+								padding: 0 24px;
+							};
+						}
+
+						&.on{
+							background-color: rgba(234,230,229,.5) !important;
 							position: relative;
+							background-image: none;
+							background-repeat: no-repeat;
+							background-position: right 13px center;
+							background-size: 9px 9px;
+							animation: btnOff .5s ease 0s forwards;
 
-							&.on{
-								position: relative;
-
-								&::after{
-									content: "";
-									position: absolute;
-									top: 2px;
-									left: 2px;
-									bottom: 2px;
-									right: 2px;
-									border: 1px solid #fff;
-								}
-							}
+							@include bp768 {
+								background-position: right 16px top 16px;
+								background-size: 7.5px 7.5px;
+								animation: btnOff 0s ease .2s forwards;
+							};
 						}
 
-						&:first-child{
-							background-image: url("../Contents/ImagesPkg/user/productlist/material01.jpg");
-						}
+						&:hover{
+							background-color: rgba(234,230,229,.5);
 
-						&:nth-child(2){
-							background-image: url("../Contents/ImagesPkg/user/productlist/material02.jpg");
-						}
-
-						&:nth-child(3){
-							background-image: url("../Contents/ImagesPkg/user/productlist/material03.jpg");
-						}
-
-						&:nth-child(4){
-							background-image: url("../Contents/ImagesPkg/user/productlist/material04.jpg");
-						}
-
-						&:nth-child(5){
-							background-image: url("../Contents/ImagesPkg/user/productlist/material05.jpg");
-						}
-
-						&:nth-child(6){
-							background-image: url("../Contents/ImagesPkg/user/productlist/material06.jpg");
+							@include bp768 {
+								background-color: inherit;
+							};
 						}
 					}
 				}
@@ -2610,9 +2756,15 @@ $bp768: 768px;  // スマホ
 
 		&--cts{
 			width: 85%;
+			margin-left: auto;
+
+			@include bp1280 {
+				width: 82%;
+			};
 
 			@include bp768 {
 				width: 100%;
+				margin-left: 0;
 			};
 
 			.pdList_sortBox{
@@ -2732,7 +2884,7 @@ $bp768: 768px;  // スマホ
 									left: 0;
 									width: 0px;
 									animation: borderSearch .5s ease 0s forwards;
-									border-bottom: 1px solid #333;
+									border-bottom: 1px solid #968680;
 								}
 
 								&::after{
@@ -2756,12 +2908,14 @@ $bp768: 768px;  // スマホ
 
 							@include bp768 {
 								width: 100%;
-								top: 22px;
+								top: inherit;
 								padding: 8px 0 0;
+								position: inherit;
+								left: inherit;
 							};
 
 							li{
-								padding: 8px;
+								padding: 12px;
 								box-sizing: border-box;
 
 								a{
@@ -2774,8 +2928,7 @@ $bp768: 768px;  // スマホ
 								}
 
 								&.active{
-									background-color: rgba(0,0,0,.8);
-									color: #fff;
+									background-color: #EAE6E5;
 									line-height: 1;
 								}
 							}
@@ -2835,10 +2988,32 @@ $bp768: 768px;  // スマホ
 					.pdList_thumb{
 						width: 100%;
 						margin-bottom: 20px;
+						position: relative;
 
 						@include bp768 {
 							margin-bottom: 8px;
 						};
+
+						.soldout{
+							display: block;
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							width: 100%;
+							height: 80px;
+							background: rgba(46,14,2,.75);
+							line-height: 80px;
+							font-size: 18px;
+							text-align: center;
+							letter-spacing: 0.16em;
+							color: #fff;
+
+							@include bp768 {
+								height: 32px;
+								line-height: 32px;
+								font-size: 12px;
+							};
+						}
 					}
 
 					.pdList_material{
@@ -2882,19 +3057,57 @@ $bp768: 768px;  // スマホ
 							@include bp768 {
 								margin: 0 5px 10px;
 							};
+
+							.newPrice{
+								color: #AD2E24;
+							}
+
+							.oldPrice{
+								text-decoration: line-through;
+								margin-left: 10px;
+
+								@include bp768 {
+									display: block;
+									margin: 5px 0 0 0;
+								};
+							}
 						}
 					}
 				}
 			}
 
 			.pdList_icon{
-				width: 100px;
 				margin: 0 15px;
 
 				@include bp768 {
-					width: 93px;
 					margin: 0 5px;
 				};
+
+				li{
+					display: inline-block;
+				    position: relative;
+				    margin-right: 24px;
+
+				    img{
+				    	width: auto;
+				    	height: 14px;
+				    }
+
+				    &::after{
+				    	content: "/";
+				    	position: absolute;
+				    	top: 0;
+				    	right: -18px;
+				    	font-size: 15px;
+				    	color: #AD2E24;
+				    }
+
+				    &:last-child{
+				    	&::after{
+				    		content: none;
+				    	}
+				    }
+				}
 			}
 
 			.pdList_star{
@@ -3066,6 +3279,14 @@ $bp768: 768px;  // スマホ
 	}
 }
 
+.error_input{
+	background-color: #f7dbd9 !important;
+}
+
+.error_inline{
+	color: #AD2E24 !important;
+}
+
 @keyframes borderSearch {
     0%{
         width: 0%;
@@ -3081,6 +3302,15 @@ $bp768: 768px;  // スマホ
     }
     100%{
         transform: rotate(-45deg);
+    }
+}
+
+@keyframes btnOff {
+    0%{
+        background-image: none;
+    }
+    100%{
+        background-image: url("../Contents/ImagesPkg/user/productlist/btn_off.png");
     }
 }
 

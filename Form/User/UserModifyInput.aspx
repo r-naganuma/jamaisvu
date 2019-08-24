@@ -68,7 +68,7 @@
 				</dd>
 				<% if (this.IsUserAddrJp) { %>
 					<%-- 氏名（かな） --%>
-					<dt class="inputBox_left must">ふりがな</dt>
+					<dt class="inputBox_left must">かな</dt>
 					<dd class="inputBox_right">
 						<dl class="nameArea">
 							<dt>
@@ -501,7 +501,7 @@
 							CssClass="error_inline" />
 					</dd>
 					<%-- ビル・マンション名 --%>
-					<dt class="inputBox_left must">
+					<dt class="inputBox_left">
 						住所（建物名）
 						<% if (this.IsUserAddrJp == false) { %><% } %>
 					</dt>

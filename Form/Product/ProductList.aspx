@@ -46,6 +46,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script type="text/javascript">
 	$(function () {
+		$(".pdList_icon li").each(function(){
+	       if($(this).html()==""){
+	       	$(this).remove();
+	       }
+		});
+
 		$(".sortChange .sortTtl").on("click", function () {
 			$(this).toggleClass('on');
 			$(".sortChange ul").slideToggle('slow');
@@ -64,54 +70,37 @@
 				$(this).toggleClass('on');
 				$(this).nextAll('.searchBox_list--column').slideToggle('slow');
 			});
-
-			$(".searchBox_list--category li").not('on').on("click", function () {
-				$(this).siblings().removeClass('on');
-				$(this).addClass('on');
-			});
-
-			$(".searchBox_list--price li:nth-child(2) label").on("click", function () {
-				$(".searchBox_list--price li:nth-child(3)").removeClass('on');
-				$(this).parent("li").addClass('on');
-			});
-
-			$(".searchBox_list--price li:nth-child(3) label").on("click", function () {
-				$(".searchBox_list--price li:nth-child(2)").removeClass('on');
-				$(this).parent("li").addClass('on');
-			});
-
-			$(".searchBox_list--size li label").on("click", function () {
-				$(this).parent("li").toggleClass('on');
-			});
-
-			$(".searchBox_list--material li label").on("click", function () {
-				$(this).toggleClass('on');
-			});
 		}
 
 		if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
-
-			var selectedItem = $(".searchBox_list--column li.on").not('.searchBox_list--color').text()
-	        var selectBox = $(".searchBox_list--column").not('.searchBox_list--color')
-	        var selectItems = $(".searchBox_list--column li").not('.searchBox_list--color li')
-	        var display = $(".searchBox_list--ttlSelect")
-
-	        display.text('すべて')
-	        selectBox.hide();
-
-	        display.on("click",function(){
-	            $(this).toggleClass('on');
-	            $(this).nextAll(".searchBox_list--column").not('.searchBox_list--color').slideToggle('slow');
-	        })
-
-	        selectItems.on("click",function(){
-	            $(this).siblings().removeClass("on");
-	            $(this).addClass("on");
-	            $(this).parent(".searchBox_list--column").not('.searchBox_list--color').slideUp('slow');
-	            $(this).parent().siblings(".searchBox_list--ttlSelect").text($(this).text());
-	            $(this).parent().siblings(".searchBox_list--ttlSelect").removeClass('on');
-	        })
+			$(".searchBox_list--ttl").not('.simpleTtl').on("click", function () {
+				$(this).toggleClass('on');
+				$(this).nextAll('.searchBox_list--column').slideToggle('slow');
+			});
 		}
+
+		$(".searchBox_list--category li").not('on').on("click", function () {
+			$(this).siblings().removeClass('on');
+			$(this).addClass('on');
+		});
+
+		$(".searchBox_list--price li:nth-child(2) label").on("click", function () {
+			$(".searchBox_list--price li:nth-child(3)").removeClass('on');
+			$(this).parent("li").addClass('on');
+		});
+
+		$(".searchBox_list--price li:nth-child(3) label").on("click", function () {
+			$(".searchBox_list--price li:nth-child(2)").removeClass('on');
+			$(this).parent("li").addClass('on');
+		});
+
+		$(".searchBox_list--size li label").on("click", function () {
+			$(this).parent("li").toggleClass('on');
+		});
+
+		$(".searchBox_list--material li label").on("click", function () {
+			$(this).parent("li").toggleClass('on');
+		});
 
 		$(".searchBox_list--color li").not('on').on("click", function () {
 			$(this).siblings().removeClass('on');
@@ -259,90 +248,126 @@
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=001")) {
-			$('.pdList_conditions .pdList_conditions--category').text('トップス');
-			$('.breadcrumb ul li p').text('トップス');
+			$('.pdList_conditions .pdList_conditions--category').text('アウター');
+			$('.breadcrumb ul li p').text('アウター');
 			$('.searchBox_list--category li:nth-child(2)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=002")) {
-			$('.pdList_conditions .pdList_conditions--category').text('アウター');
-			$('.breadcrumb ul li p').text('アウター');
+			$('.pdList_conditions .pdList_conditions--category').text('シャツ・ブラウス');
+			$('.breadcrumb ul li p').text('シャツ・ブラウス');
 			$('.searchBox_list--category li:nth-child(3)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=003")) {
-			$('.pdList_conditions .pdList_conditions--category').text('ワンピース');
-			$('.breadcrumb ul li p').text('ワンピース');
+			$('.pdList_conditions .pdList_conditions--category').text('ニット');
+			$('.breadcrumb ul li p').text('ニット');
 			$('.searchBox_list--category li:nth-child(4)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=004")) {
-			$('.pdList_conditions .pdList_conditions--category').text('パンツ');
-			$('.breadcrumb ul li p').text('パンツ');
+			$('.pdList_conditions .pdList_conditions--category').text('カットソー');
+			$('.breadcrumb ul li p').text('カットソー');
 			$('.searchBox_list--category li:nth-child(5)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=005")) {
-			$('.pdList_conditions .pdList_conditions--category').text('スカート');
-			$('.breadcrumb ul li p').text('スカート');
+			$('.pdList_conditions .pdList_conditions--category').text('ワンピース');
+			$('.breadcrumb ul li p').text('ワンピース');
 			$('.searchBox_list--category li:nth-child(6)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=006")) {
-			$('.pdList_conditions .pdList_conditions--category').text('グッズ');
-			$('.breadcrumb ul li p').text('グッズ');
+			$('.pdList_conditions .pdList_conditions--category').text('スカート');
+			$('.breadcrumb ul li p').text('スカート');
 			$('.searchBox_list--category li:nth-child(7)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
+		if(document.URL.match("cat=007")) {
+			$('.pdList_conditions .pdList_conditions--category').text('パンツ');
+			$('.breadcrumb ul li p').text('パンツ');
+			$('.searchBox_list--category li:nth-child(8)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		}
+		if(document.URL.match("cat=008")) {
+			$('.pdList_conditions .pdList_conditions--category').text('帽子');
+			$('.breadcrumb ul li p').text('帽子');
+			$('.searchBox_list--category li:nth-child(9)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		}
+		if(document.URL.match("cat=009")) {
+			$('.pdList_conditions .pdList_conditions--category').text('靴下');
+			$('.breadcrumb ul li p').text('靴下');
+			$('.searchBox_list--category li:nth-child(10)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		}
 		if(document.URL.match("col=red")) {
-			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ 赤系');
+			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ レッド系');
 			$('.searchBox_list--color li:nth-child(1)').addClass("on");
 		}
+		if(document.URL.match("col=orange")) {
+			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ オレンジ系');
+			$('.searchBox_list--color li:nth-child(2)').addClass("on");
+		}
 		if(document.URL.match("col=yellow")) {
-			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ 黄色系');
+			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ イエロー系');
 			$('.searchBox_list--color li:nth-child(3)').addClass("on");
 		}
+		if(document.URL.match("col=pink")) {
+			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ ピンク系');
+			$('.searchBox_list--color li:nth-child(4)').addClass("on");
+		}
+		if(document.URL.match("col=green")) {
+			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ グリーン系');
+			$('.searchBox_list--color li:nth-child(5)').addClass("on");
+		}
 		if(document.URL.match("col=blue")) {
-			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ 青系');
+			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ ブルー系');
 			$('.searchBox_list--color li:nth-child(6)').addClass("on");
 		}
+		if(document.URL.match("col=purple")) {
+			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ パープル系');
+			$('.searchBox_list--color li:nth-child(7)').addClass("on");
+		}
+		if(document.URL.match("col=beige")) {
+			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ ベージュ系');
+			$('.searchBox_list--color li:nth-child(8)').addClass("on");
+		}
 		if(document.URL.match("col=white")) {
-			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ 白系');
+			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ ホワイト系');
 			$('.searchBox_list--color li:nth-child(9)').addClass("on");
 		}
 		if(document.URL.match("col=black")) {
-			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ 黒系');
+			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ ブラック系');
 			$('.searchBox_list--color li:nth-child(10)').addClass("on");
 		}
-		if(document.URL.match("%e3%83%8f%e3%83%9f%e3%83%ab%e3%83%88%e3%83%b3%e3%83%a9%e3%83%a0%e3%82%a6%e3%83%bc%e3%83%ab")) {
-			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ ハミルトンラムウール');
-			$('.searchBox_list--material li:nth-child(1) label').addClass("on");
-			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li label.on').text());
+		if(document.URL.match("col=gray")) {
+			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ グレー系');
+			$('.searchBox_list--color li:nth-child(11)').addClass("on");
 		}
-		if(document.URL.match("%e3%83%9a%e3%83%ab%e3%83%93%e3%82%a2%e3%83%b3%e3%82%b3%e3%83%83%e3%83%88%e3%83%b3")) {
-			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ ペルビアンコットン');
-			$('.searchBox_list--material li:nth-child(2) label').addClass("on");
-			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li label.on').text());
+		if(document.URL.match("col=brown")) {
+			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ ブラウン系');
+			$('.searchBox_list--color li:nth-child(12)').addClass("on");
 		}
-		if(document.URL.match("%e3%83%a1%e3%83%aa%e3%83%8e%e3%82%a6%e3%83%bc%e3%83%ab")) {
-			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ メリノウール');
-			$('.searchBox_list--material li:nth-child(3) label').addClass("on");
-			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li label.on').text());
+		if(document.URL.match("%e3%83%8f%e3%83%9f%e3%83%ab%e3%83%88%e3%83%b3%e3%83%a9%e3%83%a0%e3%82%ba%e3%82%a6%e3%83%bc%e3%83%ab")) {
+			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ ハミルトンラムズウール');
+			$('.searchBox_list--material li:nth-child(1)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
-		if(document.URL.match("%e3%83%af%e3%83%b3%e3%82%b3%e3%83%83%e3%83%88%e3%83%b3")) {
-			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ ワンコットン');
-			$('.searchBox_list--material li:nth-child(4) label').addClass("on");
-			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li label.on').text());
+		if(document.URL.match("%e3%83%a1%e3%83%aa%e3%83%8e%e3%82%aa%e3%83%97%e3%83%86%e3%82%a3%e3%83%a2")) {
+			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ メリノオプティモ');
+			$('.searchBox_list--material li:nth-child(2)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
 		if(document.URL.match("%e3%83%95%e3%82%a9%e3%83%bc%e3%82%af%e3%83%a9%e3%83%b3%e3%83%89%e3%82%a6%e3%83%bc%e3%83%ab")) {
 			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ フォークランドウール');
-			$('.searchBox_list--material li:nth-child(5) label').addClass("on");
-			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li label.on').text());
+			$('.searchBox_list--material li:nth-child(3)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
-		if(document.URL.match("%e3%82%bf%e3%82%b9%e3%83%9e%e3%83%8b%e3%82%a2%e3%83%b3%e3%82%a6%e3%83%bc%e3%83%ab")) {
-			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ タスマニアンウール');
-			$('.searchBox_list--material li:nth-child(6) label').addClass("on");
-			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li label.on').text());
+		if(document.URL.match("%e3%83%af%e3%83%b3%e3%82%b3%e3%83%83%e3%83%88%e3%83%b3")) {
+			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ ワンコットン');
+			$('.searchBox_list--material li:nth-child(4)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
 		if(document.URL.match("REGULAR")) {
 			$('.searchBox_list--size li:nth-child(1)').addClass("on");
@@ -364,6 +389,18 @@
 			$('.searchBox_list--price li:nth-child(3)').addClass("on");
 			$('.searchBox_list--price').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--price li.on').text());
 		}
+		if(document.URL.match("udns=2")) {
+			$('.sortItem li:nth-child(1)').addClass("active");
+		}
+
+		$(window).scroll(function () {
+
+	        if ($(this).scrollTop() > 15) {
+	            $('.pageCts_pdList--search').addClass('is-fixed');
+	        } else {
+	            $('.pageCts_pdList--search').removeClass('is-fixed');
+	        }
+	    });
 	});
 
 </script>
@@ -446,13 +483,16 @@
 					<li class="pdList_thumb">
 					<% if(Constants.LAYER_DISPLAY_VARIATION_IMAGES_ENABLED){ %>
 					<uc:BodyProductVariationImages ImageSize="LL" ProductMaster="<%# Container.DataItem %>" VariationList="<%# this.ProductVariationList %>" VariationNo="<%# Container.ItemIndex.ToString() %>" runat="server" />
+					<%-- ▽在庫切れ可否▽ --%>
+					<p visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLD OUT</p>
+					<%-- ▽在庫切れ可否▽ --%>
 					<% } else { %>
 					<a href='<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrl(Container.DataItem, true)) %>'>
 					<w2c:ProductImage ImageSize="LL" ProductMaster="<%# Container.DataItem %>" IsVariation="false" runat="server" /></a>
+					<%-- ▽在庫切れ可否▽ --%>
+					<p visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLD OUT</p>
+					<%-- ▽在庫切れ可否▽ --%>
 					<% } %>
-					<%-- ▽在庫切れ可否▽ --%>
-					<p visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLDOUT</p>
-					<%-- ▽在庫切れ可否▽ --%>
 					</li>
 					<li class="pdList_material">
 						<%# WebSanitizer.HtmlEncode(GetProductData(Container.DataItem, "tag_material")) %>
@@ -539,18 +579,18 @@
 					<%-- △お気に入り追加△ --%>
 					</li>
 					<li class="pdList_icon">
-						<p>
-							<w2c:ProductIcon IconNo="1" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="2" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="3" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="4" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="5" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="6" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="7" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="8" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="9" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="10" ProductMaster="<%# Container.DataItem %>" runat="server" />
-						</p>
+						<ul>
+							<li><w2c:ProductIcon IconNo="1" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="2" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="3" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="4" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="5" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="6" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="7" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="8" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="9" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="10" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+						</ul>
 					</li>
 
 					<%-- ▽バリエーションリストループ▽ --%>
@@ -730,7 +770,7 @@
 
 
 					<%-- ▽商品一覧ループ(ウインドウショッピング)▽ --%>
-					<asp:Repeater DataSource="<%# (this.IsDispImageKbnWindowsShopping) ? this.ProductMasterList : null %>" runat="server" Visible="<%# this.IsDispImageKbnWindowsShopping %>">
+					<asp:Repeater DataSource="<%# (this.IsDispImageKbnWindowsShopping) ? this.ProductMasterList : null %>" runat="server" Visible="<%# this.IsDispImageKbnWindowsShopping %>" OnItemCommand="ProductMasterList_ItemCommand">
 					<HeaderTemplate>
 					<div class="pdList_list">
 					</HeaderTemplate>
@@ -745,7 +785,7 @@
 						<% } else { %>
 						<a href='<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrl(Container.DataItem, true)) %>'>
 						<w2c:ProductImage ImageSize="LL" ProductMaster="<%# Container.DataItem %>" IsVariation="false" runat="server" /></a>
-						<% } %><span visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLDOUT</span>
+						<% } %><span visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLD OUT</span>
 					</li>
 					<li class="pdList_material">
 						<%# WebSanitizer.HtmlEncode(GetProductData(Container.DataItem, "tag_material")) %>
@@ -757,20 +797,20 @@
 
 						<%-- ▽商品会員ランク価格有効▽ --%>
 						<p visible='<%# GetProductMemberRankPriceValid(Container.DataItem) %>' runat="server">
-						<span style="text-decoration: line-through"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span><br />
-						<span style="color: #f00;"><%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem)) %>(tax in)</span>
+						<span class="newPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem)) %>(tax in)</span>
+						<span class="oldPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span>
 						</p>
 
 						<%-- ▽商品セール価格有効▽ --%>
 						<p visible='<%# GetProductTimeSalesValid(Container.DataItem) %>' runat="server">
-							<span style="text-decoration: line-through"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span><br />
-							<span style="color: #f00;"><%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %>(tax in)</span>
+							<span class="newPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %>(tax in)</span>
+							<span class="oldPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span>
 						</p>
 
 						<%-- ▽商品特別価格有効▽ --%>
 						<p visible='<%# GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">
-						<span style="text-decoration: line-through"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span><br />
-						<span style="color: #f00;"><%#: CurrencyManager.ToPrice(ProductPage.GetProductSpecialPriceNumeric(Container.DataItem)) %>(tax in)</span>
+						<span class="newPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductSpecialPriceNumeric(Container.DataItem)) %>(tax in)</span>
+						<span class="oldPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span>
 						</p>
 
 						<%-- ▽商品通常価格有効▽ --%>
@@ -788,20 +828,28 @@
 							</p>
 						</p>
 						<% } %>
+						<p>
+							<%-- ▽お気に入り追加▽ --%>
+							<asp:LinkButton ID="lbAddFavorite" runat="server" CommandName="FavoriteAdd" CommandArgument="<%# GetKeyValue(Container.DataItem, Constants.FIELD_PRODUCTVARIATION_PRODUCT_ID) %>" class="pdList_star">
+								<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_star.png" alt="お気に入りへ" />
+							</asp:LinkButton>
+							<%-- △お気に入り追加△ --%>
+						</p>
 					</li>
 					<li class="pdList_icon">
-						<p>
-							<w2c:ProductIcon IconNo="1" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="2" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="3" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="4" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="5" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="6" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="7" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="8" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="9" ProductMaster="<%# Container.DataItem %>" runat="server" />
-							<w2c:ProductIcon IconNo="10" ProductMaster="<%# Container.DataItem %>" runat="server" />
-						</p>
+						<ul>
+							<li><w2c:ProductIcon IconNo="1" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="2" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="3" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="4" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="5" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="6" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="7" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="8" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="9" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+							<li><w2c:ProductIcon IconNo="10" ProductMaster="<%# Container.DataItem %>" runat="server" /></li>
+						</ul>
+					</li>
 					</ul>
 					</div>
 					</ItemTemplate>

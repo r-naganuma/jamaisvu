@@ -10,6 +10,12 @@
 <%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_UserRegistInput, App_Web_userregistinput.aspx.b2a7112d" title="会員新規登録入力ページ" %>
 <%@ Register TagPrefix="uc" TagName="PaypalScriptsForm" Src="~/Form/Common/PayPalScriptsForm.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<script type="text/javascript" charset="utf-8" src="https://api.socialplus.jp/jamaisvu/jamaisvu/form_assist/assist.js"></script>
+<script type="text/javascript">
+$(function () {
+	$('input[value="FEMALE"]').prop('checked', true);
+});
+</script>
 <div class="registWrap topSpace">
 	<h2>会員登録</h2>
 
@@ -101,7 +107,7 @@
 				<% if (this.IsUserAddrJp) { %>
 					<%-- 氏名（かな） --%>
 					<dt class="inputBox_left must">
-						ふりがな
+						かな
 						<span id="efo_sign_kana"/>
 					</dt>
 					<dd class="inputBox_right">
@@ -543,7 +549,7 @@
 							CssClass="error_inline" />
 					</dd>
 					<%-- ビル・マンション名 --%>
-					<dt class="inputBox_left must">
+					<dt class="inputBox_left">
 						住所（建物名）
 						<% if (this.IsUserAddrJp == false) { %><% } %>
 					</dt>
@@ -881,5 +887,4 @@
 </script>
 <script async="async" type="text/javascript" charset="utf-8" src="<%=Constants.PAYMENT_AMAZON_WIDGETSSCRIPT %>"></script>
 <%-- ▲▲Amazonウィジェット用スクリプト▲▲ --%>
-
 </asp:Content>

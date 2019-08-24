@@ -20,27 +20,37 @@
         <h2 class="sec__title">CONCEPT</h2>
         <div class="concept">
             <div class="concept__phrase">
-                <p>世界中から厳選した原料と日本屈指の生産背景で<br>本当に良いと思える素材を追求。</p>
-                <p>その素材の個性を活かし、時代の気分を反映しながら、<br>上質で洗練された洋服を提案します。</p>
+                <p class="concept_txt1">過去と未来　既知と未知<br>いつだってその真ん中が心地良い</p>
+                <p class="concept_txt2">Rather be wearing Jamais Vu.</p>
+                <p class="concept_txt3">
+                    JAMAIS VUは「自由で正直なものづくりを大切にしたい」という考えから、<br>
+                    素材から作り手に至るまで本当に良いものを追求し、<br>
+                    流行に縛られないオーセンティックな製品を提案しています。
+                </p>
+                <p class="concept_txt4">
+                    世界各国から良質な素材を選りすぐり、信頼できる職人により手がけられた<br>
+                    「日常でありながら特別」「シンプルでいながらスペシャル」「サイズレス・シーズンレス・エイジレス」な<br>
+                    新しいニュートラルスタイルをご提案いたします。 
+                </p>
             </div>
             <div class="concept__list">
                 <div class="concept__list-item">
-                    <a href="">HAMILTON<br>LAMBWOOL</a>
+                    <a href="<%= Constants.PATH_ROOT %>Page/Concept/hamilton_lambs_wool.aspx">
+                        HAMILTON<br>
+                        LAMBS WOOL
+                    </a>
                 </div>
                 <div class="concept__list-item">
-                    <a href="">HAMILTON<br>LAMBWOOL</a>
+                    <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
+                        MERINO<br>
+                        OPTIMO
+                    </a>
                 </div>
                 <div class="concept__list-item">
-                    <a href="">HAMILTON<br>LAMBWOOL</a>
-                </div>
-                <div class="concept__list-item">
-                    <a href="">HAMILTON<br>LAMBWOOL</a>
-                </div>
-                <div class="concept__list-item">
-                    <a href="">HAMILTON<br>LAMBWOOL</a>
-                </div>
-                <div class="concept__list-item">
-                    <a href="">HAMILTON<br>LAMBWOOL</a>
+                    <a href="<%= Constants.PATH_ROOT %>Page/Concept/the_falkland_wool.aspx">
+                        THE FALKLAND<br>
+                        WOOL
+                    </a>
                 </div>
             </div>
         </div>
@@ -90,27 +100,30 @@
         <h2 class="sec__title">CONCEPT</h2>
         <div class="concept">
             <div class="concept__phrase">
-                <p>世界中から厳選した原料と日本屈指の生産背景で<br>本当に良いと思える素材を追求。</p>
-                <p>その素材の個性を活かし、<br class="sp_contents">時代の気分を反映しながら、<br>上質で洗練された洋服を提案します。</p>
+                <p class="concept_txt1">過去と未来　既知と未知<br>いつだってその真ん中が心地良い</p>
+                <p class="concept_txt2">Rather be wearing Jamais Vu.</p>
+                <p class="concept_txt3">
+                    JAMAIS VUは「自由で正直なものづくりを大切にしたい」という考えから、素材から作り手に至るまで本当に良いものを追求し、流行に縛られないオーセンティックな製品を提案しています。
+                </p>
+                <p class="concept_txt4">
+                    世界各国から良質な素材を選りすぐり、信頼できる職人により手がけられた「日常でありながら特別」「シンプルでいながらスペシャル」「サイズレス・シーズンレス・エイジレス」な新しいニュートラルスタイルをご提案いたします。 
+                </p>
             </div>
             <div class="concept__list">
                 <div class="concept__list-item">
-                    <a href="">HAMILTON<br>LAMBWOOL</a>
+                    <a href="<%= Constants.PATH_ROOT %>Page/Concept/hamilton_lambs_wool.aspx">
+                        HAMILTON LAMBS WOOL
+                    </a>
                 </div>
                 <div class="concept__list-item">
-                    <a href="">HAMILTON<br>LAMBWOOL</a>
+                    <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
+                        MERINO OPTIMO
+                    </a>
                 </div>
                 <div class="concept__list-item">
-                    <a href="">HAMILTON<br>LAMBWOOL</a>
-                </div>
-                <div class="concept__list-item">
-                    <a href="">HAMILTON<br>LAMBWOOL</a>
-                </div>
-                <div class="concept__list-item">
-                    <a href="">HAMILTON<br>LAMBWOOL</a>
-                </div>
-                <div class="concept__list-item">
-                    <a href="">HAMILTON<br>LAMBWOOL</a>
+                    <a href="<%= Constants.PATH_ROOT %>Page/Concept/the_falkland_wool.aspx">
+                        THE FALKLAND WOOL
+                    </a>
                 </div>
             </div>
         </div>
@@ -119,37 +132,37 @@
 <div class="sec sec--category sp_contents">
 	<ul class="category_top">
 		<li>
-			<a href="">全てのアイテム</a>
+			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">全てのアイテム</a>
 		</li>
 		<li>
-			<a href="">新着アイテム</a>
+			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">新着アイテム</a>
 		</li>
 	</ul>
 	<ul class="category_bottom">
 		<li>
-			<a href="">トップス</a>
+			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=001&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">アウター</a>
 		</li>
 		<li>
-			<a href="">パンツ</a>
+			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=002&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="lh">シャツ・<br>ブラウス</a>
 		</li>
 		<li>
-			<a href="">スカート</a>
+			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=003&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">ニット</a>
 		</li>
 		<li>
-			<a href="">グッズ</a>
+			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=004&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">カットソー</a>
 		</li>
-		<li>
-			<a href="">トップス</a>
-		</li>
-		<li>
-			<a href="">トップス</a>
-		</li>
-		<li>
-			<a href="">トップス</a>
-		</li>
-		<li>
-			<a href="">トップス</a>
-		</li>
+        <li>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=005&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">ワンピース</a>
+        </li>
+        <li>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=006&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">スカート</a>
+        </li>
+        <li>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=007&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">パンツ</a>
+        </li>
+        <li>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=008&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">グッズ</a>
+        </li>
 	</ul>
 </div>
 
@@ -157,7 +170,7 @@
     <div class="sec__inner">
         <h2 class="sec__title">LOOKBOOK<span>NEW EDITION</span></h2>
         <div class="btnBox btn--moreWhite">
-            <a href="">MORE</a>
+            <a href="<%= Constants.PATH_ROOT %>Page/lookbook/">MORE</a>
         </div>
     </div>
 </div>

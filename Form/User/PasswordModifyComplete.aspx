@@ -7,7 +7,7 @@
 --%>
 <%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_PasswordModifyComplete, App_Web_passwordmodifycomplete.aspx.b2a7112d" title="パスワード変更完了ページ" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<div class="registWrap topSpace">
+<div class="registWrap">
 	<h2>パスワード変更完了</h2>
 
 	<div class="registWrap_box">
@@ -21,25 +21,46 @@
 			</asp:LinkButton>
 		</div>
 	</div>
+
+	<div class="userBread">
+		<ul>
+			<li>
+				<a href="<%= WebSanitizer.HtmlEncode(this.UnsecurePageProtocolAndHost + Constants.PATH_ROOT) %>">
+					トップ
+				</a>
+			</li>
+			<li> >
+				<a href="#">
+					パスワード変更
+				</a>
+			</li>
+			<li> >
+				<a href="#">
+					パスワード変更完了
+				</a>
+			</li>
+		</ul>
+	</div>
 </div>
 
-<div class="userBread">
-	<ul>
-		<li>
-			<a href="<%= WebSanitizer.HtmlEncode(this.UnsecurePageProtocolAndHost + Constants.PATH_ROOT) %>">
-				トップ
-			</a>
-		</li>
-		<li> >
-			<a href="#">
-				パスワード変更
-			</a>
-		</li>
-		<li> >
-			<a href="#">
-				パスワード変更完了
-			</a>
-		</li>
-	</ul>
-</div>
+<style type="text/css">
+	#Wrap .userWrap {
+	    display: flex;
+	    align-items: center;
+	    height: 100vh;
+	}
+
+	#Wrap .userWrap .userBread {
+	    width: 1120px;
+	    margin: 0 auto 40px;
+	    position: absolute;
+	    bottom: 140px;
+	}
+	
+	#Foot{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+</style>
 </asp:Content>

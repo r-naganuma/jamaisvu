@@ -10,8 +10,7 @@
 <div class="registWrap mypageCts">
 	<h2>クレジットカード情報</h2>
 
-	<p class="catchTxt">ご登録内容をご確認ください。<br>
-	クレジットカードの新規登録は、オンラインストアでのご購入時のみ可能です。</p>
+	<p class="catchTxt">ご登録内容をご確認ください。</p>
 
 	<div class="registWrap_box">
 		<%-- メッセージ --%>

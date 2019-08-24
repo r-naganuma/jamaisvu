@@ -45,4 +45,5 @@
 		</li>
 	</ul>
 </div>
+<script type="text/javascript" charset="utf-8" src="https://api.socialplus.jp/jamaisvu/jamaisvu/form_assist/done.js"></script>
 </asp:Content>

@@ -8,7 +8,7 @@
 <%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_UserShippingConfirm, App_Web_usershippingconfirm.aspx.b2a7112d" title="アドレス帳確認ページ" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <div class="registWrap mypageCts">
-	<h2>お届け先情報変更</h2>
+	<h2>お届け先情報入力</h2>
 
 	<p class="catchTxt">
 		ご入力内容をご確認ください。

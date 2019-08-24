@@ -1,39 +1,5 @@
 function initializeFunctionJs() {
 
-    var txt = '0';
-    var elem = null;
-    $('.icnBag:contains('+txt+')').each(function(){
-        if($(this).text() == txt) elem = $(this);
-    	elem.css('display','none');
-    });
-
-	//ヘッダーメニューマウスオーバー
-	if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
-		$('.icnSerachBtn').hover(function(){
-			$(this).hide();
-			$('.header__icon--search').addClass('on');
-		});
-	}
-
-	$('.header__nav--list li.menuOpen').on({
-		'mouseenter':function(){
-			sethover = setTimeout(function(){
-				$(".header__nav--hov").slideDown(500);
-				$(this).addClass('active');		
-			},500);
-		},
-		'mouseleave':function(){
-			$(".header__nav--hov").slideUp(500);
-			$(this).removeClass('active');
-			clearTimeout(sethover);
-		}
-	});
-
-	$('.nav_box.loginAfter h3').click(function(){
-		$(this).toggleClass("on");
-		$(this).next("ul").slideToggle(500);
-	});
-
 	// もっと見る
 	$('.readMore').click(function(){
 		$(this).toggleClass('on');
@@ -76,21 +42,6 @@ function initializeFunctionJs() {
 		    $('.mainVisual').height(heightSize); 
 		});
 	}
-
-	var state = false;
-	$('.btn_menu').click(function(){
-		$(this).toggleClass('active');
-		$(".header__menu").toggleClass('open');
-		if (state == false){
-		$(window).on('touchmove.noScroll', function(e) {
-			e.preventDefault();
-		});
-		state = true;
-		} else {
-		$(window).off('.noScroll');
-			state = false;
-		}
-	});
 
 
 

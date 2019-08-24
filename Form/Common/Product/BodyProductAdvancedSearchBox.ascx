@@ -30,7 +30,7 @@
 	<th style="display: none;">フリーワード</th>
 	<td class="sort-word">
 		<div class="searchBox_list searchBox_keyword">
-			<p class="searchBox_list--ttl">キーワード</p>
+			<p class="searchBox_list--ttl simpleTtl">キーワード</p>
 			<div class="searchBox_list--input">
 				<w2c:ExtendedTextBox ID="tbSearchWord" type="search" runat="server" placeholder="キーワードまたは商品番号を入力"></w2c:ExtendedTextBox>
 			</div>
@@ -42,29 +42,37 @@
 	<td class="sort-category">
 		<div class="searchBox_list searchBox_category">
 			<p class="searchBox_list--ttl">カテゴリー</p>
-			<p class="searchBox_list--ttlSelect sp_contents"></p>
 			<asp:DropDownList ID="ddlCategories" Style="display:none;" Runat="server"></asp:DropDownList>
 			<ul class="searchBox_list--column searchBox_list--category">
 				<li>
 					<p>すべて</p>
 				</li>
 				<li>
-					<p>トップス</p>
+					<p>アウター</p>
 				</li>
 				<li>
-					<p>アウター</p>
+					<p>シャツ・ブラウス</p>
+				</li>
+				<li>
+					<p>ニット</p>
+				</li>
+				<li>
+					<p>カットソー</p>
 				</li>
 				<li>
 					<p>ワンピース</p>
 				</li>
 				<li>
-					<p>パンツ</p>
-				</li>
-				<li>
 					<p>スカート</p>
 				</li>
 				<li>
-					<p>グッズ</p>
+					<p>パンツ</p>
+				</li>
+				<li>
+					<p>帽子</p>
+				</li>
+				<li>
+					<p>靴下</p>
 				</li>
 			</ul>
 		</div>
@@ -82,7 +90,6 @@
 		</div> -->
 		<div class="searchBox_list searchBox_price">
 			<p class="searchBox_list--ttl">価格タイプ</p>
-			<p class="searchBox_list--ttlSelect sp_contents">すべて</p>
 			<asp:RadioButtonList ID="sale" DataTextField="sale" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--price">
 				<asp:ListItem></asp:ListItem>
 				<asp:ListItem>すべて</asp:ListItem>
@@ -95,7 +102,7 @@
 	<th style="display: none;">カラー</th>
 	<td>
 		<div class="searchBox_list searchBox_color">
-			<p class="searchBox_list--ttl">カラー</p>
+			<p class="searchBox_list--ttl simpleTtl">カラー</p>
 			<asp:DropDownList ID="ddlColors" runat="server" Style="display:none;" DataTextField="text" DataValueField="value"></asp:DropDownList>
 			<asp:Repeater runat="server" ID="rColors" DataSource="<%# ProductColorUtility.GetProductColorList() %>" ItemType="w2.App.Common.Product.ProductColor">
 				<HeaderTemplate><ul class="searchBox_list--column searchBox_list--color"></HeaderTemplate>
@@ -195,7 +202,6 @@
 	<td class="sort-size">
 		<div class="searchBox_list searchBox_size">
 			<p class="searchBox_list--ttl">サイズ</p>
-			<p class="searchBox_list--ttlSelect sp_contents">すべて</p>
 			<asp:CheckBoxList ID="size" DataTextField="size" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--size">
 				<asp:ListItem>REGULAR</asp:ListItem>
 				<asp:ListItem>LOOSE</asp:ListItem>
@@ -208,14 +214,11 @@
 	<td>
 		<div class="searchBox_list searchBox_material">
 			<p class="searchBox_list--ttl">素材</p>
-			<p class="searchBox_list--ttlSelect sp_contents">すべて</p>
 			<asp:CheckBoxList ID="material" DataTextField="material" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--material">
-				<asp:ListItem>ハミルトンラムウール</asp:ListItem>
-				<asp:ListItem>ペルビアンコットン</asp:ListItem>
-				<asp:ListItem>メリノウール</asp:ListItem>
-				<asp:ListItem>ワンコットン</asp:ListItem>
+				<asp:ListItem>ハミルトンラムズウール</asp:ListItem>
+				<asp:ListItem>メリノオプティモ</asp:ListItem>
 				<asp:ListItem>フォークランドウール</asp:ListItem>
-				<asp:ListItem>タスマニアンウール</asp:ListItem>
+				<asp:ListItem>ワンコットン</asp:ListItem>
 			</asp:CheckBoxList>
 		</div>
 	</td>
