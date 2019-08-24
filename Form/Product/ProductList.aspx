@@ -393,14 +393,14 @@
 			$('.sortItem li:nth-child(1)').addClass("active");
 		}
 
-		$(window).scroll(function () {
+		// $(window).scroll(function () {
 
-	        if ($(this).scrollTop() > 15) {
-	            $('.pageCts_pdList--search').addClass('is-fixed');
-	        } else {
-	            $('.pageCts_pdList--search').removeClass('is-fixed');
-	        }
-	    });
+	 //        if ($(this).scrollTop() > 15) {
+	 //            $('.pageCts_pdList--search').addClass('is-fixed');
+	 //        } else {
+	 //            $('.pageCts_pdList--search').removeClass('is-fixed');
+	 //        }
+	 //    });
 	});
 
 </script>
