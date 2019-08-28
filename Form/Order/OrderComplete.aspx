@@ -21,7 +21,8 @@ $(function(){
 	$("#Contents").addClass("topSpace").addClass("cart5");
 });
 </script>
-<style>
+<link href="../../Css/rp/OrderComplete.css" rel="stylesheet">
+<!-- <style>
 /*====================================================================
   03 OrderPayment
 ====================================================================*/
@@ -205,7 +206,7 @@ textarea::focus {
 #Foot {
   border: none; }
 
-</style>
+</style> -->
 <div id="CartList">
 
 <h2 class="cart1_h2">ショッピングカート</h2>

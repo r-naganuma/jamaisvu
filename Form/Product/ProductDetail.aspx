@@ -1413,61 +1413,7 @@ iframe {
 	
 </div>
 <script type="text/javascript" async="" src="<%= Constants.PATH_ROOT %>Js/jquery.inview.min.js"></script>
-<script>
-window.onload = function() {
 
-		// $(".subImage").prepend($(".variationImage").html())
-
-		// $(".hidden_btn").html($(".productCart").clone())
-
-		//     var nav = $('.unit');
-
-		//     // メニューのtop座標を取得する
-		//     var offsetTop = nav.offset().top;
-
-		//     var secNews = $('.sec--news');
-		//     var height = $(window).height();
-
-		//     var floatMenu = function() {
-		//         // スクロール位置がメニューのtop座標を超えたら固定にする
-		//         if ($(window).scrollTop() > offsetTop) {
-		//             $(".hidden_btn").addClass("active")
-		// 			        // スクロール位置がメニューのtop座標を超えたら固定にする
-		// 		        if ($(window).scrollTop() > secNews.offset().top - height) {
-		// 		         	$(".hidden_btn").removeClass("active")
-
-		// 		        } else {
-		// 		            $(".hidden_btn").addClass("active")
-
-		// 		        }
-
-		//         } else {
-		//             $(".hidden_btn").removeClass("active")
-		//         }
-		//     }
-		//     $(window).scroll(floatMenu);
-
-
-
-
-
-		    
-
-		    $(window).scroll(function(){
-
-		   	});
-
-
-		// $('.sec--news').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-		// 	if (isInView) {
-		// 		$(".hidden_btn").removeClass("active")
-		// 	}
-		// 	else {
-		// 		$(".hidden_btn").addClass("active")
-		// 	}
-		// });
-};
-</script>
 <style>
 .flexslider {
   margin: 0 0 0px;

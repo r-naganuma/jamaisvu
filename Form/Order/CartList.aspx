@@ -65,6 +65,8 @@ $(function(){
 
 });
 </script>
+
+
 <style>
 div#primary {
   position: relative;
@@ -95,6 +97,7 @@ div#primary {
 }
 
 </style> 
+<link href="<%= Constants.PATH_ROOT %>/Css/rp/CartList.css" rel="stylesheet">
 <style type="text/css" media="screen">
 @charset "UTF-8";
 @font-face {
@@ -709,6 +712,7 @@ a.all_list_btn {
     margin: 0 auto 75px;
     max-width: 340px; } }
 
+@media (max-width: 768px) {
 .footer_logo {
   width: 100% !important;
   padding-right: 247px;
@@ -719,7 +723,7 @@ a.all_list_btn {
   left: 0;
   padding: 0 0 0 23px;
   width: 140px !important; }
-
+}
 #ctl00_ContentPlaceHolder1_upUpdatePanel select#ctl00_ContentPlaceHolder1_rCartList_ctl00_ddlCouponList {
   height: 32px;
   background: url(../../Contents/ImagesPkg/user/common/arrow_down.svg) no-repeat 90% 12px #fff;

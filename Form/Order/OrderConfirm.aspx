@@ -83,6 +83,7 @@ div#primary {
 }
 
 </style>
+<link href="../../Css/rp/OrderConfirm.css" rel="stylesheet">
 <div class="load_wrap"></div>
 <h2 class="cart1_h2">ショッピングカート</h2>
 
@@ -112,7 +113,7 @@ $(function(){
   });
 });
 </script>
-<style>
+<!-- <style>
 /*====================================================================
   03 OrderPayment
 ====================================================================*/
@@ -783,7 +784,10 @@ textarea::focus {
 
 .cart4 .box_dt16 {
   width: 190px !important; }
-
+  @media (max-width: 768px) {
+  .cart4 .box_dt16 {
+    width: 100% !important; }
+    }
 .cart4 .box_dt35 {
   width: 190px !important; }
 
@@ -1078,7 +1082,7 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
     width: 23%;
     text-align: center; } }
 
-</style>
+</style> -->
 
 <div style="color: red; font-weight: bold">
 	<asp:Label id="lblDeliveryPatternAlert" runat="server" visible="false">配送パターンを選択してください</asp:Label>

@@ -801,6 +801,9 @@ $bp768: 768px;  // スマホ
 		}
 		.box_dt16 {
 		    width: 190px!important;
+		    @include bp768 {
+				width: 100%!important;
+		    }
 		}
 		.box_dt35 {
 		    width: 190px!important;
