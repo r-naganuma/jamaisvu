@@ -36,13 +36,6 @@ function initializeFunctionJs() {
 		});
 	}
 
-	if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
-		$(document).ready(function(){
-		    var heightSize = $(window).height();
-		    $('.mainVisual').height(heightSize); 
-		});
-	}
-
 
 
 	// 新着ニュース

@@ -58,7 +58,7 @@
 </div>
 <div class="sec sec--topics">
     <div class="sec__inner">    
-        <h2 class="vertical-title">
+        <h2 class="vertical-title IEpdr0">
             TOPICS
         </h2>
         <div class="topicsContent">

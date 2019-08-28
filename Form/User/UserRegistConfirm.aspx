@@ -35,7 +35,7 @@
 				<% if (this.IsUserAddrJp) { %>
 				<dt class="inputBox_left must">
 					<%-- 氏名 --%>
-					ふりがな
+					かな
 				</dt>
 				<dd class="inputBox_right">
 					<%: this.UserInput.NameKana1 %>

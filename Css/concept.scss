@@ -2,12 +2,14 @@
 
 @font-face {
 	font-family: 'baskerville';
-	src: url('../Font/baskerville.otf') format("opentype");
+	src: url("../Font/baskerville.woff") format('woff'),
+		 url('../Font/baskerville.otf') format("opentype");
 }
 
 @font-face {
 	font-family: 'gillsans';
-	src: url('../Font/gillsans.otf') format("opentype");
+	src: url("../Font/gillsans.woff") format('woff'),
+		 url('../Font/gillsans.otf') format("opentype");
 }
 
 /*====================================================================
@@ -150,6 +152,12 @@ $bp768: 768px;  // スマホ
 							font-size: 11px;
 						};
 					}
+
+					&:last-child{
+						a{
+							color: #878787;
+						}
+					}
 				}
 			}
 		}
@@ -174,7 +182,7 @@ $bp768: 768px;  // スマホ
 
 				@include bp768 {
 					width: 100vw;
-					margin: 0 0 40px -18px;
+					margin: 0 0 80px -18px;
 				};
 
 				img{
@@ -218,6 +226,7 @@ $bp768: 768px;  // スマホ
 				flex-wrap: wrap;
 				justify-content: space-between;
 				margin: 0 auto 80px;
+				position: relative;
 
 				@include bp768 {
 					display: block;
@@ -236,7 +245,7 @@ $bp768: 768px;  // スマホ
 				}
 
 				&--txt{
-					width: 600px;
+					width: 640px;
 					order: 1;
 
 					@include bp768 {
@@ -250,6 +259,10 @@ $bp768: 768px;  // スマホ
 						letter-spacing: 0.1em;
 						line-height: 1;
 						font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+						@include bp768 {
+							text-align: center;
+						};
 
 						span{
 							font-size: 16px;
@@ -268,11 +281,17 @@ $bp768: 768px;  // スマホ
 				}
 
 				&--map{
-					width: 440px;
-					order: 2;
+					width: 811px;
+					position: absolute;
+					top: 0;
+					right: 0;
+					z-index: -1;
 
 					@include bp768 {
 						width: 100%;
+						position: inherit;
+						top: inherit;
+						right: inherit;
 					};
 				}
 			}
@@ -299,7 +318,7 @@ $bp768: 768px;  // スマホ
 				}
 
 				&--txt{
-					width: 600px;
+					width: 640px;
 
 					@include bp768 {
 						width: 100%;
@@ -311,6 +330,10 @@ $bp768: 768px;  // スマホ
 						letter-spacing: 0.1em;
 						line-height: 1;
 						font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+						@include bp768 {
+							text-align: center;
+						};
 
 						span{
 							font-size: 16px;

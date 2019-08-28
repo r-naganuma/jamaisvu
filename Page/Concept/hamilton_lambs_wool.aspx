@@ -39,9 +39,9 @@
 		</div>
 
 		<div class="conceptBox_where">
-			<div class="conceptBox_where--pic">
+			<!-- <div class="conceptBox_where--pic">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_02.jpg" alt="HAMILTON LAMS WOOL">
-			</div>
+			</div> -->
 			<div class="conceptBox_where--txt">
 				<h4>
 					WHERE
@@ -57,14 +57,14 @@
 				</p>
 			</div>
 			<div class="conceptBox_where--map">
-				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_01.jpg" alt="HAMILTON LAMS WOOL">
+				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_01.png" alt="HAMILTON LAMS WOOL">
 			</div>
 		</div>
 
 		<div class="conceptBox_quality">
-			<div class="conceptBox_quality--pic">
+			<!-- <div class="conceptBox_quality--pic">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_03.jpg" alt="HAMILTON LAMS WOOL">
-			</div>
+			</div> -->
 			<div class="conceptBox_quality--txt">
 				<h4>
 					QUALITY
@@ -115,10 +115,10 @@
 				肌にしっとりと馴染む<br class="sp_contents">柔らかな心地よさ
 			</h5>
 			<div class="conceptBox_feature--box">
-				<div class="conceptBox_feature--box--pic">
+				<div class="conceptBox_feature--box--pic ord1">
 					<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_05.jpg" alt="HAMILTON LAMS WOOL">
 				</div>
-				<div class="conceptBox_feature--box--txt">
+				<div class="conceptBox_feature--box--txt ord2">
 					<p>
 						寒さを凌ぐ厚手のコートから薄手のニットまで、多彩な製品で重宝されるハミルトンラムズウール。毛先が細く・長く、柔らかであること、独特なぬめりと光沢を持っていることから、肌に触れた時の柔らかさ、肌馴染みの良さは格別です。
 					</p>
@@ -132,15 +132,18 @@
 				<span>
 					03
 				</span>
-				繊細なため<br class="sp_contents">ピーリングができやすい
+				防縮加工を行わないことで<br class="sp_contents">なめらかな着心地を叶える
 			</h5>
 			<div class="conceptBox_feature--box">
-				<div class="conceptBox_feature--box--txt noPic">
+				<div class="conceptBox_feature--box--pic">
+					<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_06.jpg" alt="HAMILTON LAMS WOOL">
+				</div>
+				<div class="conceptBox_feature--box--txt">
 					<p>
-						ハミルトンラムズウールの製品は、その柔らかさを最大限に活かすため、防縮加工を行なっていません。また、一般的なラムウールよりも使用する1本1本の毛が長いことから、紡績の際に行う「ひねり」も、通常の2分の1となる約400回ほどしか行いません。これにより、ハミルトンラムズウール本来の柔らかさ、なめらかさを肌で感じることができるのです。
+						ハミルトンラムズウールの製品は、その柔らかさを最大限に活かすため、防縮加工を行なっていません。これにより、ハミルトンラムズウール本来のふわりとした着心地、なめらかさを肌で感じることができるのです。
 					</p>
 					<p>
-						しかし、防縮加工をしていないことや紡績時のひねりが少ないことから、毛同士が擦れ合い、ピーリング（毛玉）ができやすいという特性があります。気になるピーリングは適度に手で取るなどし、長持ちさせるための日頃の手入れをお忘れなく。縮みや型崩れを防ぐため、必ずドライクリーニングを施すのも大切です。
+						防縮加工をしていないことから、毛同士が擦れ合い、ピリング（毛玉）ができやすいという特性も。気になるピリングは適度に手で取るなどの日頃の手入れをすることで、製品が長持ちします。縮みや型崩れを防ぐため、ドライクリーニングを施すのも大切です。
 					</p>
 				</div>
 			</div>

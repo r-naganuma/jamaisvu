@@ -30,7 +30,7 @@
 				</dd>
 				<dt class="inputBox_left must">
 					<%-- ふりがな --%>
-					ふりがな
+					かな
 				</dt>
 				<dd class="inputBox_right">
 					<% if (this.IsUserAddrJp) { %>

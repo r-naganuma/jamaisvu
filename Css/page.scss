@@ -135,6 +135,12 @@ $bp768: 768px;  // スマホ
 							font-size: 11px;
 						};
 					}
+
+					&:last-child{
+						a{
+							color: #878787;
+						}
+					}
 				}
 			}
 		}
@@ -271,13 +277,14 @@ $bp768: 768px;  // スマホ
 
 				&--list{
 					border-bottom: 1px solid #EAE6E5;
-					padding: 20px 0 24px;
-					margin-bottom: 40px;
+					padding: 80px 0 24px;
+					margin-bottom: 0;
+					margin-top: -20px;
 
 					@include bp768 {
 						border-bottom: none;
-						padding: 20px 0 0;
-						margin-bottom: 60px;
+						padding: 80px 0 0;
+						margin-top: 0;
 					};
 
 					h3{
@@ -461,6 +468,10 @@ $bp768: 768px;  // スマホ
 					}
 				}
 
+				#a01{
+					margin-top: -60px;
+				}
+
 				.sizeGuideNote{
 					margin: 40px 0 20px;
 					padding: 40px;
@@ -558,7 +569,7 @@ $bp768: 768px;  // スマホ
 						padding-top: 150px;
 
 						@include bp768 {
-							padding-top: 85px;
+							padding-top: 27%;
 						};
 
 						p{

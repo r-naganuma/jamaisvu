@@ -38,9 +38,9 @@
 		</div>
 
 		<div class="conceptBox_where">
-			<div class="conceptBox_where--pic">
+			<!-- <div class="conceptBox_where--pic">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/falkland_02.jpg" alt="THE FALKLAND WOOL">
-			</div>
+			</div> -->
 			<div class="conceptBox_where--txt">
 				<h4>
 					WHERE
@@ -56,14 +56,14 @@
 				</p>
 			</div>
 			<div class="conceptBox_where--map">
-				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/falkland_01.jpg" alt="THE FALKLAND WOOL">
+				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/falkland_01.png" alt="THE FALKLAND WOOL">
 			</div>
 		</div>
 
 		<div class="conceptBox_quality">
-			<div class="conceptBox_quality--pic">
+			<!-- <div class="conceptBox_quality--pic">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/falkland_03.jpg" alt="THE FALKLAND WOOL">
-			</div>
+			</div> -->
 			<div class="conceptBox_quality--txt">
 				<h4>
 					QUALITY
@@ -169,10 +169,10 @@
 				血統を守り品質を担保する
 			</h5>
 			<div class="conceptBox_feature--box">
-				<div class="conceptBox_feature--box--pic">
+				<div class="conceptBox_feature--box--pic ord1">
 					<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/falkland_05.jpg" alt="THE FALKLAND WOOL">
 				</div>
-				<div class="conceptBox_feature--box--txt">
+				<div class="conceptBox_feature--box--txt ord2">
 					<p>
 						世界的に認められているタスマニア産のウール。この品質を保証すべく、タスマニア島では外来種の受け入れをせずに純度の高いサクソンメリノの血統を守る努力を行なっています。
 					</p>

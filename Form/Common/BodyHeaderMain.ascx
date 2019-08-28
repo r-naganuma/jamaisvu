@@ -50,10 +50,12 @@ $(function () {
 	if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
 	  $('.icnSerachBtn').hover(function () {
 	    $('.header__icon--search').addClass('on');
+	    $('.header__icon--search').removeClass('off');
 	    $('.icnSerachBtn').hide();
 	  });
 	  $('.search_textBox').hover(function () {}, function () {
 	    $('.header__icon--search').removeClass('on');
+	    $('.header__icon--search').addClass('off');
 	    $('.icnSerachBtn').show();
 	  });
 	}
@@ -89,10 +91,20 @@ $(function () {
 	var state = false;
 	$('.btn_menu').click(function () {
 	  $(this).toggleClass('active');
-	  $(".header__menu").toggleClass('open');
 	  $("#Wrap").toggleClass('open');
-
+		if($(".header__menu").hasClass("open")){ // クリックされた要素がopenクラスだったら
+			$(".header__menu").removeClass("open");
+			$(".header__menu").addClass("close");
+		}else{
+			$(".header__menu").addClass("open");
+			$(".header__menu").removeClass("close");
+		}
 	});
+
+	$(document).ready(function(){
+        var heightSize = $(window).height();
+        $('.mainVisual').height(heightSize); 
+    });
 });
 </script>
 <asp:UpdatePanel ID="upUpdatePanel2" runat="server">
@@ -262,7 +274,9 @@ $(function () {
 					</div>
 					<nav class="header__menu">
 						<div class="header__menu--inner">
-							<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/logo.png" alt="LOGO" class="nav_logo">
+							<a href="<%= WebSanitizer.HtmlEncode(this.UnsecurePageProtocolAndHost + Constants.PATH_ROOT) %>">
+								<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/logo.png" alt="LOGO" class="nav_logo">
+							</a>
 							<div class="header__icon header__icon--search--sp">
 								<div class="search_textBox">
 									<input name="ctl00$BodyHeaderMain$tbSearchWord2" type="text" maxlength="168" id="ctl00_BodyHeaderMain_tbSearchWord2" placeholder="キーワードを入力">
