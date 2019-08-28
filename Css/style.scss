@@ -783,8 +783,8 @@ $bp768: 768px;  // スマホ
 				height: 12px;
 				border-radius: 50%;
 				position: absolute;
-				top: -2px;
-				right: -2px;
+				top: 0;
+				right: 0;
 			}
 		}
 	}
@@ -1435,6 +1435,7 @@ $bp768: 768px;  // スマホ
 				text-align: center;
 				font-size: 22px;
 				line-height: 39.6px;
+				font-family: 'Noto Serif JP', serif;
 
 				@include bp768 {
 					font-size: 20px;
@@ -1503,6 +1504,8 @@ $bp768: 768px;  // スマホ
 				.concept__list-item {
 					width: 200px;
 					position: relative;
+					background: rgba(255,255,255,.75);
+					border-radius: 2px;
 
 					@include bp768 {
 						width: 100%;
@@ -1524,16 +1527,16 @@ $bp768: 768px;  // スマホ
 						-webkit-transform: rotate(135deg);
 						-ms-transform: rotate(135deg);
 						transform: rotate(135deg);
-						border-top: 2px solid #fff;
-						border-right: 2px solid #fff;
+						border-top: 1.5px solid #2E0E02;
+						border-right: 1.5px solid #2E0E02;
 
 						@include bp768 {
 							right: 15px;
 							bottom: 0;
 							left: inherit;
 							top: 0;
-							border-top: 1px solid #fff;
-							border-right: 1px solid #fff;
+							border-top: 1px solid #2E0E02;
+							border-right: 1px solid #2E0E02;
 							-moz-transform: rotate(45deg);
 							-webkit-transform: rotate(45deg);
 							-ms-transform: rotate(45deg);
@@ -1542,20 +1545,18 @@ $bp768: 768px;  // スマホ
 					}
 
 				    &:hover::after {
-						border-top: 2px solid #2E0E02;
-						border-right: 2px solid #2E0E02;
+						border-top: 1.5px solid #2E0E02;
+						border-right: 1.5px solid #2E0E02;
 				    }
 					
 					a {
 						width: 100%;
-						border: 1px solid #fff;
 						height: 100px;
 						display: flex;
 						align-items: center;
 						justify-content: center;
-						color: #fff;
+						color: #2E0E02;
 						text-align: center;
-						border-radius: 2px;
 						font-size: 15px;
 						letter-spacing: 0.28em;
 						line-height: 22.5px;
@@ -1594,6 +1595,30 @@ $bp768: 768px;  // スマホ
 					      opacity: 1;
 					      color: #2E0E02;
 					    }
+					}
+
+					&.comingSoon{
+						background: rgba(0,0,0,.5);
+						height: 100px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						color: #fff;
+						text-align: center;
+						font-size: 15px;
+						letter-spacing: 0.28em;
+						line-height: 22.5px;
+						position: relative;
+
+						@include bp768 {
+							height: 64px;
+							font-size: 14px;
+							line-height: 64px;
+						};
+
+						&::after{
+							content: none;
+						}
 					}
 				}
 			}
@@ -2126,6 +2151,7 @@ $bp768: 768px;  // スマホ
 									text-align: center;
 									letter-spacing: 0.16em;
 									color: #fff;
+									border: none;
 
 									@include bp768 {
 										height: 32px;
@@ -3101,6 +3127,7 @@ $bp768: 768px;  // スマホ
 							text-align: center;
 							letter-spacing: 0.16em;
 							color: #fff;
+							border: none;
 
 							@include bp768 {
 								height: 32px;

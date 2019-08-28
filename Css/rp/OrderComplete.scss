@@ -237,13 +237,12 @@ div#Contents{
 
 #Foot{
 	border: none;
+
+    @include bp768 {
+	    box-sizing: border-box;
+	    overflow-x: hidden;
+	}
 }
-
-@include bp768 {
-
-}
-
-
 
 
 

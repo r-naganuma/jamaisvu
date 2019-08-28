@@ -56,10 +56,10 @@ $(function(){
 					<a href="#a01">商品について</a>
 				</li>
 				<li>
-					<a href="#a02">注文について</a>
+					<a href="#a02">ご注文について</a>
 				</li>
 				<li>
-					<a href="#a03">支払いについて</a>
+					<a href="#a03">お支払いについて</a>
 				</li>
 				<li>
 					<a href="#a04">配送について</a>
@@ -82,10 +82,10 @@ $(function(){
 						<a href="#a01">商品について</a>
 					</li>
 					<li>
-						<a href="#a02">注文について</a>
+						<a href="#a02">ご注文について</a>
 					</li>
 					<li>
-						<a href="#a03">支払いについて</a>
+						<a href="#a03">お支払いについて</a>
 					</li>
 					<li>
 						<a href="#a04">配送について</a>
@@ -130,7 +130,7 @@ $(function(){
 			</div>
 
 			<div id="a02" class="guideWrap_cts--list">
-				<h3>注文について</h3>
+				<h3>ご注文について</h3>
 				<div class="inner">
 					<div class="inner_column">
 						<h4>注文方法</h4>
@@ -182,7 +182,7 @@ $(function(){
 			</div>
 
 			<div id="a03" class="guideWrap_cts--list">
-				<h3>支払いについて</h3>
+				<h3>お支払いについて</h3>
 				<div class="inner">
 					<div class="inner_column">
 						<p>

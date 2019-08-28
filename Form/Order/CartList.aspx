@@ -658,6 +658,10 @@ h2.cart1_h2 {
   display: inline-block !important;
   font-weight: normal !important; }
 
+#ctl00_ContentPlaceHolder1_upUpdatePanel .s_dt {
+  position: relative;
+  width: 56px; }
+
 #ctl00_ContentPlaceHolder1_upUpdatePanel .s_dt:after {
   content: ":";
   position: absolute;

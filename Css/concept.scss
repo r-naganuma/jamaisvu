@@ -277,6 +277,7 @@ $bp768: 768px;  // スマホ
 					p{
 						line-height: 2;
 						margin-top: 32px;
+						word-break: break-all;
 					}
 				}
 
@@ -348,6 +349,7 @@ $bp768: 768px;  // スマホ
 					p{
 						line-height: 2;
 						margin-top: 32px;
+						word-break: break-all;
 					}
 				}
 			}
@@ -475,6 +477,7 @@ $bp768: 768px;  // スマホ
 
 						p{
 							line-height: 2;
+							word-break: break-all;
 
 							&+p{
 								margin-top: 32px;

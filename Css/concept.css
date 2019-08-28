@@ -277,6 +277,7 @@
 #Wrap .LPpageWrap .conceptBox_where--txt p {
   line-height: 2;
   margin-top: 32px;
+  word-break: break-all;
 }
 
 #Wrap .LPpageWrap .conceptBox_where--map {
@@ -364,6 +365,7 @@
 #Wrap .LPpageWrap .conceptBox_quality--txt p {
   line-height: 2;
   margin-top: 32px;
+  word-break: break-all;
 }
 
 #Wrap .LPpageWrap .conceptBox_feature {
@@ -518,6 +520,7 @@
 
 #Wrap .LPpageWrap .conceptBox_feature--box--txt p {
   line-height: 2;
+  word-break: break-all;
 }
 
 #Wrap .LPpageWrap .conceptBox_feature--box--txt p + p {
