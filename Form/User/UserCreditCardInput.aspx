@@ -76,7 +76,7 @@
 							CssClass="error_inline" />
 						<%--▼▼ カード情報取得用 ▼▼--%>
 						<input type="hidden" id="hidCinfo" name="hidCinfo" value="<%= CreateGetCardInfoJsScriptForCreditToken() %>" />
-						<span id="spanErrorMessageForCreditCard" style="color: red; display: none" runat="server"></span>
+						<span id="spanErrorMessageForCreditCard" class="error_inline" runat="server"></span>
 						<%--▲▲ カード情報取得用 ▲▲--%>
 						</small>
 					</td>

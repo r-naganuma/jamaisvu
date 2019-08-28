@@ -3862,6 +3862,7 @@ textarea::focus {
 
 .error_inline {
   color: #AD2E24 !important;
+  line-height: 1.5;
 }
 
 @-webkit-keyframes borderSearch {

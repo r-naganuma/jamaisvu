@@ -25,7 +25,9 @@
 </div>
 
 <footer class="footer">
-	<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/logo.png" alt="LOGO" class="footer_logo">
+	<a href="<%= WebSanitizer.HtmlEncode(this.UnsecurePageProtocolAndHost + Constants.PATH_ROOT) %>">
+		<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/logo.png" alt="LOGO" class="footer_logo">
+	</a>
 	<div class="footer_box">
 		<ul class="footer_box--list">
 			<li>
