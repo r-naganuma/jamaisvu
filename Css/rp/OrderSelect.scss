@@ -1,0 +1,170 @@
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+
+.cart_select{
+	#dvOrderBox #dvCartSelect p{
+		background: none;
+	}
+	#dvOrderBox h3 {
+	    margin: 10px 0px 20px 0px;
+	    font: bold 12px "ＭＳ Ｐゴシック", Arial;
+	}
+	#dvOrderBox #dvCartSelect table {
+	    margin: 0px 0px 60px 0px;
+
+	}
+	#dvOrderBox #dvCartSelect table th {
+	    border-top-style: solid;
+	    border-top-width: 1px;
+	    padding: 10px 0;
+	    font-weight: normal;
+	    text-align: left;
+	    background: #fff;
+	}
+	#dvOrderBox {
+	    max-width: 1120px;
+	    margin: 10px auto;
+	    position: relative;
+	    @include bp768 {
+			padding: 0 5%;
+	    }
+	}
+	#dvCartSelect p {
+	    margin: 5px 0px 20px 0px;
+	    padding: 10px;
+	    background-color: #ececec;
+	    line-height: 1.6;
+	    background: none;
+	}
+	div#dvCartSelect {
+		width: (800%/ 1120 *100)!important;
+		@include bp768 {
+		width:100%!important;
+		}
+		table .productName img {
+		    height: 16px!important;
+		    width: auto!important;
+		}	
+		table{
+		    td{
+			    padding: 20px 5px!important;
+		    }
+		     & > tr {
+		    	padding: 20px 0;
+			}
+		}
+
+	}
+	.btmbtn {
+		width: (260%/ 1120 *100)!important;
+	}
+	.sp_contents_br{
+		display: none;
+	}
+	// .checkBox > input {
+	//   display: none;
+	// }
+
+	// .checkBox input + label {
+	//     padding-left: 28px;
+	//     vertical-align: middle;
+	//     position: relative;
+	//     padding-top: 3px;
+	//     margin-right: 66px;
+	// }
+
+	// .checkBox input + label::before {
+	//   content: "";
+	//   display: block;
+	//   position: absolute;
+	//   top: 0;
+	//   left: 0;
+	//   width: 20px;
+	//   height: 20px;
+	//   border: 1px solid #C0B6B3;
+	//   border-radius: 3px;
+	//   background: #fff;
+	//   -webkit-box-sizing: border-box;
+	//   box-sizing: border-box;
+	// }
+
+	// .checkBox input:checked + label::after {
+	//   content: "";
+	//   display: block;
+	//   position: absolute;
+	//   top: 4px;
+	//   left: 4px;
+	//   width: 12px;
+	//   height: 12px;
+	//   background: #2E0E02;
+	//   border-radius: 3px;
+	// }
+
+	.checkBox input:checked + label.on::after {
+	  content: "";
+	}
+
+
+}
+
+
+
+@include bp768 {
+	.cart_select{
+		#dvOrderBox #dvCartSelect p {
+		    margin: 5px 0px 20px 0px;
+		    padding: 10px;
+		    background-color: #ececec;
+		    line-height: 1.6;
+		    background: none;
+		}
+		div#dvCartSelect tr:first-child {
+		    display: none;
+		}
+		div#dvCartSelect tr {
+		    display: flex;
+		    flex-wrap:wrap;
+		}
+		div#dvCartSelect td {
+		    width: 50%; 
+		}
+		#dvOrderBox #dvCartSelect table .productImg {
+		    width: 30%!important;
+		    text-align: center;
+		}
+		#dvOrderBox #dvCartSelect table .productName{
+ 			width: 70%!important;
+		}
+		#dvOrderBox #dvCartSelect table .productPrice {
+ 			width: 50%!important;
+		}
+		#dvOrderBox #dvCartSelect table .remark {
+ 			width: 50%!important;
+		}
+		#dvOrderBox #dvCartSelect table td{
+			border: none;
+		}
+		.btmbtn {
+		    width: 56.21429% !important;
+		}
+		#dvOrderBox #dvCartSelect table {
+
+		    margin: 0px 0px 60px 0px;
+		}
+		.sp_contents_br{
+			display: inline;
+		}
+	}
+
+}
+
+
+
+
+
