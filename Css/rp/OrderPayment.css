@@ -171,7 +171,7 @@ textarea::focus {
 .cart3 div.main {
   width: 100% !important;
   padding: 0 !important;
-  margin: 0 !important;
+  margin: 0 0 80px !important;
   background: none !important;
   position: relative;
 }
@@ -291,7 +291,7 @@ textarea::focus {
   width: 23.92%;
   float: right;
   background: #EAE6E5;
-  padding: 25px 25px 40px 25px;
+  padding: 25px 25px 0px 25px;
   margin: 0 0 100px;
 }
 
@@ -615,7 +615,7 @@ textarea::focus {
 
 .cart3 .btmbtn__innar {
   background: #EAE6E5;
-  padding: 40px 20px 30px;
+  padding: 0px 20px 0px;
   height: auto;
 }
 
@@ -1264,7 +1264,8 @@ textarea::focus {
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardForTokenAcquired a,
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl01_divCreditCardForTokenAcquired a,
 .cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_ddCredit a,
-.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit a {
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit a,
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardForTokenAcquired a {
   font-size: 14px;
   margin: 0 0 0 45px;
 }
@@ -1272,7 +1273,8 @@ textarea::focus {
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardForTokenAcquired dl,
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl01_divCreditCardForTokenAcquired dl,
 .cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_ddCredit dl,
-.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit dl {
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit dl,
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardForTokenAcquired dl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1281,18 +1283,29 @@ textarea::focus {
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardForTokenAcquired dt,
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl01_divCreditCardForTokenAcquired dt,
 .cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_ddCredit dt,
-.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit dt {
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit dt,
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardForTokenAcquired dt {
   width: 200px;
   display: inline-block;
   border: none !important;
   letter-spacing: 0.08em;
   padding: 0 !important;
+  font-weight: 100;
+}
+
+.cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardForTokenAcquired dt strong,
+.cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl01_divCreditCardForTokenAcquired dt strong,
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_ddCredit dt strong,
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit dt strong,
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardForTokenAcquired dt strong {
+  font-weight: 100;
 }
 
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardForTokenAcquired dd,
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl01_divCreditCardForTokenAcquired dd,
 .cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_ddCredit dd,
-.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit dd {
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit dd,
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardForTokenAcquired dd {
   width: 300px;
   display: inline-block;
   display: -webkit-box;
@@ -1306,20 +1319,80 @@ textarea::focus {
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardForTokenAcquired dd p,
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl01_divCreditCardForTokenAcquired dd p,
 .cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_ddCredit dd p,
-.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit dd p {
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit dd p,
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardForTokenAcquired dd p {
   font-size: 14px;
   letter-spacing: 0.08em;
   padding: 0 !important;
+  font-weight: 100;
 }
 
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardForTokenAcquired strong,
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl01_divCreditCardForTokenAcquired strong,
 .cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_ddCredit strong,
-.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit strong {
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit strong,
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardForTokenAcquired strong {
   font-size: 14px;
   margin: 0 0 0px 0;
   display: block;
   padding: 0 !important;
+}
+
+.cart3 dl.pay_dl.pd_h {
+  height: auto;
+}
+
+.cart3 select#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_ddlUserCreditCard,
+.cart3 select#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddlUserCreditCard {
+  height: 32px;
+  background: url(../../Contents/ImagesPkg/user/common/arrow_down.svg) no-repeat 90% 12px;
+  width: 250px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0 !important;
+  padding: 0 0 0 10px;
+  border: 1px solid #C0B6B3;
+  font-size: 13px;
+  margin: 0 0 20px 85px;
+}
+
+.cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardDisp,
+.cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardDisp,
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardForTokenAcquired {
+  padding: 0 0 0 85px;
+}
+
+.cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardDisp dl,
+.cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardDisp dl,
+.cart3 #ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardForTokenAcquired dl {
+  margin: 0 0 25px;
+}
+
+.cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_Div10,
+.cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_Div10 {
+  display: none;
+}
+
+.cart3 p.shoppingCart__title {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 0;
+  letter-spacing: 0.08em;
+}
+
+.cart3 p.shoppingCart__title strong {
+  font-size: 14px;
+  float: right;
+  letter-spacing: 0.08em;
+}
+
+.cart3 .singleProduct {
+  display: none;
+}
+
+.cart3 .priceList {
+  display: none;
 }
 
 @media (max-width: 768px) {

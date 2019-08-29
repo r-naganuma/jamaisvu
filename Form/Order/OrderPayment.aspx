@@ -20,9 +20,25 @@
 
 <script>
 $(function(){
+	
 	$("#Contents").addClass("topSpace").addClass("cart3");
 	$(".load_wrap").addClass("active");
+	$(".shoppingCart__title").html($(".subSumBox p").html());
+	$(".shoppingCart").each(function(x){
+		$(this).addClass("sc"+x);
+	});
+	$(".sc1").css("display","none");
+
 });
+function bodyPageLoad(){
+	$("#Contents").addClass("topSpace").addClass("cart3");
+	$(".load_wrap").addClass("active");
+	$(".shoppingCart__title").html($(".subSumBox p").html());
+	$(".shoppingCart").each(function(x){
+		$(this).addClass("sc"+x);
+	});
+	$(".sc1").css("display","none");
+}
 </script>
 <link href="../../Css/rp/OrderPayment.css" rel="stylesheet">
 <!-- <style>
@@ -168,7 +184,7 @@ div#primary {
     <%} %>
    <dl class="pay_dl d1">
     <dt>
-    <strong>カード番号</strong>&nbsp;<span class="fred"></span></dt>
+    <strong>カード番号</strong><span class="fred"></span></dt>
     <dd>
     <p><asp:TextBox id="tbCreditCardNo1" runat="server" CssClass="input_widthA input_border" MaxLength="16" Text="<%# GetCreditValue(((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment, CartPayment.FIELD_CREDIT_CARD_NO_1) %>" autocomplete="off" Type="tel"></asp:TextBox>
 
@@ -194,7 +210,7 @@ div#primary {
 
     <dl class="pay_dl d3">
     <dt>
-    <strong>名義人</strong>&nbsp;<span class="fred"></span></dt>
+    <strong>名義人</strong><span class="fred"></span></dt>
     <dd>
     <p><asp:TextBox id="tbCreditAuthorName" runat="server" MaxLength="50" Text="<%# GetCreditValue(((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment, CartPayment.FIELD_CREDIT_AUTHOR_NAME) %>" class="input_widthB input_border" autocomplete="off" Type="email" title=""></asp:TextBox><br />
     <small class="fred">
@@ -226,7 +242,7 @@ div#primary {
        <dt>
        
      
-    <strong>セキュリティコード</strong>&nbsp;<span class="fred"></span></dt>
+    <strong>セキュリティコード</strong><span class="fred"></span></dt>
     <dd><p><asp:TextBox id="tbCreditSecurityCode" runat="server" MaxLength="5" Text="<%# GetCreditValue(((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment, CartPayment.FIELD_CREDIT_SECURITY_CODE) %>" class="input_widthA input_border" autocomplete="off" Type="tel"></asp:TextBox><br />
     <small class="fred">
     <asp:CustomValidator ID="cvCreditSecurityCode" runat="Server"
@@ -239,7 +255,7 @@ div#primary {
     </small></p>
     </dd>
     </dl>
-    <dl class="pay_dl">
+    <dl class="pay_dl pd_h">
       <dt></dt>
       <dd>    <p class="d4_text">セキュリティコードはクレジットカード裏面の末尾 3 桁(一部 4 桁)の数字です。 (一部のクレジットカードの場合、カード表面右上にある 4 桁の数字となります)</p></dd>
     </dl>
@@ -467,6 +483,8 @@ div#primary {
 
 	<%-- ▼カート情報▼ --%>
 	<div class="shoppingCart">
+
+	<p class="shoppingCart__title"></p>
 	<div id="Div7" visible="<%# (Container.ItemIndex == 0) %>" runat="server">
 	<h2><img src="../../Contents/ImagesPkg/common/ttl_shopping_cart.gif" alt="ショッピングカート" width="141" height="16" /></h2>
 	<div class="sumBox mrg_topA kei1">

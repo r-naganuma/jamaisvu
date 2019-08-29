@@ -186,7 +186,7 @@ $bp768: 768px;  // スマホ
 	div.main {
 	    width: 100%!important;
 	    padding: 0!important;
-	    margin: 0!important;
+	    margin: 0 0 80px!important;
 	    background: none!important;
 	    position: relative;
 	}	
@@ -285,7 +285,7 @@ $bp768: 768px;  // スマホ
 		    width: 23.92%;
 		    float: right;
 		    background: #EAE6E5;
-		    padding: 25px 25px 40px 25px;
+		    padding: 25px 25px 0px 25px;
 		    margin: 0 0 100px;
 			@include bp768 {
 		    width: 100%;
@@ -548,7 +548,7 @@ $bp768: 768px;  // スマホ
 	}
 		.btmbtn__innar{
 		    background: #EAE6E5;
-		    padding: 40px 20px 30px;
+		    padding: 0px 20px 0px;
 		    height: auto;
 		    @include bp768 {
 		    	ul{
@@ -1050,7 +1050,8 @@ $bp768: 768px;  // スマホ
 	div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardForTokenAcquired,
 	div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl01_divCreditCardForTokenAcquired,
 	#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_ddCredit,
-	#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit {
+	#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit,
+	#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardForTokenAcquired {
 		
 		a{
 			font-size: 14px;
@@ -1064,7 +1065,12 @@ $bp768: 768px;  // スマホ
 		    display: inline-block;
 		    border: none!important;
 		    letter-spacing: 0.08em;
-		        padding: 0!important;
+		    padding: 0!important;
+
+		     font-weight: 100;
+		     strong {
+			    font-weight: 100;
+			}
 		}
 		dd{
 		    width: 300px;
@@ -1075,6 +1081,7 @@ $bp768: 768px;  // スマホ
     			font-size: 14px;
     			letter-spacing: 0.08em;
     			    padding: 0!important;
+    			    font-weight: 100;
     		}
 		}
 			strong {
@@ -1084,7 +1091,56 @@ $bp768: 768px;  // スマホ
 		    padding: 0!important;
 			}
 	}
+	dl.pay_dl.pd_h {
+	    height: auto;
+	}
+	select#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_ddlUserCreditCard,
+	select#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddlUserCreditCard  {
+	    height: 32px;
+	    background: url(../../Contents/ImagesPkg/user/common/arrow_down.svg) no-repeat 90% 12px;
+	    width: 250px;
+	    -moz-appearance: none;
+	    -webkit-appearance: none;
+	    appearance: none;
+	    border-radius: 0 !important;
+	    padding: 0 0 0 10px;
+	    border: 1px solid #C0B6B3;
+	    font-size: 13px;
+	    margin: 0 0 20px 85px;
+	}
 
+	div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardDisp,
+	div#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardDisp,
+	#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardForTokenAcquired  {
+	    padding: 0 0 0 85px;
+	}
+	div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardDisp dl ,
+	div#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardDisp dl ,
+	#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divCreditCardForTokenAcquired  dl{
+	    margin: 0 0 25px;
+	}
+	div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_Div10,
+	div#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_Div10,
+	{
+	    display: none;
+	}
+	p.shoppingCart__title {
+	    font-size: 14px;
+	    font-weight: bold;
+	    padding: 0 0;
+	    letter-spacing: 0.08em;
+	    strong{
+	    	font-size: 14px;
+	    	float: right;
+	    	letter-spacing: 0.08em;
+	    }
+	}
+	.singleProduct {
+	    display: none;
+	}
+	.priceList{
+		display: none;
+	}
 }
 
 @include bp768 {

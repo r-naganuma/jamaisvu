@@ -111,6 +111,32 @@ $(function(){
   $(".priceList_1 dl").each(function(a){
     $(this).addClass("p_dl"+a)
   });
+
+  $(".main").each(function(y){
+    $(this).addClass("main"+y);
+  });
+
+  $(".main0 .first_wrap__innar").append($(".priceList_0").clone());
+  $(".main1 .first_wrap__innar").append($(".priceList_1").clone());
+  $(".shoppingCart__title").html($(".subSumBox p").html());
+  $(".shoppingCart").each(function(x){
+    $(this).addClass("sc"+x);
+  });
+  $(".sc1").css("display","none");
+  // $(".sc1").css("display","none");
+  // if($(".main").length > 1){
+  //   if($(window).width() < 768){
+  //     $(".sc0").hide()
+  //     $(".sc1").show()
+  //   }else{
+
+  //   }
+  // }else{
+
+  // }
+  $(".add_cart_box").append($(".sc0").clone());
+
+  
 });
 </script>
 <!-- <style>
@@ -1544,11 +1570,12 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 	<div class="shoppingCart__wrap">
 	<%-- ▼カート情報▼ --%>
 	<div class="shoppingCart">
+  <p class="shoppingCart__title"></p>
 	<div id="Div3" visible="<%# Container.ItemIndex == 0 %>" runat="server">
 	<h2><img src="../../Contents/ImagesPkg/common/ttl_shopping_cart.gif" alt="ショッピングカート" width="141" height="16" /></h2>
 	<div class="sumBox mrg_topA">
 	<div class="subSumBoxB">
-	<p><img src="../../Contents/ImagesPkg/common/ttl_sum.gif" alt="総合計" width="52" height="16" />
+	<p>総合計
 		<strong><%#: CurrencyManager.ToPrice(this.CartList.PriceCartListTotal) %></strong></p>
 	</div>
 	</div><!--sum-->
@@ -1644,6 +1671,8 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 				$(".s2 .s_dd",this).text(str);
 				$(".d2 .d_dd",this).text(str);
 		 })
+
+
 		})
 
 		</script>
@@ -1885,7 +1914,7 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 	<div id="Div6" visible="<%# ((CartObjectList)((Repeater)Container.Parent).DataSource).Items.Count == Container.ItemIndex + 1 %>" runat="server">
 	<div class="sumBox">
 	<div class="subSumBox">
-	<p><img src="../../Contents/ImagesPkg/common/ttl_sum.gif" alt="総合計" width="52" height="16" />
+	<p>総合計
 		<strong><%#: CurrencyManager.ToPrice(this.CartList.PriceCartListTotal) %></strong></p>
 	</div>
 	<%if (Constants.W2MP_POINT_OPTION_ENABLED && this.IsLoggedIn) { %>
@@ -1929,9 +1958,16 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 </ItemTemplate>
 </asp:Repeater>
 
-<div style="text-align:right;padding:10px 0;" id="hgcCompleteMessage" runat="server">
+<!-- <div style="text-align:right;padding:10px 0;" id="hgcCompleteMessage" runat="server">
 	以下の内容をご確認のうえ、「注文を確定する」ボタンをクリックしてください。
+</div> -->
+
+<div class="sp_contents">
+  <div class="add_cart_box">
+  
+  </div>
 </div>
+
 <div style="text-align: right">
 	<asp:Label id="lblOrderCombineAlert" runat="server">「カートへ戻る」ボタンを押下すると、同梱が解除されます。</asp:Label>
 </div>

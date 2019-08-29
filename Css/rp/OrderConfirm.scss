@@ -251,7 +251,7 @@ $bp768: 768px;  // スマホ
 			    align-items: center;
 			    justify-content: space-between;
 				@include bp768 {
-			    padding: 0 0 5px 4px;
+			    padding: 0 0 10px 4px;
 			    margin: 0 0 20px;
 			    font-size: 13px;
 				}
@@ -275,6 +275,7 @@ $bp768: 768px;  // スマホ
 			    border: none;
 			    padding: 0 0 15px 0px;
 			    margin: 0 0 60px;
+			    clear: both;
 			    border-bottom: 1px solid #EAE6E5;
 				div{
 					width: 100%;
@@ -407,6 +408,8 @@ $bp768: 768px;  // スマホ
 			@include bp768 {
 			width: 100%;
 			}
+
+
 		    h2{
 		    	display: none;
 		    }
@@ -460,6 +463,7 @@ $bp768: 768px;  // スマホ
 				}
 			}
 			.priceList{
+				display: none;
 			    width: 100%;
 			    clear: both;
 			    border-top: 1px solid #2E0E02;
@@ -956,7 +960,28 @@ $bp768: 768px;  // スマホ
 	.c_on dd,  {
 	    color: #AD2E24;
 	}
-	
+	.clone_3 {
+	    text-align: left;
+	}
+	p.shoppingCart__title {
+	    font-size: 14px;
+	    font-weight: bold;
+	    padding: 0 0;
+	    letter-spacing: 0.08em;
+	    strong{
+	    	font-size: 14px;
+	    	float: right;
+	    	letter-spacing: 0.08em;
+	    }
+	}
+	@include bp768 {
+		.sc0,.sc1{
+			display: none;
+		}
+		.add_cart_box .sc0{
+			display: block!important;
+		}
+	}
 }
 
 #Foot{
@@ -969,12 +994,77 @@ $bp768: 768px;  // スマホ
 }
 .first_wrap{
 	margin: 0 0 60px;
+	overflow: hidden;
 	h4{
 		margin: 0;
 	}
 	.singleProduct {
 	    padding: 25px 0 25px;
 	    border-bottom: 1px solid #eae6e5;
+	}
+    dl{
+    	width: 100%;
+    	align-items: center;
+		display: flex;
+    }
+    dt{
+		width: 70%;
+		text-align: left;
+		font-size: 14px;
+		letter-spacing: 0.08em;
+	    @include bp768 {
+	    	font-size: 13px;
+	    }
+    }
+    dd{
+		width: 30%;
+		padding: 0;
+		text-align: right;
+		font-size: 14px;
+		letter-spacing: 0.08em;
+		font-weight: normal;
+	    @include bp768 {
+	    	font-size: 14px;
+	    }
+    }
+    dl.bgc{
+    	background: none;
+    }
+	dl.result {
+	    font-size: 12px!important;
+	    margin-top: 15px;
+	    background: none;
+	    border-top: 1px solid #2E0E02;
+	    padding: 15px 0 0 0;
+	    @include bp768 {
+	    dt{
+			font-size: 14px!important;
+	    }
+	    dd{
+			font-size: 16px!important;
+	    }
+	    }
+
+	}
+
+	.priceList {
+	    float: right;
+	    width: 220px;
+	    @include bp768 {
+		width: 100%;
+	    }
+	}
+	dl.bgc{
+		background: none;
+	}
+	a{
+		
+
+	}
+	.priceList{
+		a{
+			display: none;
+		}
 	}
 }
 .shoppingCart{
@@ -1125,7 +1215,7 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 @include bp768 {
 	div#ctl00_ContentPlaceHolder1_hgcCompleteMessage {
 	    text-align: left!important;
-	    padding: 15px 6.35%!important;
+	    padding: 77px 6.35%!important;
 	}
 	#dvOrderBox #dvCartSelect table .productImg {
 	    width: 23%;
