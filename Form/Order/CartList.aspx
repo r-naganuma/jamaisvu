@@ -1051,7 +1051,7 @@ span.error_message {
 <% if (string.IsNullOrEmpty(this.DispErrorMessage) == false) { %>
 <span style="color:red" class="error_message"><%: this.DispErrorMessage %></span>
 <% } %>
-<p class="sum"><img src="../../Contents/ImagesPkg/cartlist/ttl_sum.gif" alt="総合計" width="48" height="16" /><strong><%: CurrencyManager.ToPrice(this.CartList.PriceCartListTotal) %></strong></p>
+<p class="sum">総合計<strong><%: CurrencyManager.ToPrice(this.CartList.PriceCartListTotal) %></strong></p>
 
 <%if (this.CartList.Items.Count != 0) {%>
 <asp:Repeater id="rCartList" Runat="server" OnItemCommand="rCartList_ItemCommand">
