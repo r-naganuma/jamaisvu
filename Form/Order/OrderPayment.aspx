@@ -686,36 +686,36 @@ div#primary {
 	</div><!--box-->
 	<div runat="server" id="hgcCouponBox" style="z-index: 1; top: 0; left: 0; width: 100%; height: 120%; position: fixed; background-color: rgba(128, 128, 128, 0.75);" 
 		Visible='<%# ((CartObject)Container.DataItem).CouponBoxVisible %>'>
-		<div id="hgcCouponList" style="width: 960px; height: 500px; top: 50%; left: 50%; text-align: center; background: #fff; position: fixed; z-index: 2; margin:-250px 0 0 -400px;">
+		<div id="hgcCouponList" style="width: 960px; height: 500px; top: 50%; left: 50%; text-align: center; background: #fff; position: fixed; z-index: 2; margin:-250px 0 0 -500px;">
 		<h2 style="height: 20px; color: #fff; background-color: #000; font-size: 16px; padding: 3px 0px; border-bottom: solid 1px #ccc; width: initial; width: auto; ">クーポンBOX</h2>
 		<div style="height: 400px; overflow: auto;">
 		<asp:Repeater ID="rCouponList" ItemType="UserCouponDetailInfo" Runat="server" DataSource="<%# GetUsableCoupons((CartObject)Container.DataItem) %>">
 		<HeaderTemplate>
 			<table>
 			<tr>
-				<th class="th_first th1" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:68px;">クーポン<br>
+				<th class="th_first th1" style="background-color:#EAE6E5; padding:10px; text-align:center;width:98px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">クーポン<br>
 				コード</th>
-				<th class="th_first th2" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:205px;">クーポン名</th>
-				<th class="th_first th3" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:60px;">金額</th>
-				<th class="th_first th4" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:55px;">利用回数</th>
-				<th class="th_first th5" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:108px;">有効期限</th>
-				<th class="th_first th6" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:189px;">利用条件</th>
-				<th class="th_first th7" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:80px;"></th>
+				<th class="th_first th2" style="background-color:#EAE6E5; padding:10px; text-align:center;width:215px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">クーポン名</th>
+				<th class="th_first th3" style="background-color:#EAE6E5; padding:10px; text-align:center;width:90px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">金額</th>
+				<th class="th_first th4" style="background-color:#EAE6E5; padding:10px; text-align:center;width:80px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">利用回数</th>
+				<th class="th_first th5" style="background-color:#EAE6E5; padding:10px; text-align:center;width:178px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">有効期限</th>
+				<th class="th_first th6" style="background-color:#EAE6E5; padding:10px; text-align:center;width:204px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">利用条件</th>
+				<th class="th_first th7" style="background-color:#EAE6E5; padding:10px; text-align:center;width:110px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;"></th>
 			</tr>
 		</HeaderTemplate>
 		<ItemTemplate>
 			<tr>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:68px; background-color: white;">
+				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:98px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
 					<div class="sp_contents"><span class="c_code">クーポンコード</span></div>
 					<%#: StringUtility.ToEmpty(Item.CouponCode) %><br />
 					<asp:HiddenField runat="server" ID="hfCouponBoxCouponCode" Value="<%# Item.CouponCode %>" />
 				</td>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:205px; background-color: white;"
+				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:215px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;"
 					title="<%#: StringUtility.ToEmpty(Item.CouponDispDiscription) %>">
 					<div class="sp_contents"><span class="c_code">クーポン名</span></div>
 					<%#: StringUtility.ToEmpty(Item.CouponDispName) %>
 				</td>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:60px; background-color: white;">
+				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:90px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
 					<div class="sp_contents"><span class="c_code">割引金額</span></div>
 					<%#: (StringUtility.ToEmpty(Item.DiscountPrice) != "")
 							? CurrencyManager.ToPrice(Item.DiscountPrice)
@@ -723,24 +723,20 @@ div#primary {
 								? StringUtility.ToEmpty(Item.DiscountRate) + "%"
 								: "-" %>
 				</td>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:55px; background-color: white;">
+				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:80px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
 					<div class="sp_contents"><span class="c_code">利用可能回数</span></div>
 					<%#: GetCouponCount(Item) %>
 				</td>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:108px; background-color: white;">
+				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:178px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
 					<div class="sp_contents"><span class="c_code">有効期限</span></div>
 					<%#: DateTimeUtility.ToStringFromRegion(Item.ExpireEnd, DateTimeUtility.FormatType.LongDateHourMinute1Letter) %>
 				</td>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:189px; background-color: white;">
+				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left !important; text-align:center;width:204px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
 					<div class="sp_contents"><span class="c_code">利用条件</span></div>
 					<%#: Item.CouponDiscription %>
 				</td>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:80px; background-color: white;">
-
-					<asp:LinkButton runat="server" id="lbCouponSelect" OnClick="lbCouponSelect_Click" style="color: #ffffff !important; background-color: #000 !important;
-						border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); display: inline-block;
-						padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; text-align: center; vertical-align: middle; cursor: pointer;
-						border: 1px solid #cccccc; border-radius: 4px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); white-space: nowrap; text-decoration: none; ">使う</asp:LinkButton>
+				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; width:110px;">
+					<asp:LinkButton runat="server" id="lbCouponSelect" OnClick="lbCouponSelect_Click" style="color: #ffffff !important; background: #968680 !important; display: block; width: 80px; height: 40px; line-height: 40px; margin: 0 auto; padding: 0; font-size: 13px; text-align: center; text-decoration: none; border-radius: 2px; letter-spacing: 0.08em;">使う</asp:LinkButton>
 				</td>
 			</tr>
 		</ItemTemplate>
