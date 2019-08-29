@@ -1266,8 +1266,14 @@ ul#ctl00_ContentPlaceHolder1_ucBpamrArrival_rblMailAddrKbn {
 }
 
 input#ctl00_ContentPlaceHolder1_ucBpamrArrival_tbMailAddr {
-  width: 100% !important;
+  width: 95% !important;
   display: block;
+}
+
+@media (max-width: 768px) {
+  input#ctl00_ContentPlaceHolder1_ucBpamrArrival_tbMailAddr {
+    width: 88% !important;
+  }
 }
 
 a#ctl00_ContentPlaceHolder1_lbRequestArrivalMail2 {
@@ -1388,7 +1394,13 @@ div#divProductArrivalMail {
   background: rgba(0, 0, 0, 0.3);
   overflow: hidden;
   z-index: 888;
-  margin-top: -70px;
+  margin-top: -92px;
+}
+
+@media (max-width: 768px) {
+  div#divProductArrivalMail {
+    margin-top: -70px;
+  }
 }
 
 .divProductArrivalMail__innnar {
