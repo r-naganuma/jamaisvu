@@ -182,7 +182,7 @@ div#primary {
       SetFocusOnError="true"
       ClientValidationFunction="ClientValidate"
       CssClass="error_inline" />
-    <asp:CustomValidator ID="cvCreditCardNo2" runat="Server"
+<!--     <asp:CustomValidator ID="cvCreditCardNo2" runat="Server"
       ControlToValidate="tbCreditCardNo2"
       ValidationGroup="OrderPayment"
       ValidateEmptyText="true"
@@ -202,7 +202,7 @@ div#primary {
       ValidateEmptyText="true"
       SetFocusOnError="true"
       ClientValidationFunction="ClientValidate"
-      CssClass="error_inline" />
+      CssClass="error_inline" /> -->
       <span id="sErrorMessage" style="color :Red" runat="server" />
     </small>
     <small class="fgray">
