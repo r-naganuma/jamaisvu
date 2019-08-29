@@ -68,6 +68,84 @@ div#primary {
     visibility: hidden;
     transition: all 1s 0.5s;
 }
+
+.couponUseUse{
+	color: #ffffff !important;
+	background: #968680 !important;
+	display: block;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	padding: 0 !important;
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none !important;
+	border-radius: 2px;
+	letter-spacing: 0.08em;
+	position: relative;
+}
+
+.couponUseUse::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 8px;
+	margin: auto;
+	z-index: 1;
+	display: block;
+	width: 7px;
+	height: 7px;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+.couponNotUse{
+	font-size: 14px;
+	color: #2E0E02 !important;
+	text-decoration: none !important;
+	background: #fff !important;
+	display: block;
+	line-height: 64px;
+	width: 320px;
+	height: 64px;
+	padding: 0 !important;
+	text-align: center;
+	border-radius: 2px;
+	border: 1px solid #968680;
+	background-image: none;
+	margin: 5px auto;
+	position: relative;
+	font-weight: 700;
+}
+
+.couponNotUse::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 23px;
+	margin: auto;
+	z-index: 1;
+	display: block;
+	width: 7px;
+	height: 7px;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-top: 1.5px solid #2E0E02;
+	border-right: 1.5px solid #2E0E02;
+}
+
+.sp_ib{
+	display: none !important;
+}
 @media (max-width: 768px) {
   .load_wrap {
       top: -95px;
@@ -75,6 +153,10 @@ div#primary {
   .tblLayout_ProductDetail {
       margin: 60px 0 0 0;
   }
+
+	.sp_ib{
+		display: inline-block !important;
+	}
 }
 
 </style>
@@ -706,14 +788,15 @@ div#primary {
 		<ItemTemplate>
 			<tr>
 				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:98px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
-					<div class="sp_contents"><span class="c_code">クーポンコード</span></div>
+					<div class="sp_contents" style="vertical-align: top;"><span class="c_code">クーポンコード</span></div>
 					<%#: StringUtility.ToEmpty(Item.CouponCode) %><br />
 					<asp:HiddenField runat="server" ID="hfCouponBoxCouponCode" Value="<%# Item.CouponCode %>" />
 				</td>
 				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:215px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;"
 					title="<%#: StringUtility.ToEmpty(Item.CouponDispDiscription) %>">
-					<div class="sp_contents"><span class="c_code">クーポン名</span></div>
-					<%#: StringUtility.ToEmpty(Item.CouponDispName) %>
+					<div class="sp_contents" style="vertical-align: top;"><span class="c_code">クーポン名</span></div>
+					<p class="pc_contents"><%#: StringUtility.ToEmpty(Item.CouponDispName) %></p>
+					<p class="sp_ib" style="width: 53%;"><%#: StringUtility.ToEmpty(Item.CouponDispName) %></p>
 				</td>
 				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:90px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
 					<div class="sp_contents"><span class="c_code">割引金額</span></div>
@@ -724,19 +807,20 @@ div#primary {
 								: "-" %>
 				</td>
 				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:80px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
-					<div class="sp_contents"><span class="c_code">利用可能回数</span></div>
+					<div class="sp_contents" style="vertical-align: top;"><span class="c_code">利用可能回数</span></div>
 					<%#: GetCouponCount(Item) %>
 				</td>
 				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:178px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
-					<div class="sp_contents"><span class="c_code">有効期限</span></div>
+					<div class="sp_contents" style="vertical-align: top;"><span class="c_code">有効期限</span></div>
 					<%#: DateTimeUtility.ToStringFromRegion(Item.ExpireEnd, DateTimeUtility.FormatType.LongDateHourMinute1Letter) %>
 				</td>
 				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left !important; text-align:center;width:204px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
-					<div class="sp_contents"><span class="c_code">利用条件</span></div>
-					<%#: Item.CouponDiscription %>
+					<div class="sp_contents" style="vertical-align: top;"><span class="c_code">利用条件</span></div>
+					<p class="pc_contents"><%#: Item.CouponDiscription %></p>
+					<p class="sp_ib" style="width: 53%;"><%#: Item.CouponDiscription %></p>
 				</td>
 				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; width:110px;">
-					<asp:LinkButton runat="server" id="lbCouponSelect" OnClick="lbCouponSelect_Click" style="color: #ffffff !important; background: #968680 !important; display: block; width: 80px; height: 40px; line-height: 40px; margin: 0 auto; padding: 0; font-size: 13px; text-align: center; text-decoration: none; border-radius: 2px; letter-spacing: 0.08em;">使う</asp:LinkButton>
+					<asp:LinkButton runat="server" id="lbCouponSelect" OnClick="lbCouponSelect_Click" class="couponUseUse">使う</asp:LinkButton>
 				</td>
 			</tr>
 		</ItemTemplate>
@@ -746,10 +830,7 @@ div#primary {
 		</asp:Repeater>
 		</div>
 	<div style="width: 100%; height: 50px; display: block; z-index: 3">
-		<asp:LinkButton ID="lbCouponBoxClose" OnClick="lbCouponBoxClose_Click" runat="server"
-			style="padding: 8px 12px; font-size: 14px; color: #333; text-decoration: none; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-			display: inline-block; line-height: 18px; color: #333333; text-align: center; vertical-align: middle; border-radius: 5px; cursor: pointer; background-color: #f5f5f5;
-			border: 1px solid #cccccc; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); text-decoration: none; background-image: none; margin: 5px auto; text-decoration: none; ">クーポンを利用しない</asp:LinkButton>
+		<asp:LinkButton ID="lbCouponBoxClose" OnClick="lbCouponBoxClose_Click" class="couponNotUse" runat="server">クーポンを使わない</asp:LinkButton>
 	</div>
 	</div>
 	</div>
