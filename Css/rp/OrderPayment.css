@@ -288,11 +288,12 @@ textarea::focus {
 }
 
 .cart3 #CartList .shoppingCart {
-  width: 23.92%;
+  width: 25.3%;
   float: right;
   background: #EAE6E5;
   padding: 25px 25px 0px 25px;
   margin: 0 0 100px;
+  max-width: 270px;
 }
 
 @media (max-width: 768px) {
@@ -615,7 +616,7 @@ textarea::focus {
 
 .cart3 .btmbtn__innar {
   background: #EAE6E5;
-  padding: 0px 20px 0px;
+  padding: 0px 0px 0px;
   height: auto;
 }
 
@@ -660,7 +661,7 @@ textarea::focus {
   -ms-flex-pack: center;
   justify-content: center;
   letter-spacing: 0.08em;
-  margin: 0 0 25px;
+  margin: 0 0 20px;
 }
 
 .cart3 a.btn.btn-large.btn-success2 {
@@ -755,7 +756,8 @@ textarea::focus {
 
 .cart3 p.btn-gry__wrap {
   position: relative;
-  top: 100px;
+  top: 42px;
+  left: 35px;
 }
 
 .cart3 p.btn-gry__wrap a {
@@ -1463,6 +1465,31 @@ textarea::focus {
 
 .cart3 .sumBox {
   display: none;
+}
+
+.cart3 a#ctl00_ContentPlaceHolder1_rCartList_ctl00_lbShowCouponBox,
+.cart3 a#ctl00_ContentPlaceHolder1_rCartList_ctl01_lbShowCouponBox {
+  width: 180px;
+  margin: auto;
+  height: 40px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 0;
+  background-color: #968680 !important;
+  margin: auto !important;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-align: center;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
