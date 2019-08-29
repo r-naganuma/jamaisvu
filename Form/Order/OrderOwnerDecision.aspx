@@ -22,6 +22,13 @@
 	#Foot .sec--news{
 		display: none;
 	}
+
+	@media (max-width: 768px) {
+		#Foot{
+		    box-sizing: border-box;
+		    overflow-x: hidden;
+		}
+	}
 </style>
 
 <div class="userWrap">

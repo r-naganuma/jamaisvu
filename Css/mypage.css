@@ -147,6 +147,17 @@
   appearance: none;
 }
 
+@media (max-width: 768px) {
+  #Wrap .userWrap .loginWrap_box--left ul li input {
+    width: 124%;
+    font-size: 16px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-left: -12%;
+  }
+}
+
 #Wrap .userWrap .loginWrap_box--left ul li input::-webkit-input-placeholder {
   color: #C6C6C6;
 }
@@ -587,6 +598,17 @@
   appearance: none;
 }
 
+@media (max-width: 768px) {
+  #Wrap .userWrap .registWrap_box--input .inputBox_right input {
+    width: 124%;
+    font-size: 16px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-left: -12%;
+  }
+}
+
 #Wrap .userWrap .registWrap_box--input .inputBox_right input::-webkit-input-placeholder {
   color: #C6C6C6;
 }
@@ -620,6 +642,17 @@
 
 @media (max-width: 768px) {
   #Wrap .userWrap .registWrap_box--input .inputBox_right select {
+    width: 124%;
+    font-size: 16px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-left: -12%;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .userWrap .registWrap_box--input .inputBox_right select {
     background: url(../../Contents/ImagesPkg/user/common/arrow_down.svg) no-repeat right 8px top 16px;
     background-size: 13.5px 7.5px;
   }
@@ -639,6 +672,17 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+@media (max-width: 768px) {
+  #Wrap .userWrap .registWrap_box--input .inputBox_right textarea {
+    width: 124%;
+    font-size: 16px;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-left: -12%;
+  }
 }
 
 #Wrap .userWrap .registWrap_box--input .inputBox_right textarea::-webkit-input-placeholder {
@@ -839,14 +883,17 @@
 
 #Wrap .userWrap .registWrap_box--input .inputBox_right .checkBox input:checked + label::after {
   content: "";
-  display: block;
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 12px;
-  height: 12px;
-  background: #2E0E02;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 15px;
   border-radius: 3px;
+  background: url(../../Contents/ImagesPkg/common/check@2x.png);
+  display: block;
+  background-position: 0px 3px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #Wrap .userWrap .registWrap_box--input .inputBox_right .checkBox input:checked + label.on::after {
@@ -2126,6 +2173,16 @@
   #Wrap .userWrap .mypageWrap .mypageCts .favoriteArea ul li.favoriteAreaPrice p {
     font-size: 14px;
   }
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts .favoriteArea ul li.favoriteAreaPrice p .newPrice {
+  color: #AD2E24;
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts .favoriteArea ul li.favoriteAreaPrice p .oldPrice {
+  text-decoration: line-through;
+  margin-top: 5px;
+  display: block;
 }
 
 #Wrap .userWrap .mypageWrap .mypageCts .favoriteArea ul li.favoriteAreaDelete {

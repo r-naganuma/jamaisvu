@@ -123,6 +123,10 @@
   }
 }
 
+#Wrap .LPpageWrap .userBread ul li:last-child a {
+  color: #878787;
+}
+
 #Wrap .LPpageWrap .guideWrap {
   width: 1120px;
   margin: 0 auto 80px;
@@ -268,15 +272,16 @@
 
 #Wrap .LPpageWrap .guideWrap_cts--list {
   border-bottom: 1px solid #EAE6E5;
-  padding: 20px 0 24px;
-  margin-bottom: 40px;
+  padding: 80px 0 24px;
+  margin-bottom: 0;
+  margin-top: -20px;
 }
 
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .guideWrap_cts--list {
     border-bottom: none;
-    padding: 20px 0 0;
-    margin-bottom: 60px;
+    padding: 80px 0 0;
+    margin-top: 0;
   }
 }
 
@@ -493,6 +498,10 @@
   font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
 }
 
+#Wrap .LPpageWrap .guideWrap_cts #a01 {
+  margin-top: -60px;
+}
+
 #Wrap .LPpageWrap .guideWrap_cts .sizeGuideNote {
   margin: 40px 0 20px;
   padding: 40px;
@@ -608,7 +617,7 @@
 
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .lookWrap_archive--list .caption {
-    padding-top: 85px;
+    padding-top: 27%;
   }
 }
 

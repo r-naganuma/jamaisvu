@@ -72,8 +72,8 @@
 	<p class="sortTtl">在庫</p>
 	<ul>
 		<li<%if (this.UndisplayNostock == Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK){%> class="active"<% } %>><%if (this.UndisplayNostock != Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK){%>
-		<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateDisplayStockUrl(Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK)) %>">全ての商品</a><%}
-		else{%>全ての商品<%} %></li>
+		<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateDisplayStockUrl(Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK)) %>">すべての商品</a><%}
+		else{%>すべての商品<%} %></li>
 		<li<%if (this.UndisplayNostock == Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_UNDISPLAY_NOSTOCK){%> class="active"<% } %>><%if (this.UndisplayNostock != Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_UNDISPLAY_NOSTOCK){%>
 		<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateDisplayStockUrl(Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_UNDISPLAY_NOSTOCK)) %>">在庫あり</a><%}
 		else{%>在庫あり<%} %></li>

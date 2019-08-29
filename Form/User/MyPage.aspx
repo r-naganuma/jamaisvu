@@ -40,7 +40,7 @@
 			<%} %>
 			</ul>
 			<div class="aboutRank">
-				<a href="">会員ランクについて</a>
+				<a href="<%= Constants.PATH_ROOT %>Page/userGuide/#a06">会員ランクについて</a>
 			</div>
 		</div>
 	</div>

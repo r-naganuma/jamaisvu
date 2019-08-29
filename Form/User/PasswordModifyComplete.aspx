@@ -62,5 +62,34 @@
 		bottom: 0;
 		left: 0;
 	}
+
+@media (max-width: 1200px) {
+	#Wrap .userWrap .userBread {
+	    width: 100%;
+	    position: inherit;
+	    bottom: inherit;
+		padding: 0 40px;
+		box-sizing: border-box;
+	}
+}
+
+@media (max-width: 768px) {
+	#Wrap .userWrap {
+	    display: block;
+	    height: auto;
+	}
+
+	#Wrap .userWrap .userBread {
+	    width: 100%;
+	    margin: 0 auto 20px;
+		padding: 0 18px;
+	}
+	
+	#Foot{
+		position: inherit;
+		bottom: inherit;
+		left: inherit;
+	}
+}
 </style>
 </asp:Content>

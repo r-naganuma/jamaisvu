@@ -63,9 +63,9 @@
 		</asp:Repeater>
 	<%-- ページャ--%>
 	<!-- <div id="pagination" class="below clearFix"><%= this.PagerHtml %></div>-->
-		<div class="aboutRank">
+		<!-- <div class="aboutRank">
 			<a href="">クーポンについて</a>
-		</div>
+		</div> -->
 	</div>
 </div>
 </div>

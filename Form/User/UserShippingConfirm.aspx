@@ -27,7 +27,7 @@
 				<% if (this.IsShippingAddrJp) { %>
 				<dt class="inputBox_left must">
 					<%-- 氏名 --%>
-					ふりがな
+					かな
 				</dt>
 				<dd class="inputBox_right">
 					<%: this.UserShipping.ShippingNameKana1 %>　<%: this.UserShipping.ShippingNameKana2 %>

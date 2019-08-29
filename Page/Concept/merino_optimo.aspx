@@ -38,9 +38,9 @@
 		</div>
 
 		<div class="conceptBox_where">
-			<div class="conceptBox_where--pic">
+			<!-- <div class="conceptBox_where--pic">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_02.jpg" alt="MERINO OPTIMO">
-			</div>
+			</div> -->
 			<div class="conceptBox_where--txt">
 				<h4>
 					WHERE
@@ -56,14 +56,14 @@
 				</p>
 			</div>
 			<div class="conceptBox_where--map">
-				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_01.jpg" alt="MERINO OPTIMO">
+				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_01.png" alt="MERINO OPTIMO">
 			</div>
 		</div>
 
 		<div class="conceptBox_quality">
-			<div class="conceptBox_quality--pic">
+			<!-- <div class="conceptBox_quality--pic">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_03.jpg" alt="MERINO OPTIMO">
-			</div>
+			</div> -->
 			<div class="conceptBox_quality--txt">
 				<h4>
 					QUALITY
@@ -114,10 +114,10 @@
 				吸放湿性・消臭性に<br class="sp_contents">優れたウール
 			</h5>
 			<div class="conceptBox_feature--box">
-				<div class="conceptBox_feature--box--pic">
+				<div class="conceptBox_feature--box--pic ord1">
 					<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_05.jpg" alt="MERINO OPTIMO">
 				</div>
-				<div class="conceptBox_feature--box--txt">
+				<div class="conceptBox_feature--box--txt ord2">
 					<p>
 						全豪州のメリノ種のうち約0.2%という、高い希少性を持つメリノオプティモ。メリノオプティモの基準を満たした羊たちを選別し作られる高品質なウールは、質感だけでなく、天然の吸放湿性・消臭性といった機能性も優れています。
 					</p>
@@ -134,12 +134,15 @@
 				芯が丸く真っ直ぐ伸びた毛が<br class="sp_contents">光沢を生み出す
 			</h5>
 			<div class="conceptBox_feature--box">
-				<div class="conceptBox_feature--box--txt noPic">
+				<div class="conceptBox_feature--box--pic">
+					<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_06.jpg" alt="MERINO OPTIMO">
+				</div>
+				<div class="conceptBox_feature--box--txt">
 					<p>
-						間隔が広いスケールにより生まれるメリノオプティモの毛は、芯が丸く、真っ直ぐ伸びるのも特長のひとつ。<br class="pc_contents">毛の太さが均一であるゆえに、独特の光沢感が生み出されるのです。<br class="pc_contents">ニットとして製品化した際に縮まないよう防縮加工を施しても、その品質は保たれます。
+						間隔が広いスケールにより生まれるメリノオプティモの毛は、芯が丸く、真っ直ぐ伸びるのも特長のひとつ。毛の太さが均一であるゆえに、独特の光沢感が生み出されるのです。ニットとして製品化した際に縮まないよう防縮加工を施しても、その品質は保たれます。
 					</p>
 					<p>
-						防縮加工が施されているものであっても、セルフで手洗いするよりも1シーズンごとに<br class="pc_contents">ドライクリーニングにかけることで、よりメリノオプティモならではの風合いと肌触りが長持ちします。
+						防縮加工が施されているものであっても、セルフで手洗いするよりも1シーズンごとにドライクリーニングにかけることで、よりメリノオプティモならではの風合いと肌触りが長持ちします。
 					</p>
 				</div>
 			</div>

@@ -25,7 +25,7 @@
 					<%: this.UserInput.Name1 %> <%: this.UserInput.Name2 %>
 				</dd>
 				<dt class="inputBox_left must">
-					ふりがな
+					かな
 				</dt>
 				<dd class="inputBox_right">
 					<%: this.UserInput.NameKana1 %> <%: this.UserInput.NameKana2 %>

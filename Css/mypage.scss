@@ -155,6 +155,13 @@ $bp768: 768px;  // スマホ
 								line-height: 1;
 								appearance: none;
 
+								@include bp768 {
+									width: 124%;
+									font-size: 16px;
+									transform: scale(0.8);
+									margin-left: -12%;
+								};
+
 								&::placeholder{
 									color: #C6C6C6;
 								}
@@ -525,6 +532,13 @@ $bp768: 768px;  // スマホ
 								line-height: 1;
 								appearance: none;
 
+								@include bp768 {
+									width: 124%;
+									font-size: 16px;
+									transform: scale(0.8);
+									margin-left: -12%;
+								};
+
 								&::placeholder{
 									color: #C6C6C6;
 								}
@@ -545,6 +559,13 @@ $bp768: 768px;  // スマホ
 								appearance: none;
 
 								@include bp768 {
+									width: 124%;
+									font-size: 16px;
+									transform: scale(0.8);
+									margin-left: -12%;
+								};
+
+								@include bp768 {
 							    	background: url(../../Contents/ImagesPkg/user/common/arrow_down.svg) no-repeat right 8px top 16px;
 							    	background-size: 13.5px 7.5px;
 								};
@@ -561,6 +582,13 @@ $bp768: 768px;  // スマホ
 								letter-spacing: 0.08em;
 								line-height: 1;
 								appearance: none;
+
+								@include bp768 {
+									width: 124%;
+									font-size: 16px;
+									transform: scale(0.8);
+									margin-left: -12%;
+								};
 
 								&::placeholder{
 									color: #C6C6C6;
@@ -714,14 +742,17 @@ $bp768: 768px;  // スマホ
 							}
 							.checkBox input:checked + label::after{
 								content: "";
-								display: block;
-								position: absolute;
-								top: 4px;
-								left: 4px;
-								width: 12px;
-								height: 12px;
-								background: #2E0E02;
-								border-radius: 3px;
+							    position: absolute;
+							    top: 2px;
+							    left: 2px;
+							    width: 16px;
+							    height: 15px;
+							    border-radius: 3px;
+							    background: url(../../Contents/ImagesPkg/common/check@2x.png);
+							    display: block;
+							    background-position: 0px 3px;
+							    background-size: 100%;
+							    background-repeat: no-repeat;
 							}
 							.checkBox input:checked + label.on::after{
 								content: "";
@@ -1792,6 +1823,16 @@ $bp768: 768px;  // スマホ
 									@include bp768 {
 										font-size: 14px;
 									};
+
+									.newPrice{
+										color: #AD2E24;
+									}
+
+									.oldPrice{
+										text-decoration: line-through;
+										margin-top: 5px;
+										display: block;
+									}
 				    			}
 							}
 

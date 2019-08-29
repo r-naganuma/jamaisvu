@@ -38,36 +38,36 @@
 							<li class="favoriteAreaPrice">
 								<%-- ▽商品会員ランク価格有効▽ --%>
 								<p visible='<%# ProductPage.GetProductMemberRankPriceValid(Container.DataItem) %>' runat="server">
-								<span style="text-decoration: line-through"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span><br />
-								<span style="color: #f00;"><%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem)) %>(tax in)</span>
+								<span class="newPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem)) %><span class="price_tax">(tax in)</span></span><br>
+								<span class="oldPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %><span class="price_tax">(tax in)</span></span>
 								</p>
 
 								<%-- ▽商品セール価格有効▽ --%>
 								<p visible='<%# ProductPage.GetProductTimeSalesValid(Container.DataItem) %>' runat="server" class="special">
-								<span style="text-decoration: line-through"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span><br />
-								<span style="color: #f00;"><%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %>(tax in)</span>
+								<span class="newPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %><span class="price_tax">(tax in)</span></span><br>
+								<span class="oldPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %><span class="price_tax">(tax in)</span></span>
 								</p>
 								<%-- △商品セール価格有効△ --%>
 
 								<%-- ▽商品特別価格有効▽ --%>
 								<p visible='<%# ProductPage.GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">
-								<span style="text-decoration: line-through"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %><span class="price_tax">（<%# WebSanitizer.HtmlEncode(ProductPage.GetTaxIncludeString(Container.DataItem)) %>)</span></span><br />
-								<span style="color: #f00;"><%#: CurrencyManager.ToPrice(ProductPage.GetProductSpecialPriceNumeric(Container.DataItem)) %>(tax in)</span>
+								<span class="newPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductSpecialPriceNumeric(Container.DataItem)) %><span class="price_tax">(tax in)</span></span><br>
+								<span class="oldPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %><span class="price_tax">(tax in)</span></span>
 								</p>
 
 								<%-- ▽商品通常価格有効▽ --%>
 								<p visible='<%# ProductPage.GetProductNormalPriceValid(Container.DataItem) %>' runat="server">
-								<%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)
+								<%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %><span class="price_tax">(tax in)</span>
 								</p>
 
 								<%-- ▽商品定期購入価格▽ --%>
 								<% if (Constants.FIXEDPURCHASE_OPTION_ENABLED) {%>
 								<p visible='<%# (StringUtility.ToValue(ProductPage.GetKeyValue(Container.DataItem, Constants.FIELD_PRODUCT_FIXED_PURCHASE_FLG), "").ToString() != Constants.FLG_PRODUCT_FIXED_PURCHASE_FLG_INVALID) %>' runat="server">
 									<span visible='<%# ProductPage.IsProductFixedPurchaseFirsttimePriceValid(Container.DataItem) %>' runat="server">
-										定期初回:<%#: CurrencyManager.ToPrice(ProductPage.GetProductFixedPurchaseFirsttimePrice(Container.DataItem)) %><span class="price_tax">（<%#: ProductPage.GetTaxIncludeString(Container.DataItem) %>）</span>
+										定期初回:<%#: CurrencyManager.ToPrice(ProductPage.GetProductFixedPurchaseFirsttimePrice(Container.DataItem)) %><span class="price_tax">(tax in)</span>
 										<br />
 									</span>
-									定期通常:<%#: CurrencyManager.ToPrice(ProductPage.GetProductFixedPurchasePrice(Container.DataItem)) %><span class="price_tax">（<%#: ProductPage.GetTaxIncludeString(Container.DataItem) %>）</span>
+									定期通常:<%#: CurrencyManager.ToPrice(ProductPage.GetProductFixedPurchasePrice(Container.DataItem)) %><span class="price_tax">(tax in)</span>
 								</p>
 								<% } %>
 								<%-- △商品定期購入価格△ --%>

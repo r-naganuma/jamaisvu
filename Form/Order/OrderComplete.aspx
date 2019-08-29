@@ -18,7 +18,7 @@
 </asp:Repeater>
 <script>
 $(function(){
-	$("#Contents").addClass("topSpace").addClass("cart5");
+	$("#Contents").addClass("cart5");
 });
 </script>
 <link href="../../Css/rp/OrderComplete.css" rel="stylesheet">

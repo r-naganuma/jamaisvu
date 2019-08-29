@@ -1143,3 +1143,12 @@ div#hgcCouponList tr{
 }
 
 
+
+#Foot{
+	border: none;
+
+    @include bp768 {
+	    box-sizing: border-box;
+	    overflow-x: hidden;
+	}
+}

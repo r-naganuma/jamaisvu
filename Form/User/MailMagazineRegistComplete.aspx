@@ -35,5 +35,18 @@
 		bottom: 0;
 		left: 0;
 	}
+
+@media (max-width: 768px) {
+	#Wrap .userWrap {
+	    display: block;
+	    height: auto;
+	}
+	
+	#Foot{
+		position: inherit;
+		bottom: inherit;
+		left: inherit;
+	}
+}
 </style>
 </asp:Content>

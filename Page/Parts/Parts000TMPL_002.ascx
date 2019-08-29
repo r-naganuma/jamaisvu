@@ -46,11 +46,11 @@
                         OPTIMO
                     </a>
                 </div>
-                <div class="concept__list-item">
-                    <a href="<%= Constants.PATH_ROOT %>Page/Concept/the_falkland_wool.aspx">
-                        THE FALKLAND<br>
-                        WOOL
-                    </a>
+                <div class="concept__list-item comingSoon">
+                    <!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/the_falkland_wool.aspx"> -->
+                        COMING<br>
+                        SOON
+                    <!-- </a> -->
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
 </div>
 <div class="sec sec--topics">
     <div class="sec__inner">    
-        <h2 class="vertical-title">
+        <h2 class="vertical-title IEpdr0">
             TOPICS
         </h2>
         <div class="topicsContent">
@@ -120,10 +120,10 @@
                         MERINO OPTIMO
                     </a>
                 </div>
-                <div class="concept__list-item">
-                    <a href="<%= Constants.PATH_ROOT %>Page/Concept/the_falkland_wool.aspx">
-                        THE FALKLAND WOOL
-                    </a>
+                <div class="concept__list-item comingSoon">
+                    <!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/the_falkland_wool.aspx"> -->
+                        COMING SOON
+                    <!-- </a> -->
                 </div>
             </div>
         </div>

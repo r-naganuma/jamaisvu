@@ -27,7 +27,7 @@
 				<dd class="inputBox_right"><%= WebSanitizer.HtmlEncode(this.InquiryInput[Constants.FIELD_USER_NAME1])%>
 				<%= WebSanitizer.HtmlEncode(this.InquiryInput[Constants.FIELD_USER_NAME2])%></dd>
 				<dt class="inputBox_left must">
-					ふりがな
+					かな
 				</dt>
 				<dd class="inputBox_right"><%= WebSanitizer.HtmlEncode(this.InquiryInput[Constants.FIELD_USER_NAME_KANA1])%>
 				<%= WebSanitizer.HtmlEncode(this.InquiryInput[Constants.FIELD_USER_NAME_KANA2])%></dd>
