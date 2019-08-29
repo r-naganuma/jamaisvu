@@ -22,26 +22,25 @@
 
 	<!-- <h3>メールアドレス</h3> -->
 
-		<div rowspan="4" class="th_1">メールアドレス<!-- <span class="necessary">*</span> --></div>
-
 
 		<div class="divProductArrivalMail__innnar__section1">
 			<div visible="<%# (this.IsLoggedIn && this.HasPcAddr) %>" runat="server" >
+			<div rowspan="4" class="th_1">登録済みメールアドレス<!-- <span class="necessary">*</span> --></div>
 				<div class="pop_mail1"><asp:CheckBox id="cbUserPcAddr" runat="server" Checked="<%# (this.IsPcAddrRegistered || this.HasPcAddr) %>" />
-					<label> <%: ReplaceTag("@@User.mail_addr.name@@") %>
-					(<%#: this.PcAddr %>)</label>
+					<label><%#: this.PcAddr %></label>
 				</div>
 			</div>
 		</div>
 		<div class="divProductArrivalMail__innnar__section2">
 			<div visible="<%# (Constants.MOBILEOPTION_ENABLED && this.IsLoggedIn && this.HasMbAddr) %>" runat="server">
-				<div class="pop_mail2"><asp:CheckBox id="cbUserMobileAddr" runat="server" Checked="<%# (Constants.MOBILEOPTION_ENABLED && (this.IsMbAddrRegistered || (this.HasPcAddr == false))) %>" /><%: ReplaceTag("@@User.mail_addr2.name@@") %>
-					(<%#: this.MbAddr %>)</div>
+			<div rowspan="4" class="th_1">登録済みメールアドレス<!-- <span class="necessary">*</span> --></div>
+				<div class="pop_mail2"><asp:CheckBox id="cbUserMobileAddr" runat="server" Checked="<%# (Constants.MOBILEOPTION_ENABLED && (this.IsMbAddrRegistered || (this.HasPcAddr == false))) %>" /><%#: this.MbAddr %></div>
 			</div>
 		</div>
 		<div class="divProductArrivalMail__innnar__section3">
-			<asp:CheckBox id="cbMailAddr" runat="server" Checked="<%# (this.IsLoggedIn == false) %>" Text="その他" />
-			<asp:TextBox ID="tbMailAddr" runat="server" CssClass="mailAddr" MaxLength="256" Width="200" />
+			<asp:CheckBox id="cbMailAddr" runat="server" Checked="<%# (this.IsLoggedIn == false) %>" Text="その他"  />
+			<div rowspan="4" class="th_1">メールアドレス<!-- <span class="necessary">*</span> --></div>
+			<asp:TextBox ID="tbMailAddr" runat="server" CssClass="mailAddr" placeholder="jamaisvu@xxx.co.jp" MaxLength="256" Width="200" />
 			<asp:RadioButtonList ID="rblMailAddrKbn" RepeatLayout="UnorderedList" runat="server" />
 			<% if (StringUtility.ToEmpty(this.ErrorMessage) != "") {%>
 				<br /><span class="error_inline"><%: this.ErrorMessage %></span>
@@ -60,9 +59,9 @@
 		<h2 class="divProductArrivalMail__innnar__h2">入荷お知らせメールに<br class="sp_br">登録しました</h2>
 		<p class="divProductArrivalMail__innnar__p"> 引き続きJAMAIS VU公式ブランドサイトでの<br class="pc_br">
 			お買い物をお楽しみください。
-			<% if(this.HasPcMailKbnResult) {%>[PC]<%} %>
-			<% if(this.HasMbMailKbnResult) {%>[モバイル]<%} %>
-			<% if(this.HasOtherMailKbnResult) {%>[その他]<%} %>
+			<% if(this.HasPcMailKbnResult) {%><%} %>
+			<% if(this.HasMbMailKbnResult) {%><%} %>
+			<% if(this.HasOtherMailKbnResult) {%><%} %>
 		</p>
 		<a class="divProductArrivalMail__innnar__close" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$lbRequestArrivalMail2','')"><div class="my-parts"><span></span></div></a>
 	</div>
@@ -131,6 +130,58 @@ p.divProductArrivalMail__innnar__p {
 }
 .pc_br{
 	display: inline;
+}
+
+input[type=checkbox]{
+	display: none;
+}
+input[type=checkbox] + label{
+	padding-left: 28px;
+	vertical-align: middle;
+	position: relative;
+	margin-right: 66px;
+	font-size: 13px;
+	letter-spacing: 0.08em;
+}
+
+input[type=checkbox] + label::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #C0B6B3;
+	border-radius: 3px;
+	background: #fff;
+	box-sizing: border-box;
+}
+input[type=checkbox]:checked + label::after{
+	content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 15px;
+    border-radius: 3px;
+    background: url(../../Contents/ImagesPkg/common/check@2x.png);
+    display: block;
+    background-position: 0px 3px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+input[type=checkbox]:checked + label.on::after{
+	content: "";
+}
+input {
+	font-size: 13px;
+	letter-spacing: 0.08em;
+}
+input::placeholder {
+	font-size: 13px;
+	letter-spacing: 0.08em;
+	color: #C6C6C6;
 }
 @media (max-width: 768px){
 	div#divProductArrivalMail {
