@@ -739,7 +739,7 @@ $(function(){
   <asp:HiddenField id="hcShowShippingInputForm" value="<%# CanInputShippingTo(Container.ItemIndex) %>" runat="server" />
 
   <div id="divShipToCart1Address" class="userList" Visible="<%# CanInputShippingTo(Container.ItemIndex) && (Container.ItemIndex != 0) %>" runat="server">
-    <asp:CheckBox id="cbShipToCart1Address" Text="カート１の配送先へ配送する" OnCheckedChanged="cbShipToCart1Address_OnCheckedChanged" AutoPostBack="true" Checked="<%# ((CartObject)Container.DataItem).Shippings[0].IsSameShippingAsCart1 %>" CssClass="checkBox" runat="server" />
+    <asp:CheckBox id="cbShipToCart1Address" Text="上記の配送先へ配送する" OnCheckedChanged="cbShipToCart1Address_OnCheckedChanged" AutoPostBack="true" Checked="<%# ((CartObject)Container.DataItem).Shippings[0].IsSameShippingAsCart1 %>" CssClass="checkBox" runat="server" />
   </div>
 
   <div id="divShippingInputForm" class="userList uL2" runat="server">

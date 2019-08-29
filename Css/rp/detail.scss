@@ -1098,6 +1098,8 @@ div#divProductArrivalMail {
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.3);
+    overflow: hidden;
+    z-index: 888;
 }
 
 .divProductArrivalMail__innnar {
@@ -1111,6 +1113,7 @@ div#divProductArrivalMail {
     bottom: 0;
     height: 300px;
     margin: auto;
+    z-index: 999;
 	@include bp768 {
 		width: 90%;
 	    background: #fff;
@@ -1118,11 +1121,12 @@ div#divProductArrivalMail {
 	    position: absolute;
 	    left: 0;
 	    right: 0;
-	    top: 0;
-	    bottom: 0;
-	    height: 61%;
-	    margin: auto;
+	    top: 5%;
+	    bottom: inherit;
+	    height: auto;
+	    margin: 0 auto;
 	    box-sizing: border-box;
+	    overflow: hidden;
 	}
 }
 @include bp768 {

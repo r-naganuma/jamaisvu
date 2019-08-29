@@ -689,19 +689,21 @@ div#primary {
 	</div><!--box-->
 	<div runat="server" id="hgcCouponBox" style="z-index: 1; top: 0; left: 0; width: 100%; height: 120%; position: fixed; background-color: rgba(128, 128, 128, 0.75);" 
 		Visible='<%# ((CartObject)Container.DataItem).CouponBoxVisible %>'>
-		<div id="hgcCouponList" style="width: 800px; height: 500px; top: 50%; left: 50%; text-align: center; border: 2px solid #aaa; background: #fff; position: fixed; z-index: 2; margin:-250px 0 0 -400px;">
+		<div id="hgcCouponList" style="width: 960px; height: 500px; top: 50%; left: 50%; text-align: center; background: #fff; position: fixed; z-index: 2; margin:-250px 0 0 -400px;">
 		<h2 style="height: 20px; color: #fff; background-color: #000; font-size: 16px; padding: 3px 0px; border-bottom: solid 1px #ccc; width: initial; width: auto; ">クーポンBOX</h2>
 		<div style="height: 400px; overflow: auto;">
 		<asp:Repeater ID="rCouponList" ItemType="UserCouponDetailInfo" Runat="server" DataSource="<%# GetUsableCoupons((CartObject)Container.DataItem) %>">
 		<HeaderTemplate>
 			<table>
 			<tr>
-				<th class="th_first th1" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:170px;">クーポンコード</th>
-				<th class="th_first th2" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:230px;">クーポン名</th>
-				<th class="th_first th3" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:100px;">割引金額<br />/割引率</th>
-				<th class="th_first th4" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:100px;">利用可能回数</th>
-				<th class="th_first th5" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:300px;">有効期限</th>
-				<th class="th_first th6" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:100px;"></th>
+				<th class="th_first th1" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:68px;">クーポン<br>
+				コード</th>
+				<th class="th_first th2" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:205px;">クーポン名</th>
+				<th class="th_first th3" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:60px;">金額</th>
+				<th class="th_first th4" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:55px;">利用回数</th>
+				<th class="th_first th5" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:108px;">有効期限</th>
+				<th class="th_first th6" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:189px;">利用条件</th>
+				<th class="th_first th7" style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:80px;"></th>
 			</tr>
 		</HeaderTemplate>
 		<ItemTemplate>
