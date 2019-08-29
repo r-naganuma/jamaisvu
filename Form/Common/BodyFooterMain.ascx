@@ -81,6 +81,7 @@
 	</div>
 	<p class="footer_copy">Copyright &copy; ITOCHU Corporation. All Rights Reserved.</p>
 </footer>
+
 <%-- △編集可能領域△ --%>
 
 <%-- w2アクセスログトラッカー出力 --%>

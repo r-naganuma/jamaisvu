@@ -175,7 +175,7 @@ $(function(){
 					<div class="inner_column">
 						<h4>注文のキャンセル</h4>
 						<p>
-							マイページ「<a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_ORDER_HISTORY_LIST) %>">購入履歴</a>」で注文状況が「●●●●」の取引のみ、当該画面からご注文のキャンセルが可能です。
+							サイト内ではキャンセルいただけないため、<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_INQUIRY_INPUT) %>">お問い合わせ</a>よりご連絡ください。
 						</p>
 					</div>
 				</div>
@@ -199,7 +199,6 @@ $(function(){
 							・お支払い回数<br>
 							　１回払いのみとします。<br><br>
 							※カード決済日はご注文日となります。<br>
-							※引き落とし名義は●●●●となります。<br>
 							※お引き落としは、各クレジットカードの会員規約に準じます。<br class="pc_contents">詳しくはカード発行会社に直接お問い合わせください。<br>
 							※海外発行のクレジットカードは、注文をキャンセルさせていただく場合があります。
 						</p>
@@ -217,14 +216,11 @@ $(function(){
 						</p>
 					</div>
 					<div class="inner_column">
-						<h4>配送日時</h4>
+						<h4>配送時間</h4>
 						<p>
 							配送地域・ご注文の時間帯により異なりますが、ご注文から7日以内でのお届けとなります。<br>
 							なお、ご注文の際にお届け日時指定が可能です。最短でのお届けをご希望の場合は、お届け日時を「指定なし」としてください。<br>
 							※お届け日時を指定いただいた場合でも、当日の交通事情や天候など、配送会社の発送状況などにより到着が遅延する場合があります。<br>
-							<br>
-							【日付の指定】<br>
-							指定可能な日付が表示されます。<br>
 							<br>
 							【時間帯の指定】<br>
 							1）午前中<br>
