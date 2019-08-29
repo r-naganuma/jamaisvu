@@ -195,7 +195,7 @@ input::placeholder {
 	#divProductArrivalMail .divProductArrivalMail__innnar {
 		max-height: auto!important;
 		min-height: auto!important;
-	    padding: 60px 20px 60px;
+	    padding: 30px 20px;
 
 	}
 	p.di_text1 {
@@ -209,9 +209,3 @@ input::placeholder {
 	}
 }
 	</style>
-<script>
-	$(function(){
-		$("input#ctl00_ContentPlaceHolder1_ucBpamrArrival_tbMailAddr").attr("placeholder","jamaisvu@xxx.co.jp")
-	})
-
-</script>

@@ -22,9 +22,6 @@
 				<li>
 					<%: this.MemberRankName %>
 				</li>
-				<li>
-					（<%: DateTimeUtility.ToStringFromRegion(this.LoginUserPointExpiry, DateTimeUtility.FormatType.LongDate1Letter) %>まで に あと？？？ポイント獲得 でランクアップ）
-				</li>
 			<%if (MemberRankUtility.IsBenefitOrderDiscount(this.LoginMemberRankInfo)) { %>
 				<!-- <div style="margin-left:20px;margin-bottom:3px;">注文金額割引：<%: MemberRankUtility.GetBenefitOrderDiscount(this.LoginMemberRankInfo, "{0} 以上お買い上げ時 {1}") %></div> -->
 			<%} %>

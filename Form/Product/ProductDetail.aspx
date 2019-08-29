@@ -231,16 +231,16 @@ function bodyPageLoad(){
 
 
 	
-	if($("#tblLayout").attr("data") == 0){
-		$("#tblLayout").attr("data",1); 
-	}else{
-		$('.btn_menu').click(function () {
-		  $(this).toggleClass('active');
-		  $(".header__menu").toggleClass('open');
-		  $("#Wrap").toggleClass('open');
+	// if($("#tblLayout").attr("data") == 0){
+	// 	$("#tblLayout").attr("data",1); 
+	// }else{
+	// 	$('.btn_menu').click(function () {
+	// 	  $(this).toggleClass('active');
+	// 	  $(".header__menu").toggleClass('open');
+	// 	  $("#Wrap").toggleClass('open');
 
-		});
-	}
+	// 	});
+	// }
 
 	$(".load_wrap").addClass("active");
 
@@ -389,6 +389,14 @@ function bodyPageLoad(){
 		}else{
 			$(".productPrice__wrap__detail").addClass("saleWrap")
 		}
+
+		$('#ctl00_ContentPlaceHolder1_lbRequestArrivalMail2').click(function () {
+			$('body').addClass('active');
+		});
+		
+		$('.my-parts').click(function () {
+			$('body').removeClass('active');
+		});
 		
 }
 
