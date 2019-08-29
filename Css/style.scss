@@ -522,16 +522,17 @@ $bp768: 768px;  // スマホ
 
 			li {
 				margin-left: 42px;
-				height: 50px;
 
-				a {
+				.listColumn{
+					position: relative;
+					z-index: 2;
+				}
+
+				.period {
 					color: #2E0E02;
 					font-size: 14px;
 					letter-spacing: 0.16em;
 					line-height: 1;
-					position: relative;
-					height: 50px;
-					z-index: 2;
 
 					&:hover{
 						opacity: 1;
@@ -539,11 +540,11 @@ $bp768: 768px;  // スマホ
 				}
 
 				&.on{
-					a{
+					.period{
 						&::after{
 							content: "";
 							position: absolute;
-							bottom: 20px;
+							bottom: -10px;
 							left: 0;
 							right: 0;
 							margin: auto;
@@ -551,7 +552,6 @@ $bp768: 768px;  // スマホ
 							width: 4px;
 							height: 4px;
 							border-radius: 50%;
-							transition: transform .3s;
 						}
 					}
 				}

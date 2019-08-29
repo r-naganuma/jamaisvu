@@ -552,27 +552,28 @@ textarea::focus {
 
 .header__nav--list li {
   margin-left: 42px;
-  height: 50px;
 }
 
-.header__nav--list li a {
+.header__nav--list li .listColumn {
+  position: relative;
+  z-index: 2;
+}
+
+.header__nav--list li .period {
   color: #2E0E02;
   font-size: 14px;
   letter-spacing: 0.16em;
   line-height: 1;
-  position: relative;
-  height: 50px;
-  z-index: 2;
 }
 
-.header__nav--list li a:hover {
+.header__nav--list li .period:hover {
   opacity: 1;
 }
 
-.header__nav--list li.on a::after {
+.header__nav--list li.on .period::after {
   content: "";
   position: absolute;
-  bottom: 20px;
+  bottom: -10px;
   left: 0;
   right: 0;
   margin: auto;
@@ -580,11 +581,6 @@ textarea::focus {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  -o-transition: transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
 }
 
 .header__nav--hov {

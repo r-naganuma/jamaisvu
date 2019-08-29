@@ -180,12 +180,27 @@ textarea::focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 @media (max-width: 768px) {
   .tblLayout_ProductDetail .detail_top_wrap {
     display: block;
   }
+}
+
+.tblLayout_ProductDetail .wrapDetailImage {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .tblLayout_ProductDetail .tag_material {

@@ -184,9 +184,20 @@ $bp768: 768px;  // スマホ
 	}
 	.detail_top_wrap {
 	    display: flex;
+	    width: 100vw;
+	    position: relative;
+	    left: 50%;
+	    transform: translateX(-50%);
 		@include bp768 {
 			display: block;
 		};
+	}
+
+	.wrapDetailImage{
+	    width: 100vw;
+	    position: relative;
+	    left: 50%;
+	    transform: translateX(-50%);
 	}
 
 		.tag_material{

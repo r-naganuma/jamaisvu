@@ -124,7 +124,9 @@ $(function () {
 					<nav class="header__nav">
 						<ul class="header__nav--list">
 							<li class="menuOpen">
-								<a href="javascript:void(0);">ITEMS</a>
+								<div class="listColumn">
+									<a href="javascript:void(0);" class="period">ITEMS</a>
+								</div>
 								<div class="header__nav--hov">
 									<div class="hov_inner">
 										<ul>
@@ -199,13 +201,19 @@ $(function () {
 								</div>
 							</li>
 							<li>
-								<a href="">TOPICS</a>
+								<div class="listColumn">
+									<a href="<%= Constants.PATH_ROOT %>topics/" class="period">TOPICS</a>
+								</div>
 							</li>
 							<li>
-								<a href="<%= Constants.PATH_ROOT %>Page/lookbook/">LOOKBOOK</a>
+								<div class="listColumn">
+									<a href="<%= Constants.PATH_ROOT %>Page/lookbook/" class="period">LOOKBOOK</a>
+								</div>
 							</li>
 							<li>
-								<a href="<%= Constants.PATH_ROOT %>Page/Concept/about.aspx">CONCEPT</a>
+								<div class="listColumn">
+									<a href="<%= Constants.PATH_ROOT %>Page/Concept/about.aspx" class="period">CONCEPT</a>
+								</div>
 							</li>
 						</ul>
 					</nav>
@@ -491,7 +499,7 @@ $(function () {
 										</a>
 									</li>
 									<li>
-										<a href="">
+										<a href="<%= Constants.PATH_ROOT %>topics/">
 											トピックス
 										</a>
 									</li>
@@ -504,17 +512,17 @@ $(function () {
 
 							<ul class="nav_sns">
 								<li>
-									<a href="" target="_blank">
+									<a href="https://www.instagram.com/jamaisvu_jp/?hl=ja" target="_blank">
 										<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_insta.png" alt="Instagram">
 									</a>
 								</li>
 								<li>
-									<a href="" target="_blank">
+									<a href="https://line.me/R/ti/p/%40461wwkgx" target="_blank">
 										<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_line.png" alt="LINE">
 									</a>
 								</li>
 								<li>
-									<a href="" target="_blank">
+									<a href="https://www.facebook.com/JAMAIS-VU-2244865452308305/?modal=admin_todo_tour" target="_blank">
 										<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_fb.png" alt="Facebook">
 									</a>
 								</li>
