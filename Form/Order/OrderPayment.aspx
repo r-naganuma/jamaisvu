@@ -29,6 +29,8 @@ $(function(){
 	});
 	$(".sc1").css("display","none");
 
+	 $(".add_cart_box").append($(".sc0").clone());
+	 
 });
 function bodyPageLoad(){
 	$("#Contents").addClass("topSpace").addClass("cart3");
@@ -899,6 +901,13 @@ div#primary {
 </ContentTemplate>
 </asp:UpdatePanel>
 <%-- UPDATE PANELここまで --%>
+
+
+<div class="sp_contents">
+  <div class="add_cart_box">
+  
+  </div>
+</div>
 
 </div>
 	
