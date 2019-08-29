@@ -97,7 +97,7 @@ div#primary {
 }
 
 </style> 
-<link href="<%= Constants.PATH_ROOT %>/Css/rp/CartList.css" rel="stylesheet">
+
 <style type="text/css" media="screen">
 @charset "UTF-8";
 @font-face {
@@ -992,6 +992,7 @@ span.error_message {
 
 
 </style>
+<link href="../../Css/rp/CartList.css" rel="stylesheet">
 <div class="load_wrap"></div>
 <h2 class="cart1_h2">ショッピングカート</h2>
 
@@ -1051,7 +1052,7 @@ span.error_message {
 <% if (string.IsNullOrEmpty(this.DispErrorMessage) == false) { %>
 <span style="color:red" class="error_message"><%: this.DispErrorMessage %></span>
 <% } %>
-<p class="sum">総合計<strong><%: CurrencyManager.ToPrice(this.CartList.PriceCartListTotal) %></strong></p>
+<p class="sum">総合計合計（税込）<strong><%: CurrencyManager.ToPrice(this.CartList.PriceCartListTotal) %></strong></p>
 
 <%if (this.CartList.Items.Count != 0) {%>
 <asp:Repeater id="rCartList" Runat="server" OnItemCommand="rCartList_ItemCommand">
@@ -1092,7 +1093,7 @@ span.error_message {
   <h3>カート番号 <%# Container.ItemIndex + 1 %><%# WebSanitizer.HtmlEncode(DispCartDecolationString(Container.DataItem, "（ギフト）", "（デジタルコンテンツ）")) %>のご注文内容<%if (Constants.CARTCOPY_OPTION_ENABLED){ %><span style="float:right"><asp:LinkButton ID="lbCopyCart" runat="server" Text="カートコピー" CommandArgument="<%# Container.ItemIndex %>" OnClick="lbCopyCart_Click" style="color:white;"></asp:LinkButton>&nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton ID="lbDeleteCart" runat="server" Text="カート削除" CommandArgument="<%# Container.ItemIndex %>" OnClick="lbDeleteCart_Click" style="color:white"></asp:LinkButton></span><%} %></h3>
 
 
-  <h4 visible='<%# ((CartObject)Container.DataItem).ShippingType == "100" %>' runat="server">通常商品<span></span></h4>
+  <h4 visible='<%# ((CartObject)Container.DataItem).ShippingType == "100" %>' runat="server">通常配送商品<span></span></h4>
   <h4 visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server">予約商品<span></span></h4>
 
   <div class="list">
@@ -1211,7 +1212,7 @@ function bodyPageLoad(){
     $(".s3 .s_dd",this).text(str);
     $(".d3 .d_dd",this).text(str);
  })
-
+ $(".shoppingCart__title").html($(".subSumBox p").html());
  
 }
 
@@ -1675,12 +1676,15 @@ function bodyPageLoad(){
 </asp:Repeater>
 <%} %>
 
-<%if (this.CartList.Items.Count != 0) {%>
-<p class="sum"><img src="../../Contents/ImagesPkg/cartlist/ttl_sum.gif" alt="総合計" width="48" height="16" /><strong><%: CurrencyManager.ToPrice(this.CartList.PriceCartListTotal) %></strong></p>
-<%} %>
+
 
 <div class="btmbtn below">
   <div class="btmbtn__innar">
+    <div class="shoppingCart__title">
+      <%if (this.CartList.Items.Count != 0) {%>
+      <p class="">総合計（税込）<strong><%: CurrencyManager.ToPrice(this.CartList.PriceCartListTotal) %></strong></p>
+      <%} %>
+    </div>
     <ul>
       <%if (this.CartList.Items.Count != 0) {%>
       <%-- UPDATE PANELの外のイベントを呼び出す --%>

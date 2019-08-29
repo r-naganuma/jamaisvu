@@ -688,7 +688,7 @@ $(function(){
 <%if (Constants.GIFTORDER_OPTION_ENABLED == false) { %>
 <div class="columnRight" visible='<%# Container.ItemIndex == 0 %>'>
 
-    <h2 class="ttlA" visible='<%# ((CartObject)Container.DataItem).ShippingType == "100" %>' runat="server">【通常商品】お届け先情報</h2>
+    <h2 class="ttlA" visible='<%# ((CartObject)Container.DataItem).ShippingType == "100" %>' runat="server">【通常配送商品】お届け先情報</h2>
     <h2 class="ttlA" visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server">【予約商品】お届け先情報</h2>
   
   
@@ -1193,7 +1193,13 @@ $(function(){
     </div>
   </div><!--userList-->
 
-    <h4 visible="<%# CanInputShippingTo(Container.ItemIndex) %>" runat="server">配送方法・配送日時</h4>
+   <!--  <h4 visible="<%# CanInputShippingTo(Container.ItemIndex) %>" runat="server">配送方法・配送日時</h4> -->
+
+    <h4 class="" visible='<%# ((CartObject)Container.DataItem).ShippingType == "100" %>' runat="server">【通常配送商品】配送時間帯</h4>
+    <h4 class="" visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server">【予約】配送時間帯</h4>
+  
+
+
     <div visible="<%# CanInputShippingTo(Container.ItemIndex) %>" runat="server" class="userList ddlShippingMethod">
       <!-- 配送方法を選択して下さい。 -->
       <asp:DropDownList ID="ddlShippingMethod" DataSource="<%# this.ShippingMethodList[Container.ItemIndex] %>" OnSelectedIndexChanged="ddlShippingMethodList_OnSelectedIndexChanged" DataTextField="text" DataValueField="value" AutoPostBack="true" runat="server"></asp:DropDownList>
@@ -1409,11 +1415,11 @@ $(function(){
 <div class="btmbtn below">
   <div class="btmbtn__innar">
   <dl class="btmbtn__innar__dl10">
-    <dt>合計<span>(税込)</span></dt>
+    <dt>総合計<span>(税込)</span></dt>
     <dd>&yen;<%= GetNumeric(this.CartList.PriceCartListTotal) %></dd> 
   </dl>
   <ul>
-    <li><a onclick="<%= this.NextOnClick %>" href="<%= WebSanitizer.HtmlEncode(this.NextEvent) %>" class="btn btn-large btn-success"><%: (this.IsNextConfirmPage) ? "最終確認にすすむ" : "お支払方法入力へ" %></a></li>
+    <li><a onclick="<%= this.NextOnClick %>" href="<%= WebSanitizer.HtmlEncode(this.NextEvent) %>" class="btn btn-large btn-success"><%: (this.IsNextConfirmPage) ? "最終確認にすすむ" : "支払い方法選択へ進む" %></a></li>
     
     <li class="b2"><a onclick="<%= this.BackOnClick %>" href="<%= WebSanitizer.HtmlEncode(this.BackEvent) %>" class="btn btn-large btn-success2">前のページに戻る</a></li>
   </ul>
