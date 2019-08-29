@@ -25,7 +25,7 @@
 
 <%-- ▽編集可能領域：共通ヘッダ領域▽ --%>
 <script type="text/javascript">
-$(function () {
+function initializeFunctionJs() {
     "use strict";
 
 	var txt = '0';
@@ -105,7 +105,7 @@ $(function () {
         var heightSize = $(window).height();
         $('.mainVisual').height(heightSize); 
     });
-});
+}
 </script>
 <asp:UpdatePanel ID="upUpdatePanel2" runat="server">
 <ContentTemplate>
@@ -125,7 +125,7 @@ $(function () {
 						<ul class="header__nav--list">
 							<li class="menuOpen">
 								<div class="listColumn">
-									<a href="javascript:void(0);" class="period">ITEMS</a>
+									<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="period">ITEMS</a>
 								</div>
 								<div class="header__nav--hov">
 									<div class="hov_inner">
