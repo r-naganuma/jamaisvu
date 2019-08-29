@@ -1456,12 +1456,6 @@ textarea::focus {
 }
 
 @media (max-width: 768px) {
-/*  .cart3 .sc0, .cart3 .sc1 {
-    display: none;
-  }
-  .cart3 .add_cart_box .sc0 {
-    display: block !important;
-  }*/
   .cart3 .add_cart_box div.btmbtn ul {
     position: relative;
   }
