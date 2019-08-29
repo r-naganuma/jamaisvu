@@ -1548,14 +1548,16 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 
 	</div><!--box-->
 	</div><!--last-->
-	<div class="Coupon_box">
+<!-- 	<div class="Coupon_box">
 		<h4><span>クーポン</span></h4>
 		<dl>
 			<dt>クーポン利用</dt>
       <dd><%#: GetCouponDispName(((CartObject)Container.DataItem).Coupon) %></dd>
 		</dl>
+	</div> -->
 	</div>
-	</div><!--bottom-->
+
+  <!--bottom-->
 
 	<p class="oc_text oct1">※ご注文前に必ずサイズ・カラー・価格・数量のご確認をお願い致します。 <br>
 	商品状態により返品・交換をお受けできない場合がございます。  <br>

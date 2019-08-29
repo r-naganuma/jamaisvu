@@ -28,8 +28,9 @@ $(function(){
 		$(this).addClass("sc"+x);
 	});
 	$(".sc1").css("display","none");
-
-	 $(".add_cart_box").append($(".sc0").clone());
+	// if($(window).width()<768){
+	//  $(".add_cart_box").append($(".sc0"));
+	// }
 
 });
 function bodyPageLoad(){
@@ -40,10 +41,6 @@ function bodyPageLoad(){
 		$(this).addClass("sc"+x);
 	});
 	$(".sc1").css("display","none");
-	$("#idctl00_ContentPlaceHolder1_rCartList_ctl00_lbShowCouponBox").click(function(){
-	  $(".sc0,.sc1").show();
-	  return false;
-	});
 }
 </script>
 <link href="../../Css/rp/OrderPayment.css" rel="stylesheet">
