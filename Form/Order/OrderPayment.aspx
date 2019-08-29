@@ -27,7 +27,7 @@ $(function(){
 	$(".shoppingCart").each(function(x){
 		$(this).addClass("sc"+x);
 	});
-	$(".sc1").css("display","none");
+	// $(".sc1").css("display","none");
 	// if($(window).width()<768){
 	//  $(".add_cart_box").append($(".sc0"));
 	// }
@@ -40,7 +40,7 @@ function bodyPageLoad(){
 	$(".shoppingCart").each(function(x){
 		$(this).addClass("sc"+x);
 	});
-	$(".sc1").css("display","none");
+	// $(".sc1").css("display","none");
 }
 </script>
 <link href="../../Css/rp/OrderPayment.css" rel="stylesheet">

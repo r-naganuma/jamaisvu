@@ -1162,18 +1162,28 @@ $bp768: 768px;  // スマホ
 	.priceList{
 		display: none;
 	}
+	// .sc1{
+	// 	display: none;
+	// }
 	@include bp768 {
-		.sc0,.sc1{
-			display: none;
-		}
-		.add_cart_box .sc0{
-			display: block!important;
-		}
+			// .sc1{
+			// 	display: block;
+			// }
+			// .sc0{
+			// 	display: none;
+			// }
+		// .sc0,.sc1{
+		// 	display: none;
+		// }
+		// .add_cart_box .sc0{
+		// 	display: block!important;
+		// }
 		.add_cart_box{
 			div.btmbtn ul{
 				position: relative;
 			}
 		}
+
 
 	}
 	.sumBox{
