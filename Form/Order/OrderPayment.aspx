@@ -705,17 +705,17 @@ div#primary {
 		</HeaderTemplate>
 		<ItemTemplate>
 			<tr>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:170px; background-color: white;">
+				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:68px; background-color: white;">
 					<div class="sp_contents"><span class="c_code">クーポンコード</span></div>
 					<%#: StringUtility.ToEmpty(Item.CouponCode) %><br />
 					<asp:HiddenField runat="server" ID="hfCouponBoxCouponCode" Value="<%# Item.CouponCode %>" />
 				</td>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:230px; background-color: white;"
+				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:205px; background-color: white;"
 					title="<%#: StringUtility.ToEmpty(Item.CouponDispDiscription) %>">
 					<div class="sp_contents"><span class="c_code">クーポン名</span></div>
 					<%#: StringUtility.ToEmpty(Item.CouponDispName) %>
 				</td>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:70px; background-color: white;">
+				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:60px; background-color: white;">
 					<div class="sp_contents"><span class="c_code">割引金額</span></div>
 					<%#: (StringUtility.ToEmpty(Item.DiscountPrice) != "")
 							? CurrencyManager.ToPrice(Item.DiscountPrice)
@@ -723,20 +723,24 @@ div#primary {
 								? StringUtility.ToEmpty(Item.DiscountRate) + "%"
 								: "-" %>
 				</td>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:100px; background-color: white;">
+				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:55px; background-color: white;">
 					<div class="sp_contents"><span class="c_code">利用可能回数</span></div>
 					<%#: GetCouponCount(Item) %>
 				</td>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:300px; background-color: white;">
+				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:108px; background-color: white;">
 					<div class="sp_contents"><span class="c_code">有効期限</span></div>
 					<%#: DateTimeUtility.ToStringFromRegion(Item.ExpireEnd, DateTimeUtility.FormatType.LongDateHourMinute1Letter) %>
 				</td>
-				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:100px; background-color: white;">
+				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:189px; background-color: white;">
+					<div class="sp_contents"><span class="c_code">利用条件</span></div>
+					<%#: Item.CouponDiscription %>
+				</td>
+				<td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:80px; background-color: white;">
 
 					<asp:LinkButton runat="server" id="lbCouponSelect" OnClick="lbCouponSelect_Click" style="color: #ffffff !important; background-color: #000 !important;
 						border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); display: inline-block;
 						padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; text-align: center; vertical-align: middle; cursor: pointer;
-						border: 1px solid #cccccc; border-radius: 4px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); white-space: nowrap; text-decoration: none; ">このクーポンを使う</asp:LinkButton>
+						border: 1px solid #cccccc; border-radius: 4px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); white-space: nowrap; text-decoration: none; ">使う</asp:LinkButton>
 				</td>
 			</tr>
 		</ItemTemplate>
