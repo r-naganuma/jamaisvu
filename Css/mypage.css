@@ -174,16 +174,51 @@
   color: #C6C6C6;
 }
 
-#Wrap .userWrap .loginWrap_box--left ul li .loginCheck input {
-  width: 16px;
-  height: 16px;
-  margin-right: 15px;
-  padding: 0;
-  vertical-align: middle;
+#Wrap .userWrap .loginWrap_box--left ul li .checkBox input {
+  display: none;
 }
 
-#Wrap .userWrap .loginWrap_box--left ul li .loginCheck label {
+#Wrap .userWrap .loginWrap_box--left ul li .checkBox input + label {
+  padding-left: 28px;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 66px;
   font-size: 12px;
+  padding-top: 3px;
+}
+
+#Wrap .userWrap .loginWrap_box--left ul li .checkBox input + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #C0B6B3;
+  border-radius: 3px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#Wrap .userWrap .loginWrap_box--left ul li .checkBox input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 15px;
+  border-radius: 3px;
+  background: url(../../Contents/ImagesPkg/common/check@2x.png);
+  display: block;
+  background-position: 0px 3px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#Wrap .userWrap .loginWrap_box--left ul li .checkBox input:checked + label.on::after {
+  content: "";
 }
 
 #Wrap .userWrap .loginWrap_box--left .loginPsForget {

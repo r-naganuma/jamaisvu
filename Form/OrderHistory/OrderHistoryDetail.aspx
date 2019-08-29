@@ -1032,8 +1032,8 @@
 
 										<%-- 会員ランク情報リスト(有効な場合) --%>
 										<%if (Constants.MEMBER_RANK_OPTION_ENABLED) { %>
-											<dt class="discountTxt">会員ランク割引額</dt>
-											<dd class="discountTxt"><span><%#: ((this.OrderModel.MemberRankDiscountPrice > 0) ? "-" : "") + CurrencyManager.ToPrice(this.OrderModel.MemberRankDiscountPrice) %></span></dd>
+											<dt style="display: none;" class="discountTxt">会員ランク割引額</dt>
+											<dd style="display: none;" class="discountTxt"><span><%#: ((this.OrderModel.MemberRankDiscountPrice > 0) ? "-" : "") + CurrencyManager.ToPrice(this.OrderModel.MemberRankDiscountPrice) %></span></dd>
 										<%} %>
 
 										<%-- 定期会員割引額(有効な場合) --%>
@@ -1049,22 +1049,22 @@
 										<%} %>
 										<%-- ポイント情報リスト(有効な場合) --%>
 										<%if (Constants.W2MP_POINT_OPTION_ENABLED) { %>
-											<dt class="discountTxt">ポイント利用</dt>
-											<dd class="discountTxt"><span><%#: ((this.OrderModel.OrderPointUseYen > 0) ? "-" : "") + CurrencyManager.ToPrice(this.OrderModel.OrderPointUseYen) %></span></dd>
+											<dt style="display: none;" class="discountTxt">ポイント利用</dt>
+											<dd style="display: none;" class="discountTxt"><span><%#: ((this.OrderModel.OrderPointUseYen > 0) ? "-" : "") + CurrencyManager.ToPrice(this.OrderModel.OrderPointUseYen) %></span></dd>
 										<%} %>
 										<%-- 定期購入割引(有効な場合) --%>
 										<%if (this.IsFixedPurchase) { %>
-											<dt style="margin-top: 8px; width: 150px; text-align: right; line-height: 1.4em;" runat="server">定期購入割引額</dt>
-											<dd style="color: #ff0000;" runat="server">
+											<dt style="margin-top: 8px; width: 150px; text-align: right; line-height: 1.4em; display: none;" runat="server">定期購入割引額</dt>
+											<dd style="color: #ff0000; display: none;" runat="server">
 												<span><%#: ((this.OrderModel.FixedPurchaseDiscountPrice > 0) ? "-" : "") + CurrencyManager.ToPrice(this.OrderModel.FixedPurchaseDiscountPrice) %></span>
 											</dd>
 										<%} %>
 										<div visible='<%# (this.OrderModel.OrderPriceRegulation != 0) %>' runat="server">
-											<dt style="margin-top: 8px; width: 150px; text-align: right; line-height: 1.4em;">調整金額</dt>
-											<dd style="color: #ff0000;" runat="server"><span><%#: ((this.OrderModel.OrderPriceRegulation < 0) ? "-" : "") %><%#: CurrencyManager.ToPrice(Math.Abs(this.OrderModel.OrderPriceRegulation)) %></span></dd>
+											<dt style="margin-top: 8px; width: 150px; text-align: right; line-height: 1.4em; display: none;">調整金額</dt>
+											<dd style="color: #ff0000; display: none;" runat="server"><span><%#: ((this.OrderModel.OrderPriceRegulation < 0) ? "-" : "") %><%#: CurrencyManager.ToPrice(Math.Abs(this.OrderModel.OrderPriceRegulation)) %></span></dd>
 										</div>
-										<dt>決済手数料</dt>
-										<dd><%#: CurrencyManager.ToPrice(this.OrderModel.OrderPriceExchange) %></dd>
+										<dt style="display: none;">決済手数料</dt>
+										<dd style="display: none;"><%#: CurrencyManager.ToPrice(this.OrderModel.OrderPriceExchange) %></dd>
 										<asp:Repeater DataSource="<%# this.OrderSetPromotions %>" runat="server">
 										<ItemTemplate>
 											<span visible="<%# (string)((Hashtable)Container.DataItem)[Constants.FIELD_ORDERSETPROMOTION_PAYMENT_CHARGE_FREE_FLG] == Constants.FLG_SETPROMOTION_PAYMENT_CHARGE_FREE_FLG_ON %>" runat="server">

@@ -379,13 +379,13 @@
 }
 
 #Wrap .LPpageWrap .guideWrap_cts--list .inner img.pic_card {
-  width: 450px;
+  width: 369px;
   margin-bottom: 32px;
 }
 
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .guideWrap_cts--list .inner img.pic_card {
-    width: 87%;
+    width: 75%;
     margin-left: 1em;
     padding: 0;
   }
