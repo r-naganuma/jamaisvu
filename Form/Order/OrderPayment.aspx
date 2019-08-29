@@ -171,9 +171,7 @@ div#primary {
     <strong>カード番号</strong>&nbsp;<span class="fred"></span></dt>
     <dd>
     <p><asp:TextBox id="tbCreditCardNo1" runat="server" CssClass="input_widthA input_border" MaxLength="16" Text="<%# GetCreditValue(((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment, CartPayment.FIELD_CREDIT_CARD_NO_1) %>" autocomplete="off" Type="tel"></asp:TextBox>
-<!--       <asp:TextBox id="tbCreditCardNo2" runat="server" CssClass="input_widthA input_border" MaxLength="6" Text="<%# GetCreditValue(((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment, CartPayment.FIELD_CREDIT_CARD_NO_2) %>" autocomplete="off" Type="tel"></asp:TextBox>&nbsp;-&nbsp;
-      <asp:TextBox id="tbCreditCardNo3" runat="server" CssClass="input_widthA input_border" MaxLength="5" Text="<%# GetCreditValue(((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment, CartPayment.FIELD_CREDIT_CARD_NO_3) %>" autocomplete="off" Type="tel"></asp:TextBox>&nbsp;-&nbsp;
-      <asp:TextBox id="tbCreditCardNo4" runat="server" CssClass="input_widthA input_border" MaxLength="4" Text="<%# GetCreditValue(((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment, CartPayment.FIELD_CREDIT_CARD_NO_4) %>" autocomplete="off" Type="tel"></asp:TextBox><br /> -->
+
     <small class="fred">
       <asp:CustomValidator ID="cvCreditCardNo1" runat="Server"
       ControlToValidate="tbCreditCardNo1"
@@ -182,27 +180,7 @@ div#primary {
       SetFocusOnError="true"
       ClientValidationFunction="ClientValidate"
       CssClass="error_inline" />
-<!--     <asp:CustomValidator ID="cvCreditCardNo2" runat="Server"
-      ControlToValidate="tbCreditCardNo2"
-      ValidationGroup="OrderPayment"
-      ValidateEmptyText="true"
-      SetFocusOnError="true"
-      ClientValidationFunction="ClientValidate"
-      CssClass="error_inline" />
-    <asp:CustomValidator ID="cvCreditCardNo3" runat="Server"
-      ControlToValidate="tbCreditCardNo3"
-      ValidationGroup="OrderPayment"
-      ValidateEmptyText="true"
-      SetFocusOnError="true"
-      ClientValidationFunction="ClientValidate"
-      CssClass="error_inline" />
-    <asp:CustomValidator ID="cvCreditCardNo4" runat="Server"
-      ControlToValidate="tbCreditCardNo4"
-      ValidationGroup="OrderPayment"
-      ValidateEmptyText="true"
-      SetFocusOnError="true"
-      ClientValidationFunction="ClientValidate"
-      CssClass="error_inline" /> -->
+
       <span id="sErrorMessage" style="color :Red" runat="server" />
     </small>
     <small class="fgray">
@@ -276,15 +254,27 @@ div#primary {
     <strong>カード会社</strong>
     <p><asp:Literal ID="lCreditCardCompanyNameForTokenAcquired" Text="<%# ((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment.CreditCardCompanyName %>" runat="server"></asp:Literal><br /></p>
     <%} %>
-    <strong>カード番号</strong>
-    <asp:LinkButton id="lbEditCreditCardNoForToken" OnClick="lbEditCreditCardNoForToken_Click" runat="server">再入力</asp:LinkButton>
-    <p>XXXXXXXXXXXX<asp:Literal ID="lLastFourDigitForTokenAcquired" Text="<%# ((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment.CreditCardNo4 %>" runat="server"></asp:Literal><br /></p>
-    <strong>有効期限</strong>
-    <p><asp:Literal ID="lExpirationMonthForTokenAcquired" Text="<%# ((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment.CreditExpireMonth %>" runat="server"></asp:Literal>
+    <dl>
+    	<dt><strong>カード番号</strong></dt>
+    	<dd><p>XXXXXXXXXXXX<asp:Literal ID="lLastFourDigitForTokenAcquired" Text="<%# ((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment.CreditCardNo4 %>" runat="server"></asp:Literal><br /></p>
+		<asp:LinkButton id="lbEditCreditCardNoForToken" OnClick="lbEditCreditCardNoForToken_Click" runat="server">再入力</asp:LinkButton>
+    	</dd>
+    </dl>
+    <dl>
+    	<dt><strong>有効期限</strong></dt>
+    	<dd><p><asp:Literal ID="lExpirationMonthForTokenAcquired" Text="<%# ((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment.CreditExpireMonth %>" runat="server"></asp:Literal>
     &nbsp;/&nbsp;
-    <asp:Literal ID="lExpirationYearForTokenAcquired" Text="<%# ((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment.CreditExpireYear %>" runat="server"></asp:Literal> (月/年)</p>
-    <strong>カード名義人</strong>
-    <p><asp:Literal ID="lCreditAuthorNameForTokenAcquired" Text="<%# ((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment.CreditAuthorName %>" runat="server"></asp:Literal><br /></p>
+    <asp:Literal ID="lExpirationYearForTokenAcquired" Text="<%# ((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment.CreditExpireYear %>" runat="server"></asp:Literal> (月/年)</p></dd>
+    </dl>
+    <dl>
+    	<dt><strong>カード名義人</strong></dt>
+    	<dd><p><asp:Literal ID="lCreditAuthorNameForTokenAcquired" Text="<%# ((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment.CreditAuthorName %>" runat="server"></asp:Literal><br /></p></dd>
+    </dl>
+
+    
+    
+    
+    
     </div>
     <%--▲▲ カード情報入力（トークン取得済） ▲▲ --%>
 
@@ -325,12 +315,22 @@ div#primary {
 		<strong>カード会社</strong>
 		<p><asp:Literal ID="lCreditCardCompanyName" runat="server"></asp:Literal><br /></p>
 		<%} %>
-		<strong>カード番号</strong>
-		<p>XXXXXXXXXXXX<asp:Literal ID="lLastFourDigit" runat="server"></asp:Literal><br /></p>
-		<strong>有効期限</strong>
-		<p><asp:Literal ID="lExpirationMonth" runat="server"></asp:Literal>&nbsp;/&nbsp;<asp:Literal ID="lExpirationYear" runat="server"></asp:Literal> (月/年)</p>
-		<strong>カード名義人</strong>
-		<p><asp:Literal ID="lCreditAuthorName" runat="server"></asp:Literal><br /></p>
+
+		<dl>
+			<dt><strong>カード番号</strong></dt>
+			<dd><p>XXXXXXXXXXXX<asp:Literal ID="lLastFourDigit" runat="server"></asp:Literal><br /></p></dd>
+		</dl>
+		<dl>
+			<dt><strong>有効期限</strong></dt>
+			<dd><p><asp:Literal ID="lExpirationMonth" runat="server"></asp:Literal>&nbsp;/&nbsp;<asp:Literal ID="lExpirationYear" runat="server"></asp:Literal> (月/年)</p></dd>
+		</dl>
+		<dl>
+			<dt><strong>カード名義人</strong></dt>
+			<dd><p><asp:Literal ID="lCreditAuthorName" runat="server"></asp:Literal><br /></p></dd>
+		</dl>
+		
+		
+		
 		<asp:HiddenField ID="hfCreditCardId" runat="server" />
 		<div id="Div10" visible="<%# OrderCommon.CreditInstallmentsSelectable %>" runat="server">
 		<strong>支払い回数</strong>

@@ -1047,7 +1047,43 @@ $bp768: 768px;  // スマホ
 	.btmbtn{
 		border-top: 0!important;
 	}
-
+	div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divCreditCardForTokenAcquired,
+	div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl01_divCreditCardForTokenAcquired,
+	#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_ddCredit,
+	#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_ddCredit {
+		
+		a{
+			font-size: 14px;
+			margin: 0 0 0 45px;
+		}
+		dl{
+			display: flex;
+		}
+		dt{
+			width: 200px;
+		    display: inline-block;
+		    border: none!important;
+		    letter-spacing: 0.08em;
+		        padding: 0!important;
+		}
+		dd{
+		    width: 300px;
+		    display: inline-block;
+		    display: flex;
+    		align-items: center;
+    		p{
+    			font-size: 14px;
+    			letter-spacing: 0.08em;
+    			    padding: 0!important;
+    		}
+		}
+			strong {
+		    font-size: 14px;
+		    margin: 0 0 0px 0;
+		    display: block;
+		    padding: 0!important;
+			}
+	}
 
 }
 
