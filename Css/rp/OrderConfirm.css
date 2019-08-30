@@ -394,6 +394,11 @@ textarea::focus {
   }
 }
 
+.cart4 #CartList .orderBox .bottom p {
+  width: 100%;
+  line-height: 25.2px;
+}
+
 .cart4 #CartList .orderBox p.btn_change {
   width: 64px;
 }

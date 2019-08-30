@@ -54,7 +54,7 @@
 						<asp:TextBox ID="tbPassword" TextMode="Password" autocomplete="off" runat="server" MaxLength="15"></asp:TextBox>
 					</li>
 					<li>
-						<asp:CheckBox ID="cbAutoCompleteLoginIdFlg" runat="server" CssClass="loginCheck" Text="メールアドレスをブラウザに保存する" />
+						<asp:CheckBox ID="cbAutoCompleteLoginIdFlg" runat="server" CssClass="checkBox" Text="メールアドレスをブラウザに保存する" />
 					</li>
 				</ul>
 				<small id="dLoginErrorMessage" class="fred" runat="server"></small>

@@ -1292,8 +1292,7 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 		<dd>
 			<p>
 				<%# ((bool)Eval("IsShippingAddrJp")) ? WebSanitizer.HtmlEncode("〒" + Eval("Zip")) + "<br />" : ""  %>
-				<%#: Eval("Addr1") %> <%#: Eval("Addr2") %>
-				<%#: Eval("Addr3") %> <%#: Eval("Addr4") %>
+				<%#: Eval("Addr1") %><%#: Eval("Addr2") %><%#: Eval("Addr3") %><br><%#: Eval("Addr4") %>
 				<%#: Eval("Addr5") %> <%# ((bool)Eval("IsShippingAddrJp") == false) ? WebSanitizer.HtmlEncode(Eval("Zip")) + "<br />" : ""  %>
 				<%#: Eval("ShippingCountryName") %>
 			</p>
