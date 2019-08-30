@@ -46,12 +46,6 @@
                         OPTIMO
                     </a>
                 </div>
-                <div class="concept__list-item comingSoon">
-                    <!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/the_falkland_wool.aspx"> -->
-                        COMING<br>
-                        SOON
-                    <!-- </a> -->
-                </div>
             </div>
         </div>
     </div>
@@ -119,11 +113,6 @@
                     <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
                         MERINO OPTIMO
                     </a>
-                </div>
-                <div class="concept__list-item comingSoon">
-                    <!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/the_falkland_wool.aspx"> -->
-                        COMING SOON
-                    <!-- </a> -->
                 </div>
             </div>
         </div>

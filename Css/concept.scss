@@ -766,6 +766,7 @@ $bp768: 768px;  // スマホ
 					&--list{
 						width: 520px;
 						position: relative;
+						margin: 0 auto;
 
 						@include bp768 {
 							width: 100%;
@@ -1138,30 +1139,21 @@ $bp768: 768px;  // スマホ
 					};
 
 					&--list{
-						width: 340px;
+						width: 520px;
 						position: relative;
+						margin: 0 auto;
 
 						@include bp768 {
 							width: 100%;
 							margin-bottom: 20px;
 						};
 
-						img{
-							height: 240px;
-							object-fit: cover;
-
-							@include bp768 {
-								height: auto;
-								object-fit: inherit;
-							};
-						}
-
 						.btnTxt{
 							position: absolute;
 							top: 30px;
-							left: 30px;
+							left: 40px;
 							background: rgba(255,255,255,.65);
-							width: 280px;
+							width: 440px;
 							height: 180px;
 							display: flex;
 							align-items: center;
