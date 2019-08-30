@@ -39,7 +39,7 @@ $(function(){
 </script>
 <style>
 
-/*@charset "UTF-8";
+@charset "UTF-8";
 .cart_select #dvOrderBox #dvCartSelect p {
   background: none;
 }
@@ -174,7 +174,7 @@ $(function(){
       box-sizing: border-box;
       overflow-x: hidden;
   }
-}*/
+}
 </style>
 <link href="../../Css/rp/OrderSelect.css" rel="stylesheet">
 <h2 class="cart1_h2">ショッピングカート</h2>
@@ -271,6 +271,12 @@ $(function(){
 function bodyPageLoad(){
 
 
+$(".productName a").each(function(){
+   var kana = $(".cart1_size",this).text()
+   kana = kana.match(/\((.+)\)/)[1];
+  console.log(kana)
+
+})
 
 // $("td.productName").append('<div class="s_dl__wrap">'
 //         +'<div class="s_dl s1">'
@@ -297,55 +303,55 @@ function bodyPageLoad(){
 //       +'</div>');
 
 
- $("td.productName").each(function(){
+ // $("td.productName").each(function(){
 
  	
 
-    var kana = $("a",this).text()
-    kana = kana.match(/\((.+)\)/)[1];
-    $(".s1 .s_dd",this).text(kana);
-    $(".d1 .d_dd",this).text(kana);
+ //    var kana = $("a",this).text()
+ //    kana = kana.match(/\((.+)\)/)[1];
+ //    $(".s1 .s_dd",this).text(kana);
+ //    $(".d1 .d_dd",this).text(kana);
 
 
 
 
-    // var kana = $(".cart1_size",this).text()
-    // kana = kana.match(/\((.+)\)/)[1];
-    // $(".s1 .s_dd",this).text(kana);
-    // $(".d1 .d_dd",this).text(kana);
+ //    // var kana = $(".cart1_size",this).text()
+ //    // kana = kana.match(/\((.+)\)/)[1];
+ //    // $(".s1 .s_dd",this).text(kana);
+ //    // $(".d1 .d_dd",this).text(kana);
 
-    var str=$("span[visible='True']",this).text();
-    var nstr = str.replace(/\([^\)]*\)/g,"");
-    $(".cart1_size",this).text(nstr);
+ //    var str=$("span[visible='True']",this).text();
+ //    var nstr = str.replace(/\([^\)]*\)/g,"");
+ //    $(".cart1_size",this).text(nstr);
 
-    var str = $("span[visible='True']",this).text().trim();
-    str = str.replace(/カラー：/g, ''); // "bcbc"
+ //    var str = $("span[visible='True']",this).text().trim();
+ //    str = str.replace(/カラー：/g, ''); // "bcbc"
 
-	var str = str;
-	var pos = str.indexOf("配送時期：");
-	if (pos < 0) {
-	  console.log(str);
-	} else {
-	  console.log(str.substring(0, pos));
-	}
+	// var str = str;
+	// var pos = str.indexOf("配送時期：");
+	// if (pos < 0) {
+	//   console.log(str);
+	// } else {
+	//   console.log(str.substring(0, pos));
+	// }
 
-    $(".s2 .s_dd",this).text(str.substring(0, pos));
-    $(".d2 .d_dd",this).text(str.substring(0, pos));
+ //    $(".s2 .s_dd",this).text(str.substring(0, pos));
+ //    $(".d2 .d_dd",this).text(str.substring(0, pos));
 
-    var str =$("span[visible='True']",this).text().trim();
-    str = str.replace(/配送時期：/g, ''); // "bcbc"
+ //    var str =$("span[visible='True']",this).text().trim();
+ //    str = str.replace(/配送時期：/g, ''); // "bcbc"
 
-    $(".s3 .s_dd",this).text(str);
-    $(".d3 .d_dd",this).text(str);
- })
- $(".shoppingCart__title").html($(".subSumBox p").html());
+ //    $(".s3 .s_dd",this).text(str);
+ //    $(".d3 .d_dd",this).text(str);
+ // })
+ // $(".shoppingCart__title").html($(".subSumBox p").html());
  
 
-   $(".s3 .s_dd").each(function(){
-      if($(this).text().trim()==""){
-        $(this).parent().remove();
-      }
-  });
+ //   $(".s3 .s_dd").each(function(){
+ //      if($(this).text().trim()==""){
+ //        $(this).parent().remove();
+ //      }
+ //  });
 
 
 }
