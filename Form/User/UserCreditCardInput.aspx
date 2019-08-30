@@ -5,7 +5,7 @@
   Copyright   : Copyright w2solution Co.,Ltd. 2010 All Rights Reserved.
 =========================================================================================================
 --%>
-<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_UserCreditCardInput, App_Web_usercreditcardinput.aspx.b2a7112d" title="登録クレジットカード入力ページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_UserCreditCardInput, App_Web_usercreditcardinput.aspx.b2a7112d" title="クレジットカード情報｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="クレジットカード情報（新規入力）ページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 <%-- ▼削除禁止：クレジットカードTokenコントロール▼ --%>
 <%@ Register TagPrefix="uc" TagName="CreditToken" Src="~/Form/Common/CreditToken.ascx" %>
 <%-- ▲削除禁止：クレジットカードTokenコントロール▲ --%>

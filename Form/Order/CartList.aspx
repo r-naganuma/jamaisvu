@@ -10,7 +10,7 @@
 <%@ Register TagPrefix="uc" TagName="BodyProductRecommendByRecommendEngine" Src="~/Form/Common/Product/BodyProductRecommendByRecommendEngine.ascx" %>
 <%@ Register TagPrefix="uc" TagName="Criteo" Src="~/Form/Common/Criteo.ascx" %>
 <%@ Register Src="~/Form/Common/PayPalScriptsForm.ascx" TagPrefix="uc" TagName="PayPalScriptsForm" %>
-<%@ page language="C#" masterpagefile="~/Form/Common/OrderPage.master" autoeventwireup="true" inherits="Form_Order_CartList, App_Web_cartlist.aspx.bf558b1b" title="ショッピングカートページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/OrderPage.master" autoeventwireup="true" inherits="Form_Order_CartList, App_Web_cartlist.aspx.bf558b1b" title="カート｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="カートページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 <%@ Import Namespace="w2.Domain.Coupon.Helper" %>
 <%-- ▽▽Amazonペイメントを使う場合はウィジェットを配置するページは必ずSSLでなければいけない▽▽ --%>
 <script runat="server">
