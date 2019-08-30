@@ -3960,10 +3960,7 @@ textarea::focus {
 
 @media (max-width: 768px) {
   .footer_logo {
-    width: 100% !important;
-    padding-right: 247px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    width: 110px !important;
     position: absolute;
     bottom: 55px;
     left: 18px;
