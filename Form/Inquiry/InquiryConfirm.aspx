@@ -6,7 +6,7 @@
 =========================================================================================================
 --%>
 <%@ Register TagPrefix="uc" TagName="Captcha" Src="~/Form/Common/Captcha.ascx" %>
-<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_Inquiry_InquiryConfirm, App_Web_inquiryconfirm.aspx.97d9c6ad" title="お問い合わせ内容確認 | Jamais Vu オンラインストア" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_Inquiry_InquiryConfirm, App_Web_inquiryconfirm.aspx.97d9c6ad" title="お問い合わせ内容確認｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="お問い合わせ内容確認ページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <div class="registWrap topSpace inquiryWrap">
 	<h2>お問い合わせ内容確認</h2>
