@@ -37,7 +37,7 @@
 					メールアドレス
 				</dt>
 				<dd class="inputBox_right">
-					<asp:TextBox ID="tbMailAddr" Runat="server" placeholder="jamaisvu@xxx.co.jp" CssClass="mailAddr" MaxLength="256" Type="email"></asp:TextBox>
+					<asp:TextBox ID="tbMailAddr" Runat="server" placeholder="sample@sample.com" CssClass="mailAddr" MaxLength="256" Type="email"></asp:TextBox>
 					<asp:CustomValidator ID="CustomValidator2" runat="Server"
 						ControlToValidate="tbMailAddr"
 						ValidationGroup="PasswordReminderInput"

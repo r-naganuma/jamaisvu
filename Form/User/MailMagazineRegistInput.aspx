@@ -32,7 +32,7 @@
 							<span>名</span>
 						</dt>
 						<dd>
-							<asp:TextBox id="tbUserName2" Runat="server" placeholder="忠太郎" CssClass="nameLast"></asp:TextBox>
+							<asp:TextBox id="tbUserName2" Runat="server" placeholder="花子" CssClass="nameLast"></asp:TextBox>
 						</dd>
 					</dl>
 					<asp:CustomValidator ID="cvUserName1" runat="Server"
@@ -70,7 +70,7 @@
 							<span>めい</span>
 						</dt>
 						<dd>
-							<asp:TextBox id="tbUserNameKana2" Runat="server" placeholder="ちゅうたろう" CssClass="nameLast"></asp:TextBox>
+							<asp:TextBox id="tbUserNameKana2" Runat="server" placeholder="はなこ" CssClass="nameLast"></asp:TextBox>
 						</dd>
 					</dl>
 					<% if (this.IsJapanese) { %>
@@ -93,7 +93,7 @@
 				<dt class="inputBox_left must">
 					メールアドレス
 				</dt>
-				<dd class="inputBox_right"><asp:TextBox ID="tbUserMailAddr" Runat="server" placeholder="jamaisvu@xxx.co.jp" CssClass="mailAddr" MaxLength="256" Type="email"></asp:TextBox>
+				<dd class="inputBox_right"><asp:TextBox ID="tbUserMailAddr" Runat="server" placeholder="sample@sample.com" CssClass="mailAddr" MaxLength="256" Type="email"></asp:TextBox>
 				<asp:CustomValidator ID="cvUserMailAddr" runat="Server"
 					ControlToValidate="tbUserMailAddr"
 					ValidationGroup="MailMagazineRegist"
@@ -106,7 +106,7 @@
 					メールアドレス（確認）
 				</dt>
 				<dd class="inputBox_right">
-					<asp:TextBox id="tbUserMailAddrConf" Runat="server" placeholder="jamaisvu@xxx.co.jp" MaxLength="256" CssClass="mailAddr" Type="email"></asp:TextBox>
+					<asp:TextBox id="tbUserMailAddrConf" Runat="server" placeholder="sample@sample.com" MaxLength="256" CssClass="mailAddr" Type="email"></asp:TextBox>
 					<asp:CustomValidator ID="cvUserMailAddrConf" runat="Server"
 						ControlToValidate="tbUserMailAddrConf"
 						ValidationGroup="MailMagazineRegist"

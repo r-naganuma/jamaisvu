@@ -52,7 +52,7 @@
 				<tr>
 					<th class="inputBox_left must">カード名義</th>
 					<td class="inputBox_right">
-						<asp:TextBox ID="tbCreditAuthorName" runat="server" MaxLength="50" placeholder="CHUTARO ITO" autocomplete="off"></asp:TextBox>
+						<asp:TextBox ID="tbCreditAuthorName" runat="server" MaxLength="50" placeholder="HANAKO ITO" autocomplete="off"></asp:TextBox>
 						<asp:CustomValidator ID="cvCreditAuthorName" runat="Server"
 							ControlToValidate="tbCreditAuthorName"
 							ValidationGroup="UserCreditCardRegist"

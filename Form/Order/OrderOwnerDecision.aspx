@@ -41,7 +41,7 @@
 					<%if (Constants.LOGIN_ID_USE_MAILADDRESS_ENABLED) { %>
 					<li>
 						<p>メールアドレス</p>
-						<asp:TextBox ID="tbLoginIdInMailAddr" runat="server" placeholder="Sample.sample@roseaupensant.jp" MaxLength="256" Type="email"></asp:TextBox>
+						<asp:TextBox ID="tbLoginIdInMailAddr" runat="server" placeholder="sample@sample.com" MaxLength="256" Type="email"></asp:TextBox>
 					</li>
 					<%} else { %>
 					<li>
