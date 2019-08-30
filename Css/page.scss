@@ -364,11 +364,11 @@ $bp768: 768px;  // スマホ
 							};
 
 							&.pic_card{
-								width: 450px;
+								width: 369px;
 								margin-bottom: 32px;
 
 								@include bp768 {
-									width: 87%;
+									width: 75%;
 									margin-left: 1em;
 									padding: 0;
 								};

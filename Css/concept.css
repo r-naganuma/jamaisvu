@@ -874,6 +874,7 @@
 #Wrap .LPpageWrap .conceptBox_other--box--list {
   width: 520px;
   position: relative;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -1326,8 +1327,9 @@
 }
 
 #Wrap .LPpageWrap .conceptBox_aboutOther--box--list {
-  width: 340px;
+  width: 520px;
   position: relative;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -1337,26 +1339,12 @@
   }
 }
 
-#Wrap .LPpageWrap .conceptBox_aboutOther--box--list img {
-  height: 240px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  #Wrap .LPpageWrap .conceptBox_aboutOther--box--list img {
-    height: auto;
-    -o-object-fit: inherit;
-    object-fit: inherit;
-  }
-}
-
 #Wrap .LPpageWrap .conceptBox_aboutOther--box--list .btnTxt {
   position: absolute;
   top: 30px;
-  left: 30px;
+  left: 40px;
   background: rgba(255, 255, 255, 0.65);
-  width: 280px;
+  width: 440px;
   height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;

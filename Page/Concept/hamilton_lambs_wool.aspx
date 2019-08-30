@@ -215,17 +215,6 @@
 			</p>
 			<div class="conceptBox_other--box">
 				<div class="conceptBox_other--box--list">
-					<a href="<%= Constants.PATH_ROOT %>Page/Concept/the_falkland_wool.aspx">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/other_falkland.jpg" alt="THE FALKLAND WOOL">
-						<div class="btnTxt">
-							<p>
-								THE FALKLAND<br>
-								WOOL
-							</p>
-						</div>
-					</a>
-				</div>
-				<div class="conceptBox_other--box--list">
 					<a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
 						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/other_merino.jpg" alt="MERINO OPTIMO">
 						<div class="btnTxt">

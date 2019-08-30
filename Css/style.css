@@ -1813,7 +1813,7 @@ textarea::focus {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 640px;
+  width: 420px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 60px auto 0;

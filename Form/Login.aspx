@@ -28,7 +28,7 @@
 				<li>
 					<p><%: ReplaceTag("@@User.password.name@@") %></p>
 					<asp:TextBox ID="tbPassword" Runat="server" TextMode="Password" autocomplete="off" CssClass="loginPass" MaxLength="15"></asp:TextBox></li>
-				<li><asp:CheckBox ID="cbAutoCompleteLoginIdFlg" runat="server" CssClass="loginCheck" Text="メールアドレスをブラウザに保存する" /></li>
+				<li><asp:CheckBox ID="cbAutoCompleteLoginIdFlg" runat="server" CssClass="checkBox" Text="メールアドレスをブラウザに保存する" /></li>
 			</ul>
 			<p>
 			<asp:LinkButton ID="lbLogin" runat="server" onclick="lbLogin_Click" class="loginBtn">ログイン</asp:LinkButton>
