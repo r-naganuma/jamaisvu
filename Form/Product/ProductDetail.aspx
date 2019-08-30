@@ -1267,7 +1267,7 @@ iframe {
 <asp:Repeater DataSource=<%# this.ProductCrossSellList %> Visible="<%# this.ProductCrossSellList.Count != 0 %>" runat="server">
 <HeaderTemplate>
 <div id="dvCrossSell" class="clearFix">
-<p class="title">関連商品</p>
+<p class="title">レコメンドアイテム</p>
 </HeaderTemplate>
 <ItemTemplate>
 <div class="productInfoList">
@@ -1330,7 +1330,7 @@ iframe {
 <asp:Repeater DataSource=<%# this.ProductUpSellList %> Visible="<%# this.ProductUpSellList.Count != 0 %>" runat="server">
 <HeaderTemplate>
 <div id="dvUpSell" class="clearFix">
-<p class="title">スタイリングアイテム</p>
+<p class="title">関連商品</p>
 </HeaderTemplate>
 <ItemTemplate>
 <div class="productInfoList">
