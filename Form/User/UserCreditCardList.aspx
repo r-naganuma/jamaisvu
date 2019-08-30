@@ -65,7 +65,7 @@
 		</asp:Repeater>
 		<!-- <asp:Literal ID="lErrorMessage" Runat="server"></asp:Literal> -->
 
-		<div class="allBtnBox">
+		<div class="allBtnBox allBtnBoxCredit">
 			<a href="javascript:history.back()" class="prevBtn">戻る</a>
 			<asp:LinkButton id="lbInsert" runat="server" OnClick="lbInsert_Click" class="nextBtn">クレジットカードの追加</asp:LinkButton>
 		</div>

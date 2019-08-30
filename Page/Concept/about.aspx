@@ -7,7 +7,7 @@
 --%>
 <%-- ▽ユーザーコントロール宣言領域▽ --%>
 <%-- △ユーザーコントロール宣言領域△ --%>
-<%@ Page Title="製品化までのストーリー | Jamais Vu オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
+<%@ Page Title="製品化までのストーリー｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="JAMAIS VU （ジャメヴ）の製品化までのストーリーページ。上質なニットが作られる製造工程をご紹介します。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="素材,JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
 <%--
 
 下記のタグはファイル情報保持用です。削除しないでください。
