@@ -260,7 +260,7 @@ textarea::focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 25px;
+  margin: 0 0 0;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -271,8 +271,8 @@ textarea::focus {
 
 @media (max-width: 768px) {
   .cart4 #CartList .orderBox h4 {
-    padding: 0 0 10px 4px;
-    margin: 0 0 20px;
+    padding: 0 0 20px 4px;
+    margin: 0;
     font-size: 13px;
   }
 }
@@ -1167,6 +1167,21 @@ textarea::focus {
   }
 }
 
+.cart4 p.ttlA span {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  margin: 0px 0 25px 40px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .cart4 p.ttlA span {
+    font-size: 13px;
+    margin: 0px 0 20px 0px;
+  }
+}
+
 #Foot {
   border: none;
 }
@@ -1254,7 +1269,7 @@ textarea::focus {
 
 .first_wrap .priceList {
   float: right;
-  width: 220px;
+  width: 240px;
 }
 
 @media (max-width: 768px) {

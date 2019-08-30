@@ -247,12 +247,12 @@ $bp768: 768px;  // スマホ
 			    font-size: 12px;
 			    border-bottom: 1px solid #EAE6E5;
 			    display: flex;
-			    margin: 0 0 25px;
+			    margin: 0 0 0;
 			    align-items: center;
 			    justify-content: space-between;
 				@include bp768 {
-			    padding: 0 0 10px 4px;
-			    margin: 0 0 20px;
+			    padding: 0 0 20px 4px;
+			    margin: 0;
 			    font-size: 13px;
 				}
 			    span{
@@ -982,6 +982,17 @@ $bp768: 768px;  // スマホ
 			display: block!important;
 		}
 	}
+	p.ttlA span {
+	    font-size: 14px;
+	    font-weight: bold;
+	    letter-spacing: 0.08em;
+	    margin: 0px 0 25px 40px;
+	    display: block;
+	    @include bp768 {
+	    font-size: 13px;
+	    margin: 0px 0 20px 0px;
+	    }
+	}
 }
 
 #Foot{
@@ -1049,7 +1060,7 @@ $bp768: 768px;  // スマホ
 
 	.priceList {
 	    float: right;
-	    width: 220px;
+	    width: 240px;
 	    @include bp768 {
 		width: 100%;
 	    }
