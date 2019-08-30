@@ -35,7 +35,7 @@
 					
 				</dt>
 				<dd class="inputBox_right noBBsp">
-					<asp:TextBox ID="tbBirth" Runat="server" placeholder="例）19700101" CssClass="loginId" MaxLength="8"></asp:TextBox>
+					<asp:TextBox ID="tbBirth" Runat="server" placeholder="19800101" CssClass="loginId" MaxLength="8"></asp:TextBox>
 					<asp:CustomValidator ID="cvBirth" runat="Server"
 						ControlToValidate="tbBirth"
 						ValidationGroup="PasswordModify"
@@ -96,7 +96,7 @@
 					
 				</dt>
 				<dd class="inputBox_right">
-					<asp:TextBox ID="tbPasswordConf" Runat="server" placeholder="半角英数字で入力してください" TextMode="Password" autocomplete="off" CssClass="loginId" MaxLength="15"></asp:TextBox>
+					<asp:TextBox ID="tbPasswordConf" Runat="server" placeholder="半角英数字で入力してください" TextMode="Password" autocomplete="off" CssClass="loginId" MaxLength="30"></asp:TextBox>
 					<asp:CustomValidator ID="cvPasswordConf" runat="Server"
 						ControlToValidate="tbPasswordConf"
 						ValidationGroup="PasswordModify"

@@ -288,7 +288,7 @@ textarea::focus {
 }
 
 .cart3 #CartList .shoppingCart {
-  width: 25.3%;
+  width: 268px;
   float: right;
   background: #EAE6E5;
   padding: 25px 25px 0px 25px;
@@ -300,6 +300,22 @@ textarea::focus {
   .cart3 #CartList .shoppingCart {
     width: 100%;
     max-width: 100%;
+  }
+}
+
+.cart3 #CartList .shoppingCart.is-fixed {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  margin-left: 270px;
+}
+
+@media (max-width: 768px) {
+  .cart3 #CartList .shoppingCart.is-fixed {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    margin-left: 0;
   }
 }
 
@@ -1659,6 +1675,16 @@ textarea::focus {
   }
   div#hgcCouponList tr {
     display: block;
+  }
+}
+
+.errorBoxx {
+  margin-left: 272px;
+}
+
+@media (max-width: 768px) {
+  .errorBoxx {
+    margin-left: 30px;
   }
 }
 

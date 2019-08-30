@@ -138,7 +138,7 @@ $(function(){
         </div>
       &nbsp;&nbsp;
       <div class="name_wrap__innnar">
-      <span class="mei">名</span><asp:TextBox placeholder="忠太郎" ID="tbOwnerName2" Text="<%# this.CartList.Owner.Name2 %>" CssClass="input_widthA input_border" MaxLength='<%# GetMaxLength("@@User.name2.length_max@@") %>' runat="server"></asp:TextBox>
+      <span class="mei">名</span><asp:TextBox placeholder="花子" ID="tbOwnerName2" Text="<%# this.CartList.Owner.Name2 %>" CssClass="input_widthA input_border" MaxLength='<%# GetMaxLength("@@User.name2.length_max@@") %>' runat="server"></asp:TextBox>
       </div>
     </div>
     <small>
@@ -177,7 +177,7 @@ $(function(){
         </div>
         &nbsp;&nbsp;
         <div class="name_wrap__innnar">
-          <span class="sei_kana">めい</span><asp:TextBox placeholder="ちゅうたろう" ID="tbOwnerNameKana2" Text="<%# this.CartList.Owner.NameKana2 %>" CssClass="input_widthA input_border" MaxLength='<%# GetMaxLength("@@User.name_kana2.length_max@@") %>' runat="server"></asp:TextBox>
+          <span class="sei_kana">めい</span><asp:TextBox placeholder="はなこ" ID="tbOwnerNameKana2" Text="<%# this.CartList.Owner.NameKana2 %>" CssClass="input_widthA input_border" MaxLength='<%# GetMaxLength("@@User.name_kana2.length_max@@") %>' runat="server"></asp:TextBox>
         </div>
       </div>
     <small>
@@ -383,7 +383,7 @@ $(function(){
       メールアドレス
       &nbsp;<span class="fred">必須</span><span id="efo_sign_mail_addr"/>
     </dt>
-    <dd><asp:TextBox placeholder="jamaisvu@xxx.co.jp" ID="tbOwnerMailAddr" Text="<%# this.CartList.Owner.MailAddr %>" CssClass="input_widthE input_border" MaxLength="256" runat="server" Type="email"></asp:TextBox><br />
+    <dd><asp:TextBox placeholder="sample@sample.com" ID="tbOwnerMailAddr" Text="<%# this.CartList.Owner.MailAddr %>" CssClass="input_widthE input_border" MaxLength="256" runat="server" Type="email"></asp:TextBox><br />
     <small>
     <asp:CustomValidator
       ID="cvOwnerMailAddr"
@@ -412,7 +412,7 @@ $(function(){
       <!-- <%: ReplaceTag("@@User.mail_addr.name@@", ownerAddrCountryIsoCode) %>（確認用） -->
       &nbsp;<span class="fred">必須</span><span id="efo_sign_mail_addr_conf"/>
     </dt>
-    <dd><asp:TextBox placeholder="jamaisvu@xxx.co.jp" ID="tbOwnerMailAddrConf" Text="<%# this.CartList.Owner.MailAddr %>" CssClass="input_widthE input_border" MaxLength="256" runat="server" Type="email"></asp:TextBox><br />
+    <dd><asp:TextBox placeholder="sample@sample.com" ID="tbOwnerMailAddrConf" Text="<%# this.CartList.Owner.MailAddr %>" CssClass="input_widthE input_border" MaxLength="256" runat="server" Type="email"></asp:TextBox><br />
     <small>
     <asp:CustomValidator runat="Server"
       ID="cvOwnerMailAddrConf"
@@ -485,7 +485,7 @@ $(function(){
     </dt>
     <dd>
     <p class="pdg_topC">
-    <asp:TextBox placeholder="012" ID="tbOwnerZip1" Text="<%# this.CartList.Owner.Zip1 %>" CssClass="input_widthA input_border" MaxLength="3" runat="server" Type="tel"></asp:TextBox><span class="line_form"></span><asp:TextBox placeholder="3456" ID="tbOwnerZip2" Text="<%# this.CartList.Owner.Zip2 %>" CssClass="input_widthA input_border" MaxLength="4" runat="server" Type="tel"  OnTextChanged="lbSearchOwnergAddr_Click"></asp:TextBox></p>
+    <asp:TextBox placeholder="101" ID="tbOwnerZip1" Text="<%# this.CartList.Owner.Zip1 %>" CssClass="input_widthA input_border" MaxLength="3" runat="server" Type="tel"></asp:TextBox><span class="line_form"></span><asp:TextBox placeholder="0001" ID="tbOwnerZip2" Text="<%# this.CartList.Owner.Zip2 %>" CssClass="input_widthA input_border" MaxLength="4" runat="server" Type="tel"  OnTextChanged="lbSearchOwnergAddr_Click"></asp:TextBox></p>
     <span class="btn_add_sea"><asp:LinkButton ID="lbSearchOwnergAddr" runat="server" onclick="lbSearchOwnergAddr_Click" class="btn btn-mini" OnClientClick="return false;">住所検索</asp:LinkButton></span>
     <%--検索結果レイヤー--%>
     <uc:Layer ID="ucLayerForOwner" runat="server" />
@@ -518,7 +518,7 @@ $(function(){
       <%: ReplaceTag("@@User.addr1.name@@", ownerAddrCountryIsoCode) %>
       &nbsp;<span class="fred">必須</span><span id="efo_sign_addr1"/>
     </dt>
-    <dd><asp:DropDownList placeholder="港区" ID="ddlOwnerAddr1" DataSource="<%# this.Addr1List %>" DataTextField="Text" DataValueField="Value" SelectedValue="<%# this.CartList.Owner.Addr1 %>" runat="server"></asp:DropDownList>
+    <dd><asp:DropDownList placeholder="港区六本木" ID="ddlOwnerAddr1" DataSource="<%# this.Addr1List %>" DataTextField="Text" DataValueField="Value" SelectedValue="<%# this.CartList.Owner.Addr1 %>" runat="server"></asp:DropDownList>
     <small>
     <asp:CustomValidator
       ID="cvOwnerAddr1"
@@ -539,7 +539,7 @@ $(function(){
       <!-- <%: ReplaceTag("@@User.addr2.name@@", ownerAddrCountryIsoCode) %> -->
       &nbsp;<span class="fred">必須</span><% if (isOwnerAddrCountryJp) { %><span id="efo_sign_addr2"/><% } %>
     </dt>
-    <dd><asp:TextBox placeholder="六本木7-3-16" ID="tbOwnerAddr2" Text="<%# this.CartList.Owner.Addr2 %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr2.length_max@@") %>' runat="server"></asp:TextBox><br />
+    <dd><asp:TextBox placeholder="7-3-16" ID="tbOwnerAddr2" Text="<%# this.CartList.Owner.Addr2 %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr2.length_max@@") %>' runat="server"></asp:TextBox><br />
     <small>
     <asp:CustomValidator
       ID="cvOwnerAddr2"
@@ -559,7 +559,7 @@ $(function(){
       <!-- <%: ReplaceTag("@@User.addr3.name@@", ownerAddrCountryIsoCode) %> -->
       <% if (isOwnerAddrCountryJp) { %>&nbsp;<span class="fred">必須</span><span id="efo_sign_addr3"/><% } %>
     </dt>
-    <dd><asp:TextBox placeholder="六本木インターナショナルアネックスビル4F" ID="tbOwnerAddr3" Text="<%# this.CartList.Owner.Addr3 %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr3.length_max@@") %>' runat="server"></asp:TextBox><br />
+    <dd><asp:TextBox placeholder="ジャメヴマンション5F" ID="tbOwnerAddr3" Text="<%# this.CartList.Owner.Addr3 %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr3.length_max@@") %>' runat="server"></asp:TextBox><br />
     <small>
     <asp:CustomValidator
       ID="cvOwnerAddr3"

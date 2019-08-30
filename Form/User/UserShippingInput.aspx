@@ -47,7 +47,7 @@
 							<span>名</span>
 						</dt>
 						<dd>
-							<asp:TextBox id="tbShippingName2" Runat="server" placeholder="忠太郎" CssClass="nameLast"></asp:TextBox>
+							<asp:TextBox id="tbShippingName2" Runat="server" placeholder="花子" CssClass="nameLast"></asp:TextBox>
 						</dd>
 					</dl>
 					<asp:CustomValidator
@@ -86,7 +86,7 @@
 							<span>めい</span>
 						</dt>
 						<dd>
-							<asp:TextBox id="tbShippingNameKana2" Runat="server" placeholder="ちゅうたろう" CssClass="nameLast"></asp:TextBox>
+							<asp:TextBox id="tbShippingNameKana2" Runat="server" placeholder="はなこ" CssClass="nameLast"></asp:TextBox>
 						</dd>
 					</dl>
 					<asp:CustomValidator
@@ -194,11 +194,11 @@
 				<dd class="inputBox_right">
 					<dl class="zipArea">
 						<dt>
-							<asp:TextBox id="tbShippingZip1" MaxLength="3" Runat="server" placeholder="012" CssClass="zipFirst" Type="tel"></asp:TextBox>
+							<asp:TextBox id="tbShippingZip1" MaxLength="3" Runat="server" placeholder="101" CssClass="zipFirst" Type="tel"></asp:TextBox>
 						</dt>
 						<dd>ー</dd>
 						<dt>
-							<asp:TextBox id="tbShippingZip2" MaxLength="4" Runat="server" placeholder="3456" CssClass="zipLast" Type="tel" OnTextChanged="lbSearchShippingAddr_Click"></asp:TextBox>
+							<asp:TextBox id="tbShippingZip2" MaxLength="4" Runat="server" placeholder="0001" CssClass="zipLast" Type="tel" OnTextChanged="lbSearchShippingAddr_Click"></asp:TextBox>
 						</dt>
 						<asp:LinkButton style="display: none;" ID="lbSearchShippingAddr" runat="server" OnClick="lbSearchShippingAddr_Click" class="btn btn-mini" OnClientClick="return false;">住所検索</asp:LinkButton><br/>
 						<%--検索結果レイヤー--%>
@@ -249,7 +249,7 @@
 				</dt>
 				<dd class="inputBox_right">
 					<% SetMaxLength(this.WtbShippingAddr2, "@@User.addr2.length_max@@"); %>
-					<asp:TextBox id="tbShippingAddr2" Runat="server" placeholder="港区" CssClass="addr"></asp:TextBox>
+					<asp:TextBox id="tbShippingAddr2" Runat="server" placeholder="港区六本木" CssClass="addr"></asp:TextBox>
 					<asp:CustomValidator
 						ID="cvShippingAddr2"
 						runat="Server"
@@ -267,7 +267,7 @@
 				</dt>
 				<dd class="inputBox_right">
 					<% SetMaxLength(this.WtbShippingAddr3, "@@User.addr3.length_max@@"); %>
-					<asp:TextBox id="tbShippingAddr3" Runat="server" placeholder="六本木7-3-16" CssClass="addr2"></asp:TextBox>
+					<asp:TextBox id="tbShippingAddr3" Runat="server" placeholder="7-3-16" CssClass="addr2"></asp:TextBox>
 					<asp:CustomValidator
 						ID="cvShippingAddr3"
 						runat="Server"
@@ -285,7 +285,7 @@
 				</dt>
 				<dd class="inputBox_right">
 					<% SetMaxLength(this.WtbShippingAddr4, "@@User.addr4.length_max@@"); %>
-					<asp:TextBox id="tbShippingAddr4" Runat="server" placeholder="六本木インターナショナルアネックスビル4F" CssClass="addr2"></asp:TextBox>
+					<asp:TextBox id="tbShippingAddr4" Runat="server" placeholder="ジャメヴマンション5F" CssClass="addr2"></asp:TextBox>
 					<asp:CustomValidator
 						ID="cvShippingAddr4"
 						runat="Server"

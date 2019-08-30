@@ -82,7 +82,7 @@ $(function () {
 							<span>名</span>
 						</dt>
 						<dd>
-							<asp:TextBox id="tbUserName2" Runat="server" placeholder="忠太郎" CssClass="nameLast"></asp:TextBox>
+							<asp:TextBox id="tbUserName2" Runat="server" placeholder="花子" CssClass="nameLast"></asp:TextBox>
 						</dd>
 					</dl>
 					<asp:CustomValidator
@@ -124,7 +124,7 @@ $(function () {
 								<span>めい</span>
 							</dt>
 							<dd>
-								<asp:TextBox id="tbUserNameKana2" Runat="server" placeholder="ちゅうたろう" CssClass="nameLast"></asp:TextBox>
+								<asp:TextBox id="tbUserNameKana2" Runat="server" placeholder="はなこ" CssClass="nameLast"></asp:TextBox>
 							</dd>
 						</dl>
 						<asp:CustomValidator
@@ -354,7 +354,7 @@ $(function () {
 						<span id="efo_sign_mail_addr"/>
 					</dt>
 					<dd class="inputBox_right">
-						<asp:TextBox id="tbUserMailAddr" Runat="server" MaxLength="256" placeholder="jamaisvu@xxx.co.jp" Type="email"></asp:TextBox>
+						<asp:TextBox id="tbUserMailAddr" Runat="server" MaxLength="256" placeholder="sample@sample.com" Type="email"></asp:TextBox>
 						<%if (Constants.LOGIN_ID_USE_MAILADDRESS_ENABLED) {%>
 						<%} %>
 						<asp:CustomValidator
@@ -381,7 +381,7 @@ $(function () {
 						<span id="efo_sign_mail_addr_conf"/>
 					</dt>
 					<dd class="inputBox_right">
-						<asp:TextBox id="tbUserMailAddrConf" Runat="server" MaxLength="256" placeholder="jamaisvu@xxx.co.jp" Type="email"></asp:TextBox>
+						<asp:TextBox id="tbUserMailAddrConf" Runat="server" MaxLength="256" placeholder="sample@sample.com" Type="email"></asp:TextBox>
 						<asp:CustomValidator
 							ID="cvUserMailAddrConf"
 							runat="Server"
@@ -461,11 +461,11 @@ $(function () {
 					<dd class="inputBox_right">
 						<dl class="zipArea">
 							<dt>
-								<asp:TextBox id="tbUserZip1" Runat="server" placeholder="012" MaxLength="3" CssClass="zipFirst" Type="tel"></asp:TextBox>
+								<asp:TextBox id="tbUserZip1" Runat="server" placeholder="101" MaxLength="3" CssClass="zipFirst" Type="tel"></asp:TextBox>
 							</dt>
 							<dd>ー</dd>
 							<dt>
-								<asp:TextBox id="tbUserZip2" Runat="server" placeholder="3456" MaxLength="4" CssClass="zipLast" Type="tel" OnTextChanged="lbSearchAddr_Click"></asp:TextBox>
+								<asp:TextBox id="tbUserZip2" Runat="server" placeholder="0001" MaxLength="4" CssClass="zipLast" Type="tel" OnTextChanged="lbSearchAddr_Click"></asp:TextBox>
 							</dt>
 							<asp:LinkButton style="display: none;" ID="lbSearchAddr" runat="server" OnClick="lbSearchAddr_Click" class="btn btn-mini" OnClientClick="return false;">
 								住所検索</asp:LinkButton>
@@ -519,7 +519,7 @@ $(function () {
 					</dt>
 					<dd class="inputBox_right">
 						<% SetMaxLength(this.WtbUserAddr2, "@@User.addr2.length_max@@"); %>
-						<asp:TextBox id="tbUserAddr2" Runat="server" placeholder="港区" CssClass="addr"></asp:TextBox>
+						<asp:TextBox id="tbUserAddr2" Runat="server" placeholder="港区六本木" CssClass="addr"></asp:TextBox>
 						<asp:CustomValidator
 							ID="cvUserAddr2"
 							runat="Server"
@@ -537,7 +537,7 @@ $(function () {
 					</dt>
 					<dd class="inputBox_right">
 						<% SetMaxLength(this.WtbUserAddr3, "@@User.addr3.length_max@@"); %>
-						<asp:TextBox id="tbUserAddr3" Runat="server" placeholder="六本木7-3-16" CssClass="addr2"></asp:TextBox>
+						<asp:TextBox id="tbUserAddr3" Runat="server" placeholder="7-3-16" CssClass="addr2"></asp:TextBox>
 						<asp:CustomValidator
 							ID="cvUserAddr3"
 							runat="Server"
@@ -555,7 +555,7 @@ $(function () {
 					</dt>
 					<dd class="inputBox_right">
 						<% SetMaxLength(this.WtbUserAddr4, "@@User.addr4.length_max@@"); %>
-						<asp:TextBox id="tbUserAddr4" Runat="server" placeholder="六本木インターナショナルアネックスビル4F" CssClass="addr2"></asp:TextBox>
+						<asp:TextBox id="tbUserAddr4" Runat="server" placeholder="ジャメヴマンション5F" CssClass="addr2"></asp:TextBox>
 						<asp:CustomValidator
 							ID="cvUserAddr4"
 							runat="Server"
@@ -680,7 +680,7 @@ $(function () {
 					</dt>
 					<dd class="inputBox_right">
 						<% SetMaxLength(this.WtbUserPassword, "@@User.password.length_max@@"); %>
-						<asp:TextBox id="tbUserPassword" TextMode="Password" autocomplete="off" CssClass="password" Runat="server" placeholder="半角英数字で入力してください"></asp:TextBox>
+						<asp:TextBox id="tbUserPassword" TextMode="Password" autocomplete="off" CssClass="password" Runat="server" placeholder="半角英数字で入力してください" MaxLength="15"></asp:TextBox>
 						<asp:CustomValidator
 							ID="cvUserPassword"
 							runat="Server"
@@ -697,7 +697,7 @@ $(function () {
 					</dt>
 					<dd class="inputBox_right">
 						<% SetMaxLength(this.WtbUserPasswordConf, "@@User.password.length_max@@"); %>
-						<asp:TextBox id="tbUserPasswordConf" TextMode="Password" autocomplete="off" CssClass="password" Runat="server" placeholder="半角英数字で入力してください"></asp:TextBox>
+						<asp:TextBox id="tbUserPasswordConf" TextMode="Password" autocomplete="off" CssClass="password" Runat="server" placeholder="半角英数字で入力してください" MaxLength="15"></asp:TextBox>
 						<asp:CustomValidator
 							ID="cvUserPasswordConf"
 							runat="Server"
@@ -709,7 +709,7 @@ $(function () {
 							CssClass="error_inline" />
 						<div class="noticeArea">
 							<p>
-								※半角英数字 7文字以上,30文字以内で入力してください。<br>
+								※半角英数字 7文字以上,15文字以内で入力してください。<br>
 								※IDと同様のパスワードは入力できません。
 							</p>
 						</div>

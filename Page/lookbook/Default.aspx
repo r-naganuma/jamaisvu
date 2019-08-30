@@ -27,7 +27,7 @@
 	<div class="lookWrap">
 		<h2>LOOKBOOK</h2>
 		<div class="lookWrap_archive">
-			<div class="lookWrap_archive--list">
+			<!-- <div class="lookWrap_archive--list">
 				<img src="<%= Constants.PATH_ROOT %>Page/lookbook/images/edition3.jpg" alt="edition3">
 				<div class="mask">
 					<div class="caption">
@@ -48,7 +48,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<div class="lookWrap_archive--list">
 				<img src="<%= Constants.PATH_ROOT %>Page/lookbook/images/edition1.jpg" alt="edition1">
 				<div class="mask">

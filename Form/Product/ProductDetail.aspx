@@ -1267,7 +1267,7 @@ iframe {
 <asp:Repeater DataSource=<%# this.ProductCrossSellList %> Visible="<%# this.ProductCrossSellList.Count != 0 %>" runat="server">
 <HeaderTemplate>
 <div id="dvCrossSell" class="clearFix">
-<p class="title">関連商品</p>
+<p class="title">レコメンドアイテム</p>
 </HeaderTemplate>
 <ItemTemplate>
 <div class="productInfoList">
@@ -1283,14 +1283,14 @@ iframe {
 <a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrlUseProductCategory(Container.DataItem, "")) %>"><%# WebSanitizer.HtmlEncode(Eval(Constants.FIELD_PRODUCT_NAME)) %></a>
 <%-- ▽商品会員ランク価格有効▽ --%>
 	<p visible='<%# GetProductMemberRankPriceValid(Container.DataItem) %>' runat="server">
-	<strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %></strike><br />
-<%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem, false)) %>
+	<strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</strike><br />
+<%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem, false)) %>(tax in)
 	</p>
 <%-- △商品会員ランク価格有効△ --%>
 <%-- ▽商品セール価格有効▽ --%>
 	<p visible='<%# ProductPage.GetProductTimeSalesValid(Container.DataItem) %>' runat="server">
-	<strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %></strike><br />
-<%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %>
+	<strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</strike><br />
+<%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %>(tax in)
 	</p>
 <%-- △商品セール価格有効△ --%>
 <%-- ▽商品特別価格有効▽ --%>
@@ -1302,16 +1302,16 @@ iframe {
 <%-- △商品特別価格有効△ --%>
 <%-- ▽商品通常価格有効▽ --%>
 	<p visible='<%# ProductPage.GetProductNormalPriceValid(Container.DataItem) %>' runat="server">
-<%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>
+<%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)
 	</p>
 <%-- △商品通常価格有効△ --%>
 <%-- ▽定期購入有効▽ --%>
 <% if (Constants.FIXEDPURCHASE_OPTION_ENABLED) {%>
 	<p visible='<%# (GetKeyValue(Container.DataItem, Constants.FIELD_PRODUCT_FIXED_PURCHASE_FLG).ToString() != Constants.FLG_PRODUCT_FIXED_PURCHASE_FLG_INVALID) %>' runat="server">
 		<span visible='<%# IsProductFixedPurchaseFirsttimePriceValid(Container.DataItem) %>' runat="server">
-			<p class="productPrice">定期初回価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductFixedPurchaseFirsttimePrice(Container.DataItem)) %></span></p>
+			<p class="productPrice">定期初回価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductFixedPurchaseFirsttimePrice(Container.DataItem)) %>(tax in)</span></p>
 		</span>
-		<p class="productPrice">定期通常価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductFixedPurchasePrice(Container.DataItem)) %></span></p>
+		<p class="productPrice">定期通常価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductFixedPurchasePrice(Container.DataItem)) %>(tax in)</span></p>
 	</p>
 <% } %>
 <%-- △定期購入有効△ --%>
@@ -1330,7 +1330,7 @@ iframe {
 <asp:Repeater DataSource=<%# this.ProductUpSellList %> Visible="<%# this.ProductUpSellList.Count != 0 %>" runat="server">
 <HeaderTemplate>
 <div id="dvUpSell" class="clearFix">
-<p class="title">スタイリングアイテム</p>
+<p class="title">関連商品</p>
 </HeaderTemplate>
 <ItemTemplate>
 <div class="productInfoList">
