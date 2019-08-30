@@ -299,6 +299,7 @@ textarea::focus {
 @media (max-width: 768px) {
   .cart3 #CartList .shoppingCart {
     width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -710,6 +711,17 @@ textarea::focus {
   margin: 20px 25px 0 0;
 }
 
+@media (max-width: 768px) {
+  .cart3 a.btn.btn-large.btn-gry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
 .cart3 a.btn.btn-large.btn-gry span {
   display: inline-block !important;
   margin: 0 20px 0 0;
@@ -758,6 +770,12 @@ textarea::focus {
   position: relative;
   top: 42px;
   left: 35px;
+}
+
+@media (max-width: 768px) {
+  .cart3 p.btn-gry__wrap {
+    left: 0;
+  }
 }
 
 .cart3 p.btn-gry__wrap a {
@@ -866,63 +884,57 @@ textarea::focus {
 }
 
 .cart3 .cre_a {
-  padding: 11px 0 0 270px;
+  padding: 11px 0 0 85px;
 }
 
 .cart3 .cre_a input {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .cart3 .cre_a {
-    width: 100%;
-  }
-}
-
 .cart3 .cre_a input + label {
-  padding-left: 32px;
+  padding-left: 28px;
   vertical-align: middle;
   position: relative;
-  padding-top: 0px;
-  margin-right: 50px;
-  display: block;
+  padding-top: 3px;
+  margin-right: 66px;
 }
 
-@media (max-width: 768px) {
-  .cart3 .cre_a input + label {
-    margin-right: 0px;
-  }
-}
-
-.cart3 .cre_a input + label:before {
+.cart3 .cre_a input + label::before {
   content: "";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #968680;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #C0B6B3;
   border-radius: 3px;
   background: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.cart3 .cre_a input:checked + label:after {
+.cart3 .cre_a input:checked + label::after {
   content: "";
   display: block;
   position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 9px;
-  height: 9px;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 15px;
   background: #2E0E02;
-  border-radius: 2px;
+  border-radius: 3px;
+  background: url(../../Contents/ImagesPkg/common/check@2x.png);
+  display: block;
+  background-position: 0px 2px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-.cart3 .cre_a input:checked + label.on:after {
-  content: "";
+@media (max-width: 768px) {
+  .cart3 .cre_a input:checked + label::after {
+    border-radius: 8px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -935,6 +947,35 @@ textarea::focus {
   .cart3 input#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_cbRegistCreditCard + label,
   .cart3 input#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_cbRegistCreditCard + label {
     font-size: 13px !important;
+  }
+}
+
+.cart3 .divUserCred dt {
+  background: #fbfafa !important;
+  width: 130px !important;
+}
+
+.cart3 .divUserCred dt .fred {
+  color: #fff;
+  background: #AD2E24;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 3px;
+  top: -2px;
+  position: relative;
+  margin: 0 0 0 12px;
+}
+
+.cart3 .divUserCred input {
+  width: 376px;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .cart3 .divUserCred input {
+    width: 100%;
+    border-radius: 2px;
+    height: 38px;
   }
 }
 
@@ -979,13 +1020,20 @@ textarea::focus {
 
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divUserCreditCardName,
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divUserCreditCardName {
-  padding: 10px 0 0 85px;
+  background: rgba(234, 230, 229, 0.2);
+  padding: 20px 20px 20px 20px;
+  margin: 15px 0 0 85px;
+  width: 554px;
 }
 
 @media (max-width: 768px) {
   .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divUserCreditCardName,
   .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divUserCreditCardName {
-    padding: 25px 0 0 11%;
+    background: rgba(234, 230, 229, 0.2);
+    padding: 20px 20px 20px 20px;
+    margin: 17px 0 0 0;
+    width: 100%;
+    padding: 25px 20px 25px 20px !important;
   }
 }
 
@@ -1102,6 +1150,11 @@ textarea::focus {
   padding: 0;
   font-size: 14px;
   color: #333;
+  margin: 40px 0 0;
+  /* border-bottom: 1px solid; */
+  border-bottom: 1px solid #2E0E02;
+  padding: 0 0 15px;
+  height: 34px;
 }
 
 .cart3 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponSelect {
@@ -1168,16 +1221,23 @@ textarea::focus {
   content: "";
   display: block;
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 12px;
-  height: 12px;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 15px;
   background: #2E0E02;
   border-radius: 3px;
+  background: url(../../Contents/ImagesPkg/common/check@2x.png);
+  display: block;
+  background-position: 0px 3px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-.cart3 .checkBox input:checked + label.on::after {
-  content: "";
+@media (max-width: 768px) {
+  .cart3 .checkBox input:checked + label::after {
+    border-radius: 8px;
+  }
 }
 
 .cart3 .divUserCreditCardName__wrap {
@@ -1469,7 +1529,8 @@ textarea::focus {
 
 .cart3 a#ctl00_ContentPlaceHolder1_rCartList_ctl00_lbShowCouponBox,
 .cart3 a#ctl00_ContentPlaceHolder1_rCartList_ctl01_lbShowCouponBox {
-  width: 180px;
+  width: 67%;
+  max-width: 180px;
   margin: auto;
   height: 40px;
   display: -webkit-box !important;
@@ -1482,7 +1543,7 @@ textarea::focus {
   -ms-flex-pack: center;
   justify-content: center;
   line-height: 0;
-  background-color: #968680 !important;
+  background: #968680 !important;
   margin: auto !important;
   font-size: 12px;
   color: #fff;
@@ -1538,6 +1599,11 @@ textarea::focus {
   div#hgcCouponList a#ctl00_ContentPlaceHolder1_rCartList_ctl01_lbCouponBoxClose {
     position: relative;
     top: 25px;
+  }
+  div#hgcCouponList h2.ttlA.p2 {
+    border-bottom: #CCCCCC solid 1px !important;
+    padding: 0 0 20px 0 !important;
+    margin: 0px 0 15px !important;
   }
   div#hgcCouponList tr:nth-child(1) {
     display: none;
