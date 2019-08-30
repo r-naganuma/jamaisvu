@@ -1184,8 +1184,9 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 	</h3>
 	<div class="bottom">
 		<div class="first_wrap">
-			    <h4 class="ttlA" visible='<%# ((CartObject)Container.DataItem).ShippingType == "100" %>' runat="server"><span>【通常商品】お届け先情報</span></h4>
-          <h4 class="ttlA" visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server"><span>【予約商品】お届け先情報</span></h4>
+			    <p class="ttlA" visible='<%# ((CartObject)Container.DataItem).ShippingType == "100" %>' runat="server"><span>【通常配送商品】</span></p>
+          <p class="ttlA" visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server"><span>【予約商品】</span></p>
+          <h4 class="ttlA"><span>商品情報</span></h4>
 			<div class="first_wrap__innar">
 				<div class="first_wrap__innar__top">
 					
@@ -1606,9 +1607,9 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 				<p id="P1" visible='<%# ((CartProduct)Container.DataItem).ProductOptionSettingList.IsSelectedProductOptionValueAll %>' runat="server">
 				<asp:Repeater ID="rProductOptionSettings" DataSource='<%# ((CartProduct)Container.DataItem).ProductOptionSettingList %>' runat="server">
 					<ItemTemplate>
-					<%# (((ProductOptionSetting)Container.DataItem).GetDisplayProductOptionSettingSelectValue() != "") ? "<strong>" : "" %>
+					<%# (((ProductOptionSetting)Container.DataItem).GetDisplayProductOptionSettingSelectValue() != "") ? "<span>" : "" %>
 					<%# WebSanitizer.HtmlEncode(((ProductOptionSetting)Container.DataItem).GetDisplayProductOptionSettingSelectValue()) %>
-					<%# (((ProductOptionSetting)Container.DataItem).GetDisplayProductOptionSettingSelectValue() != "") ? "</strong>" : "" %>
+					<%# (((ProductOptionSetting)Container.DataItem).GetDisplayProductOptionSettingSelectValue() != "") ? "</span>" : "" %>
 					</ItemTemplate>
 				</asp:Repeater>
 				</p>
@@ -1667,11 +1668,26 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 
 				$(".clone_2",this).html(nstr);
 
-				var str = $(".data1 p",this).text().trim();
-				str = str.replace(/色：/g, ''); // "bcbc"
-         str = str.replace(/配送時期：11月上旬/g, ''); // "bcbc"
-				$(".s2 .s_dd",this).text(str);
-				$(".d2 .d_dd",this).text(str);
+				// var str = $(".data1 p",this).text().trim();
+				// str = str.replace(/色：/g, ''); // "bcbc"
+    //     str = str.replace(/カラー：/g, ''); // "bcbc"
+    //     str = str.replace(/配送時期：11月上旬/g, ''); // "bcbc"]
+
+
+
+        var str = $(".data1 span:nth-child(1)",this).text().trim();
+        str = str.replace(/カラー：/g, ''); // "bcbc"
+        str = str.replace(/カラー：/g, ''); // "bcbc"
+
+        $(".s2 .s_dd",this).text(str);
+        $(".d2 .d_dd",this).text(str);
+
+        var str = $(".data1 span:nth-child(2)",this).text().trim();
+        str = str.replace(/配送時期：/g, ''); // "bcbc"
+
+        $(".s3 .s_dd",this).text(str);
+        $(".d3 .d_dd",this).text(str);
+
 		 })
 
 
@@ -1700,6 +1716,10 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 							</div>
 							<div class="s_dd"></div>
 						</div>
+          <div class="itemcart_detail d3">
+            <div class="d_dt">配送時期</div>
+            <div class="d_dd"></div>
+          </div>
 					</div>
 				</div>	
 

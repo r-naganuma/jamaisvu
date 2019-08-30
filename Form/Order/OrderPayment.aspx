@@ -271,7 +271,7 @@ div#primary {
     <dt>
     <strong>カード番号</strong><span class="fred"></span></dt>
     <dd>
-    <p><asp:TextBox id="tbCreditCardNo1" runat="server" CssClass="input_widthA input_border" MaxLength="16" Text="<%# GetCreditValue(((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment, CartPayment.FIELD_CREDIT_CARD_NO_1) %>" autocomplete="off" Type="tel"></asp:TextBox>
+    <p><asp:TextBox id="tbCreditCardNo1" runat="server" CssClass="input_widthA input_border" MaxLength="16" Text="<%# GetCreditValue(((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment, CartPayment.FIELD_CREDIT_CARD_NO) %>" autocomplete="off" Type="tel"></asp:TextBox>
 
     <small class="fred">
       <asp:CustomValidator ID="cvCreditCardNo1" runat="Server"
@@ -569,7 +569,7 @@ div#primary {
 	<%-- ▼カート情報▼ --%>
 	<div class="shoppingCart">
 
-	
+	<p class="shoppingCart__title"></p>
 	<div id="Div7" visible="<%# (Container.ItemIndex == 0) %>" runat="server">
 	<h2><img src="../../Contents/ImagesPkg/common/ttl_shopping_cart.gif" alt="ショッピングカート" width="141" height="16" /></h2>
 	<div class="sumBox mrg_topA kei1">
@@ -739,7 +739,7 @@ div#primary {
 	<div class="couponBox">
 	<div id="divCouponBox" class="box" runat="server">
 	<!-- <p>クーポンを使う</p> -->
-	<p class="divCouponBox__p"><!-- <img src="../../Contents/ImagesPkg/common/ttl_coupon.gif" alt="クーポンを使う" width="262" height="23" /> --></p>
+	<p class="divCouponBox__p">クーポンを使う<!-- <img src="../../Contents/ImagesPkg/common/ttl_coupon.gif" alt="クーポンを使う" width="262" height="23" /> --></p>
 	<div id="divCouponInputMethod" runat="server" style="font-size: 10px; padding: 10px 10px 0px 10px; font-family: 'Lucida Grande','メイリオ',Meiryo,'Hiragino Kaku Gothic ProN', sans-serif; color: #333;">
 		<asp:RadioButtonList runat="server" AutoPostBack="true" ID="rblCouponInputMethod"
 			OnSelectedIndexChanged="rblCouponInputMethod_SelectedIndexChanged" OnDataBinding="rblCouponInputMethod_DataBinding"
@@ -755,14 +755,16 @@ div#primary {
 	</div>
 	<span class="fred" visible="<%# this.ErrorMessages.HasMessages(Container.ItemIndex, CartErrorMessages.ErrorKbn.Coupon) %>" runat="server">
 		<%# WebSanitizer.HtmlEncode(this.ErrorMessages.Get(Container.ItemIndex, CartErrorMessages.ErrorKbn.Coupon)) %></span>
-	<asp:LinkButton runat="server" ID="lbShowCouponBox" Text="クーポンを選ぶ"
-		style=""
+	<asp:LinkButton runat="server" ID="lbShowCouponBox" Text="クーポンBOX"
+		style="color: #ffffff !important; background-color: #000 !important;
+		border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); display: inline-block;
+		padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; text-align: center; vertical-align: middle; cursor: pointer;
+		border: 1px solid #cccccc; border-radius: 4px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); white-space: nowrap; text-decoration: none; "
 		OnClick="lbShowCouponBox_Click" ></asp:LinkButton>
 	<div id="hgcCouponSelect" runat="server">
 		<asp:DropDownList disabled="disabled" CssClass="input_border" style="width: 240px" ID="ddlCouponList" runat="server" DataTextField="Text" DataValueField="Value" OnTextChanged="ddlCouponList_TextChanged" AutoPostBack="true"></asp:DropDownList>
 	</div>
 	</div><!--boxbtm-->
-	<p class="shoppingCart__title"></p>
 	</div><!--box-->
 	<div runat="server" id="hgcCouponBox" style="z-index: 1; top: 0; left: 0; width: 100%; height: 120%; position: fixed; background-color: rgba(128, 128, 128, 0.75);" 
 		Visible='<%# ((CartObject)Container.DataItem).CouponBoxVisible %>'>
