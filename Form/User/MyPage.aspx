@@ -7,7 +7,7 @@
 --%>
 <%@ Register TagPrefix="uc" TagName="BodyUserProductRecommend" Src="~/Form/Common/Product/BodyUserProductRecommend.ascx" %>
 <%@ Register TagPrefix="uc" TagName="BodyProductRecommendByRecommendEngine" Src="~/Form/Common/Product/BodyProductRecommendByRecommendEngine.ascx" %>
-<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_MyPage, App_Web_mypage.aspx.b2a7112d" title="マイページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_MyPage, App_Web_mypage.aspx.b2a7112d" title="マイページ｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="マイページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 	<div class="mypageCts">
 		<h2>マイページ</h2>

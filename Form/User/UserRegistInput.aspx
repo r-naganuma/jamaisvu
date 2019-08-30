@@ -7,7 +7,7 @@
 --%>
 <%@ Register TagPrefix="uc" TagName="BodyUserExtendRegist" Src="~/Form/Common/User/BodyUserExtendRegist.ascx" %>
 <%@ Register TagPrefix="uc" TagName="Layer" Src="~/Form/Common/Layer/SearchResultLayer.ascx" %>
-<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_UserRegistInput, App_Web_userregistinput.aspx.b2a7112d" title="会員新規登録入力ページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_UserRegistInput, App_Web_userregistinput.aspx.b2a7112d" title="会員情報入力（新規登録）｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="会員情報入力（新規登録）ページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 <%@ Register TagPrefix="uc" TagName="PaypalScriptsForm" Src="~/Form/Common/PayPalScriptsForm.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script type="text/javascript" charset="utf-8" src="https://api.socialplus.jp/jamaisvu/jamaisvu/form_assist/assist.js"></script>

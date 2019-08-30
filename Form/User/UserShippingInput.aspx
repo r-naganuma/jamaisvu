@@ -5,7 +5,7 @@
   Copyright   : Copyright w2solution Co.,Ltd. 2009 All Rights Reserved.
 =========================================================================================================
 --%>
-<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_UserShippingInput, App_Web_usershippinginput.aspx.b2a7112d" title="お届け先情報変更" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_UserShippingInput, App_Web_usershippinginput.aspx.b2a7112d" title="お届け先住所（新規入力）｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="お届け先住所（新規入力）ページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 <%@ Register TagPrefix="uc" TagName="Layer" Src="~/Form/Common/Layer/SearchResultLayer.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <div class="registWrap mypageCts">
