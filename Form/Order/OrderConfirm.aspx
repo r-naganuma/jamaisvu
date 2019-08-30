@@ -1567,12 +1567,7 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 
   <!--bottom-->
 
-	<p class="oc_text oct1">※ご注文前に必ずサイズ・カラー・価格・数量のご確認をお願い致します。 <br>
-	商品状態により返品・交換をお受けできない場合がございます。  <br>
-	<a href="">返品交換について</a></p>
-	<p class="oc_text oct2">ご注文確認メールはご注文完了と同時に自動送信させて頂いておりますが、 <br>
-		迷惑メールなどに振り分けられている可能性もございますので、 <br>
-		お手数おかけいたしますが当社のドメイン「XXXXXXXX.com」を受信できるようにメールの設定をお願いいたします。</p>
+
 	</div><!--orderBox-->
 	</div><!--column-->
 	<%-- ▲注文内容▲ --%>
@@ -1723,9 +1718,9 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 							</div>
 							<div class="s_dd"></div>
 						</div>
-          <div class="itemcart_detail d3">
-            <div class="d_dt">配送時期</div>
-            <div class="d_dd"></div>
+          <div class="s_dl s3 itemcart_detail d3">
+            <div class="s_dt">配送時期</div>
+            <div class="s_dd"></div>
           </div>
 					</div>
 				</div>	
@@ -1990,7 +1985,14 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 <!-- <div style="text-align:right;padding:10px 0;" id="hgcCompleteMessage" runat="server">
 	以下の内容をご確認のうえ、「注文を確定する」ボタンをクリックしてください。
 </div> -->
-
+<div class="oc_text__wrap">
+  <p class="oc_text oct1">※ご注文前に必ずサイズ・カラー・価格・数量のご確認をお願い致します。 <br>
+  商品状態により返品・交換をお受けできない場合がございます。  <br>
+  <a href="https://jamaisvu.co.jp/Page/userGuide/">返品・交換について</a></p>
+  <p class="oc_text oct2">ご注文確認メールはご注文完了と同時に自動送信させて頂いておりますが、 <br>
+  迷惑メールなどに振り分けられている可能性もございますので、 <br>
+  お手数おかけいたしますが当社のドメイン「@jamaisvu.co.jp」を受信できるようにメールの設定をお願いいたします。</p>
+</div>
 <div class="sp_contents">
   <div class="add_cart_box">
   

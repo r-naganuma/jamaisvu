@@ -247,12 +247,12 @@ $bp768: 768px;  // スマホ
 			    font-size: 12px;
 			    border-bottom: 1px solid #EAE6E5;
 			    display: flex;
-			    margin: 0 0 0;
+			    margin: 0 0 20px;
 			    align-items: center;
 			    justify-content: space-between;
 				@include bp768 {
 			    padding: 0 0 20px 4px;
-			    margin: 0;
+			    margin: 0 0 20px;
 			    font-size: 13px;
 				}
 			    span{
@@ -324,7 +324,7 @@ $bp768: 768px;  // スマホ
 			.last{
 			    border: none;
 			    padding: 0 0 5px 0px;
-			    margin: 0 0 60px;
+			    margin: 0 0 00px;
 			    border-bottom: 1px solid #EAE6E5;
 			    div.box{
 			    	dt{
@@ -403,7 +403,7 @@ $bp768: 768px;  // スマホ
 		    width: 268px;
 		    float: right;
 		    background: #EAE6E5;
-		    padding: 25px 25px 40px 25px;
+		    padding: 45px 25px 40px 25px;
 		    position: relative;
 			@include bp768 {
 			width: 100%;
@@ -856,7 +856,7 @@ $bp768: 768px;  // スマホ
 	    position: static;
 	    right: 0;
 	    top: 0;
-	    margin: 40px 0 0;
+	    margin: 30px 0 0;
 	}
 	.btmbtn.below a {
 	    text-decoration: none;
@@ -914,22 +914,30 @@ $bp768: 768px;  // スマホ
 	  background: #fff;
 	  -webkit-box-sizing: border-box;
 	  box-sizing: border-box;
+	  @include bp768 {
+		  // border-radius: 12px;
+	  }
 	}
 
 	.radioBtn input:checked + label::after {
-	  content: "";
-	  display: block;
-	  position: absolute;
-	  top: 4px;
-	  left: 4px;
-	  width: 12px;
-	  height: 12px;
-	  background: #2E0E02;
-	  border-radius: 3px;
-	}
+		content: "";
+	    display: block;
+	    position: absolute;
+	    top: 2px;
+	    left: 2px;
+	    width: 16px;
+	    height: 15px;
+	    background: #2E0E02;
+	    border-radius: 3px;
+	    background: url(../../Contents/ImagesPkg/common/check@2x.png);
+	    display: block;
+	    background-position: 0px 3px;
+	    background-size: 100%;
+	    background-repeat: no-repeat;
 
-	.radioBtn input:checked + label.on::after {
-	  content: "";
+	  @include bp768 {
+		  border-radius: 8px;
+	  }
 	}
 	.Coupon_box {
 	    border: none;
@@ -979,7 +987,7 @@ $bp768: 768px;  // スマホ
 	}
 	p.shoppingCart__title {
 	    font-size: 14px;
-	    font-weight: bold;
+	    font-weight: normal;
 	    padding: 0 0;
 	    letter-spacing: 0.08em;
 	    strong{
@@ -1009,6 +1017,17 @@ $bp768: 768px;  // スマホ
 	    font-size: 13px;
 	    margin: 0px 0 20px 0px;
 	    }
+	}
+	.oc_text__wrap{
+		@include bp768 {
+			padding: 50px 0 ;
+		}
+	}
+	.oc_text{
+		a{
+			color: #968680;
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -1133,7 +1152,8 @@ $bp768: 768px;  // スマホ
 	dd.color_box {
 	    margin: 20px 0 0;
 	}
-	.s_dl.s1 {
+	.s_dl.s1,
+	.s_dl.s2 {
 	    margin: 0 0 5px!important;
 	    display: block;
 	}
