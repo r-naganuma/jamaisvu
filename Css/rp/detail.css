@@ -1025,6 +1025,12 @@ textarea::focus {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .tblLayout_ProductDetail .productPrice__wrap__detail {
+    display: block;
+  }
+}
+
 .tblLayout_ProductDetail #dvProductDetailArea .wrapProductPrice p strike {
   color: #AD2E24;
 }
@@ -1032,6 +1038,12 @@ textarea::focus {
 .tblLayout_ProductDetail p.productPrice.sale_price {
   color: #AD2E24;
   margin: 0 0 0 15px;
+}
+
+@media (max-width: 768px) {
+  .tblLayout_ProductDetail p.productPrice.sale_price {
+    margin: 0;
+  }
 }
 
 .tblLayout_ProductDetail #dvProductDetailArea .icon img {

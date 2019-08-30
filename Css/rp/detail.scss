@@ -806,6 +806,9 @@ $bp768: 768px;  // スマホ
 	}
 	.productPrice__wrap__detail {
 	    display: flex;
+	    @include bp768 {
+	    	display: block;
+	    }
 	}
 	#dvProductDetailArea .wrapProductPrice p strike {
 	    color: #AD2E24;
@@ -816,6 +819,9 @@ $bp768: 768px;  // スマホ
 	p.productPrice.sale_price {
 	    color: #AD2E24;
 	    margin: 0 0 0 15px;
+	    @include bp768 {
+	    	margin: 0;
+	    }
 	}
 	#dvProductDetailArea .icon img {
 	    height: 15px;
