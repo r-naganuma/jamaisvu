@@ -31,6 +31,13 @@ $(function(){
 	// if($(window).width()<768){
 	//  $(".add_cart_box").append($(".sc0"));
 	// }
+	$(window).scroll(function () {
+	  if ($(this).scrollTop() > 250) {
+	      $('.shoppingCart').addClass('is-fixed');
+	  } else {
+	      $('.shoppingCart').removeClass('is-fixed');
+	  }
+	});
 
 });
 function bodyPageLoad(){
@@ -190,7 +197,7 @@ div#primary {
 
 
 <%-- エラーメッセージ（デフォルト注文方法用） --%>
-<span style="color:red;text-align:center;display:block"><asp:Literal ID="lOrderErrorMessage" runat="server"></asp:Literal></span>
+<span class="error_inline"><asp:Literal ID="lOrderErrorMessage" runat="server"></asp:Literal></span>
 
 <div id="CartList">
 
@@ -203,7 +210,7 @@ div#primary {
 <asp:UpdatePanel ID="upUpdatePanel" runat="server">
 <ContentTemplate>
 <% if (string.IsNullOrEmpty(this.DispErrorMessage) == false) { %>
-<span style="color:red"><%: this.DispErrorMessage %></span>
+<span class="error_inline"><%: this.DispErrorMessage %></span>
 <% } %>
 <%-- ▼PayPalログインここから▼ --%>
 <%if (Constants.PAYPAL_LOGINPAYMENT_ENABLED) {%>
@@ -244,7 +251,7 @@ div#primary {
 		カート番号<%# Container.ItemIndex + 1 %><%# WebSanitizer.HtmlEncode(DispCartDecolationString(Container.DataItem, "（ギフト）", "（デジタルコンテンツ）"))%></h3>
 	<div class="bottom">
 	<div class="list">
-	<span style="color:red" runat="server" visible="<%# (string.IsNullOrEmpty(StringUtility.ToEmpty(this.DispLimitedPaymentMessages[Container.ItemIndex])) == false) %>">
+	<span class="error_inline" runat="server" visible="<%# (string.IsNullOrEmpty(StringUtility.ToEmpty(this.DispLimitedPaymentMessages[Container.ItemIndex])) == false) %>">
 		<%# StringUtility.ToEmpty(this.DispLimitedPaymentMessages[Container.ItemIndex]) %>
 		<br/>
 	</span>
@@ -278,7 +285,7 @@ div#primary {
     <%--▲▲ クレジット Token保持用 ▲▲--%>
     <%--▼▼ カード情報取得用 ▼▼--%>
     <input type="hidden" id="hidCinfo" name="hidCinfo" value="<%# CreateGetCardInfoJsScriptForCreditTokenForCart(((RepeaterItem)Container.Parent.Parent), Container) %>" />
-    <span id="spanErrorMessageForCreditCard" style="color: red; display: none" runat="server"></span>
+    <span id="spanErrorMessageForCreditCard" class="error_inline errorBoxx" runat="server"></span>
     <%--▲▲ カード情報取得用 ▲▲--%>
       
     <%--▼▼ カード情報入力（トークン未取得・利用なし） ▼▼--%>
