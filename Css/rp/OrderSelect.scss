@@ -183,6 +183,18 @@ $bp768: 768px;  // スマホ
 	th.productName {
 	    text-align: center!important;
 	}
+	.productId{
+		display:none;
+	}
+	td.productName {
+	    color: #fff!important;
+	    span{
+	    	color: #3d3d3d!important;
+	    }
+	}
+	.productName img{
+		display: none!important;
+	}
 
 }
 		#dvOrderBox #dvCartSelect table .remark {

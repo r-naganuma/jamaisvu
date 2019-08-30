@@ -144,6 +144,22 @@
   text-align: center !important;
 }
 
+.cart_select .productId {
+  display: none;
+}
+
+.cart_select td.productName {
+  color: #fff !important;
+}
+
+.cart_select td.productName span {
+  color: #3d3d3d !important;
+}
+
+.cart_select .productName img {
+  display: none !important;
+}
+
 #dvOrderBox #dvCartSelect table .remark {
   width: 145px;
 }
