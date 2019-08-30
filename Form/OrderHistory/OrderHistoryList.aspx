@@ -8,7 +8,7 @@
 <%-- ▽ユーザーコントロール宣言領域▽ --%>
 <%@ Register TagPrefix="uc" TagName="BodyProductArrivalMailRegisterTr" Src="~/Form/Common/Product/BodyProductArrivalMailRegisterTr.ascx" %>
 <%-- △ユーザーコントロール宣言領域△ --%>
-<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_Order_OrderHistoryList, App_Web_orderhistorylist.aspx.a8f71c32" title="購入履歴一覧ページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_Order_OrderHistoryList, App_Web_orderhistorylist.aspx.a8f71c32" title="購入履歴一覧｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="購入履歴一覧ページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 <asp:Content ContentPlaceHolderID="head" Runat="Server">
 <script type="text/javascript" charset="Shift_JIS" src="<%= Constants.PATH_ROOT %>Js/floatingWindow.js"></script>
 </asp:Content>

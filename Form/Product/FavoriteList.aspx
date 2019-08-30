@@ -7,7 +7,7 @@
 --%>
 <%@ Register TagPrefix="uc" TagName="BodyProductVariationImages" Src="~/Form/Common/Product/BodyProductVariationImages.ascx" %>
 <%@ Register TagPrefix="uc" TagName="BodyProductRecommendByRecommendEngine" Src="~/Form/Common/Product/BodyProductRecommendByRecommendEngine.ascx" %>
-<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_Product_FavoriteList, App_Web_favoritelist.aspx.1e99e05" title="お気に入りページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_Product_FavoriteList, App_Web_favoritelist.aspx.1e99e05" title="お気に入りリスト｜マイページ｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="お気に入りリストページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 <%-- ▽編集可能領域：HEAD追加部分▽ --%>
 <link href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + "Css/product.css")%>" rel="stylesheet" type="text/css" media="all" />

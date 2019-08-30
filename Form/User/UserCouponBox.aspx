@@ -5,7 +5,7 @@
   Copyright   : Copyright w2solution Co.,Ltd. 2017 All Rights Reserved.
 =========================================================================================================
 --%>
-<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_CouponBox, App_Web_usercouponbox.aspx.b2a7112d" title="クーポンBOXページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_CouponBox, App_Web_usercouponbox.aspx.b2a7112d" title="クーポン確認｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="クーポン確認ページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 <%@ Import Namespace="w2.Domain.Coupon.Helper" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 <script type="text/javascript" charset="Shift_JIS" src="<%= Constants.PATH_ROOT %>Js/floatingWindow.js"></script>
