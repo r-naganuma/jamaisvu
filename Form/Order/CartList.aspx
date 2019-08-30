@@ -1237,6 +1237,14 @@ function bodyPageLoad(){
  })
  $(".shoppingCart__title").html($(".subSumBox p").html());
  
+
+   $(".s3 .s_dd").each(function(){
+      if($(this).text().trim()==""){
+        $(this).parent().remove();
+      }
+  });
+
+   
 }
 
 

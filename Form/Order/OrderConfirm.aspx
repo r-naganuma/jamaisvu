@@ -144,11 +144,9 @@ $(function(){
           $('.shoppingCart').removeClass('is-fixed');
       }
   });
-  $(".s3 .s_dd").each(function(){
-      if($(this).text().trim()==""){
-        $(this).parent().remove();
-      }
-  });
+
+
+
 });
 </script>
 <!-- <style>
@@ -1700,7 +1698,11 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 
 		 })
 
-
+      $(".s3 .s_dd").each(function(){
+          if($(this).text().trim()==""){
+            $(this).parent().remove();
+          }
+      });
 		})
 
 		</script>
