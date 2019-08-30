@@ -1073,6 +1073,9 @@ span.error_message {
   #Wrap .userWrap .nextBtn::before {
     content: none;
   }
+  dd.color_box {
+    display: none;
+  }
 }
 
 #Wrap .userWrap .nextBtn:hover::before {

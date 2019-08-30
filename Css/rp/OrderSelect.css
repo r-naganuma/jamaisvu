@@ -14,8 +14,8 @@
 
 .cart_select #dvOrderBox #dvCartSelect table th {
   border-top-style: solid;
-  border-top-width: 1px;
-  padding: 10px 0;
+  border-top-width: 0;
+  padding: 10px 0 20px;
   font-weight: normal;
   text-align: left;
   background: #fff;
@@ -68,12 +68,84 @@
   width: 23.21429% !important;
 }
 
-.cart_select .sp_contents_br {
+.cart_select .checkBox input:checked + label.on::after {
+  content: "";
+}
+
+.cart_select .checkBox input {
   display: none;
 }
 
-.cart_select .checkBox input:checked + label.on::after {
+.cart_select .checkBox input + label {
+  padding-left: 28px;
+  vertical-align: middle;
+  position: relative;
+  padding-top: 3px;
+}
+
+.cart_select .checkBox input + label::before {
   content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #C0B6B3;
+  border-radius: 3px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cart_select .checkBox input:checked + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 15px;
+  background: #2E0E02;
+  border-radius: 3px;
+  background: url(../../Contents/ImagesPkg/common/check@2x.png);
+  display: block;
+  background-position: 0px 2px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .cart_select .checkBox input:checked + label::after {
+    border-radius: 8px;
+  }
+}
+
+.cart_select .dvCartSelect_p {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 2 !important;
+  margin: 0 0 35px !important;
+  padding: 0 !important;
+}
+
+.cart_select #dvOrderBox h3 {
+  margin: 10px 0px 25px 0px;
+  font: bold 12px "ＭＳ Ｐゴシック", Arial;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+
+.cart_select #dvOrderBox table th {
+  border-color: none !important;
+}
+
+.cart_select th.productName {
+  text-align: center !important;
+}
+
+#dvOrderBox #dvCartSelect table .remark {
+  width: 145px;
 }
 
 @media (max-width: 768px) {

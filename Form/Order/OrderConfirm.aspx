@@ -1283,8 +1283,8 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 	<div>
 	<dl>
 	<span visible="<%# (FindCart(Container.DataItem).IsDigitalContentsOnly == false) %>" runat="server">
-		<dt><%: ReplaceTag("@@User.name.name@@") %>：</dt>
-		<dd><%# WebSanitizer.HtmlEncode(Eval("Name1")) %><%# WebSanitizer.HtmlEncode(Eval("Name2")) %>&nbsp;様</dd>
+		<dt class="name"><%: ReplaceTag("@@User.name.name@@") %>：</dt>
+		<dd class="name_dd"><%# WebSanitizer.HtmlEncode(Eval("Name1")) %><%# WebSanitizer.HtmlEncode(Eval("Name2")) %>&nbsp;様</dd>
 <!-- 		<%-- 氏名（かな） --%>
 		<dt <%# ((bool)Eval("IsShippingAddrJp")) ? "" : "style=\"display:none;\"" %>><%: ReplaceTag("@@User.name_kana.name@@") %>：</dt>
 		<dd <%# ((bool)Eval("IsShippingAddrJp")) ? "" : "style=\"display:none;\"" %>><%# WebSanitizer.HtmlEncode(Eval("NameKana1")) %><%# WebSanitizer.HtmlEncode(Eval("NameKana2")) %>&nbsp;さま</dd> -->
@@ -1996,9 +1996,9 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 	以下の内容をご確認のうえ、「注文を確定する」ボタンをクリックしてください。
 </div> -->
 <div class="oc_text__wrap">
-  <p class="oc_text oct1">※ご注文前に必ずサイズ・カラー・価格・数量のご確認をお願い致します。 <br>
+  <p class="oc_text oct1">※ご注文前に必ずサイズ・カラー・価格・数量のご確認をお願いいたします。 <br>
   商品状態により返品・交換をお受けできない場合がございます。  <br>
-  <a href="https://jamaisvu.co.jp/Page/userGuide/">返品・交換について</a></p>
+  <a href="https://jamaisvu.co.jp/Page/userGuide/" target="_blank">返品・交換について</a></p>
   <p class="oc_text oct2">ご注文確認メールはご注文完了と同時に自動送信させて頂いておりますが、 <br>
   迷惑メールなどに振り分けられている可能性もございますので、 <br>
   お手数おかけいたしますが当社のドメイン「@jamaisvu.co.jp」を受信できるようにメールの設定をお願いいたします。</p>

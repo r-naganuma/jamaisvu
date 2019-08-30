@@ -21,8 +21,8 @@ $bp768: 768px;  // スマホ
 	}
 	#dvOrderBox #dvCartSelect table th {
 	    border-top-style: solid;
-	    border-top-width: 1px;
-	    padding: 10px 0;
+	    border-top-width: 0;
+	    padding: 10px 0 20px;
 	    font-weight: normal;
 	    text-align: left;
 	    background: #fff;
@@ -65,7 +65,7 @@ $bp768: 768px;  // スマホ
 		width: (260%/ 1120 *100)!important;
 	}
 	.sp_contents_br{
-		display: none;
+		// display: none;
 	}
 	// .checkBox > input {
 	//   display: none;
@@ -110,9 +110,84 @@ $bp768: 768px;  // スマホ
 	  content: "";
 	}
 
+		.checkBox{
+				 input {
+				  display: none;
+				}
+
+				input + label {
+				    padding-left: 28px;
+				    vertical-align: middle;
+				    position: relative;
+				    padding-top: 3px;
+				    
+				}
+
+				input + label::before {
+				  content: "";
+				  display: block;
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  width: 16px;
+				  height: 16px;
+				  border: 1px solid #C0B6B3;
+				  border-radius: 3px;
+				  background: #fff;
+				  -webkit-box-sizing: border-box;
+				  box-sizing: border-box;
+				  @include bp768 {
+					  // border-radius: 12px;
+				  }
+				}
+
+				input:checked + label::after {
+			    content: "";
+			    display: block;
+			    position: absolute;
+			    top: 2px;
+			    left: 2px;
+			    width: 12px;
+			    height: 15px;
+			    background: #2E0E02;
+			    border-radius: 3px;
+			    background: url(../../Contents/ImagesPkg/common/check@2x.png);
+			    display: block;
+			    background-position: 0px 2px;
+			    background-size: 100%;
+			    background-repeat: no-repeat;
+
+			  @include bp768 {
+				  border-radius: 8px;
+			  }
+				}
+		}
+
+
+	.dvCartSelect_p{
+		font-size: 14px;
+		letter-spacing: 0.08em;
+		line-height: 2!important;
+	    margin: 0 0 35px!important;
+	    padding: 0!important;
+	}
+	#dvOrderBox h3 {
+	    margin: 10px 0px 25px 0px;
+	    font: bold 12px "ＭＳ Ｐゴシック", Arial;
+	    font-size: 14px;
+	    letter-spacing: 0.08em;
+	}
+	#dvOrderBox table th {
+	    border-color: none!important;
+	}
+	th.productName {
+	    text-align: center!important;
+	}
 
 }
-
+		#dvOrderBox #dvCartSelect table .remark {
+ 			width:145px;
+		}
 
 
 @include bp768 {
