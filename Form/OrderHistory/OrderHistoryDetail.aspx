@@ -20,7 +20,18 @@
 <%-- UpdatePanel開始 --%>
 <asp:UpdatePanel ID="upUpdatePanel" UpdateMode="Conditional" runat="server">
 <ContentTemplate>
-
+<script type="text/javascript">
+$(function(){
+    $('.ohShippingChange a').click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+    });
+});
+function bodyPageLoad() {
+    $('.ohShippingChange a').click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500);
+    });
+}
+</script>
 <div class="registWrap mypageCts">
 	<h2>購入履歴詳細</h2>
 	<div class="registWrap_box">
@@ -507,11 +518,13 @@
 										? WebSanitizer.HtmlEncode(GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_ORDERSHIPPING_SHIPPING_ZIP)) + "<br />"
 										: "" %>
 									<%#: GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_ORDERSHIPPING_SHIPPING_COUNTRY_NAME) %><br><br>
-									<%#: GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_ORDERSHIPPING_SHIPPING_TEL1) %>
-									<div style="display: none; text-align:right; float:right; ">
-										<asp:LinkButton ID="LinkButton1" Text="お届け先変更" runat="server" CommandArgument="<%# Container.ItemIndex %>" OnClick="lbDisplayUserShippingInfoForm_Click" Enabled="<%# this.IsModifyShipping %>" class="btn" />
+									<%#: GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_ORDERSHIPPING_SHIPPING_TEL1) %><br><br>
+									<%#: GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_ORDERSHIPPING_SHIPPING_COMPANY_NAME) %><br />
+									<%#: GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_ORDERSHIPPING_SHIPPING_COMPANY_POST_NAME) %>
+									<div class="ohShippingChange">
+										<asp:LinkButton ID="LinkButton1" Text="お届け先変更" runat="server" CommandArgument="<%# Container.ItemIndex %>" OnClick="lbDisplayUserShippingInfoForm_Click" Enabled="<%# this.IsModifyShipping %>" />
 									</div>
-									<div style="display: none; text-align:right; padding-top:15px;">
+									<div>
 										<%#: this.ExplanationShipping %>
 									</div>
 								</td>
@@ -554,13 +567,17 @@
 								var isShippingAddrCountryUs = IsCountryUs(shippingAddrCountryIsoCode);
 								var isShippingAddrZipNecessary = IsAddrZipcodeNecessary(shippingAddrCountryIsoCode);
 							%>
-							<th><%: ReplaceTag("@@User.name.name@@") %> <span class="necessary">*</span></th>
-								<td>
-									<div style="float:right; float:right; ">
+							<dl class="inputBox" style="margin-top: 20px;">
+							<dt class="inputBox_left must"><%: ReplaceTag("@@User.name.name@@") %> </dt>
+								<dd class="inputBox_right">
+									<div style="display: none; float:right; ">
 										<asp:LinkButton Text="お届け先変更" runat="server" CommandArgument="<%# Container.ItemIndex %>" OnClick="lbDisplayUserShippingInfoForm_Click" Enabled="<%# this.IsModifyShipping %>" class="btn" />
 									</div>
-									姓：<asp:TextBox ID="tbShippingName1" runat="server" Width="90" MaxLength="10" ></asp:TextBox>
-									名：<asp:TextBox ID="tbShippingName2" runat="server" Width="90" MaxLength="10" ></asp:TextBox>
+									<dl class="nameArea">
+										<dt>姓</dt>
+										<dd><asp:TextBox ID="tbShippingName1" runat="server" MaxLength="10" ></asp:TextBox></dd>
+										<dt>名</dt>
+										<dd><asp:TextBox ID="tbShippingName2" runat="server" MaxLength="10" ></asp:TextBox></dd>
 									<asp:CustomValidator ID="CustomValidator1" runat="Server"
 										ControlToValidate="tbShippingName1"
 										ValidationGroup="OrderShipping"
@@ -575,13 +592,16 @@
 										SetFocusOnError="true"
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
-								</td>
-							</tr>
+									</dl>
+								</dd>
 							<% if (isShippingAddrCountryJp) { %>
-							<tr>
-								<th><%: ReplaceTag("@@User.name_kana.name@@") %> <span class="necessary">*</span></th>
-								<td>姓：<asp:TextBox ID="tbShippingNameKana1" runat="server" Width="90" MaxLength="20"></asp:TextBox>
-									名：<asp:TextBox ID="tbShippingNameKana2" runat="server" Width="90" MaxLength="20"></asp:TextBox>
+								<dt class="inputBox_left must">かな</dt>
+								<dd class="inputBox_right">
+									<dl class="nameArea">
+										<dt>せい</dt>
+										<dd><asp:TextBox ID="tbShippingNameKana1" runat="server" MaxLength="20"></asp:TextBox></dd>
+										<dt>めい</dt>
+										<dd><asp:TextBox ID="tbShippingNameKana2" runat="server" MaxLength="20"></asp:TextBox></dd>
 									<asp:CustomValidator ID="CustomValidator3" runat="Server"
 										ControlToValidate="tbShippingNameKana1"
 										ValidationGroup="OrderShipping"
@@ -596,30 +616,29 @@
 										SetFocusOnError="true"
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
-								</td>
-							</tr>
+									</dl>
+								</dd>
 							<% } %>
 							<% if (Constants.GLOBAL_OPTION_ENABLE) { %>
-							<tr>
-								<th>
+								<dt class="inputBox_left must">
 									<%: ReplaceTag("@@User.country.name@@", shippingAddrCountryIsoCode) %>
-									<span class="necessary">*</span>
-								</th>
-								<td>
+									
+								</dt>
+								<dd class="inputBox_right">
 									<asp:DropDownList ID="ddlShippingCountry" runat="server" DataTextField="<%#: Container.ItemIndex %>" AutoPostBack="true" OnSelectedIndexChanged="ddlShippingCountry_SelectedIndexChanged"></asp:DropDownList>
-								</td>
-							</tr>
+								</dd>
 							<% } %>
-							<tr>
 								<% if (isShippingAddrCountryJp) { %>
-								<th>
+								<dt class="inputBox_left must">
 									<%: ReplaceTag("@@User.zip.name@@") %>
-									<span class="necessary">*</span>
-								</th>
-								<td>
-									<asp:TextBox ID="tbShippingZip1" runat="server" Width="60" MaxLength="3"></asp:TextBox>－
-									<asp:TextBox ID="tbShippingZip2" runat="server" Width="60" MaxLength="4" ValidationGroup="<%# Container.ItemIndex %>" OnTextChanged="lbSearchAddr_TextBox_Click"></asp:TextBox>
-									<asp:LinkButton ID="lbSearchShippingAddr" runat="server" CommandArgument="<%# Container.ItemIndex %>" OnClientClick="return false;" OnClick="lbSearchAddr_LinkButton_Click" class="btn btn-mini">
+									
+								</dt>
+								<dd class="inputBox_right">
+									<dl class="zipArea">
+										<dt><asp:TextBox ID="tbShippingZip1" runat="server" MaxLength="3"></asp:TextBox></dt>
+										<dd>ー</dd>
+										<dt><asp:TextBox ID="tbShippingZip2" runat="server" MaxLength="4" ValidationGroup="<%# Container.ItemIndex %>" OnTextChanged="lbSearchAddr_TextBox_Click"></asp:TextBox></dt>
+									<asp:LinkButton ID="lbSearchShippingAddr" runat="server" CommandArgument="<%# Container.ItemIndex %>" OnClientClick="return false;" OnClick="lbSearchAddr_LinkButton_Click" class="btn btn-mini" style="display: none;">
 									郵便番号から住所を入力
 									</asp:LinkButton><br />
 									<%--検索結果レイヤー--%>
@@ -643,15 +662,14 @@
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
 									<small id="sShippingZipError" runat="server" class="fred"></small>
-								</td>
-							</tr>
-							<tr>
+									</dl>
+								</dd>
 								<%-- 都道府県 --%>
-								<th>
+								<dt class="inputBox_left must">
 									<%: ReplaceTag("@@User.addr1.name@@") %>
-									<span class="necessary">*</span>
-								</th>
-								<td>
+									
+								</dt>
+								<dd class="inputBox_right">
 									<asp:DropDownList ID="ddlShippingAddr1" runat="server" DataTextField="<%#: Container.ItemIndex %>" OnSelectedIndexChanged="ddlShippingAddr1_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
 									<asp:CustomValidator
 										ID="cvShippingAddr1"
@@ -662,17 +680,14 @@
 										SetFocusOnError="true"
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
-								</td>
-							</tr>
+								</dd>
 							<% } %>
-							<tr>
 								<%-- 市区町村 --%>
-								<th>
-									<%: ReplaceTag("@@User.addr2.name@@", shippingAddrCountryIsoCode) %>
-									<span class="necessary">*</span>
-								</th>
-								<td>
-									<asp:TextBox ID="tbShippingAddr2" runat="server" Width="300" MaxLength="40"></asp:TextBox>
+								<dt class="inputBox_left must">
+									住所（市区町村）
+								</dt>
+								<dd class="inputBox_right">
+									<asp:TextBox ID="tbShippingAddr2" runat="server" MaxLength="40"></asp:TextBox>
 									<asp:CustomValidator
 										ID="cvShippingAddr2"
 										runat="Server"
@@ -682,16 +697,14 @@
 										SetFocusOnError="true"
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
-								</td>
-							</tr>
-							<tr>
+								</dd>
 								<%-- 番地 --%>
-								<th>
-									<%: ReplaceTag("@@User.addr3.name@@", shippingAddrCountryIsoCode) %>
-									<% if (isShippingAddrCountryJp) { %><span class="necessary">*</span><% } %>
-								</th>
-								<td>
-									<asp:TextBox ID="tbShippingAddr3" runat="server" Width="300" MaxLength="40"></asp:TextBox>
+								<dt class="inputBox_left must">
+									住所（番地以降）
+									<% if (isShippingAddrCountryJp) { %><% } %>
+								</dt>
+								<dd class="inputBox_right">
+									<asp:TextBox ID="tbShippingAddr3" runat="server" MaxLength="40"></asp:TextBox>
 									<asp:CustomValidator
 										ID="cvShippingAddr3"
 										runat="Server"
@@ -701,16 +714,14 @@
 										SetFocusOnError="true"
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
-								</td>
-							</tr>
-							<tr <%: (Constants.DISPLAY_ADDR4_ENABLED || (isShippingAddrCountryJp == false)) ? "" : "style=\"display:none;\""  %>>
+								</dd>
 								<%-- ビル・マンション名 --%>
-								<th>
-									<%: ReplaceTag("@@User.addr4.name@@", shippingAddrCountryIsoCode) %>
-									<% if (isShippingAddrCountryJp == false) {%><span class="necessary">*</span><% } %>
-								</th>
-								<td>
-									<asp:TextBox ID="tbShippingAddr4" runat="server" Width="300" MaxLength="40"></asp:TextBox>
+								<dt class="inputBox_left">
+									住所（建物名）
+									<% if (isShippingAddrCountryJp == false) {%><% } %>
+								</dt>
+								<dd class="inputBox_right">
+									<asp:TextBox ID="tbShippingAddr4" runat="server" MaxLength="40"></asp:TextBox>
 									<asp:CustomValidator
 										ID="cvShippingAddr4"
 										runat="Server"
@@ -720,16 +731,14 @@
 										SetFocusOnError="true"
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
-								</td>
-							</tr>
+								</dd>
 							<% if (isShippingAddrCountryJp == false) { %>
-							<tr>
 								<%-- 州 --%>
-								<th>
+								<dt class="inputBox_left must">
 									<%: ReplaceTag("@@User.addr5.name@@", shippingAddrCountryIsoCode) %>
-									<% if (isShippingAddrCountryUs) { %> <span class="necessary">*</span><% } %>
-								</th>
-								<td>
+									<% if (isShippingAddrCountryUs) { %> <% } %>
+								</dt>
+								<dd class="inputBox_right">
 									<% if (isShippingAddrCountryUs) { %>
 									<asp:DropDownList runat="server" ID="ddlShippingAddr5"></asp:DropDownList>
 									<% } else { %>
@@ -744,15 +753,13 @@
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
 									<% } %>
-								</td>
-							</tr>
-							<tr>
+								</dd>
 								<%-- 郵便番号（海外向け） --%>
-								<th>
+								<dt class="inputBox_left must">
 									<%: ReplaceTag("@@User.zip.name@@", shippingAddrCountryIsoCode) %>
-									<% if (isShippingAddrZipNecessary) { %><span class="necessary">*</span><% } %>
-								</th>
-								<td>
+									<% if (isShippingAddrZipNecessary) { %><% } %>
+								</dt>
+								<dd class="inputBox_right">
 									<asp:TextBox runat="server" ID="tbShippingZipGlobal" MaxLength="30"></asp:TextBox>
 									<asp:CustomValidator
 										ID="cvShippingZipGlobal"
@@ -763,14 +770,12 @@
 										SetFocusOnError="true"
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
-								</td>
-							</tr>
+								</dd>
 							<% } %>
 							<% if (Constants.DISPLAY_CORPORATION_ENABLED) { %>
-							<tr>
-								<th><%: ReplaceTag("@@User.company_name.name@@") %> </th>
-								<td>
-									<asp:TextBox ID="tbShippingCompanyName" runat="server" Width="300" MaxLength="40"></asp:TextBox>
+								<dt class="inputBox_left"><%: ReplaceTag("@@User.company_name.name@@") %> </dt>
+								<dd class="inputBox_right">
+									<asp:TextBox ID="tbShippingCompanyName" runat="server" MaxLength="40"></asp:TextBox>
 									<asp:CustomValidator
 										ID="cvShippingCompanyName"
 										runat="Server"
@@ -780,12 +785,10 @@
 										SetFocusOnError="true"
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
-								</td>
-							</tr>
-							<tr>
-								<th><%: ReplaceTag("@@User.company_post_name.name@@") %> </th>
-								<td>
-									<asp:TextBox ID="tbShippingCompanyPostName" runat="server" Width="300" MaxLength="40"></asp:TextBox>
+								</dd>
+								<dt class="inputBox_left"><%: ReplaceTag("@@User.company_post_name.name@@") %> </dt>
+								<dd class="inputBox_right">
+									<asp:TextBox ID="tbShippingCompanyPostName" runat="server" MaxLength="40"></asp:TextBox>
 									<asp:CustomValidator
 										ID="cvShippingCompanyPostName"
 										runat="Server"
@@ -795,18 +798,19 @@
 										SetFocusOnError="true"
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
-								</td>
-							</tr>
+								</dd>
 							<% } %>
-							<tr>
 								<% if (isShippingAddrCountryJp) { %>
-								<th>
+								<dt class="inputBox_left must">
 									<%: ReplaceTag("@@User.tel1.name@@") %>
-									<span class="necessary">*</span></th>
-								<td>
-									<asp:TextBox ID="tbShippingTel1_1" runat="server" Width="60" MaxLength="6"></asp:TextBox>－
-									<asp:TextBox ID="tbShippingTel1_2" runat="server" Width="60" MaxLength="4"></asp:TextBox>－
-									<asp:TextBox ID="tbShippingTel1_3" runat="server" Width="60" MaxLength="4"></asp:TextBox>
+									</dt>
+								<dd class="inputBox_right">
+									<dl class="zipArea">
+										<dt><asp:TextBox ID="tbShippingTel1_1" runat="server" MaxLength="6"></asp:TextBox></dt>
+										<dd>ー</dd>
+										<dt><asp:TextBox ID="tbShippingTel1_2" runat="server" MaxLength="4"></asp:TextBox></dt>
+										<dd>ー</dd>
+										<dt><asp:TextBox ID="tbShippingTel1_3" runat="server" MaxLength="4"></asp:TextBox></dt>
 									<asp:CustomValidator
 										ID="cvShippingTel1_1"
 										runat="Server"
@@ -834,12 +838,13 @@
 										SetFocusOnError="true"
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
-								</td>
+									</dl>
+								</dd>
 								<% } else { %>
-								<th>
+								<dt class="inputBox_left must">
 									<%: ReplaceTag("@@User.tel1.name@@", shippingAddrCountryIsoCode) %>
-									<span class="necessary">*</span></th>
-								<td>
+									</dt>
+								<dd class="inputBox_right">
 									<asp:TextBox runat="server" ID="tbShippingTel1Global" MaxLength="30"></asp:TextBox>
 									<asp:CustomValidator
 										ID="cvShippingTel1Global"
@@ -850,26 +855,21 @@
 										SetFocusOnError="true"
 										ClientValidationFunction="ClientValidate"
 										CssClass="error_inline" />
-								</td>
+								</dd>
 								<% } %>
-							</tr>
-							<tr>
-								<th></th>
-								<td>
-									<div id="divOrderShippingUpdateButtons" style="display: block">
-										<% if (this.IsFixedPurchase && (this.FixedPurchaseModel.IsCancelFixedPurchaseStatus == false)) { %>
-											<asp:CheckBox ID="cbIsUpdateFixedPurchaseByOrderShippingInfo" Text="今後の定期注文にも反映させる" Checked="false" runat="server"/><br />
-										<% } %>
-										<asp:LinkButton Text="情報更新" runat="server" ValidationGroup="OrderShipping" CommandArgument="<%# Container.ItemIndex %>" OnClientClick="return AlertDataChange('Shipping', this);" OnClick="lbUpdateUserShippingInfo_Click" class="btn" ></asp:LinkButton>
-										<asp:LinkButton Text="キャンセル" runat="server" CommandArgument="<%# Container.ItemIndex %>"  OnClick="lbHideUserShippingInfoForm_Click" class="btn" ></asp:LinkButton>
-										<input type="hidden" id="parentShippingRepeater" name="parentShippingRepeater" value="<%#: Container.UniqueID %>" />
-									</div>
-									<div id="divOrderShippingUpdateExecFroms" style="display: none"> 
-										更新中です...
-									</div>
-									<small id="sErrorMessageShipping" runat="server" class="error" style="padding: 2px;"></small>
-								</td>
-							</tr>
+								<div id="divOrderShippingUpdateButtons" class="allBtnBox">
+									<% if (this.IsFixedPurchase && (this.FixedPurchaseModel.IsCancelFixedPurchaseStatus == false)) { %>
+										<asp:CheckBox ID="cbIsUpdateFixedPurchaseByOrderShippingInfo" Text="今後の定期注文にも反映させる" Checked="false" runat="server"/><br />
+									<% } %>
+									<asp:LinkButton Text="キャンセル" runat="server" CommandArgument="<%# Container.ItemIndex %>"  OnClick="lbHideUserShippingInfoForm_Click" class="prevBtn ohPrev" ></asp:LinkButton>
+									<asp:LinkButton Text="情報更新" runat="server" ValidationGroup="OrderShipping" CommandArgument="<%# Container.ItemIndex %>" OnClientClick="return AlertDataChange('Shipping', this);" OnClick="lbUpdateUserShippingInfo_Click" class="nextBtn ohNext" ></asp:LinkButton>
+									<input type="hidden" id="parentShippingRepeater" name="parentShippingRepeater" value="<%#: Container.UniqueID %>" />
+								</div>
+								<div id="divOrderShippingUpdateExecFroms" style="display: none"> 
+									更新中です...
+								</div>
+								<small id="sErrorMessageShipping" runat="server" class="error" style="padding: 2px;"></small>
+							</dl>
 						</div>
 						<tr style="display: none;">
 							<th>配送方法</th>

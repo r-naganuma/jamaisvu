@@ -5,7 +5,7 @@
   Copyright   : Copyright w2solution Co.,Ltd. 2010 All Rights Reserved.
 =========================================================================================================
 --%>
-<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_PasswordModifyComplete, App_Web_passwordmodifycomplete.aspx.b2a7112d" title="パスワード変更完了ページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_PasswordModifyComplete, App_Web_passwordmodifycomplete.aspx.b2a7112d" title="ID/PASS再設定完了｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="ID/PASS再設定完了ページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <div class="registWrap">
 	<h2>パスワード変更完了</h2>

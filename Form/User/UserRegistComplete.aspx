@@ -5,7 +5,7 @@
   Copyright   : Copyright w2solution Co.,Ltd. 2009 All Rights Reserved.
 =========================================================================================================
 --%>
-<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_UserRegistComplete, App_Web_userregistcomplete.aspx.b2a7112d" title="会員新規登録完了ページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/UserPage.master" autoeventwireup="true" inherits="Form_User_UserRegistComplete, App_Web_userregistcomplete.aspx.b2a7112d" title="会員登録完了（新規登録）｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="会員登録完了（新規登録）ページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <div class="registWrap topSpace">
