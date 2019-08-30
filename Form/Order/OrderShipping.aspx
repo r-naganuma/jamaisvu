@@ -167,7 +167,7 @@ $(function(){
     <% if (isOwnerAddrCountryJp) { %>
     <dt>
       <!-- <%: ReplaceTag("@@User.name_kana.name@@", ownerAddrCountryIsoCode) %> -->
-      ふりがな
+      かな
       &nbsp;<span class="fred">必須</span><span id="efo_sign_kana"/>
     </dt>
     <dd class="<%= ReplaceTag("@@User.name_kana.type@@") %>">
@@ -509,7 +509,7 @@ $(function(){
       SetFocusOnError="true"
       ClientValidationFunction="ClientValidate"
       CssClass="error_inline" /></small>
-    <small id="sOwnerZipError" runat="server" class="fred"></small>
+    <small id="sOwnerZipError" runat="server" class="error_inline"></small>
     </p></dd>
     </dl>
     <dl>
@@ -518,7 +518,7 @@ $(function(){
       <%: ReplaceTag("@@User.addr1.name@@", ownerAddrCountryIsoCode) %>
       &nbsp;<span class="fred">必須</span><span id="efo_sign_addr1"/>
     </dt>
-    <dd><asp:DropDownList placeholder="港区六本木" ID="ddlOwnerAddr1" DataSource="<%# this.Addr1List %>" DataTextField="Text" DataValueField="Value" SelectedValue="<%# this.CartList.Owner.Addr1 %>" runat="server"></asp:DropDownList>
+    <dd><asp:DropDownList ID="ddlOwnerAddr1" DataSource="<%# this.Addr1List %>" DataTextField="Text" DataValueField="Value" SelectedValue="<%# this.CartList.Owner.Addr1 %>" runat="server"></asp:DropDownList>
     <small>
     <asp:CustomValidator
       ID="cvOwnerAddr1"
@@ -539,7 +539,7 @@ $(function(){
       <!-- <%: ReplaceTag("@@User.addr2.name@@", ownerAddrCountryIsoCode) %> -->
       &nbsp;<span class="fred">必須</span><% if (isOwnerAddrCountryJp) { %><span id="efo_sign_addr2"/><% } %>
     </dt>
-    <dd><asp:TextBox placeholder="7-3-16" ID="tbOwnerAddr2" Text="<%# this.CartList.Owner.Addr2 %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr2.length_max@@") %>' runat="server"></asp:TextBox><br />
+    <dd><asp:TextBox placeholder="港区六本木" ID="tbOwnerAddr2" Text="<%# this.CartList.Owner.Addr2 %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr2.length_max@@") %>' runat="server"></asp:TextBox><br />
     <small>
     <asp:CustomValidator
       ID="cvOwnerAddr2"
@@ -559,7 +559,7 @@ $(function(){
       <!-- <%: ReplaceTag("@@User.addr3.name@@", ownerAddrCountryIsoCode) %> -->
       <% if (isOwnerAddrCountryJp) { %>&nbsp;<span class="fred">必須</span><span id="efo_sign_addr3"/><% } %>
     </dt>
-    <dd><asp:TextBox placeholder="ジャメヴマンション5F" ID="tbOwnerAddr3" Text="<%# this.CartList.Owner.Addr3 %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr3.length_max@@") %>' runat="server"></asp:TextBox><br />
+    <dd><asp:TextBox placeholder="7-3-16" ID="tbOwnerAddr3" Text="<%# this.CartList.Owner.Addr3 %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr3.length_max@@") %>' runat="server"></asp:TextBox><br />
     <small>
     <asp:CustomValidator
       ID="cvOwnerAddr3"
@@ -579,7 +579,7 @@ $(function(){
       <!-- <%: ReplaceTag("@@User.addr4.name@@", ownerAddrCountryIsoCode) %> -->
       <% if (isOwnerAddrCountryJp == false) { %><span class="fred">*</span><% } %>
     </dt>
-    <dd><asp:TextBox ID="tbOwnerAddr4" Text="<%# this.CartList.Owner.Addr4 %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr4.length_max@@") %>' runat="server"></asp:TextBox><br />
+    <dd><asp:TextBox placeholder="ジャメヴマンション5F" ID="tbOwnerAddr4" Text="<%# this.CartList.Owner.Addr4 %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr4.length_max@@") %>' runat="server"></asp:TextBox><br />
     <small>
     <asp:CustomValidator
       ID="cvOwnerAddr4"
@@ -824,7 +824,7 @@ $(function(){
           </div>
           &nbsp;&nbsp;
           <div class="name_wrap__innnar">
-            <span class="mei">名</span><asp:TextBox placeholder="忠太郎" ID="tbShippingName2" Text="<%# GetShippingValue((CartObject)Container.DataItem, Constants.FIELD_ORDERSHIPPING_SHIPPING_NAME2) %>" CssClass="input_widthA input_border" MaxLength='<%# GetMaxLength("@@User.name2.length_max@@") %>' runat="server"></asp:TextBox>
+            <span class="mei">名</span><asp:TextBox placeholder="花子" ID="tbShippingName2" Text="<%# GetShippingValue((CartObject)Container.DataItem, Constants.FIELD_ORDERSHIPPING_SHIPPING_NAME2) %>" CssClass="input_widthA input_border" MaxLength='<%# GetMaxLength("@@User.name2.length_max@@") %>' runat="server"></asp:TextBox>
           </div>
         </div>
         <small>
@@ -852,7 +852,7 @@ $(function(){
         <%-- 配送先：氏名（かな） --%>
         <% if (isShippingAddrCountryJp) { %>
         <dt>
-          ふりがな
+          かな
           <!-- <%: ReplaceTag("@@User.name_kana.name@@", shippingAddrCountryIsoCode) %> -->
           &nbsp;<span class="fred">必須</span><span id="<%# "efo_sign_ship_kana" + Container.ItemIndex %>"/>
         </dt>
@@ -863,7 +863,7 @@ $(function(){
           </div>
           &nbsp;&nbsp;
           <div class="name_wrap__innnar">
-            <span class="sei_kana">めい</span><asp:TextBox placeholder="ちゅうたろう" ID="tbShippingNameKana2"  Text="<%# GetShippingValue((CartObject)Container.DataItem, Constants.FIELD_ORDERSHIPPING_SHIPPING_NAME_KANA2) %>" CssClass="input_widthA input_border" MaxLength='<%# GetMaxLength("@@User.name_kana2.length_max@@") %>' runat="server"></asp:TextBox>
+            <span class="sei_kana">めい</span><asp:TextBox placeholder="はなこ" ID="tbShippingNameKana2"  Text="<%# GetShippingValue((CartObject)Container.DataItem, Constants.FIELD_ORDERSHIPPING_SHIPPING_NAME_KANA2) %>" CssClass="input_widthA input_border" MaxLength='<%# GetMaxLength("@@User.name_kana2.length_max@@") %>' runat="server"></asp:TextBox>
           </div>
         </div>
         <small>
@@ -974,7 +974,7 @@ $(function(){
         </dt>
         <dd>
         <p class="pdg_topC">
-        <asp:TextBox placeholder="012" ID="tbShippingZip1" Text="<%# GetShippingValue((CartObject)Container.DataItem, CartShipping.FIELD_ORDERSHIPPING_SHIPPING_ZIP_1) %>" CssClass="input_widthA input_border" MaxLength="3" runat="server" Type="tel"></asp:TextBox><span class="line_form"></span><asp:TextBox placeholder="3456" ID="tbShippingZip2" Text="<%# GetShippingValue((CartObject)Container.DataItem, CartShipping.FIELD_ORDERSHIPPING_SHIPPING_ZIP_2) %>" CssClass="input_widthA input_border" MaxLength="4" runat="server" Type="tel" OnTextChanged="lbSearchShippingAddr_Click"></asp:TextBox></p>
+        <asp:TextBox placeholder="101" ID="tbShippingZip1" Text="<%# GetShippingValue((CartObject)Container.DataItem, CartShipping.FIELD_ORDERSHIPPING_SHIPPING_ZIP_1) %>" CssClass="input_widthA input_border" MaxLength="3" runat="server" Type="tel"></asp:TextBox><span class="line_form"></span><asp:TextBox placeholder="0001" ID="tbShippingZip2" Text="<%# GetShippingValue((CartObject)Container.DataItem, CartShipping.FIELD_ORDERSHIPPING_SHIPPING_ZIP_2) %>" CssClass="input_widthA input_border" MaxLength="4" runat="server" Type="tel" OnTextChanged="lbSearchShippingAddr_Click"></asp:TextBox></p>
         <span class="btn_add_sea"><asp:LinkButton ID="lbSearchShippingAddr" runat="server" OnClick="lbSearchShippingAddr_Click" class="btn btn-mini" OnClientClick="return false;">住所検索</asp:LinkButton></span>
         <p class="clr">
         <small class="fred">
@@ -996,7 +996,7 @@ $(function(){
           SetFocusOnError="true"
           ClientValidationFunction="ClientValidate"
           CssClass="error_inline" /></small>
-        <small id="sShippingZipError" runat="server" class="fred"></small>
+        <small id="sShippingZipError" runat="server" class="error_inline"></small>
         </p></dd>
         <% } %>
         </dl>
@@ -1007,7 +1007,7 @@ $(function(){
           <%: ReplaceTag("@@User.addr1.name@@", shippingAddrCountryIsoCode) %>
           &nbsp;<span class="fred">必須</span><span id="<%# "efo_sign_ship_addr1" + Container.ItemIndex %>"/>
         </dt>
-        <dd><asp:DropDownList placeholder="六本木" ID="ddlShippingAddr1" DataSource="<%# this.Addr1List %>" DataTextField="Text" DataValueField="Value" SelectedValue="<%# GetShippingValue((CartObject)Container.DataItem, Constants.FIELD_USERSHIPPING_SHIPPING_ADDR1) %>" runat="server"></asp:DropDownList>
+        <dd><asp:DropDownList ID="ddlShippingAddr1" DataSource="<%# this.Addr1List %>" DataTextField="Text" DataValueField="Value" SelectedValue="<%# GetShippingValue((CartObject)Container.DataItem, Constants.FIELD_USERSHIPPING_SHIPPING_ADDR1) %>" runat="server"></asp:DropDownList>
         <small>
         <asp:CustomValidator
           ID="cvShippingAddr1"
@@ -1028,7 +1028,7 @@ $(function(){
           <!-- <%: ReplaceTag("@@User.addr2.name@@", shippingAddrCountryIsoCode) %> -->
           &nbsp;<span class="fred">必須</span><% if (isShippingAddrCountryJp) { %><span id="<%# "efo_sign_ship_addr2" + Container.ItemIndex %>"/><% } %>
         </dt>
-        <dd><asp:TextBox placeholder="六本木7-3-16" ID="tbShippingAddr2" Text="<%# GetShippingValue((CartObject)Container.DataItem, Constants.FIELD_USERSHIPPING_SHIPPING_ADDR2) %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr2.length_max@@") %>' runat="server"></asp:TextBox><br />
+        <dd><asp:TextBox placeholder="港区六本木" ID="tbShippingAddr2" Text="<%# GetShippingValue((CartObject)Container.DataItem, Constants.FIELD_USERSHIPPING_SHIPPING_ADDR2) %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr2.length_max@@") %>' runat="server"></asp:TextBox><br />
         <small>
         <asp:CustomValidator
           ID="cvShippingAddr2"
@@ -1048,7 +1048,7 @@ $(function(){
           <!-- <%: ReplaceTag("@@User.addr3.name@@", shippingAddrCountryIsoCode) %> -->
           <% if (isShippingAddrCountryJp) { %>&nbsp;<span class="fred">必須</span><span id="<%# "efo_sign_ship_addr3" + Container.ItemIndex %>"/><% } %>
         </dt>
-        <dd><asp:TextBox placeholder="六本木インターナショナルアネックスビル4F" ID="tbShippingAddr3" Text="<%# GetShippingValue((CartObject)Container.DataItem, Constants.FIELD_USERSHIPPING_SHIPPING_ADDR3) %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr3.length_max@@") %>' runat="server"></asp:TextBox><br />
+        <dd><asp:TextBox placeholder="7-3-16" ID="tbShippingAddr3" Text="<%# GetShippingValue((CartObject)Container.DataItem, Constants.FIELD_USERSHIPPING_SHIPPING_ADDR3) %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr3.length_max@@") %>' runat="server"></asp:TextBox><br />
         <small>
         <asp:CustomValidator
           ID="cvShippingAddr3"
@@ -1068,7 +1068,7 @@ $(function(){
           <!-- <%: ReplaceTag("@@User.addr4.name@@", shippingAddrCountryIsoCode) %> -->
           <% if (isShippingAddrCountryJp == false) { %>&nbsp;<span class="fred">必須</span><% } %>
         </dt>
-        <dd><asp:TextBox ID="tbShippingAddr4" Text="<%# GetShippingValue((CartObject)Container.DataItem, Constants.FIELD_USERSHIPPING_SHIPPING_ADDR4) %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr4.length_max@@") %>' runat="server"></asp:TextBox><br />
+        <dd><asp:TextBox placeholder="ジャメヴマンション5F" ID="tbShippingAddr4" Text="<%# GetShippingValue((CartObject)Container.DataItem, Constants.FIELD_USERSHIPPING_SHIPPING_ADDR4) %>" CssClass="input_widthD input_border" MaxLength='<%# GetMaxLength("@@User.addr4.length_max@@") %>' runat="server"></asp:TextBox><br />
         <small>
         <asp:CustomValidator
           ID="cvShippingAddr4"
