@@ -186,7 +186,7 @@ h2.cart1_h2 {
 
 @media (max-width: 768px) {
   #ctl00_ContentPlaceHolder1_upUpdatePanel .list {
-    padding: 15px 6.25% !important;
+    padding: 15px 6.25% 0 !important;
     margin: 5px 0 0 0;
   }
 }
@@ -416,7 +416,8 @@ h2.cart1_h2 {
 @media (max-width: 768px) {
   #ctl00_ContentPlaceHolder1_upUpdatePanel #CartList div.productList div.subcartOrder {
     display: block;
-    background: #EAE6E5;
+    background: #fff;
+    padding: 25px 0;
   }
 }
 
@@ -1095,6 +1096,7 @@ span.error_message {
 .shoppingCart__title p {
   font-size: 14px;
   letter-spacing: 0.08em;
+  font-weight: normal;
 }
 
 .shoppingCart__title span {
@@ -1105,6 +1107,16 @@ span.error_message {
   float: right;
   font-size: 14px;
   letter-spacing: 0.08em;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .shoppingCart__title p {
+    font-weight: bold;
+  }
+  .shoppingCart__title strong {
+    font-weight: bold;
+  }
 }
 
 #Foot {

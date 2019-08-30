@@ -189,7 +189,7 @@ textarea::focus {
 
 .cart4 div.submain {
   width: 100% !important;
-  margin: 0 0 100px;
+  margin: 0 0 60px;
 }
 
 @media (max-width: 768px) {
@@ -467,6 +467,7 @@ textarea::focus {
 @media (max-width: 768px) {
   .cart4 #CartList .shoppingCart {
     width: 100%;
+    position: relative;
   }
 }
 
@@ -479,7 +480,7 @@ textarea::focus {
 
 @media (max-width: 768px) {
   .cart4 #CartList .shoppingCart.is-fixed {
-    position: inherit;
+    position: relative;
     top: inherit;
     left: inherit;
     margin-left: 0;
@@ -1180,10 +1181,23 @@ textarea::focus {
   letter-spacing: 0.08em;
 }
 
+@media (max-width: 768px) {
+  .cart4 p.shoppingCart__title {
+    font-weight: bold;
+  }
+}
+
 .cart4 p.shoppingCart__title strong {
   font-size: 14px;
   float: right;
+  font-weight: normal;
   letter-spacing: 0.08em;
+}
+
+@media (max-width: 768px) {
+  .cart4 p.shoppingCart__title strong {
+    font-weight: bold;
+  }
 }
 
 .cart4 p.shoppingCart__title span {
@@ -1216,13 +1230,57 @@ textarea::focus {
 
 @media (max-width: 768px) {
   .cart4 .oc_text__wrap {
-    padding: 50px 0;
+    padding: 50px 5.333vw;
   }
 }
 
 .cart4 .oc_text a {
   color: #968680;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .cart4 .itemcart_detail.amount {
+    margin: 0px 0 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart4 .quantity {
+    line-height: 13px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart4 .d3 .s_dt {
+    width: 80px;
+    font-size: 11px;
+    font-weight: 100;
+    position: relative;
+  }
+  .cart4 .d3 .s_dt:after {
+    content: ":";
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.cart4 .main1 .submain {
+  margin: 0 0 60px;
+}
+
+@media (max-width: 768px) {
+  .cart4 .main1 .submain {
+    margin: 0 0 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart4 .main.main0 {
+    margin: 0 0 100px !important;
+  }
 }
 
 #Foot {
@@ -1249,6 +1307,12 @@ textarea::focus {
 .first_wrap .singleProduct {
   padding: 25px 0 25px;
   border-bottom: 1px solid #eae6e5;
+}
+
+@media (max-width: 768px) {
+  .first_wrap .singleProduct {
+    padding: 0 0 25px;
+  }
 }
 
 .first_wrap dl {

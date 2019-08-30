@@ -1218,13 +1218,21 @@ $bp768: 768px;  // スマホ
 	}
 	p.shoppingCart__title {
 	    font-size: 14px;
-	    font-weight: bold;
+	    font-weight: normal;
 	    padding: 0 0;
 	    letter-spacing: 0.08em;
 	    strong{
 	    	font-size: 14px;
 	    	float: right;
+	    	font-weight: normal;
 	    	letter-spacing: 0.08em;
+	    }
+	    @include bp768 {
+	    	  font-weight: bold;
+	    	  strong{
+				font-weight: bold;
+	    	  }
+
 	    }
 	}
 	.singleProduct {

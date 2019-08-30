@@ -1498,7 +1498,7 @@ textarea::focus {
 
 .cart3 p.shoppingCart__title {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: normal;
   padding: 0 0;
   letter-spacing: 0.08em;
 }
@@ -1506,7 +1506,17 @@ textarea::focus {
 .cart3 p.shoppingCart__title strong {
   font-size: 14px;
   float: right;
+  font-weight: normal;
   letter-spacing: 0.08em;
+}
+
+@media (max-width: 768px) {
+  .cart3 p.shoppingCart__title {
+    font-weight: bold;
+  }
+  .cart3 p.shoppingCart__title strong {
+    font-weight: bold;
+  }
 }
 
 .cart3 .singleProduct {

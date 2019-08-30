@@ -1284,6 +1284,12 @@ textarea::focus {
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  .cart2 .btmbtn__innar dl dt {
+    font-weight: bold;
+  }
+}
+
 .cart2 .btmbtn__innar dl dt span {
   font-size: 12px;
   display: inline-block !important;
@@ -1294,6 +1300,12 @@ textarea::focus {
   font-size: 14px;
   width: 50%;
   text-align: right;
+}
+
+@media (max-width: 768px) {
+  .cart2 .btmbtn__innar dl dd {
+    font-weight: bold;
+  }
 }
 
 .cart2 .userList {

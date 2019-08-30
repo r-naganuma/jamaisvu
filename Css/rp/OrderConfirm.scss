@@ -196,7 +196,7 @@ $bp768: 768px;  // スマホ
 	}	
 	div.submain {
 	    width: 100%!important;
-	    margin: 0 0 100px;
+	    margin: 0 0 60px;
 	    @include bp768 {
 	    margin: 0 0 0px;
 	    }
@@ -412,6 +412,7 @@ $bp768: 768px;  // スマホ
 		    position: relative;
 			@include bp768 {
 			width: 100%;
+			position: relative;
 			}
 
 			&.is-fixed {
@@ -421,7 +422,7 @@ $bp768: 768px;  // スマホ
 				margin-left:270px;
 
 			    @include bp768 {
-					position: inherit;
+					position: relative;
 					top: inherit;
 					left:inherit;
 					margin-left:0;
@@ -995,10 +996,18 @@ $bp768: 768px;  // スマホ
 	    font-weight: normal;
 	    padding: 0 0;
 	    letter-spacing: 0.08em;
+
+	    @include bp768 {
+	    	font-weight: bold;
+	    }
 	    strong{
 	    	font-size: 14px;
 	    	float: right;
+	    	font-weight: normal;
 	    	letter-spacing: 0.08em;
+	    		    @include bp768 {
+	    	font-weight: bold;
+	    }
 	    }
 	    span{
 	    	font-size: 11px;
@@ -1025,7 +1034,7 @@ $bp768: 768px;  // スマホ
 	}
 	.oc_text__wrap{
 		@include bp768 {
-			padding: 50px 0 ;
+			padding: 50px 5.333vw ;
 		}
 	}
 	.oc_text{
@@ -1034,6 +1043,51 @@ $bp768: 768px;  // スマホ
 			text-decoration: underline;
 		}
 	}
+	.itemcart_detail.amount {
+		@include bp768 {
+	    margin: 0px 0 0!important;
+	   	}
+	}
+
+	@include bp768 {
+		.quantity{
+			line-height: 13px!important;
+		}
+	}
+	@include bp768 {
+	.d3{
+		.s_dt{
+		    width: 80px;
+		    font-size: 11px;
+		    font-weight: 100;
+		    position: relative;
+		    &:after{
+			    content: ":";
+			    display: inline-block;
+			    margin: 0;
+			    position: absolute;
+			    right: 0;
+		    }
+		}
+
+	}
+	}
+	.main1{
+		.submain{
+			margin: 0 0 60px;
+			@include bp768 {
+			margin: 0 0 0px;
+			}
+		}
+	}
+	@include bp768 {
+		.main.main0 {
+		    margin: 0 0 100px!important;
+		}
+	}
+
+
+
 }
 
 #Foot{
@@ -1053,6 +1107,9 @@ $bp768: 768px;  // スマホ
 	.singleProduct {
 	    padding: 25px 0 25px;
 	    border-bottom: 1px solid #eae6e5;
+	     @include bp768 {
+ 				padding: 0 0 25px;
+	     }
 	}
     dl{
     	width: 100%;

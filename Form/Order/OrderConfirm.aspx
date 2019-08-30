@@ -144,6 +144,11 @@ $(function(){
           $('.shoppingCart').removeClass('is-fixed');
       }
   });
+  $(".s3 .s_dd").each(function(){
+      if($(this).text().trim()==""){
+        $(this).parent().remove();
+      }
+  });
 });
 </script>
 <!-- <style>
@@ -1579,7 +1584,7 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 	<h2><img src="../../Contents/ImagesPkg/common/ttl_shopping_cart.gif" alt="ショッピングカート" width="141" height="16" /></h2>
 	<div class="sumBox mrg_topA">
 	<div class="subSumBoxB">
-	<p>総合計
+	<p>総合計<span>（税込）</span>
 		<strong><%#: CurrencyManager.ToPrice(this.CartList.PriceCartListTotal) %></strong></p>
 	</div>
 	</div><!--sum-->
@@ -1642,6 +1647,10 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 								</p>
 							</div>
 						</div>
+          <div class="s_dl s3 itemcart_detail d3">
+            <div class="s_dt">配送時期</div>
+            <div class="s_dd"></div>
+          </div>
 						<p class="delete sp_set">
 
 						</p>
@@ -1937,7 +1946,7 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 	<div id="Div6" visible="<%# ((CartObjectList)((Repeater)Container.Parent).DataSource).Items.Count == Container.ItemIndex + 1 %>" runat="server">
 	<div class="sumBox">
 	<div class="subSumBox">
-	<p>総合計
+	<p>総合計<span>（税込）</span>
 		<strong><%#: CurrencyManager.ToPrice(this.CartList.PriceCartListTotal) %></strong></p>
 	</div>
 	<%if (Constants.W2MP_POINT_OPTION_ENABLED && this.IsLoggedIn) { %>
