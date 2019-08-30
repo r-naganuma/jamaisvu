@@ -1978,7 +1978,7 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
 		<li><asp:LinkButton id="lbCart" runat="server" OnClick="lbCart_Click" class="btn btn-large btn-org-gry btn-success2">カートへ戻る</asp:LinkButton></li>
 	</ul>
 	</div>
-    <p class="btn-gry__wrap"><a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT) %>" class="btn btn-large btn-gry"><span><</span>ショッピングへ戻る</a></p>
+    <p class="btn-gry__wrap"><a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="btn btn-large btn-gry"><span><</span>ショッピングへ戻る</a></p>
 	</div><!--shoppingCart-->
 	<%-- ▲カート情報▲ --%>
 

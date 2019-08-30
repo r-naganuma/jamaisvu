@@ -1432,7 +1432,7 @@ $(function(){
   </ul>
     <p class="clr"><img src="../../Contents/ImagesPkg/common/clear.gif" alt="" width="1" height="1"  /></p>
   </div>
-  <p class="btn-gry__wrap"><a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT) %>" class="btn btn-large btn-gry"><span><</span>ショッピングへ戻る</a></p>
+  <p class="btn-gry__wrap"><a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="btn btn-large btn-gry"><span><</span>ショッピングへ戻る</a></p>
 </div><!--btmbtn-->
 
 </div><!--submain-->

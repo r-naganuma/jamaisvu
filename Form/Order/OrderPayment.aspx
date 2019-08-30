@@ -41,7 +41,27 @@ function bodyPageLoad(){
 		$(this).addClass("sc"+x);
 	});
 	$(".sc1").css("display","none");
+	if($("dl.bgc.p_red.op3 .minus").text()!=""){
+		$(".couponwrap .coupon").text($("dl.bgc.p_red.op3 .minus").text());
+
+	}else{
+		$(".couponwrap").remove();
+	}
+	
+	if($("#ctl00_ContentPlaceHolder1_rCartList_ctl00_ddlCouponList option:selected").text()!=""){
+		$(".copupon_wrap_box").text($("#ctl00_ContentPlaceHolder1_rCartList_ctl00_ddlCouponList option:selected").text());
+
+	}else{
+		$(".copupon_wrap_box").remove();
+	}
+
+
 }
+
+
+
+
+
 </script>
 <link href="../../Css/rp/OrderPayment.css" rel="stylesheet">
 <!-- <style>
@@ -747,10 +767,10 @@ div#primary {
 	</div>
 	<div class="boxbtm">
 	<div>
-	<dl id="hgcCouponCodeInputArea" runat="server">
+<!-- 	<dl id="hgcCouponCodeInputArea" runat="server">
 	<dt><span>クーポンコード</span></dt>
 	<dd><asp:TextBox ID="tbCouponCode" runat="server" Text="<%# GetCouponCode(((CartObject)Container.DataItem).Coupon) %>" MaxLength="30" autocomplete="off"></asp:TextBox></dd>
-	</dl>
+	</dl> -->
 	<p class="clr"><img src="../../Contents/ImagesPkg/common/clear.gif" alt="" width="1" height="1"  /></p>
 	</div>
 	<span class="fred" visible="<%# this.ErrorMessages.HasMessages(Container.ItemIndex, CartErrorMessages.ErrorKbn.Coupon) %>" runat="server">
@@ -762,6 +782,8 @@ div#primary {
 		<asp:DropDownList disabled="disabled" CssClass="input_border" style="width: 240px" ID="ddlCouponList" runat="server" DataTextField="Text" DataValueField="Value" OnTextChanged="ddlCouponList_TextChanged" AutoPostBack="true"></asp:DropDownList>
 	</div>
 	</div><!--boxbtm-->
+	<p class="copupon_wrap_box"></p>
+	<p class="couponwrap">クーポン<span class="coupon"></span></p>
 	<p class="shoppingCart__title"></p>
 	</div><!--box-->
 	<div runat="server" id="hgcCouponBox" style="z-index: 1; top: 0; left: 0; width: 100%; height: 120%; position: fixed; background-color: rgba(128, 128, 128, 0.75);" 
@@ -957,7 +979,7 @@ div#primary {
 			</div>
 			
 		</div><!--btmbtn-->
-		<p class="btn-gry__wrap"><a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT) %>" class="btn btn-large btn-gry"><span><</span>ショッピングへ戻る</a></p>
+		<p class="btn-gry__wrap"><a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="btn btn-large btn-gry"><span><</span>ショッピングへ戻る</a></p>
 	</div><!--shoppingCart-->
 
 	<%-- ▲カート情報▲ --%>

@@ -37,7 +37,7 @@ $(function(){
 	// });
 });
 </script>
-<!-- <style>
+<style>
 /*====================================================================
   02 OrderShipping
 ====================================================================*/
@@ -1133,8 +1133,8 @@ textarea::focus {
       overflow-x: hidden;
   }
 }
-</style> -->
-<link href="../../Css/rp/OrderComplete.css" rel="stylesheet">
+</style>
+<link href="../../Css/rp/OrderSelect.css" rel="stylesheet">
 <h2 class="cart1_h2">ショッピングカート</h2>
 <div id="dvOrderBox">
 	<div id="dvCartSelect">

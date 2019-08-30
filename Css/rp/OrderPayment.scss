@@ -979,6 +979,7 @@ $bp768: 768px;  // スマホ
 		    border-bottom: 1px solid #2E0E02;
 		    padding: 0 0 15px;
 		    height: 34px;
+		    display: none;
     		@include bp768 {
 
 		    }
@@ -1216,6 +1217,10 @@ $bp768: 768px;  // スマホ
 	{
 	    display: none;
 	}
+	div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox,
+	div#ctl00_ContentPlaceHolder1_rCartList_ctl01_hgcCouponBox{
+		z-index: 5;
+	}
 	p.shoppingCart__title {
 	    font-size: 14px;
 	    font-weight: normal;
@@ -1272,7 +1277,7 @@ $bp768: 768px;  // スマホ
 	a#ctl00_ContentPlaceHolder1_rCartList_ctl01_lbShowCouponBox  {
 		width: 67%;
 		max-width: 180px;
-	    margin: auto;
+	    margin:0 auto 40px!important;
 	    height: 40px;
 	    display: -webkit-box !important;
 	    display: -ms-flexbox !important;
@@ -1285,7 +1290,6 @@ $bp768: 768px;  // スマホ
 	    justify-content: center;
 	    line-height: 0;
 	    background: #968680 !important;
-	    margin: auto!important;
 	    font-size: 12px;
 	    color: #fff;
 	    text-decoration: none;
@@ -1293,6 +1297,40 @@ $bp768: 768px;  // スマホ
 	    text-align: center;
 	    padding: 0;
 	}
+	p.couponwrap {
+	    font-size: 14px;
+	    letter-spacing: 0.08em;
+	    margin: 0 0 6px;
+	    color: #AD2E24;
+	    span{
+	    	float:right;
+	    	color: #AD2E24;
+
+	    }
+	}
+	p.copupon_wrap_box {
+	    height: 32px;
+	    width: 100% !important;
+	    background: none;
+	    -moz-appearance: none;
+	    -webkit-appearance: none;
+	    appearance: none;
+	    border-radius: 0 !important;
+	    padding: 0 0 0 10px;
+	    border: 0;
+	    padding: 0;
+	    font-size: 14px;
+	    color: #333;
+	    margin: 40px 0 15px;
+	    /* border-bottom: 1px solid; */
+	    border-bottom: 1px solid #2E0E02;
+	    padding: 0 0 13px;
+	    height: auto;
+	    /* display: none; */
+	    line-height: 1.8!important;
+	}
+
+
 }
 
 @include bp768 {
