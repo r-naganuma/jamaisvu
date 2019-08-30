@@ -452,7 +452,7 @@ textarea::focus {
 }
 
 .cart4 #CartList .shoppingCart {
-  width: 23.92%;
+  width: 268px;
   float: right;
   background: #EAE6E5;
   padding: 25px 25px 40px 25px;
@@ -462,6 +462,22 @@ textarea::focus {
 @media (max-width: 768px) {
   .cart4 #CartList .shoppingCart {
     width: 100%;
+  }
+}
+
+.cart4 #CartList .shoppingCart.is-fixed {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  margin-left: 270px;
+}
+
+@media (max-width: 768px) {
+  .cart4 #CartList .shoppingCart.is-fixed {
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    margin-left: 0;
   }
 }
 

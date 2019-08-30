@@ -137,6 +137,13 @@ $(function(){
   $(".add_cart_box").append($(".sc0").clone());
 
   
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 250) {
+          $('.shoppingCart').addClass('is-fixed');
+      } else {
+          $('.shoppingCart').removeClass('is-fixed');
+      }
+  });
 });
 </script>
 <!-- <style>

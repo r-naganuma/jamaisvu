@@ -400,13 +400,27 @@ $bp768: 768px;  // スマホ
 		    display: block!important;
 		}
 		.shoppingCart {
-		    width: 23.92%;
+		    width: 268px;
 		    float: right;
 		    background: #EAE6E5;
 		    padding: 25px 25px 40px 25px;
 		    position: relative;
 			@include bp768 {
 			width: 100%;
+			}
+
+			&.is-fixed {
+				position: fixed;
+				top: 30px;
+				left:50%;
+				margin-left:270px;
+
+			    @include bp768 {
+					position: inherit;
+					top: inherit;
+					left:inherit;
+					margin-left:0;
+			   	}
 			}
 
 
