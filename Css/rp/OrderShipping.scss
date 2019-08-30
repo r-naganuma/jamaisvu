@@ -884,7 +884,7 @@ $bp768: 768px;  // スマホ
 	    clear: none;
 	    margin-top: 0px!important;
 	    border-top: none;
-	    width: 23.9%;
+	    width: 268px;
 	    float: right;
 	    height: auto;
 	    position: absolute;
@@ -895,6 +895,20 @@ $bp768: 768px;  // スマホ
 		 margin: auto;
 		 float: none;
 		 position: static;
+		}
+
+		&.is-fixed {
+			position: fixed;
+			top: 30px;
+			left:50%;
+			margin-left:270px;
+
+		    @include bp768 {
+				position: inherit;
+				top: inherit;
+				left:inherit;
+				margin-left:0;
+		   	}
 		}
 	}
 		.btmbtn__innar{

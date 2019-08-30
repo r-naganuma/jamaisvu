@@ -1135,7 +1135,7 @@ textarea::focus {
   clear: none;
   margin-top: 0px !important;
   border-top: none;
-  width: 23.9%;
+  width: 268px;
   float: right;
   height: auto;
   position: absolute;
@@ -1149,6 +1149,22 @@ textarea::focus {
     margin: auto;
     float: none;
     position: static;
+  }
+}
+
+.cart2 div.btmbtn.is-fixed {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  margin-left: 270px;
+}
+
+@media (max-width: 768px) {
+  .cart2 div.btmbtn.is-fixed {
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    margin-left: 0;
   }
 }
 

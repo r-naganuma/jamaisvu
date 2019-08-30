@@ -37,6 +37,13 @@ $(function(){
   $(".userList select").change(function(){
 
   });
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 250) {
+          $('.btmbtn').addClass('is-fixed');
+      } else {
+          $('.btmbtn').removeClass('is-fixed');
+      }
+  });
 });
 </script>
 <link href="../../Css/rp/OrderShipping.css" rel="stylesheet">
