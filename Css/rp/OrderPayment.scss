@@ -290,6 +290,8 @@ $bp768: 768px;  // スマホ
 		    max-width: 270px;
 			@include bp768 {
 		    width: 100%;
+		    max-width: 100%;
+
 			}
 		    h2{
 		    	display: none;
@@ -620,6 +622,11 @@ $bp768: 768px;  // スマホ
 		    font-size: 12px!important;
 		    letter-spacing: 0.08em;
 		    margin: 20px 25px 0 0;
+		  	 @include bp768 {
+				display: flex;
+				justify-content: center;
+		   	}
+
 		}
 		a.btn.btn-large.btn-gry span {
 		    display: inline-block!important;
@@ -659,6 +666,9 @@ $bp768: 768px;  // スマホ
 		    position: relative;
 		    top: 42px;
 		    left: 35px;
+		    @include bp768 {
+				left: 0;
+		    }
 		}
 		p.btn-gry__wrap a {
 		    background: none;
@@ -739,56 +749,61 @@ $bp768: 768px;  // スマホ
 				margin: 0 0 25px;
 			}
 		}
+
+
 		.cre_a {
-		    padding: 11px 0 0 270px;
-			input {
-			    display: none;
+		    padding: 11px 0 0 85px;
+
+			 input {
+			  display: none;
 			}
-	   		@include bp768 {
-			width: 100%;
-	   		}
-			input+label {
-			    padding-left: 32px;
+
+			input + label {
+			    padding-left: 28px;
 			    vertical-align: middle;
 			    position: relative;
-			    padding-top: 0px;
-			    margin-right: 50px;
-			    display: block;
-			   	@include bp768 {
-				 margin-right: 0px;
-		   		}
+			    padding-top: 3px;
+			    margin-right: 66px;
 			}
 
-			input+label:before {
-			content: "";
+			input + label::before {
+			  content: "";
+			  display: block;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 16px;
+			  height: 16px;
+			  border: 1px solid #C0B6B3;
+			  border-radius: 3px;
+			  background: #fff;
+			  -webkit-box-sizing: border-box;
+			  box-sizing: border-box;
+			  @include bp768 {
+				  // border-radius: 12px;
+			  }
+			}
+
+			input:checked + label::after {
+		    content: "";
 		    display: block;
 		    position: absolute;
-		    top: 0;
-		    left: 0;
-		    width: 15px;
+		    top: 2px;
+		    left: 2px;
+		    width: 12px;
 		    height: 15px;
-		    border: 1px solid #968680;
+		    background: #2E0E02;
 		    border-radius: 3px;
-		    background: #fff;
-		    -webkit-box-sizing: border-box;
-		    box-sizing: border-box;
-			}
+		    background: url(../../Contents/ImagesPkg/common/check@2x.png);
+		    display: block;
+		    background-position: 0px 2px;
+		    background-size: 100%;
+		    background-repeat: no-repeat;
 
-			input:checked+label:after {
-				content: "";
-			    display: block;
-			    position: absolute;
-			    top: 3px;
-			    left: 3px;
-			    width: 9px;
-			    height: 9px;
-			    background: #2E0E02;
-			    border-radius: 2px;
-			}
-
-			input:checked+label.on:after {
-			    content: ""
-			}
+	  @include bp768 {
+		  border-radius: 8px;
+	  }
+	}
 		}
 		@include bp768 {
 			.cre_a {
@@ -802,6 +817,36 @@ $bp768: 768px;  // スマホ
 			    font-size: 13px!important;
 			}
 		}
+		.divUserCred {
+
+			dt{
+				background: #fbfafa!important;
+				width: 130px!important;
+				.fred {
+				    color: #fff;
+				    background: #AD2E24;
+				    font-size: 10px;
+				    padding: 3px 6px;
+				    border-radius: 3px;
+				    top: -2px;
+				    position: relative;
+				    margin: 0 0 0 12px;
+					}
+			}
+			input{
+				width: 376px;
+				border-radius: 2px;
+				@include bp768 {
+				    width: 100%;
+				    border-radius: 2px;
+				    height: 38px;
+				}
+			}
+			
+
+		}
+
+
 
 
 		input#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_cbRegistCreditCard,
@@ -833,9 +878,17 @@ $bp768: 768px;  // スマホ
 		}
 		div#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_divUserCreditCardName ,
 		div#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_divUserCreditCardName {
-		    padding: 10px 0 0 85px;
+		    background: rgba(234,230,229,0.2);
+    		padding: 20px 20px 20px 20px;
+    		margin: 15px 0 0 85px;
+    		width: 554px;
 			@include bp768 {
-				padding: 25px 0 0 11%;
+				    background: rgba(234, 230, 229, 0.2);
+				    padding: 20px 20px 20px 20px;
+				    margin: 17px 0 0 0;
+				    width: 100%;
+				    padding: 25px 20px 25px 20px!important;
+
 			}
 		}
 		select#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl01_ddlCreditExpireMonth,
@@ -909,18 +962,26 @@ $bp768: 768px;  // スマホ
 	}
 	select#ctl00_ContentPlaceHolder1_rCartList_ctl00_ddlCouponList,
 	select#ctl00_ContentPlaceHolder1_rCartList_ctl01_ddlCouponList  {
-		height: 32px;
-	    width: 100%!important;
-	    background: none;
-	    -moz-appearance: none;
-	    -webkit-appearance: none;
-	    appearance: none;
-	    border-radius: 0!important;
-	    padding: 0 0 0 10px;
-	    border: 0;
-	    padding: 0;
-	    font-size: 14px;
-	    color: #333;
+		    height: 32px;
+		    width: 100% !important;
+		    background: none;
+		    -moz-appearance: none;
+		    -webkit-appearance: none;
+		    appearance: none;
+		    border-radius: 0 !important;
+		    padding: 0 0 0 10px;
+		    border: 0;
+		    padding: 0;
+		    font-size: 14px;
+		    color: #333;
+		    margin: 40px 0 0;
+		    /* border-bottom: 1px solid; */
+		    border-bottom: 1px solid #2E0E02;
+		    padding: 0 0 15px;
+		    height: 34px;
+    		@include bp768 {
+
+		    }
 	}
 	div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponSelect {
 		margin: 0 0 15px;
@@ -946,6 +1007,7 @@ $bp768: 768px;  // スマホ
 	    margin: 0 0 15px;
 	    display: block;
 	}
+
 	.checkBox > input {
 	  display: none;
 	}
@@ -971,24 +1033,31 @@ $bp768: 768px;  // スマホ
 	  background: #fff;
 	  -webkit-box-sizing: border-box;
 	  box-sizing: border-box;
+	  @include bp768 {
+		  // border-radius: 12px;
+	  }
 	}
 
 	.checkBox input:checked + label::after {
-	  content: "";
-	  display: block;
-	  position: absolute;
-	  top: 4px;
-	  left: 4px;
-	  width: 12px;
-	  height: 12px;
-	  background: #2E0E02;
-	  border-radius: 3px;
-	}
+		content: "";
+	    display: block;
+	    position: absolute;
+	    top: 2px;
+	    left: 2px;
+	    width: 16px;
+	    height: 15px;
+	    background: #2E0E02;
+	    border-radius: 3px;
+	    background: url(../../Contents/ImagesPkg/common/check@2x.png);
+	    display: block;
+	    background-position: 0px 3px;
+	    background-size: 100%;
+	    background-repeat: no-repeat;
 
-	.checkBox input:checked + label.on::after {
-	  content: "";
+	  @include bp768 {
+		  border-radius: 8px;
+	  }
 	}
-
 	.divUserCreditCardName__wrap {
 	    padding: 0 0 25px 245px;
 	}
@@ -1193,7 +1262,8 @@ $bp768: 768px;  // スマホ
 	}
 	a#ctl00_ContentPlaceHolder1_rCartList_ctl00_lbShowCouponBox,
 	a#ctl00_ContentPlaceHolder1_rCartList_ctl01_lbShowCouponBox  {
-		width: 180px;
+		width: 67%;
+		max-width: 180px;
 	    margin: auto;
 	    height: 40px;
 	    display: -webkit-box !important;
@@ -1206,7 +1276,7 @@ $bp768: 768px;  // スマホ
 	    -ms-flex-pack: center;
 	    justify-content: center;
 	    line-height: 0;
-	    background-color: #968680 !important;
+	    background: #968680 !important;
 	    margin: auto!important;
 	    font-size: 12px;
 	    color: #fff;
@@ -1294,7 +1364,11 @@ div#hgcCouponList {
 	    top: 25px;
 	}
 
-
+	h2.ttlA.p2 {
+	    border-bottom: #CCCCCC solid 1px!important;
+	    padding: 0 0 20px 0!important;
+	    margin: 0px 0 15px!important;
+	}
 
 }
 

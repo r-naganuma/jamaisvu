@@ -27,7 +27,7 @@ $(function(){
 	$(".shoppingCart").each(function(x){
 		$(this).addClass("sc"+x);
 	});
-	// $(".sc1").css("display","none");
+	$(".sc1").css("display","none");
 	// if($(window).width()<768){
 	//  $(".add_cart_box").append($(".sc0"));
 	// }
@@ -40,7 +40,7 @@ function bodyPageLoad(){
 	$(".shoppingCart").each(function(x){
 		$(this).addClass("sc"+x);
 	});
-	// $(".sc1").css("display","none");
+	$(".sc1").css("display","none");
 }
 </script>
 <link href="../../Css/rp/OrderPayment.css" rel="stylesheet">
@@ -213,7 +213,7 @@ div#primary {
     </ul> -->
   </div>
     <h2 class="ttlA" visible='<%# ((CartObject)Container.DataItem).ShippingType == "100" %>' runat="server">【通常商品】お支払い方法</h2>
-    <h2 class="ttlA" visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server">【予約商品】お支払い方法</h2>
+    <h2 class="ttlA p2" visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server">【予約商品】お支払い方法</h2>
 	<div id="Div1" visible="<%# (Container.ItemIndex == 0) %>" runat="server">
 <!-- 	<h2><img src="../../Contents/ImagesPkg/order/sttl_cash.gif" alt="お支払い情報" width="95" height="16" /></h2>
 	<p class="pdg_bottomA">お支払い方法を選択し以下の内容をご入力ください。<br /><span class="fred">※</span>&nbsp;は必須入力です。</p> -->
@@ -391,12 +391,12 @@ div#primary {
     <div id="divUserCreditCardName" visible="false" runat="server">
     <p>クレジットカードを保存する場合は、以下をご入力ください。</p>
 
-    <dl class="pay_dl">
+    <dl class="pay_dl divUserCred">
     <dt>
-    <strong>クレジットカード登録名&nbsp;<span class="fred"></span></strong>
+    <strong>表示名&nbsp;<span class="fred">必須</span></strong>
 	</dt>
 	<dd>
-    <p><asp:TextBox ID="tbUserCreditCardName" Text="<%# ((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment.UserCreditCardName %>" MaxLength="100" CssClass="input_widthD input_border" runat="server"></asp:TextBox><br />
+    <p><asp:TextBox ID="tbUserCreditCardName" placeholder="例：勤務先" Text="<%# ((CartObject)((RepeaterItem)Container.Parent.Parent).DataItem).Payment.UserCreditCardName %>" MaxLength="100" CssClass="input_widthD input_border" runat="server"></asp:TextBox><br />
     <small class="fred">
     <asp:CustomValidator ID="cvUserCreditCardName" runat="Server"
       ControlToValidate="tbUserCreditCardName"
@@ -569,7 +569,7 @@ div#primary {
 	<%-- ▼カート情報▼ --%>
 	<div class="shoppingCart">
 
-	<p class="shoppingCart__title"></p>
+	
 	<div id="Div7" visible="<%# (Container.ItemIndex == 0) %>" runat="server">
 	<h2><img src="../../Contents/ImagesPkg/common/ttl_shopping_cart.gif" alt="ショッピングカート" width="141" height="16" /></h2>
 	<div class="sumBox mrg_topA kei1">
@@ -739,7 +739,7 @@ div#primary {
 	<div class="couponBox">
 	<div id="divCouponBox" class="box" runat="server">
 	<!-- <p>クーポンを使う</p> -->
-	<p class="divCouponBox__p">クーポンを使う<!-- <img src="../../Contents/ImagesPkg/common/ttl_coupon.gif" alt="クーポンを使う" width="262" height="23" /> --></p>
+	<p class="divCouponBox__p"><!-- <img src="../../Contents/ImagesPkg/common/ttl_coupon.gif" alt="クーポンを使う" width="262" height="23" /> --></p>
 	<div id="divCouponInputMethod" runat="server" style="font-size: 10px; padding: 10px 10px 0px 10px; font-family: 'Lucida Grande','メイリオ',Meiryo,'Hiragino Kaku Gothic ProN', sans-serif; color: #333;">
 		<asp:RadioButtonList runat="server" AutoPostBack="true" ID="rblCouponInputMethod"
 			OnSelectedIndexChanged="rblCouponInputMethod_SelectedIndexChanged" OnDataBinding="rblCouponInputMethod_DataBinding"
@@ -755,16 +755,14 @@ div#primary {
 	</div>
 	<span class="fred" visible="<%# this.ErrorMessages.HasMessages(Container.ItemIndex, CartErrorMessages.ErrorKbn.Coupon) %>" runat="server">
 		<%# WebSanitizer.HtmlEncode(this.ErrorMessages.Get(Container.ItemIndex, CartErrorMessages.ErrorKbn.Coupon)) %></span>
-	<asp:LinkButton runat="server" ID="lbShowCouponBox" Text="クーポンBOX"
-		style="color: #ffffff !important; background-color: #000 !important;
-		border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); display: inline-block;
-		padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; text-align: center; vertical-align: middle; cursor: pointer;
-		border: 1px solid #cccccc; border-radius: 4px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); white-space: nowrap; text-decoration: none; "
+	<asp:LinkButton runat="server" ID="lbShowCouponBox" Text="クーポンを選ぶ"
+		style=""
 		OnClick="lbShowCouponBox_Click" ></asp:LinkButton>
 	<div id="hgcCouponSelect" runat="server">
 		<asp:DropDownList disabled="disabled" CssClass="input_border" style="width: 240px" ID="ddlCouponList" runat="server" DataTextField="Text" DataValueField="Value" OnTextChanged="ddlCouponList_TextChanged" AutoPostBack="true"></asp:DropDownList>
 	</div>
 	</div><!--boxbtm-->
+	<p class="shoppingCart__title"></p>
 	</div><!--box-->
 	<div runat="server" id="hgcCouponBox" style="z-index: 1; top: 0; left: 0; width: 100%; height: 120%; position: fixed; background-color: rgba(128, 128, 128, 0.75);" 
 		Visible='<%# ((CartObject)Container.DataItem).CouponBoxVisible %>'>
@@ -928,7 +926,7 @@ div#primary {
 	<div id="Div12" visible="<%# ((CartObjectList)((Repeater)Container.Parent).DataSource).Items.Count == Container.ItemIndex + 1 %>" runat="server">
 	<div class="sumBox">
 	<div class="subSumBox">
-	<p>総合計<!-- <img src="../../Contents/ImagesPkg/common/ttl_sum.gif" alt="総合計" width="52" height="16" /> -->
+	<p>総合計<span>（税込）</span><!-- <img src="../../Contents/ImagesPkg/common/ttl_sum.gif" alt="総合計" width="52" height="16" /> -->
 		<strong><%#: CurrencyManager.ToPrice(this.CartList.PriceCartListTotalWithOutPaymentPrice) %></strong></p>
 	</div>
 	<%if (Constants.W2MP_POINT_OPTION_ENABLED && this.IsLoggedIn) { %>

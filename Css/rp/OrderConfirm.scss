@@ -973,6 +973,9 @@ $bp768: 768px;  // スマホ
 	    	float: right;
 	    	letter-spacing: 0.08em;
 	    }
+	    span{
+	    	font-size: 11px;
+	    }
 	}
 	@include bp768 {
 		.sc0,.sc1{

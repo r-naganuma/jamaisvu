@@ -1158,6 +1158,10 @@ textarea::focus {
   letter-spacing: 0.08em;
 }
 
+.cart4 p.shoppingCart__title span {
+  font-size: 11px;
+}
+
 @media (max-width: 768px) {
   .cart4 .sc0, .cart4 .sc1 {
     display: none;

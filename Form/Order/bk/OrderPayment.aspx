@@ -926,7 +926,7 @@ div#primary {
 	<div id="Div12" visible="<%# ((CartObjectList)((Repeater)Container.Parent).DataSource).Items.Count == Container.ItemIndex + 1 %>" runat="server">
 	<div class="sumBox">
 	<div class="subSumBox">
-	<p>総合計<!-- <img src="../../Contents/ImagesPkg/common/ttl_sum.gif" alt="総合計" width="52" height="16" /> -->
+	<p>総合計総合計<span>(税込)</span><!-- <img src="../../Contents/ImagesPkg/common/ttl_sum.gif" alt="総合計" width="52" height="16" /> -->
 		<strong><%#: CurrencyManager.ToPrice(this.CartList.PriceCartListTotalWithOutPaymentPrice) %></strong></p>
 	</div>
 	<%if (Constants.W2MP_POINT_OPTION_ENABLED && this.IsLoggedIn) { %>
