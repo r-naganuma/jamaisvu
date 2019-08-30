@@ -1075,6 +1075,9 @@ span.error_message {
   #Wrap .userWrap .nextBtn::before {
     content: none;
   }
+  dd.color_box {
+      display: none;
+  }
 }
 
 #Wrap .userWrap .nextBtn:hover::before {
@@ -1109,15 +1112,18 @@ span.error_message {
   }
   @media (max-width: 768px) {
   p {
-    font-weight: bold;
-  }
+      font-weight: bold;
+    }
 
-  strong {
+    strong {
 
-    font-weight: bold;
-  }
+      font-weight: bold;
+    }
   }
 }
+
+
+
 
 #Foot{
   border-top: none;

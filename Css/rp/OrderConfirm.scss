@@ -291,7 +291,10 @@ $bp768: 768px;  // スマホ
 				}
 				dt{
 					display: none;
-					width: 190px;
+					width: 145px;
+					@include bp768 {
+						width: 130px;
+					}
 
 				}
 				dd{
@@ -824,7 +827,7 @@ $bp768: 768px;  // スマホ
 		    }
 		}
 		.box_dt16 {
-		    width: 190px!important;
+		    width: 145px!important;
 		    @include bp768 {
 				width: 100%!important;
 		    }
@@ -1085,7 +1088,9 @@ $bp768: 768px;  // スマホ
 		    margin: 0 0 100px!important;
 		}
 	}
-
+	.name_dd{
+		margin: 0 0 15px;
+	}
 
 
 }
@@ -1229,6 +1234,7 @@ $bp768: 768px;  // スマホ
 		width: 145px;
 		padding: 0 0 0 40px;
 			@include bp768 {
+
 			width: 100%;
 			padding: 0 0 0 0px;
 			}
@@ -1306,7 +1312,10 @@ $bp768: 768px;  // スマホ
 		}
 	}
 
-
+	dt.box_dt12,
+	dt.box_dt13  {
+	    width: 140px!important;
+	}
 
 
 

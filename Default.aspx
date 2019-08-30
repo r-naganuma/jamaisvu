@@ -74,8 +74,7 @@ $(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         draggable: false,
-        variableWidth: false,
-        vertical: true
+        variableWidth: false
     });
 })
 </script>

@@ -3314,9 +3314,7 @@ $bp768: 768px;  // スマホ
 		display: block;
 
 		@include bp768 {
-			width: 100% !important;
-			padding-right: 247px;
-			box-sizing: border-box;
+			width: 110px !important;
 			position: absolute;
 			bottom: 55px;
 			left: 18px;

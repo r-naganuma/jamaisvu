@@ -319,7 +319,13 @@ textarea::focus {
 
 .cart4 #CartList .orderBox div.box dt {
   display: none;
-  width: 190px;
+  width: 145px;
+}
+
+@media (max-width: 768px) {
+  .cart4 #CartList .orderBox div.box dt {
+    width: 130px;
+  }
 }
 
 .cart4 #CartList .orderBox div.box dd {
@@ -975,7 +981,7 @@ textarea::focus {
 }
 
 .cart4 .box_dt16 {
-  width: 190px !important;
+  width: 145px !important;
 }
 
 @media (max-width: 768px) {
@@ -1283,6 +1289,10 @@ textarea::focus {
   }
 }
 
+.cart4 .name_dd {
+  margin: 0 0 15px;
+}
+
 #Foot {
   border: none;
 }
@@ -1562,6 +1572,11 @@ textarea::focus {
   .first_wrap__innar__top .pc_set {
     display: none;
   }
+}
+
+.first_wrap__innar__top dt.box_dt12,
+.first_wrap__innar__top dt.box_dt13 {
+  width: 140px !important;
 }
 
 div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox tr {
