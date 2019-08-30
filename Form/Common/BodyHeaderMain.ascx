@@ -202,7 +202,7 @@ function initializeFunctionJs() {
 							</li>
 							<li>
 								<div class="listColumn">
-									<a href="<%= Constants.PATH_ROOT %>topics/" class="period">TOPICS</a>
+									<a href="https://jamaisvu.co.jp/category/topics/" class="period">TOPICS</a>
 								</div>
 							</li>
 							<li>
@@ -499,7 +499,7 @@ function initializeFunctionJs() {
 										</a>
 									</li>
 									<li>
-										<a href="<%= Constants.PATH_ROOT %>topics/">
+										<a href="https://jamaisvu.co.jp/category/topics/">
 											トピックス
 										</a>
 									</li>
