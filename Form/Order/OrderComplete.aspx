@@ -8,7 +8,7 @@
 <%@ Register TagPrefix="uc" TagName="BodyProductRecommendByRecommendEngine" Src="~/Form/Common/Product/BodyProductRecommendByRecommendEngine.ascx" %>
 <%@ Register TagPrefix="uc" TagName="BodyRecommend" Src="~/Form/Common/BodyRecommendAtOrderComplete.ascx" %>
 <%@ Register TagPrefix="uc" TagName="Criteo" Src="~/Form/Common/Criteo.ascx" %>
-<%@ page language="C#" masterpagefile="~/Form/Common/OrderPage.master" autoeventwireup="true" inherits="Form_Order_OrderComplete, App_Web_ordercomplete.aspx.bf558b1b" title="注文完了ページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/OrderPage.master" autoeventwireup="true" inherits="Form_Order_OrderComplete, App_Web_ordercomplete.aspx.bf558b1b" title="注文完了｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="注文完了ページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <!--アフィリエイトタグ出力-->
 <asp:Repeater ID="rAffiliateTag" runat="server" Visible="<%# Constants.SETTING_PRODUCTION_ENVIRONMENT %>">

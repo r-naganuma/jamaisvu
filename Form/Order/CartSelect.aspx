@@ -6,7 +6,7 @@
 =========================================================================================================
 --%>
 <%@ Register TagPrefix="uc" TagName="CartSelect_ProductItem" Src="~/Form/Order/CartSelect_ProductItem.ascx" %>
-<%@ page language="C#" masterpagefile="~/Form/Common/OrderPage.master" autoeventwireup="true" inherits="Form_Order_CartSelect, App_Web_cartselect.aspx.bf558b1b" title="カート商品選択ページ" %>
+<%@ page language="C#" masterpagefile="~/Form/Common/OrderPage.master" autoeventwireup="true" inherits="Form_Order_CartSelect, App_Web_cartselect.aspx.bf558b1b" title="カート（カゴ落ち確認）｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 <meta http-equiv="pragma" content="no-cache">
 </asp:Content>
