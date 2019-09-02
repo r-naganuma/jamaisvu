@@ -2332,52 +2332,10 @@
   font-weight: 700;
 }
 
-#Wrap .ohShippingChange {
+#Wrap .ohShippingChange a {
   width: 180px;
   height: 38px;
-  position: relative;
   margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-  #Wrap .ohShippingChange {
-    background: #2E0E02;
-  }
-}
-
-#Wrap .ohShippingChange:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 23px;
-  margin: auto;
-  z-index: 1;
-  display: block;
-  width: 7px;
-  height: 7px;
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  border-top: 2px solid #2E0E02;
-  border-right: 2px solid #2E0E02;
-}
-
-@media (max-width: 768px) {
-  #Wrap .ohShippingChange:after {
-    right: 15px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-  }
-}
-
-#Wrap .ohShippingChange:hover::after {
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-}
-
-#Wrap .ohShippingChange a {
   font-size: 13px;
   text-align: center;
   letter-spacing: 0.28em;
@@ -2389,13 +2347,14 @@
 
 @media (max-width: 768px) {
   #Wrap .ohShippingChange a {
+    background: #2E0E02;
     font-size: 12px;
     color: #fff;
     border: none;
   }
 }
 
-#Wrap .ohShippingChange a::after {
+#Wrap .ohShippingChange a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -2418,12 +2377,39 @@
 }
 
 @media (max-width: 768px) {
-  #Wrap .ohShippingChange a::after {
+  #Wrap .ohShippingChange a::before {
     content: none;
   }
 }
 
-#Wrap .ohShippingChange a:hover::after {
+#Wrap .ohShippingChange a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 23px;
+  margin: auto;
+  z-index: 1;
+  display: block;
+  width: 7px;
+  height: 7px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 2px solid #2E0E02;
+  border-right: 2px solid #2E0E02;
+}
+
+@media (max-width: 768px) {
+  #Wrap .ohShippingChange a:after {
+    right: 15px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+}
+
+#Wrap .ohShippingChange a:hover::before {
   -webkit-transform-origin: left top;
   -ms-transform-origin: left top;
   transform-origin: left top;
@@ -2435,6 +2421,11 @@
 #Wrap .ohShippingChange a:hover {
   opacity: 1;
   color: #fff;
+}
+
+#Wrap .ohShippingChange a:hover::after {
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
 }
 
 .mrgB0 {

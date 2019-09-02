@@ -1986,46 +1986,10 @@ $bp768: 768px;  // スマホ
 	}
 
 	.ohShippingChange{
-		width: 180px;
-		height: 38px;
-		position: relative;
-		margin-top: 10px;
-
-		@include bp768 {
-			background: #2E0E02;
-		};
-
-		&:after {
-			content: "";
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 23px;
-			margin: auto;
-			z-index: 1;
-			display: block;
-			width: 7px;
-			height: 7px;
-			-moz-transform: rotate(45deg);
-			-webkit-transform: rotate(45deg);
-			-ms-transform: rotate(45deg);
-			transform: rotate(45deg);
-			border-top: 2px solid #2E0E02;
-			border-right: 2px solid #2E0E02;
-
-			@include bp768 {
-				right: 15px;
-				border-top: 2px solid #fff;
-				border-right: 2px solid #fff;
-			};
-		}
-
-	    &:hover::after {
-			border-top: 2px solid #fff;
-			border-right: 2px solid #fff;
-	    }
-
-		a {
+		a{
+			width: 180px;
+			height: 38px;
+			margin-top: 10px;
 			font-size: 13px;
 			text-align: center;
 			letter-spacing: 0.28em;
@@ -2035,12 +1999,13 @@ $bp768: 768px;  // スマホ
 			border: 1px solid #2E0E02;
 
 			@include bp768 {
+				background: #2E0E02;
 				font-size: 12px;
 				color: #fff;
 				border: none;
 			};
 
-		    &::after{
+		    &::before{
 				content: "";
 				position: absolute;
 				top: 0;
@@ -2058,7 +2023,32 @@ $bp768: 768px;  // スマホ
 				};
 		    }
 
-		    &:hover::after {
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 23px;
+				margin: auto;
+				z-index: 1;
+				display: block;
+				width: 7px;
+				height: 7px;
+				-moz-transform: rotate(45deg);
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+				border-top: 2px solid #2E0E02;
+				border-right: 2px solid #2E0E02;
+
+				@include bp768 {
+					right: 15px;
+					border-top: 2px solid #fff;
+					border-right: 2px solid #fff;
+				};
+			}
+
+		    &:hover::before {
 				transform-origin: left top;
 				transform: scale(1, 1);
 		    }
@@ -2066,6 +2056,11 @@ $bp768: 768px;  // スマホ
 		    &:hover{
 		      opacity: 1;
 		      color: #fff;
+		    }
+
+		    &:hover::after {
+				border-top: 2px solid #fff;
+				border-right: 2px solid #fff;
 		    }
 		}
 	}

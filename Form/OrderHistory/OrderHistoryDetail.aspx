@@ -985,13 +985,10 @@ function bodyPageLoad() {
 												</a>
 												<%# (IsProductValid((DataRowView)Container.DataItem) == false) ? WebSanitizer.HtmlEncode(Eval(Constants.FIELD_ORDERITEM_PRODUCT_NAME)) : ""%>
 											</p>
-											<span visible='<%# (string)Eval(Constants.FIELD_ORDERITEM_PRODUCT_OPTION_TEXTS) != "" %>' runat="server">
-											<br />
-											<%#: Eval(Constants.FIELD_ORDERITEM_PRODUCT_OPTION_TEXTS).ToString().Replace("　", "\r\n") %>
-											</span>
-											<p class="itemTtl_pdc">
+											<p class="itemTtl_pdc" visible='<%# (string)Eval(Constants.FIELD_ORDERITEM_PRODUCT_OPTION_TEXTS) != "" %>' runat="server">
 												価格　：<%#: CurrencyManager.ToPrice(Eval(Constants.FIELD_ORDERITEM_PRODUCT_PRICE)) %>（税込）<br>
-												数量　：<%#: StringUtility.ToNumeric(Eval(Constants.FIELD_ORDERITEM_ITEM_QUANTITY)) %>
+												数量　：<%#: StringUtility.ToNumeric(Eval(Constants.FIELD_ORDERITEM_ITEM_QUANTITY)) %><br>
+												<%#: Eval(Constants.FIELD_ORDERITEM_PRODUCT_OPTION_TEXTS).ToString().Replace("　", "\r\n") %>
 											</p>
 										</div>
 
