@@ -221,6 +221,8 @@ textarea::focus {
 @media (max-width: 768px) {
   .cart4 #CartList {
     margin: 50px auto;
+    overflow: hidden;
+    padding-bottom: 50px;
   }
 }
 
@@ -995,7 +997,7 @@ textarea::focus {
 
 @media (max-width: 768px) {
   .cart4 .box_dt16 {
-    width: 100% !important;
+    width: 130px !important;
   }
 }
 
@@ -1004,9 +1006,6 @@ textarea::focus {
 }
 
 @media (max-width: 768px) {
-  .cart4 .box_dt16 + dd {
-    padding: 10px 0 0 0 !important;
-  }
   .cart4 .box_dt35 + dd {
     padding: 10px 0 0 0 !important;
   }

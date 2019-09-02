@@ -37,6 +37,18 @@ $(function(){
 	  } else {
 	      $('.shoppingCart').removeClass('is-fixed');
 	  }
+	});	
+
+	$('#ctl00_ContentPlaceHolder1_rCartList_ctl00_lbShowCouponBox').click(function () {
+		$('body').addClass('active');
+	});
+	
+	$('.couponUseUse').click(function () {
+		$('body').removeClass('active');
+	});
+	
+	$('.couponNotUse').click(function () {
+		$('body').removeClass('active');
 	});
 
 });

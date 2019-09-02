@@ -11,6 +11,11 @@
   src: url("../Font/gillsans.otf") format("opentype");
 }
 
+body.active {
+  position: fixed;
+  top: 0;
+}
+
 a {
   text-decoration: none;
   -webkit-transition: all 0.2s linear;
