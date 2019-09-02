@@ -56,7 +56,8 @@
 				</p>
 			</div>
 			<div class="conceptBox_where--map">
-				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_01.png" alt="MERINO OPTIMO">
+				<img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_01.jpg" alt="MERINO OPTIMO">
+				<img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_01_sp.jpg" alt="MERINO OPTIMO">
 			</div>
 		</div>
 

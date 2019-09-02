@@ -57,7 +57,8 @@
 				</p>
 			</div>
 			<div class="conceptBox_where--map">
-				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_01.png" alt="HAMILTON LAMS WOOL">
+				<img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_01.jpg" alt="HAMILTON LAMS WOOL">
+				<img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_01_sp.jpg" alt="HAMILTON LAMS WOOL">
 			</div>
 		</div>
 
