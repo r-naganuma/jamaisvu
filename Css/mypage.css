@@ -147,17 +147,6 @@
   appearance: none;
 }
 
-@media (max-width: 768px) {
-  #Wrap .userWrap .loginWrap_box--left ul li input {
-    width: 124%;
-    font-size: 16px;
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    margin-left: -12%;
-  }
-}
-
 #Wrap .userWrap .loginWrap_box--left ul li input::-webkit-input-placeholder {
   color: #C6C6C6;
 }
@@ -633,17 +622,6 @@
   appearance: none;
 }
 
-@media (max-width: 768px) {
-  #Wrap .userWrap .registWrap_box--input .inputBox_right input {
-    width: 124%;
-    font-size: 16px;
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    margin-left: -12%;
-  }
-}
-
 #Wrap .userWrap .registWrap_box--input .inputBox_right input::-webkit-input-placeholder {
   color: #C6C6C6;
 }
@@ -677,17 +655,6 @@
 
 @media (max-width: 768px) {
   #Wrap .userWrap .registWrap_box--input .inputBox_right select {
-    width: 124%;
-    font-size: 16px;
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    margin-left: -12%;
-  }
-}
-
-@media (max-width: 768px) {
-  #Wrap .userWrap .registWrap_box--input .inputBox_right select {
     background: url(../../Contents/ImagesPkg/user/common/arrow_down.svg) no-repeat right 8px top 16px;
     background-size: 13.5px 7.5px;
   }
@@ -707,17 +674,6 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-@media (max-width: 768px) {
-  #Wrap .userWrap .registWrap_box--input .inputBox_right textarea {
-    width: 124%;
-    font-size: 16px;
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    margin-left: -12%;
-  }
 }
 
 #Wrap .userWrap .registWrap_box--input .inputBox_right textarea::-webkit-input-placeholder {

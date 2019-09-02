@@ -789,7 +789,7 @@ $(function(){
         <%-- 配送先：企業名・部署名 --%>
         <dt><%: ReplaceTag("@@User.company_name.name@@") %>・<%: ReplaceTag("@@User.company_post_name.name@@")%></dt>
         <dd>
-        <asp:Literal ID="lShippingCompanyName" runat="server"></asp:Literal>&nbsp<asp:Literal ID="lShippingCompanyPostName" runat="server"></asp:Literal>
+        <asp:Literal ID="lShippingCompanyName" runat="server"></asp:Literal><br style="display: block;"><asp:Literal ID="lShippingCompanyPostName" runat="server"></asp:Literal>
         </dd>
         <%} %>
         </dl>
@@ -1232,8 +1232,8 @@ $(function(){
         </dl>
         <dl class="dlShipppingDateTime__03">
           <dt></dt>
-          <dd><p>通常２〜3日ほどでお届けいたします。<br>
-          遠隔地は３〜４日ほどでお届けいたします。</p></dd>
+          <dd><p>通常2〜3日ほどでお届けいたします。<br>
+          遠隔地は3〜4日ほどでお届けいたします。</p></dd>
         </dl>
       </div>
     </div>

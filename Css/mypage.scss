@@ -155,13 +155,6 @@ $bp768: 768px;  // スマホ
 								line-height: 1;
 								appearance: none;
 
-								@include bp768 {
-									width: 124%;
-									font-size: 16px;
-									transform: scale(0.8);
-									margin-left: -12%;
-								};
-
 								&::placeholder{
 									color: #C6C6C6;
 								}
@@ -561,13 +554,6 @@ $bp768: 768px;  // スマホ
 								line-height: 1;
 								appearance: none;
 
-								@include bp768 {
-									width: 124%;
-									font-size: 16px;
-									transform: scale(0.8);
-									margin-left: -12%;
-								};
-
 								&::placeholder{
 									color: #C6C6C6;
 								}
@@ -588,13 +574,6 @@ $bp768: 768px;  // スマホ
 								appearance: none;
 
 								@include bp768 {
-									width: 124%;
-									font-size: 16px;
-									transform: scale(0.8);
-									margin-left: -12%;
-								};
-
-								@include bp768 {
 							    	background: url(../../Contents/ImagesPkg/user/common/arrow_down.svg) no-repeat right 8px top 16px;
 							    	background-size: 13.5px 7.5px;
 								};
@@ -611,13 +590,6 @@ $bp768: 768px;  // スマホ
 								letter-spacing: 0.08em;
 								line-height: 1;
 								appearance: none;
-
-								@include bp768 {
-									width: 124%;
-									font-size: 16px;
-									transform: scale(0.8);
-									margin-left: -12%;
-								};
 
 								&::placeholder{
 									color: #C6C6C6;

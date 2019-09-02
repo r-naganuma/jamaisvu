@@ -872,6 +872,7 @@ textarea::focus {
   height: 32px;
   padding: 0 0 0 10px;
   border: 1px solid #C0B6B3;
+  font-size: 14px;
 }
 
 .cart3 .pay_dl.d5 {
