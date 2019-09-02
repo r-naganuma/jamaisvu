@@ -479,9 +479,9 @@ textarea::focus {
 
 .cart4 #CartList .shoppingCart.is-fixed {
   position: fixed;
-  top: 30px;
+  top: 75px;
   left: 50%;
-  margin-left: 270px;
+  margin-left: 261px;
 }
 
 @media (max-width: 768px) {

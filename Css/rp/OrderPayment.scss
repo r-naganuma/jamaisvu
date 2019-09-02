@@ -296,9 +296,9 @@ $bp768: 768px;  // スマホ
 
 			&.is-fixed {
 				position: fixed;
-				top: 30px;
+				top: 75px;
 				left:50%;
-				margin-left:270px;
+				margin-left:261px;
 
 			    @include bp768 {
 					position: relative;
@@ -741,6 +741,7 @@ $bp768: 768px;  // スマホ
 				height: 32px;
 				padding: 0 0 0 10px;
 				border: 1px solid #C0B6B3;
+				font-size: 14px;
 			}
 			select{
 

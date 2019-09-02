@@ -522,7 +522,7 @@ function bodyPageLoad() {
 									<%#: GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_ORDERSHIPPING_SHIPPING_COMPANY_NAME) %><br />
 									<%#: GetKeyValue(((Hashtable)Container.DataItem)["row"], Constants.FIELD_ORDERSHIPPING_SHIPPING_COMPANY_POST_NAME) %>
 									<div class="ohShippingChange">
-										<asp:LinkButton ID="LinkButton1" Text="お届け先変更" runat="server" CommandArgument="<%# Container.ItemIndex %>" OnClick="lbDisplayUserShippingInfoForm_Click" Enabled="<%# this.IsModifyShipping %>" />
+										<asp:LinkButton ID="LinkButton1" Text="お届け先変更" runat="server" CommandArgument="<%# Container.ItemIndex %>" OnClick="lbDisplayUserShippingInfoForm_Click" Visible="<%# this.IsModifyShipping %>" />
 									</div>
 									<div>
 										<%#: this.ExplanationShipping %>
@@ -571,7 +571,7 @@ function bodyPageLoad() {
 							<dt class="inputBox_left must"><%: ReplaceTag("@@User.name.name@@") %> </dt>
 								<dd class="inputBox_right">
 									<div style="display: none; float:right; ">
-										<asp:LinkButton Text="お届け先変更" runat="server" CommandArgument="<%# Container.ItemIndex %>" OnClick="lbDisplayUserShippingInfoForm_Click" Enabled="<%# this.IsModifyShipping %>" class="btn" />
+										<asp:LinkButton Text="お届け先変更" runat="server" CommandArgument="<%# Container.ItemIndex %>" OnClick="lbDisplayUserShippingInfoForm_Click" Visible="<%# this.IsModifyShipping %>" class="btn" />
 									</div>
 									<dl class="nameArea">
 										<dt>姓</dt>
@@ -985,9 +985,10 @@ function bodyPageLoad() {
 												</a>
 												<%# (IsProductValid((DataRowView)Container.DataItem) == false) ? WebSanitizer.HtmlEncode(Eval(Constants.FIELD_ORDERITEM_PRODUCT_NAME)) : ""%>
 											</p>
-											<p class="itemTtl_pdc">
+											<p class="itemTtl_pdc" visible='<%# (string)Eval(Constants.FIELD_ORDERITEM_PRODUCT_OPTION_TEXTS) != "" %>' runat="server">
 												価格　：<%#: CurrencyManager.ToPrice(Eval(Constants.FIELD_ORDERITEM_PRODUCT_PRICE)) %>（税込）<br>
-												数量　：<%#: StringUtility.ToNumeric(Eval(Constants.FIELD_ORDERITEM_ITEM_QUANTITY)) %>
+												数量　：<%#: StringUtility.ToNumeric(Eval(Constants.FIELD_ORDERITEM_ITEM_QUANTITY)) %><br>
+												<%#: Eval(Constants.FIELD_ORDERITEM_PRODUCT_OPTION_TEXTS).ToString().Replace("　", "\r\n") %>
 											</p>
 										</div>
 

@@ -32,7 +32,7 @@ $(function(){
 	//  $(".add_cart_box").append($(".sc0"));
 	// }
 	$(window).scroll(function () {
-	  if ($(this).scrollTop() > 250) {
+	  if ($(this).scrollTop() > 230) {
 	      $('.shoppingCart').addClass('is-fixed');
 	  } else {
 	      $('.shoppingCart').removeClass('is-fixed');
@@ -255,7 +255,7 @@ div#primary {
 		<%# StringUtility.ToEmpty(this.DispLimitedPaymentMessages[Container.ItemIndex]) %>
 		<br/>
 	</span>
-	<asp:CheckBox ID="cbUseSamePaymentAddrAsCart1" visible="<%# (Container.ItemIndex != 0) %>" Checked="<%# ((CartObject)Container.DataItem).Payment.IsSamePaymentAsCart1 %>" Text="カート番号「１」と同じお支払いを指定する" OnCheckedChanged="cbUseSamePaymentAddrAsCart1_OnCheckedChanged" AutoPostBack="true" CssClass="checkBox" runat="server" />
+	<asp:CheckBox ID="cbUseSamePaymentAddrAsCart1" visible="<%# (Container.ItemIndex != 0) %>" Checked="<%# ((CartObject)Container.DataItem).Payment.IsSamePaymentAsCart1 %>" Text="上記と同じお支払いを指定する" OnCheckedChanged="cbUseSamePaymentAddrAsCart1_OnCheckedChanged" AutoPostBack="true" CssClass="checkBox" runat="server" />
 
 
 	

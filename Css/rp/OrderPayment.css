@@ -305,9 +305,9 @@ textarea::focus {
 
 .cart3 #CartList .shoppingCart.is-fixed {
   position: fixed;
-  top: 30px;
+  top: 75px;
   left: 50%;
-  margin-left: 270px;
+  margin-left: 261px;
 }
 
 @media (max-width: 768px) {
@@ -872,6 +872,7 @@ textarea::focus {
   height: 32px;
   padding: 0 0 0 10px;
   border: 1px solid #C0B6B3;
+  font-size: 14px;
 }
 
 .cart3 .pay_dl.d5 {
