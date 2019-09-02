@@ -25,11 +25,17 @@ $(function(){
     $('.ohShippingChange a').click(function () {
         $('body, html').animate({ scrollTop: 0 }, 500);
     });
+
+    var str = $(".itemTtl_pdc span",this);
+    str = str.replace('aaa', '<br>'); // "bcbc"
 });
 function bodyPageLoad() {
     $('.ohShippingChange a').click(function () {
         $('body, html').animate({ scrollTop: 0 }, 500);
     });
+
+    var str = $(".itemTtl_pdc span",this);
+    str = str.replace('aaa', '<br>'); // "bcbc"
 }
 </script>
 <div class="registWrap mypageCts">
@@ -988,7 +994,7 @@ function bodyPageLoad() {
 											<p class="itemTtl_pdc" visible='<%# (string)Eval(Constants.FIELD_ORDERITEM_PRODUCT_OPTION_TEXTS) != "" %>' runat="server">
 												価格　：<%#: CurrencyManager.ToPrice(Eval(Constants.FIELD_ORDERITEM_PRODUCT_PRICE)) %>（税込）<br>
 												数量　：<%#: StringUtility.ToNumeric(Eval(Constants.FIELD_ORDERITEM_ITEM_QUANTITY)) %><br>
-												<%#: Eval(Constants.FIELD_ORDERITEM_PRODUCT_OPTION_TEXTS).ToString().Replace("　", "\r\n") %>
+												<span><%#: Eval(Constants.FIELD_ORDERITEM_PRODUCT_OPTION_TEXTS).ToString().Replace("　", "\r\n") %></span>
 											</p>
 										</div>
 

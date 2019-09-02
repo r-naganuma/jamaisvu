@@ -1108,6 +1108,40 @@ $bp768: 768px;  // スマホ
 			}
 		}
 	}
+
+	&.bgWhite{
+		animation: bgWhite 1s ease 0s forwards;
+
+		@include bp1000 {
+			animation: none;
+		};
+	}
+
+	&.bgWhiteClose{
+		animation: bgWhite_out 1s ease 0s forwards;
+
+		@include bp1000 {
+			animation: none;
+		};
+	}
+}
+
+@keyframes bgWhite {
+    0%{
+		background: inherit;
+    }
+    100%{
+		background: rgba(255,255,255,0.5);
+    }
+}
+
+@keyframes bgWhite_out {
+    0%{
+		background: rgba(255,255,255,0.5);
+    }
+    100%{
+		background: inherit;
+    }
 }
 
 @keyframes mrgL {

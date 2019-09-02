@@ -1221,6 +1221,66 @@ textarea::focus {
   z-index: 1003;
 }
 
+.header.bgWhite {
+  -webkit-animation: bgWhite 1s ease 0s forwards;
+  animation: bgWhite 1s ease 0s forwards;
+}
+
+@media (max-width: 1000px) {
+  .header.bgWhite {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+.header.bgWhiteClose {
+  -webkit-animation: bgWhite_out 1s ease 0s forwards;
+  animation: bgWhite_out 1s ease 0s forwards;
+}
+
+@media (max-width: 1000px) {
+  .header.bgWhiteClose {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+@-webkit-keyframes bgWhite {
+  0% {
+    background: inherit;
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes bgWhite {
+  0% {
+    background: inherit;
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@-webkit-keyframes bgWhite_out {
+  0% {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    background: inherit;
+  }
+}
+
+@keyframes bgWhite_out {
+  0% {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    background: inherit;
+  }
+}
+
 @-webkit-keyframes mrgL {
   0% {
     margin-left: 20px;

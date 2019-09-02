@@ -482,6 +482,7 @@ textarea::focus {
   top: 75px;
   left: 50%;
   margin-left: 261px;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {

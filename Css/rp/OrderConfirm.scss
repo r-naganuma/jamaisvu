@@ -423,6 +423,7 @@ $bp768: 768px;  // スマホ
 				top: 75px;
 				left:50%;
 				margin-left:261px;
+				z-index: 1;
 
 			    @include bp768 {
 					position: relative;

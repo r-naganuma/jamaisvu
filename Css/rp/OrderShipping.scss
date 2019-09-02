@@ -263,6 +263,8 @@ $bp768: 768px;  // スマホ
 			   			letter-spacing: 0.08em;
 			   			font-weight: normal;
 			   			padding: 0 0 0 10px;
+			   			appearance: none;
+			   			border-radius: 0;
 			   		}
 					@include bp768 {
 						&.small1 {
@@ -601,6 +603,7 @@ $bp768: 768px;  // スマホ
 				    width: 29%;
 				    display: inline-block;
 				    padding: 0;
+				    font-weight: normal;
 			   		@include bp768 {
 				    width: 100%;
 				    display: block;
@@ -1033,7 +1036,7 @@ $bp768: 768px;  // スマホ
 		    margin: 60px 0 20px 0!important;
 		    padding: 0 0 20px 40px!important;
 		    height: auto!important;
-		    border-bottom: #CCCCCC solid 1px;
+		    border-bottom: #EAE6E5 solid 1px;
 		    background: none!important;
 	   		@include bp768 {
 

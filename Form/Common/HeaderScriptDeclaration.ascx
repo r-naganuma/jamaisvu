@@ -37,11 +37,11 @@
 
 <link rel="shortcut icon" href="<%= Constants.PATH_ROOT %>maintenance/icon/favicon.ico">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:title" content="JAMAIS VU（ジャメヴ）公式通販｜Official Online Store">
+<meta property="og:title" content="JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store">
 <meta property="og:url" content="https://jamaisvu.co.jp">
 <meta property="og:image" content="<%= Constants.PATH_ROOT %>maintenance/icon/ogp.jpg">
 <meta property="og:description" content="「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。">
-<meta property="og:site_name" content="JAMAIS VU（ジャメヴ）公式通販｜Official Online Store">
+<meta property="og:site_name" content="JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store">
 <meta property="og:type" content="website" />
 <meta property="fb:app_id" content="196146594601788">
 <%if (SmartPhoneUtility.CheckSmartPhoneSite(Request.Path) == false) { %>

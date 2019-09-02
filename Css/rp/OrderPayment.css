@@ -873,6 +873,10 @@ textarea::focus {
   padding: 0 0 0 10px;
   border: 1px solid #C0B6B3;
   font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
 }
 
 .cart3 .pay_dl.d5 {
