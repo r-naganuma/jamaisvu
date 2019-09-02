@@ -1833,3 +1833,8 @@ div#primary {
     z-index: 1;
   }
 }
+
+.detailBread {
+  width: 96%;
+  margin: 0 auto;
+}

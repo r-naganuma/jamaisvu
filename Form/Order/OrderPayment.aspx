@@ -255,7 +255,7 @@ div#primary {
 		<%# StringUtility.ToEmpty(this.DispLimitedPaymentMessages[Container.ItemIndex]) %>
 		<br/>
 	</span>
-	<asp:CheckBox ID="cbUseSamePaymentAddrAsCart1" visible="<%# (Container.ItemIndex != 0) %>" Checked="<%# ((CartObject)Container.DataItem).Payment.IsSamePaymentAsCart1 %>" Text="カート番号「１」と同じお支払いを指定する" OnCheckedChanged="cbUseSamePaymentAddrAsCart1_OnCheckedChanged" AutoPostBack="true" CssClass="checkBox" runat="server" />
+	<asp:CheckBox ID="cbUseSamePaymentAddrAsCart1" visible="<%# (Container.ItemIndex != 0) %>" Checked="<%# ((CartObject)Container.DataItem).Payment.IsSamePaymentAsCart1 %>" Text="上記と同じお支払いを指定する" OnCheckedChanged="cbUseSamePaymentAddrAsCart1_OnCheckedChanged" AutoPostBack="true" CssClass="checkBox" runat="server" />
 
 
 	

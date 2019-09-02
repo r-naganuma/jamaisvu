@@ -1412,7 +1412,7 @@ iframe {
 </div>
 
 <!--▽ 上部カテゴリバー ▽-->
-<div id="breadcrumb">
+<div class="detailBread">
 	<uc:BodyProductCategoryLinks runat="server"></uc:BodyProductCategoryLinks>
 </div>
 <!--△ 上部カテゴリバー △-->
