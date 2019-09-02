@@ -169,18 +169,13 @@ $bp768: 768px;  // スマホ
 }
 
 body{
-	width: 1280px;
-	margin: 0 auto;
-
-	@include bp768 {
-		width: 100%;
-	};
-
 	&.active{
 		form{
-			position: fixed;
-			top: 0;
-			left: 0;
+			@include bp768 {
+				position: fixed;
+				top: 0;
+				left: 0;
+			};
 		}
 	}
 }
@@ -1351,6 +1346,26 @@ body{
 	    letter-spacing: 0.08em;
 	    text-align: center;
 	    padding: 0;
+	    position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 8px;
+			margin: auto;
+			z-index: 1;
+			display: block;
+			width: 7px;
+			height: 7px;
+			-moz-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+			border-top: 1px solid #fff;
+			border-right: 1px solid #fff;
+		}
 	}
 	p.couponwrap {
 	    font-size: 14px;
