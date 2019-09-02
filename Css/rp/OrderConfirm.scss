@@ -420,9 +420,9 @@ $bp768: 768px;  // スマホ
 
 			&.is-fixed {
 				position: fixed;
-				top: 30px;
+				top: 75px;
 				left:50%;
-				margin-left:270px;
+				margin-left:261px;
 
 			    @include bp768 {
 					position: relative;

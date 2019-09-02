@@ -138,7 +138,7 @@ $(function(){
 
   
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 250) {
+      if ($(this).scrollTop() > 230) {
           $('.shoppingCart').addClass('is-fixed');
       } else {
           $('.shoppingCart').removeClass('is-fixed');

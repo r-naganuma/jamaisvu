@@ -33,7 +33,7 @@
   }
   $(function(){
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 250) {
+        if ($(this).scrollTop() > 230) {
             $('.btmbtn').addClass('is-fixed');
         } else {
             $('.btmbtn').removeClass('is-fixed');
@@ -385,7 +385,7 @@ h2.cart1_h2 {
 
 #ctl00_ContentPlaceHolder1_upUpdatePanel #CartList div.btmbtn.is-fixed {
   position: fixed;
-  top: 30px;
+  top: 75px;
   left:50%;
   margin-left:372px; }
 
