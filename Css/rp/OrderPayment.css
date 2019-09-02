@@ -11,9 +11,13 @@
   src: url("../Font/gillsans.otf") format("opentype");
 }
 
-body.active {
-  position: fixed;
-  top: 0;
+.sec--news {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 a {
@@ -150,6 +154,42 @@ textarea::focus {
     display: -ms-flexbox !important;
     display: flex !important;
   }
+}
+
+body {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+}
+
+body.active form {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.spScrollBar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.spScrollBar::-webkit-scrollbar-track {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 2px #777;
+  box-shadow: inset 0 0 2px #777;
+}
+
+.spScrollBar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .cart3 h2.ttlA {
