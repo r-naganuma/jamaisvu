@@ -1154,9 +1154,9 @@ textarea::focus {
 
 .cart2 div.btmbtn.is-fixed {
   position: fixed;
-  top: 30px;
+  top: 75px;
   left: 50%;
-  margin-left: 270px;
+  margin-left: 261px;
 }
 
 @media (max-width: 768px) {

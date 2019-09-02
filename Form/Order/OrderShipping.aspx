@@ -38,7 +38,7 @@ $(function(){
 
   });
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 250) {
+      if ($(this).scrollTop() > 230) {
           $('.btmbtn').addClass('is-fixed');
       } else {
           $('.btmbtn').removeClass('is-fixed');
@@ -778,9 +778,9 @@ $(function(){
           <%: ReplaceTag("@@User.addr.name@@") %>
         </dt>
         <dd>
-        <%if (isShippingAddrCountryJp) {%><asp:Literal ID="lShippingZip" runat="server"></asp:Literal><br /><%} %>
-        <asp:Literal ID="lShippingAddr1" runat="server"></asp:Literal> <asp:Literal ID="lShippingAddr2" runat="server"></asp:Literal><br />
-        <asp:Literal ID="lShippingAddr3" runat="server"></asp:Literal> <asp:Literal ID="lShippingAddr4" runat="server"></asp:Literal><br />
+        <%if (isShippingAddrCountryJp) {%><asp:Literal ID="lShippingZip" runat="server"></asp:Literal><br style="display: block;"><%} %>
+        <asp:Literal ID="lShippingAddr1" runat="server"></asp:Literal> <asp:Literal ID="lShippingAddr2" runat="server"></asp:Literal><br style="display: block;">
+        <asp:Literal ID="lShippingAddr3" runat="server"></asp:Literal> <asp:Literal ID="lShippingAddr4" runat="server"></asp:Literal><br style="display: block;">
         <asp:Literal ID="lShippingAddr5" runat="server"></asp:Literal> <asp:Literal ID="lShippingZipGlobal" runat="server"></asp:Literal> <asp:Literal ID="lShippingCountryName" runat="server"></asp:Literal>
         </dd>
         </dl>

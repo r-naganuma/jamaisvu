@@ -652,7 +652,6 @@ $bp768: 768px;  // スマホ
 
 			.search_textBox{
 				display: none;
-				transform: translateX(168px);
 			}
 
 			&.on{
@@ -1116,13 +1115,13 @@ $bp768: 768px;  // スマホ
     	margin-left: 20px;
     }
     100%{
-        margin-left: 168px;
+        margin-left: 185px;
     }
 }
 
 @keyframes mrgLclose {
     0%{
-        margin-left: 168px;
+        margin-left: 185px;
     }
     100%{
     	margin-left: 20px;
@@ -1135,14 +1134,14 @@ $bp768: 768px;  // スマホ
     	transform: translateX(0);
     }
     100%{
-    	width: 168px;
+    	width: 185px;
     	transform: translateX(0);
     }
 }
 
 @keyframes searchTxtClose {
     0%{
-    	width: 168px;
+    	width: 185px;
     	transform: translateX(0);
     }
     100%{

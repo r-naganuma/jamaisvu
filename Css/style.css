@@ -688,9 +688,6 @@ textarea::focus {
 
 .header__icon--search .search_textBox {
   display: none;
-  -webkit-transform: translateX(168px);
-  -ms-transform: translateX(168px);
-  transform: translateX(168px);
 }
 
 .header__icon--search.on {
@@ -1229,7 +1226,7 @@ textarea::focus {
     margin-left: 20px;
   }
   100% {
-    margin-left: 168px;
+    margin-left: 185px;
   }
 }
 
@@ -1238,13 +1235,13 @@ textarea::focus {
     margin-left: 20px;
   }
   100% {
-    margin-left: 168px;
+    margin-left: 185px;
   }
 }
 
 @-webkit-keyframes mrgLclose {
   0% {
-    margin-left: 168px;
+    margin-left: 185px;
   }
   100% {
     margin-left: 20px;
@@ -1253,7 +1250,7 @@ textarea::focus {
 
 @keyframes mrgLclose {
   0% {
-    margin-left: 168px;
+    margin-left: 185px;
   }
   100% {
     margin-left: 20px;
@@ -1267,7 +1264,7 @@ textarea::focus {
     transform: translateX(0);
   }
   100% {
-    width: 168px;
+    width: 185px;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
@@ -1280,7 +1277,7 @@ textarea::focus {
     transform: translateX(0);
   }
   100% {
-    width: 168px;
+    width: 185px;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
@@ -1288,7 +1285,7 @@ textarea::focus {
 
 @-webkit-keyframes searchTxtClose {
   0% {
-    width: 168px;
+    width: 185px;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
@@ -1301,7 +1298,7 @@ textarea::focus {
 
 @keyframes searchTxtClose {
   0% {
-    width: 168px;
+    width: 185px;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
