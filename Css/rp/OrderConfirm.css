@@ -462,6 +462,14 @@ textarea::focus {
   display: block !important;
 }
 
+.cart4 #CartList dt.box_dt33 {
+  display: block !important;
+}
+
+.cart4 #CartList dt.box_dt34 {
+  display: block !important;
+}
+
 .cart4 #CartList .shoppingCart {
   width: 268px;
   float: right;
