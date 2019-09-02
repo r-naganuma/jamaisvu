@@ -39,142 +39,106 @@ $(function(){
 </script>
 <style>
 
-@charset "UTF-8";
-.cart_select #dvOrderBox #dvCartSelect p {
-  background: none;
-}
 
-.cart_select #dvOrderBox h3 {
-  margin: 10px 0px 20px 0px;
-  font: bold 12px "ＭＳ Ｐゴシック", Arial;
-}
-
-.cart_select #dvOrderBox #dvCartSelect table {
-  margin: 0px 0px 60px 0px;
-}
-
-.cart_select #dvOrderBox #dvCartSelect table th {
-  border-top-style: solid;
-  border-top-width: 1px;
-  padding: 10px 0;
-  font-weight: normal;
-  text-align: left;
-  background: #fff;
-}
-
-.cart_select #dvOrderBox {
-  max-width: 1120px;
-  margin: 10px auto;
-  position: relative;
-}
-
-@media (max-width: 768px) {
-  .cart_select #dvOrderBox {
-    padding: 0 5%;
-  }
-}
-
-.cart_select #dvCartSelect p {
-  margin: 5px 0px 20px 0px;
-  padding: 10px;
-  background-color: #ececec;
-  line-height: 1.6;
-  background: none;
-}
-
-.cart_select div#dvCartSelect {
-  width: 71.42857% !important;
-}
-
-@media (max-width: 768px) {
-  .cart_select div#dvCartSelect {
-    width: 100% !important;
-  }
-}
-
-.cart_select div#dvCartSelect table .productName img {
-  height: 16px !important;
-  width: auto !important;
-}
-
-.cart_select div#dvCartSelect table td {
-  padding: 20px 5px !important;
-}
-
-.cart_select div#dvCartSelect table > tr {
-  padding: 20px 0;
-}
-
-.cart_select .btmbtn {
-  width: 23.21429% !important;
-}
-
-.cart_select .sp_contents_br {
-  display: none;
-}
-
-.cart_select .checkBox input:checked + label.on::after {
-  content: "";
-}
-
-@media (max-width: 768px) {
-  .cart_select #dvOrderBox #dvCartSelect p {
-    margin: 5px 0px 20px 0px;
-    padding: 10px;
-    background-color: #ececec;
-    line-height: 1.6;
-    background: none;
-  }
-  .cart_select div#dvCartSelect tr:first-child {
-    display: none;
-  }
-  .cart_select div#dvCartSelect tr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .cart_select div#dvCartSelect td {
-    width: 50%;
-  }
-  .cart_select #dvOrderBox #dvCartSelect table .productImg {
-    width: 30% !important;
-    text-align: center;
-  }
-  .cart_select #dvOrderBox #dvCartSelect table .productName {
-    width: 70% !important;
-  }
-  .cart_select #dvOrderBox #dvCartSelect table .productPrice {
-    width: 50% !important;
-  }
-  .cart_select #dvOrderBox #dvCartSelect table .remark {
-    width: 50% !important;
-  }
-  .cart_select #dvOrderBox #dvCartSelect table td {
-    border: none;
-  }
-  .cart_select .btmbtn {
-    width: 56.21429% !important;
-  }
-  .cart_select #dvOrderBox #dvCartSelect table {
-    margin: 0px 0px 60px 0px;
-  }
-  .cart_select .sp_contents_br {
-    display: inline;
-  }
-}
-
-#Foot{
+.cart2 div.btmbtn {
+  clear: none;
+  margin-top: 33px;
   border-top: none;
-}
+  width: 20.9%;
+  float: right;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 0; }
+  @media (max-width: 768px) {
+    .cart2 div.btmbtn {
+      width: 100%;
+      margin: auto;
+      float: none;
+      position: static; } }
 
-@media (max-width: 768px) {
-  #Foot{
-      box-sizing: border-box;
-      overflow-x: hidden;
-  }
-}
+.cart2 .btmbtn__innar {
+  background: #EAE6E5;
+  padding: 40px 20px 30px;
+  height: auto; }
+  @media (max-width: 768px) {
+    .cart2 .btmbtn__innar ul {
+      width: 58.6vw !important;
+      max-width: 220px;
+      margin: auto !important; } }
+
+.cart2 div.productList dl.name dd {
+  width: 68%; }
+
+.cart2 div.btmbtn ul li {
+  margin: 0; }
+.cart2 .btmbtn__innar dl.btmbtn__innar__dl10 {
+  margin: 0 0 40px; }
+
+.cart2 .btmbtn__innar dl {
+  width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .cart2 .btmbtn__innar dl dt {
+    font-size: 14px;
+    width: 50%;
+    text-align: left; }
+    .cart2 .btmbtn__innar dl dt span {
+      font-size: 12px;
+      display: inline-block !important;
+      margin: 0 0 0 6px; }
+  .cart2 .btmbtn__innar dl dd {
+    font-size: 14px;
+    width: 50%;
+    text-align: right; }
+.cart2 a.btn.btn-large.btn-success {
+  padding: 0;
+  font-size: 12px !important;
+  width: 100%;
+  border-radius: 0;
+  height: 48px;
+  background: #2E0E02;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  letter-spacing: 0.08em;
+  margin: 0 0 25px; }
+
+.cart2 a.btn.btn-large.btn-success2 {
+  padding: 0;
+  font-size: 12px !important;
+  width: 100%;
+  border-radius: 0;
+  height: 48px;
+  background: none;
+  border: 1px solid #2E0E02;
+  color: #2E0E02;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  letter-spacing: 0.08em;
+  margin: 0 0 25px; }
+
+
 </style>
 <link href="../../Css/rp/OrderSelect.css" rel="stylesheet">
 <h2 class="cart1_h2">ショッピングカート</h2>
@@ -254,7 +218,6 @@ $(function(){
 			<asp:HiddenField ID="hfProductSetItemNo" runat="server" Value="<%# ((CartProduct)Container.DataItem).ProductSetItemNo %>" />
 			<asp:HiddenField ID="hfProductSetName" runat="server" Value="<%# OrderPage.GetProductSetName(((CartProduct)Container.DataItem)) %>" />
 			<asp:HiddenField ID="hfProductOptionSettingList" runat="server" Value="<%# ((CartProduct)Container.DataItem).ProductOptionSettingList.GetDisplayProductOptionSettingSelectValues() %>" />
-
 		</ItemTemplate>
 		</asp:Repeater>
 		<!--△ 前回カート選択 △-->
