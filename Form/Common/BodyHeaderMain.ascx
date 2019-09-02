@@ -106,18 +106,6 @@ function initializeFunctionJs() {
         $('.mainVisual').height(heightSize); 
     });
     $("meta[name='viewport']").attr("content","width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
-  
-	$(window).scroll(function () {
-	  if ($(this).scrollTop() > 500) {
-	      $('.header').addClass('bgWhite');
-	      $('.header').removeClass('bgWhiteClose');
-	  } else {
-			if($('.header').hasClass('bgWhite')){
-				$('.header').addClass('bgWhiteClose');
-			}
-	      $('.header').removeClass('bgWhite');
-	  }
-	});
 }
 </script>
 <asp:UpdatePanel ID="upUpdatePanel2" runat="server">

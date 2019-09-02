@@ -867,8 +867,8 @@ function bodyPageLoad() {
 									<% if (this.IsFixedPurchase && (this.FixedPurchaseModel.IsCancelFixedPurchaseStatus == false)) { %>
 										<asp:CheckBox ID="cbIsUpdateFixedPurchaseByOrderShippingInfo" Text="今後の定期注文にも反映させる" Checked="false" runat="server"/><br />
 									<% } %>
-									<asp:LinkButton Text="キャンセル" runat="server" CommandArgument="<%# Container.ItemIndex %>"  OnClick="lbHideUserShippingInfoForm_Click" class="prevBtn ohPrev" ></asp:LinkButton>
-									<asp:LinkButton Text="情報更新" runat="server" ValidationGroup="OrderShipping" CommandArgument="<%# Container.ItemIndex %>" OnClientClick="return AlertDataChange('Shipping', this);" OnClick="lbUpdateUserShippingInfo_Click" class="nextBtn ohNext" ></asp:LinkButton>
+									<asp:LinkButton Text="戻る" runat="server" CommandArgument="<%# Container.ItemIndex %>"  OnClick="lbHideUserShippingInfoForm_Click" class="prevBtn ohPrev" ></asp:LinkButton>
+									<asp:LinkButton Text="変更する" runat="server" ValidationGroup="OrderShipping" CommandArgument="<%# Container.ItemIndex %>" OnClientClick="return AlertDataChange('Shipping', this);" OnClick="lbUpdateUserShippingInfo_Click" class="nextBtn ohNext" ></asp:LinkButton>
 									<input type="hidden" id="parentShippingRepeater" name="parentShippingRepeater" value="<%#: Container.UniqueID %>" />
 								</div>
 								<div id="divOrderShippingUpdateExecFroms" style="display: none"> 

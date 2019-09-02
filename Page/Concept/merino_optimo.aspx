@@ -61,10 +61,7 @@
 			</div>
 		</div>
 
-		<div class="conceptBox_quality">
-			<!-- <div class="conceptBox_quality--pic">
-				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_03.jpg" alt="MERINO OPTIMO">
-			</div> -->
+		<!-- <div class="conceptBox_quality">
 			<div class="conceptBox_quality--txt">
 				<h4>
 					QUALITY
@@ -79,7 +76,7 @@
 					メリノオプティモと一般的なウールの最大の違いは、毛の縮れ具合を表す「クリンプ」の大きさといえるでしょう。欧州で最高級メリノと称されるサクソンメリノが非常に細かいクリンプを持つのに対し、メリノオプティモは深く大きなクリンプを持ちます。この違いにより、天鵞絨のようなエレガントさを生み出すのです。
 				</p>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="conceptBox_feature">
 			<h4>

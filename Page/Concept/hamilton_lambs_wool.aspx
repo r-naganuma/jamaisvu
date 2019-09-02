@@ -62,10 +62,7 @@
 			</div>
 		</div>
 
-		<div class="conceptBox_quality">
-			<!-- <div class="conceptBox_quality--pic">
-				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_03.jpg" alt="HAMILTON LAMS WOOL">
-			</div> -->
+		<!-- <div class="conceptBox_quality">
 			<div class="conceptBox_quality--txt">
 				<h4>
 					QUALITY
@@ -80,7 +77,7 @@
 					白度や光沢の高さも、気候が関係しています。羊毛が黄色くくすむのは、暑さによる汗や放牧で砂埃の混じった風を受けるため。ハミルトン地方は一年を通して気温が落ち着いていることから発汗が少なく、潤沢な草木のおかげで風による砂埃も立ちません。ハミルトンラムズウールの品質の高さは環境から作られています。
 				</p>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="conceptBox_feature">
 			<h4>

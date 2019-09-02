@@ -225,12 +225,15 @@ $bp768: 768px;  // スマホ
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-between;
-				margin: 0 auto 80px;
+				margin: 0 auto 194px;
 				position: relative;
+				padding-top: 113px;
 
 				@include bp768 {
 					display: block;
 					width: 100%;
+					padding-top: 0;
+					margin: 0 auto 80px;
 				};
 
 				&--pic{
@@ -282,7 +285,7 @@ $bp768: 768px;  // スマホ
 				}
 
 				&--map{
-					width: 811px;
+					width: 540px;
 					position: absolute;
 					top: 0;
 					right: 0;
