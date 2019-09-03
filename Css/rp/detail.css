@@ -1835,6 +1835,22 @@ div#primary {
 }
 
 .detailBread {
-  width: 96%;
+  width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .detailBread {
+    width: 100%;
+    padding: 0 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .detailBread {
+    width: 100%;
+    padding: 0 18px;
+  }
 }

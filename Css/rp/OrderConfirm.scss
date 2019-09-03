@@ -101,6 +101,13 @@ textarea::focus {
 /*====================================================================
 *    mixin
 /*==================================================================*/
+$bp1120: 1120px;  // スマホ
+
+@mixin bp1120 {
+  @media (max-width: ($bp1120)) {
+    @content;
+  }
+}
 $bp768: 768px;  // スマホ
 
 @mixin bp768 {
@@ -188,11 +195,14 @@ $bp768: 768px;  // スマホ
 	    display: none;
 	}
 	div.main {
-	    width: 100%!important;
+	    width: 1120px!important;
 	    padding: 0!important;
-	    margin: 0!important;
+	    margin: 0 auto!important;
 	    background: none!important;
 	    position: relative;
+		@include bp1120 {
+	    	width: 100%!important;
+		}
 	}	
 	div.submain {
 	    width: 100%!important;
@@ -217,9 +227,15 @@ $bp768: 768px;  // スマホ
 		}
 		@include bp768 {
 			margin:50px auto;
+			overflow: hidden;
+			padding-bottom: 50px;
 		}
 		div.column{
+			width: 800px!important;
+
+			@include bp1120 {
 			width: 71.42857%!important;
+			}
 
 			@include bp768 {
 			width: 100%!important;
@@ -407,6 +423,12 @@ $bp768: 768px;  // スマホ
 		dt.box_dt12 {
 		    display: block!important;
 		}
+		dt.box_dt33 {
+		    display: block!important;
+		}
+		dt.box_dt34 {
+		    display: block!important;
+		}
 		.shoppingCart {
 		    width: 268px;
 		    float: right;
@@ -420,9 +442,14 @@ $bp768: 768px;  // スマホ
 
 			&.is-fixed {
 				position: fixed;
-				top: 75px;
-				left:50%;
-				margin-left:261px;
+				top: 90px;
+				margin-left: 852px;
+				right: inherit;
+				z-index: 1;
+
+			    @include bp1120 {
+					margin-left: 61%;
+			   	}
 
 			    @include bp768 {
 					position: relative;
@@ -829,16 +856,13 @@ $bp768: 768px;  // スマホ
 		.box_dt16 {
 		    width: 145px!important;
 		    @include bp768 {
-				width: 100%!important;
+				width: 130px!important;
 		    }
 		}
 		.box_dt35 {
 		    width: 190px!important;
 		}
 		@include bp768 {
-			.box_dt16 + dd{
-			   padding: 10px 0 0 0!important;
-			}
 			.box_dt35 + dd{
 			   padding: 10px 0 0 0!important;
 			}

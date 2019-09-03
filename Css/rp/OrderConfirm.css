@@ -180,11 +180,17 @@ textarea::focus {
 }
 
 .cart4 div.main {
-  width: 100% !important;
+  width: 1120px !important;
   padding: 0 !important;
-  margin: 0 !important;
+  margin: 0 auto !important;
   background: none !important;
   position: relative;
+}
+
+@media (max-width: 1120px) {
+  .cart4 div.main {
+    width: 100% !important;
+  }
 }
 
 .cart4 div.submain {
@@ -221,11 +227,19 @@ textarea::focus {
 @media (max-width: 768px) {
   .cart4 #CartList {
     margin: 50px auto;
+    overflow: hidden;
+    padding-bottom: 50px;
   }
 }
 
 .cart4 #CartList div.column {
-  width: 71.42857% !important;
+  width: 800px !important;
+}
+
+@media (max-width: 1120px) {
+  .cart4 #CartList div.column {
+    width: 71.42857% !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -462,6 +476,14 @@ textarea::focus {
   display: block !important;
 }
 
+.cart4 #CartList dt.box_dt33 {
+  display: block !important;
+}
+
+.cart4 #CartList dt.box_dt34 {
+  display: block !important;
+}
+
 .cart4 #CartList .shoppingCart {
   width: 268px;
   float: right;
@@ -479,9 +501,16 @@ textarea::focus {
 
 .cart4 #CartList .shoppingCart.is-fixed {
   position: fixed;
-  top: 75px;
-  left: 50%;
-  margin-left: 261px;
+  top: 90px;
+  margin-left: 852px;
+  right: inherit;
+  z-index: 1;
+}
+
+@media (max-width: 1120px) {
+  .cart4 #CartList .shoppingCart.is-fixed {
+    margin-left: 61%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -986,7 +1015,7 @@ textarea::focus {
 
 @media (max-width: 768px) {
   .cart4 .box_dt16 {
-    width: 100% !important;
+    width: 130px !important;
   }
 }
 
@@ -995,9 +1024,6 @@ textarea::focus {
 }
 
 @media (max-width: 768px) {
-  .cart4 .box_dt16 + dd {
-    padding: 10px 0 0 0 !important;
-  }
   .cart4 .box_dt35 + dd {
     padding: 10px 0 0 0 !important;
   }

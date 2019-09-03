@@ -101,6 +101,21 @@ textarea::focus {
 /*====================================================================
 *    mixin
 /*==================================================================*/
+$bp1200: 1200px;  // スマホ
+
+@mixin bp1200 {
+  @media (max-width: ($bp1200)) {
+    @content;
+  }
+}
+$bp1120: 1120px;  // スマホ
+
+@mixin bp1120 {
+  @media (max-width: ($bp1120)) {
+    @content;
+  }
+}
+
 $bp768: 768px;  // スマホ
 
 @mixin bp768 {
@@ -179,11 +194,15 @@ $bp768: 768px;  // スマホ
 		    display: none;
 		}
 		div.main {
-		    width: 100%!important;
+		    width: 1120px!important;
 		    padding: 0!important;
 		    margin: 0!important;
 		    background: none!important;
 		    position: relative;
+
+			@include bp1120 {
+				width: 100%!important;
+			};
 		}	
 		div.submain {
 		    width: 100%!important;
@@ -208,8 +227,11 @@ $bp768: 768px;  // スマホ
 			}
 		}
 		div#ctl00_ContentPlaceHolder1_rCartList_ctl00_divOwnerColumn{
-		width: (800%/ 1120 *100)!important;
+		width: 800px!important;
 		float: left;
+			@include bp1120 {
+			 width: (800%/ 1120 *100)!important;
+			}
 			@include bp768 {
 			 width: 100%!important;
 			 margin: auto;
@@ -263,6 +285,8 @@ $bp768: 768px;  // スマホ
 			   			letter-spacing: 0.08em;
 			   			font-weight: normal;
 			   			padding: 0 0 0 10px;
+			   			appearance: none;
+			   			border-radius: 0;
 			   		}
 					@include bp768 {
 						&.small1 {
@@ -601,6 +625,7 @@ $bp768: 768px;  // スマホ
 				    width: 29%;
 				    display: inline-block;
 				    padding: 0;
+				    font-weight: normal;
 			   		@include bp768 {
 				    width: 100%;
 				    display: block;
@@ -899,14 +924,17 @@ $bp768: 768px;  // スマホ
 
 		&.is-fixed {
 			position: fixed;
-			top: 75px;
-			left:50%;
-			margin-left:261px;
+			top: 90px;
+			margin-left: 852px;
+			right: inherit;
+
+		    @include bp1120 {
+				margin-left: 61%;
+		   	}
 
 		    @include bp768 {
 				position: inherit;
 				top: inherit;
-				left:inherit;
 				margin-left:0;
 		   	}
 		}
@@ -1033,7 +1061,7 @@ $bp768: 768px;  // スマホ
 		    margin: 60px 0 20px 0!important;
 		    padding: 0 0 20px 40px!important;
 		    height: auto!important;
-		    border-bottom: #CCCCCC solid 1px;
+		    border-bottom: #EAE6E5 solid 1px;
 		    background: none!important;
 	   		@include bp768 {
 

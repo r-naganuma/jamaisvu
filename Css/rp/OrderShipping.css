@@ -168,11 +168,17 @@ textarea::focus {
 }
 
 .cart2 div.main {
-  width: 100% !important;
+  width: 1120px !important;
   padding: 0 !important;
   margin: 0 !important;
   background: none !important;
   position: relative;
+}
+
+@media (max-width: 1120px) {
+  .cart2 div.main {
+    width: 100% !important;
+  }
 }
 
 .cart2 div.submain {
@@ -212,8 +218,14 @@ textarea::focus {
 }
 
 .cart2 #CartList div#ctl00_ContentPlaceHolder1_rCartList_ctl00_divOwnerColumn {
-  width: 71.42857% !important;
+  width: 800px !important;
   float: left;
+}
+
+@media (max-width: 1120px) {
+  .cart2 #CartList div#ctl00_ContentPlaceHolder1_rCartList_ctl00_divOwnerColumn {
+    width: 71.42857% !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -291,6 +303,10 @@ textarea::focus {
   letter-spacing: 0.08em;
   font-weight: normal;
   padding: 0 0 0 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
 }
 
 @media (max-width: 768px) {
@@ -751,6 +767,7 @@ textarea::focus {
   width: 29%;
   display: inline-block;
   padding: 0;
+  font-weight: normal;
 }
 
 @media (max-width: 768px) {
@@ -1154,16 +1171,21 @@ textarea::focus {
 
 .cart2 div.btmbtn.is-fixed {
   position: fixed;
-  top: 75px;
-  left: 50%;
-  margin-left: 261px;
+  top: 90px;
+  margin-left: 852px;
+  right: inherit;
+}
+
+@media (max-width: 1120px) {
+  .cart2 div.btmbtn.is-fixed {
+    margin-left: 61%;
+  }
 }
 
 @media (max-width: 768px) {
   .cart2 div.btmbtn.is-fixed {
     position: inherit;
     top: inherit;
-    left: inherit;
     margin-left: 0;
   }
 }
@@ -1325,7 +1347,7 @@ textarea::focus {
   margin: 60px 0 20px 0 !important;
   padding: 0 0 20px 40px !important;
   height: auto !important;
-  border-bottom: #CCCCCC solid 1px;
+  border-bottom: #EAE6E5 solid 1px;
   background: none !important;
 }
 

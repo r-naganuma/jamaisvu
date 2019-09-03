@@ -38,7 +38,7 @@ $(function(){
 
   });
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 230) {
+      if ($(this).scrollTop() > 215) {
           $('.btmbtn').addClass('is-fixed');
       } else {
           $('.btmbtn').removeClass('is-fixed');
@@ -1203,7 +1203,7 @@ $(function(){
    <!--  <h4 visible="<%# CanInputShippingTo(Container.ItemIndex) %>" runat="server">配送方法・配送日時</h4> -->
 
     <h4 class="" visible='<%# ((CartObject)Container.DataItem).ShippingType == "100" %>' runat="server">【通常配送商品】配送時間帯</h4>
-    <h4 class="" visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server">【予約】配送時間帯</h4>
+    <h4 class="" visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server">【予約商品】配送時間帯</h4>
   
 
 

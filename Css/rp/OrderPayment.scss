@@ -12,6 +12,13 @@
 	src: url('../Font/gillsans.otf') format("opentype");
 }
 
+.sec--news{
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 a {
 	text-decoration: none;
 	-webkit-transition: all 0.2s linear;
@@ -101,6 +108,14 @@ textarea::focus {
 /*====================================================================
 *    mixin
 /*==================================================================*/
+$bp1120: 1120px;  // スマホ
+
+@mixin bp1120 {
+  @media (max-width: ($bp1120)) {
+    @content;
+  }
+}
+
 $bp768: 768px;  // スマホ
 
 @mixin bp768 {
@@ -161,8 +176,34 @@ $bp768: 768px;  // スマホ
 	};
 }
 
+body{
+	&.active{
+		form{
+			@include bp768 {
+				position: fixed;
+				top: 0;
+				left: 0;
+			};
+		}
+	}
+}
+.spScrollBar::-webkit-scrollbar{
+	width: 4px;
+}
+.spScrollBar::-webkit-scrollbar-track{
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px #777; 
+}
+.spScrollBar::-webkit-scrollbar-thumb{
+  background: #ccc;
+  border-radius: 10px;
+  box-shadow: none;
+}
 
 .cart3{
+
 	h2.ttlA {
     font-size: 14px!important;
     font-weight: bold;
@@ -184,11 +225,15 @@ $bp768: 768px;  // スマホ
 	    display: none;
 	}
 	div.main {
-	    width: 100%!important;
+	    width: 1120px!important;
 	    padding: 0!important;
-	    margin: 0 0 80px!important;
+	    margin: 0 auto 80px!important;
 	    background: none!important;
 	    position: relative;
+
+		@include bp1120 {
+			width: 100%!important;
+		};
 	}	
 	div.submain {
 	    width: 100%!important;
@@ -202,7 +247,10 @@ $bp768: 768px;  // スマホ
 			padding: 0;
 		}
 		div.column{
+			width: 800px!important;
+			@include bp1120 {
 			width: 71.42857%!important;
+			}
 			@include bp768 {
 			width: 100%!important;
 			padding: 0 6.25%;
@@ -288,22 +336,32 @@ $bp768: 768px;  // スマホ
 		    padding: 25px 25px 0px 25px;
 		    margin: 0 0 100px;
 		    max-width: 270px;
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    z-index: 1;
 			@include bp768 {
 		    width: 100%;
 		    max-width: 100%;
+		    position: inherit;
+		    top: inherit;
+		    right: inherit;
 
 			}
 
 			&.is-fixed {
 				position: fixed;
-				top: 75px;
-				left:50%;
-				margin-left:261px;
+				top: 90px;
+				margin-left: 852px;
+				right: inherit;
+
+			    @include bp1120 {
+					margin-left: 61%;
+			   	}
 
 			    @include bp768 {
 					position: relative;
 					top: inherit;
-					left:inherit;
 					margin-left:0;
 			   	}
 			}
@@ -742,6 +800,8 @@ $bp768: 768px;  // スマホ
 				padding: 0 0 0 10px;
 				border: 1px solid #C0B6B3;
 				font-size: 14px;
+	   			appearance: none;
+	   			border-radius: 0;
 			}
 			select{
 
@@ -1311,6 +1371,26 @@ $bp768: 768px;  // スマホ
 	    letter-spacing: 0.08em;
 	    text-align: center;
 	    padding: 0;
+	    position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 8px;
+			margin: auto;
+			z-index: 1;
+			display: block;
+			width: 7px;
+			height: 7px;
+			-moz-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+			border-top: 1px solid #fff;
+			border-right: 1px solid #fff;
+		}
 	}
 	p.couponwrap {
 	    font-size: 14px;

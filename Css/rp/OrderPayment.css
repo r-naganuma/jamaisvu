@@ -11,6 +11,15 @@
   src: url("../Font/gillsans.otf") format("opentype");
 }
 
+.sec--news {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 a {
   text-decoration: none;
   -webkit-transition: all 0.2s linear;
@@ -147,6 +156,33 @@ textarea::focus {
   }
 }
 
+@media (max-width: 768px) {
+  body.active form {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+.spScrollBar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.spScrollBar::-webkit-scrollbar-track {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 2px #777;
+  box-shadow: inset 0 0 2px #777;
+}
+
+.spScrollBar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .cart3 h2.ttlA {
   font-size: 14px !important;
   font-weight: bold;
@@ -169,11 +205,17 @@ textarea::focus {
 }
 
 .cart3 div.main {
-  width: 100% !important;
+  width: 1120px !important;
   padding: 0 !important;
-  margin: 0 0 80px !important;
+  margin: 0 auto 80px !important;
   background: none !important;
   position: relative;
+}
+
+@media (max-width: 1120px) {
+  .cart3 div.main {
+    width: 100% !important;
+  }
 }
 
 .cart3 div.submain {
@@ -194,7 +236,13 @@ textarea::focus {
 }
 
 .cart3 #CartList div.column {
-  width: 71.42857% !important;
+  width: 800px !important;
+}
+
+@media (max-width: 1120px) {
+  .cart3 #CartList div.column {
+    width: 71.42857% !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -294,27 +342,39 @@ textarea::focus {
   padding: 25px 25px 0px 25px;
   margin: 0 0 100px;
   max-width: 270px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
   .cart3 #CartList .shoppingCart {
     width: 100%;
     max-width: 100%;
+    position: inherit;
+    top: inherit;
+    right: inherit;
   }
 }
 
 .cart3 #CartList .shoppingCart.is-fixed {
   position: fixed;
-  top: 75px;
-  left: 50%;
-  margin-left: 261px;
+  top: 90px;
+  margin-left: 852px;
+  right: inherit;
+}
+
+@media (max-width: 1120px) {
+  .cart3 #CartList .shoppingCart.is-fixed {
+    margin-left: 61%;
+  }
 }
 
 @media (max-width: 768px) {
   .cart3 #CartList .shoppingCart.is-fixed {
     position: relative;
     top: inherit;
-    left: inherit;
     margin-left: 0;
   }
 }
@@ -873,6 +933,10 @@ textarea::focus {
   padding: 0 0 0 10px;
   border: 1px solid #C0B6B3;
   font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
 }
 
 .cart3 .pay_dl.d5 {
@@ -1583,6 +1647,27 @@ textarea::focus {
   letter-spacing: 0.08em;
   text-align: center;
   padding: 0;
+  position: relative;
+}
+
+.cart3 a#ctl00_ContentPlaceHolder1_rCartList_ctl00_lbShowCouponBox:after,
+.cart3 a#ctl00_ContentPlaceHolder1_rCartList_ctl01_lbShowCouponBox:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 8px;
+  margin: auto;
+  z-index: 1;
+  display: block;
+  width: 7px;
+  height: 7px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 
 .cart3 p.couponwrap {

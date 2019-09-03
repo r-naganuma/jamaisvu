@@ -32,12 +32,20 @@ $(function(){
 	//  $(".add_cart_box").append($(".sc0"));
 	// }
 	$(window).scroll(function () {
-	  if ($(this).scrollTop() > 230) {
+	  if ($(this).scrollTop() > 215) {
 	      $('.shoppingCart').addClass('is-fixed');
 	  } else {
 	      $('.shoppingCart').removeClass('is-fixed');
 	  }
-	});
+	});	
+
+
+	// if($(window).width()<768){
+	// 	 // $(".add_cart_box").html($(".sc0").clone());
+	// 	 console.log("test")
+	// }else{
+
+	// }
 
 });
 function bodyPageLoad(){
@@ -56,6 +64,7 @@ function bodyPageLoad(){
 	}
 	
 	if($("#ctl00_ContentPlaceHolder1_rCartList_ctl00_ddlCouponList option:selected").text()!=""){
+		$(".copupon_wrap_box").text("");
 		$(".copupon_wrap_box").text($("#ctl00_ContentPlaceHolder1_rCartList_ctl00_ddlCouponList option:selected").text());
 
 	}else{
@@ -63,6 +72,33 @@ function bodyPageLoad(){
 	}
 
 
+	if($(window).width()<768){
+		if($(".sc1").length){
+			 $(".add_cart_box").html("");
+			 // $(".copupon_wrap_box").text("");
+			 $(".add_cart_box").html($(".sc0"));
+			 $(".couponwrap .coupon").text($("dl.bgc.p_red.op3 .minus").text());
+			 console.log("test")
+		}else{
+			
+		}
+
+	}else{
+
+	$('#ctl00_ContentPlaceHolder1_rCartList_ctl00_lbShowCouponBox').click(function () {
+		$('body').addClass('active');
+	});
+	
+	$('.couponUseUse').click(function () {
+		$('body').removeClass('active');
+	});
+	
+	$('.couponNotUse').click(function () {
+		$('body').removeClass('active');
+	});
+
+
+	}
 }
 
 
@@ -795,9 +831,9 @@ div#primary {
 	</div><!--box-->
 	<div runat="server" id="hgcCouponBox" style="z-index: 1; top: 0; left: 0; width: 100%; height: 120%; position: fixed; background-color: rgba(128, 128, 128, 0.75);" 
 		Visible='<%# ((CartObject)Container.DataItem).CouponBoxVisible %>'>
-		<div id="hgcCouponList" style="width: 960px; height: 500px; top: 50%; left: 50%; text-align: center; background: #fff; position: fixed; z-index: 2; margin:-250px 0 0 -500px;">
+		<div id="hgcCouponList" style="width: 960px; height: 500px; top: 55%; left: 50%; text-align: center; background: #fff; position: fixed; z-index: 2; margin:-250px 0 0 -500px;">
 		<h2 style="height: 20px; color: #fff; background-color: #000; font-size: 16px; padding: 3px 0px; border-bottom: solid 1px #ccc; width: initial; width: auto; ">クーポンBOX</h2>
-		<div style="height: 400px; overflow: auto;">
+		<div style="height: 400px; overflow: auto;" class="spScrollBar">
 		<asp:Repeater ID="rCouponList" ItemType="UserCouponDetailInfo" Runat="server" DataSource="<%# GetUsableCoupons((CartObject)Container.DataItem) %>">
 		<HeaderTemplate>
 			<table>

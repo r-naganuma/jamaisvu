@@ -25,15 +25,15 @@
                 <div class="newarrivalsContent__list-item item-1">
                     <div class="newarrivalsContent__img-large">
                         <a href="">
-                            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_1_large.png" alt="image 1">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_1_large.jpg" alt="image 1">
                         </a>
                     </div>
                     <div class="newarrivalsContent__img-little">
                         <a href="">
-                            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_1_little.png" alt="image 1">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_1_little.jpg" alt="image 1">
                             <div class="newarrivalsContent__desc">
-                                <p class="newarrivalsContent__itemName">商品名が入ります。1行以上は三点リーダで省商品名が入ります。1行以上は三点リーダで省商品名が入ります。1行以上は三点リーダで省</p>
-                                <p class="newarrivalsContent__price">¥24,000+tax</p>
+                                <p class="newarrivalsContent__itemName">Vネックベスト</p>
+                                <p class="newarrivalsContent__price">¥16,200+tax</p>
                             </div>
                         </a>
                         <a href="javascript:void(0);" class="readMore sp_contents"></a>
@@ -42,15 +42,15 @@
                 <div class="newarrivalsContent__list-item item-2">
                     <div class="newarrivalsContent__img-large">
                         <a href="">
-                            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_2_large.png" alt="image 2">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_2_large.jpg" alt="image 2">
                         </a>
                     </div>
                     <div class="newarrivalsContent__img-little">
                         <a href="">
-                            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_2_little.png" alt="image 2">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_2_little.jpg" alt="image 2">
                             <div class="newarrivalsContent__desc">
-                                <p class="newarrivalsContent__itemName">商品名が入ります。1行以上は三点リーダで省商品名が入ります。1行以上は三点リーダで省商品名が入ります。1行以上は三点リーダで省</p>
-                                <p class="newarrivalsContent__price">¥24,000+tax</p>
+                                <p class="newarrivalsContent__itemName">フィットカーディガン</p>
+                                <p class="newarrivalsContent__price">¥18,360+tax</p>
                             </div>
                         </a>
                         <a href="javascript:void(0);" class="readMore sp_contents"></a>
@@ -59,15 +59,15 @@
                 <div class="newarrivalsContent__list-item item-3">
                     <div class="newarrivalsContent__img-large">
                         <a href="">
-                            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_3_large.png" alt="image 3">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_3_large.jpg" alt="image 3">
                         </a>
                     </div>
                     <div class="newarrivalsContent__img-little">
                         <a href="">
-                            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_3_little.png" alt="image 3">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_3_little.jpg" alt="image 3">
                             <div class="newarrivalsContent__desc">
-                                <p class="newarrivalsContent__itemName">商品名が入ります。1行以上は三点リーダで省商品名が入ります。1行以上は三点リーダで省商品名が入ります。1行以上は三点リーダで省</p>
-                                <p class="newarrivalsContent__price">¥24,000+tax</p>
+                                <p class="newarrivalsContent__itemName">タンクドレス</p>
+                                <p class="newarrivalsContent__price">¥24,840+tax</p>
                             </div>
                         </a>
                         <a href="javascript:void(0);" class="readMore sp_contents"></a>

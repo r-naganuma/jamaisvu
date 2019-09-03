@@ -25,11 +25,17 @@ $(function(){
     $('.ohShippingChange a').click(function () {
         $('body, html').animate({ scrollTop: 0 }, 500);
     });
+
+    var str = $(".itemTtl_pdc span",this);
+    str = str.replace('aaa', '<br>'); // "bcbc"
 });
 function bodyPageLoad() {
     $('.ohShippingChange a').click(function () {
         $('body, html').animate({ scrollTop: 0 }, 500);
     });
+
+    var str = $(".itemTtl_pdc span",this);
+    str = str.replace('aaa', '<br>'); // "bcbc"
 }
 </script>
 <div class="registWrap mypageCts">
@@ -861,8 +867,8 @@ function bodyPageLoad() {
 									<% if (this.IsFixedPurchase && (this.FixedPurchaseModel.IsCancelFixedPurchaseStatus == false)) { %>
 										<asp:CheckBox ID="cbIsUpdateFixedPurchaseByOrderShippingInfo" Text="今後の定期注文にも反映させる" Checked="false" runat="server"/><br />
 									<% } %>
-									<asp:LinkButton Text="キャンセル" runat="server" CommandArgument="<%# Container.ItemIndex %>"  OnClick="lbHideUserShippingInfoForm_Click" class="prevBtn ohPrev" ></asp:LinkButton>
-									<asp:LinkButton Text="情報更新" runat="server" ValidationGroup="OrderShipping" CommandArgument="<%# Container.ItemIndex %>" OnClientClick="return AlertDataChange('Shipping', this);" OnClick="lbUpdateUserShippingInfo_Click" class="nextBtn ohNext" ></asp:LinkButton>
+									<asp:LinkButton Text="戻る" runat="server" CommandArgument="<%# Container.ItemIndex %>"  OnClick="lbHideUserShippingInfoForm_Click" class="prevBtn ohPrev" ></asp:LinkButton>
+									<asp:LinkButton Text="変更する" runat="server" ValidationGroup="OrderShipping" CommandArgument="<%# Container.ItemIndex %>" OnClientClick="return AlertDataChange('Shipping', this);" OnClick="lbUpdateUserShippingInfo_Click" class="nextBtn ohNext" ></asp:LinkButton>
 									<input type="hidden" id="parentShippingRepeater" name="parentShippingRepeater" value="<%#: Container.UniqueID %>" />
 								</div>
 								<div id="divOrderShippingUpdateExecFroms" style="display: none"> 
@@ -988,7 +994,7 @@ function bodyPageLoad() {
 											<p class="itemTtl_pdc" visible='<%# (string)Eval(Constants.FIELD_ORDERITEM_PRODUCT_OPTION_TEXTS) != "" %>' runat="server">
 												価格　：<%#: CurrencyManager.ToPrice(Eval(Constants.FIELD_ORDERITEM_PRODUCT_PRICE)) %>（税込）<br>
 												数量　：<%#: StringUtility.ToNumeric(Eval(Constants.FIELD_ORDERITEM_ITEM_QUANTITY)) %><br>
-												<%#: Eval(Constants.FIELD_ORDERITEM_PRODUCT_OPTION_TEXTS).ToString().Replace("　", "\r\n") %>
+												<span><%#: Eval(Constants.FIELD_ORDERITEM_PRODUCT_OPTION_TEXTS).ToString().Replace("　", "\r\n") %></span>
 											</p>
 										</div>
 
