@@ -101,6 +101,13 @@ textarea::focus {
 /*====================================================================
 *    mixin
 /*==================================================================*/
+$bp1120: 1120px;  // スマホ
+
+@mixin bp1120 {
+  @media (max-width: ($bp1120)) {
+    @content;
+  }
+}
 $bp768: 768px;  // スマホ
 
 @mixin bp768 {
@@ -188,11 +195,14 @@ $bp768: 768px;  // スマホ
 	    display: none;
 	}
 	div.main {
-	    width: 100%!important;
+	    width: 1120px!important;
 	    padding: 0!important;
-	    margin: 0!important;
+	    margin: 0 auto!important;
 	    background: none!important;
 	    position: relative;
+		@include bp1120 {
+	    	width: 100%!important;
+		}
 	}	
 	div.submain {
 	    width: 100%!important;
@@ -221,7 +231,11 @@ $bp768: 768px;  // スマホ
 			padding-bottom: 50px;
 		}
 		div.column{
+			width: 800px!important;
+
+			@include bp1120 {
 			width: 71.42857%!important;
+			}
 
 			@include bp768 {
 			width: 100%!important;
@@ -429,10 +443,14 @@ $bp768: 768px;  // スマホ
 
 			&.is-fixed {
 				position: fixed;
-				top: 75px;
-				left:50%;
-				margin-left:261px;
+				top: 90px;
+				margin-left: 852px;
+				right: inherit;
 				z-index: 1;
+
+			    @include bp1120 {
+					margin-left: 61%;
+			   	}
 
 			    @include bp768 {
 					position: relative;

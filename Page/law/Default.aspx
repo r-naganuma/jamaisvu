@@ -125,7 +125,7 @@
 
     <div class="privacyBox__section">
       <h4>販売業者</h4>
-    <p>会社名：伊藤忠商事株式会社<br>
+    <p>会社名：伊藤忠商事株式会社
     <br>運営責任者：ファッションアパレル第二部ファッションアパレル課長　山村 智則
     <br>所在地：東京都港区北青山2丁目5-1</p>
     </div>
@@ -134,7 +134,7 @@
       <p>会社名：株式会社 Roseau Pensant
         <br>代表者 : 代表取締役　上原 英暢
         <br>住所：東京都港区六本木7-3-16六本木インターナショナルアネックスビル4F
-        <br>会社概要：https://roseaupensant.jp/</p>
+        <br>URL：https://roseaupensant.jp/</p>
     </div>
     <div class="privacyBox__section">
       <h4>販売価格</h4>
@@ -143,7 +143,7 @@
     <div class="privacyBox__section">
       <h4>商品代金以外にご負担いただく費用</h4>
       <p>送料、消費税<br>
-          詳細は<a href="">お支払いについて</a>を参照</p>
+          詳細は<a href="https://jamaisvu.co.jp/Page/userGuide/#a03">お支払いについて</a>を参照</p>
     </div>
     <div class="privacyBox__section">
       <h4>送料</h4>
@@ -151,21 +151,22 @@
     </div>
     <div class="privacyBox__section">
       <h4>代金の支払い時期及び方法</h4>
-      <p><a href="">お支払い方法</a>を参照</p>
+      <p><a href="https://jamaisvu.co.jp/Page/userGuide/#a03">お支払いについて</a>を参照</p>
     </div>
     <div class="privacyBox__section">
       <h4>商品の引渡時期</h4>
       <p>配送地域・ご注文の時間帯により異なりますが、ご注文後から7日以内でのお届けとなります。</p>
+      <p>尚、予約販売商品は<a href="https://jamaisvu.co.jp/Page/userGuide/#a02">ご注文について</a>を参照</p>
     </div>
     <div class="privacyBox__section">
       <h4>商品の返品の可否と条件</h4>
-      <p><a href="">返品・交換についてのご質問</a>を参照</p>
+      <p><a href="https://jamaisvu.co.jp/Page/userGuide/#a05">返品・交換について</a>を参照ください。</p>
     </div>
     <div class="privacyBox__section">
       <h4>お問い合わせ先</h4>
-      <p>ご購入いただいた商品の返品やその他ご質問のお問い合わせは<a href="">こちら</a><br>
+      <p>ご購入いただいた商品の返品やその他ご質問のお問い合わせは<a href="https://jamaisvu.co.jp/Form/Inquiry/InquiryInput.aspx">こちら</a><br>
         <br>
-        メールマガジンの配信停止は<a href="">こちら</a><br>
+        メールマガジンの配信停止は<a href="https://jamaisvu.co.jp/Page/userGuide/#a06">こちら</a><br>
         メールマガジン配信アドレス：<br class="sp_contents">info@jamaisvu.co.jp（※配信専用）</p>
     </div>
 

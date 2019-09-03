@@ -38,7 +38,7 @@ $(function(){
 
   });
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 230) {
+      if ($(this).scrollTop() > 215) {
           $('.btmbtn').addClass('is-fixed');
       } else {
           $('.btmbtn').removeClass('is-fixed');

@@ -1,214 +1,104 @@
+@charset "UTF-8";
 /*====================================================================
 *    mixin
 /*==================================================================*/
-.lookWrap_box--list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-bottom: 50px;
+.lookWrap_box {
+  width: 780px;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
-  .lookWrap_box--list {
-    display: block;
-    margin-bottom: 40px;
+  .lookWrap_box {
+    width: 100%;
   }
 }
 
+.lookWrap_box--list {
+  margin-bottom: 80px;
+}
+
 .lookWrap_box--list .picArea {
-  width: 811.5px;
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
+.lookWrap_box--list .picArea.small {
+  width: 520px;
 }
 
 @media (max-width: 768px) {
-  .lookWrap_box--list .picArea {
+  .lookWrap_box--list .picArea.small {
     width: 100%;
   }
 }
 
 .lookWrap_box--list .creditArea {
-  width: 245px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .lookWrap_box--list .creditArea {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: 10px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    text-align: right;
   }
 }
 
-.lookWrap_box--list .creditArea .itemName {
+.lookWrap_box--list .creditArea.small {
+  width: 520px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .lookWrap_box--list .creditArea.small {
+    width: 100%;
+  }
+}
+
+.lookWrap_box--list .creditArea a {
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  .lookWrap_box--list .creditArea a {
+    margin-bottom: 5px;
+  }
+}
+
+.lookWrap_box--list .creditArea a .itemName {
   font-size: 12px;
   line-height: 19.5px;
-  margin-bottom: 5px;
+  margin-right: 7px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
 }
 
-@media (max-width: 768px) {
-  .lookWrap_box--list .creditArea .itemName {
-    width: 40%;
-    font-size: 13px;
-    margin-bottom: 0;
-  }
-}
-
-.lookWrap_box--list .creditArea .price {
+.lookWrap_box--list .creditArea a .price {
   font-size: 13px;
-  line-height: 1;
-  font-weight: 700;
-  margin-bottom: 13px;
+  line-height: 19.5px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
 }
 
-@media (max-width: 768px) {
-  .lookWrap_box--list .creditArea .price {
-    width: 31%;
-    margin-bottom: 0;
-  }
-}
-
-.lookWrap_box--list .creditArea .price span {
+.lookWrap_box--list .creditArea a .price span {
   font-size: 10px;
 }
 
-.lookWrap_box--list .creditArea .moreBtn {
-  width: 80px;
-  height: 24px;
-  position: relative;
-  border: #2E0E02 1px solid;
-  z-index: 0;
-  border-radius: 2px;
+.lookWrap_box--list .creditArea a:hover {
+  color: #C0B6B3 !important;
+  opacity: 1;
 }
 
-.lookWrap_box--list .creditArea .moreBtn:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 6px;
-  margin: auto;
-  z-index: 1;
-  display: block;
-  width: 4px;
-  height: 4px;
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  border-top: 1px solid #2E0E02;
-  border-right: 1px solid #2E0E02;
-}
-
-.lookWrap_box--list .creditArea .moreBtn:hover::after {
-  border-top: 1px solid #fff;
-  border-right: 1px solid #fff;
-}
-
-.lookWrap_box--list .creditArea .moreBtn a {
-  font-size: 9px;
-  text-align: center;
-  letter-spacing: 0.28em;
-  position: relative;
-  line-height: 24px;
-  color: #2E0E02;
-}
-
-.lookWrap_box--list .creditArea .moreBtn a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background: #2E0E02;
-  -webkit-transform-origin: right top;
-  -ms-transform-origin: right top;
-  transform-origin: right top;
-  -webkit-transform: scale(0, 1);
-  -ms-transform: scale(0, 1);
-  transform: scale(0, 1);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  -o-transition: transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+.lookWrap_box--list .creditArea .slash {
+  font-size: 16px;
+  margin: 0 12px 0 7px;
+  color: #C0B6B3;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  vertical-align: super;
 }
 
 @media (max-width: 768px) {
-  .lookWrap_box--list .creditArea .moreBtn a::after {
-    content: none;
+  .lookWrap_box--list .creditArea .slash {
+    display: none;
   }
-}
-
-.lookWrap_box--list .creditArea .moreBtn a:hover::after {
-  -webkit-transform-origin: left top;
-  -ms-transform-origin: left top;
-  transform-origin: left top;
-  -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-
-.lookWrap_box--list .creditArea .moreBtn a:hover {
-  opacity: 1;
-  color: #fff !important;
 }
 
 .lookWrap_box--list:last-child {
   margin-bottom: 0;
-}
-
-.lookWrap_box--list:nth-child(even) .picArea {
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
-}
-
-.lookWrap_box--list:nth-child(even) .creditArea {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.lookWrap_box--list:nth-child(even) .creditArea .itemName {
-  text-align: right;
-}
-
-@media (max-width: 768px) {
-  .lookWrap_box--list:nth-child(even) .creditArea .itemName {
-    text-align: left;
-  }
-}
-
-.lookWrap_box--list:nth-child(even) .creditArea .price {
-  text-align: right;
-}
-
-@media (max-width: 768px) {
-  .lookWrap_box--list:nth-child(even) .creditArea .price {
-    text-align: left;
-  }
-}
-
-.lookWrap_box--list:nth-child(even) .creditArea .moreBtn {
-  margin-left: auto;
-}
-
-@media (max-width: 768px) {
-  .lookWrap_box--list:nth-child(even) .creditArea .moreBtn {
-    margin-left: 0;
-  }
 }

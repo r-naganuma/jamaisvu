@@ -209,10 +209,17 @@ h2.cart1_h2 {
 }
 
 #ctl00_ContentPlaceHolder1_upUpdatePanel #CartList {
-  padding: 0 6.25%;
+  padding: 0;
   margin: auto;
   max-width: 1280px;
   position: relative;
+  width: 1120px;
+}
+
+@media (max-width: 1120px) {
+  #ctl00_ContentPlaceHolder1_upUpdatePanel #CartList {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -618,16 +625,46 @@ h2.cart1_h2 {
 }
 
 #ctl00_ContentPlaceHolder1_upUpdatePanel .productList {
-  width: 71.42857% !important;
+  width: 800px !important;
+  margin: auto;
   float: left;
+}
+
+@media (max-width: 1120px) {
+  #ctl00_ContentPlaceHolder1_upUpdatePanel .productList {
+    width: 71.42857% !important;
+  }
 }
 
 @media (max-width: 768px) {
   #ctl00_ContentPlaceHolder1_upUpdatePanel .productList {
     width: 100% !important;
-    margin: auto;
     float: none;
     padding: 0;
+  }
+}
+
+
+#ctl00_ContentPlaceHolder1_upUpdatePanel #CartList div.btmbtn.is-fixed {
+  position: fixed;
+  top: 90px;
+  margin-left: 852px;
+  right: inherit;
+}
+
+@media (max-width: 1120px) {
+  #ctl00_ContentPlaceHolder1_upUpdatePanel #CartList div.btmbtn.is-fixed {
+    margin-left: 61%;
+  }
+}
+
+@media (max-width: 768px) {
+  #ctl00_ContentPlaceHolder1_upUpdatePanel #CartList div.btmbtn.is-fixed {
+    position: inherit;
+    top: inherit;
+    left:inherit;
+    margin-left:0;
+    width: 100%;
   }
 }
 

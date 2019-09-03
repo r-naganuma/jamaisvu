@@ -205,11 +205,17 @@ textarea::focus {
 }
 
 .cart3 div.main {
-  width: 100% !important;
+  width: 1120px !important;
   padding: 0 !important;
-  margin: 0 0 80px !important;
+  margin: 0 auto 80px !important;
   background: none !important;
   position: relative;
+}
+
+@media (max-width: 1120px) {
+  .cart3 div.main {
+    width: 100% !important;
+  }
 }
 
 .cart3 div.submain {
@@ -230,7 +236,13 @@ textarea::focus {
 }
 
 .cart3 #CartList div.column {
-  width: 71.42857% !important;
+  width: 800px !important;
+}
+
+@media (max-width: 1120px) {
+  .cart3 #CartList div.column {
+    width: 71.42857% !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -330,27 +342,39 @@ textarea::focus {
   padding: 25px 25px 0px 25px;
   margin: 0 0 100px;
   max-width: 270px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
   .cart3 #CartList .shoppingCart {
     width: 100%;
     max-width: 100%;
+    position: inherit;
+    top: inherit;
+    right: inherit;
   }
 }
 
 .cart3 #CartList .shoppingCart.is-fixed {
   position: fixed;
-  top: 75px;
-  left: 50%;
-  margin-left: 261px;
+  top: 90px;
+  margin-left: 852px;
+  right: inherit;
+}
+
+@media (max-width: 1120px) {
+  .cart3 #CartList .shoppingCart.is-fixed {
+    margin-left: 61%;
+  }
 }
 
 @media (max-width: 768px) {
   .cart3 #CartList .shoppingCart.is-fixed {
     position: relative;
     top: inherit;
-    left: inherit;
     margin-left: 0;
   }
 }
