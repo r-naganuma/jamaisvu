@@ -125,7 +125,7 @@
 
     <div class="privacyBox__section">
       <h4>販売業者</h4>
-    <p>会社名：伊藤忠商事株式会社<br>
+    <p>会社名：伊藤忠商事株式会社
     <br>運営責任者：ファッションアパレル第二部ファッションアパレル課長　山村 智則
     <br>所在地：東京都港区北青山2丁目5-1</p>
     </div>
@@ -134,7 +134,7 @@
       <p>会社名：株式会社 Roseau Pensant
         <br>代表者 : 代表取締役　上原 英暢
         <br>住所：東京都港区六本木7-3-16六本木インターナショナルアネックスビル4F
-        <br>会社概要：https://roseaupensant.jp/</p>
+        <br>URL：https://roseaupensant.jp/</p>
     </div>
     <div class="privacyBox__section">
       <h4>販売価格</h4>
