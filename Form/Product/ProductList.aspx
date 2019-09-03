@@ -350,22 +350,22 @@
 			$('.searchBox_list--color li:nth-child(12)').addClass("on");
 		}
 		if(document.URL.match("%e3%83%8f%e3%83%9f%e3%83%ab%e3%83%88%e3%83%b3%e3%83%a9%e3%83%a0%e3%82%ba%e3%82%a6%e3%83%bc%e3%83%ab")) {
-			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ ハミルトンラムズウール');
+			$('.pdList_conditions .tagtag1').text('\u00a0/ ハミルトンラムズウール');
 			$('.searchBox_list--material li:nth-child(1)').addClass("on");
 			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
 		if(document.URL.match("%e3%83%a1%e3%83%aa%e3%83%8e%e3%82%aa%e3%83%97%e3%83%86%e3%82%a3%e3%83%a2")) {
-			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ メリノオプティモ');
+			$('.pdList_conditions .tagtag2').text('\u00a0/ メリノオプティモ');
 			$('.searchBox_list--material li:nth-child(2)').addClass("on");
 			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
 		if(document.URL.match("%e3%83%95%e3%82%a9%e3%83%bc%e3%82%af%e3%83%a9%e3%83%b3%e3%83%89%e3%82%a6%e3%83%bc%e3%83%ab")) {
-			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ フォークランドウール');
+			$('.pdList_conditions .tagtag3').text('\u00a0/ フォークランドウール');
 			$('.searchBox_list--material li:nth-child(3)').addClass("on");
 			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
 		if(document.URL.match("%e3%83%af%e3%83%b3%e3%82%b3%e3%83%83%e3%83%88%e3%83%b3")) {
-			$('.pdList_conditions .pdList_conditions--tag').text('\u00a0/ ワンコットン');
+			$('.pdList_conditions .tagtag4').text('\u00a0/ ワンコットン');
 			$('.searchBox_list--material li:nth-child(4)').addClass("on");
 			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
@@ -446,7 +446,7 @@
 							検索条件
 						</dt>
 						<dd>
-							<span class="pdList_conditions--category"></span><span class="pdList_conditions--color"></span><span class="pdList_conditions--tag"></span>
+							<span class="pdList_conditions--category"></span><span class="pdList_conditions--color"></span><span class="pdList_conditions--tag tagtag1"></span><span class="pdList_conditions--tag tagtag2"></span><span class="pdList_conditions--tag tagtag3"></span><span class="pdList_conditions--tag tagtag4"></span>
 						</dd>
 					</dl>
 				</div>

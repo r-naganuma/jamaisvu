@@ -158,52 +158,52 @@
 			<div class="conceptBox_item--box">
 				<div class="conceptBox_item--box--list">
 					<a href="">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ProductImages/0/rptest_LL.jpg" alt="HAMILTON LAMS WOOL">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_item01.jpg" alt="HAMILTON LAMS WOOL">
 						<p class="itemName">
-							商品名が入ります1行以上は省略表示します。商品名が入ります1行以上は省略表示します。
+							ヘアリーTシャツ
 						</p>
 						<p class="price">
-							¥25,920(tax in)
+							¥17,280(tax in)
 						</p>
 					</a>
 				</div>
 				<div class="conceptBox_item--box--list">
 					<a href="">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ProductImages/0/rptest_LL.jpg" alt="HAMILTON LAMS WOOL">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_item02.jpg" alt="HAMILTON LAMS WOOL">
 						<p class="itemName">
-							商品名が入ります1行以上は省略表示します。商品名が入ります1行以上は省略表示します。
+							タンクドレス
 						</p>
 						<p class="price">
-							¥25,920(tax in)
+							¥24,840(tax in)
 						</p>
 					</a>
 				</div>
 				<div class="conceptBox_item--box--list">
 					<a href="">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ProductImages/0/rptest_LL.jpg" alt="HAMILTON LAMS WOOL">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_item03.jpg" alt="HAMILTON LAMS WOOL">
 						<p class="itemName">
-							商品名が入ります1行以上は省略表示します。商品名が入ります1行以上は省略表示します。
+							へアリーポロ
 						</p>
 						<p class="price">
-							¥25,920(tax in)
+							¥19,440(tax in)
 						</p>
 					</a>
 				</div>
 				<div class="conceptBox_item--box--list">
 					<a href="">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ProductImages/0/rptest_LL.jpg" alt="HAMILTON LAMS WOOL">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_item04.jpg" alt="HAMILTON LAMS WOOL">
 						<p class="itemName">
-							商品名が入ります1行以上は省略表示します。商品名が入ります1行以上は省略表示します。
+							ニットワイドパンツ
 						</p>
 						<p class="price">
-							¥25,920(tax in)
+							¥20,520(tax in)
 						</p>
 					</a>
 				</div>
 			</div>
 
 			<div class="conceptBox_item--btn">
-				<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_material=%e3%83%8f%e3%83%9f%e3%83%ab%e3%83%88%e3%83%b3%e3%83%a9%e3%83%a0%e3%82%a6%e3%83%bc%e3%83%ab&pno=1">MORE</a>
+				<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_material=%e3%83%8f%e3%83%9f%e3%83%ab%e3%83%88%e3%83%b3%e3%83%a9%e3%83%a0%e3%82%ba%e3%82%a6%e3%83%bc%e3%83%ab&pno=1">MORE</a>
 			</div>
 		</div>
 
