@@ -44,171 +44,90 @@ $bp768: 768px;  // スマホ
 
 .lookWrap{
 	&_box{
-		&--list{
-			display: flex;
-			align-items: flex-end;
-			justify-content: space-between;
-			margin-bottom: 50px;
+		width: 780px;
+		margin: 0 auto;
 
-			@include bp768 {
-				display: block;
-				margin-bottom: 40px;
-			};
+		@include bp768 {
+			width: 100%;
+		};
+
+		&--list{
+			margin-bottom: 80px;
 
 			.picArea{
-				width: 811.5px;
+				width: 100%;
+				margin: 0 auto 10px;
 
-				@include bp768 {
-					width: 100%;
-				};
+				&.small{
+					width: 520px;
+
+					@include bp768 {
+						width: 100%;
+					};
+				}
 			}
 
 			.creditArea{
-				width: 245px;
+				text-align: center;
 
 				@include bp768 {
-					width: 100%;
-					display: flex;
-					justify-content: space-between;
-					margin-top: 10px;
-					align-items: center;
+					text-align: right;
 				};
 
-				.itemName{
-					font-size: 12px;
-					line-height: 19.5px;
-					margin-bottom: 5px;
+				&.small{
+					width: 520px;
+					margin: 0 auto;
 
 					@include bp768 {
-						width: 40%;
+						width: 100%;
+					};
+				}
+
+				a{
+					display: block !important;
+
+					@include bp768 {
+						margin-bottom: 5px;
+					};
+
+					.itemName{
+						font-size: 12px;
+						line-height: 19.5px;
+						margin-right: 7px;
+    					font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+					}
+
+					.price{
 						font-size: 13px;
-						margin-bottom: 0;
-					};
+						line-height: 19.5px;
+    					font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+						span{
+							font-size: 10px;
+						}
+					}
+
+					&:hover{
+						color: #C0B6B3 !important;
+						opacity: 1;
+					}
 				}
 
-				.price{
-					font-size: 13px;
-					line-height: 1;
-					@include font-weight(bold);
-					margin-bottom: 13px;
+				.slash{
+					font-size: 16px;
+					margin: 0 12px 0 7px;
+					color: #C0B6B3;
+					font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+					vertical-align: super;
 
 					@include bp768 {
-						width: 31%;
-						margin-bottom: 0;
+						display: none;
 					};
-
-					span{
-						font-size: 10px;
-					}
-				}
-
-				.moreBtn{
-					width: 80px;
-					height: 24px;
-					position: relative;
-					border: #2E0E02 1px solid;
-					z-index: 0;
-					border-radius: 2px;
-
-					&:after {
-						content: "";
-						position: absolute;
-						top: 0;
-						bottom: 0;
-						right: 6px;
-						margin: auto;
-						z-index: 1;
-						display: block;
-						width: 4px;
-						height: 4px;
-						-moz-transform: rotate(45deg);
-						-webkit-transform: rotate(45deg);
-						-ms-transform: rotate(45deg);
-						transform: rotate(45deg);
-						border-top: 1px solid #2E0E02;
-						border-right: 1px solid #2E0E02;
-					}
-
-				    &:hover::after {
-						border-top: 1px solid #fff;
-						border-right: 1px solid #fff;
-				    }
-
-					a {
-						font-size: 9px;
-						text-align: center;
-						letter-spacing: 0.28em;
-						position: relative;
-						line-height: 24px;
-						color: #2E0E02;
-
-					    &::after{
-							content: "";
-							position: absolute;
-							top: 0;
-							right: 0;
-							bottom: 0;
-							left: 0;
-							z-index: -1;
-							background: #2E0E02;
-							transform-origin: right top;
-							transform: scale(0, 1);
-							transition: transform .3s;
-
-							@include bp768 {
-								content: none;
-							};
-					    }
-
-					    &:hover::after {
-							transform-origin: left top;
-							transform: scale(1, 1);
-					    }
-
-					    &:hover{
-					      opacity: 1;
-					      color: #fff !important;
-					    }
-					}
 				}
 			}
 
 			&:last-child{
 				margin-bottom: 0;
-			}
-
-			&:nth-child(even){
-				.picArea{
-					order: 2;
-				}
-
-				.creditArea{
-					order: 1;
-
-					.itemName{
-						text-align: right;
-
-						@include bp768 {
-							text-align: left;
-						};
-					}
-
-					.price{
-						text-align: right;
-						
-						@include bp768 {
-							text-align: left;
-						};
-					}
-
-					.moreBtn{
-						margin-left: auto;
-
-						@include bp768 {
-							margin-left: 0;
-						};
-					}
-				}
 			}
 		}
 	}

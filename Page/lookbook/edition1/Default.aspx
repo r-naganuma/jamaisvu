@@ -33,11 +33,20 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic01.jpg" alt="edition1">
 				</div>
 				<div class="creditArea">
-					<p class="itemName">Vネックニットベスト</p>
-					<p class="price">¥25,920<span>(tax in)</span></p>
-					<div class="moreBtn">
-						<a href="">MORE</a>
-					</div>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930317111">
+						<span class="itemName">ショートカーディガン</span>
+						<span class="price">¥22,680<span>(tax in)</span></span>
+					</a>
+					<span class="slash">/</span>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111">
+						<span class="itemName">ビッグカーディガン</span>
+						<span class="price">¥25,920<span>(tax in)</span></span>
+					</a>
+					<span class="slash">/</span>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930305111">
+						<span class="itemName">ニットスウェットパンツ</span>
+						<span class="price">¥22,680<span>(tax in)</span></span>
+					</a>
 				</div>
 			</div>
 			<div class="lookWrap_box--list">
@@ -45,23 +54,21 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic02.jpg" alt="edition2">
 				</div>
 				<div class="creditArea">
-					<p class="itemName">Vネックニットベスト</p>
-					<p class="price">¥25,920<span>(tax in)</span></p>
-					<div class="moreBtn">
-						<a href="">MORE</a>
-					</div>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930304131">
+						<span class="itemName">タンクドレス</span>
+						<span class="price">¥24,840<span>(tax in)</span></span>
+					</a>
 				</div>
 			</div>
 			<div class="lookWrap_box--list">
-				<div class="picArea">
+				<div class="picArea small">
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic03.jpg" alt="edition3">
 				</div>
-				<div class="creditArea">
-					<p class="itemName">Vネックニットベスト</p>
-					<p class="price">¥25,920<span>(tax in)</span></p>
-					<div class="moreBtn">
-						<a href="">MORE</a>
-					</div>
+				<div class="creditArea small">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930315155">
+						<span class="itemName">Vネックベスト</span>
+						<span class="price">¥16,200<span>(tax in)</span></span>
+					</a>
 				</div>
 			</div>
 			<div class="lookWrap_box--list">
@@ -69,11 +76,20 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic04.jpg" alt="edition4">
 				</div>
 				<div class="creditArea">
-					<p class="itemName">Vネックニットベスト</p>
-					<p class="price">¥25,920<span>(tax in)</span></p>
-					<div class="moreBtn">
-						<a href="">MORE</a>
-					</div>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930122117">
+						<span class="itemName">フリーサイズコート</span>
+						<span class="price">¥51,840<span>(tax in)</span></span>
+					</a>
+					<span class="slash">/</span>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930312161">
+						<span class="itemName">ヘアリーパーカー</span>
+						<span class="price">¥22,680<span>(tax in)</span></span>
+					</a>
+					<span class="slash">/</span>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930306149">
+						<span class="itemName">ニットワイドパンツ</span>
+						<span class="price">¥20,520<span>(tax in)</span></span>
+					</a>
 				</div>
 			</div>
 			<div class="lookWrap_box--list">
@@ -81,11 +97,15 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic05.jpg" alt="edition5">
 				</div>
 				<div class="creditArea">
-					<p class="itemName">Vネックニットベスト</p>
-					<p class="price">¥25,920<span>(tax in)</span></p>
-					<div class="moreBtn">
-						<a href="">MORE</a>
-					</div>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930309161">
+						<span class="itemName">ヘアリーポロ</span>
+						<span class="price">¥19,440<span>(tax in)</span></span>
+					</a>
+					<span class="slash">/</span>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930305165">
+						<span class="itemName">ニットスウェットパンツ</span>
+						<span class="price">¥22,680<span>(tax in)</span></span>
+					</a>
 				</div>
 			</div>
 			<div class="lookWrap_box--list">
@@ -93,11 +113,15 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic06.jpg" alt="edition6">
 				</div>
 				<div class="creditArea">
-					<p class="itemName">Vネックニットベスト</p>
-					<p class="price">¥25,920<span>(tax in)</span></p>
-					<div class="moreBtn">
-						<a href="">MORE</a>
-					</div>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930302155">
+						<span class="itemName">ビルトネックタートル</span>
+						<span class="price">¥19,440<span>(tax in)</span></span>
+					</a>
+					<span class="slash">/</span>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930305155">
+						<span class="itemName">ニットスウェットパンツ</span>
+						<span class="price">¥22,680<span>(tax in)</span></span>
+					</a>
 				</div>
 			</div>
 			<div class="lookWrap_box--list">
@@ -105,11 +129,10 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic07.jpg" alt="edition7">
 				</div>
 				<div class="creditArea">
-					<p class="itemName">Vネックニットベスト</p>
-					<p class="price">¥25,920<span>(tax in)</span></p>
-					<div class="moreBtn">
-						<a href="">MORE</a>
-					</div>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930316135">
+						<span class="itemName">ホールガーメントTシャツ</span>
+						<span class="price">¥15,120<span>(tax in)</span></span>
+					</a>
 				</div>
 			</div>
 			<div class="lookWrap_box--list">
@@ -117,11 +140,10 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic08.jpg" alt="edition8">
 				</div>
 				<div class="creditArea">
-					<p class="itemName">Vネックニットベスト</p>
-					<p class="price">¥25,920<span>(tax in)</span></p>
-					<div class="moreBtn">
-						<a href="">MORE</a>
-					</div>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930313255">
+						<span class="itemName">フィットカーディガン</span>
+						<span class="price">¥18,360<span>(tax in)</span></span>
+					</a>
 				</div>
 			</div>
 			<div class="lookWrap_box--list">
@@ -129,11 +151,20 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic09.jpg" alt="edition9">
 				</div>
 				<div class="creditArea">
-					<p class="itemName">Vネックニットベスト</p>
-					<p class="price">¥25,920<span>(tax in)</span></p>
-					<div class="moreBtn">
-						<a href="">MORE</a>
-					</div>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930317121">
+						<span class="itemName">ショートカーディガン</span>
+						<span class="price">¥22,680<span>(tax in)</span></span>
+					</a>
+					<span class="slash">/</span>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318121">
+						<span class="itemName">ビッグカーディガン</span>
+						<span class="price">¥25,920<span>(tax in)</span></span>
+					</a>
+					<span class="slash">/</span>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930306165">
+						<span class="itemName">ニットワイドパンツ</span>
+						<span class="price">¥20,520<span>(tax in)</span></span>
+					</a>
 				</div>
 			</div>
 			<div class="lookWrap_box--list">
@@ -141,11 +172,15 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic10.jpg" alt="edition10">
 				</div>
 				<div class="creditArea">
-					<p class="itemName">Vネックニットベスト</p>
-					<p class="price">¥25,920<span>(tax in)</span></p>
-					<div class="moreBtn">
-						<a href="">MORE</a>
-					</div>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930317121">
+						<span class="itemName">ショートカーディガン</span>
+						<span class="price">¥22,680<span>(tax in)</span></span>
+					</a>
+					<span class="slash">/</span>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318121">
+						<span class="itemName">ビッグカーディガン</span>
+						<span class="price">¥25,920<span>(tax in)</span></span>
+					</a>
 				</div>
 			</div>
 		</div>
