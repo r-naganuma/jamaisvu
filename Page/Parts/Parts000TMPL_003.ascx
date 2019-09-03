@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="btnBox btn--more">
-                <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx">MORE</a>
+                <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">MORE</a>
             </div>
         </div>
     </div>

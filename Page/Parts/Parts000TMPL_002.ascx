@@ -86,7 +86,7 @@
         </div>
     </div>
     <div class="btnBox btn--more">
-        <a href="">MORE</a>
+        <a href="https://jamaisvu.co.jp/category/topics/">MORE</a>
     </div>
 </div>
 <div class="sec sec--concept sp_contents">
@@ -150,7 +150,10 @@
             <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=007&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">パンツ</a>
         </li>
         <li>
-            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=008&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">グッズ</a>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=008&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">帽子</a>
+        </li>
+        <li>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=009&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">靴下</a>
         </li>
 	</ul>
 </div>

@@ -1282,12 +1282,22 @@ $bp768: 768px;  // スマホ
 	/*---------------*/
 
 	.pageTop {
+		.topFront{
+			margin-top: 87.5px;
+
+			@include bp768 {
+				margin-top: 58.3px;
+			};
+		}
+
 		.mainVisual {
 			width: 100vw;
+			height: 93vh !important;
 			margin-bottom: 0;
 
 			@include bp768 {
 				width: 100%;
+				height: 78vh !important;
 				margin-bottom: 90px;
 			};
 
@@ -1308,20 +1318,18 @@ $bp768: 768px;  // スマホ
 			}
 
 			.slick-dots{
-				bottom: 0;
-				top: 40%;
+				bottom: 30px;
 				margin: auto;
-				right: 40px;
+				right: 0;
+				left: 0;
 				z-index: 1;
-				width: 6px;
 
 				@include bp768 {
 					display: block!important;
 				};
 
 				li{
-					display: flex;
-					margin: 0 0 23px;
+					margin: 0 23px 0 0;
 					width: 6px;
 					height: 6px;
 					border: 1px solid #2E0E02;
@@ -1334,6 +1342,10 @@ $bp768: 768px;  // スマホ
 
 					&.slick-active{
 						background: #2E0E02;
+					}
+
+					&:last-child{
+						margin-right: 0;
 					}
 				}
 			}
@@ -1414,7 +1426,7 @@ $bp768: 768px;  // スマホ
 			margin-top: -2px;
 
 			@include bp768 {
-				margin-bottom: 90px;
+				margin-bottom: 0;
 				padding: 60px 0 44px;
 				margin-top: 0;
 			};
@@ -1627,19 +1639,20 @@ $bp768: 768px;  // スマホ
 			padding: 100px 0 80px;
 
 			@include bp768 {
-				padding: 0 18px 80px;
+				padding: 0 30px 80px;
+				box-sizing: border-box;
 			};
 
 			.vertical-title{
 				@include bp768 {
 					top: -30px;
-					left: 10px;
+					left: -5px;
 				};
 			}
 		
 			.sec__inner {
 				display: flex;
-				width: 1200px;
+				width: 1140px;
 				margin: 0 auto;
 
 				@include bp1200 {
@@ -1657,21 +1670,20 @@ $bp768: 768px;  // スマホ
 			width: 100%;
 			padding: 60px 18px 54px;
 			box-sizing: border-box;
-			background: #EAE6E5;
 
 			.category_top{
 				display: flex;
 				justify-content: space-between;
-				margin-bottom: 32px;
+				margin-bottom: 40px;
 
 				li{
 					width: 49%;
 					height: 48px;
-					background: #2E0E02;
+					border: 1px solid #2E0E02;
 					border-radius: 2px;
 
 					a{
-						color: #fff;
+						color: #2E0E02;
 						text-align: center;
 						font-size: 12px;
 						line-height: 48px;
@@ -1692,8 +1704,8 @@ $bp768: 768px;  // スマホ
 							-webkit-transform: rotate(45deg);
 							-ms-transform: rotate(45deg);
 							transform: rotate(45deg);
-							border-top: 2px solid #fff;
-							border-right: 2px solid #fff;
+							border-top: 2px solid #2E0E02;
+							border-right: 2px solid #2E0E02;
 						}
 					}
 				}
@@ -1705,14 +1717,14 @@ $bp768: 768px;  // スマホ
 				flex-wrap: wrap;
 
 				li{
-					width: 23.6%;
+					width: 31.8%;
 					margin: 0 0 6px 0;
 					height: 48px;
-					background: #2E0E02;
+					border: 1px solid #2E0E02;
 					border-radius: 2px;
 
 					a{
-						color: #fff;
+						color: #2E0E02;
 						text-align: center;
 						font-size: 12px;
 						line-height: 48px;
@@ -1753,7 +1765,7 @@ $bp768: 768px;  // スマホ
 		}
 
 		.topicsContent {
-			width: 1168px;
+			width: 1080px;
 			flex-shrink: 0;
 
 			@include bp1200 {
@@ -1772,7 +1784,7 @@ $bp768: 768px;  // スマホ
 			}
 
 			.topicsContent__list-item {
-				margin-right: 10px;
+				margin-right: 13px;
 				position: relative;
 
 				@include bp1200 {
@@ -1805,7 +1817,7 @@ $bp768: 768px;  // スマホ
 				}
 
 				&.item-1 {
-					width: 380px;
+					width: 350px;
 
 					@include bp1200 {
 						width: 32.5%;
@@ -1817,8 +1829,8 @@ $bp768: 768px;  // スマホ
 				}
 
 				&.item-2 {
-					width: 380px;
-					height: 285px;
+					width: 350px;
+					height: 260px;
 
 					@include bp1200 {
 						width: 32.5%;
@@ -1832,8 +1844,8 @@ $bp768: 768px;  // スマホ
 				}
 
 				&.item-3 {
-					width: 380px;
-					height: 285px;
+					width: 350px;
+					height: 260px;
 					margin-right: 0;
 
 					@include bp1200 {
@@ -1848,10 +1860,10 @@ $bp768: 768px;  // スマホ
 				}
 
 				&.item-4 {
-					width: 770px;
+					width: 715px;
 					margin-right: 0;
-					margin-left: 390px;
-					margin-top: -283px;
+					margin-left: 362px;
+					margin-top: -260px;
 
 					@include bp1200 {
 						width: 65%;
@@ -1878,7 +1890,7 @@ $bp768: 768px;  // スマホ
 
 		 	.sec__inner{
 				display: flex;
-				width: 1200px;
+				width: 1140px;
 				margin: 0 auto 140px;
 
 				@include bp1200 {
@@ -1892,10 +1904,12 @@ $bp768: 768px;  // スマホ
 				};
 
 				.newarrivalsContent{
-					width: 1080px;
+					width: 800px;
+					margin-left: 160px;
 
 					@include bp1200 {
 						width: 100%;
+						margin-left: 0;
 					};
 
 					&__list{
@@ -1907,47 +1921,44 @@ $bp768: 768px;  // スマホ
 
 							@include bp768 {
 								display: block;
-								margin-bottom: 50px;
+								margin-bottom: 60px;
 							};
 
-							&.item-1{
+							&:nth-child(odd){
 								.newarrivalsContent__img-large{
 									@include bp768 {
-										padding: 0 20px 0 0;
+										padding: 0 55px 0 0;
 										box-sizing: border-box;
 									};
 								}
 								.newarrivalsContent__img-little{
+									margin-left: 100px;
+
 									@include bp768 {
-										margin-left: auto !important;
+										padding: 0 18px 0 177px;
+										box-sizing: border-box;
+										margin-left: 0;
 									};
 								}
 							}
 
-							&.item-2{
+							&:nth-child(even){
 								.newarrivalsContent__img-large{
 									order: 2;
+									margin-left: 100px;
 
 									@include bp768 {
-										padding: 0 0 0 20px;
+										padding: 0 0 0 55px;
 										box-sizing: border-box;
+										margin-left: 0;
 									};
 								}
 								.newarrivalsContent__img-little{
 									order: 1;
-								}
-							}
 
-							&.item-3{
-								.newarrivalsContent__img-large{
 									@include bp768 {
-										padding: 0 20px 0 0;
+										padding: 0 177px 0 18px;
 										box-sizing: border-box;
-									};
-								}
-								.newarrivalsContent__img-little{
-									@include bp768 {
-										margin-left: auto !important;
 									};
 								}
 							}
@@ -1955,7 +1966,7 @@ $bp768: 768px;  // スマホ
 					}
 
 					&__img-large{
-						width: 544px;
+						width: 420px;
 
 						@include bp1200 {
 							width: 50%;
@@ -1963,60 +1974,47 @@ $bp768: 768px;  // スマホ
 
 						@include bp768 {
 							width: 100%;
-							margin-bottom: 20px;
+							margin-bottom: 30px;
 						};
 					}
 
 					&__img-little{
-						width: 320px;
-						margin: 0 100px;
+						width: 280px;
 
 						@include bp1200 {
 							width: 29.63%;
 						};
 
 						@include bp768 {
-							width: 85%;
-							margin: 0;
+							width: 100%;
 							position: relative;
 						};
 					}
 
 					&__itemName{
 						line-height: 1;
-						margin: 16px 0 10px;
-						text-overflow: ellipsis;
-						overflow: hidden;
-						white-space: nowrap;
+						margin: 16px 16px 0 0;
+						display: inline-block;
 
 						@include bp768 {
 							margin: 10px 0;
-							padding: 0 70px 0 15px;
-							box-sizing: border-box;
 							line-height: 19.5px;
+							display: block;
 						};
-
-						&.on{
-							@include bp768 {
-								text-overflow: inherit;
-								overflow: auto;
-								white-space: inherit;
-							};
-						}
 					}
 
 					&__price{
 						@include font-weight(bold);
 						line-height: 1;
 	    				font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+	    				display: inline-block;
 
 						@include bp768 {
-							padding: 0 15px;
-							box-sizing: border-box;
+							display: block;
 						};
 					}
 
-					.readMore{
+					/*.readMore{
 						width: 32px;
 						height: 32px;
 						color: #fff;
@@ -2054,7 +2052,7 @@ $bp768: 768px;  // スマホ
 								transform: rotate(-135deg);
 							}
 						}
-					}
+					}*/
 				}
 			}
 		}
@@ -2076,7 +2074,7 @@ $bp768: 768px;  // スマホ
 			 .sec__inner{
 				display: flex;
 				width: 1200px;
-				margin: 0 auto 80px;
+				margin: 0 auto 50px;
 
 				@include bp1200 {
 					width: 100%;
@@ -2087,7 +2085,7 @@ $bp768: 768px;  // スマホ
 					width: 100%;
 					padding: 0 18px;
 					box-sizing: border-box;
-					margin: 0 auto 160px;
+					margin: 0 auto 110px;
 				};
 
 				.rankingContent{
@@ -2104,26 +2102,26 @@ $bp768: 768px;  // スマホ
 
 					&__list{
 						display: flex;
-						justify-content: space-between;
 						flex-wrap: wrap;
 
-						&::nth-last-child(-n + 2){
-							margin-bottom: 0;
-						}
+						@include bp768 {
+							justify-content: space-between;
+						};
 
 						&-item{
-							width: 520px;
-							margin-bottom: 50px;
+							width: 330px;
+							margin: 0 45px 50px 0;
 							position: relative;
 
 							@include bp1200 {
 								width: 47.5%;
+								margin: 0 0 50px 0;
 							};
 
 							&--num{
 								width: 87px;
 								position: absolute;
-								top: -16px;
+								top: -10px;
 								left: -16px;
 								z-index: 1;
 
@@ -2158,6 +2156,10 @@ $bp768: 768px;  // スマホ
 										font-size: 12px;
 									};
 								}
+							}
+
+							&:nth-child(3n){
+								margin-right: 0;
 							}
 						}
 					}
@@ -2246,9 +2248,10 @@ $bp768: 768px;  // スマホ
 						&-item{
 							width: 126px;
 							margin-right: 8px;
+							position: relative;
 
 							@include bp768 {
-								width: 31%;
+								width: 29.4%;
 								margin-right: 19px;
 								margin-bottom: 16px;
 							};
@@ -2270,6 +2273,28 @@ $bp768: 768px;  // スマホ
 							&:nth-child(n + 7){
 								@include bp768 {
 									display: none;
+								};
+							}
+
+							.soldout{
+								display: block;
+								position: absolute;
+								bottom: 0;
+								left: 0;
+								width: 100%;
+								height: 40px;
+								background: rgba(46,14,2,.75);
+								line-height: 40px;
+								font-size: 13px;
+								text-align: center;
+								letter-spacing: 0.16em;
+								color: #fff;
+								border: none;
+
+								@include bp768 {
+									height: 32px;
+									line-height: 32px;
+									font-size: 12px;
 								};
 							}
 						}
@@ -3096,13 +3121,21 @@ $bp768: 768px;  // スマホ
 			.pdList_list{
 				width: 100%;
 				display: flex;
-				justify-content: space-between;
 				flex-wrap: wrap;
 
+				@include bp768 {
+					justify-content: space-between;
+				};
+
 				&--column{
-					width: 49%;
-					margin-bottom: 40px;
+					width: 32%;
+					margin: 0 2% 40px 0;
 					position: relative;
+
+					@include bp768 {
+						width: 49%;
+						margin: 0 0 40px;
+					};
 
 					.pdList_thumb{
 						width: 100%;
@@ -3192,6 +3225,10 @@ $bp768: 768px;  // スマホ
 								};
 							}
 						}
+					}
+
+					&:nth-child(3n){
+						margin-right: 0;
 					}
 				}
 			}
