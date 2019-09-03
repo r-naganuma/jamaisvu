@@ -61,10 +61,7 @@
 			</div>
 		</div>
 
-		<div class="conceptBox_quality">
-			<!-- <div class="conceptBox_quality--pic">
-				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_03.jpg" alt="MERINO OPTIMO">
-			</div> -->
+		<!-- <div class="conceptBox_quality">
 			<div class="conceptBox_quality--txt">
 				<h4>
 					QUALITY
@@ -79,7 +76,7 @@
 					メリノオプティモと一般的なウールの最大の違いは、毛の縮れ具合を表す「クリンプ」の大きさといえるでしょう。欧州で最高級メリノと称されるサクソンメリノが非常に細かいクリンプを持つのに対し、メリノオプティモは深く大きなクリンプを持ちます。この違いにより、天鵞絨のようなエレガントさを生み出すのです。
 				</p>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="conceptBox_feature">
 			<h4>
@@ -160,52 +157,52 @@
 			<div class="conceptBox_item--box">
 				<div class="conceptBox_item--box--list">
 					<a href="">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ProductImages/0/rptest_LL.jpg" alt="MERINO OPTIMO">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_item01.jpg" alt="MERINO OPTIMO">
 						<p class="itemName">
-							商品名が入ります1行以上は省略表示します。商品名が入ります1行以上は省略表示します。
+							フィットカーディガン
 						</p>
 						<p class="price">
-							¥25,920(tax in)
+							¥18,360(tax in)
 						</p>
 					</a>
 				</div>
 				<div class="conceptBox_item--box--list">
 					<a href="">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ProductImages/0/rptest_LL.jpg" alt="MERINO OPTIMO">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_item02.jpg" alt="MERINO OPTIMO">
 						<p class="itemName">
-							商品名が入ります1行以上は省略表示します。商品名が入ります1行以上は省略表示します。
+							Vネックベスト
 						</p>
 						<p class="price">
-							¥25,920(tax in)
+							¥16,200(tax in)
 						</p>
 					</a>
 				</div>
 				<div class="conceptBox_item--box--list">
 					<a href="">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ProductImages/0/rptest_LL.jpg" alt="MERINO OPTIMO">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_item03.jpg" alt="MERINO OPTIMO">
 						<p class="itemName">
-							商品名が入ります1行以上は省略表示します。商品名が入ります1行以上は省略表示します。
+							ホールガーメントTシャツ
 						</p>
 						<p class="price">
-							¥25,920(tax in)
+							¥15,120(tax in)
 						</p>
 					</a>
 				</div>
 				<div class="conceptBox_item--box--list">
 					<a href="">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ProductImages/0/rptest_LL.jpg" alt="MERINO OPTIMO">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_item04.jpg" alt="MERINO OPTIMO">
 						<p class="itemName">
-							商品名が入ります1行以上は省略表示します。商品名が入ります1行以上は省略表示します。
+							フリーサイズワイド
 						</p>
 						<p class="price">
-							¥25,920(tax in)
+							¥22,680(tax in)
 						</p>
 					</a>
 				</div>
 			</div>
 
 			<div class="conceptBox_item--btn">
-				<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_material=%E3%83%A1%E3%83%AA%E3%83%8E%E3%82%AA%E3%83%97%E3%83%86%E3%82%A3%E3%83%A2&pno=1">MORE</a>
+				<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_material=%e3%83%a1%e3%83%aa%e3%83%8e%e3%82%aa%e3%83%97%e3%83%86%e3%82%a3%e3%83%a2&pno=1">MORE</a>
 			</div>
 		</div>
 

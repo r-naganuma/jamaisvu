@@ -211,14 +211,17 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 auto 80px;
+  margin: 0 auto 194px;
   position: relative;
+  padding-top: 113px;
 }
 
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .conceptBox_where {
     display: block;
     width: 100%;
+    padding-top: 0;
+    margin: 0 auto 80px;
   }
 }
 
@@ -281,7 +284,7 @@
 }
 
 #Wrap .LPpageWrap .conceptBox_where--map {
-  width: 811px;
+  width: 540px;
   position: absolute;
   top: 0;
   right: 0;

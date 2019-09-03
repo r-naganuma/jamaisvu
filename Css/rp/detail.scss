@@ -98,6 +98,14 @@ textarea::focus {
 /*====================================================================
 *    mixin
 /*==================================================================*/
+$bp1200: 1200px;
+
+@mixin bp1200 {
+  @media (max-width: ($bp1200)) {
+    @content;
+  }
+}
+
 $bp768: 768px;  // スマホ
 
 @mixin bp768 {
@@ -1514,6 +1522,17 @@ div#primary {
 }
 
 .detailBread{
-	width: 96%;
+	width: 1200px;
 	margin: 0 auto;
+			
+	@include bp1200 {
+		width: 100%;
+		padding: 0 40px;
+		box-sizing: border-box;
+	};
+	
+	@include bp768 {
+		width: 100%;
+		padding: 0 18px;
+	};
 }

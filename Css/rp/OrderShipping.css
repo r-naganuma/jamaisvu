@@ -291,6 +291,10 @@ textarea::focus {
   letter-spacing: 0.08em;
   font-weight: normal;
   padding: 0 0 0 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
 }
 
 @media (max-width: 768px) {
@@ -751,6 +755,7 @@ textarea::focus {
   width: 29%;
   display: inline-block;
   padding: 0;
+  font-weight: normal;
 }
 
 @media (max-width: 768px) {
@@ -1154,9 +1159,9 @@ textarea::focus {
 
 .cart2 div.btmbtn.is-fixed {
   position: fixed;
-  top: 30px;
+  top: 75px;
   left: 50%;
-  margin-left: 270px;
+  margin-left: 261px;
 }
 
 @media (max-width: 768px) {
@@ -1325,7 +1330,7 @@ textarea::focus {
   margin: 60px 0 20px 0 !important;
   padding: 0 0 20px 40px !important;
   height: auto !important;
-  border-bottom: #CCCCCC solid 1px;
+  border-bottom: #EAE6E5 solid 1px;
   background: none !important;
 }
 

@@ -217,6 +217,8 @@ $bp768: 768px;  // スマホ
 		}
 		@include bp768 {
 			margin:50px auto;
+			overflow: hidden;
+			padding-bottom: 50px;
 		}
 		div.column{
 			width: 71.42857%!important;
@@ -407,6 +409,12 @@ $bp768: 768px;  // スマホ
 		dt.box_dt12 {
 		    display: block!important;
 		}
+		dt.box_dt33 {
+		    display: block!important;
+		}
+		dt.box_dt34 {
+		    display: block!important;
+		}
 		.shoppingCart {
 		    width: 268px;
 		    float: right;
@@ -420,9 +428,10 @@ $bp768: 768px;  // スマホ
 
 			&.is-fixed {
 				position: fixed;
-				top: 30px;
+				top: 75px;
 				left:50%;
-				margin-left:270px;
+				margin-left:261px;
+				z-index: 1;
 
 			    @include bp768 {
 					position: relative;
@@ -829,16 +838,13 @@ $bp768: 768px;  // スマホ
 		.box_dt16 {
 		    width: 145px!important;
 		    @include bp768 {
-				width: 100%!important;
+				width: 130px!important;
 		    }
 		}
 		.box_dt35 {
 		    width: 190px!important;
 		}
 		@include bp768 {
-			.box_dt16 + dd{
-			   padding: 10px 0 0 0!important;
-			}
 			.box_dt35 + dd{
 			   padding: 10px 0 0 0!important;
 			}

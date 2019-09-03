@@ -38,7 +38,7 @@ $(function(){
 
   });
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 250) {
+      if ($(this).scrollTop() > 230) {
           $('.btmbtn').addClass('is-fixed');
       } else {
           $('.btmbtn').removeClass('is-fixed');
@@ -778,9 +778,9 @@ $(function(){
           <%: ReplaceTag("@@User.addr.name@@") %>
         </dt>
         <dd>
-        <%if (isShippingAddrCountryJp) {%><asp:Literal ID="lShippingZip" runat="server"></asp:Literal><br /><%} %>
-        <asp:Literal ID="lShippingAddr1" runat="server"></asp:Literal> <asp:Literal ID="lShippingAddr2" runat="server"></asp:Literal><br />
-        <asp:Literal ID="lShippingAddr3" runat="server"></asp:Literal> <asp:Literal ID="lShippingAddr4" runat="server"></asp:Literal><br />
+        <%if (isShippingAddrCountryJp) {%><asp:Literal ID="lShippingZip" runat="server"></asp:Literal><br style="display: block;"><%} %>
+        <asp:Literal ID="lShippingAddr1" runat="server"></asp:Literal> <asp:Literal ID="lShippingAddr2" runat="server"></asp:Literal><br style="display: block;">
+        <asp:Literal ID="lShippingAddr3" runat="server"></asp:Literal> <asp:Literal ID="lShippingAddr4" runat="server"></asp:Literal><br style="display: block;">
         <asp:Literal ID="lShippingAddr5" runat="server"></asp:Literal> <asp:Literal ID="lShippingZipGlobal" runat="server"></asp:Literal> <asp:Literal ID="lShippingCountryName" runat="server"></asp:Literal>
         </dd>
         </dl>
@@ -789,7 +789,7 @@ $(function(){
         <%-- 配送先：企業名・部署名 --%>
         <dt><%: ReplaceTag("@@User.company_name.name@@") %>・<%: ReplaceTag("@@User.company_post_name.name@@")%></dt>
         <dd>
-        <asp:Literal ID="lShippingCompanyName" runat="server"></asp:Literal>&nbsp<asp:Literal ID="lShippingCompanyPostName" runat="server"></asp:Literal>
+        <asp:Literal ID="lShippingCompanyName" runat="server"></asp:Literal><br style="display: block;"><asp:Literal ID="lShippingCompanyPostName" runat="server"></asp:Literal>
         </dd>
         <%} %>
         </dl>
@@ -1203,7 +1203,7 @@ $(function(){
    <!--  <h4 visible="<%# CanInputShippingTo(Container.ItemIndex) %>" runat="server">配送方法・配送日時</h4> -->
 
     <h4 class="" visible='<%# ((CartObject)Container.DataItem).ShippingType == "100" %>' runat="server">【通常配送商品】配送時間帯</h4>
-    <h4 class="" visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server">【予約】配送時間帯</h4>
+    <h4 class="" visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server">【予約商品】配送時間帯</h4>
   
 
 
@@ -1232,8 +1232,8 @@ $(function(){
         </dl>
         <dl class="dlShipppingDateTime__03">
           <dt></dt>
-          <dd><p>通常２〜3日ほどでお届けいたします。<br>
-          遠隔地は３〜４日ほどでお届けいたします。</p></dd>
+          <dd><p>通常2〜3日ほどでお届けいたします。<br>
+          遠隔地は3〜4日ほどでお届けいたします。</p></dd>
         </dl>
       </div>
     </div>
