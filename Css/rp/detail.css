@@ -396,12 +396,25 @@ textarea::focus {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-radius: 2px;
 }
 
 .tblLayout_ProductDetail a#ctl00_ContentPlaceHolder1_lbCartAdd:before {
   content: "";
   display: block;
   padding: 15.5% 0 0 0;
+}
+
+.tblLayout_ProductDetail a#ctl00_ContentPlaceHolder1_lbAddFavorite {
+  border-radius: 2px;
+}
+
+.tblLayout_ProductDetail a#ctl00_ContentPlaceHolder1_lbAddFavorite img {
+  border-radius: 2px;
+}
+
+.tblLayout_ProductDetail .detailAddcart_favo {
+  border-radius: 2px;
 }
 
 .tblLayout_ProductDetail .productSellInfo {
@@ -1356,6 +1369,80 @@ a#ctl00_ContentPlaceHolder1_lbRequestArrivalMail2 {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+@media (max-width: 768px) {
+  .hidden_btn {
+    max-width: 100% !important;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background: #fff;
+    left: 0;
+    margin: auto;
+    padding: 15px 5.33vw;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+  .hidden_btn .productCart {
+    margin: 0 0;
+  }
+}
+
+a.mail2_btn {
+  background: #CAC2BF !important;
+  border: none;
+  font-size: 12px;
+  padding: 10px 40px;
+  border-radius: 0;
+  width: 81.73913%;
+  max-width: 376px;
+  background: #AD2E24 !important;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 42px;
+  font-size: 13px;
+  border-radius: 3px;
+  max-width: 100%;
+  letter-spacing: 0.08em;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hb2 .detailAddcart_favo {
+    max-width: 43px;
+    width: 12.8%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #eae6e5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 43px;
+    bottom: 0;
+    margin: auto;
+    right: 5.3vw;
+  }
 }
 
 div#divProductArrivalMail input {

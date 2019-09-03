@@ -375,12 +375,13 @@ $bp768: 768px;  // スマホ
 			    height: 32px;
 			    box-shadow: none;
 			    border: none;
-			    border-radius: 0;
+			    border-radius: 2px;
 			    display: flex;
 			    justify-content: center;
 			    align-items: center;
 			    font-size: 12px;
 			    letter-spacing: 0.08em;
+
 			    span{
 			    	font-weight: normal!important;
 					@include bp768 {
@@ -662,19 +663,70 @@ $bp768: 768px;  // スマホ
 		div.btmbtn ul li {
 		    margin: 0;
 			}
-		a.btn.btn-large.btn-success {
-		    padding: 0;
-		    font-size: 12px!important;
+	    a.btn.btn-large.btn-success{
+			color: #fff;
+		    text-align: center;
 		    width: 100%;
-		    border-radius: 0;
 		    height: 48px;
+		    line-height: 48px;
 		    background: #2E0E02;
-		    display: flex!important;
-		    align-items: center;
-		    justify-content: center;
+		    position: relative;
+		    border-radius: 2px;
+		    border: 1px solid #2E0E02;
+		    z-index: 0;
+		    font-size: 12px!important;
 		    letter-spacing: 0.08em;
-		    margin: 0 0 25px;
-		}
+		    margin: 0 0 20px;
+		    padding: 0!important;
+		    -webkit-box-shadow: unset;
+		    -moz-box-shadow: unset;
+		    box-shadow: unset;
+		    text-decoration: none;
+		    text-shadow: unset;
+	      @include bp768 {
+	        width: 100%;
+	        height: 48px;
+	        line-height: 48px;
+	      };
+
+	      &:hover::after {
+	        border-top: 1.5px solid #2E0E02;
+	        border-right: 1.5px solid #2E0E02;
+	        }
+
+	        &::before{
+	        content: "";
+	        position: absolute;
+	        top: 0;
+	        right: 0;
+	        bottom: 0;
+	        left: 0;
+	        z-index: -1;
+	        background: #eae6e5;
+	        transform-origin: right top;
+	        transform: scale(0, 1);
+	        transition: transform .3s;
+	        color:  #2E0E02;
+	        @include bp768 {
+	          content: none;
+	        };
+	        }
+
+	        &:hover::before {
+	        transform-origin: left top;
+	        transform: scale(1, 1);
+	        }
+
+	        &:hover{
+	          opacity: 1;
+	          color: #2E0E02!important;
+	        }
+
+	    }
+
+
+
+
 		a.btn.btn-large.btn-success2 {
 		    padding: 0;
 		    font-size: 12px!important;
@@ -690,6 +742,64 @@ $bp768: 768px;  // スマホ
 		    letter-spacing: 0.08em;
 		    margin: 0 0 25px;
 		}
+		a.btn.btn-large.btn-success2{
+			color: #2E0E02;
+			text-align: center;
+			width: 100%;
+			height: 48px;
+			line-height: 48px;
+			background: #eae6e5;
+			position: relative;
+			border-radius: 2px;
+			border: 1px solid #2E0E02;
+			z-index: 0;
+		    padding: 0;
+		    -webkit-box-shadow: unset;
+		    -moz-box-shadow: unset;
+		    box-shadow: unset;
+		    text-decoration: none;
+		    text-shadow: unset;
+
+		    font-size: 12px!important;
+			@include bp768 {
+				width: 100%;
+				height: 48px;
+				line-height: 48px;
+			};
+		    &:hover::after {
+				border-top: 1.5px solid #fff;
+				border-right: 1.5px solid #fff;
+		    }
+		    &::before{
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				background: #2E0E02;
+				transform-origin: right top;
+				transform: scale(0, 1);
+				transition: transform .3s;
+
+				@include bp768 {
+					content: none;
+				};
+		    }
+
+		    &:hover::before {
+				transform-origin: left top;
+				transform: scale(1, 1);
+		    }
+
+		    &:hover{
+		      opacity: 1;
+		      color: #fff!important;
+		    }
+		}
+
+
 		a.btn.btn-large.btn-org-gry {
 		    padding: 0;
 		    background: no-repeat;
@@ -699,7 +809,7 @@ $bp768: 768px;  // スマホ
 		    width: 100%;
 		    font-size: 12px!important;
 		    letter-spacing: 0.08em;
-		    margin: 20px 25px 0 0;
+		    margin: 0px 25px 0 0;
 		}
 		a.btn.btn-large.btn-gry {
 		    padding: 0;
@@ -755,6 +865,9 @@ $bp768: 768px;  // スマホ
 		p.btn-gry__wrap {
 			position: absolute;
 		    bottom: -44px;
+			right: 0;
+			margin: auto;
+			left: 0;
 		    @include bp768 {
 			right: 0;
 			left: 0;

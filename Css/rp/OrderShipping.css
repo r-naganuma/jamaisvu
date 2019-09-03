@@ -1196,23 +1196,81 @@ textarea::focus {
 }
 
 .cart2 a.btn.btn-large.btn-success {
-  padding: 0;
-  font-size: 12px !important;
+  color: #fff;
+  text-align: center;
   width: 100%;
-  border-radius: 0;
   height: 48px;
+  line-height: 48px;
   background: #2E0E02;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid #2E0E02;
+  z-index: 0;
+  font-size: 12px !important;
   letter-spacing: 0.08em;
-  margin: 0 0 25px;
+  margin: 0 0 20px;
+  padding: 0 !important;
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
+  box-shadow: unset;
+  text-decoration: none;
+  text-shadow: unset;
+}
+
+@media (max-width: 768px) {
+  .cart2 a.btn.btn-large.btn-success {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+  }
+}
+
+.cart2 a.btn.btn-large.btn-success:hover::after {
+  border-top: 1.5px solid #2E0E02;
+  border-right: 1.5px solid #2E0E02;
+}
+
+.cart2 a.btn.btn-large.btn-success::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #eae6e5;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  color: #2E0E02;
+}
+
+@media (max-width: 768px) {
+  .cart2 a.btn.btn-large.btn-success::before {
+    content: none;
+  }
+}
+
+.cart2 a.btn.btn-large.btn-success:hover::before {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.cart2 a.btn.btn-large.btn-success:hover {
+  opacity: 1;
+  color: #2E0E02 !important;
 }
 
 .cart2 a.btn.btn-large.btn-success2 {
@@ -1235,6 +1293,81 @@ textarea::focus {
   justify-content: center;
   letter-spacing: 0.08em;
   margin: 0 0 25px;
+}
+
+.cart2 a.btn.btn-large.btn-success2 {
+  color: #2E0E02;
+  text-align: center;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  background: #eae6e5;
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid #2E0E02;
+  z-index: 0;
+  padding: 0;
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
+  box-shadow: unset;
+  text-decoration: none;
+  text-shadow: unset;
+  font-size: 12px !important;
+}
+
+@media (max-width: 768px) {
+  .cart2 a.btn.btn-large.btn-success2 {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+  }
+}
+
+.cart2 a.btn.btn-large.btn-success2:hover::after {
+  border-top: 1.5px solid #fff;
+  border-right: 1.5px solid #fff;
+}
+
+.cart2 a.btn.btn-large.btn-success2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #2E0E02;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+@media (max-width: 768px) {
+  .cart2 a.btn.btn-large.btn-success2::before {
+    content: none;
+  }
+}
+
+.cart2 a.btn.btn-large.btn-success2:hover::before {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.cart2 a.btn.btn-large.btn-success2:hover {
+  opacity: 1;
+  color: #fff !important;
 }
 
 .cart2 a.btn.btn-large.btn-org-gry {

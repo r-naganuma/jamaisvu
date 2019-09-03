@@ -298,7 +298,7 @@ function bodyPageLoad(){
 
 		$(".hidden_btn").html("");
 		$(".hidden_btn").html($(".productCart").clone())
-		// $(".hidden_btn").append($(".SmartArrivalMail__wrap").clone());
+		
 
 		    var nav = $('.unit');
 		    var dvUpSell =$("#dvUpSell");
@@ -381,8 +381,25 @@ function bodyPageLoad(){
 		// $(".tblLayout_ProductDetail ul.slides li:nth-last-child(3)").remove()
 		if($("#ctl00_ContentPlaceHolder1_lbRequestArrivalMail2").text().trim()=="入荷お知らせメール申込"){
 			$(".mainImage .soldout").css("display","none");
+			// $(".hidden_btn").hide();
+			// $(".hidden_btn").append($(".SmartArrivalMail__wrap").clone());
+
+			// $(".btn-inverse").each(function(xx){
+			// 	$(this).addClass("ccpl"+xx);
+			// });
+			// $(".ccpl4").attr("id","Mail2")
+				$(".hidden_btn").addClass("hb2")
+				$(".hidden_btn").append("<a href='' class='mail2_btn'>入荷お知らせメール申し込み</a>");
+
+				$(".hidden_btn").append($(".detailAddcart_favo").clone());
+		}else{
+			$(".hidden_btn").removeClass("hb2");
 		}
 
+		$(".mail2_btn").click(function(){
+			__doPostBack('ctl00$ContentPlaceHolder1$lbRequestArrivalMail2','');
+			return false;
+		});
 		
 		if($(".sale_price").html()==""){
 
@@ -497,8 +514,8 @@ iframe {
     left: 0;
     width: 100%;
     height: 100%;
-    transform: scale(1.5);
-    top: -100px;
+    transform: scale(1.21);
+    top: 0px;
 }
 </style>
 <%-- 

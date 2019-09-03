@@ -19,6 +19,19 @@ $(function(){
 	$("small").each(function(x){
 		$(this).addClass("small"+x)
 	});
+	if($(window).width() < 768){
+		$(".productName").each(function(){
+			$(this).parent().addClass("productName__wrap")
+		});
+		$(".productName__wrap").each(function(){
+			$("span[visible='True']",this).append("<br><span>商品価格:<span class='price_c'>"+$(".productPrice",this).text()+"</span></span><br><span class='add_cart_c'></span>")
+
+			$(".add_cart_c",this).append($(".checkBox",this));
+		});
+	}else{
+
+	}
+
 	// $(".userBox dl").each(function(x){
 	// 	$(this).addClass("small"+x);
 	// 	if($(this).html().trim()==""){
@@ -98,50 +111,13 @@ $(function(){
     font-size: 14px;
     width: 50%;
     text-align: right; }
-.cart2 a.btn.btn-large.btn-success {
-  padding: 0;
-  font-size: 12px !important;
-  width: 100%;
-  border-radius: 0;
-  height: 48px;
-  background: #2E0E02;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  letter-spacing: 0.08em;
-  margin: 0 0 25px; }
-
-.cart2 a.btn.btn-large.btn-success2 {
-  padding: 0;
-  font-size: 12px !important;
-  width: 100%;
-  border-radius: 0;
-  height: 48px;
-  background: none;
-  border: 1px solid #2E0E02;
-  color: #2E0E02;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  letter-spacing: 0.08em;
-  margin: 0 0 25px; }
 
 
 </style>
 <link href="../../Css/rp/OrderSelect.css" rel="stylesheet">
 <h2 class="cart1_h2">ショッピングカート</h2>
+<!-- <p id="CartFlow" class="pc_contents"><img src="../../Contents/ImagesPkg/order/cart_step00.png" alt="カート内容確認 " width="781" height="58" /></p>
+<p id="" class="CartFlow sp_contents"><img src="../../Contents/ImagesPkg/order/sp_flow1.png" alt="カート内容確認 " width="781"/></p> -->
 <div id="dvOrderBox">
 	<div id="dvCartSelect">
 		
@@ -156,7 +132,7 @@ $(function(){
 			<tr>
 				<th class="productImg"></th>
 				<th class="productName">商品名</th>
-				<th class="productPrice">商品価格</th>
+				<th class="productPrice">価格（税込）</th>
 				<th class="remark"></th>
 			</tr>
 		</HeaderTemplate>
@@ -193,7 +169,7 @@ $(function(){
 			<tr>
 				<th class="productImg"></th>
 				<th class="productName">商品名</th>
-				<th class="productPrice">商品価格</th>
+				<th class="productPrice">価格（税込）</th>
 				<th class="remark"></th>
 			</tr>
 		</HeaderTemplate>
@@ -226,7 +202,9 @@ $(function(){
 	<div class="dvOrderBtnBox">
 		<div class="btmbtn">
 		<p class="alignC"><asp:LinkButton ID="lbNext" runat="server" OnClick="lbNext_Click" class="btn btn-large btn-success">次へ進む</asp:LinkButton></p>
+		<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1"><&nbsp;&nbsp;&nbsp;&nbsp;ショッピングへ戻る</a>
 		</div>
+
 	</div>
 </div>
 <script>
@@ -235,9 +213,12 @@ function bodyPageLoad(){
 
 
 $(".productName a").each(function(){
-   var kana = $(".cart1_size",this).text()
-   kana = kana.match(/\((.+)\)/)[1];
-  console.log(kana)
+   // var kana = $(".cart1_size",this).text()
+   // kana = kana.match(/\((.+)\)/)[1];
+
+    var str=$(this).text();
+    var nstr = str.replace(/\([^\)]*\)/g,"");
+    $(this).text(nstr);
 
 })
 

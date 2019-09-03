@@ -369,24 +369,78 @@ h2.cart1_h2 {
   margin: 0;
 }
 
-#ctl00_ContentPlaceHolder1_upUpdatePanel #CartList a.btn.btn-large.btn-success {
-  padding: 0;
-  font-size: 12px;
-  width: 100%;
-  border-radius: 0;
-  height: 48px;
+a.btn.btn-large.btn-success {
+  color: #fff;
+  text-align: center;
+  width: 320px;
+  height: 64px;
+  line-height: 64px;
   background: #2E0E02;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  letter-spacing: 0.08em;
-  margin: 0 0 0;
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid #2E0E02;
+  z-index: 0;
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
+  box-shadow: unset;
+  text-decoration: none;
+  text-shadow: unset;
+}
+
+@media (max-width: 768px) {
+  a.btn.btn-large.btn-success {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+  }
+}
+
+a.btn.btn-large.btn-success:hover::after {
+  border-top: 1.5px solid #2E0E02;
+  border-right: 1.5px solid #2E0E02;
+}
+
+a.btn.btn-large.btn-success::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #eae6e5;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  color: #2E0E02;
+}
+
+@media (max-width: 768px) {
+  a.btn.btn-large.btn-success::before {
+    content: none;
+  }
+}
+
+a.btn.btn-large.btn-success:hover::before {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+a.btn.btn-large.btn-success:hover {
+  opacity: 1;
+  color: #2E0E02 !important;
 }
 
 @media (max-width: 768px) {
