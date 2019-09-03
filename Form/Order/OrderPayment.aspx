@@ -39,6 +39,14 @@ $(function(){
 	  }
 	});
 
+
+	// if($(window).width()<768){
+	// 	 // $(".add_cart_box").html($(".sc0").clone());
+	// 	 console.log("test")
+	// }else{
+
+	// }
+
 });
 function bodyPageLoad(){
 	$("#Contents").addClass("topSpace").addClass("cart3");
@@ -56,13 +64,27 @@ function bodyPageLoad(){
 	}
 	
 	if($("#ctl00_ContentPlaceHolder1_rCartList_ctl00_ddlCouponList option:selected").text()!=""){
+		$(".copupon_wrap_box").text("");
 		$(".copupon_wrap_box").text($("#ctl00_ContentPlaceHolder1_rCartList_ctl00_ddlCouponList option:selected").text());
 
 	}else{
 		$(".copupon_wrap_box").remove();
 	}
 
+	if($(window).width()<768){
+		if($(".sc1").length){
+			 $(".add_cart_box").html("");
+			 // $(".copupon_wrap_box").text("");
+			 $(".add_cart_box").html($(".sc0"));
+			 $(".couponwrap .coupon").text($("dl.bgc.p_red.op3 .minus").text());
+			 console.log("test")
+		}else{
+			
+		}
 
+	}else{
+
+	}
 }
 
 
