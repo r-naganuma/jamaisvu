@@ -352,6 +352,9 @@ textarea::focus {
   .cart3 #CartList .shoppingCart {
     width: 100%;
     max-width: 100%;
+    position: inherit;
+    top: inherit;
+    right: inherit;
   }
 }
 

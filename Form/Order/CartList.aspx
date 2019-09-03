@@ -33,7 +33,7 @@
   }
   $(function(){
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 230) {
+        if ($(this).scrollTop() > 215) {
             $('.btmbtn').addClass('is-fixed');
         } else {
             $('.btmbtn').removeClass('is-fixed');
@@ -383,26 +383,12 @@ h2.cart1_h2 {
   right: 0;
   top: 0; }
 
-#ctl00_ContentPlaceHolder1_upUpdatePanel #CartList div.btmbtn.is-fixed {
-  position: fixed;
-  top: 75px;
-  left:50%;
-  margin-left:372px; }
-
 @media (max-width: 768px) {
   #ctl00_ContentPlaceHolder1_upUpdatePanel #CartList div.btmbtn {
     width: 100%;
     margin: auto;
     float: none;
     position: static; } }
-
-@media (max-width: 768px) {
-  #ctl00_ContentPlaceHolder1_upUpdatePanel #CartList div.btmbtn.is-fixed {
-    position: inherit;
-    top: inherit;
-    left:inherit;
-    margin-left:0;
-    width: 100%; } }
 
 #ctl00_ContentPlaceHolder1_upUpdatePanel #CartList .btmbtn__innar {
   background: #EAE6E5;
