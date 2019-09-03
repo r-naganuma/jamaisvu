@@ -101,6 +101,21 @@ textarea::focus {
 /*====================================================================
 *    mixin
 /*==================================================================*/
+$bp1200: 1200px;  // スマホ
+
+@mixin bp1200 {
+  @media (max-width: ($bp1200)) {
+    @content;
+  }
+}
+$bp1120: 1120px;  // スマホ
+
+@mixin bp1120 {
+  @media (max-width: ($bp1120)) {
+    @content;
+  }
+}
+
 $bp768: 768px;  // スマホ
 
 @mixin bp768 {
@@ -179,11 +194,15 @@ $bp768: 768px;  // スマホ
 		    display: none;
 		}
 		div.main {
-		    width: 100%!important;
+		    width: 1120px!important;
 		    padding: 0!important;
 		    margin: 0!important;
 		    background: none!important;
 		    position: relative;
+
+			@include bp1120 {
+				width: 100%!important;
+			};
 		}	
 		div.submain {
 		    width: 100%!important;
@@ -208,8 +227,11 @@ $bp768: 768px;  // スマホ
 			}
 		}
 		div#ctl00_ContentPlaceHolder1_rCartList_ctl00_divOwnerColumn{
-		width: (800%/ 1120 *100)!important;
+		width: 800px!important;
 		float: left;
+			@include bp1200 {
+			 width: (800%/ 1120 *100)!important;
+			}
 			@include bp768 {
 			 width: 100%!important;
 			 margin: auto;
@@ -902,14 +924,17 @@ $bp768: 768px;  // スマホ
 
 		&.is-fixed {
 			position: fixed;
-			top: 75px;
-			left:50%;
-			margin-left:261px;
+			top: 90px;
+			margin-left: 852px;
+			right: inherit;
+
+		    @include bp1120 {
+				margin-left: 61%;
+		   	}
 
 		    @include bp768 {
 				position: inherit;
 				top: inherit;
-				left:inherit;
 				margin-left:0;
 		   	}
 		}
