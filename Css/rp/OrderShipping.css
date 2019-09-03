@@ -222,7 +222,7 @@ textarea::focus {
   float: left;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1120px) {
   .cart2 #CartList div#ctl00_ContentPlaceHolder1_rCartList_ctl00_divOwnerColumn {
     width: 71.42857% !important;
   }

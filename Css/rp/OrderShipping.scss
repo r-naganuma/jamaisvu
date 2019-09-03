@@ -229,7 +229,7 @@ $bp768: 768px;  // スマホ
 		div#ctl00_ContentPlaceHolder1_rCartList_ctl00_divOwnerColumn{
 		width: 800px!important;
 		float: left;
-			@include bp1200 {
+			@include bp1120 {
 			 width: (800%/ 1120 *100)!important;
 			}
 			@include bp768 {
