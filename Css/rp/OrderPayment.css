@@ -71,7 +71,7 @@ strong {
 }
 
 input[type="submit"], input[type="text"], input[type="email"], input[type="button"] {
-  border-radius: 0;
+  border-radius: 2px;
   -webkit-box-sizing: content-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -80,6 +80,10 @@ input[type="submit"], input[type="text"], input[type="email"], input[type="butto
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
+}
+
+select {
+  border-radius: 2px;
 }
 
 textarea {
@@ -328,7 +332,7 @@ textarea::focus {
   font-weight: normal;
   padding: 0 0 0 10px;
   height: 32px;
-  border-radius: 0 !important;
+  border-radius: 2px !important;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -803,7 +807,7 @@ textarea::focus {
   padding: 0;
   font-size: 12px !important;
   width: 100%;
-  border-radius: 0;
+  border-radius: 2px;
   height: 48px;
   background: none;
   border: 1px solid #2E0E02;
@@ -1070,7 +1074,7 @@ textarea::focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 0;
+  border-radius: 2px;
 }
 
 .cart3 .pay_dl.d5 {
@@ -1266,7 +1270,7 @@ textarea::focus {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0 !important;
+  border-radius: 2px !important;
   padding: 0 0 0 10px;
   border: 1px solid #C0B6B3;
   font-size: 14px;
@@ -1359,7 +1363,7 @@ textarea::focus {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0 !important;
+  border-radius: 2px !important;
   padding: 0 0 0 10px;
   border: 0;
   padding: 0;
@@ -1386,6 +1390,7 @@ textarea::focus {
 .cart3 a#ctl00_ContentPlaceHolder1_rCartList_ctl00_lbShowCouponBox,
 .cart3 a#ctl00_ContentPlaceHolder1_rCartList_ctl01_lbShowCouponBox {
   margin: 0 0 15px !important;
+  border-radius: 2px;
 }
 
 .cart3 span#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_spanErrorMessageForCreditCard,
@@ -1668,7 +1673,7 @@ textarea::focus {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0 !important;
+  border-radius: 2px !important;
   padding: 0 0 0 10px;
   border: 1px solid #C0B6B3;
   font-size: 13px;
@@ -1823,7 +1828,7 @@ textarea::focus {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0 !important;
+  border-radius: 2px !important;
   padding: 0 0 0 10px;
   border: 0;
   padding: 0;

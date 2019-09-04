@@ -72,9 +72,22 @@ $(function(){
   //  }
   // })
 
+  if (navigator.userAgent.indexOf('iPhone') > 0) {
+      let body = document.getElementsByTagName('body')[0];
+      body.classList.add('iPhone');
+  }
+   
+  if (navigator.userAgent.indexOf('iPad') > 0) {
+      let body = document.getElementsByTagName('body')[0];
+      body.classList.add('iPad');
+  }
+   
+  if (navigator.userAgent.indexOf('Android') > 0) {
+      let body = document.getElementsByTagName('body')[0];
+      body.classList.add('Android');
+  }
 });
 </script>
-
 
 <style>
 div#primary {
@@ -1182,6 +1195,18 @@ $(function(){})
 function bodyPageLoad(){
 
 
+
+
+  if($(".error_message").text().trim()!=""){
+    $("html, body").animate({scrollTop:0}, 200, "swing");
+    console.log("on")
+  }
+  if($(".shoppingCart__title").text().trim() ==""){
+    $(".btmbtn below").remove();
+    $(".btn-gry__wrap").remove();
+  }
+  
+
   if($("#CartFlow").attr("data") == 0){
     $("#CartFlow").attr("data",1); 
      $(".btn_menu").addClass("openbtn");
@@ -1230,7 +1255,11 @@ function bodyPageLoad(){
       }
   });
 
-
+ $(".d3 .d_dd").each(function(){
+      if($(this).text().trim()==""){
+        $(this).parent().remove();
+      }
+ });
 }
 
 

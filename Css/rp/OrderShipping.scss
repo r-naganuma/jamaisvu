@@ -65,7 +65,7 @@ strong {
 
 input {
 	&[type="submit"], &[type="text"], &[type="email"], &[type="button"] {
-		border-radius: 0;
+		border-radius: 2px!important;
 		-webkit-box-sizing: content-box;
 		-webkit-appearance: none;
 		appearance: none;
@@ -74,7 +74,12 @@ input {
 		outline: none;
 	}
 }
-
+input[type="tel"]{
+		border-radius: 2px!important;
+}
+select{
+		border-radius: 2px!important;
+}
 textarea {
 	border-radius: 0;
 	-webkit-box-sizing: content-box;
@@ -439,7 +444,7 @@ $bp768: 768px;  // スマホ
 			   			font-weight: normal;
 			   			padding: 0 0 0 10px;
 				    height: 32px;
-				    border-radius: 0!important;
+				    border-radius: 2px!important;
 				    -moz-appearance: none;
 				    -webkit-appearance: none;
 				    appearance: none;
@@ -469,7 +474,7 @@ $bp768: 768px;  // スマホ
 					    width: 26%;
 					    height: 32px;
 					    border: 1px solid #C0B6B3;
-					    border-radius: 0;
+					    border-radius: 2px!important;
 					    background: none!important;
 					    -webkit-appearance: none;
 					    padding: 0 0 0 10px!important;
@@ -727,7 +732,7 @@ $bp768: 768px;  // スマホ
 			   			padding: 0 0 0 10px;
 			   			margin: 0;
 				    height: 32px;
-				    border-radius: 0!important;
+				    border-radius: 2px!important;
 				    -moz-appearance: none;
 				    -webkit-appearance: none;
 				    appearance: none;
@@ -746,7 +751,7 @@ $bp768: 768px;  // スマホ
 			   			font-weight: normal;
 			   			padding: 0 0 0 10px;
 				    height: 32px;
-				    border-radius: 0!important;
+				    border-radius: 2px!important;
 				    -moz-appearance: none;
 				    -webkit-appearance: none;
 				    appearance: none;
@@ -1198,7 +1203,7 @@ $bp768: 768px;  // スマホ
 			    font-weight: normal;
 			    padding: 0 0 0 10px;
 			    height: 32px;
-			    border-radius: 0!important;
+			    border-radius: 2px!important;
 			    -moz-appearance: none;
 			    -webkit-appearance: none;
 			    appearance: none;
@@ -1411,7 +1416,7 @@ $bp768: 768px;  // スマホ
     font-weight: normal;
     padding: 0 0 0 10px;
     height: 32px;
-    border-radius: 0!important;
+    border-radius: 2px!important;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -1426,7 +1431,7 @@ $bp768: 768px;  // スマホ
     font-weight: normal;
     padding: 0 0 0 10px;
     height: 32px;
-    border-radius: 0!important;
+    border-radius: 2px!important;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -1442,7 +1447,7 @@ $bp768: 768px;  // スマホ
 		    font-weight: normal;
 		    padding: 0 0 0 10px;
 		    height: 32px;
-		    border-radius: 0!important;
+		    border-radius: 2px!important;
 		    -moz-appearance: none;
 		    -webkit-appearance: none;
 		    appearance: none;
@@ -1499,7 +1504,7 @@ $bp768: 768px;  // スマホ
 		    font-weight: normal;
 		    padding: 0 0 0 10px;
 		    height: 32px;
-		    border-radius: 0!important;
+		    border-radius: 2px!important;
 		    -moz-appearance: none;
 		    -webkit-appearance: none;
 		    appearance: none;
@@ -1532,7 +1537,7 @@ $bp768: 768px;  // スマホ
 	  width: 20px;
 	  height: 20px;
 	  border: 1px solid #C0B6B3;
-	  border-radius: 3px;
+	  border-radius: 2px!important;
 	  background: #fff;
 	  -webkit-box-sizing: border-box;
 	  box-sizing: border-box;
@@ -1550,7 +1555,7 @@ $bp768: 768px;  // スマホ
 	    width: 16px;
 	    height: 15px;
 	    background: #2E0E02;
-	    border-radius: 3px;
+	    border-radius: 2px!important;
 	    background: url(../../Contents/ImagesPkg/common/check@2x.png);
 	    display: block;
 	    background-position: 0px 3px;

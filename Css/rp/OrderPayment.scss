@@ -72,7 +72,7 @@ strong {
 
 input {
 	&[type="submit"], &[type="text"], &[type="email"], &[type="button"] {
-		border-radius: 0;
+		border-radius: 2px;
 		-webkit-box-sizing: content-box;
 		-webkit-appearance: none;
 		appearance: none;
@@ -82,6 +82,9 @@ input {
 	}
 }
 
+select{
+		border-radius: 2px;
+}
 textarea {
 	border-radius: 0;
 	-webkit-box-sizing: content-box;
@@ -322,7 +325,7 @@ body{
 	   			font-weight: normal;
 	   			padding: 0 0 0 10px;
 			    height: 32px;
-			    border-radius: 0!important;
+			    border-radius: 2px!important;
 			    -moz-appearance: none;
 			    -webkit-appearance: none;
 			    appearance: none;
@@ -741,7 +744,7 @@ body{
 		    padding: 0;
 		    font-size: 12px!important;
 		    width: 100%;
-		    border-radius: 0;
+		    border-radius: 2px;
 		    height: 48px;
 		    background: none;
 		    border:1px solid #2E0E02;
@@ -940,7 +943,7 @@ body{
 				border: 1px solid #C0B6B3;
 				font-size: 14px;
 	   			appearance: none;
-	   			border-radius: 0;
+	   			border-radius: 2px;
 			}
 			select{
 
@@ -1120,7 +1123,7 @@ body{
 		    -moz-appearance: none;
 		    -webkit-appearance: none;
 		    appearance: none;
-		    border-radius: 0!important;
+		    border-radius: 2px!important;
 		    padding: 0 0 0 10px;
 		    border: 1px solid #C0B6B3;
 		    font-size: 14px;
@@ -1182,7 +1185,7 @@ body{
 		    -moz-appearance: none;
 		    -webkit-appearance: none;
 		    appearance: none;
-		    border-radius: 0 !important;
+		    border-radius: 2px !important;
 		    padding: 0 0 0 10px;
 		    border: 0;
 		    padding: 0;
@@ -1209,6 +1212,7 @@ body{
 	a#ctl00_ContentPlaceHolder1_rCartList_ctl00_lbShowCouponBox,
 	 a#ctl00_ContentPlaceHolder1_rCartList_ctl01_lbShowCouponBox {
 	    margin: 0 0 15px!important;
+	    border-radius: 2px;
 	}
 	span#ctl00_ContentPlaceHolder1_rCartList_ctl00_rPayment_ctl00_spanErrorMessageForCreditCard,
 	span#ctl00_ContentPlaceHolder1_rCartList_ctl01_rPayment_ctl00_spanErrorMessageForCreditCard {
@@ -1399,7 +1403,7 @@ body{
 	    -moz-appearance: none;
 	    -webkit-appearance: none;
 	    appearance: none;
-	    border-radius: 0 !important;
+	    border-radius: 2px !important;
 	    padding: 0 0 0 10px;
 	    border: 1px solid #C0B6B3;
 	    font-size: 13px;
@@ -1549,7 +1553,7 @@ body{
 	    -moz-appearance: none;
 	    -webkit-appearance: none;
 	    appearance: none;
-	    border-radius: 0 !important;
+	    border-radius: 2px !important;
 	    padding: 0 0 0 10px;
 	    border: 0;
 	    padding: 0;

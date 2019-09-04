@@ -58,14 +58,13 @@ strong {
 	}
 }
 
-
 * html .cf {
 	height: 1px;
 }
 
 input {
 	&[type="submit"], &[type="text"], &[type="email"], &[type="button"] {
-		border-radius: 0;
+		border-radius: 2px;
 		-webkit-box-sizing: content-box;
 		-webkit-appearance: none;
 		appearance: none;
@@ -74,7 +73,9 @@ input {
 		outline: none;
 	}
 }
-
+select{
+		border-radius: 2px;
+}
 textarea {
 	border-radius: 0;
 	-webkit-box-sizing: content-box;
@@ -749,7 +750,7 @@ $bp768: 768px;  // スマホ
 		    padding: 0;
 		    font-size: 12px!important;
 		    width: 100%;
-		    border-radius: 0;
+		    border-radius: 2px;
 		    height: 48px;
 		    background: none;
 		    border:1px solid #2E0E02;
@@ -973,7 +974,7 @@ $bp768: 768px;  // スマホ
 		    }
 		}
 		.box_dt35 {
-		    width: 190px!important;
+		    width: 145px!important;
 		}
 		@include bp768 {
 			.box_dt35 + dd{
@@ -1019,7 +1020,7 @@ $bp768: 768px;  // スマホ
 		    -webkit-box-shadow: none;
 		    box-shadow: none;
 		    border: none;
-		    border-radius: 0;
+		    border-radius: 2px;
 		    display: -webkit-box;
 		    display: -ms-flexbox;
 		    display: flex;

@@ -21,7 +21,7 @@
 .cart_select #dvOrderBox #dvCartSelect table th {
   border-top-style: solid;
   border-top-width: 0;
-  padding: 10px 0 20px;
+  padding: 10px 0 20px 7px;
   font-weight: normal;
   text-align: left;
   background: #fff;
@@ -163,7 +163,7 @@
 }
 
 .cart_select th.productName {
-  text-align: center !important;
+  text-align: left !important;
 }
 
 .cart_select .productId {
@@ -172,10 +172,19 @@
 
 .cart_select td.productName {
   color: #fff !important;
+  vertical-align: top !important;
 }
 
 .cart_select td.productName span {
   color: #3d3d3d !important;
+}
+
+.cart_select td.productName img {
+  display: none;
+}
+
+.cart_select td.productName img + br {
+  display: none;
 }
 
 .cart_select .productName img {
@@ -287,6 +296,10 @@ a.btn.btn-large.btn-success:hover::before {
 a.btn.btn-large.btn-success:hover {
   opacity: 1;
   color: #2E0E02 !important;
+}
+
+td.productName > br:first-child {
+  display: none;
 }
 
 .cart2 a.btn.btn-large.btn-success2 {
@@ -434,6 +447,7 @@ td.productName a {
   .cart2 div.btmbtn {
     width: 100% !important;
     position: static;
+    margin-top: 25px;
   }
 }
 
@@ -452,4 +466,19 @@ p.alignC {
 p.alignC + a {
   text-align: center;
   margin: 20px 0 0 0;
+  padding: 0;
+  background: no-repeat;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 12px !important;
+  letter-spacing: 0.08em;
+  margin: 20px 25px 0 0;
+}
+
+@media (max-width: 768px) {
+  p.alignC + a {
+    margin: 20px 0 60px 0;
+  }
 }

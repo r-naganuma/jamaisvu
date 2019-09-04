@@ -431,6 +431,20 @@ textarea::focus {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .tblLayout_ProductDetail .productCart {
+    width: 460px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .tblLayout_ProductDetail .productCart {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .tblLayout_ProductDetail .detailAddcart_favo {
   max-width: 64px;
   width: 12.8%;
@@ -449,6 +463,12 @@ textarea::focus {
 .tblLayout_ProductDetail p.btnCart {
   margin: 0 !important;
   padding: 0;
+}
+
+@media (max-width: 768px) {
+  .tblLayout_ProductDetail p.btnCart {
+    margin: 0 auto !important;
+  }
 }
 
 .tblLayout_ProductDetail #dvProductDetailArea #detailOne {
@@ -1393,7 +1413,7 @@ a#ctl00_ContentPlaceHolder1_lbRequestArrivalMail2 {
     z-index: 3;
   }
   .hidden_btn .productCart {
-    margin: 0 0;
+    margin: 0 auto;
   }
 }
 
