@@ -479,7 +479,7 @@ $bp375: 375px;  // スマホ
 	right: 0;
 	position: fixed;
 	width: 100%;
-	z-index: 2;
+	z-index: 4;
 
 	img{
 		width: 100%;
@@ -1294,7 +1294,7 @@ $bp375: 375px;  // スマホ
 		.mainVisual {
 			width: 100vw;
 			height: 100vh !important;
-			margin-bottom: 0;
+			margin-bottom: 100px;
 			padding-top: 87.5px;
 			box-sizing: border-box;
 
@@ -1319,6 +1319,14 @@ $bp375: 375px;  // スマホ
 
 				@include bp768 {
 					height: 100%;
+				};
+			}
+
+			.slick-list{
+				height: 100%;
+
+				@include bp768 {
+					height: auto;
 				};
 			}
 
@@ -1391,10 +1399,11 @@ $bp375: 375px;  // スマホ
 		    text-orientation: sideways;
 		    -webkit-text-orientation: sideways;
 		    -ms-text-orientation: sideways;
-		    font-size: 20px;
+		    font-size: 32px;
 		    letter-spacing: 0.1em;
 		    line-height: 2;
 		    position: relative;
+		    color: #2E0E02;
 
 			@include bp768 {
 				padding: 56px 16px 0 0;
@@ -1425,29 +1434,38 @@ $bp375: 375px;  // スマホ
 		}
 
 		.sec--concept {
+			width: 1080px;
 			background-image: url("../Contents/ImagesPkg/user/top/bg_concept.png");
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			padding: 80px 0 100px;
+			padding: 65px 0;
 			position: relative;
 			z-index: 0;
-			margin-top: -2px;
+			margin: 0 auto;
 
 			@include bp768 {
-				margin-bottom: 0;
-				padding: 60px 0 44px;
-				margin-top: 0;
+				width: 100%;
+				padding: 60px 0;
 			};
 
 			.sec__title{
-				font-size: 16px;
-				margin-bottom: 30px;
+				font-size: 24px;
+				margin-bottom: 35px;
+				position: relative;
+				line-height: 1;
 
-				@include bp768 {
-					font-size: 14px;
-					margin-bottom: 40px;
-				};
+				&::after{
+					content: "";
+					position: absolute;
+					bottom: -15px;
+					left: 0;
+					right: 0;
+					width: 20px;
+					margin: auto;
+					height: 1px;
+					background: #fff;
+				}
 			}
 
 			.concept_txt1 {
@@ -1518,7 +1536,6 @@ $bp375: 375px;  // スマホ
 					padding: 0 18px;
 					box-sizing: border-box;
 					display: block;
-					margin: 40px auto 0;
 				};
 			
 				.concept__list-item {
@@ -1645,7 +1662,7 @@ $bp375: 375px;  // スマホ
 		}
 
 		.sec--topics {
-			padding: 100px 0 80px;
+			padding: 120px 0 100px;
 
 			@include bp768 {
 				padding: 0 30px 80px;
@@ -1655,13 +1672,13 @@ $bp375: 375px;  // スマホ
 			.vertical-title{
 				@include bp768 {
 					top: -30px;
-					left: -5px;
+					left: -20px;
 				};
 			}
 		
 			.sec__inner {
 				display: flex;
-				width: 1140px;
+				width: 1232px;
 				margin: 0 auto;
 
 				@include bp1200 {
@@ -1754,7 +1771,7 @@ $bp375: 375px;  // スマホ
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			margin-bottom: 100px;
+			margin-bottom: 116px;
 			display: flex;
 			align-items: center;
 
@@ -1893,14 +1910,14 @@ $bp375: 375px;  // スマホ
 			.vertical-title{
 				@include bp768 {
 					top: -30px;
-					left: 0;
+					left: -20px;
 				};
 			}
 
 		 	.sec__inner{
 				display: flex;
-				width: 1140px;
-				margin: 0 auto 140px;
+				width: 1232px;
+				margin: 0 auto 156px;
 
 				@include bp1200 {
 					width: 100%;
@@ -2076,7 +2093,7 @@ $bp375: 375px;  // スマホ
 			.vertical-title{
 				@include bp768 {
 					top: -100px;
-					right: 4px;
+					right: -11px;
 				};
 			}
 
@@ -2221,14 +2238,14 @@ $bp375: 375px;  // スマホ
 			.vertical-title{
 				@include bp768 {
 					top: -100px;
-					left: 0;
+					left: -20px;
 				};
 			}
 
 		 	.sec__inner{
 				display: flex;
-				width: 1200px;
-				margin: 0 auto 120px;
+				width: 1232px;
+				margin: 0 auto 110px;
 
 				@include bp768 {
 					display: block;

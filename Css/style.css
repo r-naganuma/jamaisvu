@@ -482,7 +482,7 @@ textarea::focus {
   right: 0;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 4;
   /*   ハンバーガーボタン3本線   */
 }
 
@@ -1573,7 +1573,7 @@ textarea::focus {
 #Wrap .pageTop .mainVisual {
   width: 100vw;
   height: 100vh !important;
-  margin-bottom: 0;
+  margin-bottom: 100px;
   padding-top: 87.5px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1610,6 +1610,16 @@ textarea::focus {
 @media (max-width: 768px) {
   #Wrap .pageTop .mainVisual img {
     height: 100%;
+  }
+}
+
+#Wrap .pageTop .mainVisual .slick-list {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  #Wrap .pageTop .mainVisual .slick-list {
+    height: auto;
   }
 }
 
@@ -1687,10 +1697,11 @@ textarea::focus {
   text-orientation: sideways;
   -webkit-text-orientation: sideways;
   -ms-text-orientation: sideways;
-  font-size: 20px;
+  font-size: 32px;
   letter-spacing: 0.1em;
   line-height: 2;
   position: relative;
+  color: #2E0E02;
 }
 
 @media (max-width: 768px) {
@@ -1719,34 +1730,41 @@ textarea::focus {
 }
 
 #Wrap .pageTop .sec--concept {
+  width: 1080px;
   background-image: url("../Contents/ImagesPkg/user/top/bg_concept.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 80px 0 100px;
+  padding: 65px 0;
   position: relative;
   z-index: 0;
-  margin-top: -2px;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   #Wrap .pageTop .sec--concept {
-    margin-bottom: 0;
-    padding: 60px 0 44px;
-    margin-top: 0;
+    width: 100%;
+    padding: 60px 0;
   }
 }
 
 #Wrap .pageTop .sec--concept .sec__title {
-  font-size: 16px;
-  margin-bottom: 30px;
+  font-size: 24px;
+  margin-bottom: 35px;
+  position: relative;
+  line-height: 1;
 }
 
-@media (max-width: 768px) {
-  #Wrap .pageTop .sec--concept .sec__title {
-    font-size: 14px;
-    margin-bottom: 40px;
-  }
+#Wrap .pageTop .sec--concept .sec__title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  width: 20px;
+  margin: auto;
+  height: 1px;
+  background: #fff;
 }
 
 #Wrap .pageTop .sec--concept .concept_txt1 {
@@ -1835,7 +1853,6 @@ textarea::focus {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    margin: 40px auto 0;
   }
 }
 
@@ -1995,7 +2012,7 @@ textarea::focus {
 }
 
 #Wrap .pageTop .sec--topics {
-  padding: 100px 0 80px;
+  padding: 120px 0 100px;
 }
 
 @media (max-width: 768px) {
@@ -2009,7 +2026,7 @@ textarea::focus {
 @media (max-width: 768px) {
   #Wrap .pageTop .sec--topics .vertical-title {
     top: -30px;
-    left: -5px;
+    left: -20px;
   }
 }
 
@@ -2017,7 +2034,7 @@ textarea::focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1232px;
   margin: 0 auto;
 }
 
@@ -2123,7 +2140,7 @@ textarea::focus {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 100px;
+  margin-bottom: 116px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2300,7 +2317,7 @@ textarea::focus {
 @media (max-width: 768px) {
   #Wrap .pageTop .sec--newarrivals .vertical-title {
     top: -30px;
-    left: 0;
+    left: -20px;
   }
 }
 
@@ -2308,8 +2325,8 @@ textarea::focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
-  margin: 0 auto 140px;
+  width: 1232px;
+  margin: 0 auto 156px;
 }
 
 @media (max-width: 1200px) {
@@ -2522,7 +2539,7 @@ textarea::focus {
 @media (max-width: 768px) {
   #Wrap .pageTop .sec--ranking .vertical-title {
     top: -100px;
-    right: 4px;
+    right: -11px;
   }
 }
 
@@ -2700,7 +2717,7 @@ textarea::focus {
 @media (max-width: 768px) {
   #Wrap .pageTop .sec--history .vertical-title {
     top: -100px;
-    left: 0;
+    left: -20px;
   }
 }
 
@@ -2708,8 +2725,8 @@ textarea::focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1200px;
-  margin: 0 auto 120px;
+  width: 1232px;
+  margin: 0 auto 110px;
 }
 
 @media (max-width: 768px) {
