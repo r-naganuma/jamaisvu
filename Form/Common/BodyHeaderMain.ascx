@@ -101,10 +101,14 @@ function initializeFunctionJs() {
 		}
 	});
 
+
+	if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
 	$(document).ready(function(){
-        var heightSize = $(window).height();
-        $('.mainVisual').height(heightSize); 
-    });
+	    var heightSize = $(window).height();
+	    $('.mainVisual').height(heightSize); 
+	});
+	}
+	
     $("meta[name='viewport']").attr("content","width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
 }
 </script>

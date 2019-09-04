@@ -125,6 +125,14 @@ $bp768: 768px;  // スマホ
   }
 }
 
+$bp375: 375px;  // スマホ
+
+@mixin bp375 {
+  @media (max-width: ($bp375)) {
+    @content;
+  }
+}
+
 @mixin font-weight($weight) {
   $weights: (
     light: 300,
@@ -502,7 +510,7 @@ $bp768: 768px;  // スマホ
 		z-index: 2;
 
 		@include bp1000 {
-			width: 32%;
+			width: 110px;
 			margin: 5px auto 0;
 		};
 
@@ -872,9 +880,7 @@ $bp768: 768px;  // スマホ
 		.header__menu--inner{
 
 			.nav_logo{
-				width: 100%;
-				padding-right: 154px;
-				box-sizing: border-box;
+				width: 110px;
 				margin-bottom: 24px;
 			}
 
@@ -1275,6 +1281,8 @@ $bp768: 768px;  // スマホ
 	&.open{
 		position: relative;
 		z-index: 0;
+		overflow: hidden;
+		height: 100%;
 	}
 
 	/*---------------*/
@@ -1282,23 +1290,26 @@ $bp768: 768px;  // スマホ
 	/*---------------*/
 
 	.pageTop {
-		.topFront{
-			margin-top: 87.5px;
-
-			@include bp768 {
-				margin-top: 58.3px;
-			};
-		}
 
 		.mainVisual {
 			width: 100vw;
-			height: 93vh !important;
+			height: 100vh !important;
 			margin-bottom: 0;
+			padding-top: 87.5px;
+			box-sizing: border-box;
+
+			@include bp1000 {
+				padding-top: 8.5%;
+				height: 100% !important;
+			};
 
 			@include bp768 {
 				width: 100%;
-				height: 78vh !important;
-				margin-bottom: 90px;
+				margin-bottom: 120px;
+			};
+
+			@include bp375 {
+				padding-top: 58.6px;
 			};
 
 			img{
@@ -1307,9 +1318,7 @@ $bp768: 768px;  // スマホ
 				object-position: 50%;
 
 				@include bp768 {
-					height: auto;
-					object-fit: inherit;
-					object-position: inherit;
+					height: 100%;
 				};
 			}
 
@@ -1325,7 +1334,7 @@ $bp768: 768px;  // スマホ
 				z-index: 1;
 
 				@include bp768 {
-					display: block!important;
+					bottom: 25px;
 				};
 
 				li{
@@ -2341,9 +2350,15 @@ $bp768: 768px;  // スマホ
 
 		&--search{
 			width: 180px;
+			min-width: 180px;
+			max-width: 180px;
+			margin-right: 40px;
 
 			@include bp768 {
 				width: 100%;
+				min-width: 100%;
+				max-width: 100%;
+				margin-right: 0;
 			};
 
 			td{
@@ -3096,7 +3111,7 @@ $bp768: 768px;  // スマホ
 							font-size: 12px;
 							line-height: 1.5;
 							margin-right: 18px;
-							width: 55px;
+							width: 57px;
 						};
 					}
 
