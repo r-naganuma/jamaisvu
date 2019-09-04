@@ -290,7 +290,8 @@ $(function(){
 						<p>
 							年間購入金額に応じて会員ランクが設定されます。ランクに応じて設定された特典を、ぜひご利用ください。
 						</p>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide_rank.jpg" class="pic_rank">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide_rank.jpg" class="pic_rank rank1">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide_stepup.jpg" class="pic_rank">
 					</div>
 					<div class="inner_column">
 						<h4>ニュースレター</h4>

@@ -379,6 +379,10 @@ $bp768: 768px;  // スマホ
 									width: 100%;
 									padding: 0;
 								};
+
+								&.rank1{
+									margin-bottom: 24px;
+								}
 							}
 						}
 
@@ -428,12 +432,6 @@ $bp768: 768px;  // スマホ
 								};
 							}
 
-							img{
-								&.pic100{
-									margin-bottom: 16px;
-								}
-							}
-
 							p{
 								font-size: 12px;
 								line-height: 2;
@@ -448,6 +446,17 @@ $bp768: 768px;  // スマホ
 
 					&.sizeList{
 						padding-bottom: 0;
+
+						img{
+							&.pic100{
+								width: 410px;
+								margin: 0 auto 16px;
+
+								@include bp768 {
+									width: 100%;
+								};
+							}
+						}
 					}
 
 					.sizeNote{
