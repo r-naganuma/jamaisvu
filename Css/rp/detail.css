@@ -146,7 +146,8 @@ textarea::focus {
 /*==================================================================*/
 .tblLayout_ProductDetail {
   width: 100%;
-  margin: 82px 0 0 0;
+  max-width: 1120px;
+  margin: 82px auto 0;
 }
 
 .tblLayout_ProductDetail #secondary {
@@ -160,6 +161,7 @@ textarea::focus {
 
 .tblLayout_ProductDetail #primary {
   width: 100%;
+  max-width: 1120px;
   padding-left: 0;
   margin-top: 10px;
 }
@@ -167,6 +169,8 @@ textarea::focus {
 .tblLayout_ProductDetail #dvProductDetailArea #detailImage {
   width: 50%;
   float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
@@ -186,12 +190,13 @@ textarea::focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
+  width: 100%;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+  margin: 0 0 40px;
 }
 
 @media (max-width: 768px) {
@@ -200,8 +205,18 @@ textarea::focus {
   }
 }
 
+.tblLayout_ProductDetail div#detailImage {
+  padding: 0 20px 0 0;
+}
+
+@media (max-width: 768px) {
+  .tblLayout_ProductDetail div#detailImage {
+    padding: 0 0px 0 0;
+  }
+}
+
 .tblLayout_ProductDetail .wrapDetailImage {
-  width: 100vw;
+  width: 100%;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -344,12 +359,23 @@ textarea::focus {
 
 .tblLayout_ProductDetail ul.subImage.clearFix li {
   width: 50%;
+  margin: 0 0 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
   .tblLayout_ProductDetail ul.subImage.clearFix li {
     width: 100%;
   }
+}
+
+.tblLayout_ProductDetail ul.subImage.clearFix li:nth-child(odd) {
+  padding: 0 20px 0 0;
+}
+
+.tblLayout_ProductDetail ul.subImage.clearFix li:nth-child(even) {
+  padding: 0 0px 0 20px;
 }
 
 .tblLayout_ProductDetail #dvProductDetailArea h2 {
@@ -1253,7 +1279,12 @@ p.toolTip {
   font-size: 13px;
   font-weight: bold;
   color: #C6C6C6;
-  border-bottom: 1px solid #968680;
+}
+
+@media (max-width: 768px) {
+  .detail_change a {
+    border-bottom: 1px solid #eae6e5;
+  }
 }
 
 .detail_change a.active {
@@ -1636,6 +1667,25 @@ div#divProductArrivalMail {
 @media (max-width: 768px) {
   .flexslider {
     margin: 0 0 15px;
+    min-height: 920px;
+  }
+}
+
+@media (max-width: 700px) {
+  .flexslider {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 426px) {
+  .flexslider {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 375px) {
+  .flexslider {
+    min-height: 450px;
   }
 }
 

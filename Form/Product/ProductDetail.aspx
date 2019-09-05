@@ -218,6 +218,11 @@ div#primary {
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.css" />
+<!-- <script>
+	$(function(){
+		$(".load_wrap").addClass("active");
+	})
+</script> -->
 <script>
 $(function(){});
 
@@ -256,13 +261,17 @@ function bodyPageLoad(){
 	var video = "<%# GetProductDataHtml("desc_detail4") %>";
 
 
-	if($(window).width()>768){
-		$(".subImage").append('<li><div class="youtube">'
-		+'<iframe width="1280" height="1536" src="https://www.youtube.com/embed/'+video+'?showinfo=0&rel=0&controls=0&showinfo=0&modestbranding=1&autoplay=1&loop=1&playlist='+video+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>'
-		+'</div></li>');
-	}else{
+	if(video!=""){
+		if($(window).width()>768){
+			$(".subImage").append('<li><div class="youtube">'
+			+'<iframe width="1280" height="1536" src="https://www.youtube.com/embed/'+video+'?showinfo=0&rel=0&controls=0&showinfo=0&modestbranding=1&autoplay=1&loop=1&playlist='+video+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>'
+			+'</div></li>');
+		}else{
 
+		}
 	}
+
+
 
 	set = "";
 	set =  "<li>"+$(".mainImage").html()+"</li>";
@@ -451,52 +460,55 @@ function bodyPageLoad(){
 	</div>
 </div>
 <script>
-// APIの読み込みokje4WaBZ-A
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var video = "<%# GetProductDataHtml("desc_detail4") %>";
+if(video!=""){
+	var tag = document.createElement('script');
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-// プレーヤーを埋め込む場所指定
-var ytArea = 'youtube';
-// 埋め込むYouTube ID指定
-var ytID = '<%# GetProductDataHtml("desc_detail4") %>';
+	// プレーヤーを埋め込む場所指定
+	var ytArea = 'youtube';
+	// 埋め込むYouTube ID指定
+	var ytID = '<%# GetProductDataHtml("desc_detail4") %>';
 
-// プレーヤーの埋め込み
-function onYouTubeIframeAPIReady() {
-	ytPlayer = new YT.Player(ytArea, {
-		videoId: ytID,
-		playerVars: {
-			playsinline: 1,
-			loop: -1, // ループの設定
-			rel: 0,
-			controls: 0,
-			showinfo: 0,
-			wmode: 'transparent'
-		},
-		events: {
-			'onReady': onPlayerReady,
-			'onStateChange': onPlayerStateChange
-		}
-	});
-}
+	// プレーヤーの埋め込み
+	function onYouTubeIframeAPIReady() {
+		ytPlayer = new YT.Player(ytArea, {
+			videoId: ytID,
+			playerVars: {
+				playsinline: 1,
+				loop: -1, // ループの設定
+				rel: 0,
+				controls: 0,
+				showinfo: 0,
+				wmode: 'transparent'
+			},
+			events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onPlayerStateChange
+			}
+		});
+	}
 
-// YouTubeの準備完了後
-function onPlayerReady(e) {
-	ytPlayer.playVideo();
-	ytPlayer.mute();
-	ytPlayer.setPlaybackQuality('hd1080');
-}
-
-// 再生完了後
-function onPlayerStateChange(e) {
-	var ytStatus = e.target.getPlayerState();
-	if (ytStatus == YT.PlayerState.ENDED) {
+	// YouTubeの準備完了後
+	function onPlayerReady(e) {
 		ytPlayer.playVideo();
 		ytPlayer.mute();
+		ytPlayer.setPlaybackQuality('hd1080');
 	}
+
+	// 再生完了後
+	function onPlayerStateChange(e) {
+		var ytStatus = e.target.getPlayerState();
+		if (ytStatus == YT.PlayerState.ENDED) {
+			ytPlayer.playVideo();
+			ytPlayer.mute();
+		}
+	}
+}else{
+	$(".youtube").parent().remove();
 }
-	
 </script>
 
 <style>
@@ -681,7 +693,7 @@ iframe {
 		<dd><!-- タグ素材　--><%# WebSanitizer.HtmlEncode(GetProductData("tag_material")) %></dd>
 	</dl>
 	<dl class="preorder_text__wrap">
-		<dt>販売期間</dt>
+		<dt>配送時期</dt>
 		<dd class="preorder_text"></dd>
 	</dl>
 </div>

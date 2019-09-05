@@ -1202,8 +1202,11 @@ function bodyPageLoad(){
     console.log("on")
   }
   if($(".shoppingCart__title").text().trim() ==""){
-    $(".btmbtn below").remove();
+    $(".btmbtn.below").remove();
     $(".btn-gry__wrap").remove();
+    $("#Wrap .topSpace").css("padding-top","80px")
+
+
   }
   
 

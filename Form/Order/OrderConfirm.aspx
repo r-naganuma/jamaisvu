@@ -145,7 +145,11 @@ $(function(){
       }
   });
 
-
+ if($(".main1").length){
+  $(".cart4 .main.main1").addClass("one");
+ }else{
+  $(".cart4 .main.main0").addClass("one");
+ }
 
 });
 </script>

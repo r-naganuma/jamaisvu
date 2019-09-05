@@ -172,7 +172,8 @@ $bp768: 768px;  // スマホ
 
 .tblLayout_ProductDetail{
 	width: 100%;
-	margin: 82px 0 0 0;
+	max-width: 1120px;
+	margin: 82px auto 0 ;
 	#secondary{
 		display: none;
 	}
@@ -182,12 +183,14 @@ $bp768: 768px;  // スマホ
 	}
 	#primary {
 	    width: 100%;
+	    max-width: 1120px;
 	    padding-left: 0;
 	    margin-top: 10px;
 	}
 	#dvProductDetailArea #detailImage {
 	    width: 50%;
 	    float: left;
+	    box-sizing: border-box;
 		@include bp768 {
 	    width: 100%;
 	    float: left;
@@ -200,17 +203,23 @@ $bp768: 768px;  // スマホ
 	}
 	.detail_top_wrap {
 	    display: flex;
-	    width: 100vw;
+	    width: 100%;
 	    position: relative;
 	    left: 50%;
 	    transform: translateX(-50%);
+	    margin: 0 0 40px;
 		@include bp768 {
 			display: block;
 		};
 	}
-
+	div#detailImage {
+	    padding: 0 20px 0 0;
+		@include bp768 {
+		padding: 0 0px 0 0;
+		}
+	}
 	.wrapDetailImage{
-	    width: 100vw;
+	    width: 100%;
 	    position: relative;
 	    left: 50%;
 	    transform: translateX(-50%);
@@ -309,9 +318,17 @@ $bp768: 768px;  // スマホ
 	    flex-wrap: wrap;
 	    li{
 	    	width: 50%;
+	    	margin: 0 0 40px;
+	    	box-sizing: border-box;
 			@include bp768 {
 				width: 100%;
 			};
+			&:nth-child(odd){
+				padding: 0 20px 0 0;
+			}
+			&:nth-child(even){
+				padding: 0 0px 0 20px;
+			}
 	    }
 	}
 	#dvProductDetailArea h2 {
@@ -997,7 +1014,11 @@ p.toolTip {
 	    font-size: 13px;
 	    font-weight: bold;
 	    color: #C6C6C6;
-	    border-bottom: 1px solid #968680;
+	    
+	    @include bp768 {
+	    	border-bottom: 1px solid rgb(234, 230, 229);
+	    }
+
 	    &.active {
 		    color: #3D3D3D;
 		    border-bottom: 2px solid #968680;
@@ -1338,7 +1359,17 @@ div#divProductArrivalMail {
     box-shadow: 0;
 	@include bp768 {
 		margin: 0 0 15px;
+		min-height: 920px;
 	};
+	@media (max-width: 700px) {
+		min-height: auto;
+	}
+	@media (max-width: 426px) {
+		min-height: 500px;
+	}
+	@media (max-width: 375px) {
+		min-height: 450px;
+	}
 }
 .flex-control-paging li a {
     width: 6px;
