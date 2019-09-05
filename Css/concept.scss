@@ -789,9 +789,11 @@ $bp768: 768px;  // スマホ
 
 							@include bp768 {
 								top: 20px;
+								bottom: 20px;
+								right: 26px;
 								left: 26px;
-								width: 84%;
-								height: 75%;
+								width: inherit;
+								height: inherit;
 							};
 
 							p{
@@ -1164,9 +1166,11 @@ $bp768: 768px;  // スマホ
 
 							@include bp768 {
 								top: 20px;
+								bottom: 20px;
+								right: 26px;
 								left: 26px;
-								width: 84%;
-								height: 75%;
+								width: inherit;
+								height: inherit;
 							};
 
 							p{

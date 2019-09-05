@@ -65,9 +65,6 @@ $(function(){
 					<a href="#a04">パンツ</a>
 				</li>
 				<li>
-					<a href="#a05">サロペット・オールインワン</a>
-				</li>
-				<li>
 					<a href="#a06">ファッション雑貨</a>
 				</li>
 			</ul>
@@ -89,9 +86,6 @@ $(function(){
 					</li>
 					<li>
 						<a href="#a04">パンツ</a>
-					</li>
-					<li>
-						<a href="#a05">サロペット・オールインワン</a>
 					</li>
 					<li>
 						<a href="#a06">ファッション雑貨</a>
@@ -116,49 +110,42 @@ $(function(){
 				<div class="sizeBox">
 					<div class="sizeBox_list">
 						<h4>Tシャツ</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size01.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_01.png">
 					</div>
 					<div class="sizeBox_list">
 						<h4>ラグランスリーブ</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size02.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_02.png">
 					</div>
 					<div class="sizeBox_list">
 						<h4>ドルマンスリーブ</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size03.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_03.png">
 					</div>
 					<div class="sizeBox_list">
 						<h4>タートルネック</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size04.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_04.png">
 					</div>
 					<div class="sizeBox_list">
 						<h4>キャミソール</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size05.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_05.png">
 					</div>
 					<div class="sizeBox_list">
 						<h4>タンクトップ</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size06.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_06.png">
 					</div>
 					<div class="sizeBox_list">
 						<h4>シャツ・ブラウス</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size07.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_07.png">
 					</div>
 					<div class="sizeBox_list">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size08.png">
-					</div>
-					<div class="sizeBox_list">
-						<h4>ベスト</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size09.png">
-					</div>
-					<div class="sizeBox_list">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size10.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_08.png">
 					</div>
 					<div class="sizeBox_list">
 						<h4>ジャケット</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size11.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_09.png">
 					</div>
 					<div class="sizeBox_list">
 						<h4>コート</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size12.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_10.png">
 					</div>
 				</div>
 			</div>
@@ -167,10 +154,10 @@ $(function(){
 				<h3>ワンピース</h3>
 				<div class="sizeBox">
 					<div class="sizeBox_list">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size13.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_11.png">
 					</div>
 					<div class="sizeBox_list">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size14.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_12.png">
 					</div>
 				</div>
 			</div>
@@ -179,7 +166,7 @@ $(function(){
 				<h3>スカート</h3>
 				<div class="sizeBox sizeBox_center">
 					<div class="sizeBox_list">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size15.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_13.png">
 					</div>
 					<div class="sizeBox_list">
 						<p>
@@ -191,14 +178,13 @@ $(function(){
 
 			<div id="a04" class="guideWrap_cts--list sizeList">
 				<h3>パンツ</h3>
-				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size16.png" class="pic100 pc_contents">
-				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size16_sp.png" class="pic100 sp_contents">
+				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_14.png" class="pic100">
 				<div class="sizeBox">
 					<div class="sizeBox_list">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size17.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_15.png">
 					</div>
 					<div class="sizeBox_list">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size18.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_16.png">
 					</div>
 				</div>
 				<div class="sizeNote">
@@ -210,36 +196,24 @@ $(function(){
 				</div>
 			</div>
 
-			<div id="a05" class="guideWrap_cts--list sizeList">
-				<h3>サロペット・オールインワン</h3>
-				<div class="sizeBox">
-					<div class="sizeBox_list">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size19.png">
-					</div>
-					<div class="sizeBox_list">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size20.png">
-					</div>
-				</div>
-			</div>
-
 			<div id="a06" class="guideWrap_cts--list sizeList">
 				<h3>ファッション雑貨</h3>
 				<div class="sizeBox">
 					<div class="sizeBox_list">
 						<h4>ニットキャップ</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size21.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_19.png">
 					</div>
 					<div class="sizeBox_list">
 						<h4>マフラー</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size22.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_20.png">
 					</div>
 					<div class="sizeBox_list">
 						<h4>靴下</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size23.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_21.png">
 					</div>
 					<div class="sizeBox_list">
 						<h4>トートバッグ</h4>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size24.png">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/size_17.png">
 					</div>
 				</div>
 			</div>

@@ -482,7 +482,7 @@ textarea::focus {
   right: 0;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 4;
   /*   ハンバーガーボタン3本線   */
 }
 
@@ -528,7 +528,7 @@ textarea::focus {
 
 @media (max-width: 1000px) {
   .header__logo {
-    width: 32%;
+    width: 110px;
     margin: 5px auto 0;
   }
 }
@@ -1007,10 +1007,7 @@ textarea::focus {
 }
 
 .header__menu .header__menu--inner .nav_logo {
-  width: 100%;
-  padding-right: 154px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  width: 110px;
   margin-bottom: 24px;
 }
 
@@ -1569,29 +1566,36 @@ textarea::focus {
 #Wrap.open {
   position: relative;
   z-index: 0;
-}
-
-#Wrap .pageTop .topFront {
-  margin-top: 87.5px;
-}
-
-@media (max-width: 768px) {
-  #Wrap .pageTop .topFront {
-    margin-top: 58.3px;
-  }
+  overflow: hidden;
+  height: 100%;
 }
 
 #Wrap .pageTop .mainVisual {
   width: 100vw;
-  height: 93vh !important;
-  margin-bottom: 0;
+  height: 100vh !important;
+  margin-bottom: 100px;
+  padding-top: 87.5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  #Wrap .pageTop .mainVisual {
+    padding-top: 8.5%;
+    height: 100% !important;
+  }
 }
 
 @media (max-width: 768px) {
   #Wrap .pageTop .mainVisual {
     width: 100%;
-    height: 78vh !important;
-    margin-bottom: 90px;
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 375px) {
+  #Wrap .pageTop .mainVisual {
+    padding-top: 58.6px;
   }
 }
 
@@ -1605,11 +1609,17 @@ textarea::focus {
 
 @media (max-width: 768px) {
   #Wrap .pageTop .mainVisual img {
+    height: 100%;
+  }
+}
+
+#Wrap .pageTop .mainVisual .slick-list {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  #Wrap .pageTop .mainVisual .slick-list {
     height: auto;
-    -o-object-fit: inherit;
-    object-fit: inherit;
-    -o-object-position: inherit;
-    object-position: inherit;
   }
 }
 
@@ -1627,7 +1637,7 @@ textarea::focus {
 
 @media (max-width: 768px) {
   #Wrap .pageTop .mainVisual .slick-dots {
-    display: block !important;
+    bottom: 25px;
   }
 }
 
@@ -1687,10 +1697,15 @@ textarea::focus {
   text-orientation: sideways;
   -webkit-text-orientation: sideways;
   -ms-text-orientation: sideways;
-  font-size: 20px;
+  font-size: 32px;
   letter-spacing: 0.1em;
   line-height: 2;
   position: relative;
+  color: #2E0E02;
+  width: 64px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 @media (max-width: 768px) {
@@ -1698,6 +1713,7 @@ textarea::focus {
     padding: 56px 16px 0 0;
     position: absolute;
     z-index: 3;
+    width: inherit;
   }
 }
 
@@ -1719,34 +1735,41 @@ textarea::focus {
 }
 
 #Wrap .pageTop .sec--concept {
+  width: 1080px;
   background-image: url("../Contents/ImagesPkg/user/top/bg_concept.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 80px 0 100px;
+  padding: 65px 0;
   position: relative;
   z-index: 0;
-  margin-top: -2px;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   #Wrap .pageTop .sec--concept {
-    margin-bottom: 0;
-    padding: 60px 0 44px;
-    margin-top: 0;
+    width: 100%;
+    padding: 60px 0;
   }
 }
 
 #Wrap .pageTop .sec--concept .sec__title {
-  font-size: 16px;
-  margin-bottom: 30px;
+  font-size: 24px;
+  margin-bottom: 35px;
+  position: relative;
+  line-height: 1;
 }
 
-@media (max-width: 768px) {
-  #Wrap .pageTop .sec--concept .sec__title {
-    font-size: 14px;
-    margin-bottom: 40px;
-  }
+#Wrap .pageTop .sec--concept .sec__title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  width: 20px;
+  margin: auto;
+  height: 1px;
+  background: #fff;
 }
 
 #Wrap .pageTop .sec--concept .concept_txt1 {
@@ -1835,7 +1858,6 @@ textarea::focus {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    margin: 40px auto 0;
   }
 }
 
@@ -1995,7 +2017,7 @@ textarea::focus {
 }
 
 #Wrap .pageTop .sec--topics {
-  padding: 100px 0 80px;
+  padding: 120px 0 100px;
 }
 
 @media (max-width: 768px) {
@@ -2009,7 +2031,7 @@ textarea::focus {
 @media (max-width: 768px) {
   #Wrap .pageTop .sec--topics .vertical-title {
     top: -30px;
-    left: -5px;
+    left: -20px;
   }
 }
 
@@ -2017,7 +2039,7 @@ textarea::focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1232px;
   margin: 0 auto;
 }
 
@@ -2123,7 +2145,7 @@ textarea::focus {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 100px;
+  margin-bottom: 116px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2300,7 +2322,7 @@ textarea::focus {
 @media (max-width: 768px) {
   #Wrap .pageTop .sec--newarrivals .vertical-title {
     top: -30px;
-    left: 0;
+    left: -20px;
   }
 }
 
@@ -2308,8 +2330,8 @@ textarea::focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
-  margin: 0 auto 140px;
+  width: 1232px;
+  margin: 0 auto 156px;
 }
 
 @media (max-width: 1200px) {
@@ -2522,7 +2544,7 @@ textarea::focus {
 @media (max-width: 768px) {
   #Wrap .pageTop .sec--ranking .vertical-title {
     top: -100px;
-    right: 4px;
+    right: -11px;
   }
 }
 
@@ -2700,7 +2722,7 @@ textarea::focus {
 @media (max-width: 768px) {
   #Wrap .pageTop .sec--history .vertical-title {
     top: -100px;
-    left: 0;
+    left: -20px;
   }
 }
 
@@ -2708,8 +2730,8 @@ textarea::focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1200px;
-  margin: 0 auto 120px;
+  width: 1232px;
+  margin: 0 auto 110px;
 }
 
 @media (max-width: 768px) {
@@ -2850,11 +2872,17 @@ textarea::focus {
 
 #Wrap .pageCts_pdList--search {
   width: 180px;
+  min-width: 180px;
+  max-width: 180px;
+  margin-right: 40px;
 }
 
 @media (max-width: 768px) {
   #Wrap .pageCts_pdList--search {
     width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin-right: 0;
   }
 }
 
@@ -3722,7 +3750,7 @@ textarea::focus {
     font-size: 12px;
     line-height: 1.5;
     margin-right: 18px;
-    width: 55px;
+    width: 57px;
   }
 }
 

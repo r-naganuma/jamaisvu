@@ -259,7 +259,7 @@ $(function(){
 					<div class="inner_column">
 						<p class="indentTxt1em">
 							・商品に不具合があった場合の返品<br>
-							お客様が購入した商品が以下の条件に該当する場合、商品の到着日から●日以内に限り、購入した商品を返品することができます。この場合の送料は当社が負担するものとします。<br>
+							お客様が購入した商品が以下の条件に該当する場合、商品の到着日から7日以内に限り、購入した商品を返品することができます。この場合の送料は当社が負担するものとします。<br>
 							<br>
 							①商品に瑕疵があった場合<br>
 							②ご注文内容と異なる商品が到着した場合<br>
@@ -290,7 +290,8 @@ $(function(){
 						<p>
 							年間購入金額に応じて会員ランクが設定されます。ランクに応じて設定された特典を、ぜひご利用ください。
 						</p>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide_rank.jpg" class="pic_rank">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide_rank.jpg" class="pic_rank rank1">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide_stepup.jpg" class="pic_rank">
 					</div>
 					<div class="inner_column">
 						<h4>ニュースレター</h4>

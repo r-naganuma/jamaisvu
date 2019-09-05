@@ -84,10 +84,11 @@ $bp768: 768px;  // スマホ
 				}
 
 				a{
-					display: block !important;
+					display: inline-block !important;
 
 					@include bp768 {
 						margin-bottom: 5px;
+						display: block !important;
 					};
 
 					.itemName{

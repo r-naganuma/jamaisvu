@@ -133,7 +133,7 @@
       <h4>運営委託先</h4>
       <p>会社名：株式会社 Roseau Pensant
         <br>代表者 : 代表取締役　上原 英暢
-        <br>住所：東京都港区六本木7-3-16六本木インターナショナルアネックスビル4F
+        <br>所在地：東京都港区六本木7-3-16六本木インターナショナルアネックスビル4F
         <br>URL：https://roseaupensant.jp/</p>
     </div>
     <div class="privacyBox__section">

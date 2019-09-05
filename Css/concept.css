@@ -906,9 +906,11 @@
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .conceptBox_other--box--list .btnTxt {
     top: 20px;
+    bottom: 20px;
+    right: 26px;
     left: 26px;
-    width: 84%;
-    height: 75%;
+    width: inherit;
+    height: inherit;
   }
 }
 
@@ -1361,9 +1363,11 @@
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .conceptBox_aboutOther--box--list .btnTxt {
     top: 20px;
+    bottom: 20px;
+    right: 26px;
     left: 26px;
-    width: 84%;
-    height: 75%;
+    width: inherit;
+    height: inherit;
   }
 }
 

@@ -125,6 +125,14 @@ $bp768: 768px;  // スマホ
   }
 }
 
+$bp375: 375px;  // スマホ
+
+@mixin bp375 {
+  @media (max-width: ($bp375)) {
+    @content;
+  }
+}
+
 @mixin font-weight($weight) {
   $weights: (
     light: 300,
@@ -471,7 +479,7 @@ $bp768: 768px;  // スマホ
 	right: 0;
 	position: fixed;
 	width: 100%;
-	z-index: 2;
+	z-index: 4;
 
 	img{
 		width: 100%;
@@ -502,7 +510,7 @@ $bp768: 768px;  // スマホ
 		z-index: 2;
 
 		@include bp1000 {
-			width: 32%;
+			width: 110px;
 			margin: 5px auto 0;
 		};
 
@@ -872,9 +880,7 @@ $bp768: 768px;  // スマホ
 		.header__menu--inner{
 
 			.nav_logo{
-				width: 100%;
-				padding-right: 154px;
-				box-sizing: border-box;
+				width: 110px;
 				margin-bottom: 24px;
 			}
 
@@ -1275,6 +1281,8 @@ $bp768: 768px;  // スマホ
 	&.open{
 		position: relative;
 		z-index: 0;
+		overflow: hidden;
+		height: 100%;
 	}
 
 	/*---------------*/
@@ -1282,23 +1290,26 @@ $bp768: 768px;  // スマホ
 	/*---------------*/
 
 	.pageTop {
-		.topFront{
-			margin-top: 87.5px;
-
-			@include bp768 {
-				margin-top: 58.3px;
-			};
-		}
 
 		.mainVisual {
 			width: 100vw;
-			height: 93vh !important;
-			margin-bottom: 0;
+			height: 100vh !important;
+			margin-bottom: 100px;
+			padding-top: 87.5px;
+			box-sizing: border-box;
+
+			@include bp1000 {
+				padding-top: 8.5%;
+				height: 100% !important;
+			};
 
 			@include bp768 {
 				width: 100%;
-				height: 78vh !important;
-				margin-bottom: 90px;
+				margin-bottom: 120px;
+			};
+
+			@include bp375 {
+				padding-top: 58.6px;
 			};
 
 			img{
@@ -1307,9 +1318,15 @@ $bp768: 768px;  // スマホ
 				object-position: 50%;
 
 				@include bp768 {
+					height: 100%;
+				};
+			}
+
+			.slick-list{
+				height: 100%;
+
+				@include bp768 {
 					height: auto;
-					object-fit: inherit;
-					object-position: inherit;
 				};
 			}
 
@@ -1325,7 +1342,7 @@ $bp768: 768px;  // スマホ
 				z-index: 1;
 
 				@include bp768 {
-					display: block!important;
+					bottom: 25px;
 				};
 
 				li{
@@ -1382,15 +1399,19 @@ $bp768: 768px;  // スマホ
 		    text-orientation: sideways;
 		    -webkit-text-orientation: sideways;
 		    -ms-text-orientation: sideways;
-		    font-size: 20px;
+		    font-size: 32px;
 		    letter-spacing: 0.1em;
 		    line-height: 2;
 		    position: relative;
+		    color: #2E0E02;
+		    width: 64px;
+		    height: max-content;
 
 			@include bp768 {
 				padding: 56px 16px 0 0;
 				position: absolute;
 				z-index: 3;
+		    	width: inherit;
 			};
 
 			&:before {
@@ -1416,29 +1437,38 @@ $bp768: 768px;  // スマホ
 		}
 
 		.sec--concept {
+			width: 1080px;
 			background-image: url("../Contents/ImagesPkg/user/top/bg_concept.png");
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			padding: 80px 0 100px;
+			padding: 65px 0;
 			position: relative;
 			z-index: 0;
-			margin-top: -2px;
+			margin: 0 auto;
 
 			@include bp768 {
-				margin-bottom: 0;
-				padding: 60px 0 44px;
-				margin-top: 0;
+				width: 100%;
+				padding: 60px 0;
 			};
 
 			.sec__title{
-				font-size: 16px;
-				margin-bottom: 30px;
+				font-size: 24px;
+				margin-bottom: 35px;
+				position: relative;
+				line-height: 1;
 
-				@include bp768 {
-					font-size: 14px;
-					margin-bottom: 40px;
-				};
+				&::after{
+					content: "";
+					position: absolute;
+					bottom: -15px;
+					left: 0;
+					right: 0;
+					width: 20px;
+					margin: auto;
+					height: 1px;
+					background: #fff;
+				}
 			}
 
 			.concept_txt1 {
@@ -1509,7 +1539,6 @@ $bp768: 768px;  // スマホ
 					padding: 0 18px;
 					box-sizing: border-box;
 					display: block;
-					margin: 40px auto 0;
 				};
 			
 				.concept__list-item {
@@ -1636,7 +1665,7 @@ $bp768: 768px;  // スマホ
 		}
 
 		.sec--topics {
-			padding: 100px 0 80px;
+			padding: 120px 0 100px;
 
 			@include bp768 {
 				padding: 0 30px 80px;
@@ -1646,13 +1675,13 @@ $bp768: 768px;  // スマホ
 			.vertical-title{
 				@include bp768 {
 					top: -30px;
-					left: -5px;
+					left: -20px;
 				};
 			}
 		
 			.sec__inner {
 				display: flex;
-				width: 1140px;
+				width: 1232px;
 				margin: 0 auto;
 
 				@include bp1200 {
@@ -1745,7 +1774,7 @@ $bp768: 768px;  // スマホ
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			margin-bottom: 100px;
+			margin-bottom: 116px;
 			display: flex;
 			align-items: center;
 
@@ -1884,14 +1913,14 @@ $bp768: 768px;  // スマホ
 			.vertical-title{
 				@include bp768 {
 					top: -30px;
-					left: 0;
+					left: -20px;
 				};
 			}
 
 		 	.sec__inner{
 				display: flex;
-				width: 1140px;
-				margin: 0 auto 140px;
+				width: 1232px;
+				margin: 0 auto 156px;
 
 				@include bp1200 {
 					width: 100%;
@@ -2067,7 +2096,7 @@ $bp768: 768px;  // スマホ
 			.vertical-title{
 				@include bp768 {
 					top: -100px;
-					right: 4px;
+					right: -11px;
 				};
 			}
 
@@ -2212,14 +2241,14 @@ $bp768: 768px;  // スマホ
 			.vertical-title{
 				@include bp768 {
 					top: -100px;
-					left: 0;
+					left: -20px;
 				};
 			}
 
 		 	.sec__inner{
 				display: flex;
-				width: 1200px;
-				margin: 0 auto 120px;
+				width: 1232px;
+				margin: 0 auto 110px;
 
 				@include bp768 {
 					display: block;
@@ -2341,9 +2370,15 @@ $bp768: 768px;  // スマホ
 
 		&--search{
 			width: 180px;
+			min-width: 180px;
+			max-width: 180px;
+			margin-right: 40px;
 
 			@include bp768 {
 				width: 100%;
+				min-width: 100%;
+				max-width: 100%;
+				margin-right: 0;
 			};
 
 			td{
@@ -3096,7 +3131,7 @@ $bp768: 768px;  // スマホ
 							font-size: 12px;
 							line-height: 1.5;
 							margin-right: 18px;
-							width: 55px;
+							width: 57px;
 						};
 					}
 
