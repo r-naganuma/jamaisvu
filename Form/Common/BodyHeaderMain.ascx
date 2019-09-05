@@ -200,7 +200,7 @@ function initializeFunctionJs() {
 											</li>
 										</ul>
 										<div class="hov_inner--pic">
-											<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_item.jpg" alt="">
+											<!-- <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_item.jpg" alt=""> -->
 										</div>
 									</div>
 								</div>

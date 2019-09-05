@@ -1702,6 +1702,10 @@ textarea::focus {
   line-height: 2;
   position: relative;
   color: #2E0E02;
+  width: 64px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 @media (max-width: 768px) {
@@ -1709,6 +1713,7 @@ textarea::focus {
     padding: 56px 16px 0 0;
     position: absolute;
     z-index: 3;
+    width: inherit;
   }
 }
 

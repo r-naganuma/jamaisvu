@@ -1404,11 +1404,14 @@ $bp375: 375px;  // スマホ
 		    line-height: 2;
 		    position: relative;
 		    color: #2E0E02;
+		    width: 64px;
+		    height: max-content;
 
 			@include bp768 {
 				padding: 56px 16px 0 0;
 				position: absolute;
 				z-index: 3;
+		    	width: inherit;
 			};
 
 			&:before {
