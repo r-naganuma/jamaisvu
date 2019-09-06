@@ -145,11 +145,11 @@ function initializeFunctionJs() {
 													アウター
 												</a>
 											</li>
-											<li>
+											<!-- <li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=002&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 													シャツ・ブラウス
 												</a>
-											</li>
+											</li> -->
 											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=003&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 													ニット
@@ -175,16 +175,16 @@ function initializeFunctionJs() {
 													パンツ
 												</a>
 											</li>
-											<li>
+											<!-- <li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=008&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 													帽子
 												</a>
-											</li>
-											<li>
+											</li> -->
+											<!-- <li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=009&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 													靴下
 												</a>
-											</li>
+											</li> -->
 										</ul>
 
 										<ul>
@@ -447,11 +447,11 @@ function initializeFunctionJs() {
 											アウター
 										</a>
 									</li>
-									<li>
+									<!-- <li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=002&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 											シャツ・ブラウス
 										</a>
-									</li>
+									</li> -->
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=003&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 											ニット
@@ -477,16 +477,16 @@ function initializeFunctionJs() {
 											パンツ
 										</a>
 									</li>
-									<li>
+									<!-- <li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=008&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 											帽子
 										</a>
-									</li>
-									<li>
+									</li> -->
+									<!-- <li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=009&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 											靴下
 										</a>
-									</li>
+									</li> -->
 								</ul>
 							</div>
 
