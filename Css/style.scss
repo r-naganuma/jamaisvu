@@ -2336,13 +2336,13 @@ $bp375: 375px;  // スマホ
 			width: 180px;
 			min-width: 180px;
 			max-width: 180px;
-			margin-right: 40px;
+			position: fixed;
 
 			@include bp768 {
 				width: 100%;
 				min-width: 100%;
 				max-width: 100%;
-				margin-right: 0;
+				position: inherit;
 			};
 
 			td{
@@ -2907,12 +2907,8 @@ $bp375: 375px;  // スマホ
 		}
 
 		&--cts{
-			width: 85%;
-			margin-left: auto;
-
-			@include bp1280 {
-				width: 82%;
-			};
+			width: 100%;
+			margin-left: 220px;
 
 			@include bp768 {
 				width: 100%;

@@ -215,11 +215,11 @@ function initializeFunctionJs() {
 									<a href="<%= Constants.PATH_ROOT %>Page/lookbook/" class="period">LOOKBOOK</a>
 								</div>
 							</li>
-							<li>
+							<!-- <li>
 								<div class="listColumn">
 									<a href="<%= Constants.PATH_ROOT %>Page/Concept/about.aspx" class="period">CONCEPT</a>
 								</div>
-							</li>
+							</li> -->
 						</ul>
 					</nav>
 
@@ -493,11 +493,11 @@ function initializeFunctionJs() {
 							<div class="nav_box">
 								<h3>特集</h3>
 								<ul>
-									<li>
+									<!-- <li>
 										<a href="<%= Constants.PATH_ROOT %>Page/Concept/about.aspx">
 											コンセプト
 										</a>
-									</li>
+									</li> -->
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Page/lookbook/">
 											ルックブック

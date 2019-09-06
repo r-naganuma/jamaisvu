@@ -2829,7 +2829,7 @@ textarea::focus {
   width: 180px;
   min-width: 180px;
   max-width: 180px;
-  margin-right: 40px;
+  position: fixed;
 }
 
 @media (max-width: 768px) {
@@ -2837,7 +2837,7 @@ textarea::focus {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
-    margin-right: 0;
+    position: inherit;
   }
 }
 
@@ -3469,14 +3469,8 @@ textarea::focus {
 }
 
 #Wrap .pageCts_pdList--cts {
-  width: 85%;
-  margin-left: auto;
-}
-
-@media (max-width: 1280px) {
-  #Wrap .pageCts_pdList--cts {
-    width: 82%;
-  }
+  width: 100%;
+  margin-left: 220px;
 }
 
 @media (max-width: 768px) {
