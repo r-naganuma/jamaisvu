@@ -86,6 +86,14 @@
   opacity: 1;
 }
 
+.lookWrap_box--list .creditArea a.noLink {
+  cursor: text;
+}
+
+.lookWrap_box--list .creditArea a.noLink:hover {
+  color: #333 !important;
+}
+
 .lookWrap_box--list .creditArea .slash {
   font-size: 16px;
   margin: 0 12px 0 7px;

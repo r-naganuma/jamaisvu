@@ -24,12 +24,12 @@
             <div class="newarrivalsContent__list">
                 <div class="newarrivalsContent__list-item item-1">
                     <div class="newarrivalsContent__img-large">
-                        <a href="">
+                        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930315155">
                             <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_1_large.jpg" alt="image 1">
                         </a>
                     </div>
                     <div class="newarrivalsContent__img-little">
-                        <a href="">
+                        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930315155">
                             <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_1_little.jpg" alt="image 1">
                             <div class="newarrivalsContent__desc">
                                 <p class="newarrivalsContent__itemName">Vネックベスト</p>
@@ -41,16 +41,16 @@
                 </div>
                 <div class="newarrivalsContent__list-item item-2">
                     <div class="newarrivalsContent__img-large">
-                        <a href="">
+                        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930304165">
                             <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_2_large.jpg" alt="image 2">
                         </a>
                     </div>
                     <div class="newarrivalsContent__img-little">
-                        <a href="">
+                        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930304165">
                             <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_2_little.jpg" alt="image 2">
                             <div class="newarrivalsContent__desc">
-                                <p class="newarrivalsContent__itemName">フィットカーディガン</p>
-                                <p class="newarrivalsContent__price">¥18,360(tax in)</p>
+                                <p class="newarrivalsContent__itemName">タンクドレス</p>
+                                <p class="newarrivalsContent__price">¥24,840(tax in)</p>
                             </div>
                         </a>
                         <a href="javascript:void(0);" class="readMore sp_contents"></a>
@@ -58,16 +58,16 @@
                 </div>
                 <div class="newarrivalsContent__list-item item-3">
                     <div class="newarrivalsContent__img-large">
-                        <a href="">
+                        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930309131">
                             <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_3_large.jpg" alt="image 3">
                         </a>
                     </div>
                     <div class="newarrivalsContent__img-little">
-                        <a href="">
+                        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930309131">
                             <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/newarrivals_3_little.jpg" alt="image 3">
                             <div class="newarrivalsContent__desc">
-                                <p class="newarrivalsContent__itemName">タンクドレス</p>
-                                <p class="newarrivalsContent__price">¥24,840(tax in)</p>
+                                <p class="newarrivalsContent__itemName">ヘアリーポロ</p>
+                                <p class="newarrivalsContent__price">¥19,440(tax in)</p>
                             </div>
                         </a>
                         <a href="javascript:void(0);" class="readMore sp_contents"></a>

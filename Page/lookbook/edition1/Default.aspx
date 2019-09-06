@@ -17,6 +17,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 <%-- ▽編集可能領域：HEAD追加部分▽ --%>
 <link href="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	$(function(){
+		$('.noLink').click(function(){
+			return false;
+		});
+	});
+</script>
 <%-- △編集可能領域△ --%>
 </asp:Content>
 
@@ -33,17 +40,17 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic01.jpg" alt="edition1">
 				</div>
 				<div class="creditArea">
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930317111">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930317111" class="noLink">
 						<span class="itemName">ショートカーディガン</span>
 						<span class="price">¥22,680<span>(tax in)</span></span>
 					</a>
 					<span class="slash">/</span>
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111" class="noLink">
 						<span class="itemName">ビッグカーディガン</span>
 						<span class="price">¥25,920<span>(tax in)</span></span>
 					</a>
 					<span class="slash">/</span>
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930305111">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930305111" class="noLink">
 						<span class="itemName">ニットスウェットパンツ</span>
 						<span class="price">¥22,680<span>(tax in)</span></span>
 					</a>
@@ -76,7 +83,7 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic04.jpg" alt="edition4">
 				</div>
 				<div class="creditArea">
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930122117">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930122117" class="noLink">
 						<span class="itemName">フリーサイズコート</span>
 						<span class="price">¥51,840<span>(tax in)</span></span>
 					</a>
@@ -86,7 +93,7 @@
 						<span class="price">¥22,680<span>(tax in)</span></span>
 					</a>
 					<span class="slash">/</span>
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930306149">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930306149" class="noLink">
 						<span class="itemName">ニットワイドパンツ</span>
 						<span class="price">¥20,520<span>(tax in)</span></span>
 					</a>
@@ -102,9 +109,9 @@
 						<span class="price">¥19,440<span>(tax in)</span></span>
 					</a>
 					<span class="slash">/</span>
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930305165">
-						<span class="itemName">ニットスウェットパンツ</span>
-						<span class="price">¥22,680<span>(tax in)</span></span>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930305165" class="noLink">
+						<span class="itemName">ニットワイドパンツ</span>
+						<span class="price">¥20,520<span>(tax in)</span></span>
 					</a>
 				</div>
 			</div>
@@ -118,7 +125,7 @@
 						<span class="price">¥19,440<span>(tax in)</span></span>
 					</a>
 					<span class="slash">/</span>
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930305155">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930305155" class="noLink">
 						<span class="itemName">ニットスウェットパンツ</span>
 						<span class="price">¥22,680<span>(tax in)</span></span>
 					</a>
@@ -133,6 +140,11 @@
 						<span class="itemName">ホールガーメントTシャツ</span>
 						<span class="price">¥15,120<span>(tax in)</span></span>
 					</a>
+					<span class="slash">/</span>
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930316135" class="noLink">
+						<span class="itemName">フリーサイズテーパード</span>
+						<span class="price">¥22,680<span>(tax in)</span></span>
+					</a>
 				</div>
 			</div>
 			<div class="lookWrap_box--list">
@@ -140,7 +152,7 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic08.jpg" alt="edition8">
 				</div>
 				<div class="creditArea">
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930313255">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930313255" class="noLink">
 						<span class="itemName">フィットカーディガン</span>
 						<span class="price">¥18,360<span>(tax in)</span></span>
 					</a>
@@ -151,17 +163,17 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic09.jpg" alt="edition9">
 				</div>
 				<div class="creditArea">
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930317121">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930317121" class="noLink">
 						<span class="itemName">ショートカーディガン</span>
 						<span class="price">¥22,680<span>(tax in)</span></span>
 					</a>
 					<span class="slash">/</span>
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318121">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318121" class="noLink">
 						<span class="itemName">ビッグカーディガン</span>
 						<span class="price">¥25,920<span>(tax in)</span></span>
 					</a>
 					<span class="slash">/</span>
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930306165">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930306165" class="noLink">
 						<span class="itemName">ニットワイドパンツ</span>
 						<span class="price">¥20,520<span>(tax in)</span></span>
 					</a>
@@ -172,12 +184,12 @@
 					<img src="<%= Constants.PATH_ROOT %>Page/lookbook/edition1/images/pic10.jpg" alt="edition10">
 				</div>
 				<div class="creditArea">
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930317121">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930317121" class="noLink">
 						<span class="itemName">ショートカーディガン</span>
 						<span class="price">¥22,680<span>(tax in)</span></span>
 					</a>
 					<span class="slash">/</span>
-					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318121">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318121" class="noLink">
 						<span class="itemName">ビッグカーディガン</span>
 						<span class="price">¥25,920<span>(tax in)</span></span>
 					</a>

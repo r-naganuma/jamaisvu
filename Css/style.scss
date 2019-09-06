@@ -2767,6 +2767,7 @@ $bp375: 375px;  // スマホ
 						input{
 							border-radius: 0;
 							appearance: none;
+							display: none;
 
 
 							@include bp768 {
@@ -2778,16 +2779,14 @@ $bp375: 375px;  // スマホ
 							width: 100%;
 							display: block;
 						    padding: 13px 8px;
-							margin: -13px 0 0 0;
 							height: 40px;
 							line-height: 15px;
 							box-sizing: border-box;
 
 							@include bp768 {
-								margin: -6px 0 0;
-								height: 34px;
+								height: 43px;
 								line-height: 28px;
-								padding: 0 24px;
+								padding: 8px 24px 0;
 							};
 						}
 
@@ -2814,6 +2813,7 @@ $bp375: 375px;  // スマホ
 						input{
 							border-radius: 0;
 							appearance: none;
+							display: none;
 
 
 							@include bp768 {
@@ -2825,23 +2825,21 @@ $bp375: 375px;  // スマホ
 							width: 100%;
 							display: block;
 						    padding: 13px 8px;
-							margin: -13px 0 0 0;
 							height: 40px;
 							line-height: 15px;
 							box-sizing: border-box;
 
 							@include bp768 {
-								margin: -6px 0 0;
-								height: 34px;
+								height: 43px;
 								line-height: 28px;
-								padding: 0 24px;
+								padding: 8px 24px 0;
 							};
 						}
 
 						&.on{
 							background-color: rgba(234,230,229,.5) !important;
 							position: relative;
-							background-image: none;
+							background-image: url("../Contents/ImagesPkg/user/productlist/btn_off.png");
 							background-repeat: no-repeat;
 							background-position: right 13px top 16px;
 							background-size: 9px 9px;
@@ -2875,6 +2873,7 @@ $bp375: 375px;  // スマホ
 						input{
 							border-radius: 0;
 							appearance: none;
+							display: none;
 
 
 							@include bp768 {
@@ -2887,24 +2886,22 @@ $bp375: 375px;  // スマホ
 							display: flex;
 							align-items: center;
 						    padding: 0 34px 0 8px;
-							margin: -13px 0 0 0;
 							height: 60px;
 							box-sizing: border-box;
 							line-height: 23.4px;
 
 							@include bp768 {
 								display: block;
-								margin: -6px 0 0;
-								height: 34px;
+								height: 43px;
 								line-height: 28px;
-								padding: 0 24px;
+								padding: 8px 24px 0;
 							};
 						}
 
 						&.on{
 							background-color: rgba(234,230,229,.5) !important;
 							position: relative;
-							background-image: none;
+							background-image: url("../Contents/ImagesPkg/user/productlist/btn_off.png");
 							background-repeat: no-repeat;
 							background-position: right 13px center;
 							background-size: 9px 9px;
