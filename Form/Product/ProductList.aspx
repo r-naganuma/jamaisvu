@@ -126,6 +126,9 @@
 
 		$("span.total_counts").prependTo(".breadcrumb_num span");
 
+		$(".breadcrumb_num span:empty").text("0");
+
+
 		// 商品一覧:詳細検索
 		function getUrlVars() {
 			var vars = [], hash;
@@ -253,54 +256,54 @@
 			$('.searchBox_list--category li:nth-child(2)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
-		if(document.URL.match("cat=002")) {
-			$('.pdList_conditions .pdList_conditions--category').text('シャツ・ブラウス');
-			$('.breadcrumb ul li p').text('シャツ・ブラウス');
-			$('.searchBox_list--category li:nth-child(3)').addClass("on");
-			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
-		}
+		// if(document.URL.match("cat=002")) {
+		// 	$('.pdList_conditions .pdList_conditions--category').text('シャツ・ブラウス');
+		// 	$('.breadcrumb ul li p').text('シャツ・ブラウス');
+		// 	$('.searchBox_list--category li:nth-child(3)').addClass("on");
+		// 	$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		// }
 		if(document.URL.match("cat=003")) {
 			$('.pdList_conditions .pdList_conditions--category').text('ニット');
 			$('.breadcrumb ul li p').text('ニット');
-			$('.searchBox_list--category li:nth-child(4)').addClass("on");
+			$('.searchBox_list--category li:nth-child(3)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=004")) {
 			$('.pdList_conditions .pdList_conditions--category').text('カットソー');
 			$('.breadcrumb ul li p').text('カットソー');
-			$('.searchBox_list--category li:nth-child(5)').addClass("on");
+			$('.searchBox_list--category li:nth-child(4)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=005")) {
 			$('.pdList_conditions .pdList_conditions--category').text('ワンピース');
 			$('.breadcrumb ul li p').text('ワンピース');
-			$('.searchBox_list--category li:nth-child(6)').addClass("on");
+			$('.searchBox_list--category li:nth-child(5)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=006")) {
 			$('.pdList_conditions .pdList_conditions--category').text('スカート');
 			$('.breadcrumb ul li p').text('スカート');
-			$('.searchBox_list--category li:nth-child(7)').addClass("on");
+			$('.searchBox_list--category li:nth-child(6)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=007")) {
 			$('.pdList_conditions .pdList_conditions--category').text('パンツ');
 			$('.breadcrumb ul li p').text('パンツ');
-			$('.searchBox_list--category li:nth-child(8)').addClass("on");
+			$('.searchBox_list--category li:nth-child(7)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
-		if(document.URL.match("cat=008")) {
-			$('.pdList_conditions .pdList_conditions--category').text('帽子');
-			$('.breadcrumb ul li p').text('帽子');
-			$('.searchBox_list--category li:nth-child(9)').addClass("on");
-			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
-		}
-		if(document.URL.match("cat=009")) {
-			$('.pdList_conditions .pdList_conditions--category').text('靴下');
-			$('.breadcrumb ul li p').text('靴下');
-			$('.searchBox_list--category li:nth-child(10)').addClass("on");
-			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
-		}
+		// if(document.URL.match("cat=008")) {
+		// 	$('.pdList_conditions .pdList_conditions--category').text('帽子');
+		// 	$('.breadcrumb ul li p').text('帽子');
+		// 	$('.searchBox_list--category li:nth-child(9)').addClass("on");
+		// 	$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		// }
+		// if(document.URL.match("cat=009")) {
+		// 	$('.pdList_conditions .pdList_conditions--category').text('靴下');
+		// 	$('.breadcrumb ul li p').text('靴下');
+		// 	$('.searchBox_list--category li:nth-child(10)').addClass("on");
+		// 	$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		// }
 		if(document.URL.match("sale=%e3%81%99%e3%81%b9%e3%81%a6")) {
 			$('.pdList_conditions .pdList_conditions--sale').text('\u00a0/ すべての価格タイプ');
 			$('.searchBox_list--price li:nth-child(2)').addClass("on");
@@ -500,7 +503,7 @@
 					<% } %>
 					</li>
 					<li class="pdList_material">
-						<%# WebSanitizer.HtmlEncode(GetProductData(Container.DataItem, "tag_material")) %>
+						<span><%# WebSanitizer.HtmlEncode(GetProductData(Container.DataItem, "tag_material")) %></span>
 					</li>
 					<li class="pdList_name">
 					<!-- 商品名表示 -->
@@ -793,7 +796,7 @@
 						<% } %><span visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLD OUT</span>
 					</li>
 					<li class="pdList_material">
-						<%# WebSanitizer.HtmlEncode(GetProductData(Container.DataItem, "tag_material")) %>
+						<span><%# WebSanitizer.HtmlEncode(GetProductData(Container.DataItem, "tag_material")) %></span>
 					</li>
 					<li class="pdList_name"><a href='<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrl(Container.DataItem, true)) %>'>
 						<%# WebSanitizer.HtmlEncode(GetProductData(Container.DataItem, "name")) %></a>

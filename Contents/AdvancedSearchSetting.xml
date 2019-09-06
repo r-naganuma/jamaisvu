@@ -38,7 +38,7 @@
   <Setting RequestKey="cnt" SearchField="tag_country" SearchMode="" />
   <Setting RequestKey="yr1" SearchField="tag_year_gt" SearchMode="" />
   <Setting RequestKey="yr2" SearchField="tag_year_lt" SearchMode="" />
-  <Setting RequestKey="material" SearchField="tag_material" SearchMode="" />
+  <Setting RequestKey="material" SearchField="tag_material" SearchMode="internal" />
   <Setting RequestKey="size" SearchField="tag_size" SearchMode="internal" />
   <Setting RequestKey="sale" SearchField="tag_sale" SearchMode="internal" />
 </AdvancedSearchSetting>

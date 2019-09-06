@@ -15,6 +15,13 @@
 
 --%>
 <%-- ▽編集可能領域：コンテンツ▽ --%>
+<script type="text/javascript">
+    $(function(){
+        $('.noLink').click(function(){
+            return false;
+        });
+    });
+</script>
 <div class="sec sec--concept pc_contents">
     <div class="sec__inner">
         <h2 class="sec__title">CONCEPT</h2>
@@ -58,27 +65,18 @@
         <div class="topicsContent">
             <div class="topicsContent__list">
                 <div class="topicsContent__list-item item-1">
-                    <a href="">
-                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1.png" alt="topics 1">
-                        <p>NEW ARRIVALS</p>
+                    <a href="https://jamaisvu.co.jp/category/topics/newarrivals_20190909/">
+                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1.jpg" alt="topics 1">
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-2">
-                    <a href="">
-                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_2.png" alt="topics 2">
-                        <p>KNIT! KNIT! KNIT!</p>
+                    <a href="https://jamaisvu.co.jp/category/topics/style_20190909/">
+                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_2.jpg" alt="topics 2">
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-3">
-                    <a href="">
-                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_3.png" alt="topics 3">
-                        <p>CARE ITEMS vol.1</p>
-                    </a>
-                </div>
-                <div class="topicsContent__list-item item-4">
-                    <a href="">
-                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_4.png" alt="topics 4">
-                        <p>クリスウェブ佳子さんが語る、素材へのこだわり vol.1</p>
+                    <a href="#" class="noLink">
+                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_3.jpg" alt="topics 3">
                     </a>
                 </div>
             </div>
