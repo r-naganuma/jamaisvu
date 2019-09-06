@@ -301,16 +301,6 @@
 			$('.searchBox_list--category li:nth-child(10)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
-		if(document.URL.match("sale=%e3%81%99%e3%81%b9%e3%81%a6")) {
-			$('.pdList_conditions .pdList_conditions--sale').text('\u00a0/ すべての価格タイプ');
-			$('.searchBox_list--price li:nth-child(2)').addClass("on");
-			$('.searchBox_list--price').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--price li.on').text());
-		}
-		if(document.URL.match("sale=%e3%82%bb%e3%83%bc%e3%83%ab")) {
-			$('.pdList_conditions .pdList_conditions--sale').text('\u00a0/ セール');
-			$('.searchBox_list--price li:nth-child(3)').addClass("on");
-			$('.searchBox_list--price').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--price li.on').text());
-		}
 		if(document.URL.match("col=red")) {
 			$('.pdList_conditions .pdList_conditions--color').text('\u00a0/ レッド系');
 			$('.searchBox_list--color li:nth-child(1)').addClass("on");
@@ -380,19 +370,24 @@
 			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
 		if(document.URL.match("REGULAR")) {
-			$('.pdList_conditions .sizasize1').text('\u00a0/ REGULAR');
 			$('.searchBox_list--size li:nth-child(1)').addClass("on");
 			$('.searchBox_list--size').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--size li.on').text());
 		}
 		if(document.URL.match("LOOSE")) {
-			$('.pdList_conditions .sizasize2').text('\u00a0/ LOOSE');
 			$('.searchBox_list--size li:nth-child(2)').addClass("on");
 			$('.searchBox_list--size').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--size li.on').text());
 		}
 		if(document.URL.match("FREE")) {
-			$('.pdList_conditions .sizasize3').text('\u00a0/ FREE');
 			$('.searchBox_list--size li:nth-child(3)').addClass("on");
 			$('.searchBox_list--size').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--size li.on').text());
+		}
+		if(document.URL.match("%e3%81%99%e3%81%b9%e3%81%a6")) {
+			$('.searchBox_list--price li:nth-child(2)').addClass("on");
+			$('.searchBox_list--price').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--price li.on').text());
+		}
+		if(document.URL.match("%e3%82%bb%e3%83%bc%e3%83%ab")) {
+			$('.searchBox_list--price li:nth-child(3)').addClass("on");
+			$('.searchBox_list--price').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--price li.on').text());
 		}
 		if(document.URL.match("udns=2")) {
 			$('.sortItem li:nth-child(1)').addClass("active");
@@ -451,7 +446,7 @@
 							検索条件
 						</dt>
 						<dd>
-							<span class="pdList_conditions--category"></span><span class="pdList_conditions--sale"></span><span class="pdList_conditions--color"></span><span class="pdList_conditions--size sizasize1"></span><span class="pdList_conditions--size sizasize2"></span><span class="pdList_conditions--size sizasize3"></span><span class="pdList_conditions--tag tagtag1"></span><span class="pdList_conditions--tag tagtag2"></span><span class="pdList_conditions--tag tagtag3"></span><span class="pdList_conditions--tag tagtag4"></span>
+							<span class="pdList_conditions--category"></span><span class="pdList_conditions--color"></span><span class="pdList_conditions--tag tagtag1"></span><span class="pdList_conditions--tag tagtag2"></span><span class="pdList_conditions--tag tagtag3"></span><span class="pdList_conditions--tag tagtag4"></span>
 						</dd>
 					</dl>
 				</div>

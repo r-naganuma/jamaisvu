@@ -112,6 +112,14 @@ $bp768: 768px;  // スマホ
 						color: #C0B6B3 !important;
 						opacity: 1;
 					}
+
+					&.noLink{
+						cursor: text;
+
+						&:hover{
+							color: #333 !important;
+						}
+					}
 				}
 
 				.slash{

@@ -157,7 +157,7 @@
 			</p>
 			<div class="conceptBox_item--box">
 				<div class="conceptBox_item--box--list">
-					<a href="">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930310165">
 						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_item01.jpg" alt="HAMILTON LAMS WOOL">
 						<p class="itemName">
 							ヘアリーTシャツ
@@ -168,7 +168,7 @@
 					</a>
 				</div>
 				<div class="conceptBox_item--box--list">
-					<a href="">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930304131">
 						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_item02.jpg" alt="HAMILTON LAMS WOOL">
 						<p class="itemName">
 							タンクドレス
@@ -179,7 +179,7 @@
 					</a>
 				</div>
 				<div class="conceptBox_item--box--list">
-					<a href="">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930309111">
 						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_item03.jpg" alt="HAMILTON LAMS WOOL">
 						<p class="itemName">
 							へアリーポロ
@@ -190,13 +190,13 @@
 					</a>
 				</div>
 				<div class="conceptBox_item--box--list">
-					<a href="">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930311149">
 						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_item04.jpg" alt="HAMILTON LAMS WOOL">
 						<p class="itemName">
-							ニットワイドパンツ
+							ヘアリーショートパンツ
 						</p>
 						<p class="price">
-							¥20,520(tax in)
+							¥17,280(tax in)
 						</p>
 					</a>
 				</div>

@@ -3311,6 +3311,7 @@ textarea::focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -3323,7 +3324,6 @@ textarea::focus {
   width: 100%;
   display: block;
   padding: 13px 8px;
-  margin: -13px 0 0 0;
   height: 40px;
   line-height: 15px;
   -webkit-box-sizing: border-box;
@@ -3332,10 +3332,9 @@ textarea::focus {
 
 @media (max-width: 768px) {
   #Wrap .pageCts_pdList--search .searchBox_list--price li label {
-    margin: -6px 0 0;
-    height: 34px;
+    height: 43px;
     line-height: 28px;
-    padding: 0 24px;
+    padding: 8px 24px 0;
   }
 }
 
@@ -3363,6 +3362,7 @@ textarea::focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -3375,7 +3375,6 @@ textarea::focus {
   width: 100%;
   display: block;
   padding: 13px 8px;
-  margin: -13px 0 0 0;
   height: 40px;
   line-height: 15px;
   -webkit-box-sizing: border-box;
@@ -3384,17 +3383,16 @@ textarea::focus {
 
 @media (max-width: 768px) {
   #Wrap .pageCts_pdList--search .searchBox_list--size li label {
-    margin: -6px 0 0;
-    height: 34px;
+    height: 43px;
     line-height: 28px;
-    padding: 0 24px;
+    padding: 8px 24px 0;
   }
 }
 
 #Wrap .pageCts_pdList--search .searchBox_list--size li.on {
   background-color: rgba(234, 230, 229, 0.5) !important;
   position: relative;
-  background-image: none;
+  background-image: url("../Contents/ImagesPkg/user/productlist/btn_off.png");
   background-repeat: no-repeat;
   background-position: right 13px top 16px;
   background-size: 9px 9px;
@@ -3436,6 +3434,7 @@ textarea::focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -3453,7 +3452,6 @@ textarea::focus {
   -ms-flex-align: center;
   align-items: center;
   padding: 0 34px 0 8px;
-  margin: -13px 0 0 0;
   height: 60px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -3463,17 +3461,16 @@ textarea::focus {
 @media (max-width: 768px) {
   #Wrap .pageCts_pdList--search .searchBox_list--material li label {
     display: block;
-    margin: -6px 0 0;
-    height: 34px;
+    height: 43px;
     line-height: 28px;
-    padding: 0 24px;
+    padding: 8px 24px 0;
   }
 }
 
 #Wrap .pageCts_pdList--search .searchBox_list--material li.on {
   background-color: rgba(234, 230, 229, 0.5) !important;
   position: relative;
-  background-image: none;
+  background-image: url("../Contents/ImagesPkg/user/productlist/btn_off.png");
   background-repeat: no-repeat;
   background-position: right 13px center;
   background-size: 9px 9px;

@@ -156,7 +156,7 @@
 			</p>
 			<div class="conceptBox_item--box">
 				<div class="conceptBox_item--box--list">
-					<a href="">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930313255">
 						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_item01.jpg" alt="MERINO OPTIMO">
 						<p class="itemName">
 							フィットカーディガン
@@ -167,7 +167,7 @@
 					</a>
 				</div>
 				<div class="conceptBox_item--box--list">
-					<a href="">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930315161">
 						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_item02.jpg" alt="MERINO OPTIMO">
 						<p class="itemName">
 							Vネックベスト
@@ -178,7 +178,7 @@
 					</a>
 				</div>
 				<div class="conceptBox_item--box--list">
-					<a href="">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930316135">
 						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_item03.jpg" alt="MERINO OPTIMO">
 						<p class="itemName">
 							ホールガーメントTシャツ
@@ -189,13 +189,13 @@
 					</a>
 				</div>
 				<div class="conceptBox_item--box--list">
-					<a href="">
+					<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?pid=1930314241">
 						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_item04.jpg" alt="MERINO OPTIMO">
 						<p class="itemName">
-							フリーサイズワイド
+							フィットプルオーバー
 						</p>
 						<p class="price">
-							¥22,680(tax in)
+							¥18,360(tax in)
 						</p>
 					</a>
 				</div>
