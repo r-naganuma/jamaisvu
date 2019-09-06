@@ -320,6 +320,7 @@ $bp768: 768px;  // スマホ
 	    	width: 50%;
 	    	margin: 0 0 40px;
 	    	box-sizing: border-box;
+	    	position: relative;
 			@include bp768 {
 				width: 100%;
 			};
@@ -328,6 +329,15 @@ $bp768: 768px;  // スマホ
 			}
 			&:nth-child(even){
 				padding: 0 0px 0 20px;
+			}
+			&:last-child:after{
+				position: absolute;
+				content:"";
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				left:0;
+				top:0;
 			}
 	    }
 	}

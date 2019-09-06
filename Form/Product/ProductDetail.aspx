@@ -455,11 +455,44 @@ function bodyPageLoad(){
 					</div>
 				</div>
 	    	</li>
-
+<!-- 	    	<li>
+				<div class="youtube">
+					<div id="sample">
+						
+					</div>
+				</div>
+	    	</li> -->
 	    </ul>
 	</div>
 </div>
+
+<!-- <script src="https://player.vimeo.com/api/player.js"></script>
+
 <script>
+
+$(function() {
+    // プレーヤーのオプション設定
+    var options = {
+        id: 357988140, // VimeoのID
+        autoplay: true, // 自動再生
+        loop: true, // ループ
+        color: 'ff0000', // プレーヤーのカラー
+        byline: false, // 投稿者部分の表示
+        portrait: false, // 左上のVimeoのマークの表示
+        title: false, // タイトルの表示
+        muted:true
+    };
+ 
+    var player = new Vimeo.Player($('#sample'), options);
+});
+</script> -->
+
+
+
+
+<script>
+
+
 var video = "<%# GetProductDataHtml("desc_detail4") %>";
 if(video!=""){
 	var tag = document.createElement('script');

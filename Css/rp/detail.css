@@ -362,6 +362,7 @@ textarea::focus {
   margin: 0 0 40px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -376,6 +377,16 @@ textarea::focus {
 
 .tblLayout_ProductDetail ul.subImage.clearFix li:nth-child(even) {
   padding: 0 0px 0 20px;
+}
+
+.tblLayout_ProductDetail ul.subImage.clearFix li:last-child:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
 }
 
 .tblLayout_ProductDetail #dvProductDetailArea h2 {
