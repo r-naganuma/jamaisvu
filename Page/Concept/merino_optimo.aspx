@@ -24,17 +24,16 @@
 <div class="LPpageWrap topSpace">
 
 <%-- ▽編集可能領域：コンテンツ▽ --%>
-	<h2>CONCEPT</h2>
+	<h2 class="ctsTtl">
+		MERINO OPTIMO
+		<span class="conceptSub">
+			0.2%の希少な羊が生むしなやかなウール
+		</span>
+	</h2>
 
 	<div class="conceptBox">
 		<div class="conceptBox_header">
 			<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/merino_main.jpg" alt="MERINO OPTIMO">
-			<h3>
-				<span>
-					MERINO OPTIMO
-				</span>
-				0.2%の希少な羊が生む<br class="sp_contents">しなやかなウール
-			</h3>
 		</div>
 
 		<div class="conceptBox_where">
@@ -145,9 +144,9 @@
 				</div>
 			</div>
 
-			<div class="conceptBox_feature--btn">
+			<!-- <div class="conceptBox_feature--btn">
 				<a href="<%= Constants.PATH_ROOT %>Page/Concept/about.aspx">製品化までのストーリー</a>
-			</div>
+			</div> -->
 		</div>
 
 		<div class="conceptBox_item">

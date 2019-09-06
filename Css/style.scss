@@ -1254,6 +1254,15 @@ $bp375: 375px;  // スマホ
     }
 }
 
+@keyframes fade_in2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 /*----------------*/
 /*--- pageWrap ---*/
 /*----------------*/
@@ -1445,7 +1454,7 @@ $bp375: 375px;  // スマホ
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			padding: 65px 0;
+			padding: 65px 0 60px;
 			position: relative;
 			z-index: 0;
 			margin: 0 auto;
@@ -1521,12 +1530,28 @@ $bp375: 375px;  // スマホ
 				text-align: center;
 				font-size: 13px;
 				line-height: 23.4px;
+				margin: 0 0 55px;
 
 				@include bp768 {
 					width: 100%;
 					padding: 0 18px;
 					box-sizing: border-box;
 					text-align: left;
+					margin: 0 0 65px;
+				};
+			}
+
+			.concept_txt5 {
+				color: #fff;
+				text-align: center;
+				font-size: 20px;
+				line-height: 1;
+				font-family: 'Noto Serif JP', serif;
+
+				@include bp768 {
+					width: 100%;
+					padding: 0 18px;
+					box-sizing: border-box;
 				};
 			}
 
@@ -1535,13 +1560,14 @@ $bp375: 375px;  // スマホ
 				justify-content: space-between;
 				width: 420px;
 				flex-wrap: wrap;
-				margin: 60px auto 0;
+				margin: 28px auto 0;
 
 				@include bp768 {
 					width: 100%;
 					padding: 0 18px;
 					box-sizing: border-box;
 					display: block;
+					margin: 24px auto 0;
 				};
 			
 				.concept__list-item {
@@ -2326,6 +2352,7 @@ $bp375: 375px;  // スマホ
 		padding: 0 40px;
 		box-sizing: border-box;
 		width: 100vw;
+		position: relative;
 
 		@include bp768 {
 			display: block;
@@ -2337,13 +2364,34 @@ $bp375: 375px;  // スマホ
 			min-width: 180px;
 			max-width: 180px;
 			position: fixed;
+			overflow-y: auto;
+			overflow-x: hidden;
+			height: 80%;
 
 			@include bp768 {
 				width: 100%;
 				min-width: 100%;
 				max-width: 100%;
 				position: inherit;
+				overflow-y: auto;
+				height: auto;
 			};
+
+			&.off{
+				animation: fade_out .2s ease 0s forwards;
+
+				@include bp768 {
+					animation: none;
+				};
+			}
+
+			&.on{
+				animation: fade_in2 .2s ease 0s forwards;
+
+				@include bp768 {
+					animation: none;
+				};
+			}
 
 			td{
 				padding: 0;
@@ -2548,7 +2596,7 @@ $bp375: 375px;  // スマホ
 						content: "";
 						position: absolute;
 						top: 0;
-						right: 0;
+						right: 4px;
 						margin: auto;
 						z-index: 1;
 						display: block;
@@ -3178,22 +3226,19 @@ $bp375: 375px;  // スマホ
 					}
 
 					.pdList_material{
-						span{
-							font-size: 11px;
-							line-height: 1;
-							padding: 4px 8px;
-							box-sizing: border-box;
-							border: 1px solid #EAE6E5;
-							border-radius: 2px;
-							margin: 0 15px 8px;
-							display: inline-block;
+						font-size: 11px;
+						line-height: 1;
+						padding: 4px 8px;
+						box-sizing: border-box;
+						border: 1px solid #EAE6E5;
+						border-radius: 2px;
+						margin: 0 15px 8px;
+						display: inline-block;
 
-							@include bp768 {
-								font-size: 10px;
-								margin: 0 0 8px;
-								display: block;
-							};
-						}
+						@include bp768 {
+							font-size: 10px;
+							margin: 0 0 8px;
+						};
 					}
 
 					.pdList_name{
@@ -3454,6 +3499,10 @@ $bp375: 375px;  // スマホ
 	color: #AD2E24 !important;
 	line-height: 1.5;
 	width: 100%;
+}
+
+.noProduct{
+	padding: 100px 0 200px;
 }
 
 @media screen\0 {

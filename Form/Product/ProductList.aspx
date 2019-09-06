@@ -128,6 +128,28 @@
 
 		$(".breadcrumb_num span:empty").text("0");
 
+		$(window).on('scroll', function (){
+
+			var elem = $('.breadMenu');
+			var isAnimate = 'off';
+
+			elem.each(function () {
+
+				var elemOffset = $(this).offset().top;
+				var scrollPos = $(window).scrollTop();
+				var wh = $(window).height();
+
+				if(scrollPos > elemOffset - wh + (wh / 2) ){
+				  $('.pageCts_pdList--search').addClass(isAnimate);
+				  $('.pageCts_pdList--search').removeClass("on");
+				}else{
+					$('.pageCts_pdList--search').removeClass(isAnimate);
+					$('.pageCts_pdList--search').addClass("on");
+				}
+			});
+
+		});
+
 
 		// 商品一覧:詳細検索
 		function getUrlVars() {
@@ -503,7 +525,7 @@
 					<% } %>
 					</li>
 					<li class="pdList_material">
-						<span><%# WebSanitizer.HtmlEncode(GetProductData(Container.DataItem, "tag_material")) %></span>
+						<%# WebSanitizer.HtmlEncode(GetProductData(Container.DataItem, "tag_material")) %>
 					</li>
 					<li class="pdList_name">
 					<!-- 商品名表示 -->

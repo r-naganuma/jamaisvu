@@ -25,17 +25,16 @@
 <div class="LPpageWrap topSpace">
 
 <%-- ▽編集可能領域：コンテンツ▽ --%>
-	<h2>CONCEPT</h2>
+	<h2 class="splh ctsTtl">
+		HAMILTON <br class="sp_contents">LAMBS WOOL
+		<span class="conceptSub">
+			肌にしっとり馴染む高級ラムウール
+		</span>
+	</h2>
 
 	<div class="conceptBox">
 		<div class="conceptBox_header">
 			<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/hamilton_main.jpg" alt="HAMILTON LAMS WOOL">
-			<h3>
-				<span>
-					HAMILTON LAMBS WOOL
-				</span>
-				肌にしっとり馴染む<br class="sp_contents">高級ラムウール
-			</h3>
 		</div>
 
 		<div class="conceptBox_where">
@@ -146,9 +145,9 @@
 				</div>
 			</div>
 
-			<div class="conceptBox_feature--btn">
+			<!-- <div class="conceptBox_feature--btn">
 				<a href="<%= Constants.PATH_ROOT %>Page/Concept/about.aspx">製品化までのストーリー</a>
-			</div>
+			</div> -->
 		</div>
 
 		<div class="conceptBox_item">

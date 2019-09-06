@@ -85,6 +85,7 @@ $bp768: 768px;  // スマホ
 			letter-spacing: 0.1em;
 			line-height: 1;
 			font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+			color: #2E0E02;
 
 			@include bp768 {
 				font-size: 24px;
@@ -98,7 +99,39 @@ $bp768: 768px;  // スマホ
 					font-size: 18px;
 					display: block;
 					margin-top: 15px;
+					color: #333;
 				}
+			}
+
+			.conceptSub{
+				font-size: 18px;
+				display: block;
+				margin-top: 15px;
+				line-height: 1;
+				color: #333;
+				letter-spacing: 0.08em;
+
+				@include bp768 {
+					font-size: 16px;
+				};
+			}
+
+			&.splh{
+				@include bp768 {
+					line-height: 40px;
+				};
+
+				span{
+					@include bp768 {
+						margin-top: 10px;
+					};
+				}
+			}
+
+			&.ctsTtl{
+				@include bp768 {
+					font-size: 32px;
+				};
 			}
 		}
 
@@ -178,11 +211,11 @@ $bp768: 768px;  // スマホ
 
 			&_header{
 				width: 100%;
-				margin-bottom: 60px;
+				margin-bottom: 40px;
 
 				@include bp768 {
 					width: 100vw;
-					margin: 0 0 80px -18px;
+					margin: 0 0 50px -18px;
 				};
 
 				img{
@@ -227,7 +260,7 @@ $bp768: 768px;  // スマホ
 				justify-content: space-between;
 				margin: 0 auto 194px;
 				position: relative;
-				padding-top: 113px;
+				padding-top: 86px;
 
 				@include bp768 {
 					display: block;
@@ -359,7 +392,7 @@ $bp768: 768px;  // スマホ
 
 			&_feature{
 				width: 1080px;
-				margin: 0 auto 120px;
+				margin: 0 auto 100px;
 
 				@include bp768 {
 					width: 100%;
