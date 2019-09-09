@@ -71,8 +71,7 @@
 			<%: this.ErrorMessage %>
 		<% } %>
 
-		<div class="allBtnBox">
-			<a href="javascript:history.back()" class="prevBtn">戻る</a>
+		<div class="submitBtnBox">
 			<asp:LinkButton id="lbInsert" runat="server" OnClick="lbInsert_Click" class="nextBtn">追加する</asp:LinkButton>
 		</div>
 	</div>

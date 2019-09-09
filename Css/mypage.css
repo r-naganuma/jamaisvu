@@ -2051,20 +2051,24 @@
 }
 
 #Wrap .userWrap .mypageWrap .mypageCts_topBox ul li:nth-child(3n + 1) {
-  width: 155px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
   #Wrap .userWrap .mypageWrap .mypageCts_topBox ul li:nth-child(3n + 1) {
-    width: 20%;
+    width: auto;
   }
 }
 
 @media (max-width: 768px) {
   #Wrap .userWrap .mypageWrap .mypageCts_topBox ul li:nth-child(3n + 1) {
-    width: 100%;
-    margin-bottom: 12px;
+    line-height: 2;
   }
+}
+
+#Wrap .userWrap .mypageWrap .mypageCts_topBox ul li:nth-child(3n + 1) span {
+  font-size: 14px;
 }
 
 #Wrap .userWrap .mypageWrap .mypageCts_topBox ul li:nth-child(3n +2) {

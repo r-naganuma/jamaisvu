@@ -723,7 +723,7 @@ $(function () {
 
 		<div class="agreementTxt">
 			<p>
-				<a href="/Page/agreement.aspx" target="_blank">会員規約</a>にご同意のうえ、「登録内容を確認する」をクリックしてください。
+				<a href="<%= Constants.PATH_ROOT %>Page/terms/" target="_blank">利用規約</a>にご同意のうえ、「登録内容を確認する」をクリックしてください。
 			</p>
 		</div>
 

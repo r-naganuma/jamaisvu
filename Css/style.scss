@@ -763,7 +763,8 @@ $bp375: 375px;  // スマホ
 				width: 21.5px;
 
 				@include bp1000 {
-					width: 28px;
+					margin-top: 2px;
+					width: 24px;
 				};
 			}
 		}

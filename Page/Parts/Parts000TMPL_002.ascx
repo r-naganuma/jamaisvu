@@ -78,7 +78,7 @@
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-3">
-                    <a href="#" class="noLink">
+                    <a href="http://nav.cx/j9e9CCD" target="_blank">
                         <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_3.jpg" alt="topics 3">
                     </a>
                 </div>
