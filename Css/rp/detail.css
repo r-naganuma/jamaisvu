@@ -13,6 +13,7 @@ body.active {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
 }
 
 a {
@@ -1566,10 +1567,13 @@ a#ctl00_ContentPlaceHolder1_ucBpamrArrival_lbRegisterBtn {
 
 div#divProductArrivalMail {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   top: 0;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.3);
   overflow: hidden;
   z-index: 888;

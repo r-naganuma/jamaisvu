@@ -54,6 +54,7 @@
   letter-spacing: 0.1em;
   line-height: 1;
   font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  color: #2E0E02;
 }
 
 @media (max-width: 768px) {
@@ -71,6 +72,40 @@
   font-size: 18px;
   display: block;
   margin-top: 15px;
+  color: #333;
+}
+
+#Wrap .LPpageWrap h2 .conceptSub {
+  font-size: 18px;
+  display: block;
+  margin-top: 15px;
+  line-height: 1;
+  color: #333;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap h2 .conceptSub {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap h2.splh {
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap h2.splh span {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap h2.ctsTtl {
+    font-size: 32px;
+  }
 }
 
 #Wrap .LPpageWrap img {
@@ -152,13 +187,13 @@
 
 #Wrap .LPpageWrap .conceptBox_header {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .conceptBox_header {
     width: 100vw;
-    margin: 0 0 80px -18px;
+    margin: 0 0 50px -18px;
   }
 }
 
@@ -213,7 +248,7 @@
   justify-content: space-between;
   margin: 0 auto 194px;
   position: relative;
-  padding-top: 113px;
+  padding-top: 86px;
 }
 
 @media (max-width: 768px) {
@@ -373,7 +408,7 @@
 
 #Wrap .LPpageWrap .conceptBox_feature {
   width: 1080px;
-  margin: 0 auto 120px;
+  margin: 0 auto 100px;
 }
 
 @media (max-width: 768px) {

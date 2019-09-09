@@ -66,7 +66,7 @@ $(function(){
     // ヘッダーメイン
     $(".mainVisual").slick({
         autoplay:true,
-        autoplaySpeed:6000,
+        autoplaySpeed:4000,
         dots:true,
         arrows:false,
         infinite: true,
@@ -74,7 +74,9 @@ $(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         draggable: false,
-        variableWidth: false
+        variableWidth: false,
+        pauseOnHover: false,
+        pauseOnFocus: false
     });
 })
 </script>

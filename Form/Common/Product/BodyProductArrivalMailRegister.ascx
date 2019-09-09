@@ -26,7 +26,7 @@
 		<div class="divProductArrivalMail__innnar__section1">
 			<div visible="<%# (this.IsLoggedIn && this.HasPcAddr) %>" runat="server" >
 				<div class="pop_mail1"><asp:CheckBox id="cbUserPcAddr" runat="server" Checked="<%# (this.IsPcAddrRegistered || this.HasPcAddr) %>" />
-					<label>登録済みメールアドレス</label>
+					<label for="ctl00_ContentPlaceHolder1_ucBpamrArrival_cbUserPcAddr">登録済みメールアドレス</label>
 				<p class="indentTxt"><%#: this.PcAddr %></p>
 				</div>
 			</div>
