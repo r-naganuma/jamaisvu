@@ -7,6 +7,12 @@
 --%>
 <%@ control language="C#" autoeventwireup="true" inherits="Form_Common_AccessLogTrackerScript, App_Web_accesslogtrackerscript.ascx.2af06a88" %>
 
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8LPD8B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
 <!-- w2tracker -->
 <%-- トラッカー読み込み --%>
 <div id="divTracker" runat="server" visible="false">

@@ -235,7 +235,6 @@ $(function(){});
 function bodyPageLoad(){
 
 
-	
 	// if($("#tblLayout").attr("data") == 0){
 	// 	$("#tblLayout").attr("data",1); 
 	// }else{
@@ -258,20 +257,6 @@ function bodyPageLoad(){
 		$(".zaiiko_check span").text("なし")
 	}
 
-	var video = "<%# GetProductDataHtml("desc_detail4") %>";
-
-
-	if(video!=""){
-		if($(window).width()>768){
-			$(".subImage").append('<li><div class="youtube">'
-			+'<iframe width="1280" height="1536" src="https://www.youtube.com/embed/'+video+'?showinfo=0&rel=0&controls=0&showinfo=0&modestbranding=1&autoplay=1&loop=1&playlist='+video+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>'
-			+'</div></li>');
-		}else{
-
-		}
-	}
-
-
 
 	set = "";
 	set =  "<li>"+$(".mainImage").html()+"</li>";
@@ -279,6 +264,7 @@ function bodyPageLoad(){
 	$(".subImage li").each(function(){
 		set +=  "<li>"+$(this).html()+"</li>";
 	})
+
 	$(".slides").prepend(set);
 
 
@@ -288,6 +274,24 @@ function bodyPageLoad(){
 	})
 	$(".flexslider .flex-prev").text("");
 	$(".flexslider .flex-next").text("");
+
+
+
+	var video = "<%# GetProductDataHtml("desc_detail4") %>";
+
+
+	if(video!=""){
+		if($(window).width()>768){
+			// $(".subImage").append('<li><div class="youtube">'
+			// +'<iframe width="1280" height="1536" src="https://www.youtube.com/embed/'+video+'?showinfo=0&rel=0&controls=0&showinfo=0&modestbranding=1&autoplay=1&loop=1&playlist='+video+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>'
+			// +'</div></li>');
+			$(".subImage").append("<li><div class='youtube'><div id='youtube2'></div></div></li>");
+		}else{
+
+		}
+	}
+
+
 
 	$(".detail_change a").click(function(){
 		$(".detail_change a").removeClass("active");
@@ -455,6 +459,7 @@ function bodyPageLoad(){
 					</div>
 				</div>
 	    	</li>
+
 <!-- 	    	<li>
 				<div class="youtube">
 					<div id="sample">
@@ -474,6 +479,7 @@ $(function() {
     // プレーヤーのオプション設定
     var options = {
         id: 357988140, // VimeoのID
+        background: 1
         autoplay: true, // 自動再生
         loop: true, // ループ
         color: 'ff0000', // プレーヤーのカラー
@@ -485,64 +491,11 @@ $(function() {
  
     var player = new Vimeo.Player($('#sample'), options);
 });
-</script> -->
-
-
-
-
-<script>
-
-
-var video = "<%# GetProductDataHtml("desc_detail4") %>";
-if(video!=""){
-	var tag = document.createElement('script');
-	tag.src = "https://www.youtube.com/iframe_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0];
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-	// プレーヤーを埋め込む場所指定
-	var ytArea = 'youtube';
-	// 埋め込むYouTube ID指定
-	var ytID = '<%# GetProductDataHtml("desc_detail4") %>';
-
-	// プレーヤーの埋め込み
-	function onYouTubeIframeAPIReady() {
-		ytPlayer = new YT.Player(ytArea, {
-			videoId: ytID,
-			playerVars: {
-				playsinline: 1,
-				loop: -1, // ループの設定
-				rel: 0,
-				controls: 0,
-				showinfo: 0,
-				wmode: 'transparent'
-			},
-			events: {
-				'onReady': onPlayerReady,
-				'onStateChange': onPlayerStateChange
-			}
-		});
-	}
-
-	// YouTubeの準備完了後
-	function onPlayerReady(e) {
-		ytPlayer.playVideo();
-		ytPlayer.mute();
-		ytPlayer.setPlaybackQuality('hd1080');
-	}
-
-	// 再生完了後
-	function onPlayerStateChange(e) {
-		var ytStatus = e.target.getPlayerState();
-		if (ytStatus == YT.PlayerState.ENDED) {
-			ytPlayer.playVideo();
-			ytPlayer.mute();
-		}
-	}
-}else{
-	$(".youtube").parent().remove();
-}
 </script>
+ -->
+
+
+
 
 <style>
 
@@ -737,6 +690,7 @@ iframe {
 		|| (this.IsVariationName3 && ((this.SelectVariationKbn == Constants.SelectVariationKbn.DOUBLEDROPDOWNLIST)
 			|| (this.SelectVariationKbn == Constants.SelectVariationKbn.MATRIX)
 			|| (this.SelectVariationKbn == Constants.SelectVariationKbn.MATRIXANDMESSAGE)))){ %>
+			<asp:HiddenField ID="hIsSelectingVariationExist" Value="<%# this.IsSelectingVariationExist %>" runat="server" />
 	<asp:Repeater ID="rVariationName1List" DataSource="<%# this.ProductVariationName1List %>" runat="server">
 		<HeaderTemplate>
 			<div class="selectValiation__innar">
@@ -749,8 +703,8 @@ iframe {
 		</HeaderTemplate>
 		<ItemTemplate>
 			<div class="selectValiation__innar1">
-				<asp:LinkButton ID="lbVariationName1List" OnClick="lbVariationName1List_OnClick" CommandArgument="<%#: Container.DataItem %>" runat="server">
-					<div class="<%# (WebSanitizer.HtmlEncode(Container.DataItem) == this.SelectedVariationName1) ? "VariationPanelSelected" : "VariationPanel" %>"><%#: Container.DataItem %></div>
+				<asp:LinkButton ID="lbVariationName1List" OnClick="lbVariationName1List_OnClick" CommandArgument="<%# Container.DataItem %>" runat="server">
+					<div class="<%# ((string)Container.DataItem == this.SelectedVariationName1) ? "VariationPanelSelected" : "VariationPanel" %>"><%#: Container.DataItem %></div>
 				</asp:LinkButton>
 			</div>
 		</ItemTemplate>
@@ -779,10 +733,9 @@ iframe {
 		</HeaderTemplate>
 		<ItemTemplate>
 			<div>
-				<asp:LinkButton ID="lbVariationName2List" OnClick="lbVariationName2List_OnClick" CommandArgument="<%#: Container.DataItem %>" runat="server">
-					<div class="<%# (WebSanitizer.HtmlEncode(Container.DataItem) == this.SelectedVariationName2) ? "VariationPanelSelected" : "VariationPanel" %>"><%#: Container.DataItem %></div>
+				<asp:LinkButton ID="lbVariationName2List" OnClick="lbVariationName2List_OnClick" CommandArgument="<%# Container.DataItem %>" runat="server">
+					<div class="<%# ((string)Container.DataItem == this.SelectedVariationName2) ? "VariationPanelSelected" : "VariationPanel" %>"><%#: Container.DataItem %></div>
 				</asp:LinkButton>
-				<asp:HiddenField ID="hfVariationName2" Value="<%#: Container.DataItem %>" runat="server" />
 			</div>
 		</ItemTemplate>
 		<FooterTemplate>
@@ -808,10 +761,9 @@ iframe {
 		</HeaderTemplate>
 		<ItemTemplate>
 			<div style="padding-left: 14%">
-				<asp:LinkButton ID="lbVariationName3List" OnClick="lbVariationName3List_OnClick" CommandArgument="<%#: Container.DataItem %>" runat="server">
-					<div class="<%# (WebSanitizer.HtmlEncode(Container.DataItem) == this.SelectedVariationName3) ? "VariationPanelSelected" : "VariationPanel" %>"><%#: Container.DataItem %></div>
+				<asp:LinkButton ID="lbVariationName3List" OnClick="lbVariationName3List_OnClick" CommandArgument="<%# Container.DataItem %>" runat="server">
+					<div class="<%# ((string)Container.DataItem == this.SelectedVariationName3) ? "VariationPanelSelected" : "VariationPanel" %>"><%#: Container.DataItem %></div>
 				</asp:LinkButton>
-				<asp:HiddenField ID="hfVariationName3" Value="<%#: Container.DataItem %>" runat="server" />
 			</div>
 		</ItemTemplate>
 		<FooterTemplate>
@@ -1111,6 +1063,7 @@ iframe {
 	</li>
 	</ItemTemplate>
 	<FooterTemplate>
+
 	</ul>
 	</div>
 	</FooterTemplate>
@@ -1124,6 +1077,187 @@ iframe {
 	-->
 
 </div>
+<script>
+
+
+var video = "<%# GetProductDataHtml("desc_detail4") %>";
+if(video!=""){
+	var tag = document.createElement('script');
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	// プレーヤーを埋め込む場所指定
+
+	if($(window).width()>768){
+	var ytArea = 'youtube2';
+	$(".slides li:last-child").remove();
+	function onYouTubeIframeAPIReady() {
+		ytPlayer = new YT.Player(ytArea, {
+			videoId: ytID,
+			playerVars: {
+				playsinline: 1,
+				loop: -1, // ループの設定
+				rel: 0,
+				controls: 0,
+				showinfo: 0,
+				wmode: 'transparent'
+			},
+			events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onPlayerStateChange
+			}
+		});
+	}
+
+	// YouTubeの準備完了後
+	function onPlayerReady(e) {
+	// プレーヤーを埋め込む場所指定
+	// プレーヤーを埋め込む場所指定
+
+		ytPlayer.playVideo();
+		ytPlayer.mute();
+		ytPlayer.setPlaybackQuality('hd1080');
+	}
+
+	// 再生完了後
+	function onPlayerStateChange(e) {
+		var ytStatus = e.target.getPlayerState();
+
+		var youtube_data = ytPlayer.getDuration() * 1000;	
+
+
+		if (ytStatus == YT.PlayerState.ENDED) {
+	      setInterval(function(){
+	      	 ytPlayer.seekTo(0,true);//動画の初めにシーク
+	      },youtube_data)
+			ytPlayer.playVideo();
+			ytPlayer.mute();
+		}
+	}
+
+	}else{
+	var ytArea = 'youtube';
+	// プレーヤーの埋め込み
+	function onYouTubeIframeAPIReady() {
+		ytPlayer = new YT.Player(ytArea, {
+			videoId: ytID,
+			playerVars: {
+				playsinline: 1,
+				loop: -1, // ループの設定
+				rel: 0,
+				controls: 0,
+				showinfo: 0,
+				wmode: 'transparent'
+			},
+			events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onPlayerStateChange
+			}
+		});
+	}
+
+	// YouTubeの準備完了後
+	function onPlayerReady(e) {
+
+		
+		ytPlayer.playVideo();
+		ytPlayer.mute();
+		ytPlayer.setPlaybackQuality('hd1080');
+	      setTimeout(function(){
+	      	 ytPlayer.seekTo(0,true);//動画の初めにシーク
+	      },7500)
+	}
+
+	// 再生完了後
+	function onPlayerStateChange(e) {
+		var ytStatus = e.target.getPlayerState();
+
+		var youtube_data = ytPlayer.getDuration() * 1000;	
+
+
+		if (ytStatus == YT.PlayerState.ENDED) {
+	      setInterval(function(){
+	      	 ytPlayer.seekTo(0,true);//動画の初めにシーク
+	      },youtube_data)
+			ytPlayer.playVideo();
+			ytPlayer.mute();
+		}
+	}
+
+
+	}
+
+
+	// 埋め込むYouTube ID指定
+	var ytID = '<%# GetProductDataHtml("desc_detail4") %>';
+
+
+
+///////////////////////////////////////////////////////////////////////////
+
+
+// alert("動画テスト中")
+
+// var player;
+// function onYouTubeIframeAPIReady() {
+//   player = new YT.Player(ytArea, {
+
+//     videoId: ytID,
+//     events: {
+//       'onReady': onPlayerReady,
+//       'onStateChange': onPlayerStateChange
+//     },
+//     playerVars: {
+// 				playsinline: 1,
+// 				loop: -1, // ループの設定
+// 				rel: 0,
+// 				controls: 0,
+// 				showinfo: 0,
+// 				wmode: 'transparent'
+//     }
+//   });
+// }
+
+// function onPlayerReady(event) {
+// 		player.playVideo();
+// 		player.mute();
+// 		player.setPlaybackQuality('hd1080');
+// }
+// //ココまではほぼサンプルと同じ
+
+// var loopCount = 0;
+// function onPlayerStateChange(event) {
+//   if (event.data == YT.PlayerState.ENDED) {//動画が停止したら
+//     if(loopCount < 20) {//ループ上限
+//       player.seekTo(0,true);//動画の初めにシーク
+//       player.mute();
+//       player.playVideo();//動画を再生
+//       loopCount++;
+//     }
+//   }
+// }
+
+
+
+
+// var loopCount = 0;
+// function onPlayerStateChange(event) {
+//   if (event.data == YT.PlayerState.ENDED) {//動画が停止したら
+//       event.target.seekTo(0,true);//動画の初めにシーク
+
+//   }
+// }
+
+
+
+
+}else{
+	$(".youtube").parent().remove();
+}
+
+</script>
+
 <!-- バリエーション画像一覧 ここまで-->
 
 <div class="sp_contents">
@@ -1323,13 +1457,76 @@ iframe {
 <%-- △商品タグ項目：年代△ --%>
 
 
+<!-- 商品アップセル一覧 -->
+<%-- ▽商品アップセル一覧▽ --%>
+<asp:Repeater DataSource=<%# this.ProductUpSellList %> Visible="<%# this.ProductUpSellList.Count != 0 %>" runat="server">
+<HeaderTemplate>
+<div id="dvUpSell" class="clearFix">
+<p class="title">レコメンドアイテム</p>
+</HeaderTemplate>
+<ItemTemplate>
+<div class="productInfoList">
+	<ul>
+<li class="thumnail">
+<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrlUseProductCategory(Container.DataItem, "")) %>">
+		<w2c:ProductImage ImageTagId="picture" ImageSize="M" ProductMaster=<%# Container.DataItem %> IsVariation="false" runat="server" /></a>
+	<%-- ▽在庫切れ可否▽ --%>
+	<span visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLDOUT</span>
+	<%-- △在庫切れ可否△ --%>
+	</li>
+<li class="productName">
+<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrlUseProductCategory(Container.DataItem, "")) %>"><%# WebSanitizer.HtmlEncode(Eval(Constants.FIELD_PRODUCT_NAME)) %></a>
+<%-- ▽商品会員ランク価格有効▽ --%>
+	<p visible='<%# GetProductMemberRankPriceValid(Container.DataItem) %>' runat="server">
+	<strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</strike><br />
+<%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem, false)) %>(tax in)
+	</p>
+<%-- △商品会員ランク価格有効△ --%>
+<%-- ▽商品セール価格有効▽ --%>
+	<p visible='<%# ProductPage.GetProductTimeSalesValid(Container.DataItem) %>' runat="server">
+	<strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</strike><br />
+<%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %>(tax in)
+	</p>
+<%-- △商品セール価格有効△ --%>
+<%-- ▽商品特別価格有効▽ --%>
+	<p class="sale_bottom" visible='<%# ProductPage.GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">
+	<br />
+		<%#: CurrencyManager.ToPrice(ProductPage.GetProductSpecialPriceNumeric(Container.DataItem)) %>(tax in)
+		<strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</strike>
+	</p>
+<%-- △商品特別価格有効△ --%>
+<%-- ▽商品通常価格有効▽ --%>
+	<p visible='<%# ProductPage.GetProductNormalPriceValid(Container.DataItem) %>' runat="server">
+<%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)
+	</p>
+<%-- △商品通常価格有効△ --%>
+<%-- ▽定期購入有効▽ --%>
+<% if (Constants.FIXEDPURCHASE_OPTION_ENABLED) {%>
+	<p visible='<%# (GetKeyValue(Container.DataItem, Constants.FIELD_PRODUCT_FIXED_PURCHASE_FLG).ToString() != Constants.FLG_PRODUCT_FIXED_PURCHASE_FLG_INVALID) %>' runat="server">
+		<span visible='<%# IsProductFixedPurchaseFirsttimePriceValid(Container.DataItem) %>' runat="server">
+			<p class="productPrice">定期初回価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductFixedPurchaseFirsttimePrice(Container.DataItem)) %></span></p>
+		</span>
+		<p class="productPrice">定期通常価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductFixedPurchasePrice(Container.DataItem)) %></span></p>
+	</p>
+<% } %>
+<%-- △定期購入有効△ --%>
+</li>
+</ul>
+</div>
+</ItemTemplate>
+<FooterTemplate>
+</div>
+</FooterTemplate>
+</asp:Repeater>
+<%-- △商品アップセル一覧△ --%>
+
 
 <!-- 商品クロスセル一覧 -->
 <%-- ▽商品クロスセル一覧▽ --%>
 <asp:Repeater DataSource=<%# this.ProductCrossSellList %> Visible="<%# this.ProductCrossSellList.Count != 0 %>" runat="server">
 <HeaderTemplate>
 <div id="dvCrossSell" class="clearFix">
-<p class="title">レコメンドアイテム</p>
+<p class="title">関連商品</p>
 </HeaderTemplate>
 <ItemTemplate>
 <div class="productInfoList">
@@ -1386,69 +1583,6 @@ iframe {
 </FooterTemplate>
 </asp:Repeater>
 <%-- △商品クロスセル一覧△ --%>
-
-<!-- 商品アップセル一覧 -->
-<%-- ▽商品アップセル一覧▽ --%>
-<asp:Repeater DataSource=<%# this.ProductUpSellList %> Visible="<%# this.ProductUpSellList.Count != 0 %>" runat="server">
-<HeaderTemplate>
-<div id="dvUpSell" class="clearFix">
-<p class="title">関連商品</p>
-</HeaderTemplate>
-<ItemTemplate>
-<div class="productInfoList">
-	<ul>
-<li class="thumnail">
-<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrlUseProductCategory(Container.DataItem, "")) %>">
-		<w2c:ProductImage ImageTagId="picture" ImageSize="M" ProductMaster=<%# Container.DataItem %> IsVariation="false" runat="server" /></a>
-	<%-- ▽在庫切れ可否▽ --%>
-	<span visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLDOUT</span>
-	<%-- △在庫切れ可否△ --%>
-	</li>
-<li class="productName">
-<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrlUseProductCategory(Container.DataItem, "")) %>"><%# WebSanitizer.HtmlEncode(Eval(Constants.FIELD_PRODUCT_NAME)) %></a>
-<%-- ▽商品会員ランク価格有効▽ --%>
-	<p visible='<%# GetProductMemberRankPriceValid(Container.DataItem) %>' runat="server">
-	<strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %></strike><br />
-<%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem, false)) %>
-	</p>
-<%-- △商品会員ランク価格有効△ --%>
-<%-- ▽商品セール価格有効▽ --%>
-	<p visible='<%# ProductPage.GetProductTimeSalesValid(Container.DataItem) %>' runat="server">
-	<strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %></strike><br />
-<%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %>
-	</p>
-<%-- △商品セール価格有効△ --%>
-<%-- ▽商品特別価格有効▽ --%>
-	<p class="sale_bottom" visible='<%# ProductPage.GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">
-	<br />
-		<%#: CurrencyManager.ToPrice(ProductPage.GetProductSpecialPriceNumeric(Container.DataItem)) %>(tax in)
-		<strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</strike>
-	</p>
-<%-- △商品特別価格有効△ --%>
-<%-- ▽商品通常価格有効▽ --%>
-	<p visible='<%# ProductPage.GetProductNormalPriceValid(Container.DataItem) %>' runat="server">
-<%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>
-	</p>
-<%-- △商品通常価格有効△ --%>
-<%-- ▽定期購入有効▽ --%>
-<% if (Constants.FIXEDPURCHASE_OPTION_ENABLED) {%>
-	<p visible='<%# (GetKeyValue(Container.DataItem, Constants.FIELD_PRODUCT_FIXED_PURCHASE_FLG).ToString() != Constants.FLG_PRODUCT_FIXED_PURCHASE_FLG_INVALID) %>' runat="server">
-		<span visible='<%# IsProductFixedPurchaseFirsttimePriceValid(Container.DataItem) %>' runat="server">
-			<p class="productPrice">定期初回価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductFixedPurchaseFirsttimePrice(Container.DataItem)) %></span></p>
-		</span>
-		<p class="productPrice">定期通常価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductFixedPurchasePrice(Container.DataItem)) %></span></p>
-	</p>
-<% } %>
-<%-- △定期購入有効△ --%>
-</li>
-</ul>
-</div>
-</ItemTemplate>
-<FooterTemplate>
-</div>
-</FooterTemplate>
-</asp:Repeater>
-<%-- △商品アップセル一覧△ --%>
 
 	
 <!-- 商品詳細4 -->
@@ -1702,7 +1836,7 @@ if (lCategoryRecommendByRecommendEngineUserControls.Count > 0)
 			return true;
 		<%} else {%>
 			<% if (this.SelectVariationKbn == Constants.SelectVariationKbn.PANEL) { %>
-				return ((document.getElementById('<%# this.VariationId %>').value != ''));
+				return ((document.getElementById('<%# this.WhIsSelectingVariationExist.ClientID %>').value != 'False'));
 			<%} else if (this.SelectVariationKbn == Constants.SelectVariationKbn.STANDARD) { %>
 				return ((document.getElementById('<%# this.WddlVariationSelect.ClientID %>').value != ''));
 			<%} else if (this.SelectVariationKbn == Constants.SelectVariationKbn.DROPDOWNLIST) {%>

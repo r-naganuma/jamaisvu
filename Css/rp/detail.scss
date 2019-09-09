@@ -233,6 +233,13 @@ $bp768: 768px;  // スマホ
 		@include bp768 {
 			padding: 20px 0 15px;
 		    margin: 20px 0;
+		    dl{
+		    	display: flex;
+		    }
+			dl dd {
+			    width: 220px;
+			    line-height: 1.4;
+			}
 		};
 		dl{
 			margin: 0 0 10px;
@@ -342,13 +349,14 @@ $bp768: 768px;  // スマホ
 	    }
 	}
 	#dvProductDetailArea h2 {
-	    font-size: 16px;
+	    font-size: 18px;
 	    line-height: (28.8/16);
 	    margin: 0 0 15px;
 	    letter-spacing: 0.04em;
 			@include bp768 {
-				font-size: 14px;
+				font-size: 16px;
 				line-height: (25.2/14);
+				margin: 0 0 10px;
 			};
 	}
 	p.productPrice {
@@ -463,6 +471,9 @@ $bp768: 768px;  // スマホ
 			width: (500%/1080*100);
 			@include bp768 {
 				width: 100%;
+				p{
+					font-size: 14px!important;
+				}
 			
 		};
 		}
@@ -473,6 +484,9 @@ $bp768: 768px;  // スマホ
 				width: 100%;
 	
 				display: none;
+				p{
+					font-size: 14px!important;
+				}
 			};
 		}
 		p{
@@ -577,6 +591,7 @@ $bp768: 768px;  // スマホ
 	    border-bottom: 1px solid #EAE6E5;
 		@include bp768 {
 			display: none;
+			font-size: 17px;
 		};
 	    &:after{
 	    	    content: "";
@@ -696,7 +711,7 @@ $bp768: 768px;  // スマホ
 		max-width: 1200px;
 		padding: 0 5%;
 	    width: 100%;
-	    margin: 80px auto;
+	    margin: 80px auto 120px;
 	    -webkit-box-sizing: border-box;
 	    -moz-box-sizing: border-box;
 	    -o-box-sizing: border-box;
@@ -706,7 +721,7 @@ $bp768: 768px;  // スマホ
 			 margin: 40px auto;
 	    }
 	    .title{
-	    	font-size: 16px;
+	    	font-size: 18px;
 	    	text-align: center;
 	    	letter-spacing: 0.08em;
 	    	margin: 0 0 40px;
@@ -1027,6 +1042,7 @@ p.toolTip {
 	    
 	    @include bp768 {
 	    	border-bottom: 1px solid rgb(234, 230, 229);
+	    	font-size: 14px;
 	    }
 
 	    &.active {
@@ -1461,6 +1477,9 @@ input#ctl00_ContentPlaceHolder1_rProductOptionValueSettings_ctl01_txtProductOpti
 }
 .tag_material dd {
     height: 13px;
+    @include bp768 {
+		height: auto;
+    }
 }
 	.si_wrap > div {
 	    display: flex;

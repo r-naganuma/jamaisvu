@@ -236,6 +236,15 @@ textarea::focus {
     padding: 20px 0 15px;
     margin: 20px 0;
   }
+  .tblLayout_ProductDetail .tag_material dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tblLayout_ProductDetail .tag_material dl dd {
+    width: 220px;
+    line-height: 1.4;
+  }
 }
 
 .tblLayout_ProductDetail .tag_material dl {
@@ -390,7 +399,7 @@ textarea::focus {
 }
 
 .tblLayout_ProductDetail #dvProductDetailArea h2 {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
   margin: 0 0 15px;
   letter-spacing: 0.04em;
@@ -398,8 +407,9 @@ textarea::focus {
 
 @media (max-width: 768px) {
   .tblLayout_ProductDetail #dvProductDetailArea h2 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
+    margin: 0 0 10px;
   }
 }
 
@@ -567,6 +577,9 @@ textarea::focus {
   .tblLayout_ProductDetail .id_description_wrap__left {
     width: 100%;
   }
+  .tblLayout_ProductDetail .id_description_wrap__left p {
+    font-size: 14px !important;
+  }
 }
 
 .tblLayout_ProductDetail .id_description_wrap__right {
@@ -578,6 +591,9 @@ textarea::focus {
   .tblLayout_ProductDetail .id_description_wrap__right {
     width: 100%;
     display: none;
+  }
+  .tblLayout_ProductDetail .id_description_wrap__right p {
+    font-size: 14px !important;
   }
 }
 
@@ -720,6 +736,7 @@ textarea::focus {
 @media (max-width: 768px) {
   .tblLayout_ProductDetail .id_title {
     display: none;
+    font-size: 17px;
   }
 }
 
@@ -878,7 +895,7 @@ textarea::focus {
   max-width: 1200px;
   padding: 0 5%;
   width: 100%;
-  margin: 80px auto;
+  margin: 80px auto 120px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -894,7 +911,7 @@ textarea::focus {
 }
 
 .tblLayout_ProductDetail #dvUpSell .title {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   letter-spacing: 0.08em;
   margin: 0 0 40px;
@@ -1295,6 +1312,7 @@ p.toolTip {
 @media (max-width: 768px) {
   .detail_change a {
     border-bottom: 1px solid #eae6e5;
+    font-size: 14px;
   }
 }
 
@@ -1795,6 +1813,12 @@ input#ctl00_ContentPlaceHolder1_rProductOptionValueSettings_ctl01_txtProductOpti
 
 .tag_material dd {
   height: 13px;
+}
+
+@media (max-width: 768px) {
+  .tag_material dd {
+    height: auto;
+  }
 }
 
 .si_wrap > div {
