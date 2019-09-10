@@ -14,6 +14,7 @@
 <script type="text/javascript">
 $(function () {
 	$('input[value="FEMALE"]').prop('checked', true);
+	$('input[name="ctl00$ContentPlaceHolder1$cbUserMailFlg"]').prop('checked', true);
 });
 </script>
 <div class="registWrap topSpace">
