@@ -128,6 +128,8 @@
 
 		$(".breadcrumb_num span:empty").text("0");
 
+		$(".breadMenu li:empty").html('<span>&nbsp;>&nbsp;</span><a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">すべてのカテゴリ</a>');
+
 		$(window).on('scroll', function (){
 
 			var elem = $('.breadMenu');

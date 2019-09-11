@@ -1677,6 +1677,10 @@ textarea::focus {
   }
 }
 
+.cart2 .input_radio {
+  width: 100%;
+}
+
 .cart2 .input_radio input {
   display: none;
 }
