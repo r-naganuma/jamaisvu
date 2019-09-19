@@ -1279,7 +1279,7 @@ if(video!=""){
 		<%# GetProductDataHtml("desc_detail2") %>
 		</div>
 		<div class="detail_btn_box">
-			<a href="https://jamaisvu.co.jp/Page/Concept/about.aspx" target="_blank">製品へのこだわり<img src="/Contents/ImagesPkg/user/common/detail_arrow_right.svg" alt=""></a>
+<!-- 			<a href="https://jamaisvu.co.jp/Page/Concept/about.aspx" target="_blank">製品へのこだわり<img src="/Contents/ImagesPkg/user/common/detail_arrow_right.svg" alt=""></a> -->
 			<a href="https://jamaisvu.co.jp/Page/sizeGuide/" target="_blank">サイズガイド<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/detail_arrow_right.svg" alt=""></a>
 		</div>
 	</div>
