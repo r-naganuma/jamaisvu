@@ -19,6 +19,7 @@
 <%@ Register TagPrefix="uc" TagName="Parts000TMPL_001" Src="~/Page/Parts/Parts000TMPL_001.ascx" %>
 <%@ Register TagPrefix="uc" TagName="Parts000TMPL_002" Src="~/Page/Parts/Parts000TMPL_002.ascx" %>
 <%@ Register TagPrefix="uc" TagName="Parts000TMPL_003" Src="~/Page/Parts/Parts000TMPL_003.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Parts000TMPL_004" Src="~/Page/Parts/Parts000TMPL_004.ascx" %>
 <%-- △ユーザーコントロール宣言領域△ --%>
 <%@ Register TagPrefix="uc" TagName="Criteo" Src="~/Form/Common/Criteo.ascx" %>
 <%@ page language="C#" masterpagefile="~/Form/Common/DefaultPage.master" autoeventwireup="true" inherits="Default, App_Web_default.aspx.cdcab7d2" title="JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア"%>
@@ -59,6 +60,9 @@
         <%-- ▽HISTORY▽ --%>
         <uc:BodyProductHistory runat="server" />
         <%-- △HISTORY△ --%>
+        <%-- ▽LOOK BOOK▽ --%>
+        <uc:Parts000TMPL_004 runat="server" />
+        <%-- △LOOK BOOK△ --%>
     </div>
 </div>
 <script type="text/javascript">

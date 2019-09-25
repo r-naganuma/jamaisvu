@@ -2539,7 +2539,7 @@ textarea::focus {
 
 @media (max-width: 768px) {
   #Wrap .pageTop .sec--ranking .vertical-title {
-    top: -100px;
+    top: -35px;
     right: -11px;
   }
 }

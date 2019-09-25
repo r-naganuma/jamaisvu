@@ -162,12 +162,12 @@
 	</ul>
 </div>
 
-<div class="sec sec--lookbook">
+<!-- <div class="sec sec--lookbook">
     <div class="sec__inner">
         <h2 class="sec__title">LOOKBOOK<span>NEW EDITION</span></h2>
         <div class="btnBox btn--moreWhite">
             <a href="<%= Constants.PATH_ROOT %>Page/lookbook/">MORE</a>
         </div>
     </div>
-</div>
+</div> -->
 <%-- △編集可能領域△ --%>

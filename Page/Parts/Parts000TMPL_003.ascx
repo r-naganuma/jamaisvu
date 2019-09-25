@@ -15,7 +15,7 @@
 
 --%>
 <%-- ▽編集可能領域：コンテンツ▽ --%>
-<div class="sec sec--newarrivals">
+<!-- <div class="sec sec--newarrivals">
     <div class="sec__inner">
         <h2 class="vertical-title">
             NEW ARRIVALS
@@ -79,5 +79,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <%-- △編集可能領域△ --%>
