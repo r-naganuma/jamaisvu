@@ -810,10 +810,10 @@ div#primary {
 	</div>
 	<div class="boxbtm">
 	<div>
-<!-- 	<dl id="hgcCouponCodeInputArea" runat="server">
+	<dl id="hgcCouponCodeInputArea" runat="server">
 	<dt><span>クーポンコード</span></dt>
 	<dd><asp:TextBox ID="tbCouponCode" runat="server" Text="<%# GetCouponCode(((CartObject)Container.DataItem).Coupon) %>" MaxLength="30" autocomplete="off"></asp:TextBox></dd>
-	</dl> -->
+	</dl>
 	<p class="clr"><img src="../../Contents/ImagesPkg/common/clear.gif" alt="" width="1" height="1"  /></p>
 	</div>
 	<span class="fred" visible="<%# this.ErrorMessages.HasMessages(Container.ItemIndex, CartErrorMessages.ErrorKbn.Coupon) %>" runat="server">
