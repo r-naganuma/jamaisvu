@@ -1449,6 +1449,23 @@ $bp375: 375px;  // スマホ
 			};
 		}
 
+		.sec--lead{
+			margin: -40px 0 60px;
+
+			@include bp768 {
+				margin: -80px 0 80px;
+			};
+
+			p{
+				text-align: center;
+				line-height: 1.8;
+
+				span{
+					@include font-weight(bold);
+				}
+			}
+		}
+
 		.sec--concept {
 			width: 1080px;
 			background-image: url("../Contents/ImagesPkg/user/top/bg_concept.png");
@@ -1803,7 +1820,7 @@ $bp375: 375px;  // スマホ
 			height: 640px;
 			background-size: cover;
 			background-repeat: no-repeat;
-			background-position: center;
+			background-position: center top;
 			margin-bottom: 116px;
 			display: flex;
 			align-items: center;
