@@ -1756,6 +1756,25 @@ textarea::focus {
   }
 }
 
+#Wrap .pageTop .sec--lead {
+  margin: -40px 0 60px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .pageTop .sec--lead {
+    margin: -80px 0 80px;
+  }
+}
+
+#Wrap .pageTop .sec--lead p {
+  text-align: center;
+  line-height: 1.8;
+}
+
+#Wrap .pageTop .sec--lead p span {
+  font-weight: 700;
+}
+
 #Wrap .pageTop .sec--concept {
   width: 1080px;
   background-image: url("../Contents/ImagesPkg/user/top/bg_concept.png");
@@ -2186,7 +2205,7 @@ textarea::focus {
   height: 640px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   margin-bottom: 116px;
   display: -webkit-box;
   display: -ms-flexbox;
