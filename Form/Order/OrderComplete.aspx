@@ -9,7 +9,38 @@
 <%@ Register TagPrefix="uc" TagName="BodyRecommend" Src="~/Form/Common/BodyRecommendAtOrderComplete.ascx" %>
 <%@ Register TagPrefix="uc" TagName="Criteo" Src="~/Form/Common/Criteo.ascx" %>
 <%@ page language="C#" masterpagefile="~/Form/Common/OrderPage.master" autoeventwireup="true" inherits="Form_Order_OrderComplete, App_Web_ordercomplete.aspx.bf558b1b" title="注文完了｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="注文完了ページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" %>
+
+<%@ Import Namespace="w2.Common.Extensions" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<%
+       rTag.DataSource = rOrderHistory.DataSource;
+       rTag.DataBind();
+%>
+<asp:Repeater runat="server" id="rTag">
+   <ItemTemplate>
+     <script>
+           window.dataLayer = window.dataLayer || []
+           dataLayer.push({
+                  'transactionId': '<%#: ((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDER_ORDER_ID]).First() %>',
+                  'transactionAffiliation': '',
+                  'transactionTotal': <%#:((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDER_ORDER_PRICE_TOTAL]).First().ToPriceString() %>,
+                  'transactionTax':<%#: ((IList)Container.DataItem).Cast<DataRowView>().Select(x => (decimal)x[Constants.FIELD_ORDER_ORDER_PRICE_SUBTOTAL_TAX] + (decimal)x[Constants.FIELD_ORDER_ORDER_PRICE_SHIPPING_TAX] + (decimal)x[Constants.FIELD_ORDER_ORDER_PRICE_EXCHANGE_TAX]).First().ToPriceString() %>,
+                  'transactionShipping': <%#:((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDER_ORDER_PRICE_SHIPPING]).First().ToPriceString() %>,
+                  'transactionProducts': [{
+                         'sku': '<%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDERITEM_VARIATION_ID])) %>',
+                         'name': '<%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDERITEM_PRODUCT_NAME])) %>',
+                         'category': '<%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => GetProductCategoryName(x.ToHashtable()))) %>',
+                         'price': <%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDERITEM_PRODUCT_PRICE].ToPriceString())) %>,
+                         'quantity': <%#: ((IList)Container.DataItem).Count %>
+                  }]
+           });
+    </script>
+   </ItemTemplate>
+</asp:Repeater>
+
+
 <!--アフィリエイトタグ出力-->
 <asp:Repeater ID="rAffiliateTag" runat="server" Visible="<%# Constants.SETTING_PRODUCTION_ENVIRONMENT %>">
 	<ItemTemplate>
