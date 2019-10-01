@@ -1411,7 +1411,7 @@ $(function(){
                               'Item_ID': '<%#: string.Join(",", ((CartObject)Container.DataItem).Items.Select(x => x.ProductId)) %>',
                               'name': '<%#: string.Join(",", ((CartObject)Container.DataItem).Items.Select(x => x.ProductName)) %>',
                               'category': '',
-                              'price': <%#: string.Join(",", ((CartObject)Container.DataItem).Items.Select(x => x.Price.ToPriceString())) %>,
+                              'price': '<%#: string.Join(",", ((CartObject)Container.DataItem).Items.Select(x => x.Price.ToPriceString())) %>',
                               'Cart_price': '<%#: ((CartObject)Container.DataItem).PriceSubtotal.ToPriceString() %>'
 
                 });
