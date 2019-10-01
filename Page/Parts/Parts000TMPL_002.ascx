@@ -22,7 +22,7 @@
         });
     });
 </script>
-<div class="sec sec--lead">
+<!-- <div class="sec sec--lead">
     <p>
         【メンテナンスのお知らせ】<br>
         平素は当サイトをご利用頂き、<br class="sp_contents">誠にありがとうございます。<br>
@@ -31,7 +31,7 @@
         上記期間中は、サイトの閲覧・商品の購入等が<br class="sp_contents">出来なくなります。<br>
         皆さまには大変ご迷惑をお掛けしますが、<br class="sp_contents">何卒ご了承いただけますようお願い申し上げます。
     </p>
-</div>
+</div> -->
 <div class="sec sec--concept pc_contents">
     <div class="sec__inner">
         <h2 class="sec__title">CONCEPT</h2>
@@ -78,7 +78,7 @@
         <div class="topicsContent">
             <div class="topicsContent__list">
                 <div class="topicsContent__list-item item-1">
-                    <a href="https://jamaisvu.co.jp/category/topics/newarrivals_20190909/">
+                    <a href="https://jamaisvu.co.jp/category/topics/newarrivals_20190930/">
                         <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1.jpg" alt="topics 1">
                     </a>
                 </div>
