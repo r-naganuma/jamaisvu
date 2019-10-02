@@ -82,6 +82,9 @@ $(function(){
         pauseOnHover: false,
         pauseOnFocus: false
     });
+
+    var height=$(".header").height();
+    $("#Wrap .pageTop .mainVisual").css("padding-top", height);
 })
 </script>
 <!--- page end --->
