@@ -28,13 +28,12 @@
                   'transactionTotal': <%#:((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDER_ORDER_PRICE_TOTAL]).First().ToPriceString() %>,
                   'transactionTax':<%#: ((IList)Container.DataItem).Cast<DataRowView>().Select(x => (decimal)x[Constants.FIELD_ORDER_ORDER_PRICE_SUBTOTAL_TAX] + (decimal)x[Constants.FIELD_ORDER_ORDER_PRICE_SHIPPING_TAX] + (decimal)x[Constants.FIELD_ORDER_ORDER_PRICE_EXCHANGE_TAX]).First().ToPriceString() %>,
                   'transactionShipping': <%#:((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDER_ORDER_PRICE_SHIPPING]).First().ToPriceString() %>,
-                  'transactionProducts': [{
-                         'sku': '<%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDERITEM_VARIATION_ID])) %>',
-                         'name': '<%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDERITEM_PRODUCT_NAME])) %>',
-                         'category': '<%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => GetProductCategoryName(x.ToHashtable()))) %>',
-                         'price': <%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDERITEM_PRODUCT_PRICE].ToPriceString())) %>,
-                         'quantity': <%#: ((IList)Container.DataItem).Count %>
-                  }]
+                   'sku': '<%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDERITEM_VARIATION_ID])) %>',
+                   'name': '<%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDERITEM_PRODUCT_NAME])) %>',
+                   'category': '<%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => GetProductCategoryName(x.ToHashtable()))) %>',
+                   'price': '<%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDERITEM_PRODUCT_PRICE].ToPriceString())) %>',
+                   'quantity': '<%#: ((IList)Container.DataItem).Count %>'
+
            });
     </script>
    </ItemTemplate>
