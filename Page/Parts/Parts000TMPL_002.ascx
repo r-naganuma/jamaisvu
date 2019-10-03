@@ -22,7 +22,7 @@
         });
     });
 </script>
-<div class="sec sec--lead">
+<!-- <div class="sec sec--lead">
     <p>
         【メンテナンスのお知らせ】<br>
         平素は当サイトをご利用頂き、<br class="sp_contents">誠にありがとうございます。<br>
@@ -31,7 +31,7 @@
         上記期間中は、サイトの閲覧・商品の購入等が<br class="sp_contents">出来なくなります。<br>
         皆さまには大変ご迷惑をお掛けしますが、<br class="sp_contents">何卒ご了承いただけますようお願い申し上げます。
     </p>
-</div>
+</div> -->
 <div class="sec sec--concept pc_contents">
     <div class="sec__inner">
         <h2 class="sec__title">CONCEPT</h2>
