@@ -80,7 +80,8 @@ $(function(){
         draggable: false,
         variableWidth: false,
         pauseOnHover: false,
-        pauseOnFocus: false
+        pauseOnFocus: false,
+        fade: true
     });
 
     var height=$(".header").height();
