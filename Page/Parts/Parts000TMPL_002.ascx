@@ -83,13 +83,18 @@
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-2">
-                    <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191010/">
-                        <img src="<%= Constants.PATH_ROOT %>Page/topics/images/thumbnail191010_l.jpg" alt="topics 2">
+                    <a href="https://jamaisvu.co.jp/Page/topics/column/vol1/" target="_blank">
+                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_2.jpg" alt="topics 1">
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-3">
-                    <a href="https://jamaisvu.co.jp/category/topics/editorscolumn_001/" target="_blank">
+                    <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191010/">
                         <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_3.jpg" alt="topics 3">
+                    </a>
+                </div>
+                <div class="topicsContent__list-item item-4">
+                    <a href="https://jamaisvu.co.jp/Page/lookbook/">
+                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_4.jpg" alt="topics 4">
                     </a>
                 </div>
             </div>
