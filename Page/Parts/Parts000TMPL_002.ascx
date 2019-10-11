@@ -83,8 +83,8 @@
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-2">
-                    <a href="https://jamaisvu.co.jp/category/topics/style_20190909/">
-                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_2.jpg" alt="topics 2">
+                    <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191010/">
+                        <img src="<%= Constants.PATH_ROOT %>Page/topics/images/thumbnail191010_l.jpg" alt="topics 2">
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-3">

@@ -24,18 +24,19 @@
 <div class="LPpageWrap topSpace">
 
 <%-- ▽編集可能領域：コンテンツ▽ --%>
-<link href='../../css/common.css?123' rel='stylesheet' type='text/css'>
+
+<link href='../../css/common.css?1233' rel='stylesheet' type='text/css'>
 <style type="text/css">
-      .topics_under_list__ul__1{
-            text-decoration: underline;
-      }
+.topics_under_list__ul__1{
+      text-decoration: underline;
+}
 #Contents div.column {
      width: auto; 
      float: none; 
 }
 
 #Wrap .LPpageWrap a {
-    display: flex;
+ 
 }
 .sibr_box h3 {
     font-size: 13px!important;
@@ -47,6 +48,11 @@
 }
 .noclick:hover{
 opacity: 1!important;
+}
+.styling__innar__box.b_type .styling__innar__box__left {
+    -webkit-box-ordinal-group: 2!important;
+    -ms-flex-order: 1!important;
+    order: 1!important;
 }
 @media (max-width: 768px){
   .sibr_box h3 {
@@ -75,252 +81,335 @@ opacity: 1!important;
 // タイトル
 $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store")
 </script>
-<div class="main_contents topics_under styling">
+<div class="main_contents topics_under styling feature">
   <h2 class="main_contents_title">FEATURE 
     <span>2019.10.10</span>
   </h2>
+  <img class="main_img" src="images/main@2x.png" alt="商品画像">
+  <p class="main_contents_titlesub">「羽織る・重ねる・一枚で着れる」<br>
+3wayで着られる万能アイテム。
+</p>
+  <h3 class="column_h3_1"></h3>
+  <div class="pc_contents">
+    <p class="styling__text1">
+    10月に入り、すっかり秋の陽気に<br>
+    気温も下がり過ごしやすい日々が続いていますね<br>
+    冬支度をはじめようと考えている方も多いのでは。<br>
+    しかし、日中になると暖かくなる日も多く、<br>
+    毎日の洋服選びに困る季節。<br>
+    そんな季節に欠かせない”ライトアウター”が入荷いたしました。
+    </p>
+  </div>
+  <div class="sp_contents">
+    <p class="styling__text1">
+    10月に入り、すっかり秋の陽気に<br>
+    気温も下がり過ごしやすい日々が続いていますね<br>
+    冬支度をはじめようと<br>
+    考えている方も多いのでは。<br>
+    しかし、日中になると暖かくなる日も多く、<br>
+    毎日の洋服選びに困る季節。<br>
+    そんな季節に欠かせない<br>
+    ”ライトアウター”が入荷いたしました。
+    </p>
+  </div>
   <p class="styling__text1"></p>
   <div class="styling__innar">
+
+    <!-- スタイル１ -->
+    <div class="styling__innar__box e_type">
+      <h2>きれい色ピンクで女性らしさを</h2>
+      <div class="e_type__innar">
+        <div class="styling__innar__box__left">
+          <img src="images/01_01.png" alt="商品画像">
+        </div>
+        <div class="styling__innar__box__right">
+          <img src="images/01_02.png" alt="商品画像">
+        </div>
+      </div>
+      <div class="e_type_innar">
+        <p class="e_type_innar_t1">とろみ素材なので、一枚で着ても肌触りが良く、<br>
+        ボタンを少し開けて着ることで<br class="sp_bt">女性らしさをプラス<br>
+        華やかなフューシャピンクが<br class="sp_bt">スタイリングのアクセントになる一着<br>
+        シンプルなアイテムとの相性も抜群。<br>
+        </p>
+        <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313231&cat=003">
+          フィットカーディガン <span>¥18,700<span class="tax">(tax in)</span></span><br>
+          素材:メリノオプティモ<br>
+          サイズ：R/L
+        </a>
+        <div class="btnBox btn--more">
+          <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313231&cat=003">
+           DETAIL
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- スタイル2 -->
     <div class="styling__innar__box a_type">
       <div class="styling__innar__box__left">
-        <img src="images/main.png" alt="商品画像">
+        <img src="images/01_03.png" alt="商品画像">
       </div>
       <div class="styling__innar__box__right">
         <div class="styling__innar__box__right__innar">
           <div class="sibr_box">
-            <h3 style="margin: 0px;">01</h3>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930319149&amp;cat=003">
-                <span class="topics_under_list__ul__1">ボートネックジッププルオーバー</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥23,100
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="" class="noclick">
-                <span class="topics_under_list__ul__1">ニットワイドパンツ</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥20,900
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
+            <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930725117&swrd=%e3%83%95%e3%83%aa%e3%83%bc%e3%82%b5%e3%82%a4%e3%82%ba%e3%83%86%e3%83%bc%e3%83%91%e3%83%bc%e3%83%89">
+              フリーサイズテーパード <span>¥23,100<span class="tax">(tax in)</span></span><br>
+              素材:メリノオプティモ<br>
+              サイズ：FREE
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="styling__innar__box c_type">
+
+    <!-- スタイル3 -->
+    <div class="styling__innar__box e_type">
+      <h2>落ち着いた女性らしさを演出</h2>
+      <div class="e_type__innar">
+        <div class="styling__innar__box__left">
+          <img src="images/02_01.png" alt="商品画像">
+        </div>
+        <div class="styling__innar__box__right">
+          <img src="images/02_02.png" alt="商品画像">
+        </div>
+      </div>
+      <div class="e_type_innar">
+        <p class="e_type_innar_t1">
+          落ち着いたアクアブルーが<br class="sp_bt">スタイリングをクリアな印象に<br>
+          インナーをチラ見せレイヤードするのも<br>
+          コーディネートの幅が広がりますよね。<br>
+          タートルインナーを合わせれば<br>
+          首元も温かく、心地よく過ごせるはず。
+        </p>
+        <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313265&cat=003">
+          フィットカーディガン <span>¥18,700<span class="tax">(tax in)</span></span><br>
+          素材:メリノオプティモ<br>
+          サイズ：R/L
+        </a>
+        <div class="btnBox btn--more">
+          <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313265&cat=003">
+           DETAIL
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- スタイル4 -->
+    <div class="styling__innar__box b_type">
       <div class="styling__innar__box__left">
-        <img src="images/2-1-min.jpg" alt="商品画像">
+        <img src="images/02_03.png" alt="商品画像">
       </div>
       <div class="styling__innar__box__right">
-        <img src="images/2-2-min.jpg" alt="商品画像">
         <div class="styling__innar__box__right__innar">
-          <div class="sibr_box" style="margin: 0px;">
-            <h3 style="margin: 0px;">02</h3>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930313255&amp;cat=003">
-                <span class="topics_under_list__ul__1">フィットカーディガン</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥18,700
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930626117&amp;cat=006">
-                <span class="topics_under_list__ul__1">フリーサイズラップ</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥20,900
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sp_contents">
-        <div class="add_contents">
-          <div class="sibr_box" style="margin: 0px;">
-            <h3 style="margin: 0px;">02</h3>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930313255&amp;cat=003">
-                <span class="topics_under_list__ul__1">フィットカーディガン　</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥18,700
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930626117&amp;cat=006">
-                <span class="topics_under_list__ul__1">フリーサイズラップ</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥20,900
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
+          <div class="sibr_box">
+            <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930724117&cat=007">
+              フリーサイズワイド <span>¥23,100<span class="tax">(tax in)</span></span><br>
+              素材:メリノオプティモ<br>
+              サイズ：FREE
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="styling__innar__box c_type">
+
+
+    <!-- スタイル5 -->
+    <div class="styling__innar__box e_type">
+      <h2>秋冬カラーで明るさをキープ</h2>
+      <div class="e_type__innar">
+        <div class="styling__innar__box__left">
+          <img src="images/03_01.png" alt="商品画像">
+        </div>
+        <div class="styling__innar__box__right">
+          <img src="images/03_02.png" alt="商品画像">
+        </div>
+      </div>
+      <div class="e_type_innar">
+        <p class="e_type_innar_t1">
+          クリアなセージグリーンは<br class="sp_bt">シックな秋冬カラーとも好相性。<br>
+          ブラウンやブラックの<br>
+          シンプルなボトムに合わせても<br class="sp_bt">明るさをキープしてくれます。<br>
+          白いＴシャツを胸元から<br class="sp_bt">見せることでカジュアルな印象に。<br>
+
+        </p>
+        <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313255&cat=003">
+          フィットカーディガン <span>¥18,700<span class="tax">(tax in)</span></span><br>
+          素材:メリノオプティモ<br>
+          サイズ：R/L
+        </a>
+        <div class="btnBox btn--more">
+          <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313255&cat=003">
+           DETAIL
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- スタイル6 -->
+    <div class="styling__innar__box a_type">
       <div class="styling__innar__box__left">
-        <img src="images/3-1-min.jpg" alt="商品画像">
+        <img src="images/03_03.png" alt="商品画像">
       </div>
       <div class="styling__innar__box__right">
-        <img src="images/3-2-min.jpg" alt="商品画像">
         <div class="styling__innar__box__right__innar">
-          <div class="sibr_box" style="margin: 0px;">
-            <h3 style="margin: 0px;">03</h3>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930318131&amp;vid=1930318131free&amp;cat=003">
-                <span class="topics_under_list__ul__1">ビッグカーディガン</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥26,400
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930300131&amp;cat=003">
-                <span class="topics_under_list__ul__1">ニットスウェット</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥17,600
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930305149&amp;cat=003">
-                <span class="topics_under_list__ul__1">ニットスウェットパンツ</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥23,100
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sp_contents">
-        <div class="add_contents">
-          <div class="sibr_box" style="margin: 0px;">
-            <h3 style="margin: 0px;">03</h3>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930318131&amp;vid=1930318131free&amp;cat=003">
-                <span class="topics_under_list__ul__1">ビッグカーディガン</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥26,400
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930300131&amp;cat=003">
-                <span class="topics_under_list__ul__1">ニットスウェット</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥17,600
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930305149&amp;cat=003">
-                <span class="topics_under_list__ul__1">ニットスウェットパンツ</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥23,100
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
+          <div class="sibr_box">
+            <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930626117&cat=006">
+              フリーサイズラップ <span>¥20,900<span class="tax">(tax in)</span></span><br>
+              素材:メリノオプティモ<br>
+              サイズ：FREE
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="styling__innar__box c_type c2">
-      <div class="styling__innar__box__left">
-       
+
+
+    <!-- スタイル7 -->
+    <div class="styling__innar__box e_type">
+      <h2>普段使いしやすいカラー</h2>
+      <div class="e_type__innar">
+        <div class="styling__innar__box__left">
+          <img src="images/04_01.png" alt="商品画像">
+        </div>
+        <div class="styling__innar__box__right">
+          <img src="images/04_02.png" alt="商品画像">
+        </div>
       </div>
-      <div class="styling__innar__box__right">
-         <img src="images/4-1-min.jpg" alt="商品画像">
+      <div class="e_type_innar">
+        <p class="e_type_innar_t1">
+          トラッドなスタイルにもマッチする<br>
+          フォレストグリーンでクラシックな印象に。<br>
+          深みのあるカラーはデニムとも好相性。<br>
+          普段使いしやすく、<br class="sp_bt">カジュアルに着こなせるのがポイント。
+
+
+        </p>
+        <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313259&cat=003">
+          フィットカーディガン <span>¥18,700<span class="tax">(tax in)</span></span><br>
+          素材:メリノオプティモ<br>
+          サイズ：R/L
+        </a>
+
+        <div class="btnBox btn--more">
+          <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313259&cat=003">
+           DETAIL
+          </a>
+        </div>
+
       </div>
     </div>
-    <div class="styling__innar__box c_type">
+
+
+    <!-- スタイル8 -->
+    <div class="styling__innar__box b_type">
       <div class="styling__innar__box__left">
-        <img src="images/4-2-min.jpg" alt="商品画像">
+        <img src="images/04_03.png" alt="商品画像">
       </div>
       <div class="styling__innar__box__right">
-        <img src="images/4-3-min.jpg" alt="商品画像">
         <div class="styling__innar__box__right__innar">
-          <div class="sibr_box" style="margin: 0px;">
-            <h3 style="margin: 0px;">04</h3>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930123117&amp;cat=001">
-                <span class="topics_under_list__ul__1">コートジャケット</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥42,900
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="" class="noclick">
-                <span class="topics_under_list__ul__1">ニットワイドパンツ</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥20,900
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sp_contents">
-        <div class="add_contents">
-          <div class="sibr_box" style="margin: 0px;">
-            <h3 style="margin: 0px;">04</h3>
-            <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&amp;pid=1930123117&amp;cat=001">
-                <span class="topics_under_list__ul__1">コートジャケット</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥42,900
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="" class="noclick">
-                <span class="topics_under_list__ul__1">ニットワイドパンツ</span>
-                <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥20,900
-                    <span>(tax in)</span>
-                  </span>
-                </div>
-              </a>
-            </div>
+          <div class="sibr_box">
+            <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930724117&cat=007">
+              フリーサイズワイド <span>¥23,100<span class="tax">(tax in)</span></span><br>
+              素材:メリノオプティ<br>
+              サイズ：FREE
+            </a>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- スタイル9  -->
+    <div class="styling__innar__box e_type">
+      <h2>取り入れやすい爽やかブルー</h2>
+      <div class="e_type__innar">
+        <div class="styling__innar__box__left">
+          <img src="images/05_01.png" alt="商品画像">
+        </div>
+        <div class="styling__innar__box__right">
+          <img src="images/05_02.png" alt="商品画像">
+        </div>
+      </div>
+      <div class="e_type_innar">
+        <p class="e_type_innar_t1">
+            澄んだ冬の空のようなサックスブルーが爽やか<br>
+            コーディネートにも取り入れやすく<br>
+            ホワイトのボトムスを合わせることで<br>
+            女性らしいスタイリングを楽しめます。<br>
+            ボリューム感のある<br class="sp_bt">フレアスカートと合わせるのも。
+        </p>
+        <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313261&cat=003">
+          フィットカーディガン <span>¥18,700<span class="tax">(tax in)</span></span><br>
+          素材:メリノオプティモ<br>
+          サイズ：R/L
+        </a>
+        <div class="btnBox btn--more">
+          <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313261&cat=003">
+           DETAIL
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- スタイル10 -->
+    <div class="styling__innar__box a_type">
+      <div class="styling__innar__box__left">
+        <img src="images/05_03.png" alt="商品画像">
+      </div>
+      <div class="styling__innar__box__right">
+        <div class="styling__innar__box__right__innar">
+          <div class="sibr_box">
+           <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306111&cat=003">
+              ニットワイドパンツ <span>¥20,900<span class="tax">(tax in)</span></span><br>
+              素材:ハミルトンラムズウール<br>
+              サイズ：FREE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- スタイル11  -->
+    <div class="styling__innar__box e_type">
+      <h2>ワントーンコーデに挑戦</h2>
+      <div class="e_type__innar">
+        <div class="styling__innar__box__left">
+          <img src="images/06_01.png" alt="商品画像">
+        </div>
+        <div class="styling__innar__box__right">
+          <img src="images/06_02.png" alt="商品画像">
+        </div>
+      </div>
+      <div class="e_type_innar">
+        <p class="e_type_innar_t1">
+          ワントーンコーデにも取り入れやすいアイテムです。<br>
+          どんなスタイリングにも<br class="sp_bt">馴染むグレーがかったベージュで<br>
+          洗練された大人の雰囲気に<br class="sp_bt">パンツやスカートにインすると<br>
+          カジュアルな印象に。
+        </p>
+        <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313241&cat=003">
+          フィットカーディガン <span>¥18,700<span class="tax">(tax in)</span></span><br>
+          素材:メリノオプティモ<br>
+          サイズ：R/L
+        </a>
+      </div>
+        <div class="btnBox btn--more">
+          <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313241&cat=003">
+           DETAIL
+          </a>
+        </div>
+    </div>
+
+    <div class="nextBtnwrap">
+      <a class="nextBtn" href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+        全てのアイテムを見る
+      </a>
+    </div>
+
+
+
   </div>
 </div>
 <script>
@@ -331,6 +420,7 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
     return false;
   })
 </script>
+
 <%-- △編集可能領域△ --%>
 
 

@@ -1150,3 +1150,426 @@ EDITORS COLUMN
     color: #fff;
   }
 }
+
+#Wrap .feature .main_img {
+  width: 800px;
+  margin: 0 auto 80px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #Wrap .feature .main_img {
+    width: 100%;
+    margin: 0 auto 25px;
+  }
+}
+
+#Wrap .feature .styling__text1 {
+  margin: 0 0 75px;
+}
+
+#Wrap .feature .styling__innar__box__right img {
+  width: 100%;
+}
+
+#Wrap .feature .main_contents_titlesub {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  line-height: 40px;
+  text-align: center;
+}
+
+#Wrap .feature .column_h3_1 {
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 0 25px;
+  margin: 0 0 25px;
+  position: relative;
+}
+
+#Wrap .feature .column_h3_1:after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: #C0B6B3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#Wrap .feature .e_type {
+  display: block;
+  max-width: 1080px;
+  width: 100%;
+}
+
+#Wrap .feature .e_type h2 {
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  margin: 0 0 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #Wrap .feature .e_type h2 {
+    font-size: 18px;
+    margin: 0 0 20px;
+  }
+}
+
+#Wrap .feature .e_type__innar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 0 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .feature .e_type__innar {
+    margin: 0 0 20px;
+  }
+}
+
+#Wrap .feature .e_type__innar_t1 {
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.08;
+  text-align: center;
+}
+
+#Wrap .feature .e_type_innar {
+  text-align: center;
+}
+
+#Wrap .feature .e_type_innar_t1 {
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.08;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+#Wrap .feature .e_type_innar_t2 {
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  text-align: center;
+  display: block;
+}
+
+#Wrap .feature .e_type_innar_t2 span {
+  font-family: 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+
+#Wrap .feature .e_type_innar_t2 span .tax {
+  font-size: 11px;
+}
+
+#Wrap .feature .e_type .styling__innar__box__left {
+  width: 48.14815%;
+}
+
+@media (max-width: 768px) {
+  #Wrap .feature .e_type .styling__innar__box__left {
+    width: 49%;
+  }
+}
+
+#Wrap .feature .e_type .styling__innar__box__right {
+  width: 48.14815%;
+}
+
+@media (max-width: 768px) {
+  #Wrap .feature .e_type .styling__innar__box__right {
+    width: 49%;
+  }
+}
+
+#Wrap .feature .a_type .e_type_innar_t2 {
+  text-align: left;
+  display: block;
+}
+
+#Wrap .feature .b_type .e_type_innar_t2 {
+  display: block;
+  text-align: right;
+}
+
+#Wrap .feature .styling__innar__box {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #Wrap .feature .styling__innar__box {
+    margin: 0 0 60px;
+  }
+}
+
+.btnBox {
+  border: #2E0E02 1px solid;
+  display: block;
+  color: #2E0E02;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.feature .btnBox {
+  width: 200px;
+  height: 64px;
+  margin: 40px auto 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .feature .btnBox {
+    width: 200px;
+    height: 64px;
+    line-height: 64px;
+    background: #fff;
+  }
+}
+
+.feature .btnBox:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 23px;
+  margin: auto;
+  z-index: 1;
+  display: block;
+  width: 7px;
+  height: 7px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 2px solid #2E0E02;
+  border-right: 2px solid #2E0E02;
+}
+
+@media (max-width: 768px) {
+  .feature .btnBox:after {
+    right: 15px;
+  }
+}
+
+.feature .btnBox:hover::after {
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.feature .btnBox a {
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.28em;
+  position: relative;
+  line-height: 64px;
+  display: block !important;
+  color: #2E0E02;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.feature .btnBox a:hover {
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .feature .btnBox a {
+    font-size: 13px;
+    line-height: 64px;
+  }
+}
+
+.feature .btnBox a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #2E0E02;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+@media (max-width: 768px) {
+  .feature .btnBox a::after {
+    content: none;
+  }
+}
+
+.feature .btnBox a:hover::after {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.feature .btnBox a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.feature .btnBox.btn--more {
+  border: #2E0E02 1px solid;
+  display: block;
+  color: #2E0E02;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .feature .btnBox.btn--more {
+    border: #2E0E02 1px solid;
+    color: #fff;
+  }
+}
+
+.feature .column .styling__text1 {
+  margin: 0 auto 80px;
+}
+
+@media (max-width: 768px) {
+  .feature .btnBox.btn--more a:visited {
+    color: #2E0E02;
+  }
+}
+
+.btnBox.btn--more.online {
+  width: 325px;
+}
+
+.feature .nextBtnwrap {
+  width: 320px;
+  margin: auto;
+}
+
+.feature .nextBtn {
+  font-family: 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  color: #fff !important;
+  text-align: center;
+  width: 320px !important;
+  height: 64px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 64px;
+  background: #2E0E02;
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid #2E0E02;
+  z-index: 0;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .feature .nextBtn {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+  }
+}
+
+.feature .nextBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 24px;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  width: 10px;
+  height: 10px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 1.5px solid #fff !important;
+  border-right: 1.5px solid #fff !important;
+}
+
+@media (max-width: 768px) {
+  .feature .nextBtn::after {
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #fff !important;
+    border-right: 1px solid #fff !important;
+  }
+}
+
+.feature .nextBtn:hover::after {
+  border-top: 1.5px solid #2E0E02 !important;
+  border-right: 1.5px solid #2E0E02 !important;
+}
+
+.feature .nextBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #fff;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+@media (max-width: 768px) {
+  .feature .nextBtn::before {
+    content: none;
+  }
+}
+
+.feature .nextBtn:hover::before {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.feature .nextBtn:hover {
+  opacity: 1;
+  color: #2E0E02 !important;
+}

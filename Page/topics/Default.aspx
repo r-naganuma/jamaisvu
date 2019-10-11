@@ -37,7 +37,7 @@ $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official 
                               <li>
                                     <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191010/">
                                           <img src="https://jamaisvu.co.jp/Page/topics/images/thumbnail191010.jpg" alt="styling">
-                                          <p class="topics_list__ul__day">2019.10.10</p>
+                                          <p class="topics_list__ul__day">2019.10.11</p>
                                           <h3 class="topics_list__category">
                                           STYLING</h3>
 
