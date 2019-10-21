@@ -1,19 +1,5 @@
-﻿<%--
-=========================================================================================================
-  Module      : カスタムページテンプレート画面(CustomPageTemplate.aspx)
- ･･･････････････････････････････････････････････････････････････････････････････････････････････････････
-  Copyright   : Copyright w2solution Co.,Ltd. 2009 All Rights Reserved.
-=========================================================================================================
---%>
-<%-- ▽ユーザーコントロール宣言領域▽ --%>
-<%-- △ユーザーコントロール宣言領域△ --%>
-<%@ Page Title="CAMPAIGN｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="JAMAIS VU （ジャメヴ）のLOOKBOOKページ。2019AWコレクションを掲載中。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="LOOKBOOK,ルックブック,JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
-<%--
-
-下記のタグはファイル情報保持用です。削除しないでください。
-<%@ FileInfo LastChanged="ロゾパンサン" %>
-
---%>
+﻿
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 <%-- ▽編集可能領域：HEAD追加部分▽ --%>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700&display=swap&subset=japanese" rel="stylesheet">
@@ -31,10 +17,11 @@
     <h2>CAMPAIGN 
       <span>2019.10.21</span>
     </h2>
-    <img src="images/mv.jpg" alt="">
+    <img class="pc_contents" src="images/mv_pc.jpg" alt="">
+    <img class="sp_contents" src="images/mv_sp.jpg" alt="">
     <p>
-      対象期間中、LINEお友だち限定で必要期間中送料・返品送料どちらも0円！<br>
-      この機会にぜひ、JAMAIS VU製品を手に取ってくださいませ。
+      対象期間中、LINEお友だち限定で必要期間中<br class="sp_contents">送料・返品送料どちらも0円！<br>
+      この機会にぜひ、JAMAIS VU製品を<br class="sp_contents">手に取ってくださいませ。
     </p>
   </div>
 
@@ -55,7 +42,7 @@
         <img src="images/icn02.png" alt="">
         <p>
           たっぷりお試し可能
-          <span>※商品到着から8日以内に返品完了</span>
+          <span>※商品到着から<br class="sp_contents">8日以内に返品完了</span>
         </p>
       </div>
     </div>
@@ -66,7 +53,7 @@
       返品条件
     </h3>
     <p class="conditionsArea_lead">
-      以下の条件を満たしている場合、返品送料0円でご試着の対象となります。
+      以下の条件を満たしている場合、<br class="sp_contents">返品送料0円でご試着の対象となります。
     </p>
     <div class="conditionsArea_box">
       <div class="conditionsArea_box--list">
@@ -131,7 +118,7 @@
           お近くの郵便局またはコンビニから着払いでご発送ください。<br>
           <span class="fontS">
             送り先 : <br>
-            (株)ケンオー　ケンオーアパレルセンター　堀　宛て
+            (株)ケンオー　ケンオーアパレルセンター　<br class="sp_contents">堀　宛て<br>
             〒252-1121 神奈川県綾瀬市小園959-1<br>
             TEL : 0467-78-3277
           </span>
@@ -157,7 +144,7 @@
 
   <div class="itemArea">
     <h3>
-      気になるアイテムを探して、さっそくお買い物！
+      気になるアイテムを探して、<br class="sp_contents">さっそくお買い物！
     </h3>
     <ul>
       <li>
@@ -219,9 +206,9 @@
       <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="itemArea_btn">全てのアイテムを見る</a>
     </div>
     <p class="itemArea_lead">
-      まずはLINEで友だち追加して、「失敗しらずのお買い物」をお楽しみください。
+      まずはLINEで友だち追加して、<br class="sp_contents">「失敗しらずのお買い物」をお楽しみください。
     </p>
-    <a href="https://line.me/R/ti/p/%40461wwkgx" class="itemArea_line" target="_blank">LINE友だち追加はこちら</a>
+    <a id="click_id3" href="https://line.me/R/ti/p/%40461wwkgx" class="itemArea_line" target="_blank" onclick="gtag('event', 'click3', {'event_category': 'link3','event_label': 'entered3'});">LINE友だち追加はこちら</a>
   </div>
 
   <div class="noticeArea">
@@ -256,7 +243,7 @@
 
   <div class="contactArea">
     <h3>
-      キャンペーンに関するお問い合わせ先
+      キャンペーンに関する<br class="sp_contents">お問い合わせ先
     </h3>
     <p>JAMAIS VU 公式ブランドサイト　運営事務局</p>
     <a href="<%= Constants.PATH_ROOT %>Form/Inquiry/InquiryInput.aspx">お問い合わせフォーム</a>

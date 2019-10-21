@@ -8,9 +8,35 @@ $bp768: 768px;  // スマホ
   }
 }
 
+@font-face {
+	font-family: 'gillsans';
+	src: url("../../../../../Font/gillsans.woff") format('woff'),
+		 url('../../../../../Font/gillsans.otf') format("opentype");
+}
+
 body{
 	padding: 0;
 	margin: 0;
+}
+
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+
+.pc_contents {
+	display: block!important;
+
+	@include bp768 {
+		display: none!important;
+	};
+}
+
+.sp_contents {
+  display: none!important;
+
+	@include bp768 {
+		display: block!important;
+	};
 }
 
 .campaignWrap {
@@ -22,6 +48,15 @@ body{
 	letter-spacing: 0.08em;
 	font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
 	font-weight: 400;
+
+	@include bp768 {
+		width: 100%;
+		margin: 0 auto 120px;
+		line-height: 2;
+		letter-spacing: 0.08em;
+		padding: 0 18px;
+		box-sizing: border-box;
+	};
 
 	ul{
 		margin: 0;
@@ -37,6 +72,11 @@ body{
 	p{
 		margin: 0;
 		padding: 0;
+		line-height: 26px;
+
+		@include bp768 {
+			line-height: 2;
+		};
 	}
 
 	a{
@@ -55,10 +95,30 @@ body{
 		width: 900px;
 		margin: 0 auto 60px;
 
+		@include bp768 {
+			width: 100%;
+		};
+
 		p{
 			line-height: 25.2px;
 			text-align: center;
 			margin-top: 60px;
+
+			@include bp768 {
+				font-size: 13px;
+			};
+		}
+	}
+
+	h2{
+		span{
+			display: block;
+			color: #C0B6B3;
+			margin-top: 15px;
+			letter-spacing: 0.16em;
+			line-height: 1;
+			font-family: 'gillsans', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+			font-size: 16px;
 		}
 	}
 
@@ -72,6 +132,12 @@ body{
 		margin-bottom: 55px;
 		position: relative;
 		text-align: center;
+
+		@include bp768 {
+			font-size: 18px;
+			line-height: 28px;
+			margin-bottom: 65px;
+		};
 
 		&::after{
 			content: "";
@@ -88,7 +154,10 @@ body{
 		span{
 			font-size: 16px;
 			display: block;
-			margin-top: 5px;
+
+			@include bp768 {
+				font-size: 14px;
+			};
 		}
 	}
 
@@ -96,17 +165,36 @@ body{
 		width: 548px;
 		margin: 0 auto 100px;
 
+		@include bp768 {
+			width: 100%;
+			margin: 0 auto 80px;
+		};
+
 		&_box{
 			display: flex;
 			justify-content: space-between;
 
+		@include bp768 {
+			display: block;
+		};
+
 			&--list{
 				&:nth-child(1){
 					width: 234px;
+
+					@include bp768 {
+						width: 60%;
+						margin: 0 auto 40px;
+					};
 				}
 
 				&:nth-child(2){
 					width: 214px;
+
+					@include bp768 {
+						width: 60%;
+						margin: 0 auto;
+					};
 				}
 
 				p{
@@ -115,11 +203,20 @@ body{
 					font-weight: 700;
 					margin-top: 5px;
 
+					@include bp768 {
+						margin-top: 0;
+					};
+
 					span{
 						font-size: 11px;
 						color: #6F7579;
 						font-weight: normal;
 						display: block;
+
+						@include bp768 {
+							line-height: 14px;
+							margin-top: 10px;
+						};
 					}
 				}
 			}
@@ -130,21 +227,46 @@ body{
 		width: 860px;
 		margin: 0 auto 100px;
 
+		@include bp768 {
+			width: 100%;
+			margin: 0 auto 80px;
+		};
+
 		&_lead{
 			text-align: center;
 			margin-bottom: 50px;
+
+			@include bp768 {
+				margin-bottom: 40px;
+				font-size: 13px;
+				line-height: 25.2px;
+			};
 		}
 
 		&_box{
 			display: flex;
 			justify-content: space-between;
 
+			@include bp768 {
+				display: block;
+			};
+
 			&--list{
 				width: 245px;
 
+				@include bp768 {
+					width: 72%;
+					margin: 0 auto 30px;
+				};
+
 				img{
-					width: 180px;
+					width: 180px !important;
 					margin: 0 auto 5px;
+
+					@include bp768 {
+						width: 75% !important;
+						margin: 0 auto;
+					};
 				}
 
 				p{
@@ -168,6 +290,10 @@ body{
 		width: 940px;
 		margin: 0 auto 100px;
 
+		@include bp768 {
+			width: 94.4%;
+		};
+
 		&_step{
 			background: #F5F5F5;
 			padding: 30px 0;
@@ -176,19 +302,39 @@ body{
 			position: relative;
 			margin-bottom: 30px;
 
+			@include bp768 {
+				padding: 30px 20px;
+				box-sizing: border-box;
+				display: block;
+				margin-bottom: 40px;
+			};
+
 			&--num{
 				width: 154px;
+
+				@include bp768 {
+					width: 100%;
+					margin-bottom: 20px;
+				};
 
 				p{
 					text-align: center;
 					font-weight: 700;
 					letter-spacing: 0;
 					line-height: 1;
+
+					@include bp768 {
+						font-size: 16px;
+					};
 				}
 			}
 
 			&--cts{
 				p{
+					@include bp768 {
+						letter-spacing: 0;
+					};
+
 					.fwBold{
 						font-weight: 700;
 					}
@@ -198,6 +344,10 @@ body{
 						line-height: 20px;
 						display: block;
 						margin-top: 5px;
+
+						@include bp768 {
+							margin-top: 20px;
+						};
 					}
 
 					.note{
@@ -205,6 +355,10 @@ body{
 						color: #6F7579;
 						display: block;
 						margin-top: 5px;
+
+						@include bp768 {
+							margin-top: 20px;
+						};
 					}
 				}
 			}
@@ -217,6 +371,12 @@ body{
 				margin-left: -15px;
 				border: 15px solid transparent;
 				border-top: 15px solid #F5F5F5;
+
+				@include bp768 {
+					margin-left: -25px;
+					border: 25px solid transparent;
+					border-top: 25px solid #F5F5F5;
+				};
 			}
 
 			&:last-child{
@@ -233,6 +393,11 @@ body{
 		width: 807px;
 		margin: 0 auto 80px;
 
+		@include bp768 {
+			width: 100%;
+			margin: 0 auto 100px;
+		};
+
 		ul{
 			display: flex;
 			justify-content: space-between;
@@ -241,6 +406,11 @@ body{
 			li{
 				width: 258px;
 				margin-bottom: 43px;
+
+				@include bp768 {
+					width: 49%;
+					margin-bottom: 32px;
+				};
 
 				p{
 					font-size: 12px;
@@ -267,7 +437,8 @@ body{
 			@include bp768 {
 				width: 240px;
 				height: 48px;
-				background: #2E0E02;
+				margin: 8px auto 100px;
+				background: #fff;
 			};
 
 			&:after {
@@ -290,8 +461,6 @@ body{
 
 				@include bp768 {
 					right: 15px;
-					border-top: 2px solid #fff;
-					border-right: 2px solid #fff;
 				};
 			}
 
@@ -306,11 +475,11 @@ body{
 				position: relative;
 				line-height: 64px;
 				color: #2E0E02;
+				font-weight: 400;
 
 				@include bp768 {
-					font-size: 13px;
+					font-size: 12px;
 					line-height: 48px;
-					color: #fff;
 				};
 
 			    &::after{
@@ -338,16 +507,20 @@ body{
 
 			    &:hover{
 			      opacity: 1;
-			      color: #fff;
+			      color: #fff !important;
 			    }
 			}
 		}
 
 		&_lead{
-			line-height: 25.2px;
 			line-height: 1;
 			margin-bottom: 30px;
 			text-align: center;
+
+			@include bp768 {
+				font-size: 13px;
+				line-height: 25.2px;
+			};
 		}
 
 		&_line{
@@ -362,6 +535,14 @@ body{
 			background: #1DCD00;
 			border-radius: 2px;
 			margin: 0 auto;
+			font-weight: 500;
+
+			@include bp768 {
+				width: 240px;
+				height: 48px;
+				font-size: 12px;
+				line-height: 48px;
+			};
 
 			&:after {
 				content: "";
@@ -383,9 +564,11 @@ body{
 
 				@include bp768 {
 					right: 15px;
-					border-top: 2px solid #fff;
-					border-right: 2px solid #fff;
 				};
+			}
+
+			&:hover{
+				color: #fff !important;
 			}
 		}
 	}
@@ -396,6 +579,10 @@ body{
 		box-sizing: border-box;
 		background: #F5F5F5;
 		margin-bottom: 100px;
+
+		@include bp768 {
+			padding: 40px 20px;
+		};
 
 		&_ttl{
 			font-size: 18px;
@@ -408,10 +595,18 @@ body{
 			font-weight: 700;
 			line-height: 1;
 			margin: 30px 0 10px;
+
+			@include bp768 {
+				line-height: 20px;
+			};
 		}
 
 		&_indent{
 			margin-left: 10px;
+
+			@include bp768 {
+				margin-left: 0;
+			};
 
 			p{
 				font-size: 13px;
@@ -421,19 +616,26 @@ body{
 	}
 
 	.contactArea{
+		text-align: center;
+
 		p{
 			text-align: center;
 			letter-spacing: 0;
 			line-height: 1;
 			margin-bottom: 15px;
+
+			@include bp768 {
+				margin-bottom: 10px;
+			};
 		}
 
 		a{
-			text-align: center;
 			color: #333;
 			text-decoration: underline;
 			line-height: 1;
 			letter-spacing: 0;
+			font-weight: 400;
+			display: inline !important;
 		}
 	}
 }
