@@ -675,8 +675,7 @@
 					</dd>
 			</dl>
 		</div>
-		<div class="allBtnBox">
-			<a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_MYPAGE) %>" class="prevBtn">戻る</a>
+		<div class="submitBtnBox">
 			<asp:LinkButton ID="lbConfirm" ValidationGroup="UserModify" OnClientClick="return exec_submit();" runat="server" OnClick="lbConfirm_Click" class="nextBtn">変更する</asp:LinkButton>
 		</div>
 	</div>

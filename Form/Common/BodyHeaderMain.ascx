@@ -276,7 +276,7 @@ function initializeFunctionJs() {
 					</h1>
 					<div class="header__icon header__icon--wishlist">
 						<a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_FAVORITE_LIST) %>">
-							<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_star_sp.png" alt="お気に入りアイコン">
+							<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_star.png" alt="お気に入りアイコン">
 						</a>
 					</div>
 					<div class="header__icon header__icon--cart active">
@@ -423,7 +423,7 @@ function initializeFunctionJs() {
 											新着商品
 										</a>
 										<div class="navUpdate">
-											<p>09/13 UP</p>
+											<p>09/09 UP</p>
 										</div>
 									</li>
 									<li>

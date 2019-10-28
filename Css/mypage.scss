@@ -1734,16 +1734,20 @@ $bp768: 768px;  // スマホ
 							};
 
 							&:nth-child(3n + 1){
-								width: 155px;
+								font-size: 18px;
+								@include font-weight(bold);
 
 								@include bp1200 {
-									width: 20%;
+									width: auto;
 								};
 
 								@include bp768 {
-									width: 100%;
-									margin-bottom: 12px;
+									line-height: 2;
 								};
+
+								span{
+									font-size: 14px;
+								}
 							}
 							
 							&:nth-child(3n +2){

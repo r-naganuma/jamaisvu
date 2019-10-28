@@ -22,6 +22,16 @@
         });
     });
 </script>
+<!-- <div class="sec sec--lead">
+    <p>
+        【メンテナンスのお知らせ】<br>
+        平素は当サイトをご利用頂き、<br class="sp_contents">誠にありがとうございます。<br>
+        この度、メンテナンスのためサイトを<br class="sp_contents">一時停止いたします。<br>
+        <span>期間：2019年9月30日(月)23:00～<br class="sp_contents">2019年10月1日(火)1:00</span><br>
+        上記期間中は、サイトの閲覧・商品の購入等が<br class="sp_contents">出来なくなります。<br>
+        皆さまには大変ご迷惑をお掛けしますが、<br class="sp_contents">何卒ご了承いただけますようお願い申し上げます。
+    </p>
+</div> -->
 <div class="sec sec--concept pc_contents">
     <div class="sec__inner">
         <h2 class="sec__title">CONCEPT</h2>
@@ -68,18 +78,23 @@
         <div class="topicsContent">
             <div class="topicsContent__list">
                 <div class="topicsContent__list-item item-1">
-                    <a href="https://jamaisvu.co.jp/category/topics/newarrivals_20190909/">
+                    <a href="https://jamaisvu.co.jp/category/topics/newarrivals_20190930/">
                         <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1.jpg" alt="topics 1">
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-2">
-                    <a href="https://jamaisvu.co.jp/category/topics/style_20190909/">
-                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_2.jpg" alt="topics 2">
+                    <a href="https://jamaisvu.co.jp/Page/topics/column/vol1/" target="_blank">
+                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_2.jpg" alt="topics 1">
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-3">
-                    <a href="#" class="noLink">
+                    <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191010/">
                         <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_3.jpg" alt="topics 3">
+                    </a>
+                </div>
+                <div class="topicsContent__list-item item-4">
+                    <a href="https://jamaisvu.co.jp/Page/lookbook/">
+                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_4.jpg" alt="topics 4">
                     </a>
                 </div>
             </div>
@@ -162,12 +177,12 @@
 	</ul>
 </div>
 
-<div class="sec sec--lookbook">
+<!-- <div class="sec sec--lookbook">
     <div class="sec__inner">
         <h2 class="sec__title">LOOKBOOK<span>NEW EDITION</span></h2>
         <div class="btnBox btn--moreWhite">
             <a href="<%= Constants.PATH_ROOT %>Page/lookbook/">MORE</a>
         </div>
     </div>
-</div>
+</div> -->
 <%-- △編集可能領域△ --%>

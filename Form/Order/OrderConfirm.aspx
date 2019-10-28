@@ -1992,7 +1992,22 @@ div#ctl00_ContentPlaceHolder1_rCartList_ctl00_hgcCouponBox th {
   <br class="clr" />
   </div><!--submain-->
   </div><!--main-->
+ <script>
+  var process = function () {
+                window.dataLayer = window.dataLayer || []
+                dataLayer.push({
+                              'sku': '<%#: string.Join(",", ((CartObject)Container.DataItem).Items.Select(x => x.VariationId)) %>',
+                              'Item_ID': '<%#: string.Join(",", ((CartObject)Container.DataItem).Items.Select(x => x.ProductId)) %>',
+                              'name': '<%#: string.Join(",", ((CartObject)Container.DataItem).Items.Select(x => x.ProductName)) %>',
+                              'category': '',
+                              'price': '<%#: string.Join(",", ((CartObject)Container.DataItem).Items.Select(x => x.Price.ToPriceString())) %>',
+                              'Cart_price': '<%#: ((CartObject)Container.DataItem).PriceSubtotal.ToPriceString() %>'
 
+                });
+
+  };
+  if (Sys && Sys.Application) { Sys.Application.add_load(process); } else { process(); }
+  </script>
 </ItemTemplate>
 </asp:Repeater>
 

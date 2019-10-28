@@ -144,15 +144,15 @@ $(function(){
 						<p class="indentTxt">
 							２）カートアイコンからカートの中身をご確認ください。内容に誤りがなければ、<br class="pc_contents">会員登録をして購入するか、ゲストとして購入するかを選択の上決済画面へ進んでください。
 						</p>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide01.jpg" class="pc_contents">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide01_sp.jpg" class="sp_contents">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide02.jpg" class="pc_contents">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide02_sp.jpg" class="sp_contents">
 					</div>
 					<div class="inner_column">
 						<p class="indentTxt">
 							３）決済画面の項目に全て入力し、注文を確定してください。
 						</p>
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide01.jpg" class="pc_contents">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide01_sp.jpg" class="sp_contents">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide03.jpg" class="pc_contents">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide03_sp.jpg" class="sp_contents">
 					</div>
 					<div class="inner_column">
 						<h4>予約商品</h4>

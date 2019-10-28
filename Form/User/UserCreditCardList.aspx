@@ -10,8 +10,6 @@
 <div class="registWrap mypageCts">
 	<h2>クレジットカード情報</h2>
 
-	<p class="catchTxt">ご登録内容をご確認ください。</p>
-
 	<div class="registWrap_box">
 		<%-- メッセージ --%>
 		<!-- <strong>
@@ -65,8 +63,7 @@
 		</asp:Repeater>
 		<!-- <asp:Literal ID="lErrorMessage" Runat="server"></asp:Literal> -->
 
-		<div class="allBtnBox allBtnBoxCredit">
-			<a href="javascript:history.back()" class="prevBtn">戻る</a>
+		<div class="submitBtnBox">
 			<asp:LinkButton id="lbInsert" runat="server" OnClick="lbInsert_Click" class="nextBtn">クレジットカードの追加</asp:LinkButton>
 		</div>
 	</div>

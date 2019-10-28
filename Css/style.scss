@@ -763,7 +763,8 @@ $bp375: 375px;  // スマホ
 				width: 21.5px;
 
 				@include bp1000 {
-					width: 28px;
+					margin-top: 2px;
+					width: 24px;
 				};
 			}
 		}
@@ -1448,6 +1449,23 @@ $bp375: 375px;  // スマホ
 			};
 		}
 
+		.sec--lead{
+			margin: -40px 0 60px;
+
+			@include bp768 {
+				margin: -80px 0 80px;
+			};
+
+			p{
+				text-align: center;
+				line-height: 1.8;
+
+				span{
+					@include font-weight(bold);
+				}
+			}
+		}
+
 		.sec--concept {
 			width: 1080px;
 			background-image: url("../Contents/ImagesPkg/user/top/bg_concept.png");
@@ -1802,7 +1820,7 @@ $bp375: 375px;  // スマホ
 			height: 640px;
 			background-size: cover;
 			background-repeat: no-repeat;
-			background-position: center;
+			background-position: center top;
 			margin-bottom: 116px;
 			display: flex;
 			align-items: center;
@@ -1845,11 +1863,35 @@ $bp375: 375px;  // スマホ
 
 			.topicsContent__list-item {
 
-				@include bp768 {
-					margin-bottom: 20px;
-				};
-
 				&.item-1 {
+					width: 536px;
+					margin-bottom: 10px;
+
+					@include bp1200 {
+						width: 49%;
+					};
+
+					@include bp768 {
+						width: 100%;
+						margin-bottom: 20px;
+					};
+				}
+
+				&.item-2 {
+					width: 536px;
+					margin-bottom: 10px;
+
+					@include bp1200 {
+						width: 49%;
+					};
+
+					@include bp768 {
+						width: 100%;
+						margin-bottom: 20px;
+					};
+				}
+
+				&.item-3 {
 					width: 536px;
 
 					@include bp1200 {
@@ -1858,11 +1900,12 @@ $bp375: 375px;  // スマホ
 
 					@include bp768 {
 						width: 100%;
+						margin-bottom: 20px;
 					};
 				}
 
-				&.item-2 {
-					width: 534px;
+				&.item-4 {
+					width: 536px;
 
 					@include bp1200 {
 						width: 49%;
@@ -1870,24 +1913,6 @@ $bp375: 375px;  // スマホ
 
 					@include bp768 {
 						width: 100%;
-					};
-				}
-
-				&.item-3 {
-					width: 534px;
-					position: absolute;
-					bottom: 0;
-					right: 0;
-
-					@include bp1200 {
-						width: 49%;
-					};
-
-					@include bp768 {
-						width: 100%;
-						position: inherit;
-						bottom: inherit;
-						right: inherit;
 					};
 				}
 
@@ -2087,7 +2112,7 @@ $bp375: 375px;  // スマホ
 
 			.vertical-title{
 				@include bp768 {
-					top: -100px;
+					top: -35px;
 					right: -11px;
 				};
 			}
@@ -3449,7 +3474,7 @@ $bp375: 375px;  // スマホ
 
 					a{
 						color: #3D3D3D;
-						font-size: 13px;
+						font-size: 11px;
 						letter-spacing: 0;
 						line-height: 1;
 

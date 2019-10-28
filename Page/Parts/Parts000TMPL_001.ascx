@@ -28,5 +28,13 @@
             <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_3.jpg" alt="">
             <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_3_sp.jpg" alt="">
     </li>
+    <li>
+            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_4.jpg" alt="">
+            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_4_sp.jpg" alt="">
+    </li>
+    <li>
+            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_5.jpg" alt="">
+            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_5_sp.jpg" alt="">
+    </li>
 </ul>
 <%-- △編集可能領域△ --%>

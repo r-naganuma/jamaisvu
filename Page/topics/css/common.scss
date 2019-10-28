@@ -1,0 +1,300 @@
+@charset "utf-8";
+/* Scss Document */
+
+/*====================================================================
+  index
+====================================================================
+
+Part name///
+  01 topics
+  02 topics_under
+  03 styling
+  
+*/
+/*====================================================================
+  01 General_style 
+====================================================================*/
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: normal;
+  color:#555;
+/*  font-family: 'Hiragino Kaku Gothic ProN', 'HiraKakuProN-W6','ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+// */  font-family: 'Lato','Noto Sans JP', sans-serif;
+//   font-family: noto-sans-cjk-jp, sans-serif;
+  font-family: 'Noto Sans Japanese';
+  font-family: 'gillsans', 'Noto Sans Japanese', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-decoration: none;
+  background: transparent;
+  color:#333;
+}
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+a:visited {
+    color: #333;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #333333;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;    /* form clear */
+ /*   -webkit-appearance: none !important;*/
+}
+
+/* --------------------
+Common
+-------------------- */
+
+/*.container h1, .container h2, .container h3, .container p, .container a {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.5em;
+}*/
+
+.container .bold {
+  font-weight: bold;
+}
+
+/* ----- Clearfix ----- */
+.clearfix:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0.1px;
+  font-size: 0.1em;
+  line-height: 0;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/*---------------------------------------------------------
+  Common
+*/
+.fl_left {
+  float: left;
+}
+
+.fl_right {
+  float: right;
+}
+
+.pc_contents {
+  display: block!important;
+}
+
+.sp_contents {
+  display: none!important;
+}
+.pc_contents_common {
+  display: block!important;
+}
+
+.sp_contents_common {
+  display: none!important;
+}
+.pc_br{
+  display: inline;
+  font-size: 10px!important;
+}
+.sp_br{
+  display: none!important;
+}
+
+@media screen and (max-width: 960px) {
+.pc_contents_common {
+  display: none!important;
+}
+
+.sp_contents_common {
+  display: block!important;
+}
+
+}
+
+
+@media screen and (max-width: 769px) {
+  .pc_contents {
+    display: none!important;
+  }
+
+  .sp_contents {
+    display: block!important;
+
+}
+.pc_br{
+  display: none;
+}
+body .sp_br{
+  display: inline!important;
+  font-size: 10px!important;
+}
+}
+
+
+
+$lato : 'Lato', sans-serif;
+$font : 'Noto Sans JP', sans-serif;
+$redcolor : #CF050B;
+
+    // background: linear-gradient(to right, red, #f1666c6e);
+
+@mixin flex() {
+  display: flex;
+  justify-content: space-between;
+}
+
+input:focus {
+  outline: 0;
+}
+@mixin placeholder($color) {
+  &::placeholder {
+    color: $color;
+  }
+
+  // IE
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+
+  // Edge
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+_:-ms-lang(x)::-ms-backdrop, .top__cntents .slider .prev {
+       bottom: 1px;
+       width:39px;
+}
+
+input {
+  @include placeholder(#aaaaaa);
+}
+select#income {
+    color: #aaaaaa;
+}
+
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+$bp340: 340px;  // スマホ
+
+@mixin bp340 {
+  @media (max-width: ($bp340)) {
+    @content;
+  }
+}
+
+/*====================================================================
+  01 topics
+====================================================================*/
+
+@import "topics";
+
+/*====================================================================
+  02 topics_under
+====================================================================*/
+
+@import "topics_under";
+
+/*====================================================================
+  03 styling
+====================================================================*/
+
+@import "styling";
+
+
+

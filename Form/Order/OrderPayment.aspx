@@ -810,10 +810,10 @@ div#primary {
 	</div>
 	<div class="boxbtm">
 	<div>
-<!-- 	<dl id="hgcCouponCodeInputArea" runat="server">
+	<dl id="hgcCouponCodeInputArea" runat="server">
 	<dt><span>クーポンコード</span></dt>
 	<dd><asp:TextBox ID="tbCouponCode" runat="server" Text="<%# GetCouponCode(((CartObject)Container.DataItem).Coupon) %>" MaxLength="30" autocomplete="off"></asp:TextBox></dd>
-	</dl> -->
+	</dl>
 	<p class="clr"><img src="../../Contents/ImagesPkg/common/clear.gif" alt="" width="1" height="1"  /></p>
 	</div>
 	<span class="fred" visible="<%# this.ErrorMessages.HasMessages(Container.ItemIndex, CartErrorMessages.ErrorKbn.Coupon) %>" runat="server">
@@ -1035,6 +1035,22 @@ div#primary {
 	<asp:HiddenField ID="hfCartId" runat="server" Value="<%# ((CartObject)Container.DataItem).CartId %>" />
 	<%-- 隠し再計算ボタン --%>
 	<asp:LinkButton id="lbRecalculateCart" runat="server" CommandArgument="<%# Container.ItemIndex %>" onclick="lbRecalculate_Click"></asp:LinkButton>
+ <script>
+  var process = function () {
+                window.dataLayer = window.dataLayer || []
+                dataLayer.push({
+                              'sku': '<%#: string.Join(",", ((CartObject)Container.DataItem).Items.Select(x => x.VariationId)) %>',
+                              'Item_ID': '<%#: string.Join(",", ((CartObject)Container.DataItem).Items.Select(x => x.ProductId)) %>',
+                              'name': '<%#: string.Join(",", ((CartObject)Container.DataItem).Items.Select(x => x.ProductName)) %>',
+                              'category': '',
+                              'price': '<%#: string.Join(",", ((CartObject)Container.DataItem).Items.Select(x => x.Price.ToPriceString())) %>',
+                              'Cart_price': '<%#: ((CartObject)Container.DataItem).PriceSubtotal.ToPriceString() %>'
+
+                });
+
+  };
+  if (Sys && Sys.Application) { Sys.Application.add_load(process); } else { process(); }
+  </script>
 </ItemTemplate>
 </asp:Repeater>
 

@@ -730,10 +730,10 @@ $bp768: 768px;  // スマホ
 		    border: none;
 	    }
 	    .productInfoList{
-			max-width: 258px;
-			width: (258%/1080*100);
-			margin:0 1.48% 0 0;
-			&:nth-of-type(4n){
+		    max-width: 189px;
+		    width: 18.8%;
+		    margin: 0 1.48% 0 0;
+			&:nth-of-type(5n){
 				margin: 0 0 0 0;
 			}
 			@include bp768 {
@@ -800,6 +800,9 @@ $bp768: 768px;  // スマホ
 			max-width: 258px;
 			width: (258%/1080*100);
 			margin:0 1.48% 0 0;
+		    // max-width: 189px;
+		    // width: 18.8%;
+		    // margin: 0 1.48% 0 0;
 			&:nth-of-type(4n){
 				margin: 0 0 0 0;
 			}

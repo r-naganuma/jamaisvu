@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: normal;
+  color:#555;
+/*  font-family: 'Hiragino Kaku Gothic ProN', 'HiraKakuProN-W6','ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+*/ 
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #333333;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;    /* form clear */
+ /*   -webkit-appearance: none !important;*/
+}
+
+/* --------------------
+Common
+-------------------- */
+
+/*.container h1, .container h2, .container h3, .container p, .container a {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.5em;
+}*/
+
+.container .bold {
+  font-weight: bold;
+}
+
+/* ----- Clearfix ----- */
+.clearfix:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0.1px;
+  font-size: 0.1em;
+  line-height: 0;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/*---------------------------------------------------------
+  Common
+*/
+.fl_left {
+  float: left;
+}
+
+.fl_right {
+  float: right;
+}
+
+.pc_contents {
+  display: block!important;
+}
+
+.sp_contents {
+  display: none!important;
+}
+.pc_contents_common {
+  display: block!important;
+}
+
+.sp_contents_common {
+  display: none!important;
+}
+.sp_br{
+  display: none;
+}
+.pc_br{
+  display: inline;
+}
+
+@media screen and (max-width: 920px) {
+  .pc_contents_common {
+    display: none!important;
+  }
+
+  .sp_contents_common {
+    display: block!important;
+  }
+
+}
+@media screen and (max-width: 769px) {
+  .pc_contents {
+    display: none!important;
+  }
+  .sp_contents {
+    display: block!important;
+  }
+  .sp_br{
+    display: inline;
+  }
+  .pc_br{
+    display: none;
+  }
+}
+
+
+
+
