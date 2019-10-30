@@ -179,7 +179,229 @@
         </li> -->
 	</ul>
 </div>
+<script>
+/*!
+ * jQuery Cookie Plugin v1.4.1
+ * https://github.com/carhartl/jquery-cookie
+ *
+ * Copyright 2006, 2014 Klaus Hartl
+ * Released under the MIT license
+ */
+(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD (Register as an anonymous module)
+        define(['jquery'], factory);
+    } else if (typeof exports === 'object') {
+        // Node/CommonJS
+        module.exports = factory(require('jquery'));
+    } else {
+        // Browser globals
+        factory(jQuery);
+    }
+}(function ($) {
 
+    var pluses = /\+/g;
+
+    function encode(s) {
+        return config.raw ? s : encodeURIComponent(s);
+    }
+
+    function decode(s) {
+        return config.raw ? s : decodeURIComponent(s);
+    }
+
+    function stringifyCookieValue(value) {
+        return encode(config.json ? JSON.stringify(value) : String(value));
+    }
+
+    function parseCookieValue(s) {
+        if (s.indexOf('"') === 0) {
+            // This is a quoted cookie as according to RFC2068, unescape...
+            s = s.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+        }
+
+        try {
+            // Replace server-side written pluses with spaces.
+            // If we can't decode the cookie, ignore it, it's unusable.
+            // If we can't parse the cookie, ignore it, it's unusable.
+            s = decodeURIComponent(s.replace(pluses, ' '));
+            return config.json ? JSON.parse(s) : s;
+        } catch(e) {}
+    }
+
+    function read(s, converter) {
+        var value = config.raw ? s : parseCookieValue(s);
+        return $.isFunction(converter) ? converter(value) : value;
+    }
+
+    var config = $.cookie = function (key, value, options) {
+
+        // Write
+
+        if (arguments.length > 1 && !$.isFunction(value)) {
+            options = $.extend({}, config.defaults, options);
+
+            if (typeof options.expires === 'number') {
+                var days = options.expires, t = options.expires = new Date();
+                t.setMilliseconds(t.getMilliseconds() + days * 864e+5);
+            }
+
+            return (document.cookie = [
+                encode(key), '=', stringifyCookieValue(value),
+                options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
+                options.path    ? '; path=' + options.path : '',
+                options.domain  ? '; domain=' + options.domain : '',
+                options.secure  ? '; secure' : ''
+            ].join(''));
+        }
+
+        // Read
+
+        var result = key ? undefined : {},
+            // To prevent the for loop in the first place assign an empty array
+            // in case there are no cookies at all. Also prevents odd result when
+            // calling $.cookie().
+            cookies = document.cookie ? document.cookie.split('; ') : [],
+            i = 0,
+            l = cookies.length;
+
+        for (; i < l; i++) {
+            var parts = cookies[i].split('='),
+                name = decode(parts.shift()),
+                cookie = parts.join('=');
+
+            if (key === name) {
+                // If second argument (value) is a function it's a converter...
+                result = read(cookie, value);
+                break;
+            }
+
+            // Prevent storing a cookie that we couldn't decode.
+            if (!key && (cookie = read(cookie)) !== undefined) {
+                result[name] = cookie;
+            }
+        }
+
+        return result;
+    };
+
+    config.defaults = {};
+
+    $.removeCookie = function (key, options) {
+        // Must not alter options, thus extending a fresh object...
+        $.cookie(key, '', $.extend({}, options, { expires: -1 }));
+        return !$.cookie(key);
+    };
+
+}));
+
+
+
+jQuery( function() {
+    var $sampleCount = jQuery.cookie( 'sampleCount' );
+    if( $sampleCount != undefined ){
+        $sampleCount++;
+    }else{
+        $sampleCount = 1;
+    }
+
+        var date = new Date();
+        date.setTime(date.getTime() + ( 3 * 24 * 60 * 60 * 1000)); //　クッキー保持時間
+        // date.setTime(date.getTime() + (  60 * 1000)); //　クッキー保持時間
+    
+    var $cokkie_day = jQuery.cookie( 'cokkie_day',"cokkie_day" , { expires: date } );
+    if($sampleCount > 2){
+        // $sampleCount = 0;
+        
+        if($sampleCount === 2){
+            jQuery( '#sampleCount' ) . html( $sampleCount );
+            jQuery.cookie( 'sampleCount', $sampleCount, { expires: date } );
+        }
+        if($cokkie_day){
+            // jQuery( '.popup' ).hide()
+            // $sampleCount = 0;
+            jQuery( '.popup' ).hide()
+            $sampleCount = 0;
+        }
+    }else{
+        jQuery( '#sampleCount' ) . html( $sampleCount );
+        jQuery.cookie( 'sampleCount', $sampleCount, { expires: date } );
+        if($cokkie_day){
+            jQuery( '.popup' ).show();
+            $sampleCount = 0;
+        }
+    }
+
+    $(".close").click(function(){
+        $(".popup").fadeOut(500);
+        return false;
+    });
+} );
+</script>
+<div class="popup">
+    <a href="">
+    <a class="close" href=""><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/close.png" alt=""></a>
+    <a href="https://jamaisvu.co.jp/Page/topics/campaign/campaign_20191018/">
+    <div class="pc_contents"><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pc_bnr.jpg" alt=""></div>
+    <div class="sp_contents"><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/sp_bnr.jpg" alt=""></div>
+    <a href="">
+</div>
+<style>
+a.close img {
+    width: 13px!important;
+}
+.popup{
+    display: none;
+    position: fixed;
+    width: 300px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99
+}
+.popup a:hover{
+    opacity: 1!important;
+}
+.popup img{
+    width: 100%;
+}
+.close {
+/*  display: none;*/
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background: #fff;
+    border-radius: 75%;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    border: 1px solid #e3e3e3;
+    font-size: 11px;
+    z-index: 10;
+}
+@media screen and (max-width: 980px){
+    .popup{
+        position: fixed;
+        width: 100%;
+        right: 0px;
+        bottom: 0px;
+        z-index: 999;
+    }
+    .close {
+        position: absolute;
+        right: 7px;
+        top: -26px;
+        border: 1px solid #e3e3e3;
+        font-size: 11px;
+    }
+}
+</style>
+<div style="margin: 1em;">
+     <h2>ポップアップ　クッキーテスト</h2>
+    <p><span id="sampleCount">1</span>回目の訪問。</p>
+</div>
 <!-- <div class="sec sec--lookbook">
     <div class="sec__inner">
         <h2 class="sec__title">LOOKBOOK<span>NEW EDITION</span></h2>
@@ -188,4 +410,5 @@
         </div>
     </div>
 </div> -->
+
 <%-- △編集可能領域△ --%>
