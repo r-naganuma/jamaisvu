@@ -33,6 +33,14 @@
      width: auto; 
      float: none; 
 }
+#Wrap .LPpageWrap a {
+    display: flex;
+}
+@media (max-width: 768px){
+  #Wrap .LPpageWrap a {
+    display: block;
+}
+}
 </style>
 <script>
 // タイトル
@@ -47,7 +55,7 @@ $("title").text("NEW ARRIVALS  ｜JAMAIS VU（ジャメヴ）公式サイト｜O
     <ul class="topics_under_list__ul">
       <li>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313241&cat=003">
-          <img src="/category/wp-content/uploads/2019/09/1930313241_LL.jpg" alt="商品画像">
+          <img src="images/1930313241_LL.jpg" alt="商品画像">
         </a>
         <div>
           <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313241&cat=003">
@@ -63,7 +71,7 @@ $("title").text("NEW ARRIVALS  ｜JAMAIS VU（ジャメヴ）公式サイト｜O
       </li>
       <li>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313231&cat=003">
-          <img src="/category/wp-content/uploads/2019/09/01_フィットカーディガン_01.jpg" alt="商品画像">
+          <img src="images/01_フィットカーディガン_01.jpg" alt="商品画像">
         </a>
         <div>
           <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313231&cat=003">
@@ -79,7 +87,7 @@ $("title").text("NEW ARRIVALS  ｜JAMAIS VU（ジャメヴ）公式サイト｜O
       </li>
       <li>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313259&cat=003">
-          <img src="/category/wp-content/uploads/2019/09/01_フィットカーディガン_02.jpg" alt="商品画像">
+          <img src="images/01_フィットカーディガン_02.jpg" alt="商品画像">
         </a>
         <div>
           <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313259&cat=003">
@@ -95,7 +103,7 @@ $("title").text("NEW ARRIVALS  ｜JAMAIS VU（ジャメヴ）公式サイト｜O
       </li>
       <li>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930314265&cat=003">
-          <img src="/category/wp-content/uploads/2019/09/2-01_NA0927.jpg" alt="商品画像">
+          <img src="images/2-01_NA0927.jpg" alt="商品画像">
         </a>
         <div>
           <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930314265&cat=003">
@@ -111,7 +119,7 @@ $("title").text("NEW ARRIVALS  ｜JAMAIS VU（ジャメヴ）公式サイト｜O
       </li>
       <li>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930314241&cat=003">
-          <img src="/category/wp-content/uploads/2019/09/2-02_NA0927_.jpg" alt="商品画像">
+          <img src="images/2-02_NA0927_.jpg" alt="商品画像">
         </a>
         <div>
           <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930314241&cat=003">
@@ -127,7 +135,7 @@ $("title").text("NEW ARRIVALS  ｜JAMAIS VU（ジャメヴ）公式サイト｜O
       </li>
       <li>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930725117&cat=007">
-          <img src="/category/wp-content/uploads/2019/09/T-2.jpg" alt="商品画像">
+          <img src="images/T-2.jpg" alt="商品画像">
         </a>
         <div>
           <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930725117&cat=007">
@@ -143,7 +151,7 @@ $("title").text("NEW ARRIVALS  ｜JAMAIS VU（ジャメヴ）公式サイト｜O
       </li>
       <li>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306165&cat=003">
-          <img src="/category/wp-content/uploads/2019/09/ニットスウェットパンツ_03.jpg" alt="商品画像">
+          <img src="images/ニットスウェットパンツ_03.jpg" alt="商品画像">
         </a>
         <div>
           <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306165&cat=003">
@@ -159,7 +167,7 @@ $("title").text("NEW ARRIVALS  ｜JAMAIS VU（ジャメヴ）公式サイト｜O
       </li>
       <li>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306111&cat=003">
-          <img src="/category/wp-content/uploads/2019/09/4-01_NA0927.jpg" alt="商品画像">
+          <img src="images/4-01_NA0927.jpg" alt="商品画像">
         </a>
         <div>
           <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306111&cat=003">
@@ -175,7 +183,7 @@ $("title").text("NEW ARRIVALS  ｜JAMAIS VU（ジャメヴ）公式サイト｜O
       </li>
       <li>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930305155&cat=003">
-          <img src="/category/wp-content/uploads/2019/09/5-01_NA0927.jpg" alt="商品画像">
+          <img src="images/5-01_NA0927.jpg" alt="商品画像">
         </a>
         <div>
           <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930305155&cat=003">
@@ -191,7 +199,7 @@ $("title").text("NEW ARRIVALS  ｜JAMAIS VU（ジャメヴ）公式サイト｜O
       </li>
       <li>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930305131&cat=003">
-          <img src="/category/wp-content/uploads/2019/09/ニットスウェットパンツ_02.jpg" alt="商品画像">
+          <img src="images/ニットスウェットパンツ_02.jpg" alt="商品画像">
         </a>
         <div>
           <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930305131&cat=003">
@@ -207,7 +215,7 @@ $("title").text("NEW ARRIVALS  ｜JAMAIS VU（ジャメヴ）公式サイト｜O
       </li>
       <li>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930724117&cat=007">
-          <img src="/category/wp-content/uploads/2019/09/T-1.jpg" alt="商品画像">
+          <img src="images/T-1.jpg" alt="商品画像">
         </a>
         <div>
           <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930724117&cat=007">
@@ -223,7 +231,7 @@ $("title").text("NEW ARRIVALS  ｜JAMAIS VU（ジャメヴ）公式サイト｜O
       </li>
       <li>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930626117&cat=006">
-          <img src="/category/wp-content/uploads/2019/09/T.jpg" alt="商品画像">
+          <img src="images/T.jpg" alt="商品画像">
         </a>
         <div>
           <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930626117&cat=006">

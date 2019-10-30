@@ -49,7 +49,7 @@ $("title").text("STYLING｜JAMAIS VU（ジャメヴ）公式サイト｜Official
   <div class="styling__innar">
     <div class="styling__innar__box a_type">
       <div class="styling__innar__box__left">
-        <img src="/category/wp-content/uploads/2019/09/１-1.jpg" alt="商品画像">
+        <img src="images/１-1.jpg" alt="商品画像">
       </div>
       <div class="styling__innar__box__right">
         <div class="styling__innar__box__right__innar">
@@ -71,7 +71,7 @@ $("title").text("STYLING｜JAMAIS VU（ジャメヴ）公式サイト｜Official
     </div>
     <div class="styling__innar__box b_type">
       <div class="styling__innar__box__left">
-        <img src="/category/wp-content/uploads/2019/09/２-1.jpg" alt="商品画像">
+        <img src="images/２-1.jpg" alt="商品画像">
       </div>
       <div class="styling__innar__box__right">
         <div class="styling__innar__box__right__innar">
@@ -93,10 +93,10 @@ $("title").text("STYLING｜JAMAIS VU（ジャメヴ）公式サイト｜Official
     </div>
     <div class="styling__innar__box c_type">
       <div class="styling__innar__box__left">
-        <img src="/category/wp-content/uploads/2019/09/３-1.jpg" alt="商品画像">
+        <img src="images/３-1.jpg" alt="商品画像">
       </div>
       <div class="styling__innar__box__right">
-        <img src="/category/wp-content/uploads/2019/09/４-1.jpg" alt="商品画像">
+        <img src="images/４-1.jpg" alt="商品画像">
         <div class="styling__innar__box__right__innar">
           <div class="sibr_box" style="margin: 0px;">
             <h3 style="margin: 0px;">RIGHT</h3>
@@ -179,7 +179,7 @@ $("title").text("STYLING｜JAMAIS VU（ジャメヴ）公式サイト｜Official
     </div>
     <div class="styling__innar__box b_type">
       <div class="styling__innar__box__left">
-        <img src="/category/wp-content/uploads/2019/09/６.jpg" alt="商品画像">
+        <img src="images/６.jpg" alt="商品画像">
       </div>
       <div class="styling__innar__box__right">
         <div class="styling__innar__box__right__innar">
@@ -214,10 +214,10 @@ $("title").text("STYLING｜JAMAIS VU（ジャメヴ）公式サイト｜Official
     </div>
     <div class="styling__innar__box c_type">
       <div class="styling__innar__box__left">
-        <img src="/category/wp-content/uploads/2019/09/８.jpg" alt="商品画像">
+        <img src="images/８.jpg" alt="商品画像">
       </div>
       <div class="styling__innar__box__right">
-        <img src="/category/wp-content/uploads/2019/09/７-1.jpg" alt="商品画像">
+        <img src="images/７-1.jpg" alt="商品画像">
         <div class="styling__innar__box__right__innar">
           <div class="sibr_box" style="margin: 0px;">
             <h3 style="margin: 0px;"></h3>

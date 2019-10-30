@@ -120,10 +120,10 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
       <h2>きれい色ピンクで女性らしさを</h2>
       <div class="e_type__innar">
         <div class="styling__innar__box__left">
-          <img src="images/01_01.png" alt="商品画像">
+          <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313231&cat=003"><img src="images/01_01.png" alt="商品画像"></a>
         </div>
         <div class="styling__innar__box__right">
-          <img src="images/01_02.png" alt="商品画像">
+          <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313231&cat=003"><img src="images/01_02.png" alt="商品画像"></a>
         </div>
       </div>
       <div class="e_type_innar">
@@ -148,7 +148,7 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
     <!-- スタイル2 -->
     <div class="styling__innar__box a_type">
       <div class="styling__innar__box__left">
-        <img src="images/01_03.png" alt="商品画像">
+        <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930725117&swrd=%e3%83%95%e3%83%aa%e3%83%bc%e3%82%b5%e3%82%a4%e3%82%ba%e3%83%86%e3%83%bc%e3%83%91%e3%83%bc%e3%83%89"><img src="images/01_03.png" alt="商品画像"></a>
       </div>
       <div class="styling__innar__box__right">
         <div class="styling__innar__box__right__innar">
@@ -168,10 +168,10 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
       <h2>落ち着いた女性らしさを演出</h2>
       <div class="e_type__innar">
         <div class="styling__innar__box__left">
-          <img src="images/02_01.png" alt="商品画像">
+          <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313265&cat=003"><img src="images/02_01.png" alt="商品画像"></a>
         </div>
         <div class="styling__innar__box__right">
-          <img src="images/02_02.png" alt="商品画像">
+          <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313265&cat=003"><img src="images/02_02.png" alt="商品画像"></a>
         </div>
       </div>
       <div class="e_type_innar">
@@ -199,7 +199,7 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
     <!-- スタイル4 -->
     <div class="styling__innar__box b_type">
       <div class="styling__innar__box__left">
-        <img src="images/02_03.png" alt="商品画像">
+        <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930724117&cat=007"><img src="images/02_03.png" alt="商品画像"></a>
       </div>
       <div class="styling__innar__box__right">
         <div class="styling__innar__box__right__innar">
@@ -220,10 +220,10 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
       <h2>秋冬カラーで明るさをキープ</h2>
       <div class="e_type__innar">
         <div class="styling__innar__box__left">
-          <img src="images/03_01.png" alt="商品画像">
+          <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313255&cat=003"><img src="images/03_01.png" alt="商品画像"></a>
         </div>
         <div class="styling__innar__box__right">
-          <img src="images/03_02.png" alt="商品画像">
+          <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313255&cat=003"><img src="images/03_02.png" alt="商品画像"></a>
         </div>
       </div>
       <div class="e_type_innar">
@@ -250,7 +250,7 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
     <!-- スタイル6 -->
     <div class="styling__innar__box a_type">
       <div class="styling__innar__box__left">
-        <img src="images/03_03.png" alt="商品画像">
+        <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930626117&cat=006"><img src="images/03_03.png" alt="商品画像"></a>
       </div>
       <div class="styling__innar__box__right">
         <div class="styling__innar__box__right__innar">
@@ -271,10 +271,10 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
       <h2>普段使いしやすいカラー</h2>
       <div class="e_type__innar">
         <div class="styling__innar__box__left">
-          <img src="images/04_01.png" alt="商品画像">
+          <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313259&cat=003"><img src="images/04_01.png" alt="商品画像"></a>
         </div>
         <div class="styling__innar__box__right">
-          <img src="images/04_02.png" alt="商品画像">
+          <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313259&cat=003"><img src="images/04_02.png" alt="商品画像"></a>
         </div>
       </div>
       <div class="e_type_innar">
@@ -305,7 +305,7 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
     <!-- スタイル8 -->
     <div class="styling__innar__box b_type">
       <div class="styling__innar__box__left">
-        <img src="images/04_03.png" alt="商品画像">
+        <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930724117&cat=007"><img src="images/04_03.png" alt="商品画像"></a>
       </div>
       <div class="styling__innar__box__right">
         <div class="styling__innar__box__right__innar">
@@ -325,10 +325,10 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
       <h2>取り入れやすい爽やかブルー</h2>
       <div class="e_type__innar">
         <div class="styling__innar__box__left">
-          <img src="images/05_01.png" alt="商品画像">
+          <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313261&cat=003"><img src="images/05_01.png" alt="商品画像"></a>
         </div>
         <div class="styling__innar__box__right">
-          <img src="images/05_02.png" alt="商品画像">
+          <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313261&cat=003"><img src="images/05_02.png" alt="商品画像"></a>
         </div>
       </div>
       <div class="e_type_innar">
@@ -356,7 +356,7 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
     <!-- スタイル10 -->
     <div class="styling__innar__box a_type">
       <div class="styling__innar__box__left">
-        <img src="images/05_03.png" alt="商品画像">
+       <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306111&cat=003"><img src="images/05_03.png" alt="商品画像"></a>
       </div>
       <div class="styling__innar__box__right">
         <div class="styling__innar__box__right__innar">
@@ -376,10 +376,10 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
       <h2>ワントーンコーデに挑戦</h2>
       <div class="e_type__innar">
         <div class="styling__innar__box__left">
-          <img src="images/06_01.png" alt="商品画像">
+          <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313241&cat=003"><img src="images/06_01.png" alt="商品画像"></a>
         </div>
         <div class="styling__innar__box__right">
-          <img src="images/06_02.png" alt="商品画像">
+          <a class="e_type_innar_t2" href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313241&cat=003"><img src="images/06_02.png" alt="商品画像"></a>
         </div>
       </div>
       <div class="e_type_innar">
@@ -407,9 +407,6 @@ $("title").text("FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official
         全てのアイテムを見る
       </a>
     </div>
-
-
-
   </div>
 </div>
 <script>
