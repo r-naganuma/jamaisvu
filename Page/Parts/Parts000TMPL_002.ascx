@@ -47,7 +47,7 @@
                 <p class="concept_txt4">
                     世界各国から良質な素材を選りすぐり、信頼できる職人により手がけられた<br>
                     「日常でありながら特別」「シンプルでいながらスペシャル」「サイズレス・シーズンレス・エイジレス」な<br>
-                    新しいニュートラルスタイルをご提案いたします。 
+                    新しいニュートラルスタイルをご提案いたします。
                 </p>
                 <p class="concept_txt5">
                     素材を知る
@@ -71,25 +71,33 @@
     </div>
 </div>
 <div class="sec sec--topics">
-    <div class="sec__inner">    
+    <div class="sec__inner">
         <h2 class="vertical-title IEpdr0">
             TOPICS
         </h2>
         <div class="topicsContent">
             <div class="topicsContent__list">
                 <div class="topicsContent__list-item item-1">
-                    <a href="https://jamaisvu.co.jp/category/topics/newarrivals_20190930/">
+                    <!-- <a href="https://jamaisvu.co.jp/category/topics/newarrivals_20190930/">
+                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1.jpg" alt="topics 1">
+                    </a> -->
+                    <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191028/">
                         <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1.jpg" alt="topics 1">
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-2">
-                    <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191010/">
-                        <img src="<%= Constants.PATH_ROOT %>Page/topics/images/thumbnail191010_l.jpg" alt="topics 2">
+                    <a href="https://jamaisvu.co.jp/Page/topics/column/vol1/" target="_blank">
+                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_2.jpg" alt="topics 1">
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-3">
-                    <a href="https://jamaisvu.co.jp/category/topics/editorscolumn_001/" target="_blank">
+                    <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191010/">
                         <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_3.jpg" alt="topics 3">
+                    </a>
+                </div>
+                <div class="topicsContent__list-item item-4">
+                    <a href="https://jamaisvu.co.jp/Page/lookbook/">
+                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_4.jpg" alt="topics 4">
                     </a>
                 </div>
             </div>
@@ -111,7 +119,7 @@
                     JAMAIS VUは「自由で正直なものづくりを大切にしたい」という考えから、素材から作り手に至るまで本当に良いものを追求し、流行に縛られないオーセンティックな製品を提案しています。
                 </p>
                 <p class="concept_txt4">
-                    世界各国から良質な素材を選りすぐり、信頼できる職人により手がけられた「日常でありながら特別」「シンプルでいながらスペシャル」「サイズレス・シーズンレス・エイジレス」な新しいニュートラルスタイルをご提案いたします。 
+                    世界各国から良質な素材を選りすぐり、信頼できる職人により手がけられた「日常でありながら特別」「シンプルでいながらスペシャル」「サイズレス・シーズンレス・エイジレス」な新しいニュートラルスタイルをご提案いたします。
                 </p>
                 <p class="concept_txt5">
                     素材を知る

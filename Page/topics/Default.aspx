@@ -29,11 +29,57 @@
 // タイトル
 $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store")
 </script>
+
 <div class="main_contents topics">
       	<h2 class="main_contents_title">TOPICS</h2>
       	<div class="topics_list">
-      		<ul class="topics_list__ul"> 
+      		<ul class="topics_list__ul">
+                              <li>
+                                    <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191028/">
+                                          <img src="https://jamaisvu.co.jp/Page/topics/images/thumbnail_feature_191028.jpg" alt="styling">
+                                          <p class="topics_list__ul__day">2019.10.28</p>
+                                          <h3 class="topics_list__category">
+                                            ELLE JAPON 掲載アイテム特集</h3>
 
+                                    </a>
+                              </li>
+
+                              <li>
+                                    <a href="https://jamaisvu.co.jp/Page/topics/newarrival/newarrivals_20191023/">
+                                          <img src="https://jamaisvu.co.jp/Page/topics/images/image_1023.jpg" alt="NEW ARRIVALS">
+                                          <p class="topics_list__ul__day">2019.10.23</p>
+                                          <h3 class="topics_list__category">
+                                           NEW ARRIVALS</h3>
+
+                                    </a>
+                              </li>
+                              <li>
+                                    <a href="https://jamaisvu.co.jp/Page/topics/campaign/campaign_20191018/">
+                                          <img src="https://jamaisvu.co.jp/Page/topics/images/image_1021.jpg" alt="NEW ARRIVALS">
+                                          <p class="topics_list__ul__day">2019.10.21</p>
+                                          <h3 class="topics_list__category">
+                                           CAMPAIGN</h3>
+
+                                    </a>
+                              </li>
+                              <li>
+                                    <a href="https://jamaisvu.co.jp/Page/topics/newarrival/newarrivals_20191016/">
+                                          <img src="https://jamaisvu.co.jp/Page/topics/images/image_1016.png" alt="NEW ARRIVALS">
+                                          <p class="topics_list__ul__day">2019.10.16</p>
+                                          <h3 class="topics_list__category">
+                                           NEW ARRIVALS</h3>
+
+                                    </a>
+                              </li>
+                              <li>
+                                    <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191010/">
+                                          <img src="https://jamaisvu.co.jp/Page/topics/images/fiature191011.png" alt="styling">
+                                          <p class="topics_list__ul__day">2019.10.10</p>
+                                          <h3 class="topics_list__category">
+                                           FEATURE</h3>
+
+                                    </a>
+                              </li>
                               <li>
                                     <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191010/">
                                           <img src="https://jamaisvu.co.jp/Page/topics/images/fiature191011.png" alt="styling">
@@ -46,7 +92,7 @@ $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official 
                               <li>
                                     <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191010/">
                                           <img src="https://jamaisvu.co.jp/Page/topics/images/thumbnail191010.jpg" alt="styling">
-                                          <p class="topics_list__ul__day">2019.10.11</p>
+                                          <p class="topics_list__ul__day">2019.10.10</p>
                                           <h3 class="topics_list__category">
                                           STYLING</h3>
 
@@ -72,7 +118,7 @@ $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official 
                               </li>
 
 
-                              
+
                               <li>
                                     <a href="/Page/topics/styling/style_20190909-2/">
                                           <img src="images/3topics_-right_A_534x260_01.jpg" alt="STYLING">
@@ -84,7 +130,7 @@ $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official 
                               </li>
 
 
-                              
+
                               <li>
                                     <a href="/Page/topics/column/editorscolumn_001/">
                                           <img src="images/editor.jpg" alt="EDITORS COLUMN">
@@ -96,7 +142,7 @@ $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official 
                               </li>
 
 
-                              
+
                               <li>
                                     <a href="/Page/topics/newarrival/newarrivals_20190909/">
                                           <img src="images/1930309161-1.jpg" alt="">
@@ -110,7 +156,7 @@ $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official 
 
                                     		</ul>
       		<div class="pager">
-      			
+
       		</div>
       	</div>
       </div>
@@ -121,4 +167,3 @@ $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official 
 
 </div>
 </asp:Content>
-

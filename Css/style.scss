@@ -1863,11 +1863,35 @@ $bp375: 375px;  // スマホ
 
 			.topicsContent__list-item {
 
-				@include bp768 {
-					margin-bottom: 20px;
-				};
-
 				&.item-1 {
+					width: 536px;
+					margin-bottom: 10px;
+
+					@include bp1200 {
+						width: 49%;
+					};
+
+					@include bp768 {
+						width: 100%;
+						margin-bottom: 20px;
+					};
+				}
+
+				&.item-2 {
+					width: 536px;
+					margin-bottom: 10px;
+
+					@include bp1200 {
+						width: 49%;
+					};
+
+					@include bp768 {
+						width: 100%;
+						margin-bottom: 20px;
+					};
+				}
+
+				&.item-3 {
 					width: 536px;
 
 					@include bp1200 {
@@ -1876,11 +1900,12 @@ $bp375: 375px;  // スマホ
 
 					@include bp768 {
 						width: 100%;
+						margin-bottom: 20px;
 					};
 				}
 
-				&.item-2 {
-					width: 534px;
+				&.item-4 {
+					width: 536px;
 
 					@include bp1200 {
 						width: 49%;
@@ -1888,24 +1913,6 @@ $bp375: 375px;  // スマホ
 
 					@include bp768 {
 						width: 100%;
-					};
-				}
-
-				&.item-3 {
-					width: 534px;
-					position: absolute;
-					bottom: 0;
-					right: 0;
-
-					@include bp1200 {
-						width: 49%;
-					};
-
-					@include bp768 {
-						width: 100%;
-						position: inherit;
-						bottom: inherit;
-						right: inherit;
 					};
 				}
 
