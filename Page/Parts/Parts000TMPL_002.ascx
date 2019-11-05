@@ -141,27 +141,27 @@
     </div>
 </div>
 <div class="sec sec--category sp_contents">
-	<ul class="category_top">
-		<li>
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">全てのアイテム</a>
-		</li>
-		<li>
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">新着アイテム</a>
-		</li>
-	</ul>
-	<ul class="category_bottom">
-		<li>
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=001&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">アウター</a>
-		</li>
-		<!-- <li>
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=002&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="lh">シャツ・<br>ブラウス</a>
-		</li> -->
-		<li>
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=003&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">ニット</a>
-		</li>
-		<li>
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=004&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">カットソー</a>
-		</li>
+    <ul class="category_top">
+        <li>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">全てのアイテム</a>
+        </li>
+        <li>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">新着アイテム</a>
+        </li>
+    </ul>
+    <ul class="category_bottom">
+        <li>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=001&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">アウター</a>
+        </li>
+        <!-- <li>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=002&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="lh">シャツ・<br>ブラウス</a>
+        </li> -->
+        <li>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=003&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">ニット</a>
+        </li>
+        <li>
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=004&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">カットソー</a>
+        </li>
         <li>
             <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=005&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">ワンピース</a>
         </li>
@@ -177,7 +177,7 @@
         <!-- <li>
             <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=009&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">靴下</a>
         </li> -->
-	</ul>
+    </ul>
 </div>
 <script>
 /*!
@@ -339,12 +339,11 @@ jQuery( function() {
 } );
 </script>
 <div class="popup">
-    <a href="">
     <a class="close" href=""><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/close.png" alt=""></a>
-    <a href="https://jamaisvu.co.jp/Page/topics/campaign/campaign_20191018/">
+    <a href="https://line.me/R/ti/p/%40461wwkgx" target="_blank">
     <div class="pc_contents"><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pc_bnr.jpg" alt=""></div>
     <div class="sp_contents"><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/sp_bnr.jpg" alt=""></div>
-    <a href="">
+    </a>
 </div>
 <style>
 a.close img {
@@ -398,10 +397,7 @@ a.close img {
     }
 }
 </style>
-<div style="margin: 1em;">
-     <h2>ポップアップ　クッキーテスト</h2>
-    <p><span id="sampleCount">1</span>回目の訪問。</p>
-</div>
+
 <!-- <div class="sec sec--lookbook">
     <div class="sec__inner">
         <h2 class="sec__title">LOOKBOOK<span>NEW EDITION</span></h2>
