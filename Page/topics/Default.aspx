@@ -35,12 +35,20 @@ $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official 
       	<div class="topics_list">
       		<ul class="topics_list__ul">
                               <li>
+                                    <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191101/">
+                                          <img src="https://jamaisvu.co.jp/Page/topics/images/thumbnail191101.jpg" alt="styling">
+                                          <p class="topics_list__ul__day">2019.11.01</p>
+                                          <h3 class="topics_list__category">
+                                          STYLING</h3>
+                                    </a>
+                              </li>
+
+                              <li>
                                     <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191028/">
                                           <img src="https://jamaisvu.co.jp/Page/topics/images/thumbnail_feature_191028.jpg" alt="styling">
                                           <p class="topics_list__ul__day">2019.10.28</p>
                                           <h3 class="topics_list__category">
                                             ELLE JAPON 掲載アイテム特集</h3>
-
                                     </a>
                               </li>
 
