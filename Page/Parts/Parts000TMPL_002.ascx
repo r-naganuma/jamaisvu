@@ -91,7 +91,7 @@
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-3">
-                    <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191010/">
+                    <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191101/">
                         <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_3.jpg" alt="topics 3">
                     </a>
                 </div>
@@ -397,7 +397,6 @@ a.close img {
     }
 }
 </style>
-
 <!-- <div class="sec sec--lookbook">
     <div class="sec__inner">
         <h2 class="sec__title">LOOKBOOK<span>NEW EDITION</span></h2>
@@ -406,5 +405,4 @@ a.close img {
         </div>
     </div>
 </div> -->
-
 <%-- △編集可能領域△ --%>
