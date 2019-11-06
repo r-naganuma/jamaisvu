@@ -35,6 +35,16 @@ $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official 
       	<div class="topics_list">
       		<ul class="topics_list__ul">
                               <li>
+                                    <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191105/">
+                                          <img src="https://jamaisvu.co.jp/Page/topics/images/thumbnail191105.jpg" alt="feature">
+                                          <p class="topics_list__ul__day">2019.11.06</p>
+                                          <h3 class="topics_list__category">
+                                          FEATURE</h3>
+                                    </a>
+                              </li>
+
+
+                              <li>
                                     <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191101/">
                                           <img src="https://jamaisvu.co.jp/Page/topics/images/thumbnail191101.jpg" alt="styling">
                                           <p class="topics_list__ul__day">2019.11.01</p>
@@ -88,7 +98,7 @@ $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official 
 
                                     </a>
                               </li>
-                              <li>
+                              <!-- <li>
                                     <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191010/">
                                           <img src="https://jamaisvu.co.jp/Page/topics/images/fiature191011.png" alt="styling">
                                           <p class="topics_list__ul__day">2019.10.11</p>
@@ -96,7 +106,7 @@ $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official 
                                            FEATURE</h3>
 
                                     </a>
-                              </li>
+                              </li> -->
                               <li>
                                     <a href="https://jamaisvu.co.jp/Page/topics/styling/style_20191010/">
                                           <img src="https://jamaisvu.co.jp/Page/topics/images/thumbnail191010.jpg" alt="styling">

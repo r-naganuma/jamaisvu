@@ -81,7 +81,7 @@
                     <!-- <a href="https://jamaisvu.co.jp/category/topics/newarrivals_20190930/">
                         <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1.jpg" alt="topics 1">
                     </a> -->
-                    <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191028/">
+                    <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191105/">
                         <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1.jpg" alt="topics 1">
                     </a>
                 </div>
@@ -308,11 +308,11 @@ jQuery( function() {
         var date = new Date();
         date.setTime(date.getTime() + ( 3 * 24 * 60 * 60 * 1000)); //　クッキー保持時間
         // date.setTime(date.getTime() + (  60 * 1000)); //　クッキー保持時間
-    
+
     var $cokkie_day = jQuery.cookie( 'cokkie_day',"cokkie_day" , { expires: date } );
     if($sampleCount > 2){
         // $sampleCount = 0;
-        
+
         if($sampleCount === 2){
             jQuery( '#sampleCount' ) . html( $sampleCount );
             jQuery.cookie( 'sampleCount', $sampleCount, { expires: date } );
