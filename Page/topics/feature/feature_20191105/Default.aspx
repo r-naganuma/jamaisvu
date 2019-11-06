@@ -77,7 +77,7 @@
         <h3 class="contentsArea__contentsBox__itemName">ニットワイドパンツ</h3>
         <div class="contentsArea__contentsBox__mainContents">
           <div class="contentsWrap">
-            <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306161&cat=003"><img src="images/main01_01.jpg" alt="" class="pc_contents"><img src="images/main01_01_sp.jpg" alt="" class="sp_contents"></a>
+            <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306111&cat=003"><img src="images/main01_01.jpg" alt="" class="pc_contents"><img src="images/main01_01_sp.jpg" alt="" class="sp_contents"></a>
             <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930313261&cat=003">
               <p>フィットカーディガン&nbsp;&nbsp;<span class="itemPrice">¥18,700</span><span class="taxin">(tax in)</span></p>
             </a>
@@ -90,7 +90,7 @@
               <p>ビルトネックタートル&nbsp;&nbsp;<span class="itemPrice">¥19,800</span><span class="taxin">(tax in)</span></p>
             </a>
             <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306161&cat=003">
-              <p>ニットワイドパンツ&nbsp;&nbsp;<span class="itemPrice">¥17,000</span><span class="taxin">(tax in)</span></p>
+              <p>ニットワイドパンツ&nbsp;&nbsp;<span class="itemPrice">¥20,900</span><span class="taxin">(tax in)</span></p>
             </a>
           </div>
         </div>
@@ -114,7 +114,7 @@
             <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306155&cat=003"><img src="images/cv_01_07.jpg" alt=""></a>
             <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306149&cat=003"><img src="images/cv_01_08.jpg" alt=""></a>
           </div>
-          <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306161&cat=003">
+          <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306111&cat=003">
             <p>
               ニットワイドパンツ&nbsp;&nbsp;<span class="itemPrice">¥20,900</span><span class="taxin">(tax in)</span>
             </p>
@@ -297,7 +297,7 @@
 
 
       <div class="nextBtnwrap">
-        <a href="" class="nextBtn">全てのアイテムを見る</a>
+        <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="nextBtn">全てのアイテムを見る</a>
       </div>
 
 
