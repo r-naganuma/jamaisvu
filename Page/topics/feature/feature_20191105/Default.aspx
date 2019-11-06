@@ -96,7 +96,7 @@
         </div>
         <div class="contentsArea__contentsBox__designArea">
           <h4>Design</h4>
-          <p>どんなアイテムにも合わせやすい<br class="sp_contents">こだわりのセミワイドシルエット。<br>リラックス感のあるアイテムですが<br class="sp_contents">密度の高い編目のクリアな表面感なので<br>トップス次第でカジュアルにも<br class="sp_contents">キレイめにも着こなせます。</p>
+          <p>どんなアイテムにも合わせやすい<br class="sp_contents">こだわりのセミワイドシルエット。<br>リラックス感のあるアイテムですが<br class="sp_contents">密度の高い編目のクリアな表面感なので<br>トップス次第でカジュアルにも<br class="sp_contents">キレイめにも着こなせます。<span><br><br>＊ウエストは紐で調整可能な仕様となっております。</span></p>
         </div>
         <div class="contentsArea__contentsBox__fabricArea">
           <h4>Fabric</h4>
@@ -163,7 +163,7 @@
         </div>
         <div class="contentsArea__contentsBox__designArea">
           <h4>Design</h4>
-          <p>絶妙なテーパードで<br class="sp_contents">ゆったりとしたワイドシルエットでも<br>スッキリとしたきちんと感のある着こなしに。<br>美しいとろみのあるドレープが女性らしく<br class="sp_contents">ラグジュアリーな雰囲気をプラスしてくれます。</p>
+          <p>絶妙なテーパードで<br class="sp_contents">ゆったりとしたワイドシルエットでも<br>スッキリとしたきちんと感のある着こなしに。<br>美しいとろみのあるドレープが女性らしく<br class="sp_contents">ラグジュアリーな雰囲気をプラスしてくれます。<span><br><br>＊ウエストは紐で調整可能な仕様となっております。</span></p>
         </div>
 
         <div class="contentsArea__contentsBox__fabricArea">
@@ -210,7 +210,7 @@
         </div>
         <div class="contentsArea__contentsBox__designArea">
           <h4>Design</h4>
-          <p>密度の高い編目のクリアな表面感で<br>カジュアル過ぎずスタイリッシュな印象に。<br>リブ部分はカットが可能なので、<br class="sp_contents">自分に合った丈感で着こなせます。</p>
+          <p>密度の高い編目のクリアな表面感で<br>カジュアル過ぎずスタイリッシュな印象に。<br>リブ部分はカットが可能なので、<br class="sp_contents">自分に合った丈感で着こなせます。<span><br><br>＊ウエストは紐で調整可能な仕様となっております。</span></p>
         </div>
         <div class="contentsArea__contentsBox__fabricArea">
           <h4>Fabric</h4>
@@ -271,7 +271,7 @@
         </div>
         <div class="contentsArea__contentsBox__designArea">
           <h4>Design</h4>
-          <p>少しゆるめのデザインがこなれた雰囲気を演出。<br>裾に向かって細身になったシルエットが<br class="sp_contents">脚のラインをしっかりとカバーし、<br>カジュアルスタイルはもちろん、<br class="sp_contents">端正なスタイルにも合う幅広いアイテムです。</p>
+          <p>少しゆるめのデザインがこなれた雰囲気を演出。<br>裾に向かって細身になったシルエットが<br class="sp_contents">脚のラインをしっかりとカバーし、<br>カジュアルスタイルはもちろん、<br class="sp_contents">端正なスタイルにも合う幅広いアイテムです。<span><br><br>＊ウエストは紐で調整可能な仕様となっております。</span></p>
         </div>
         <div class="contentsArea__contentsBox__fabricArea">
           <h4>Fabric</h4>

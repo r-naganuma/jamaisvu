@@ -294,6 +294,11 @@ $breakpoints: (
             @include mq("sm"){
               font-size: 12px;
             }
+            span{
+              font-size: 10px;
+              font-family:  noto-sans-cjk-jp,'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+              color: #333;
+            }
           }
 
 
