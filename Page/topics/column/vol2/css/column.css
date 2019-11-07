@@ -293,7 +293,7 @@ p.main_contents_titlesub {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap; } }
     .co_contents.co3 ul li {
-      width: 180px; }
+      width: 185px; }
       @media (max-width: 768px) {
         .co_contents.co3 ul li {
           width: 49%;
