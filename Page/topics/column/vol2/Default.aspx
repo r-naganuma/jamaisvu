@@ -47,7 +47,7 @@ $("title").text("COLUMN  ｜JAMAIS VU（ジャメヴ）公式サイト｜Officia
   <h2 class="main_contents_title">COLUMN 
     <span>2019.11.08</span>
   </h2>
-  <p class="main_contents_titlesub">「人気コラムニスト」<br class="sp_br">クリスウェブ佳子が<br>“JAMAIS VU”に惹かれる理由とは</p>
+  <p class="main_contents_titlesub">「人気コラムニスト」<br class="sp_br">クリス - ウェブ佳子が<br>“JAMAIS VU”に惹かれる理由とは</p>
   <h3 class="column_h3_1"></h3>
   <div class="pc_contents">
     <p class="styling__text1">前回に引き続き、ブランド名である[ JAMAIS VU ]、<br>
