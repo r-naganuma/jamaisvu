@@ -28,7 +28,7 @@
 <div class="campaignWrap">
   <div class="mainArea">
     <h2>CAMPAIGN 
-      <span>2019.10.21</span>
+      <span>2019.10.18</span>
     </h2>
     <img class="pc_contents" src="images/mv_pc.jpg" alt="">
     <img class="sp_contents" src="images/mv_sp.jpg" alt="">
@@ -73,7 +73,7 @@
         <img src="images/icn03.png" alt="">
         <p>
           <span>お受け取りから8日以内の返品</span>
-          商品のお受け取り日（配達完了日）を含め8日以内に返品のご連絡をお願いいたします。
+          商品のお受け取り日（配達完了日）を含め8日以内に返品をお願いいたします。
         </p>
       </div>
       <div class="conditionsArea_box--list">
@@ -249,7 +249,8 @@
         ・ご返送途中での破損や紛失等の事故・トラブルにつきましては、弊社では責任を負いかねます。<br>
         ・商品のご返品は、1件の注文番号に対し1回に限らせていただきます。<br>
         ・試着の際はタグ（下げ札）類の切り離しをしないでください。<br>
-        ・返品商品は、お届け時と同じ状態でお戻しください。
+        ・返品商品は、お届け時と同じ状態でお戻しください。<br>
+        ・他のクーポンと併用はできません。
       </p>
     </div>
   </div>
