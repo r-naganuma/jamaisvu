@@ -30,8 +30,8 @@
             text-decoration: underline;
       }
 #Contents div.column {
-     width: auto; 
-     float: none; 
+     width: auto;
+     float: none;
 }
 
 #Wrap .LPpageWrap a {
@@ -76,7 +76,7 @@ opacity: 1!important;
 $("title").text("STYLING｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store")
 </script>
 <div class="main_contents topics_under styling">
-  <h2 class="main_contents_title">STYLING 
+  <h2 class="main_contents_title">STYLING
     <span>2019.10.11</span>
   </h2>
   <p class="styling__text1"></p>
@@ -193,8 +193,8 @@ $("title").text("STYLING｜JAMAIS VU（ジャメヴ）公式サイト｜Official
               </a>
             </div>
             <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930300131&cat=003">
-                <span class="topics_under_list__ul__1">ニットスウェット</span>
+              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930334131&cat=003">
+                <span class="topics_under_list__ul__1">ドルマンプルオーバー</span>
                 <div class="div_innar">
                   <span class="topics_under_list__ul__2">¥17,600
                     <span>(tax in)</span>
@@ -255,7 +255,7 @@ $("title").text("STYLING｜JAMAIS VU（ジャメヴ）公式サイト｜Official
     </div>
     <div class="styling__innar__box c_type c2">
       <div class="styling__innar__box__left">
-       
+
       </div>
       <div class="styling__innar__box__right">
          <img src="images/4-1-min.jpg" alt="商品画像">
@@ -356,4 +356,3 @@ $("title").text("STYLING｜JAMAIS VU（ジャメヴ）公式サイト｜Official
 
 </div>
 </asp:Content>
-
