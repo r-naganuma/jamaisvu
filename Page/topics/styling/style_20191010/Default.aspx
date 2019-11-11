@@ -230,8 +230,8 @@ $("title").text("STYLING｜JAMAIS VU（ジャメヴ）公式サイト｜Official
               </a>
             </div>
             <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930300131&cat=003">
-                <span class="topics_under_list__ul__1">ニットスウェット</span>
+              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930334131&cat=003">
+                <span class="topics_under_list__ul__1">ドルマンプルオーバー</span>
                 <div class="div_innar">
                   <span class="topics_under_list__ul__2">¥17,600
                     <span>(tax in)</span>
@@ -281,10 +281,10 @@ $("title").text("STYLING｜JAMAIS VU（ジャメヴ）公式サイト｜Official
               </a>
             </div>
             <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930337161&cat=003">
-                <span class="topics_under_list__ul__1">ビルトネックプルオーバー</span>
+              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930338161&vid=1930338161free&cat=003">
+                <span class="topics_under_list__ul__1">クルーネックプルオーバー</span>
                 <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥23,100
+                  <span class="topics_under_list__ul__2">¥20,900
                     <span>(tax in)</span>
                   </span>
                 </div>
@@ -318,10 +318,10 @@ $("title").text("STYLING｜JAMAIS VU（ジャメヴ）公式サイト｜Official
               </a>
             </div>
             <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930337161&cat=003">
-                <span class="topics_under_list__ul__1">ビルトネックプルオーバー</span>
+              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930338161&vid=1930338161free&cat=003">
+                <span class="topics_under_list__ul__1">クルーネックプルオーバー</span>
                 <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥23,100
+                  <span class="topics_under_list__ul__2">¥20,900
                     <span>(tax in)</span>
                   </span>
                 </div>
