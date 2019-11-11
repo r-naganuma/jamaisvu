@@ -1,0 +1,290 @@
+$breakpoints: (
+  'sm': 'screen and (max-width: 374px)',
+  'nsm': 'screen and (min-width: 374px)',
+  'md': 'screen and (max-width: 769px)',
+  'pc': 'screen and (min-width: 769px)',
+  'lg': 'screen and (max-width: 1000px)',
+  'xl': 'screen and (max-width: 1200px)',
+)
+!default;
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@font-face {
+	font-family: 'gillsans';
+	src: url("../../../../../Font/gillsans.woff") format('woff'),
+		 url('../../../../../Font/gillsans.otf') format("opentype");
+}
+
+
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+
+@include mq("pc") {
+  .sp_contents {
+    display: none!important;
+  }
+}
+@include mq("nsm") {
+  .sm_contents {
+    display: none!important;
+  }
+}
+@include mq() {
+  .pc_contents {
+    display: none!important;
+  }
+}
+
+#Wrap .topicsWrap{
+
+  	width: 1080px;
+    margin: 0 auto;
+  	color: #333;
+  	font-size: 14px;
+  	line-height: 26px;
+  	letter-spacing: 0.08em;
+  	font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  	font-weight: 400;
+
+  	@include mq() {
+  		width: 100%;
+  		line-height: 2;
+  		letter-spacing: 0.08em;
+  		// padding: 0 18px;
+  		box-sizing: border-box;
+  	};
+
+  	ul{
+  		margin: 0;
+  		padding: 0;
+
+  		li{
+  			list-style-type: none;
+  			padding: 0;
+  			margin: 0;
+  		}
+  	}
+
+  	p{
+  		margin: 0;
+  		padding: 0;
+  		line-height: 26px;
+      font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+
+  		@include mq() {
+  			line-height: 2;
+  		};
+  	}
+
+  	a{
+  		text-decoration: none;
+  		color: #000;
+  		font-weight: 300;
+  		display: block;
+  	}
+
+  	img{
+  		width: 100%;
+  		display: block;
+  	}
+
+    h2{
+      span{
+        display: block;
+        color: #C0B6B3;
+        margin-top: 15px;
+        letter-spacing: 0.16em;
+        line-height: 1;
+        font-family: 'gillsans', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+        font-size: 16px;
+      }
+    }
+
+    h3{
+      color: #333;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.08em;
+      font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+      font-weight: 700;
+      // margin-bottom: 55px;
+      position: relative;
+      text-align: center;
+
+
+      @include mq() {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 0px;
+      };
+
+      span{
+        font-size: 16px;
+        display: block;
+
+        @include mq() {
+          font-size: 14px;
+        };
+      }
+    }
+
+  	.mainArea{
+  		width: 900px;
+  		margin: 0 auto;
+
+      h2{
+        font-family: baskerville-urw, serif;
+        text-align: center;
+        font-size: 32px;
+        color: #2E0E02;
+        letter-spacing: 0.1em;
+        line-height: 38px;
+        font-weight: normal;
+        @include mq(){
+          font-size: 24px;
+          line-height: 28px;
+        }
+        span.subTtl{
+          font-size: 28px;
+          font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+          text-align: center;
+          color: #2E0E02;
+          font-weight: normal;
+          @include mq(){
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+      .mainVisual{
+        margin-top: 50px;
+        @include mq(){
+         margin-top: 40px;
+        }
+      }
+
+  		@include mq() {
+  			width: 100%;
+  		}
+    }
+
+    .contentsArea{
+      margin-top: 120px;
+      @include mq(){
+        margin-top: 60px;
+      }
+
+      .itemDetail>p{
+        font-family:  noto-sans-cjk-jp,'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        line-height: 19.5px;
+        text-align: left;
+        margin-top: 10px;
+        .itemPrice{
+          font-family:  noto-sans-cjk-jp,'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 13px;
+          letter-spacing: 0.08em;
+          line-height: 19.5px;
+        }
+        .taxin{
+          font-size: 10px;
+          font-weight: bold;
+        }
+      }
+
+      &__box{
+        margin-left: auto;
+        margin-right: auto;
+
+        .title{
+          width: 320px;
+          height: auto;
+          margin: 0 auto;
+          @include mq(){
+           width: (280/375)*100vw;
+          }
+        }
+        >p{
+          font-size: 14px;
+          letter-spacing: 0.08em;
+          line-height: 25.2px;
+          font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+          margin-top: 15px;
+          text-align: center;
+        }
+        & + .contentsArea__box{
+          margin-top: 94px;
+          @include mq(){
+            margin-top: 120px;
+          }
+        }
+        &__stylingWrap{
+          display: -webkit-flex;
+          display: -ms-flex;
+          display: flex;
+          width: 1080px;
+          height: auto;
+          justify-content: space-between;
+          margin-top: 40px;
+
+          @include mq(){
+           flex-direction: column;
+           width: (340/375)*100vw;
+           margin: 0px auto;
+          }
+        }
+        .styling{
+          width: 520px;
+          height: auto;
+          @include mq(){
+           width: (340/375)*100vw;
+           height: auto;
+           margin-top: 30px;
+          }
+          .itemImg{
+            margin-bottom: 20px;
+            @include mq(){
+             margin-bottom: 10px;
+            }
+          }
+          &.solo{
+            margin: auto;
+            .itemDetail p{
+              text-align: center;
+              @include mq(){
+               text-align: left;
+              }
+            }
+            &__brown{
+              margin-top: 60.5px;
+            }
+            &__blue{
+              margin-top: 40px;
+              margin-bottom: 20px;
+            }
+          }
+
+        }
+
+      }
+
+      .nextBtnwrap{
+        margin-top: 130px;
+        margin-bottom: 120px;
+        @include mq(){
+          margin-top: 100px;
+          margin-bottom: 65px;
+        }
+      }
+
+    }
+
+}
