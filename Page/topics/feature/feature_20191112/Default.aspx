@@ -63,7 +63,7 @@
     <div class="mainArea">
       <h2>FEATURE<br>
         <span class="subtit"></span>
-        <span>2019.11.13</span>
+        <span>2019.11.12</span>
       </h2>
       <img class="mainVisual" src="images/mv.jpg" alt="">
     </div>
@@ -163,7 +163,7 @@
           </div>
           <div class="styling">
             <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306125&cat=003" class="itemImg"><img src="images/orange_02.jpg" alt=""></a>
-            <a href="" class="itemDetail">
+            <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930335149&cat=003" class="itemDetail">
               <p>
                 ボートネックワンピース&nbsp;&nbsp;<span class="itemPrice">¥25,300</span><span class="taxin">(tax in)</span>
               </p>
