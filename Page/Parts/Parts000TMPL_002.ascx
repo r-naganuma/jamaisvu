@@ -78,11 +78,8 @@
         <div class="topicsContent">
             <div class="topicsContent__list">
                 <div class="topicsContent__list-item item-1">
-                    <!-- <a href="https://jamaisvu.co.jp/category/topics/newarrivals_20190930/">
-                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1.jpg" alt="topics 1">
-                    </a> -->
-                    <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191105/">
-                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1.jpg" alt="topics 1">
+                    <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191112/">
+                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1_1112.jpg" alt="topics 1">
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-2">
