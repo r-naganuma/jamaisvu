@@ -431,7 +431,3 @@ p.main_contents_titlesub {
 @media (max-width: 768px) {
   .co_contents .btnBox.btn--more a:visited {
     color: #2E0E02; } }
-
-.feature .main_img {
-  width: 800px;
-  margin: auto; }

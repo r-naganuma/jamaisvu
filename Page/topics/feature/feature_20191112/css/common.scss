@@ -171,6 +171,9 @@ $breakpoints: (
 
   		@include mq() {
   			width: 100%;
+        img{
+          height: (175/375)*100vw!important;
+        }
   		}
     }
 

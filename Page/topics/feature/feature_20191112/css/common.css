@@ -172,6 +172,9 @@
 	#Wrap .topicsWrap .mainArea {
 		width: 100%;
 	}
+	#Wrap .topicsWrap .mainArea img {
+		height: 46.66667vw !important;
+	}
 }
 
 #Wrap .topicsWrap .contentsArea {

@@ -7,7 +7,7 @@
 --%>
 <%-- ▽ユーザーコントロール宣言領域▽ --%>
 <%-- △ユーザーコントロール宣言領域△ --%>
-<%@ Page Title="LOOKBOOK一覧｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="JAMAIS VU （ジャメヴ）のLOOKBOOKページ。2019AWコレクションを掲載中。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="LOOKBOOK,ルックブック,JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
+<%@ Page Title="LOOKBOOK一覧｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="JAMAIS VU （ジャメヴ）のLOOKBOOKページ。2019AWコレクションを掲載中。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="COLUMN,コラム,JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
 <%--
 
 下記のタグはファイル情報保持用です。削除しないでください。
@@ -47,12 +47,12 @@ $("title").text("COLUMN  ｜JAMAIS VU（ジャメヴ）公式サイト｜Officia
   <h2 class="main_contents_title">COLUMN 
     <span>2019.10.07</span>
   </h2>
-  <p class="main_contents_titlesub">「人気コラムニスト」<br class="sp_br">クリス - ウェブ佳子が<br>“JAMAIS VU”に惹かれる理由とは</p>
+  <p class="main_contents_titlesub">「人気コラムニスト」<br class="sp_br">クリス-ウェブ 佳子が<br>“JAMAIS VU”に惹かれる理由とは</p>
   <h3 class="column_h3_1"></h3>
   <div class="pc_contents">
     <p class="styling__text1">今回は、ブランド名である[ JAMAIS VU ]。<br>
     そして、ブランドコンセプト『過去と未来 既知と未知 いつだって その真ん中が心地良い』<br>
-    これらの起案者であるクリス - ウェブ 佳子（モデル・コラムニスト）にお話を伺いました。<br><br>
+    これらの起案者であるクリス-ウェブ 佳子（モデル・コラムニスト）にお話を伺いました。<br><br>
 
     各国の成功者たちの名前を挙げ、彼らの共通点やセルフブランディングの為の装い、<br>
     彼らはどうして“only me”を手に入れるのか、そのためには何が必要なのかを語っていただきました。
@@ -64,7 +64,7 @@ $("title").text("COLUMN  ｜JAMAIS VU（ジャメヴ）公式サイト｜Officia
       そして、ブランドコンセプト<br>
       『過去と未来 既知と未知 <br>
       いつだって その真ん中が心地良い』<br>
-      これらの起案者であるクリス - ウェブ 佳子（モデル・コラムニスト）にお話を伺いました。<br><br>
+      これらの起案者であるクリス-ウェブ 佳子（モデル・コラムニスト）にお話を伺いました。<br><br>
 
       各国の成功者たちの名前を挙げ、<br>
       彼らの共通点やセルフブランディングの為の装い、<br>
