@@ -406,8 +406,8 @@
 			$('.searchBox_list--material li:nth-child(4)').addClass("on");
 			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
-		if(document.URL.match("JUST")) {
-			$('.pdList_conditions .sizasize1').text('\u00a0/ JUST FIT');
+		if(document.URL.match("REGULAR")) {
+			$('.pdList_conditions .sizasize1').text('\u00a0/ REGULAR');
 			$('.searchBox_list--size li:nth-child(1)').addClass("on");
 			$('.searchBox_list--size').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--size li.on').text());
 		}

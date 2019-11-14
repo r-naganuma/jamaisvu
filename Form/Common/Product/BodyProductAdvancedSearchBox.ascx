@@ -203,7 +203,7 @@
 		<div class="searchBox_list searchBox_size">
 			<p class="searchBox_list--ttl">サイズ</p>
 			<asp:CheckBoxList ID="size" DataTextField="size" DataValueField="Value" RepeatDirection="Vertical" RepeatLayout="UnorderedList" runat="server" class="searchBox_list--column searchBox_list--size">
-				<asp:ListItem>REGULAR</asp:ListItem>
+				<asp:ListItem>JUST FIT</asp:ListItem>
 				<asp:ListItem>LOOSE</asp:ListItem>
 				<asp:ListItem>FREE</asp:ListItem>
 			</asp:CheckBoxList>
