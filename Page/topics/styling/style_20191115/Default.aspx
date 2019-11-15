@@ -323,25 +323,25 @@ opacity: 1!important;
           <div class="sibr_box">
             <!-- <h3 style="margin: 0px;">01</h3> -->
             <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930308265&cat=003">
-                <span class="topics_under_list__ul__1">Wポケットカーディガン</span>
+              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930335111&cat=003">
+                <span class="topics_under_list__ul__1">ボートネックワンピース</span>
                 <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥23,100
+                  <span class="topics_under_list__ul__2">¥25,300
                     <span>(tax in)</span>
                   </span>
                 </div>
               </a>
             </div>
-            <!-- <div>
-              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930730117&cat=007">
-                <span class="topics_under_list__ul__1">フリーサイズワイド</span>
+            <div>
+              <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306149&cat=003">
+                <span class="topics_under_list__ul__1">ニットワイドパンツ</span>
                 <div class="div_innar">
-                  <span class="topics_under_list__ul__2">¥23,100
+                  <span class="topics_under_list__ul__2">¥20,900
                     <span>(tax in)</span>
                   </span>
                 </div>
               </a>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
