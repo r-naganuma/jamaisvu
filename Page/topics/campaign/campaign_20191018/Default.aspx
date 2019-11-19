@@ -66,7 +66,8 @@
       返品条件
     </h3>
     <p class="conditionsArea_lead">
-      以下の条件を満たしている場合、<br class="sp_contents">返品送料0円でご試着の対象となります。
+      「JAMAIS VU公式LINEアカウントをお友だち登録して頂き、<br>ご購入時にクーポンコード<!-- <strong>「1018jamaisvu」</strong> -->をご入力ください。<br>
+      その上で、以下の条件を満たしている場合、<br class="sp_contents">返品送料0円でご試着の対象となります。
     </p>
     <div class="conditionsArea_box">
       <div class="conditionsArea_box--list">
