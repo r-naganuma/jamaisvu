@@ -2716,6 +2716,8 @@ $bp375: 375px;  // スマホ
 
 						p{
 							line-height: 1;
+							position: relative;
+							z-index: 2;
 						}
 					}
 				}
@@ -2728,8 +2730,21 @@ $bp375: 375px;  // スマホ
 
 					li{
 						&.on{
-							background-color: #e1dcda;
 							position: relative;
+
+							&::after{
+								content: "";
+								position: absolute;
+								top: 0;
+								left: 0;
+								height: 39px;
+								background-color: #e1dcda;
+								width: 100%;
+
+								@include bp768 {
+									height: 43px;
+								};
+							}
 
 							&:hover{
 								background-color: #e1dcda !important;
@@ -2739,6 +2754,45 @@ $bp375: 375px;  // スマホ
 						&:hover{
 							background-color: #f3f0f0;
 						}
+
+						&.catParent{
+							position: relative;
+
+							&:before{
+								content: "";
+								position: absolute;
+								top: 12px;
+								right: 10px;
+								margin: auto;
+								z-index: 1;
+								display: block;
+								width: 9px;
+								height: 9px;
+								transform: rotate(135deg);
+								border-top: 1.5px solid #3D3D3D;
+								border-right: 1.5px solid #3D3D3D;
+
+								@include bp768 {
+									right: 16px;
+									border-top: 1.5px solid #2E0E02;
+									border-right: 1.5px solid #2E0E02;
+								};
+							}
+
+							&.open{
+								&::before{
+									transform: rotate(135deg);
+									animation: arrowRotate .5s ease 0s forwards;
+									top: 16px;
+									bottom: inherit;
+								}
+							}
+						}
+					}
+
+					.catChild{
+						margin-top: 10px;
+						display: none;
 					}
 				}
 
