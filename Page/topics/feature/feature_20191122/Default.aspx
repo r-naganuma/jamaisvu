@@ -32,7 +32,7 @@
 <div class="featureWrap topicsWrap feature">
   <div class="mainArea">
     <h2>FEATURE
-      <span>2019.11.19</span>
+      <span>2019.11.22</span>
     </h2>
     <div class="main-visual">
       <img class="" src="images/1800x840.jpg" alt="Kint Fair 対象商品の「ミドルゲージニット」が¥4,000OFF">
