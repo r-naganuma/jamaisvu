@@ -17,24 +17,20 @@
 <%-- ▽編集可能領域：コンテンツ▽ --%>
 <ul class="mainVisual">
     <li>
-            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_1.jpg" alt="">
-            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_1_sp.jpg" alt="">
+            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_1_191122.jpg" alt="">
+            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_1_sp_191122.jpg" alt="">
     </li>
     <li>
-            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_2.jpg" alt="">
-            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_2_sp.jpg" alt="">
+            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_2_191122.jpg" alt="">
+            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_2_sp_191122.jpg" alt="">
     </li>
     <li>
-            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_3.jpg" alt="">
-            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_3_sp.jpg" alt="">
+            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_3_191122.jpg" alt="">
+            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_3_sp_191122.jpg" alt="">
     </li>
     <li>
-            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_4.jpg" alt="">
-            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_4_sp.jpg" alt="">
-    </li>
-    <li>
-            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_5.jpg" alt="">
-            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_5_sp.jpg" alt="">
+            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_4_191122.jpg" alt="">
+            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/main_visual_4_sp_191122.jpg" alt="">
     </li>
 </ul>
 <%-- △編集可能領域△ --%>
