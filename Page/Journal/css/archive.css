@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Times';
+  src: url("../../../../../Font/Times.eot");
+  src: url("../../../../../Font/Times.eot?#iefix") format("embedded-opentype"), url("../../../../../Font/Times.woff") format("woff"), url("../../../../../Font/Times.ttf") format("truetype");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+.pc_contents {
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  .pc_contents {
+    display: none !important;
+  }
+}
+
+.sp_contents {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .sp_contents {
+    display: block !important;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap {
+  width: 1060px;
+  margin: 0 auto 120px;
+  color: #333;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+@media (max-width: 1100px) {
+  #Wrap .LPpageWrap .journalWrap {
+    width: 96.36%;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap {
+    width: 89.33%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap ul {
+  margin: 0;
+  padding: 0;
+}
+
+#Wrap .LPpageWrap .journalWrap ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Wrap .LPpageWrap .journalWrap p {
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap p {
+    line-height: 24px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 300;
+  display: block;
+}
+
+#Wrap .LPpageWrap .journalWrap img {
+  width: 100%;
+  display: block;
+}
+
+#Wrap .LPpageWrap .journalWrap h2 {
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  font-family: 'Times';
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap h2 {
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap_box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap_box ul {
+    display: block;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap_box ul li {
+  width: 340px;
+  margin: 0 20px 40px 0;
+}
+
+@media (max-width: 1100px) {
+  #Wrap .LPpageWrap .journalWrap_box ul li {
+    width: 32%;
+    margin: 0 15px 40px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap_box ul li {
+    width: 100%;
+    margin: 0 0 40px 0;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap_box ul li:nth-child(3n) {
+  margin-right: 0;
+}
+
+#Wrap .LPpageWrap .journalWrap_box ul li .journalCat {
+  font-size: 12px;
+  color: #888888;
+  line-height: 1;
+  margin: 15px 0 10px;
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap_box ul li .journalCat {
+    margin: 10px 0 7.5px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap_box ul li .journalTtl {
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap_box ul li .journalTtl {
+    margin: 0 0 7.5px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap_box ul li .journalDate {
+  font-size: 11px;
+  color: #888888;
+  line-height: 1;
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+}
+
+#Wrap .LPpageWrap .journalWrap_box #pagination_journal {
+  clear: both;
+  text-align: center;
+}
+
+#Wrap .LPpageWrap .journalWrap_box #pagination_journal span {
+  font-family: interstate, sans-serif;
+  font-weight: 400;
+  color: #333;
+  display: inline-block;
+  margin-left: 24px;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  position: relative;
+  width: 20px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap_box #pagination_journal span {
+    margin-left: 19px;
+    font-size: 12px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap_box #pagination_journal span.current::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: -7px;
+  width: 14px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #333;
+}
+
+#Wrap .LPpageWrap .journalWrap_box #pagination_journal span:first-child {
+  margin-left: 0;
+}
