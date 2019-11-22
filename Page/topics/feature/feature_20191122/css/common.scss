@@ -1,0 +1,354 @@
+$breakpoints: (
+  'sm': 'screen and (max-width: 374px)',
+  'nsm': 'screen and (min-width: 374px)',
+  'md': 'screen and (max-width: 769px)',
+  'pc': 'screen and (min-width: 769px)',
+  'lg': 'screen and (max-width: 1000px)',
+  'xl': 'screen and (max-width: 1200px)',
+)
+!default;
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin noto {
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
+@font-face {
+	font-family: 'gillsans';
+	src: url("../../../../../Font/gillsans.woff") format('woff'),
+		 url('../../../../../Font/gillsans.otf') format("opentype");
+}
+
+
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+
+@include mq("pc") {
+  .sp_content {
+    display: none!important;
+  }
+}
+@include mq("nsm") {
+  .sm_contents {
+    display: none!important;
+  }
+}
+@include mq() {
+  .pc_content {
+    display: none!important;
+  }
+}
+
+#Wrap .featureWrap{
+
+  	width: 1080px;
+    margin: 0 auto;
+  	color: #333;
+  	font-size: 14px;
+  	line-height: 26px;
+  	letter-spacing: 0.08em;
+
+  	font-weight: 400;
+
+  	@include mq() {
+  		width: 100%;
+  		line-height: 2;
+  		letter-spacing: 0.08em;
+  		// padding: 0 18px;
+  		box-sizing: border-box;
+  	};
+
+  	ul{
+  		margin: 0;
+  		padding: 0;
+
+  		li{
+  			list-style-type: none;
+  			padding: 0;
+  			margin: 0;
+  		}
+  	}
+
+  	p{
+  		margin: 0;
+  		padding: 0;
+  		line-height: 26px;
+      text-align: center;
+      @include noto;
+  		@include mq() {
+  			line-height: 2;
+  		};
+  	}
+
+  	a{
+  		text-decoration: none;
+  		color: #000;
+  		font-weight: 300;
+  		display: block;
+  	}
+
+  	img{
+  		width: 100%;
+  		display: block;
+  	}
+
+    h2{
+      text-align: center;
+      margin: {
+        top: 0;
+        bottom: 0;
+      }
+      span{
+        display: block;
+        color: #C0B6B3;
+        margin-top: 15px;
+        letter-spacing: 0.16em;
+        line-height: 1;
+        @include noto;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+    h3{
+      color: #333;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.08em;
+      @include noto;
+      font-weight: 700;
+      position: relative;
+      text-align: center;
+      margin: {
+        top: 0;
+        bottom: 0;
+      }
+
+
+      @include mq() {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 0px;
+      };
+
+      span{
+        font-size: 16px;
+        display: block;
+        text-align: center;
+
+        @include mq() {
+          font-size: 14px;
+        };
+      }
+    }
+
+  	.mainArea{
+  		width: 900px;
+      height: auto;
+  		margin: 0 auto;
+      @include mq(){
+        width: 100%;
+      }
+
+      h2{
+        font-family: baskerville-urw, serif;
+        text-align: center;
+        font-size: 32px;
+        color: #2E0E02;
+        letter-spacing: 0.1em;
+        line-height: 38px;
+        font-weight: normal;
+        @include mq(){
+          font-size: 24px;
+          line-height: 28px;
+        }
+        span.subTtl{
+          font-size: 28px;
+          @include noto;
+          text-align: center;
+          color: #2E0E02;
+          font-weight: normal;
+          @include mq(){
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+
+      .main-visual{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        @include mq(){
+          margin-top: 40px;
+        }
+      }
+      p{
+        font-size: 14px;
+        margin-top: 80px;
+        @include noto;
+        letter-spacing: 0.04em;
+        line-height: 25.2px;
+        text-align: center;
+        @include mq(){
+          margin-top: 40px;
+
+        }
+      }
+
+    }
+
+    .couponArea{
+      margin-top: 50px;
+      @include mq(){
+        margin-top: 40px;
+      }
+      h3{
+        font-size: 20px;
+        letter-spacing: 0.07em;
+        line-height: 30px;
+        font-weight: bold;
+        @include mq(){
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+      .description{
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        line-height: 20px;
+        margin-top: 10px;
+        @include mq(){
+          margin-top: 0;
+        }
+      }
+      .coupon{
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        line-height: 20px;
+        margin-top: 50px;
+        @include mq(){
+          margin-top: 40px;
+        }
+        span{
+          font-size: 28px;
+          width: 60px;
+          line-height: 60px;
+          border: 1px solid  #ccc;
+          height: 60px;
+          width: 200px;
+          display: block;
+          margin: 10px auto 0;
+        }
+      }
+      .note{
+        font-size: 11px;
+        color: #6F7579;
+        letter-spacing: 0.08em;
+        line-height: 1;
+        margin-top: 5px;
+        &:nth-child(5){
+          margin-top: 30px;
+        }
+      }
+
+    }
+
+    .pickUpArea{
+      margin: 120px auto 0;
+      @include mq(){
+        margin-top: 80px;
+      }
+      h3{
+        font-size: 20px;
+        letter-spacing: 0.07em;
+        line-height: 1;
+        color: #333;
+        @include mq(){
+          font-size: 18px;
+          letter-spacing: 0.08em;
+        }
+      }
+
+      &__part{
+        width: 720px;
+        height: auto;
+        margin: 60px auto 0;
+        @include mq(){
+          width: (340/375)*100vw;
+          margin-top: 40px;
+        }
+        .contentsWrap{
+          display: -webkit-flex;
+          display: -ms-flex;
+          display: flex;
+          justify-content: space-between;
+          &__content{
+            width: 340px;
+            height: auto;
+            @include mq(){
+              width: (166/375)*100vw;
+              height: auto;
+            }
+            a{
+              font-size: 13px;
+              letter-spacing: 0.08em;
+              font-weight: normal;
+              line-height: 19.5px;
+              text-align: center;
+              margin-top: 5px;
+              @include noto;
+              @include mq(){
+                font-size: 12px;
+              }
+              .itemPrice{
+                font-weight: bold;
+              }
+              .tax{
+                font-size: 10px;
+              }
+            }
+          }
+        }
+        .colorLineUp{
+          font-size: 13px;
+          letter-spacing: 0.08em;
+          line-height: 19.5px;
+          margin-top: 10px;
+        }
+      }
+    }
+    .nextBtnwrap{
+      width: 320px;
+      height: 64px;
+      font-size: 14px;
+      margin: {
+        top: 60.5px;
+        bottom: 120px;
+        left: auto;
+        right: auto;
+      };
+      @include mq(){
+        width: (240/375)*100vw;
+        height: 48px;
+        font-size: 12px;
+        margin: {
+          top: 40px;
+          bottom: 65px;
+          left: auto;
+          right: auto;
+        };
+      }
+      .nextBtn{
+        width: 100%!important;
+      }
+    }
+
+
+
+}
