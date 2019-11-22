@@ -44,7 +44,7 @@
 			<p class="searchBox_list--ttl">カテゴリー</p>
 			<asp:DropDownList ID="ddlCategories" Style="display:none;" Runat="server"></asp:DropDownList>
 			<ul class="searchBox_list--column searchBox_list--category">
-				<li>
+				<li class="canAll">
 					<p>すべて</p>
 				</li>
 				<li>
@@ -53,7 +53,7 @@
 				<!-- <li>
 					<p>シャツ・ブラウス</p>
 				</li> -->
-				<li>
+				<li class="catParent catKnit">
 					<p>ニット</p>
 				</li>
 				<li>
@@ -74,6 +74,26 @@
 				<!-- <li>
 					<p>靴下</p>
 				</li> -->
+				<ul class="catChild catKnit_child">
+					<li>
+						<p>タートルネック</p>
+					</li>
+					<li>
+						<p>パーカー</p>
+					</li>
+					<li>
+						<p>カーディガン</p>
+					</li>
+					<li>
+						<p>クルーネック</p>
+					</li>
+					<li>
+						<p>ボートネック</p>
+					</li>
+					<li>
+						<p>ミドルゲージ</p>
+					</li>
+				</ul>
 			</ul>
 		</div>
 	</td>
@@ -281,6 +301,12 @@
 				}
 			});
 		});
+	});
+
+	$(".catKnit_child").appendTo(".catKnit");
+
+	$(".catKnit").click(function () {
+	  $(".catKnit ul").slideToggle();
 	});
 </script>
 <%-- △編集可能領域△ --%>

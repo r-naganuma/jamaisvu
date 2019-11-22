@@ -65,6 +65,10 @@
 			$(".sortChange .sortTtl").removeClass('on');
 		});
 
+		$(".catParent").on("click", function () {
+			$(this).toggleClass('open');
+		});
+
 		if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
 			$(".searchBox_list--ttl").on("click", function () {
 				$(this).toggleClass('on');
@@ -81,6 +85,10 @@
 
 		$(".searchBox_list--category li").not('on').on("click", function () {
 			$(this).siblings().removeClass('on');
+			$(this).parent().parent().removeClass('on');
+			$(this).parent().parent().siblings().removeClass('on');
+			$(this).find("li").removeClass('on');
+			$(this).siblings().find("li").removeClass('on');
 			$(this).addClass('on');
 		});
 
@@ -271,7 +279,7 @@
 		if(document.URL.match("cat=&")) {
 			$('.pdList_conditions .pdList_conditions--category').text('すべてのカテゴリ');
 			$('.breadcrumb ul li p').text('すべてのカテゴリ');
-			$('.searchBox_list--category li:nth-child(1)').addClass("on");
+			$('.searchBox_list--category li.canAll').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=001")) {
@@ -289,7 +297,7 @@
 		if(document.URL.match("cat=003")) {
 			$('.pdList_conditions .pdList_conditions--category').text('ニット');
 			$('.breadcrumb ul li p').text('ニット');
-			$('.searchBox_list--category li:nth-child(3)').addClass("on");
+			$('.searchBox_list--category li.catKnit').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=004")) {
@@ -314,6 +322,42 @@
 			$('.pdList_conditions .pdList_conditions--category').text('パンツ');
 			$('.breadcrumb ul li p').text('パンツ');
 			$('.searchBox_list--category li:nth-child(7)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		}
+		if(document.URL.match("cat=010")) {
+			$('.pdList_conditions .pdList_conditions--category').text('タートルネック');
+			$('.breadcrumb ul li p').text('タートルネック');
+			$('.searchBox_list--category .catKnit_child li:nth-child(1)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		}
+		if(document.URL.match("cat=011")) {
+			$('.pdList_conditions .pdList_conditions--category').text('パーカー');
+			$('.breadcrumb ul li p').text('パーカー');
+			$('.searchBox_list--category .catKnit_child li:nth-child(2)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		}
+		if(document.URL.match("cat=012")) {
+			$('.pdList_conditions .pdList_conditions--category').text('カーディガン');
+			$('.breadcrumb ul li p').text('カーディガン');
+			$('.searchBox_list--category .catKnit_child li:nth-child(3)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		}
+		if(document.URL.match("cat=013")) {
+			$('.pdList_conditions .pdList_conditions--category').text('クルーネック');
+			$('.breadcrumb ul li p').text('クルーネック');
+			$('.searchBox_list--category .catKnit_child li:nth-child(4)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		}
+		if(document.URL.match("cat=014")) {
+			$('.pdList_conditions .pdList_conditions--category').text('ボートネック');
+			$('.breadcrumb ul li p').text('ボートネック');
+			$('.searchBox_list--category .catKnit_child li:nth-child(5)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		}
+		if(document.URL.match("cat=015")) {
+			$('.pdList_conditions .pdList_conditions--category').text('ミドルゲージ');
+			$('.breadcrumb ul li p').text('ミドルゲージ');
+			$('.searchBox_list--category .catKnit_child li:nth-child(6)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		// if(document.URL.match("cat=008")) {
