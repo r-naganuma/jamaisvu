@@ -66,15 +66,15 @@
     </div>
     <div class="pickUpArea__part">
       <div class="contentsWrap">
-        <div class="contentsWrap__content"><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003"><img src="./images/item_03.jpg" alt=""></a><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">ビッグカーディガン<br><span class="itemPrice">¥23,100</span><span class="tax">(tax in)</span></a></div>
-        <div class="contentsWrap__content"><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930318131&cat=003"><img src="./images/item_04.jpg" alt=""></a><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930318131&cat=003">ビッグカーディガン<br><span class="itemPrice">¥23,100</span><span class="tax">(tax in)</span></a></div>
+        <div class="contentsWrap__content"><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003"><img src="./images/item_03.jpg" alt=""></a><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">ビッグカーディガン<br><span class="itemPrice">¥26,400</span><span class="tax">(tax in)</span></a></div>
+        <div class="contentsWrap__content"><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930318131&cat=003"><img src="./images/item_04.jpg" alt=""></a><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930318131&cat=003">ビッグカーディガン<br><span class="itemPrice">¥26,400</span><span class="tax">(tax in)</span></a></div>
       </div>
-      <p class="colorLineUp">全6色展開<br class="sp_content"><span class="pc_content">（</span> ピンク / イエロー / グリーン <span class="pc_content">/</span><br class="sp_content"> イエロー / ブルー / ブラウン<span class="pc_content">）</span></p>
+      <p class="colorLineUp">全6色展開<br class="sp_content"><span class="pc_content">（</span> ホワイト / ピンク / グリーン <span class="pc_content">/</span><br class="sp_content"> イエロー / ブルー / ブラウン<span class="pc_content">）</span></p>
     </div>
     <div class="pickUpArea__part">
       <div class="contentsWrap">
-        <div class="contentsWrap__content"><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930338161&cat=003"><img src="./images/item_05.jpg" alt=""></a><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930338161&cat=003">クルーネックプルオーバー<br><span class="itemPrice">¥23,100</span><span class="tax">(tax in)</span></a></div>
-        <div class="contentsWrap__content"><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930338121&cat=003"><img src="./images/item_06.jpg" alt=""></a><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930338121&cat=003">クルーネックプルオーバー<br><span class="itemPrice">¥23,100</span><span class="tax">(tax in)</span></a></div>
+        <div class="contentsWrap__content"><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930338161&cat=003"><img src="./images/item_05.jpg" alt=""></a><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930338161&cat=003">クルーネックプルオーバー<br><span class="itemPrice">¥20,900</span><span class="tax">(tax in)</span></a></div>
+        <div class="contentsWrap__content"><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930338121&cat=003"><img src="./images/item_06.jpg" alt=""></a><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930338121&cat=003">クルーネックプルオーバー<br><span class="itemPrice">¥20,900</span><span class="tax">(tax in)</span></a></div>
       </div>
       <p class="colorLineUp">全8色展開<br class="sp_content"><span class="pc_content">（</span> サックス / イエロー / ピンク / ブルー <span class="pc_content">/</span><br class="sp_content"> グリーン / オレンジ / ホワイト / ブラウン<span class="pc_content">）</span></p>
     </div>
