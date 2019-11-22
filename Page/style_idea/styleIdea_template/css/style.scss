@@ -1,0 +1,343 @@
+$breakpoints: (
+  "sm": "screen and (max-width: 374px)",
+  "md": "screen and (max-width: 769px)",
+  "pc": "screen and (min-width: 769px)",
+  "lg": "screen and (max-width: 1000px)",
+  "xl": "screen and (max-width: 1200px)",
+)
+!default;
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@include mq("pc") {
+  .sp_contents {
+    display: none!important;
+  }
+}
+@include mq() {
+  .pc_contents {
+    display: none!important;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+}
+
+
+#Wrap{
+  .styleIdeaWrap {
+    width: 1060px;
+    height: auto;
+    margin: 0 auto;
+    @include mq() {
+      width: (670/750)*100vw;
+    }
+
+     .topArea {
+      h2 {
+        font-family: Times,"Times New Roman", Baskerville, Georgia, serif;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: 0.03em;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 0;
+        text-align: center;
+        @include mq() {
+          font-size: 22px;
+          line-height: 1;
+        }
+      }
+
+      .subTtl {
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        margin-top: 8px;
+        line-height: 1;
+        text-align: center;
+        font-family: interstate, sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        color: #888;
+      }
+
+      .date {
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        line-height: 1;
+        margin-top: 60px;
+        text-align: center;
+        font-family: interstate, sans-serif;
+        font-weight: 500;
+
+      }
+    }
+
+    .contentsArea {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 20px auto 0;
+      @include mq() {
+        margin-top: 10px;
+      }
+
+      &__content {
+        width: 520px;
+        height: auto;
+        margin-top: 20px;
+        @include mq() {
+          width: (325/750)*100vw;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .backToArchive {
+      width: 240px;
+      height: 42px;
+      line-height: 42px;
+      text-align: center;
+      margin: 40px auto 120px;
+      border: 1px solid #333;
+      color: #333;
+      font-family: interstate, sans-serif;
+      font-weight: 400;
+      @include mq() {
+        width: (500/750)*100vw;
+        height: 45px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+
+.modal {
+  &__mainVisual {
+    width: 520px;
+    height: auto;
+    @include mq() {
+      width: 100%;
+    }
+  }
+
+  &__itemDetail {
+    width: 402px;
+    height: auto;
+    margin-left: 80px;
+    @include mq() {
+      width: 100%;
+      margin-top: 80px;
+      margin-left: auto;
+    }
+
+    h3 {
+      font-size: 13px;
+      letter-spacing: 0.03em;
+      font-weight: bold;
+      text-align: left;
+      @include mq() {
+        font-size: 14px;
+      }
+    }
+
+    &__itemWrap {
+      margin-top: 24.5px;
+      @include mq() {
+        margin-top: 18px;
+      }
+
+      .item {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+
+        & + .item {
+          border-top: none;
+        }
+
+        &__img {
+          width: 60px;
+          height: auto;
+          @include mq() {
+            width: (140/750)*100vw;
+            height: auto;
+          }
+        }
+
+        &__name {
+          font-size: 12px;
+          font-weight: bold;
+          text-align: left;
+          letter-spacing: 0.03em;
+          line-height: 2;
+          font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", 'MS PGothic', arial, helvetica,sans-serif;
+          @include mq() {
+            font-size: 13px;
+            line-height: (40/26);
+          }
+        }
+
+        &__price {
+          font-size: 12px;
+          font-weight: 400;
+          text-align-last: auto;
+          letter-spacing: 0.03em;
+          line-height: 2;
+          font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", 'MS PGothic', arial, helvetica,sans-serif;
+          @include mq() {
+            font-size: 12px;
+            line-height: (40/24);
+          }
+        }
+
+        &__btn {
+          width: 110px;
+          height: 27.5px;
+          line-height: 27.5px;
+          color: #fff;
+          background-color: #333;
+          text-align: center;
+          font-size: 11px;
+          letter-spacing: 0.03em;
+          margin-top: 40px;
+          font-family: interstate, sans-serif;
+          font-weight: 500;
+          @include mq() {
+            width: 90px;
+            line-height: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modaal-content-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  @include mq() {
+    flex-direction: column;
+    width: 100vw;
+    margin: auto;
+    padding-top: 60px;
+    padding-left: (40/750)*100vw;
+    padding-right: (40/750)*100vw;
+  }
+}
+
+.modaal-container {
+  max-width: 1280px;
+  height: auto;
+  @include mq() {
+    max-width: 100vw;
+  }
+}
+
+.modaal-inner-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.closeBtn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 58px;
+  right: 110px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  @include mq() {
+    width: (500/750)*100vw;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #333!important;
+    background-color: #fff;
+    margin: 40px auto 0;
+    position: relative;
+    right: auto;
+    top: auto;
+    border-radius: unset;
+    color: #333;
+    font-family: interstate, sans-serif;
+    font-weight: 400;
+  }
+
+  .cancel {
+    display: inline-block;
+    padding: 0;
+    width: 2px!important;
+    height: 28px!important;
+    background: #333;
+    transform: rotate(45deg);
+    overflow: visible;
+    clip: unset;
+    margin-top: -18px;
+    @include mq() {
+      margin-top: 0;
+      width: 1px!important;
+      height: 14px!important;
+      position: absolute;
+      top: 36%;
+      left: calc(50% - 38px);
+      overflow: visible;
+      clip: unset;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -12.5px;
+      width: 28px;
+      height: 2px;
+      margin-top: -1px;
+      background: #333;
+      @include mq() {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -6.5px;
+        width: 14px;
+        height: 1px;
+        margin-top: -1px;
+        background: #333;
+      }
+    }
+  }
+}
+
+.modaal-close::before {
+  content: none;
+}
+
+.modaal-close::after {
+  content: none;
+}
