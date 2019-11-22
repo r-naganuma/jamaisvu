@@ -44,7 +44,7 @@
   </div>
 
   <div class="couponArea">
-    <h3>ミドルゲージニット<br>¥4,000-OFFキャンペーン</h3>
+    <h3>ミドルゲージニット<br>¥4,000OFFキャンペーン</h3>
     <p class="description">ご購入時に下記クーポンコードをご入力ください。</p>
     <p class="coupon">
       クーポンコード<br><span>1122</span>
@@ -80,10 +80,10 @@
     </div>
     <div class="pickUpArea__part">
       <div class="contentsWrap">
-        <div class="contentsWrap__content"><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930337149&cat=003"><img src="./images/item_07.jpg" alt=""></a><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930337149&cat=003">ビルトネックプルオーバー<br><span class="itemPrice">¥23,100</span><span class="tax">(tax in)</span></a></div>
         <div class="contentsWrap__content"><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930337165&cat=003"><img src="./images/item_08.jpg" alt=""></a><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930337165&cat=003">ビルトネックプルオーバー<br><span class="itemPrice">¥23,100</span><span class="tax">(tax in)</span></a></div>
+        <div class="contentsWrap__content"><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930337131&cat=003"><img src="./images/item_07.jpg" alt=""></a><a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930337131&cat=003">ビルトネックプルオーバー<br><span class="itemPrice">¥23,100</span><span class="tax">(tax in)</span></a></div>
       </div>
-      <p class="colorLineUp">全8色展開<br class="sp_content"><span class="pc_content">（</span> ブラウン / ブルー / サックス / ピンク <span class="pc_content">/</span><br class="sp_content"> ホワイト / グリーン / オレンジ / イエロー<span class="pc_content">）</span></p>
+      <p class="colorLineUp">全8色展開<br class="sp_content"><span class="pc_content">（</span> ブルー / ピンク / サックス / ブラウン <span class="pc_content">/</span><br class="sp_content"> ホワイト / グリーン / オレンジ / イエロー<span class="pc_content">）</span></p>
     </div>
     <div class="pickUpArea__part">
       <div class="contentsWrap">
