@@ -337,7 +337,7 @@ jQuery( function() {
 </script>
 <div class="popup">
     <a class="close" href=""><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/close.png" alt=""></a>
-    <a href="https://line.me/R/ti/p/%40461wwkgx" target="_blank">
+    <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191122/">
     <div class="pc_contents"><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pc_bnr.jpg" alt=""></div>
     <div class="sp_contents"><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/sp_bnr.jpg" alt=""></div>
     </a>
