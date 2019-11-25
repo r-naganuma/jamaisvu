@@ -23,6 +23,7 @@
      <script>
            window.dataLayer = window.dataLayer || []
            dataLayer.push({
+                  'Item_ID': <%# WebSanitizer.HtmlEncode(((Hashtable)Container.DataItem)[Constants.FIELD_ORDERITEM_PRODUCT_ID]) %>,
                   'transactionId': '<%#: ((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDER_ORDER_ID]).First() %>',
                   'transactionAffiliation': '',
                   'transactionTotal': <%#:((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDER_ORDER_PRICE_TOTAL]).First().ToPriceString() %>,
@@ -33,7 +34,7 @@
                    'category': '<%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => GetProductCategoryName(x.ToHashtable()))) %>',
                    'price': '<%#: string.Join(",", ((IList)Container.DataItem).Cast<DataRowView>().Select(x => x[Constants.FIELD_ORDERITEM_PRODUCT_PRICE].ToPriceString())) %>',
                    'quantity': '<%#: ((IList)Container.DataItem).Count %>'
-
+                   
            });
     </script>
    </ItemTemplate>
