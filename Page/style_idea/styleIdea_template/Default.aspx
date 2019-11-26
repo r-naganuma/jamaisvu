@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://use.typekit.net/qxr7okk.css">
 <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
-<link href='./css/style.css?1233' rel='stylesheet' type='text/css'>
+<link href='<%= Constants.PATH_ROOT %>Page/styleidea/css/common.css?1233' rel='stylesheet' type='text/css'>
 <%-- △編集可能領域△ --%>
 </asp:Content>
 

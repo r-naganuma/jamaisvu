@@ -24,7 +24,7 @@
 <div class="LPpageWrap topSpace">
 
 <%-- ▽編集可能領域：コンテンツ▽ --%>
-<link href='./css/style.css' rel='stylesheet' type='text/css'>
+<link href='./css/archive.css' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.typekit.net/qxr7okk.css">
 <script>
 // タイトル
