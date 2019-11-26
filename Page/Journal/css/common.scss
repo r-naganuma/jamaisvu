@@ -8,6 +8,14 @@ $bp1100: 1100px;  // スマホ
   }
 }
 
+$bp1060: 1060px;  // スマホ
+
+@mixin bp1060 {
+  @media (max-width: ($bp1060)) {
+    @content;
+  }
+}
+
 $bp768: 768px;  // スマホ
 
 @mixin bp768 {
@@ -64,6 +72,16 @@ body{
 			letter-spacing: 0.03em;
 			font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 
+			@include bp1060 {
+				width: 93%;
+			};
+
+			@include bp768 {
+				width: 100%;
+				font-size: 14px;
+				line-height: 24px;
+			};
+
 			ul{
 				margin: 0;
 				padding: 0;
@@ -78,6 +96,11 @@ body{
 			p{
 				margin: 0;
 				padding: 0;
+				line-height: 2;
+
+				@include bp768 {
+					line-height: 24px;
+				};
 			}
 
 			a{
@@ -93,8 +116,12 @@ body{
 				display: block;
 			}
 
-			&_cts{
+			.journalWrap_cts{
 				width: 730px;
+
+				@include bp1060 {
+					width: 100%;
+				};
 
 /*====================================================================
 *    MAIN VISUAL
@@ -102,6 +129,10 @@ body{
 
 				.mainArea{
 					margin-bottom: 72px;
+				
+					@include bp768 {
+						margin-bottom: 80px;
+					};
 
 					&_ttl{
 						display: flex;
@@ -110,11 +141,28 @@ body{
 						margin: 28px 0 40px;
 						padding-bottom: 27px;
 						border-bottom: 1px solid #ccc;
+				
+						@include bp768 {
+							display: block;
+							width: 89.33%;
+							margin: 20px auto 40px;
+							padding-bottom: 20px;
+						};
 
 						&--txt{
 							width: 470px;
 							padding: 12px 0;
 							position: relative;
+
+							@include bp1060 {
+								width: 70%;
+							};
+				
+							@include bp768 {
+								width: 100%;
+								padding: 0;
+								margin-bottom: 10px;
+							};
 
 							.journalCat{
 								font-size: 14px;
@@ -122,6 +170,10 @@ body{
 								line-height: 1;
 								font-family: interstate, sans-serif;
 								font-weight: 500;
+				
+								@include bp768 {
+									font-size: 13.5px;
+								};
 							}
 
 							h2{
@@ -133,6 +185,11 @@ body{
 								text-align: left;
 								margin: 10px 0;
 								font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+				
+								@include bp768 {
+									line-height: 24px;
+									margin: 10px 0;
+								};
 							}
 
 							.journalDate{
@@ -141,6 +198,10 @@ body{
 								line-height: 1;
 								font-family: interstate, sans-serif;
 								font-weight: 500;
+
+								@include bp768 {
+									font-size: 11px;
+								};
 							}
 
 							&::after{
@@ -151,12 +212,26 @@ body{
 								bottom: 0;
 								width: 1px;
 								background: #ccc;
+
+								@include bp768 {
+									content: none;
+								};
 							}
 						}
 
 						&--sns{
 							width: 246px;
 							text-align: center;
+
+							@include bp1060 {
+								width: 30%;
+							};
+
+							@include bp768 {
+								width: 198px;
+								margin: 0 5.5px 0 auto;
+								text-align: right;
+							};
 
 							li{
 								display: inline-block;
@@ -169,18 +244,38 @@ body{
 									line-height: 1;
 									font-family: interstate, sans-serif;
 									font-weight: 400;
+
+									@include bp768 {
+										letter-spacing: 0;
+									};
 								}
 
 								&:nth-child(2){
 									width: 16px;
 									margin: 0 16px 0 20px;
+
+									@include bp768 {
+										width: 18.5px;
+										margin: 0 15px 0 20px;
+									};
 								}
 
 								&:nth-child(3){
 									width: 8.5px;
+
+									@include bp768 {
+										width: 9.5px;
+									};
 								}
 							}
 						}
+					}
+
+					&_lead{
+						@include bp768 {
+							width: 89.33%;
+							margin: 0 auto;
+						};
 					}
 				}
 
@@ -192,10 +287,19 @@ body{
 					
 					.A-wrap{
 						margin-bottom: 120px;
+
+						@include bp768 {
+							width: 89.33%;
+							margin: 0 auto 80px;
+						};
 					}
 
 					.A-wrap_pic{
 						margin-bottom: 20px;
+
+						@include bp768 {
+							margin-bottom: 10px;
+						};
 					}
 
 					.A-wrap_ttl{
@@ -203,6 +307,10 @@ body{
 						line-height: 30px;
 						font-weight: bold;
 						margin-bottom: 10px;
+
+						@include bp768 {
+							line-height: 24px;
+						};
 
 						a{
 							text-decoration: underline;
@@ -213,12 +321,25 @@ body{
 
 					.A-wrap_txt{
 						margin-bottom: 20px;
+
+						@include bp768 {
+							margin-bottom: 10px;
+						};
+
+						a{
+							display: inline;
+							text-decoration: underline;
+						}
 					}
 
 					.A-wrap_detail{
 						width: 100%;
 						margin-bottom: 20px;
 						position: relative;
+
+						@include bp768 {
+							margin-bottom: 10px;
+						};
 					}
 
 					.A-wrap_detail--box{
@@ -229,30 +350,56 @@ body{
 						padding: 16px 20px;
 						border-radius: 2px;
 						box-sizing: border-box;
+
+						@include bp768 {
+							padding: 10px 10px 45px;
+						};
 					}
 
 					.A-wrap_detail--box--pic{
 						width: 80px;
 						margin-right: 20px;
+
+						@include bp768 {
+							width: 22.22%;
+							margin-right: 10px;
+						};
 					}
 
 					.A-wrap_detail--box--txt{
 						width: 430px;
 
+						@include bp768 {
+							width: 74.6%;
+						};
+
 						.detailTtl{
 							line-height: 22px;
 							font-weight: bold;
 							margin-bottom: 10px;
+
+							@include bp768 {
+								line-height: 20px;
+								margin-bottom: 5px;
+							};
 						}
 
 						.detailPrice{
 							line-height: 1;
 							margin-bottom: 15px;
+
+							@include bp768 {
+								margin-bottom: 10px;
+							};
 						}
 
 						.detailTxt{
 							font-size: 10px;
 							line-height: 20px;
+
+							@include bp768 {
+								line-height: 15px;
+							};
 						}
 					}
 
@@ -272,6 +419,15 @@ body{
 						bottom: 16px;
 						right: 20px;
 
+						@include bp768 {
+							width: 90px;
+							height: 25px;
+							line-height: 25px;
+							font-size: 10.5px;
+							bottom: 10px;
+							right: 10px;
+						};
+
 						&:hover{
 							background: #fff;
 							color: #333;
@@ -286,6 +442,11 @@ body{
 					
 					.B-wrap{
 						margin-bottom: 120px;
+
+						@include bp768 {
+							width: 89.33%;
+							margin: 0 auto 80px;
+						};
 					}
 					
 					.B-wrap_box{
@@ -293,10 +454,19 @@ body{
 						justify-content: space-between;
 						align-items: center;
 						margin-bottom: 60px;
+
+						@include bp768 {
+							margin-bottom: 80px;
+							flex-wrap: wrap;
+						};
 					}
 					
 					.B-wrap_box--txt{
 						width: 355px;
+
+						@include bp1060 {
+							width: 47.01%;
+						};
 					}
 					
 					.B-wrap_ttl{
@@ -309,6 +479,10 @@ body{
 						font-weight: bold;
 						margin-bottom: 10px;
 
+						@include bp768 {
+							line-height: 24px;
+						};
+
 						a{
 							text-decoration: underline;
 							font-weight: bold;
@@ -318,6 +492,15 @@ body{
 
 					.B-wrap_txt{
 						margin-bottom: 20px;
+
+						@include bp768 {
+							margin-bottom: 10px;
+						};
+
+						a{
+							display: inline;
+							text-decoration: underline;
+						}
 					}
 
 					.B-wrap_detail{
@@ -332,30 +515,56 @@ body{
 						padding: 16px 20px 60px;
 						border-radius: 2px;
 						box-sizing: border-box;
+
+						@include bp768 {
+							padding: 10px 10px 45px;
+						};
 					}
 
 					.B-wrap_detail--box--pic{
 						width: 60px;
 						margin-right: 20px;
+
+						@include bp768 {
+							width: 22.22%;
+							margin-right: 10px;
+						};
 					}
 
 					.B-wrap_detail--box--txt{
 						width: 235px;
 
+						@include bp768 {
+							width: 74.6%;
+						};
+
 						.detailTtl{
 							line-height: 22px;
 							font-weight: bold;
 							margin-bottom: 10px;
+
+							@include bp768 {
+								line-height: 20px;
+								margin-bottom: 5px;
+							};
 						}
 
 						.detailPrice{
 							line-height: 1;
 							margin-bottom: 15px;
+
+							@include bp768 {
+								margin-bottom: 10px;
+							};
 						}
 
 						.detailTxt{
 							font-size: 10px;
 							line-height: 20px;
+
+							@include bp768 {
+								line-height: 15px;
+							};
 						}
 					}
 
@@ -375,6 +584,15 @@ body{
 						bottom: 16px;
 						right: 20px;
 
+						@include bp768 {
+							width: 90px;
+							height: 25px;
+							line-height: 25px;
+							font-size: 10.5px;
+							bottom: 10px;
+							right: 10px;
+						};
+
 						&:hover{
 							background: #fff;
 							color: #333;
@@ -385,6 +603,42 @@ body{
 					
 					.B-wrap_box--pic{
 						width: 355px;
+
+						@include bp1060 {
+							width: 50%;
+							margin-bottom: 10px;
+						};
+					}
+
+					.B-wrap_sp_noFlex{
+						@include bp768 {
+							display: block;
+						};
+
+						.B-wrap_lead{
+							@include bp768 {
+								text-align: center;
+							};
+						}
+
+						.B-wrap_box--txt{
+							@include bp768 {
+								width: 100%;
+							};
+						}
+						
+						.B-wrap_ttl{
+							@include bp768 {
+								margin-bottom: 20px;
+							};
+						}
+
+						.B-wrap_box--pic{
+							@include bp768 {
+								width: 100%;
+								margin-bottom: 10px;
+							};
+						}
 					}
 
 /*====================================================================
@@ -395,14 +649,33 @@ body{
 						display: flex;
 						justify-content: space-between;
 						margin-bottom: 120px;
+
+						@include bp768 {
+							width: 89.33%;
+							margin: 0 auto 80px;
+							display: block;
+						};
 					}
 
 					.C-wrap_list{
 						width: 355px;
+
+						@include bp1060 {
+							width: 48%;
+						};
+
+						@include bp768 {
+							width: 100%;
+							margin: 0 auto 40px;
+						};
 					}
 
 					.C-wrap_pic{
 						margin-bottom: 20px;
+
+						@include bp768 {
+							margin-bottom: 10px;
+						};
 					}
 
 					.C-wrap_ttl{
@@ -410,6 +683,11 @@ body{
 						line-height: 30px;
 						font-weight: bold;
 						margin-bottom: 10px;
+
+						@include bp768 {
+							line-height: 24px;
+							text-align: center;
+						};
 
 						a{
 							text-decoration: underline;
@@ -420,6 +698,16 @@ body{
 
 					.C-wrap_txt{
 						margin-bottom: 20px;
+
+						@include bp768 {
+							margin-bottom: 10px;
+							text-align: center;
+						};
+
+						a{
+							display: inline;
+							text-decoration: underline;
+						}
 					}
 
 					.C-wrap_detail{
@@ -434,30 +722,56 @@ body{
 						padding: 16px 20px 60px;
 						border-radius: 2px;
 						box-sizing: border-box;
+
+						@include bp768 {
+							padding: 10px 10px 45px;
+						};
 					}
 
 					.C-wrap_detail--box--pic{
 						width: 60px;
 						margin-right: 20px;
+
+						@include bp768 {
+							width: 22.22%;
+							margin-right: 10px;
+						};
 					}
 
 					.C-wrap_detail--box--txt{
 						width: 235px;
 
+						@include bp768 {
+							width: 74.6%;
+						};
+
 						.detailTtl{
 							line-height: 22px;
 							font-weight: bold;
 							margin-bottom: 10px;
+
+							@include bp768 {
+								line-height: 20px;
+								margin-bottom: 5px;
+							};
 						}
 
 						.detailPrice{
 							line-height: 1;
 							margin-bottom: 15px;
+
+							@include bp768 {
+								margin-bottom: 10px;
+							};
 						}
 
 						.detailTxt{
 							font-size: 10px;
 							line-height: 20px;
+
+							@include bp768 {
+								line-height: 15px;
+							};
 						}
 					}
 
@@ -477,6 +791,15 @@ body{
 						bottom: 16px;
 						right: 20px;
 
+						@include bp768 {
+							width: 90px;
+							height: 25px;
+							line-height: 25px;
+							font-size: 10.5px;
+							bottom: 10px;
+							right: 10px;
+						};
+
 						&:hover{
 							background: #fff;
 							color: #333;
@@ -492,6 +815,10 @@ body{
 					.D-wrap{
 						position: relative;
 						margin-bottom: 120px;
+
+						@include bp768 {
+							margin: 0 auto 80px;
+						};
 					}
 
 					.D-wrap_ttl{
@@ -500,37 +827,70 @@ body{
 						top: 0;
 						left: 0;
 						z-index: 3;
+
+						@include bp768 {
+							width: 50%;
+							left: 3px;
+						};
 					}
 
 					.D-wrap_pic{
 						width: 540px;
 						margin: 0 0 0 auto;
 						padding-top: 24px;
+
+						@include bp768 {
+							width: 72%;
+							padding-top: 9px;
+						};
 					}
 
 					.D-wrap_box{
 						display: flex;
 						justify-content: space-between;
 						margin: -120px 0 0 10px;
+
+						@include bp768 {
+							margin: -60px 0 0 0;
+						};
 					}
 
 					.D-wrap_box--pic{
 						width: 280px;
 						position: relative;
 						z-index: 2;
+
+						@include bp768 {
+							width: 37.33%;
+						};
 					}
 
 					.D-wrap_box--txt{
 						width: 430px;
 						margin-top: 135px;
 
+						@include bp768 {
+							width: 54.67%;
+							margin: 78px 20px 0 0;
+						};
+
 						p{
 							font-size: 12px;
+
+							@include bp768 {
+								font-size: 11px;
+								line-height: 2;
+							};
 
 							a{
 								font-size: 12px;
 								display: inline;
 								text-decoration: underline;
+
+								@include bp768 {
+									font-size: 11px;
+									line-height: 2;
+								};
 							}
 						}
 					}
@@ -542,20 +902,40 @@ body{
 					.E-wrap{
 						position: relative;
 						margin-bottom: 120px;
+
+						@include bp768 {
+							margin: 0 auto 80px;
+						};
 					}
 
 					.E-wrap_pic{
 						margin-bottom: 10px;
+
+						@include bp768 {
+							margin-bottom: 15px;
+						};
 					}
 
 					.E-wrap_txt{
 						margin-bottom: 10px;
 						font-size: 12px;
 
+						@include bp768 {
+							font-size: 11px;
+							line-height: 2;
+							width: 89.33%;
+							margin: 0 auto 10px;
+						};
+
 						a{
 							font-size: 12px;
 							display: inline;
 							text-decoration: underline;
+
+							@include bp768 {
+								font-size: 11px;
+								line-height: 2;
+							};
 						}
 					}
 
@@ -566,6 +946,10 @@ body{
 					.F-wrap{
 						position: relative;
 						margin-bottom: 120px;
+
+						@include bp768 {
+							margin: 0 auto 80px;
+						};
 					}
 
 					.F-wrap_ttl{
@@ -574,6 +958,11 @@ body{
 						top: 0;
 						right: 0;
 						z-index: 2;
+
+						@include bp1060 {
+							width: 50.27%;
+							right: 39px;
+						};
 					}
 
 					.F-wrap_box{
@@ -581,26 +970,51 @@ body{
 						justify-content: space-between;
 						margin: 0 0 20px;
 						padding-top: 26px;
+
+						@include bp768 {
+							margin: 0 0 10px;
+							padding-top: 11px;
+						};
 					}
 
 					.F-wrap_box--main{
 						width: 410px;
+
+						@include bp1060 {
+							width: 54.67%;
+						};
 					}
 
 					.F-wrap_box--txt{
 						font-size: 12px;
 						margin-top: 10px;
 
+						@include bp768 {
+							font-size: 11px;
+							line-height: 2;
+							margin: 15px 0 0 20px;
+						};
+
 						a{
 							font-size: 12px;
 							display: inline;
 							text-decoration: underline;
+
+							@include bp768 {
+								font-size: 11px;
+								line-height: 2;
+							};
 						}
 					}
 
 					.F-wrap_box--sub{
 						width: 280px;
 						margin: 336px 10px 0 0;
+
+						@include bp1060 {
+							width: 40%;
+							margin: 157px 0 0 0;
+						};
 					}
 
 /*====================================================================
@@ -621,6 +1035,13 @@ body{
 						border: 1px solid #333;
 						transition: .2s;
 
+						@include bp768 {
+							width: 89.33%;
+							margin: 0 auto 80px;
+							padding: 15px 0;
+							line-height: 24px;
+						};
+
 						&::after{
 						    content: "";
 						    position: absolute;
@@ -637,6 +1058,10 @@ body{
 						    transform: rotate(45deg);
 						    border-top: 1px solid #fff;
 						    border-right: 1px solid #fff;
+
+							@include bp768 {
+						    	right: 15px;
+							};
 						}
 
 						&:hover{
@@ -655,12 +1080,23 @@ body{
 					.latestArea{
 						margin-bottom: 120px;
 
+						@include bp768 {
+							width: 89.33%;
+							margin: 0 auto 80px;
+							padding: 80px 0 0;
+							border-top: 1px solid #ccc;
+						};
+
 						&_ttl{
 							text-align: center;
 							font-size: 22px;
 							font-family: 'Times';
 							line-height: 1;
 							margin-bottom: 40px;
+
+							@include bp768 {
+								font-size: 20px;
+							};
 						}
 
 						&_box{
@@ -670,11 +1106,20 @@ body{
 							&--list{
 								width: 350px;
 
+								@include bp1060 {
+									width: 48.5%;
+								};
+
 								.archiveTtl{
 									font-size: 12px;
 									font-weight: bold;
 									line-height: 30px;
 									margin: 10px 0 5px;
+
+									@include bp768 {
+										font-size: 14px;
+										line-height: 24px;
+									};
 								}
 
 								.archiveDate{
@@ -689,6 +1134,128 @@ body{
 					}
 				}
 			}
+
+/*====================================================================
+*    着用アイテムはこちら
+/*==================================================================*/
+
+			.journalWrap_item{
+				width: 280px;
+				position: fixed;
+				top: 125px;
+				left: 50%;
+				margin-left: 250px;
+
+				@include bp1060 {
+					display: none;
+				};
+
+				&--ttl{
+					line-height: 20px;
+					font-weight: bold;
+					margin-bottom: 25px;
+				}
+
+				ul{
+					border-top: 1px solid #CCCCCC;
+					margin-bottom: 20px;
+
+					li{
+						padding: 10px 0;
+						border-bottom: 1px solid #CCCCCC;
+
+						a{
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+
+							img{
+								width: 60px;
+							}
+
+							p{
+								width: 200px;
+								font-size: 12px;
+								font-weight: bold;
+
+								span{
+									line-height: 1;
+									font-size: 12px;
+									display: block;
+									margin-top: 5px;
+								}
+							}
+						}
+					}
+				}
+
+				&--btn{
+					width: 100%;
+					margin: 0 auto;
+					background: #333;
+					color: #fff;
+					border-radius: 2px;
+					text-align: center;
+					position: relative;
+					height: 50px;
+					line-height: 50px;
+					font-weight: bold;
+					border: 1px solid #333;
+					transition: .2s;
+
+					&::after{
+					    content: "";
+					    position: absolute;
+					    top: 0;
+					    bottom: 0;
+					    right: 15px;
+					    margin: auto;
+					    z-index: 1;
+					    display: block;
+					    width: 7px;
+					    height: 7px;
+					    -moz-transform: rotate(45deg);
+					    -webkit-transform: rotate(45deg);
+					    transform: rotate(45deg);
+					    border-top: 1px solid #fff;
+					    border-right: 1px solid #fff;
+					}
+
+					&:hover{
+						border: 1px solid #333;
+						background: #fff;
+						color: #333;
+						opacity: 1;
+
+						&::after{
+						    border-top: 1px solid #333;
+						    border-right: 1px solid #333;
+						}
+					}
+				}
+
+				&.off{
+					animation: fade_out .5s ease .2s forwards;
+				}
+			}
 		}
 	}
+}
+
+@keyframes fade_in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fade_out {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
