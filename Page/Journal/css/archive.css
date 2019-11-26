@@ -54,6 +54,8 @@ body {
     width: 89.33%;
     font-size: 14px;
     line-height: 24px;
+    padding-top: 85px;
+    font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   }
 }
 
@@ -169,6 +171,7 @@ body {
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .journalWrap_box ul li .journalTtl {
     margin: 0 0 7.5px;
+    font-weight: 500;
   }
 }
 

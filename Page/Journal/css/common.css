@@ -55,6 +55,8 @@ body {
 @media (max-width: 1060px) {
   #Wrap .LPpageWrap .journalWrap {
     width: 93%;
+    font-weight: 400;
+    font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   }
 }
 
@@ -200,6 +202,8 @@ body {
   #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt h2 {
     line-height: 24px;
     margin: 10px 0;
+    font-weight: 500;
+    font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   }
 }
 
@@ -356,6 +360,7 @@ body {
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl {
     line-height: 24px;
+    font-weight: 500;
   }
 }
 
@@ -363,6 +368,12 @@ body {
   text-decoration: underline;
   font-weight: bold;
   display: inline;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl a {
+    font-weight: 500;
+  }
 }
 
 #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_txt {
@@ -445,6 +456,7 @@ body {
   #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_detail--box--txt .detailTtl {
     line-height: 20px;
     margin-bottom: 5px;
+    font-weight: 500;
   }
 }
 
@@ -561,6 +573,7 @@ body {
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .B-wrap_lead {
     line-height: 24px;
+    font-weight: 500;
   }
 }
 
@@ -568,6 +581,12 @@ body {
   text-decoration: underline;
   font-weight: bold;
   display: inline;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .B-wrap_lead a {
+    font-weight: 500;
+  }
 }
 
 #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .B-wrap_txt {
@@ -640,6 +659,7 @@ body {
   #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .B-wrap_detail--box--txt .detailTtl {
     line-height: 20px;
     margin-bottom: 5px;
+    font-weight: 500;
   }
 }
 
@@ -798,6 +818,7 @@ body {
   #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .C-wrap_ttl {
     line-height: 24px;
     text-align: center;
+    font-weight: 500;
   }
 }
 
@@ -805,6 +826,12 @@ body {
   text-decoration: underline;
   font-weight: bold;
   display: inline;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .C-wrap_ttl a {
+    font-weight: 500;
+  }
 }
 
 #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .C-wrap_txt {
@@ -878,6 +905,7 @@ body {
   #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .C-wrap_detail--box--txt .detailTtl {
     line-height: 20px;
     margin-bottom: 5px;
+    font-weight: 500;
   }
 }
 
@@ -1205,6 +1233,7 @@ body {
     margin: 0 auto 80px;
     padding: 15px 0;
     line-height: 24px;
+    font-weight: 500;
   }
 }
 
@@ -1302,6 +1331,7 @@ body {
   #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea_box--list .archiveTtl {
     font-size: 14px;
     line-height: 24px;
+    font-weight: 500;
   }
 }
 
@@ -1319,6 +1349,8 @@ body {
   top: 125px;
   left: 50%;
   margin-left: 250px;
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 @media (max-width: 1060px) {
@@ -1370,10 +1402,11 @@ body {
   font-size: 12px;
   display: block;
   margin-top: 5px;
+  font-weight: normal;
 }
 
 #Wrap .LPpageWrap .journalWrap .journalWrap_item--btn {
-  width: 100%;
+  width: 99%;
   margin: 0 auto;
   background: #333;
   color: #fff;
@@ -1420,9 +1453,14 @@ body {
   border-right: 1px solid #333;
 }
 
+#Wrap .LPpageWrap .journalWrap .journalWrap_item.on {
+  -webkit-animation: fade_in .2s ease 0s forwards;
+  animation: fade_in .2s ease 0s forwards;
+}
+
 #Wrap .LPpageWrap .journalWrap .journalWrap_item.off {
-  -webkit-animation: fade_out .5s ease .2s forwards;
-  animation: fade_out .5s ease .2s forwards;
+  -webkit-animation: fade_out .2s ease 0s forwards;
+  animation: fade_out .2s ease 0s forwards;
 }
 
 @-webkit-keyframes fade_in {
