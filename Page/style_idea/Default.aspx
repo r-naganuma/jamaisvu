@@ -2,7 +2,7 @@
 =========================================================================================================
   Module      : カスタムページテンプレート画面(CustomPageTemplate.aspx)
  ･･･････････････････････････････････････････････････････････････････････････････････････････････････････
-  Copyright   : Copyright w2solution Co.,Ltd. 2009 All Rights Reserved.
+  CopyrightBox   : CopyrightBox w2solution Co.,Ltd. 2009 All Rights Reserved.
 =========================================================================================================
 --%>
 <%-- ▽ユーザーコントロール宣言領域▽ --%>
@@ -24,22 +24,55 @@
 <div class="LPpageWrap topSpace">
 
 <%-- ▽編集可能領域：コンテンツ▽ --%>
-<link href='css/common.css?123' rel='stylesheet' type='text/css'>
+<link href='./css/style.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.typekit.net/qxr7okk.css">
 <script>
 // タイトル
-$("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store")
+$("title").text("Style Idea｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store")
 </script>
 
-<div class="main_contents topics">
-      	<h2 class="main_contents_title">Style Idea</h2>
-      	<div class="topics_list">
-      		<ul class="topics_list__ul">
+<div class="main_contents styleIdeaWrap">
+  <section class="topArea">
 
+    <h2>Style Idea</h2>
+
+    <p class="subTtl"> Always with Your Style.</p>
+
+  </section>
+      	<div class="style_list">
+      		<ul class="style_list__ul">
+
+            <li>
+              <div class="leftBox"><a href="<%= Constants.PATH_ROOT %>Page/styleidea/styleIdea_template"><img src="<%= Constants.PATH_ROOT %>Page/styleidea/images/style_main_1901.jpg" alt=""></a></div>
+              <div class="rightBox">
+                <p class="sub">RELASE DATE</p>
+                <a href="<%= Constants.PATH_ROOT %>Page/styleidea/styleIdea_template" class="relaseDate">2019 DECEMBER</a>
+              </div>
+            </li>
+            <li>
+              <div class="leftBox"><a href="<%= Constants.PATH_ROOT %>Page/styleidea/styleIdea_template"><img src="<%= Constants.PATH_ROOT %>Page/styleidea/images/style_main_1902.jpg" alt=""></a></div>
+              <div class="rightBox">
+                <p class="sub">RELASE DATE</p>
+                <a href="<%= Constants.PATH_ROOT %>Page/styleidea/styleIdea_template" class="relaseDate">2019 DECEMBER</a>
+              </div>
+            </li>
+            <li>
+              <div class="leftBox"><a href="<%= Constants.PATH_ROOT %>Page/styleidea/styleIdea_template"><img src="<%= Constants.PATH_ROOT %>Page/styleidea/images/style_main_1903.jpg" alt=""></a></div>
+              <div class="rightBox">
+                <p class="sub">RELASE DATE</p>
+                <a href="<%= Constants.PATH_ROOT %>Page/styleidea/styleIdea_template" class="relaseDate">2019 DECEMBER</a>
+              </div>
+            </li>
+            <li>
+              <div class="leftBox"><a href="<%= Constants.PATH_ROOT %>Page/styleidea/styleIdea_template"><img src="<%= Constants.PATH_ROOT %>Page/styleidea/images/style_main_1904.jpg" alt=""></a></div>
+              <div class="rightBox">
+                <p class="sub">RELASE DATE</p>
+                <a href="<%= Constants.PATH_ROOT %>Page/styleidea/styleIdea_template" class="relaseDate">2019 DECEMBER</a>
+              </div>
+            </li>
 
           </ul>
-      		<div class="pager">
 
-      		</div>
       	</div>
       </div>
 
