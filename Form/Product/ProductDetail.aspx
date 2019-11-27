@@ -540,7 +540,7 @@ iframe {
 </ul>
 --%>
 
-<div class="description">
+<div class="description" style="display: none;">
 
 	<!-- キャッチコピー -->
 	<h3><%# WebSanitizer.HtmlEncode(GetProductData("catchcopy")) %></h3>
