@@ -74,6 +74,8 @@ body{
 
 			@include bp1060 {
 				width: 93%;
+				font-weight: 400;
+				font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 			};
 
 			@include bp768 {
@@ -189,6 +191,8 @@ body{
 								@include bp768 {
 									line-height: 24px;
 									margin: 10px 0;
+									font-weight: 500;
+									font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 								};
 							}
 
@@ -310,12 +314,17 @@ body{
 
 						@include bp768 {
 							line-height: 24px;
+							font-weight: 500;
 						};
 
 						a{
 							text-decoration: underline;
 							font-weight: bold;
 							display: inline;
+
+							@include bp768 {
+								font-weight: 500;
+							};
 						}
 					}
 
@@ -381,6 +390,7 @@ body{
 							@include bp768 {
 								line-height: 20px;
 								margin-bottom: 5px;
+								font-weight: 500;
 							};
 						}
 
@@ -481,12 +491,17 @@ body{
 
 						@include bp768 {
 							line-height: 24px;
+							font-weight: 500;
 						};
 
 						a{
 							text-decoration: underline;
 							font-weight: bold;
 							display: inline;
+
+							@include bp768 {
+								font-weight: 500;
+							};
 						}
 					}
 
@@ -546,6 +561,7 @@ body{
 							@include bp768 {
 								line-height: 20px;
 								margin-bottom: 5px;
+								font-weight: 500;
 							};
 						}
 
@@ -687,12 +703,17 @@ body{
 						@include bp768 {
 							line-height: 24px;
 							text-align: center;
+							font-weight: 500;
 						};
 
 						a{
 							text-decoration: underline;
 							font-weight: bold;
 							display: inline;
+
+							@include bp768 {
+								font-weight: 500;
+							};
 						}
 					}
 
@@ -753,6 +774,7 @@ body{
 							@include bp768 {
 								line-height: 20px;
 								margin-bottom: 5px;
+								font-weight: 500;
 							};
 						}
 
@@ -1040,6 +1062,7 @@ body{
 							margin: 0 auto 80px;
 							padding: 15px 0;
 							line-height: 24px;
+							font-weight: 500;
 						};
 
 						&::after{
@@ -1119,6 +1142,7 @@ body{
 									@include bp768 {
 										font-size: 14px;
 										line-height: 24px;
+										font-weight: 500;
 									};
 								}
 
@@ -1145,6 +1169,8 @@ body{
 				top: 125px;
 				left: 50%;
 				margin-left: 250px;
+				overflow-y: auto;
+				-ms-overflow-style: -ms-autohiding-scrollbar;
 
 				@include bp1060 {
 					display: none;
@@ -1183,6 +1209,7 @@ body{
 									font-size: 12px;
 									display: block;
 									margin-top: 5px;
+									font-weight: normal;
 								}
 							}
 						}
@@ -1190,7 +1217,7 @@ body{
 				}
 
 				&--btn{
-					width: 100%;
+					width: 99%;
 					margin: 0 auto;
 					background: #333;
 					color: #fff;
@@ -1234,8 +1261,12 @@ body{
 					}
 				}
 
+				&.on{
+					animation: fade_in .2s ease 0s forwards;
+				}
+
 				&.off{
-					animation: fade_out .5s ease .2s forwards;
+					animation: fade_out .2s ease 0s forwards;
 				}
 			}
 		}

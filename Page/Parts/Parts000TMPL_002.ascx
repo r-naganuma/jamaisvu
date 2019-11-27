@@ -78,8 +78,8 @@
         <div class="topicsContent">
             <div class="topicsContent__list">
                 <div class="topicsContent__list-item item-1">
-                    <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191122/">
-                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1_1122.jpg" alt="topics 1">
+                    <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191126/">
+                        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/top_topics_1_1126.jpg" alt="topics 1">
                     </a>
                 </div>
                 <div class="topicsContent__list-item item-2">

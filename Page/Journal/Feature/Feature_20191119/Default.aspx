@@ -340,7 +340,7 @@
     <div class="journalWrap_item">
         <p class="journalWrap_item--ttl">着用アイテムはこちら</p>
         <ul>
-            <!-- 最大○個まで -->
+            <!-- 最大4個まで -->
             <li>
                 <a href="">
                     <img src="images/item01.jpg" alt="">
@@ -388,12 +388,12 @@
 <script type="text/javascript">
     $(window).on('scroll', function (){
 
-        var elem = $('.latestArea');
+        var elem = $('.ctsArea_btn');
         var isAnimate = 'off';
 
         elem.each(function () {
 
-            var elemOffset = $(this).offset().top;
+            var elemOffset = $(this).offset().top - 230;
             var scrollPos = $(window).scrollTop();
             var wh = $(window).height();
 
@@ -405,7 +405,17 @@
                 $('.journalWrap_item').addClass("on");
             }
         });
+    });
 
+    $(function(){
+        //メニューエリアの高さを調整
+        function adjustMenuHeight() {
+            $('.journalWrap_item').height($(window).height() - 150);
+        }
+
+        $(window).on('load resize', function() {
+            adjustMenuHeight();
+        });
     });
 </script>
 </asp:Content>
