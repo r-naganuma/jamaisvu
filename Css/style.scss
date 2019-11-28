@@ -3418,6 +3418,43 @@ $bp375: 375px;  // スマホ
 	}
 }
 
+.saleBannerFixed{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 27px 0;
+	background: rgba(255,255,255,.75);
+	z-index: 9999;
+
+	@include bp768 {
+		padding: 12px 0;
+	};
+
+	&.pdDetailSale{
+		@include bp768 {
+		};
+	}
+
+	p{
+		color: #AD2E24;
+		text-align: center;
+		@include font-weight(bold);
+		font-size: 20px;
+		line-height: 1;
+		letter-spacing: 0;
+
+		@include bp768 {
+			font-size: 10px;
+		};
+
+		a{
+			display: inline;
+			color: #AD2E24;
+			text-decoration: underline;
+		}
+	}
+}
+
 
 /*--------------*/
 /*--- footer ---*/

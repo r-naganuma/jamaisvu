@@ -438,7 +438,16 @@ function bodyPageLoad(){
 		$('.my-parts').click(function () {
 			$('body').removeClass('active');
 		});
-		
+
+		if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+		    var height=$(".hidden_btn").outerHeight();
+		    $(".saleBannerFixed").css("bottom", height);
+		}
+
+		if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+		    var height2=$(".saleBannerFixed").outerHeight();
+		    $(".footer").css("padding-bottom", height2);
+		}
 }
 
 </script>
@@ -1630,6 +1639,7 @@ if(video!=""){
 <div class="hidden_btn">
 	
 </div>
+
 <script type="text/javascript" async="" src="<%= Constants.PATH_ROOT %>Js/jquery.inview.min.js"></script>
 
 <style>
@@ -1794,6 +1804,13 @@ if(video!=""){
 </td>
 </tr>
 </table>
+
+<!-- セール固定表示 -->
+<div class="saleBannerFixed pdDetailSale">
+	<p>
+		<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=knitcoupon&udns=2&fpfl=0&pno=1">Knit Fair 対象のニット商品 ￥4,000OFF</a>　コード：1122
+	</p>
+</div>
 
 <script runat="server">
 public new void Page_Load(Object sender, EventArgs e)

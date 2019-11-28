@@ -70,6 +70,11 @@
 		});
 
 		if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+		    var height2=$(".saleBannerFixed").outerHeight();
+		    $(".footer").css("padding-bottom", height2);
+		}
+
+		if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
 			$(".searchBox_list--ttl").on("click", function () {
 				$(this).toggleClass('on');
 				$(this).nextAll('.searchBox_list--column').slideToggle('slow');
@@ -960,6 +965,13 @@
 	</td>
 	</tr>
 	</table>
+</div>
+
+<!-- セール固定表示 -->
+<div class="saleBannerFixed">
+	<p>
+		<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=knitcoupon&udns=2&fpfl=0&pno=1">Knit Fair 対象のニット商品 ￥4,000OFF</a>　コード：1122
+	</p>
 </div>
 
 <script runat="server">

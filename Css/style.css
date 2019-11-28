@@ -4075,6 +4075,42 @@ textarea::focus {
   }
 }
 
+.saleBannerFixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  .saleBannerFixed {
+    padding: 12px 0;
+  }
+}
+
+.saleBannerFixed p {
+  color: #AD2E24;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+@media (max-width: 768px) {
+  .saleBannerFixed p {
+    font-size: 10px;
+  }
+}
+
+.saleBannerFixed p a {
+  display: inline;
+  color: #AD2E24;
+  text-decoration: underline;
+}
+
 /*--------------*/
 /*--- footer ---*/
 /*--------------*/
