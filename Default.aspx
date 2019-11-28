@@ -16,10 +16,10 @@
 <%@ Register TagPrefix="uc" TagName="Parts010RCMD_001" Src="~/Page/Parts/Parts010RCMD_001.ascx" %>
 <%@ Register TagPrefix="uc" TagName="Parts010RCMD_002" Src="~/Page/Parts/Parts010RCMD_002.ascx" %>
 <%@ Register TagPrefix="uc" TagName="ProductColorSearchBox" Src="~/Form/Common/Product/ProductColorSearchBox.ascx" %>
-<%@ Register TagPrefix="uc" TagName="Parts000TMPL_001" Src="~/Page/Parts/Parts000TMPL_001.ascx" %>
-<%@ Register TagPrefix="uc" TagName="Parts000TMPL_002" Src="~/Page/Parts/Parts000TMPL_002.ascx" %>
-<%@ Register TagPrefix="uc" TagName="Parts000TMPL_003" Src="~/Page/Parts/Parts000TMPL_003.ascx" %>
-<%@ Register TagPrefix="uc" TagName="Parts000TMPL_004" Src="~/Page/Parts/Parts000TMPL_004.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Parts000TMPL_005" Src="~/Page/Parts/Parts000TMPL_005.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Parts000TMPL_006" Src="~/Page/Parts/Parts000TMPL_006.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Parts000TMPL_007" Src="~/Page/Parts/Parts000TMPL_007.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Parts000TMPL_008" Src="~/Page/Parts/Parts000TMPL_008.ascx" %>
 <%-- △ユーザーコントロール宣言領域△ --%>
 <%@ Register TagPrefix="uc" TagName="Criteo" Src="~/Form/Common/Criteo.ascx" %>
 <%@ page language="C#" masterpagefile="~/Form/Common/DefaultPage.master" autoeventwireup="true" inherits="Default, App_Web_default.aspx.cdcab7d2" title="JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア"%>
@@ -31,6 +31,7 @@
 --%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 <%-- ▽編集可能領域：HEAD追加部分▽ --%>
+<link rel="stylesheet" href="https://use.typekit.net/rzu4tgs.css">
 <% if (Constants.MOBILEOPTION_ENABLED){%>
 	<link rel="Alternate" media="handheld" href="<%= GetMobileUrl() %>" />
 <% } %>
@@ -45,47 +46,27 @@
     <div class="content">
         <div class="topFront">
             <%-- ▽メインビジュアル▽ --%>
-            <uc:Parts000TMPL_001 runat="server" />
+            <uc:Parts000TMPL_005 runat="server" />
             <%-- △メインビジュアル△ --%>
-            <%-- ▽コンテンツ▽ --%>
-            <uc:Parts000TMPL_002 runat="server" />
-            <%-- △コンテンツ△ --%>
+            <%-- ▽JOURNAL▽ --%>
+            <uc:Parts000TMPL_006 runat="server" />
+            <%-- △JOURNAL△ --%>
         </div>
-        <%-- ▽NEW ARRIVALS▽ --%>
-        <uc:Parts000TMPL_003 runat="server" />
-        <%-- △NEW ARRIVALS△ --%>
-        <%-- ▽RANKING▽ --%>
-        <uc:BodyProductRanking runat="server" />
-        <%-- △RANKING△ --%>
+        <%-- ▽ITEMS▽ --%>
+        <uc:Parts000TMPL_007 runat="server" />
+        <%-- △ITEMS△ --%>
+        <%-- ▽SP用カテゴリ▽ --%>
+        <uc:Parts000TMPL_008 runat="server" />
+        <%-- △SP用カテゴリ△ --%>
         <%-- ▽HISTORY▽ --%>
         <uc:BodyProductHistory runat="server" />
         <%-- △HISTORY△ --%>
-        <%-- ▽LOOK BOOK▽ --%>
-        <uc:Parts000TMPL_004 runat="server" />
-        <%-- △LOOK BOOK△ --%>
     </div>
 </div>
 <script type="text/javascript">
 $(function(){
-    // ヘッダーメイン
-    $(".mainVisual").slick({
-        autoplay:true,
-        autoplaySpeed:4000,
-        dots:true,
-        arrows:false,
-        infinite: true,
-        swipe: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        draggable: false,
-        variableWidth: false,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-        fade: true
-    });
-
     var height=$(".header").height();
-    $("#Wrap .pageTop .mainVisual").css("padding-top", height);
+    $("#Wrap .pageTop .mainVisualRev").css("padding-top", height);
 })
 </script>
 <!--- page end --->

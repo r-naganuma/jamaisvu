@@ -1808,7 +1808,7 @@ if(video!=""){
 <!-- セール固定表示 -->
 <div class="saleBannerFixed pdDetailSale">
 	<p>
-		<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=knitcoupon&udns=2&fpfl=0&pno=1">Knit Fair 対象のニット商品 ￥4,000OFF</a>　コード：1122
+		<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=knitcoupon&udns=2&fpfl=0&pno=1">Knit Fair開催中！<br class="sp_contents">クーポンコード” 1122 “で対象商品が￥4,000OFF！</a>
 	</p>
 </div>
 

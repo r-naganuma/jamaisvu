@@ -12,8 +12,79 @@
 		 url('../Font/gillsans.otf') format("opentype");
 }
 
+@font-face {
+	font-family: 'Times';
+    src: url("../Font/Times.eot");
+    src: url("../Font/Times.eot?#iefix") format('embedded-opentype'),
+         url("../Font/Times.woff") format('woff'),
+         url("../Font/Times.ttf") format('truetype');
+}
+
+/*====================================================================
+*    mixin
+/*==================================================================*/
+$bp1280: 1280px;
+
+@mixin bp1280 {
+  @media (max-width: ($bp1280)) {
+    @content;
+  }
+}
+$bp1200: 1200px;
+
+@mixin bp1200 {
+  @media (max-width: ($bp1200)) {
+    @content;
+  }
+}
+$bp1000: 1000px;
+
+@mixin bp1000 {
+  @media (max-width: ($bp1000)) {
+    @content;
+  }
+}
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+$bp375: 375px;  // スマホ
+
+@mixin bp375 {
+  @media (max-width: ($bp375)) {
+    @content;
+  }
+}
+
+@mixin font-weight($weight) {
+  $weights: (
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700
+  );
+  
+  $output: $weight;
+  @if map-has-key($weights, $weight) {
+    $output: map-get($weights, $weight);
+  }
+  
+  font-weight: $output;
+}
+
+
 body{
-    font-family: 'gillsans', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+	/*font-family: 'gillsans', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;*/
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+	@include bp768 {
+		font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+	};
 }
 
 a {
@@ -93,63 +164,6 @@ textarea::focus {
 }
 
 /*====================================================================
-*    mixin
-/*==================================================================*/
-$bp1280: 1280px;
-
-@mixin bp1280 {
-  @media (max-width: ($bp1280)) {
-    @content;
-  }
-}
-$bp1200: 1200px;
-
-@mixin bp1200 {
-  @media (max-width: ($bp1200)) {
-    @content;
-  }
-}
-$bp1000: 1000px;
-
-@mixin bp1000 {
-  @media (max-width: ($bp1000)) {
-    @content;
-  }
-}
-
-$bp768: 768px;  // スマホ
-
-@mixin bp768 {
-  @media (max-width: ($bp768)) {
-    @content;
-  }
-}
-
-$bp375: 375px;  // スマホ
-
-@mixin bp375 {
-  @media (max-width: ($bp375)) {
-    @content;
-  }
-}
-
-@mixin font-weight($weight) {
-  $weights: (
-    light: 300,
-    regular: 400,
-    medium: 500,
-    bold: 700
-  );
-  
-  $output: $weight;
-  @if map-has-key($weights, $weight) {
-    $output: map-get($weights, $weight);
-  }
-  
-  font-weight: $output;
-}
-
-/*====================================================================
 *    Responsive
 /*==================================================================*/
 
@@ -215,6 +229,127 @@ $bp375: 375px;  // スマホ
 
 #Contents{
 	margin: 0;
+}
+
+
+.btnBoxver2 {
+	width: 200px;
+	height: 36px;
+	margin: 0 auto;
+	position: relative;
+
+	@include bp768 {
+		width: 250px;
+		height: 45px;
+	};
+
+	a {
+		font-size: 12px;
+		text-align: center;
+		letter-spacing: 0.08em;
+		position: relative;
+		line-height: 36px;
+		color: #333;
+		font-family: interstate, sans-serif;
+		@include font-weight(regular);
+
+		@include bp768 {
+			font-size: 13px;
+			line-height: 45px;
+		};
+
+	    &::after{
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			background: #333;
+			transform-origin: right top;
+			transform: scale(0, 1);
+			transition: transform .3s;
+
+			@include bp768 {
+				content: none;
+			};
+	    }
+
+	    &:hover::after {
+			transform-origin: left top;
+			transform: scale(1, 1);
+	    }
+
+	    &:hover{
+	      opacity: 1;
+	      color: #fff !important;
+	    }
+	}
+
+	&.btn--more {
+		border: #333 1px solid;
+		color: #333;
+	}
+
+	&.btnNewsLetter{
+		width: 320px;
+		height: 50px;
+
+		@include bp768 {
+			width: 240px;
+			height: 48px;
+			background: #333;
+		};
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 19px;
+			margin: auto;
+			z-index: 1;
+			display: block;
+			width: 7px;
+			height: 7px;
+			-moz-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+			border-top: 1px solid #333;
+			border-right: 1px solid #333;
+
+			@include bp768 {
+				right: 15px;
+				border-top: 1px solid #fff;
+				border-right: 1px solid #fff;
+			};
+		}
+
+	    &:hover::after {
+			border-top: 1px solid #fff;
+			border-right: 1px solid #fff;
+	    }
+
+		a{
+			font-size: 13px;
+			letter-spacing: 0.03em;
+			line-height: 50px;
+			@include font-weight(bold);
+			position: relative;
+			z-index: 1;
+		    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+
+			@include bp768 {
+				font-size: 12px;
+				line-height: 48px;
+				@include font-weight(medium);
+				color: #fff;
+				font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+			};
+		}
+	}
 }
 
 .btnBox {
@@ -1269,7 +1404,7 @@ $bp375: 375px;  // スマホ
 /*----------------*/
 .pageWrap {
 	position: relative;
-    font-family: 'gillsans', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
     color: #333;
     letter-spacing: 0.08em;
     font-size: 13px;
@@ -1280,6 +1415,8 @@ $bp375: 375px;  // スマホ
 	@include bp768 {
 		display: block!important;
 		overflow-x: hidden;
+		font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+    	-webkit-font-smoothing: antialiased;
 	};
 }
 
@@ -1304,6 +1441,423 @@ $bp375: 375px;  // スマホ
 	/*---------------*/
 
 	.pageTop {
+	/*---------------*/
+	/*--- ver.2 ---*/
+	/*---------------*/
+		.mainVisualRev{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 1060px;
+			margin: 0 auto;
+
+			@include bp768 {
+				display: block;
+				width: 89.33%;
+				margin: 0 auto 40px;
+			};
+
+			&_main{
+				width: 530px;
+
+				@include bp768 {
+					width: 100%;
+				};
+			}
+
+			&_sub{
+				width: 420px;
+			}
+		}
+
+		.journalTop{
+			width: 100%;
+			position: relative;
+
+			&::after{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 320px;
+				background: #F2EEED;
+
+				@include bp768 {
+					height: 191px;
+				};
+			}
+
+			&_inner{
+				width: 1060px;
+				margin: 0 auto 80px;
+				padding-bottom: 80px;
+				border-bottom: 1px solid #CCCCCC;
+
+				@include bp768 {
+					width: 89.33%;
+					margin: 0 auto 60px;
+					padding-bottom: 60px;
+				};
+			}
+
+			&_ttl{
+				font-family: 'Times';
+				font-size: 22px;
+				padding: 80px 0 40px;
+				color: #888888;
+				line-height: 26px;
+				letter-spacing: 0.03em;
+				position: relative;
+				z-index: 2;
+
+				@include bp768 {
+					font-size: 20px;
+					padding: 40px 0 20px;
+					line-height: 24px;
+				};
+			}
+
+			&_new{
+				margin: 0 0 40px;
+				background: #fff;
+				position: relative;
+				z-index: 2;
+
+				@include bp768 {
+					margin: 0 0 30px;
+				};
+
+				a{
+					display: flex;
+					align-items: center;
+
+					@include bp768 {
+						display: block;
+					};
+				}
+
+				&--pic{
+					width: 530px;
+
+					@include bp768 {
+						width: 100%;
+					};
+				}
+
+				&--txt{
+					width: 470px;
+					margin-left: 60px;
+
+					@include bp768 {
+						width: 100%;
+						margin: 10px 0 0 0;
+					};
+
+					.journalCat{
+						font-size: 14px;
+						color: #888888;
+						line-height: 1;
+						font-family: interstate, sans-serif;
+						font-weight: 500;
+						letter-spacing: 0.03em;
+
+						@include bp768 {
+							font-size: 12.5px;
+						};
+					}
+
+					.journalTtl{
+						font-weight: bold;
+						margin: 15px 0;
+						font-size: 16px;
+						line-height: 28px;
+						letter-spacing: 0.03em;
+			
+						@include bp768 {
+							font-weight: 500;
+							margin: 5px 0;
+							font-size: 14px;
+							line-height: 24px;
+						};
+					}
+
+					.journalDate{
+						font-size: 12px;
+						color: #888888;
+						line-height: 1;
+						font-family: interstate, sans-serif;
+						font-weight: 500;
+						letter-spacing: 0.03em;
+			
+						@include bp768 {
+							font-size: 11px;
+						};
+					}
+				}
+			}
+
+			&_archive{
+				margin: 0 0 40px;
+				display: flex;
+				justify-content: space-between;
+			
+				@include bp768 {
+					display: block;
+				};
+
+				&--list{
+					width: 340px;
+			
+					@include bp768 {
+						width: 100%;
+						margin-bottom: 20px;
+					};
+
+					a{
+						@include bp768 {
+							width: 100%;
+							display: flex;
+							align-items: center;
+						};
+					}
+
+					&--pic{
+						@include bp768 {
+							width: 50%;
+						};
+					}
+
+					&--txt{
+						@include bp768 {
+							width: 47%;
+							margin-left: 10px;
+						};
+
+						.journalCat{
+							font-size: 12px;
+							color: #888888;
+							line-height: 1;
+							font-family: interstate, sans-serif;
+							font-weight: 500;
+							letter-spacing: 0.03em;
+							margin-top: 15px;
+
+							@include bp768 {
+								font-size: 11px;
+								margin-top: 0;
+							};
+						}
+
+						.journalTtl{
+							font-weight: bold;
+							margin: 10px 0;
+							font-size: 13px;
+							line-height: 20px;
+							letter-spacing: 0.03em;
+				
+							@include bp768 {
+								font-weight: 500;
+								margin: 5px 0;
+								font-size: 12px;
+								line-height: 21px;
+								height: 40px;
+								position: relative;
+								overflow: hidden;
+							};
+
+						    &::before {
+								@include bp768 {
+									content: "...";
+									position: absolute;
+									bottom: 0;
+									right: 0;
+									background: #fff;
+								};
+						    }
+
+						    &::after {
+								@include bp768 {
+									content: "";
+									height: 100%;
+									width: 100%;
+								};
+						    }
+						}
+
+						.journalDate{
+							font-size: 11px;
+							color: #888888;
+							line-height: 1;
+							font-family: interstate, sans-serif;
+							font-weight: 500;
+							letter-spacing: 0.03em;
+				
+							@include bp768 {
+								font-size: 10px;
+							};
+						}
+					}
+				}
+			}
+		}
+
+		.itemsTop{
+			width: 1060px;
+			margin: 0 auto 80px;
+
+			@include bp768 {
+				width: 100%;
+				margin: 0 auto 60px;
+			};
+
+			&_ttl{
+				font-family: 'Times';
+				font-size: 28px;
+				margin-bottom: 20px;
+				line-height: 32px;
+				letter-spacing: 0.02em;
+			
+				@include bp768 {
+					width: 89.33%;
+					margin: 0 auto 20px;
+					font-size: 27px;
+				};
+			}
+
+			&_txt{
+				font-size: 12px;
+				margin-bottom: 40px;
+				line-height: 26px;
+				letter-spacing: 0.03em;
+			
+				@include bp768 {
+					width: 89.33%;
+					margin: 0 auto 40px;
+					font-size: 13px;
+					line-height: 24px;
+				};
+			}
+
+			&_box{
+				display: flex;
+				flex-wrap: wrap;
+			
+				@include bp768 {
+					justify-content: space-between;
+					margin-bottom: 10px;
+				};
+
+				&--list{
+					width: 330px;
+					margin: 0 35px 40px 0;
+			
+					@include bp768 {
+						width: 48.67%;
+						margin: 0 0 30px 0;
+					};
+
+					&:nth-child(3n){
+						margin-right: 0;
+					}
+
+					.itemsName{
+						font-size: 13px;
+						font-weight: bold;
+						color: #555555;
+						line-height: 20px;
+						margin: 15px 0 10px;
+						letter-spacing: 0.03em;
+			
+						@include bp768 {
+							font-size: 12px;
+							font-weight: 500;
+							color: #333;
+							line-height: 2;
+							margin: 7px 0 2px 10px;
+						};
+					}
+
+					.itemsPrice{
+						font-size: 13px;
+						color: #555555;
+						line-height: 1;
+						letter-spacing: 0.01em;
+			
+						@include bp768 {
+							font-size: 12px;
+							letter-spacing: 0.01em;
+							margin: 0 0 0 10px;
+						};
+
+						span{
+							font-size: 12px;
+							color: #555555;
+							line-height: 1;
+							letter-spacing: 0.01em;
+						}
+					}
+				}
+			}
+		}
+
+		.categoryTop{
+			width: 89.33%;
+			margin: 0 auto 60px;
+			padding-top: 60px;
+			border-top: 1px solid #CCCCCC;
+
+			&_ttl{
+				font-family: 'Times';
+				font-size: 20px;
+				padding-bottom: 20px;
+				margin-bottom: 16px;
+				line-height: 1;
+				letter-spacing: 0.03em;
+				border-bottom: 1px solid #CCCCCC;
+			}
+
+			ul{
+				li{
+					padding-bottom: 16px;
+					margin-bottom: 16px;
+					border-bottom: 1px solid #CCCCCC;
+					position: relative;
+
+					&:last-child{
+						margin-bottom: 0;
+					}
+
+					&:after {
+						content: "";
+						position: absolute;
+						top: 3px;
+						right: 20px;
+						z-index: 1;
+						display: block;
+						width: 7px;
+						height: 7px;
+						-moz-transform: rotate(45deg);
+						-webkit-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						transform: rotate(45deg);
+						border-top: 1px solid #555555;
+						border-right: 1px solid #555555;
+					}
+
+					a{
+						font-size: 13px;
+						padding-left: 10px;
+						line-height: 1;
+						letter-spacing: 0.01em;
+					}
+				}
+			}
+		}
+
+	/*---------------*/
+	/*--- ver.1 ---*/
+	/*---------------*/
 
 		.mainVisual {
 			width: 100vw;
@@ -1436,6 +1990,65 @@ $bp375: 375px;  // スマホ
 				display: block;
 				width: 1px;
 				background: #2E0E02;
+			}
+		}
+	}
+
+	.historyTop{
+		width: 1060px;
+		margin: 0 auto 160px;
+		padding-top: 80px;
+		border-top: 1px solid #CCCCCC;
+
+		@include bp768 {
+			width: 89.33%;
+			margin: 0 auto 110px;
+			padding-top: 0;
+			border-top: none;
+		};
+
+		&_ttl{
+			font-family: 'Times';
+			font-size: 22px;
+			line-height: 1;
+			letter-spacing: 0.03em;
+			margin-bottom: 40px;
+
+			@include bp768 {
+				font-size: 20px;
+				margin-bottom: 20px;
+			};
+		}
+
+		&_box{
+			display: flex;
+
+			@include bp768 {
+				flex-wrap: wrap;
+			};
+
+			&--list{
+				width: 152px;
+				margin-right: 30px;
+
+				@include bp768 {
+					width: 31.19%;
+					margin: 0 10.5px 10.5px 0;
+				};
+
+				&:nth-child(3n){
+					@include bp768 {
+						margin-right: 0;
+					};
+				}
+
+				&:nth-child(6){
+					margin-right: 0;
+				}
+
+				&:nth-child(n + 7){
+					display: none;
+				}
 			}
 		}
 	}
@@ -2391,7 +3004,7 @@ $bp375: 375px;  // スマホ
 			position: fixed;
 			overflow-y: auto;
 			overflow-x: hidden;
-			height: 80%;
+			height: 70%;
 
 			@include bp768 {
 				width: 100%;
@@ -3445,6 +4058,7 @@ $bp375: 375px;  // スマホ
 
 		@include bp768 {
 			font-size: 10px;
+			line-height: 1.5;
 		};
 
 		a{
@@ -3479,29 +4093,29 @@ $bp375: 375px;  // スマホ
 		};
 
 		.news__title{
-			color: #2E0E02;
 			line-height: 1;
-			margin-bottom: 16px;
-			font-size: 20px;
-			letter-spacing: 0.24em;
+			margin-bottom: 20px;
+			font-size: 16px;
+			letter-spacing: 0.12em;
 			text-align: center;
+			font-family: interstate, sans-serif;
+			@include font-weight(regular);
 
 			@include bp768 {
-				margin-bottom: 12px;
+				margin-bottom: 16px;
 			};
 		}
 
 		p{
 			text-align: center;
-			font-size: 14px;
+			font-size: 12px;
 			color: #3D3D3D;
-			line-height: 2;
-			margin-bottom: 24px;
+			line-height: 22px;
+			margin-bottom: 20px;
+			letter-spacing: 0.03em;
 
 			@include bp768 {
-				margin-bottom: 32px;
-				letter-spacing: 0.04em;
-				font-size: 13px;
+				margin-bottom: 17px;
 			};
 		}
 	}

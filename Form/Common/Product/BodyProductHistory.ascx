@@ -18,29 +18,24 @@
 <%-- ▽商品表示履歴ループ▽ --%>
 <asp:Repeater ID="rProductHistory" runat="server">
 <HeaderTemplate>
-<div class="sec sec--history">
-    <div class="sec__inner">
-    <h2 class="vertical-title">
-        HISTORY
+<div class="historyTop">
+    <h2 class="historyTop_ttl">
+        Recently viewed
     </h2>
-
-    <div class="historyContent">
-        <div class="historyContent__list">
+    <div class="historyTop_box">
 </HeaderTemplate>
 <ItemTemplate>
-                <div class="historyContent__list-item">
-                    <a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrl(Container.DataItem)) %>">
-                        <w2c:ProductImage ImageTagId="picture" ImageSize="M" ProductMaster="<%# Container.DataItem %>" IsVariation="false" runat="server" /></a>
-						<%-- ▽在庫切れ可否▽ --%>
-						<span visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLD OUT</span>
-						<%-- △在庫切れ可否△ --%>
-                    </a>
-                </div>
+        <div class="historyTop_box--list">
+            <a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateProductDetailUrl(Container.DataItem)) %>">
+                <w2c:ProductImage ImageTagId="picture" ImageSize="L" ProductMaster="<%# Container.DataItem %>" IsVariation="false" runat="server" /></a>
+				<%-- ▽在庫切れ可否▽ --%>
+				<span visible='<%# ProductListUtility.IsProductSoldOut(Container.DataItem) %>' runat="server" class="soldout">SOLD OUT</span>
+				<%-- △在庫切れ可否△ --%>
+            </a>
+        </div>
 </ItemTemplate>
 <FooterTemplate>
-        	</div>
-    	</div>
-    </div>
+	</div>
 </div>
 </FooterTemplate>
 </asp:Repeater>

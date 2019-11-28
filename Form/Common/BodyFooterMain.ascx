@@ -17,8 +17,8 @@
 <div class="sec sec--news">
     <div class="sec__inner">
         <h2 class="news__title">NEWS LETTER</h2>
-        <p>新商品のご紹介や会員様限定のイベント情報など、<br>最新ニュースをメールマガジンにてお知らせいたします。</p>
-        <div class="btnBox btn--more">
+        <p>新商品のご紹介や会員様限定のイベント情報など<br>最新ニュースをニュースレターでお届けします。</p>
+        <div class="btnBoxver2 btn--more btnNewsLetter">
             <a href="<%= Constants.PATH_ROOT %>Form/User/MailMagazineRegistInput.aspx">ニュースレターを受け取る</a>
         </div>
     </div>
