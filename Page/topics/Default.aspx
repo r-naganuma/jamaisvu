@@ -35,6 +35,15 @@ $("title").text("TOPICS｜JAMAIS VU（ジャメヴ）公式サイト｜Official 
       	<div class="topics_list">
       		<ul class="topics_list__ul">
 
+                              <!-- <li>
+                                    <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191129/">
+                                          <img src="https://jamaisvu.co.jp/Page/topics/images/thumbnail191129.jpg" alt="feature">
+                                          <p class="topics_list__ul__day">2019.11.29</p>
+                                          <h3 class="topics_list__category">
+                                          FEATURE</h3>
+                                    </a>
+                              </li> -->
+
                               <li>
                                     <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191126/">
                                           <img src="https://jamaisvu.co.jp/Page/topics/images/thumbnail191126.jpg" alt="feature">

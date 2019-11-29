@@ -39,6 +39,8 @@
 <link id="detail" rel="stylesheet" type="text/css"  media="all" />
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700&display=swap&subset=japanese" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap&subset=japanese" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/rzu4tgs.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap&subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
 <%-- 各種Js読み込み --%>
 <uc:HeaderScriptDeclaration id="HeaderScriptDeclaration" runat="server"></uc:HeaderScriptDeclaration>
 

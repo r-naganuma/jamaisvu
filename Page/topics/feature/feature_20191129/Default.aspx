@@ -79,7 +79,7 @@
     <div class="secArea_list">
       <a href="https://www.instagram.com/p/B4AGFhRFKwL/" class="secArea_list--icn" target="_blank">
         <img src="images/icn04.png" alt="">
-        <p>___m.26</p>
+        <p>______m.26</p>
       </a>
       <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930317111&cat=003" class="secArea_list--pic">
         <img src="images/style04.jpg" alt="">
@@ -90,7 +90,7 @@
     <div class="secArea_list">
       <a href="https://www.instagram.com/p/B3okY_4Jxkl/" class="secArea_list--icn" target="_blank">
         <img src="images/icn05.png" alt="">
-        <p>___s.s.1224</p>
+        <p>_____s.s.1224</p>
       </a>
       <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930319111&cat=003" class="secArea_list--pic">
         <img src="images/style05.jpg" alt="">
@@ -112,7 +112,7 @@
     <div class="secArea_list">
       <a href="https://www.instagram.com/p/B4L7cKuACYq/" class="secArea_list--icn" target="_blank">
         <img src="images/icn07.png" alt="">
-        <p>maria_lydwina041</p>
+        <p>maria_lydwina0417</p>
       </a>
       <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930319149&cat=003" class="secArea_list--pic">
         <img src="images/style07.jpg" alt="">
@@ -134,7 +134,7 @@
     <div class="secArea_list">
       <a href="https://www.instagram.com/p/B36gy2BFDeT/" class="secArea_list--icn" target="_blank">
         <img src="images/icn09.png" alt="">
-        <p>_hysaym</p>
+        <p>__hysaym</p>
       </a>
       <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930317111&cat=003" class="secArea_list--pic">
         <img src="images/style09.jpg" alt="">

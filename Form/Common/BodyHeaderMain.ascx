@@ -11,7 +11,7 @@
 <%--
 
 下記は保持用のダミー情報です。削除しないでください。
-<%@ FileInfo LastChanged="最終更新者" %>
+<%@ FileInfo LastChanged="ロゾパンサン" %>
 
 --%>
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
@@ -38,12 +38,20 @@ function initializeFunctionJs() {
 	  $(this).toggleClass("on");
 	});
 
-	if (document.URL.match("lookbook")) {
+	if (document.URL.match("Journal")) {
+	  $(".header__nav--list li:nth-child(2)").addClass("on");
+	}
+
+	if (document.URL.match("styling")) {
 	  $(".header__nav--list li:nth-child(3)").addClass("on");
 	}
 
-	if (document.URL.match("Concept")) {
+	if (document.URL.match("lookbook")) {
 	  $(".header__nav--list li:nth-child(4)").addClass("on");
+	}
+
+	if (document.URL.match("Concept")) {
+	  $(".header__nav--list li:nth-child(5)").addClass("on");
 	} //ヘッダーメニューマウスオーバー
 
 
@@ -207,7 +215,12 @@ function initializeFunctionJs() {
 							</li>
 							<li>
 								<div class="listColumn">
-									<a href="https://jamaisvu.co.jp/category/topics/" class="period">TOPICS</a>
+									<a href="<%= Constants.PATH_ROOT %>Page/Journal/" class="period">JOURNAL</a>
+								</div>
+							</li>
+							<li>
+								<div class="listColumn">
+									<a href="<%= Constants.PATH_ROOT %>Page/styling/" class="period">STYLE IDEA</a>
 								</div>
 							</li>
 							<li>
@@ -215,11 +228,11 @@ function initializeFunctionJs() {
 									<a href="<%= Constants.PATH_ROOT %>Page/lookbook/" class="period">LOOKBOOK</a>
 								</div>
 							</li>
-							<!-- <li>
+							<li>
 								<div class="listColumn">
-									<a href="<%= Constants.PATH_ROOT %>Page/Concept/about.aspx" class="period">CONCEPT</a>
+									<a href="<%= Constants.PATH_ROOT %>Page/Concept/" class="period">CONCEPT</a>
 								</div>
-							</li> -->
+							</li>
 						</ul>
 					</nav>
 
@@ -423,7 +436,7 @@ function initializeFunctionJs() {
 											新着商品
 										</a>
 										<div class="navUpdate">
-											<p>09/09 UP</p>
+											<p>10/21 UP</p>
 										</div>
 									</li>
 									<li>
@@ -490,22 +503,27 @@ function initializeFunctionJs() {
 								</ul>
 							</div>
 
-							<div class="nav_box">
+							<div class="nav_box nav_boxJournal">
 								<h3>特集</h3>
 								<ul>
-									<!-- <li>
-										<a href="<%= Constants.PATH_ROOT %>Page/Concept/about.aspx">
-											コンセプト
-										</a>
-									</li> -->
 									<li>
-										<a href="<%= Constants.PATH_ROOT %>Page/lookbook/">
-											ルックブック
+										<a href="<%= Constants.PATH_ROOT %>Page/Journal/">
+											JOURNAL
 										</a>
 									</li>
 									<li>
-										<a href="https://jamaisvu.co.jp/category/topics/">
-											トピックス
+										<a href="<%= Constants.PATH_ROOT %>Page/styling/">
+											STYLE IDEA
+										</a>
+									</li>
+									<li>
+										<a href="<%= Constants.PATH_ROOT %>Page/lookbook/">
+											LOOKBOOK
+										</a>
+									</li>
+									<li>
+										<a href="<%= Constants.PATH_ROOT %>Page/Concept/">
+											CONCEPT
 										</a>
 									</li>
 								</ul>

@@ -27,7 +27,7 @@
 
 <%-- ▽編集可能領域：コンテンツ▽ --%>
 <div class="journalWrap">
-	<h2>Journal</h2>
+	<h2>JOURNAL</h2>
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">

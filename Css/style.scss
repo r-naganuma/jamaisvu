@@ -37,6 +37,13 @@ $bp1200: 1200px;
     @content;
   }
 }
+$bp1100: 1100px;
+
+@mixin bp1100 {
+  @media (max-width: ($bp1100)) {
+    @content;
+  }
+}
 $bp1000: 1000px;
 
 @mixin bp1000 {
@@ -650,7 +657,7 @@ textarea::focus {
 		};
 
 		img{
-			width: 140px;
+			width: 120px;
 
 			@include bp1000 {
 				width: 100%;
@@ -664,7 +671,11 @@ textarea::focus {
 			padding-top: 5px;
 
 			li {
-				margin-left: 42px;
+				margin-left: 30px;
+
+				&:nth-child(1){
+					margin-left: 60px;
+				}
 
 				.listColumn{
 					position: relative;
@@ -672,10 +683,15 @@ textarea::focus {
 				}
 
 				.period {
-					color: #2E0E02;
+					/*color: #2E0E02;
 					font-size: 15px;
-					letter-spacing: 0.16em;
+					letter-spacing: 0.16em;*/
+					color: #333;
+					font-size: 12px;
+					letter-spacing: 0.08em;
 					line-height: 1;
+					font-family: interstate, sans-serif;
+					font-weight: 400;
 
 					&:hover{
 						opacity: 1;
@@ -759,8 +775,8 @@ textarea::focus {
 
 		a {
 			color: #2E0E02;
-			font-size: 14px;
-			letter-spacing: 0.16em;
+			font-size: 13px;
+			letter-spacing: 0.03em;
 			line-height: 1;
 			position: relative;
 			z-index: 2;
@@ -1187,6 +1203,13 @@ textarea::focus {
 						display: none;
 					}
 				}
+
+				&.nav_boxJournal{
+					a{
+						font-family: interstate, sans-serif;
+						font-weight: 400;
+					}
+				}
 			}
 
 			.navNewsLetter{
@@ -1451,6 +1474,10 @@ textarea::focus {
 			width: 1060px;
 			margin: 0 auto;
 
+			@include bp1100 {
+				width: 96.36%;
+			};
+
 			@include bp768 {
 				display: block;
 				width: 89.33%;
@@ -1460,6 +1487,10 @@ textarea::focus {
 			&_main{
 				width: 530px;
 
+				@include bp1100 {
+					width: 50%;
+				};
+
 				@include bp768 {
 					width: 100%;
 				};
@@ -1467,6 +1498,10 @@ textarea::focus {
 
 			&_sub{
 				width: 420px;
+
+				@include bp1100 {
+					width: 39.62%;
+				};
 			}
 		}
 
@@ -1494,6 +1529,10 @@ textarea::focus {
 				padding-bottom: 80px;
 				border-bottom: 1px solid #CCCCCC;
 
+				@include bp1100 {
+					width: 96.36%;
+				};
+
 				@include bp768 {
 					width: 89.33%;
 					margin: 0 auto 60px;
@@ -1502,17 +1541,17 @@ textarea::focus {
 			}
 
 			&_ttl{
-				font-family: 'Times';
-				font-size: 22px;
+				font-family: 'Playfair Display', serif;
+				font-size: 20px;
 				padding: 80px 0 40px;
-				color: #888888;
+				color: #666;
 				line-height: 26px;
 				letter-spacing: 0.03em;
 				position: relative;
 				z-index: 2;
 
 				@include bp768 {
-					font-size: 20px;
+					font-size: 18px;
 					padding: 40px 0 20px;
 					line-height: 24px;
 				};
@@ -1540,6 +1579,10 @@ textarea::focus {
 				&--pic{
 					width: 530px;
 
+					@include bp1100 {
+						width: 50%;
+					};
+
 					@include bp768 {
 						width: 100%;
 					};
@@ -1548,6 +1591,10 @@ textarea::focus {
 				&--txt{
 					width: 470px;
 					margin-left: 60px;
+
+					@include bp1100 {
+						width: 44.34%;
+					};
 
 					@include bp768 {
 						width: 100%;
@@ -1608,6 +1655,10 @@ textarea::focus {
 
 				&--list{
 					width: 340px;
+
+					@include bp1100 {
+						width: 32.08%;
+					};
 			
 					@include bp768 {
 						width: 100%;
@@ -1706,13 +1757,17 @@ textarea::focus {
 			width: 1060px;
 			margin: 0 auto 80px;
 
+			@include bp1100 {
+				width: 96.36%;
+			};
+
 			@include bp768 {
 				width: 100%;
 				margin: 0 auto 60px;
 			};
 
 			&_ttl{
-				font-family: 'Times';
+				font-family: 'Playfair Display', serif;
 				font-size: 28px;
 				margin-bottom: 20px;
 				line-height: 32px;
@@ -1751,6 +1806,10 @@ textarea::focus {
 				&--list{
 					width: 330px;
 					margin: 0 35px 40px 0;
+
+					@include bp1100 {
+						width: 30.1%;
+					};
 			
 					@include bp768 {
 						width: 48.67%;
@@ -1808,7 +1867,7 @@ textarea::focus {
 			border-top: 1px solid #CCCCCC;
 
 			&_ttl{
-				font-family: 'Times';
+				font-family: 'Playfair Display', serif;
 				font-size: 20px;
 				padding-bottom: 20px;
 				margin-bottom: 16px;
@@ -2000,6 +2059,10 @@ textarea::focus {
 		padding-top: 80px;
 		border-top: 1px solid #CCCCCC;
 
+		@include bp1100 {
+			width: 96.36%;
+		};
+
 		@include bp768 {
 			width: 89.33%;
 			margin: 0 auto 110px;
@@ -2008,7 +2071,7 @@ textarea::focus {
 		};
 
 		&_ttl{
-			font-family: 'Times';
+			font-family: 'Playfair Display', serif;
 			font-size: 22px;
 			line-height: 1;
 			letter-spacing: 0.03em;
@@ -2030,6 +2093,11 @@ textarea::focus {
 			&--list{
 				width: 152px;
 				margin-right: 30px;
+				position: relative;
+
+				@include bp1100 {
+					width: 14.33%;
+				};
 
 				@include bp768 {
 					width: 31.19%;
@@ -2048,6 +2116,28 @@ textarea::focus {
 
 				&:nth-child(n + 7){
 					display: none;
+				}
+
+				.soldout{
+					display: block;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 40px;
+					background: rgba(46,14,2,.75);
+					line-height: 40px;
+					font-size: 13px;
+					text-align: center;
+					letter-spacing: 0.16em;
+					color: #fff;
+					border: none;
+
+					@include bp768 {
+						height: 32px;
+						line-height: 32px;
+						font-size: 12px;
+					};
 				}
 			}
 		}

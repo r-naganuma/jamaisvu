@@ -31,7 +31,6 @@
 --%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 <%-- ▽編集可能領域：HEAD追加部分▽ --%>
-<link rel="stylesheet" href="https://use.typekit.net/rzu4tgs.css">
 <% if (Constants.MOBILEOPTION_ENABLED){%>
 	<link rel="Alternate" media="handheld" href="<%= GetMobileUrl() %>" />
 <% } %>
