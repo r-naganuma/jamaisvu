@@ -53,7 +53,7 @@ $("title").text("Style Idea｜JAMAIS VU（ジャメヴ）公式サイト｜Offic
               <div class="leftBox"><a href="<%= Constants.PATH_ROOT %>Page/styling/201910"><img src="<%= Constants.PATH_ROOT %>Page/styling/201910/images/styleImage1.jpg" alt=""></a></div>
               <div class="rightBox">
                 <p class="sub">RELASE DATE</p>
-                <a href="<%= Constants.PATH_ROOT %>Page/styling/201910" class="relaseDate">2019 OCTOVER</a>
+                <a href="<%= Constants.PATH_ROOT %>Page/styling/201910" class="relaseDate">2019 OCTOBER</a>
               </div>
             </li>
             <li>
