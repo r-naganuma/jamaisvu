@@ -2573,6 +2573,267 @@ textarea::focus {
   }
 }
 
+#Wrap .conceptPage {
+  width: 1060px;
+  margin: 65px auto 160px;
+  height: 610px;
+  background-image: url("../Contents/ImagesPkg/user/concept/concept_bg_pc.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 70px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage {
+    width: 100%;
+    margin: 78px auto 120px;
+    height: auto;
+    background-image: url("../Contents/ImagesPkg/user/concept/concept_bg_sp.jpg");
+    background-size: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    padding: 60px 0;
+  }
+}
+
+#Wrap .conceptPage_txt1 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage_txt1 {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: normal;
+  }
+}
+
+#Wrap .conceptPage_txt2 {
+  font-family: 'Times';
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage_txt2 {
+    font-size: 20px;
+    letter-spacing: 0.06em;
+  }
+}
+
+#Wrap .conceptPage_txt3 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2.17;
+  letter-spacing: 0.36px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage_txt3 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.84px;
+    margin-bottom: 30px;
+  }
+}
+
+#Wrap .conceptPage_txt4 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2.17;
+  letter-spacing: 0.36px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage_txt4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.84px;
+  }
+}
+
+#Wrap .conceptPage_material {
+  width: 660px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage_material {
+    width: 64%;
+    margin: 0 auto;
+  }
+}
+
+#Wrap .conceptPage_material--ttl {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.48px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage_material--ttl {
+    font-size: 14px;
+    letter-spacing: 0.84px;
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  }
+}
+
+#Wrap .conceptPage_material ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage_material ul {
+    display: block;
+  }
+}
+
+#Wrap .conceptPage_material ul li {
+  width: 320px;
+  height: 50px;
+  border-radius: 2px;
+  border: solid 1px #333333;
+  background-color: #ffffff;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage_material ul li {
+    width: 100%;
+    height: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage_material ul li:first-child {
+    margin-bottom: 18px;
+  }
+}
+
+#Wrap .conceptPage_material ul li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 19.2px;
+  margin: auto;
+  z-index: 1;
+  display: block;
+  width: 7px;
+  height: 7px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage_material ul li:after {
+    right: 15px;
+  }
+}
+
+#Wrap .conceptPage_material ul li:hover::after {
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+#Wrap .conceptPage_material ul li a {
+  width: 100%;
+  line-height: 50px;
+  color: #333;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  position: relative;
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage_material ul li a {
+    font-size: 12px;
+    line-height: 48px;
+  }
+}
+
+#Wrap .conceptPage_material ul li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #333;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage_material ul li a::after {
+    content: none;
+  }
+}
+
+#Wrap .conceptPage_material ul li a:hover::after {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+#Wrap .conceptPage_material ul li a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   #Wrap .pageTop .sec {
     position: relative;
