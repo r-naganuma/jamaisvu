@@ -728,8 +728,7 @@ textarea::focus {
   font-size: 12px;
   letter-spacing: 0.08em;
   line-height: 1;
-  font-family: interstate, sans-serif;
-  font-weight: 400;
+  font-family: 'Playfair Display', serif;
 }
 
 .header__nav--list li .period:hover {
@@ -1316,8 +1315,7 @@ textarea::focus {
 }
 
 .header__menu .header__menu--inner .nav_box.nav_boxJournal a {
-  font-family: interstate, sans-serif;
-  font-weight: 400;
+  font-family: 'Playfair Display', serif;
 }
 
 .header__menu .header__menu--inner .navNewsLetter {

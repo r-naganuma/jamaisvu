@@ -1282,8 +1282,8 @@ if(video!=""){
 
 <div class="sp_contents">
 	<div class="detail_change">
-		<a href="" class="active" data="id_description_wrap__left">アイテム説明</a>
-		<a href="" data="id_description_wrap__right">詳細</a>
+		<a href="" data="id_description_wrap__left">アイテム説明</a>
+		<a href="" class="active" data="id_description_wrap__right">詳細</a>
 	</div>
 </div>
 <div class="id_description_wrap">

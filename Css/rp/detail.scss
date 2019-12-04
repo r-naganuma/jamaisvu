@@ -472,6 +472,8 @@ $bp768: 768px;  // スマホ
 			width: (500%/1080*100);
 			@include bp768 {
 				width: 100%;
+	
+				display: none;
 				p{
 					font-size: 14px!important;
 				}
@@ -483,8 +485,6 @@ $bp768: 768px;  // スマホ
 			width: (500%/1080*100);
 			@include bp768 {
 				width: 100%;
-	
-				display: none;
 				p{
 					font-size: 14px!important;
 				}

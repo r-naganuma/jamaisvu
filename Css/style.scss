@@ -690,8 +690,7 @@ textarea::focus {
 					font-size: 12px;
 					letter-spacing: 0.08em;
 					line-height: 1;
-					font-family: interstate, sans-serif;
-					font-weight: 400;
+					font-family: 'Playfair Display', serif;
 
 					&:hover{
 						opacity: 1;
@@ -1206,8 +1205,7 @@ textarea::focus {
 
 				&.nav_boxJournal{
 					a{
-						font-family: interstate, sans-serif;
-						font-weight: 400;
+						font-family: 'Playfair Display', serif;
 					}
 				}
 			}
