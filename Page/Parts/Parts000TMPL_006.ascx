@@ -22,60 +22,59 @@
 			from our Journal.
 		</h2>
 		<div class="journalTop_new">
-			<a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20191119">
+			<a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191126/">
 				<div class="journalTop_new--pic">
-	            	<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191130journal.jpg">
+	            	<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191126journal.jpg">
 				</div>
 				<div class="journalTop_new--txt">
 	                <p class="journalCat">FEATURE</p>
 	                <p class="journalTtl">
-	                	人気コラムニスト クリス-ウェブ 佳子が<br>
-	                	“JAMAIS VU”に惹かれる理由とは。
+	                	MIDDLE GAUGE KNIT STYLE
 	                </p>
-	                <p class="journalDate">2019.10.16</p>
+	                <p class="journalDate">2019.11.26</p>
 				</div>
 	        </a>
 		</div>
 		<div class="journalTop_archive">
 	        <div class="journalTop_archive--list">
-				<a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20191119">
+				<a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191122/">
 					<div class="journalTop_archive--list--pic">
-	                	<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191130journal.jpg">
+	                	<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191122journal.jpg">
 	                </div>
 					<div class="journalTop_archive--list--txt">
 		                <p class="journalCat">FEATURE</p>
 		                <p class="journalTtl">
-		                	人気コラムニスト クリス-ウェブ 佳子が<br class="pc_contents">“JAMAIS VU”に惹かれる理由とは。
+		                	Knit Fair ￥4,000 OFF
 		                </p>
-		                <p class="journalDate">2019.10.16</p>
+		                <p class="journalDate">2019.11.22</p>
 		            </div>
 				</a>
 	        </div>
 	        <div class="journalTop_archive--list">
-				<a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20191119">
+				<a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191119/">
 					<div class="journalTop_archive--list--pic">
-	                	<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191130journal.jpg">
+	                	<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191119journal.jpg">
 	                </div>
 					<div class="journalTop_archive--list--txt">
 		                <p class="journalCat">FEATURE</p>
 		                <p class="journalTtl">
-		                	人気コラムニスト クリス-ウェブ 佳子が<br class="pc_contents">“JAMAIS VU”に惹かれる理由とは。
+		                	OUTER COLLECTION
 		                </p>
-		                <p class="journalDate">2019.10.16</p>
+		                <p class="journalDate">2019.11.19</p>
 		            </div>
 				</a>
 	        </div>
 	        <div class="journalTop_archive--list">
-				<a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20191119">
+				<a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191112/">
 					<div class="journalTop_archive--list--pic">
-	                	<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191130journal.jpg">
+	                	<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191112journal.jpg">
 	                </div>
 					<div class="journalTop_archive--list--txt">
 		                <p class="journalCat">FEATURE</p>
 		                <p class="journalTtl">
-		                	人気コラムニスト クリス-ウェブ 佳子が<br class="pc_contents">“JAMAIS VU”に惹かれる理由とは。
+		                	BROWN CORDINATE
 		                </p>
-		                <p class="journalDate">2019.10.16</p>
+		                <p class="journalDate">2019.11.12</p>
 		            </div>
 				</a>
 	        </div>

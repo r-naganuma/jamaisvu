@@ -25,92 +25,50 @@
 	</p>
 	<div class="itemsTop_box">
 		<div class="itemsTop_box--list">
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">
-                <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_style01.jpg">
-                <p class="itemsName">ニットワイドパンツ</p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930312165&cat=500065">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930312165_L.jpg">
+                <p class="itemsName">ヘアリーパーカー</p>
+                <p class="itemsPrice">¥23,100 <span>(tax in)</span></p>
+			</a>
+		</div>
+		<div class="itemsTop_box--list">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930334111&cat=500011">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930334111_L.jpg">
+                <p class="itemsName">ドルマンプルオーバー</p>
+                <p class="itemsPrice">¥17,600 <span>(tax in)</span></p>
+			</a>
+		</div>
+		<div class="itemsTop_box--list">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930335131&cat=500031">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930335131_L.jpg">
+                <p class="itemsName">ボートネックワンピース</p>
+                <p class="itemsPrice">¥25,300 <span>(tax in)</span></p>
+			</a>
+		</div>
+		<div class="itemsTop_box--list">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930128117&cat=500017">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930128117_L.jpg">
+                <p class="itemsName">フリーサイズコート</p>
+                <p class="itemsPrice">¥52,800 <span>(tax in)</span></p>
+			</a>
+		</div>
+		<div class="itemsTop_box--list">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930338131&cat=500031">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930338131_L.jpg">
+                <p class="itemsName">クルーネックプルオーバー</p>
                 <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">
-                <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_style01.jpg">
-                <p class="itemsName">ニットワイドパンツ</p>
-                <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">
-                <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_style01.jpg">
-                <p class="itemsName">ニットワイドパンツ</p>
-                <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">
-                <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_style01.jpg">
-                <p class="itemsName">ニットワイドパンツ</p>
-                <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">
-                <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_style01.jpg">
-                <p class="itemsName">ニットワイドパンツ</p>
-                <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">
-                <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_style01.jpg">
-                <p class="itemsName">ニットワイドパンツ</p>
-                <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">
-                <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_style01.jpg">
-                <p class="itemsName">ニットワイドパンツ</p>
-                <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">
-                <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_style01.jpg">
-                <p class="itemsName">ニットワイドパンツ</p>
-                <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">
-                <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_style01.jpg">
-                <p class="itemsName">ニットワイドパンツ</p>
-                <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">
-                <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_style01.jpg">
-                <p class="itemsName">ニットワイドパンツ</p>
-                <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">
-                <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_style01.jpg">
-                <p class="itemsName">ニットワイドパンツ</p>
-                <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=003">
-                <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_style01.jpg">
-                <p class="itemsName">ニットワイドパンツ</p>
-                <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930129141&cat=500041">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930129141_L.jpg">
+                <p class="itemsName">コートジャケット</p>
+                <p class="itemsPrice">¥42,900 <span>(tax in)</span></p>
 			</a>
 		</div>
 	</div>
 	<div class="btnBoxver2 btn--more">
-		<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">VIEW MORE ITEMS</a>
+		<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">VIEW MORE ITEMS</a>
 	</div>
 </div>
 
