@@ -295,39 +295,39 @@
 
 
 jQuery( function() {
-    var $sampleCount = jQuery.cookie( 'sampleCount' );
-    if( $sampleCount != undefined ){
-        $sampleCount++;
-    }else{
-        $sampleCount = 1;
-    }
+    // var $sampleCount = jQuery.cookie( 'sampleCount' );
+    // if( $sampleCount != undefined ){
+    //     $sampleCount++;
+    // }else{
+    //     $sampleCount = 1;
+    // }
 
-        var date = new Date();
-        date.setTime(date.getTime() + ( 3 * 24 * 60 * 60 * 1000)); //　クッキー保持時間
-        // date.setTime(date.getTime() + (  60 * 1000)); //　クッキー保持時間
+    //     var date = new Date();
+    //     date.setTime(date.getTime() + ( 3 * 24 * 60 * 60 * 1000)); //　クッキー保持時間
+    //     // date.setTime(date.getTime() + (  60 * 1000)); //　クッキー保持時間
 
-    var $cokkie_day = jQuery.cookie( 'cokkie_day',"cokkie_day" , { expires: date } );
-    if($sampleCount > 2){
-        // $sampleCount = 0;
+    // var $cokkie_day = jQuery.cookie( 'cokkie_day',"cokkie_day" , { expires: date } );
+    // if($sampleCount > 2){
+    //     // $sampleCount = 0;
 
-        if($sampleCount === 2){
-            jQuery( '#sampleCount' ) . html( $sampleCount );
-            jQuery.cookie( 'sampleCount', $sampleCount, { expires: date } );
-        }
-        if($cokkie_day){
-            // jQuery( '.popup' ).hide()
-            // $sampleCount = 0;
-            jQuery( '.popup' ).hide()
-            $sampleCount = 0;
-        }
-    }else{
-        jQuery( '#sampleCount' ) . html( $sampleCount );
-        jQuery.cookie( 'sampleCount', $sampleCount, { expires: date } );
-        if($cokkie_day){
-            jQuery( '.popup' ).show();
-            $sampleCount = 0;
-        }
-    }
+    //     if($sampleCount === 2){
+    //         jQuery( '#sampleCount' ) . html( $sampleCount );
+    //         jQuery.cookie( 'sampleCount', $sampleCount, { expires: date } );
+    //     }
+    //     if($cokkie_day){
+    //         // jQuery( '.popup' ).hide()
+    //         // $sampleCount = 0;
+    //         jQuery( '.popup' ).hide()
+    //         $sampleCount = 0;
+    //     }
+    // }else{
+    //     jQuery( '#sampleCount' ) . html( $sampleCount );
+    //     jQuery.cookie( 'sampleCount', $sampleCount, { expires: date } );
+    //     if($cokkie_day){
+    //         jQuery( '.popup' ).show();
+    //         $sampleCount = 0;
+    //     }
+    // }
 
     $(".close").click(function(){
         $(".popup").fadeOut(500);
@@ -347,7 +347,7 @@ a.close img {
     width: 13px!important;
 }
 .popup{
-    display: none;
+/*    display: none;*/
     position: fixed;
     width: 300px;
     right: 20px;
