@@ -2078,6 +2078,23 @@ textarea::focus {
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.03em;
+  /*&::before {
+								@include bp768 {
+									content: "...";
+									position: absolute;
+									bottom: 0;
+									right: 0;
+									background: #fff;
+								};
+						    }
+
+						    &::after {
+								@include bp768 {
+									content: "";
+									height: 100%;
+									width: 100%;
+								};
+						    }*/
 }
 
 @media (max-width: 768px) {
@@ -2086,27 +2103,9 @@ textarea::focus {
     margin: 5px 0;
     font-size: 12px;
     line-height: 21px;
-    height: 40px;
-    position: relative;
-    overflow: hidden;
-  }
-}
-
-@media (max-width: 768px) {
-  #Wrap .pageTop .journalTop_archive--list--txt .journalTtl::before {
-    content: "...";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: #fff;
-  }
-}
-
-@media (max-width: 768px) {
-  #Wrap .pageTop .journalTop_archive--list--txt .journalTtl::after {
-    content: "";
-    height: 100%;
-    width: 100%;
+    /*height: 40px;
+								position: relative;
+								overflow: hidden;*/
   }
 }
 

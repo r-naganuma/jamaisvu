@@ -1,0 +1,416 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'gillsans';
+  src: url("../../../../../Font/gillsans.woff") format("woff"), url("../../../../../Font/gillsans.otf") format("opentype");
+}
+
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+@media screen and (min-width: 769px) {
+  .sp_content {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 374px) {
+  .sm_contents {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .pc_content {
+    display: none !important;
+  }
+}
+
+#Wrap .featureWrap {
+  width: 1080px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap {
+    width: 100%;
+    line-height: 2;
+    letter-spacing: 0.08em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+#Wrap .featureWrap ul {
+  margin: 0;
+  padding: 0;
+}
+
+#Wrap .featureWrap ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Wrap .featureWrap p {
+  margin: 0;
+  padding: 0;
+  line-height: 26px;
+  text-align: center;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap p {
+    line-height: 2;
+  }
+}
+
+#Wrap .featureWrap a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 300;
+  display: block;
+}
+
+#Wrap .featureWrap img {
+  width: 100%;
+  display: block;
+}
+
+#Wrap .featureWrap h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#Wrap .featureWrap h2 span {
+  display: block;
+  color: #C0B6B3;
+  margin-top: 15px;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+#Wrap .featureWrap h3 {
+  color: #333;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.07em;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap h3 {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+}
+
+#Wrap .featureWrap h3 span {
+  font-size: 24px;
+  letter-spacing: 0.07em;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap h3 span {
+    font-size: 18px;
+  }
+}
+
+#Wrap .featureWrap .mainArea {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .mainArea {
+    width: 100%;
+  }
+}
+
+#Wrap .featureWrap .mainArea h2 {
+  font-family: baskerville-urw, serif;
+  text-align: center;
+  font-size: 32px;
+  color: #2E0E02;
+  letter-spacing: 0.1em;
+  line-height: 38px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .mainArea h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+#Wrap .featureWrap .mainArea h2 span.subTtl {
+  font-size: 28px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  text-align: center;
+  color: #2E0E02;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .mainArea h2 span.subTtl {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+#Wrap .featureWrap .mainArea .main-visual {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .mainArea .main-visual {
+    margin-top: 40px;
+  }
+}
+
+#Wrap .featureWrap .mainArea p {
+  font-size: 14px;
+  margin-top: 80px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  letter-spacing: 0.04em;
+  line-height: 25.2px;
+  text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .mainArea p {
+    margin-top: 40px;
+  }
+}
+
+#Wrap .featureWrap .couponArea {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .couponArea {
+    margin-top: 40px;
+  }
+}
+
+#Wrap .featureWrap .couponArea h3 {
+  font-size: 20px;
+  letter-spacing: 0.07em;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .couponArea h3 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+#Wrap .featureWrap .couponArea .description {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .couponArea .description {
+    margin-top: 0;
+  }
+}
+
+#Wrap .featureWrap .couponArea .coupon {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  line-height: 20px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .couponArea .coupon {
+    margin: 30px 0;
+  }
+}
+
+#Wrap .featureWrap .couponArea .coupon span {
+  font-size: 28px;
+  width: 60px;
+  line-height: 60px;
+  border: 1px solid  #ccc;
+  height: 60px;
+  width: 200px;
+  display: block;
+  margin: 10px auto 0;
+}
+
+#Wrap .featureWrap .couponArea .note {
+  font-size: 11px;
+  color: #6F7579;
+  letter-spacing: 0.08em;
+  line-height: 19.5px;
+  margin-top: 5px;
+}
+
+#Wrap .featureWrap .couponArea .note:nth-child(5) {
+  margin-top: 10px;
+}
+
+#Wrap .featureWrap .pickUpArea {
+  margin: 120px auto 0;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .pickUpArea {
+    margin-top: 80px;
+  }
+}
+
+#Wrap .featureWrap .pickUpArea h3 {
+  font-size: 20px;
+  letter-spacing: 0.07em;
+  line-height: 1;
+  color: #333;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .pickUpArea h3 {
+    font-size: 18px;
+    letter-spacing: 0.08em;
+  }
+}
+
+#Wrap .featureWrap .pickUpArea__part {
+  width: 720px;
+  height: auto;
+  margin: 60px auto 0;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .pickUpArea__part {
+    width: 90.66667vw;
+    margin-top: 40px;
+  }
+}
+
+#Wrap .featureWrap .pickUpArea__part .contentsWrap {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#Wrap .featureWrap .pickUpArea__part .contentsWrap__content {
+  width: 340px;
+  height: auto;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .pickUpArea__part .contentsWrap__content {
+    width: 44.26667vw;
+    height: auto;
+  }
+}
+
+#Wrap .featureWrap .pickUpArea__part .contentsWrap__content a {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  line-height: 2;
+  margin-top: 15px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .pickUpArea__part .contentsWrap__content a {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+#Wrap .featureWrap .pickUpArea__part .contentsWrap__content a .itemPrice {
+  font-weight: 700;
+}
+
+#Wrap .featureWrap .pickUpArea__part .contentsWrap__content a .tax {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+#Wrap .featureWrap .pickUpArea__part .contentsWrap__content a .redSale {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .pickUpArea__part .contentsWrap__content a .redSale {
+    margin-left: 5px;
+  }
+}
+
+#Wrap .featureWrap .pickUpArea__part .contentsWrap__content a .redSale .itemPrice {
+  color: #FF0000;
+}
+
+#Wrap .featureWrap .pickUpArea__part .contentsWrap__content a .redSale .tax {
+  color: #FF0000;
+}
+
+#Wrap .featureWrap .pickUpArea__part .colorLineUp {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  line-height: 19.5px;
+  margin-top: 10px;
+}
+
+#Wrap .featureWrap .nextBtnwrap {
+  width: 320px;
+  height: 64px;
+  font-size: 14px;
+  margin-top: 60.5px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .nextBtnwrap {
+    width: 64vw;
+    height: 48px;
+    font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 65px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#Wrap .featureWrap .nextBtnwrap .nextBtn {
+  width: 100% !important;
+}
