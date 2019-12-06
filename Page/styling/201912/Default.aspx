@@ -7,7 +7,7 @@
 --%>
 <%-- ▽ユーザーコントロール宣言領域▽ --%>
 <%-- △ユーザーコントロール宣言領域△ --%>
-<%@ Page Title="Style Idea 2019.12｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="Style Idea 2019.12" MetaKeywords="TOPICS,トピックス,JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
+<%@ Page Title="STYLE IDEA 2019.12｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="STYLE IDEA 2019.12" MetaKeywords="TOPICS,トピックス,JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
 <%--
 
 下記のタグはファイル情報保持用です。削除しないでください。
@@ -33,7 +33,7 @@
   <article class="styleIdeaWrap">
     <section class="topArea">
 
-      <h2>Style Idea</h2>
+      <h2>STYLE IDEA</h2>
 
       <p class="subTtl"> Always with Your Style.</p>
       <p class="date">2019.12.3 UPDATE</p>
@@ -301,12 +301,12 @@
       </li>
       <li> >
         <a href="<%= Constants.PATH_ROOT %>Page/styling/">
-          Style Idea
+          STYLE IDEA
         </a>
       </li>
       <li> >
         <a href="#">
-          Style Idea 2019.12
+          STYLE IDEA 2019.12
         </a>
       </li>
     </ul>

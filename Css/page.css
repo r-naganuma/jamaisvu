@@ -557,18 +557,18 @@
 }
 
 #Wrap .LPpageWrap .lookWrap h2 {
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
   margin-bottom: 55px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.03em;
   line-height: 1;
-  color: #2E0E02;
-  font-family: 'baskerville', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  color: #333;
+  font-family: 'Playfair Display', serif;
 }
 
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .lookWrap h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 40px;
   }
 }

@@ -40,7 +40,7 @@
 
 
     <p>
-      初回購入限定で全てのアイテムが<br class="sp_content">50%OFFになるお得なキャンペーン を開催！<br>
+      新規会員登録いただいたお客様を対象に、<br>初回購入限定で全てのアイテムが<br class="sp_content">50%OFFになるお得なキャンペーン を開催！<br>
       こだわりのコートやカーディガン、ワンピースなど<br>
       今シーズンまだまだ大活躍するアイテムを<br class="sp_content">お得に手に入れるチャンスです。<br>
       この期間にぜひ<br class="sp_content">JAMAIS VUのアイテムをお試しください。
@@ -56,6 +56,7 @@
     <p class="description">キャンペーン対象期間 <span class="pc_content">:</span><br class="sp_content"> 2019年12月06日(金)〜2020年01月13日(金)</p>
     <p class="note">※対象期間を過ぎた時点で、<br class="sp_content">クーポンは自動的に失効いたします。</p>
     <p class="note">※他のクーポンと併用してご利用にはなれません。<br class="sp_content">予めご了承ください。</p>
+    <p class="note">※12月6日 午前0時以降に<br class="sp_content">会員登録いただいたお客様が対象です</p>
   </div>
 
   <div class="pickUpArea">

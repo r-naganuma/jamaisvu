@@ -7,7 +7,7 @@
 --%>
 <%-- ▽ユーザーコントロール宣言領域▽ --%>
 <%-- △ユーザーコントロール宣言領域△ --%>
-<%@ Page Title="Style Idea一覧｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="JAMAIS VU （ジャメヴ）のStyle Idea一覧ページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="Styling,JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
+<%@ Page Title="STYLE IDEA一覧｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="JAMAIS VU （ジャメヴ）のSTYLE IDEA一覧ページ。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="Styling,JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
 <%--
 
 下記のタグはファイル情報保持用です。削除しないでください。
@@ -26,15 +26,11 @@
 <%-- ▽編集可能領域：コンテンツ▽ --%>
 <link href='./css/archive.css' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.typekit.net/qxr7okk.css">
-<script>
-// タイトル
-$("title").text("Style Idea｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store")
-</script>
 
 <div class="main_contents styleIdeaWrap">
   <section class="topArea">
 
-    <h2>Style Idea</h2>
+    <h2>STYLE IDEA</h2>
 
     <p class="subTtl"> Always with Your Style.</p>
 
