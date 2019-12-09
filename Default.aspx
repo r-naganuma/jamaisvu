@@ -64,6 +64,23 @@
 </div>
 <script type="text/javascript">
 $(function(){
+    // ヘッダーメイン
+    $(".mainVisualRev").slick({
+        autoplay:true,
+        autoplaySpeed:4000,
+        dots:true,
+        arrows:false,
+        infinite: true,
+        swipe: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: false,
+        variableWidth: false,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        fade: true
+    });
+    
     var height=$(".header").height();
     $("#Wrap .pageTop .mainVisualRev").css("padding-top", height);
 })

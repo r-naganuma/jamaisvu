@@ -1466,11 +1466,9 @@ textarea::focus {
 	/*--- ver.2 ---*/
 	/*---------------*/
 		.mainVisualRev{
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
 			width: 1060px;
 			margin: 0 auto;
+			outline: none;
 
 			@include bp1100 {
 				width: 96.36%;
@@ -1481,6 +1479,16 @@ textarea::focus {
 				width: 89.33%;
 				margin: 0 auto 40px;
 			};
+
+			&_slide{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				@include bp768 {
+					display: block;
+				};
+			}
 
 			&_main{
 				width: 530px;
@@ -1500,6 +1508,51 @@ textarea::focus {
 				@include bp1100 {
 					width: 39.62%;
 				};
+			}
+
+			.slick-list{
+				height: 100%;
+
+				@include bp768 {
+					height: auto;
+				};
+			}
+
+			.slick-slide{
+				border: none;
+			}
+
+			.slick-dots{
+				bottom: 30px;
+				margin: auto;
+				right: 0;
+				left: 0;
+				z-index: 1;
+
+				@include bp768 {
+					bottom: 25px;
+				};
+
+				li{
+					margin: 0 23px 0 0;
+					width: 6px;
+					height: 6px;
+					border: 1px solid #2E0E02;
+					border-radius: 50%;
+					background: transparent;
+
+					button{
+						display: none;
+					}
+
+					&.slick-active{
+						background: #2E0E02;
+					}
+
+					&:last-child{
+						margin-right: 0;
+					}
+				}
 			}
 		}
 
