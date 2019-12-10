@@ -47,6 +47,7 @@ body {
   line-height: 2;
   letter-spacing: 0.03em;
   font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
   /*====================================================================
 *    着用アイテムはこちら
 /*==================================================================*/
@@ -63,7 +64,6 @@ body {
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .journalWrap {
     width: 100%;
-    font-size: 14px;
     line-height: 24px;
   }
 }
@@ -88,6 +88,7 @@ body {
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .journalWrap p {
     line-height: 24px;
+    word-break: normal;
   }
 }
 
@@ -1231,7 +1232,7 @@ body {
   #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea_btn {
     width: 89.33%;
     margin: 0 auto 80px;
-    padding: 15px 0;
+    padding: 12px 0;
     line-height: 24px;
     font-weight: 500;
   }
@@ -1329,8 +1330,7 @@ body {
 
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea_box--list .archiveTtl {
-    font-size: 14px;
-    line-height: 24px;
+    line-height: 21px;
     font-weight: 500;
   }
 }

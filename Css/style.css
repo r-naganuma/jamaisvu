@@ -1975,41 +1975,41 @@ textarea::focus {
   }
 }
 
-#Wrap .pageTop .journalTop_new--pic {
+#Wrap .pageTop .journalTop_new .journalTop_archive--list--pic {
   width: 530px;
 }
 
 @media (max-width: 1100px) {
-  #Wrap .pageTop .journalTop_new--pic {
+  #Wrap .pageTop .journalTop_new .journalTop_archive--list--pic {
     width: 50%;
   }
 }
 
 @media (max-width: 768px) {
-  #Wrap .pageTop .journalTop_new--pic {
+  #Wrap .pageTop .journalTop_new .journalTop_archive--list--pic {
     width: 100%;
   }
 }
 
-#Wrap .pageTop .journalTop_new--txt {
+#Wrap .pageTop .journalTop_new .journalTop_archive--list--txt {
   width: 470px;
   margin-left: 60px;
 }
 
 @media (max-width: 1100px) {
-  #Wrap .pageTop .journalTop_new--txt {
+  #Wrap .pageTop .journalTop_new .journalTop_archive--list--txt {
     width: 44.34%;
   }
 }
 
 @media (max-width: 768px) {
-  #Wrap .pageTop .journalTop_new--txt {
+  #Wrap .pageTop .journalTop_new .journalTop_archive--list--txt {
     width: 100%;
     margin: 10px 0 0 0;
   }
 }
 
-#Wrap .pageTop .journalTop_new--txt .journalCat {
+#Wrap .pageTop .journalTop_new .journalTop_archive--list--txt .journalCat {
   font-size: 14px;
   color: #888888;
   line-height: 1;
@@ -2019,12 +2019,12 @@ textarea::focus {
 }
 
 @media (max-width: 768px) {
-  #Wrap .pageTop .journalTop_new--txt .journalCat {
+  #Wrap .pageTop .journalTop_new .journalTop_archive--list--txt .journalCat {
     font-size: 12.5px;
   }
 }
 
-#Wrap .pageTop .journalTop_new--txt .journalTtl {
+#Wrap .pageTop .journalTop_new .journalTop_archive--list--txt .journalTtl {
   font-weight: bold;
   margin: 15px 0;
   font-size: 16px;
@@ -2033,7 +2033,7 @@ textarea::focus {
 }
 
 @media (max-width: 768px) {
-  #Wrap .pageTop .journalTop_new--txt .journalTtl {
+  #Wrap .pageTop .journalTop_new .journalTop_archive--list--txt .journalTtl {
     font-weight: 500;
     margin: 5px 0;
     font-size: 14px;
@@ -2041,7 +2041,7 @@ textarea::focus {
   }
 }
 
-#Wrap .pageTop .journalTop_new--txt .journalDate {
+#Wrap .pageTop .journalTop_new .journalTop_archive--list--txt .journalDate {
   font-size: 12px;
   color: #888888;
   line-height: 1;
@@ -2051,7 +2051,7 @@ textarea::focus {
 }
 
 @media (max-width: 768px) {
-  #Wrap .pageTop .journalTop_new--txt .journalDate {
+  #Wrap .pageTop .journalTop_new .journalTop_archive--list--txt .journalDate {
     font-size: 11px;
   }
 }

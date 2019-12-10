@@ -34,12 +34,12 @@
     </h2>
     <img class="pc_contents" src="images/mv_pc.jpg" alt="">
     <img class="sp_contents" src="images/mv_pc.jpg" alt="">
-    <p>
+    <!-- <p>
       今だけ対象のミドルゲージニットが<br class="sp_contents">¥4,000OFFになるキャンペーン開催中！
     </p>
     <div class="btnBoxTopics btn--more">
       <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191122/">詳しくはこちら</a>
-    </div>
+    </div> -->
   </div>
 
   <div class="secArea">
@@ -271,7 +271,7 @@
     </div>
   </div>
 
-  <div class="bnrArea">
+  <!-- <div class="bnrArea">
     <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191122/">
       <img src="images/bnr.jpg" alt="">
     </a>
@@ -282,7 +282,7 @@
     <div class="btnBoxTopics btn--more">
       <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191122/">詳しくはこちら</a>
     </div>
-  </div>
+  </div> -->
 
 </div>
 

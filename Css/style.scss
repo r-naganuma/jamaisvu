@@ -1627,7 +1627,7 @@ textarea::focus {
 					};
 				}
 
-				&--pic{
+				.journalTop_archive--list--pic{
 					width: 530px;
 
 					@include bp1100 {
@@ -1639,7 +1639,7 @@ textarea::focus {
 					};
 				}
 
-				&--txt{
+				.journalTop_archive--list--txt{
 					width: 470px;
 					margin-left: 60px;
 

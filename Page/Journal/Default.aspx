@@ -31,6 +31,16 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Column/Column_20191210">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191210journal.jpg">
+                    <p class="journalCat">COLUMN</p>
+                    <p class="journalTtl">
+                        「上質を纏う。素材の良さを追求した物づくり」 Vol.1
+                    </p>
+                    <p class="journalDate">2019.12.10</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
 				<a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20191206">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191206journal.jpg">
                     <p class="journalCat">FEATURE</p>
@@ -50,7 +60,7 @@
                     <p class="journalDate">2019.11.26</p>
                 </a>
             </div>
-            <div class="journalWrap_box--list">
+            <!-- <div class="journalWrap_box--list">
                 <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191122/">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191122journal.jpg">
                     <p class="journalCat">FEATURE</p>
@@ -59,7 +69,7 @@
                     </p>
                     <p class="journalDate">2019.11.22</p>
                 </a>
-            </div>
+            </div> -->
             <div class="journalWrap_box--list">
                 <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191119/">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191119journal.jpg">
@@ -172,12 +182,12 @@
             </div>
             <div class="journalWrap_box--list">
                 <a href="https://jamaisvu.co.jp/Page/topics/column/editorscolumn_001/">
-                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191007journal.jpg">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_190918journal.jpg">
                     <p class="journalCat">COLUMN</p>
                     <p class="journalTtl">
                         EDITORS COLUMN
                     </p>
-                    <p class="journalDate">2019.10.07</p>
+                    <p class="journalDate">2019.09.18</p>
                 </a>
             </div>
             <div class="journalWrap_box--list">
