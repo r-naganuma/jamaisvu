@@ -1,0 +1,163 @@
+@charset  "utf-8";
+
+$bp1100: 1100px;  // スマホ
+
+@mixin bp1100 {
+  @media (max-width: ($bp1100)) {
+    @content;
+  }
+}
+
+$bp1060: 1060px;  // スマホ
+
+@mixin bp1060 {
+  @media (max-width: ($bp1060)) {
+    @content;
+  }
+}
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+#Wrap{
+	.LPpageWrap{
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+		.journalWrap {
+
+			.journalWrap_cts{
+
+/*====================================================================
+*    MAIN VISUAL
+/*==================================================================*/
+
+				.mainArea{
+					&_lead{
+						@include bp768 {
+							font-size: 14px;
+						};
+					}
+				}
+
+				.ctsArea{
+
+					.sec_ttl{
+						font-size: 18px;
+						font-weight: bold;
+						line-height: 1;
+						margin-bottom: 40px;
+
+						@include bp768 {
+							font-size: 16px;
+							text-align: center;
+						};
+					}
+
+					.sec_details{
+						text-align: center;
+						font-family: 'Playfair Display', serif;
+						font-size: 20px;
+						letter-spacing: 0.05em;
+						line-height: 1;
+						margin-bottom: 40px;
+
+						@include bp768 {
+							font-size: 18px;
+							margin-bottom: 20px;
+						};
+					}
+
+/*====================================================================
+*    TEMPLATE F
+/*==================================================================*/
+
+					.F-wrap{
+						margin-bottom: 80px;
+
+						@include bp768 {
+							margin-bottom: 60px;
+						};
+					}
+
+					.F-wrap_box{
+						padding-top: 0;
+
+						@include bp768 {
+							padding-top: 0;
+						};
+					}
+
+/*====================================================================
+*    TEMPLATE C
+/*==================================================================*/
+					
+					.C-wrap{
+						margin-bottom: 80px;
+						flex-wrap: wrap;
+
+						@include bp768 {
+							margin-bottom: 40px;
+						};
+					}
+
+					.C-wrap_pic{
+						@include bp768 {
+							width: 80.6%;
+							margin: 0 auto 10px;
+						};
+					}
+
+					.C-wrap_txt{
+						@include bp768 {
+							text-align: left;
+							font-size: 14px;
+						};
+					}
+
+					.C-wrap_detail--box--txt2{
+						width: 430px;
+
+						@include bp768 {
+							width: 74.6%;
+						};
+					}
+
+					.C-wrap_list{
+						&.list2{
+							@include bp768 {
+								margin: 0 auto;
+							};
+						}
+					}
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+
+					&_btn{
+						margin: 0 auto 160px;
+
+						@include bp768 {
+							margin-bottom: 100px;
+						};
+					}
+
+					.latestArea{
+						margin-top: 160px;
+
+						@include bp768 {
+							margin-top: 80px;
+						};
+					}
+				}
+			}
+		}
+	}
+}
