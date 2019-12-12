@@ -239,7 +239,8 @@ div#primary {
 	color: #333;
 }
 .tag_material input[type="text"]:disabled {
-	color: #333;
+	color: #000000;
+	opacity: 1;
 }
 </style>
 <script>
