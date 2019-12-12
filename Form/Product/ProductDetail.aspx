@@ -234,6 +234,14 @@ div#primary {
 		$(".load_wrap").addClass("active");
 	})
 </script> -->
+<style>
+.tag_material input{
+	color: #333;
+}
+.tag_material input[type="text"]:disabled {
+	color: #333;
+}
+</style>
 <script>
 $(function(){});
 
@@ -257,6 +265,7 @@ function bodyPageLoad(){
 	// 	});
 	// }
 
+	$(".tag_material input").attr("disabled","disabled");
 	$(".load_wrap").addClass("active");
 
 	$(".addCart").append($(".detailAddcart_favo__wrap .detailAddcart_favo").clone());
