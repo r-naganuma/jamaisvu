@@ -31,6 +31,16 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20191213">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191213journal.jpg">
+                    <p class="journalCat">FEATURE</p>
+                    <p class="journalTtl">
+                        普段着を格上げ。楽に着映える優秀ワンピース
+                    </p>
+                    <p class="journalDate">2019.12.13</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Column/Column_20191210">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191210journal.jpg">
                     <p class="journalCat">COLUMN</p>
