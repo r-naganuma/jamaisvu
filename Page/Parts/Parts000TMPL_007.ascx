@@ -25,15 +25,15 @@
 	</p>
 	<div class="itemsTop_box">
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930318111&cat=500011">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930318111_L.jpg">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930318165&cat=500065">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930318165_L.jpg">
                 <p class="itemsName">ビッグカーディガン</p>
                 <p class="itemsPrice">¥26,400 <span>(tax in)</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930334131&cat=500031">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930334131_L.jpg">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930334111&cat=500011">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930334111_L.jpg">
                 <p class="itemsName">ドルマンプルオーバー</p>
                 <p class="itemsPrice">¥17,600 <span>(tax in)</span></p>
 			</a>
