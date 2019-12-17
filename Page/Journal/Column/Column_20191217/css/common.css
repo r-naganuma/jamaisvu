@@ -1,0 +1,162 @@
+#Wrap .LPpageWrap {
+  /*====================================================================
+*    ALL
+/*==================================================================*/
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_lead {
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_lead .mainTtl {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  display: block;
+  margin-bottom: 20px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_lead .mainSmall {
+  font-size: 11px;
+  line-height: 26px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_lead .mainSmall {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_lead .mainSmall a {
+  display: inline;
+  text-decoration: underline;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea {
+  /*====================================================================
+*    TEMPLATE A
+/*==================================================================*/
+  /*====================================================================
+*    ALL
+/*==================================================================*/
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap {
+  margin-bottom: 160px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap {
+    width: 89.33%;
+    margin: 0 auto 50px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_pic {
+  margin-bottom: 20px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_pic.pic2 {
+  margin-bottom: 40px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl.ttl2 {
+  font-size: 18px;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl.ttl2 {
+    font-size: 16px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl.ttl3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl.ttl3 {
+    font-size: 18px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_caption {
+  margin-bottom: 40px;
+  font-size: 11px;
+  color: #6F7579;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_caption {
+    line-height: 17px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_caption.cap2 {
+  line-height: 26px;
+  margin-bottom: 80px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_caption.cap2 {
+    line-height: 17px;
+    margin-bottom: 60px;
+    white-space: normal;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_txt {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_txt {
+    margin-bottom: 60px;
+    font-size: 14px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_txt.txt2 {
+  margin-bottom: 40px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea_btn {
+  margin: 80px auto 0;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea_btn {
+    width: 100%;
+    margin: 40px auto 0;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea {
+  padding-top: 80px;
+  border-top: 1px solid #CCCCCC;
+}

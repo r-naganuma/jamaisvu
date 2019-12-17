@@ -31,6 +31,16 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Column/Column_20191217">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191217journal.jpg">
+                    <p class="journalCat">COLUMN</p>
+                    <p class="journalTtl">
+                        本当の意味でのラグジュアリー
+                    </p>
+                    <p class="journalDate">2019.12.17</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20191213">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191213journal.jpg">
                     <p class="journalCat">FEATURE</p>
