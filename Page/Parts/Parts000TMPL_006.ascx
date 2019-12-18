@@ -39,6 +39,34 @@
 		</div>
 		<div class="journalTop_archive">
 	        <div class="journalTop_archive--list">
+				<a href="https://jamaisvu.co.jp/Page/Journal/Column/Column_20191217/">
+					<div class="journalTop_archive--list--pic">
+	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191217journal.jpg">
+	                </div>
+					<div class="journalTop_archive--list--txt">
+		                <p class="journalCat">COLUMN</p>
+		                <p class="journalTtl">
+		                	本当の意味でのラグジュアリー
+		                </p>
+		                <p class="journalDate">2019.12.17</p>
+		            </div>
+				</a>
+	        </div>
+	        <div class="journalTop_archive--list">
+				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20191213/">
+					<div class="journalTop_archive--list--pic">
+	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191213journal.jpg">
+	                </div>
+					<div class="journalTop_archive--list--txt">
+		                <p class="journalCat">FEATURE</p>
+		                <p class="journalTtl">
+		                	普段着を格上げ。楽に着映える優秀ワンピース
+		                </p>
+		                <p class="journalDate">2019.12.13</p>
+		            </div>
+				</a>
+	        </div>
+	        <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Column/Column_20191210/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191210journal.jpg">
@@ -52,7 +80,7 @@
 		            </div>
 				</a>
 	        </div>
-	        <div class="journalTop_archive--list">
+	        <!-- <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191126/">
 					<div class="journalTop_archive--list--pic">
 	                	<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191126journal.jpg">
@@ -63,34 +91,6 @@
 		                	定番チノパンと合わせる、上質ニット
 		                </p>
 		                <p class="journalDate">2019.11.26</p>
-		            </div>
-				</a>
-	        </div>
-	        <div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191122/">
-					<div class="journalTop_archive--list--pic">
-	                	<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191122journal.jpg">
-	                </div>
-					<div class="journalTop_archive--list--txt">
-		                <p class="journalCat">FEATURE</p>
-		                <p class="journalTtl">
-		                	Knit Fair 4,000円OFF キャンペーン
-		                </p>
-		                <p class="journalDate">2019.11.22</p>
-		            </div>
-				</a>
-	        </div>
-	        <!-- <div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191119/">
-					<div class="journalTop_archive--list--pic">
-	                	<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191119journal.jpg">
-	                </div>
-					<div class="journalTop_archive--list--txt">
-		                <p class="journalCat">FEATURE</p>
-		                <p class="journalTtl">
-		                	シーンを選ばず使えるJAMAIS VUのこだわりコート
-		                </p>
-		                <p class="journalDate">2019.11.19</p>
 		            </div>
 				</a>
 	        </div> -->
