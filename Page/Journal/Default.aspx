@@ -31,6 +31,16 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20191220">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191220journal.jpg">
+                    <p class="journalCat">RECOMMEND</p>
+                    <p class="journalTtl">
+                        着心地を追求したJAMAIS VUの上質ハイネック
+                    </p>
+                    <p class="journalDate">2019.12.20</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Column/Column_20191217">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191217journal.jpg">
                     <p class="journalCat">COLUMN</p>
