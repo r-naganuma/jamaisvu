@@ -295,11 +295,11 @@
                 </a>
             </li>
             <li>
-                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930129141&cat=500041" class="A-wrap_detail--box">
-                    <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/1930129141_sub08_L.jpg" alt="">
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930128117&cat=500017" class="A-wrap_detail--box">
+                    <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/1930128117_sub07_L.jpg" alt="">
                     <p>
-                        コートジャケット
-                        <span>¥42,900(tax in)</span>
+                        フリーサイズコート
+                        <span>¥52,800(tax in)</span>
                     </p>
                 </a>
             </li>
