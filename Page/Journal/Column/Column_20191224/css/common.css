@@ -1,0 +1,62 @@
+#Wrap .LPpageWrap {
+  /*====================================================================
+*    ALL
+/*==================================================================*/
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_lead {
+    line-height: 24px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea {
+  /*====================================================================
+*    TEMPLATE A
+/*==================================================================*/
+  /*====================================================================
+*    ALL
+/*==================================================================*/
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap {
+    margin: 0 auto 60px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_pic {
+  margin-bottom: 40px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl {
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_txt {
+  margin-bottom: 40px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea_btn {
+  margin: -40px auto 160px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea_btn {
+    margin: 0 auto 80px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea {
+  padding-top: 80px;
+  border-top: 1px solid #CCCCCC;
+}
+
+/*# sourceMappingURL=common.css.map */
