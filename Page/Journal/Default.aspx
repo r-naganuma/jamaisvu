@@ -31,6 +31,16 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Column/Column_20191224">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191224journal.jpg">
+                    <p class="journalCat">COLUMN</p>
+                    <p class="journalTtl">
+                        「上質を纏う。素材の良さを追求した物づくり」 Vol.2
+                    </p>
+                    <p class="journalDate">2019.12.24</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20191220">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191220journal.jpg">
                     <p class="journalCat">RECOMMEND</p>
