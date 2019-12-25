@@ -274,6 +274,39 @@ function bodyPageLoad(){
 	
 	if($(".productSellInfo .zaiko_data").text()=="在庫有り"){
 		$(".zaiiko_check span").text("あり")
+
+		// add191229
+		$("#dvProductStock td").each(function(x){
+		    $(this).addClass("dvProductStock_td"+x)
+		});
+		var zaiiko_check_text = $(".dvProductStock_td1").text();
+		zaiiko_check_text = zaiiko_check_text.trim();
+
+		$(".selectValiation__innar1").length;
+		if($(".selectValiation__innar1").length == 2 ){// サイズが２以上
+			var VariationPanelSelected = $(".VariationPanelSelected").text();
+			if(VariationPanelSelected=="LOOSE"){
+				 var zaiiko_check_text2 = $(".dvProductStock_td3").text();
+				zaiiko_check_text2 = zaiiko_check_text2.trim();
+				if(zaiiko_check_text2 == "残りわずか"){
+					$(".zaiiko_check span").text("残りわずか");
+				}
+			}else if(VariationPanelSelected=="REGULAR"){
+				 var zaiiko_check_text2 = $(".dvProductStock_td1").text();
+				zaiiko_check_text2 = zaiiko_check_text2.trim();
+				if(zaiiko_check_text2 == "残りわずか"){
+					$(".zaiiko_check span").text("残りわずか");
+				}
+			}
+
+		}else{ // サイズが一つの場合
+			if(zaiiko_check_text=="残りわずか"){
+				$(".zaiiko_check span").text("残りわずか");
+			}
+		}
+
+
+
 	}else{
 		$(".zaiiko_check span").text("なし")
 	}
