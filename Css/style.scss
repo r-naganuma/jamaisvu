@@ -627,6 +627,18 @@ textarea::focus {
 		width: 100%;
 	}
 
+	&_fixedArea{
+	    background: #EAE6E5;
+	    padding: 10px 0;
+	    box-sizing: border-box;
+
+	    a{
+	    	text-align: center;
+	    	font-size: 12px;
+	    	color: #555;
+	    }
+	}
+
 	&__inner {
 		display: flex;
 		justify-content: space-between;

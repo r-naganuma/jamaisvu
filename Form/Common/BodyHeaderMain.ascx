@@ -96,6 +96,33 @@ function initializeFunctionJs() {
 	    $("#search_btnSp").click();
 	  }
 	});
+
+	if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+		$(document).ready(function(){
+		    var heightSize = $(window).height();
+		    $('.mainVisual').height(heightSize); 
+		});
+	    
+	    var height=$(".header_fixedArea").innerHeight();
+	    $(".header button.btn_menu, .header__icon--wishlist, .header__icon--cart").css("padding-top", height);
+	    $(".header__icon--cart .icnBag").css("margin-top", height);
+	}
+	    
+    var height=$(".header_fixedArea").innerHeight();
+    $(".topSpace, .tblLayout_ProductDetail .detail_top_wrap, .cart1_h2").css("margin-top", height);
+
+	if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+	    var height=$(".header_fixedArea").innerHeight();
+		var state = false;
+		$('.btn_menu').click(function () {
+			if($(".header__menu").hasClass("open")){ // クリックされた要素がopenクラスだったら
+				$(".header button.btn_menu").css("padding-top", height);
+			}else{
+				$(".header button.btn_menu").css("padding-top", 0);
+			}
+		});
+	}
+
 	var state = false;
 	$('.btn_menu').click(function () {
 	  $(this).toggleClass('active');
@@ -109,13 +136,6 @@ function initializeFunctionJs() {
 		}
 	});
 
-
-	if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
-	$(document).ready(function(){
-	    var heightSize = $(window).height();
-	    $('.mainVisual').height(heightSize); 
-	});
-	}
 	
     $("meta[name='viewport']").attr("content","width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
 }
@@ -126,6 +146,9 @@ function initializeFunctionJs() {
 		
 		<!--- header --->
 		<header class="header">
+			<div class="header_fixedArea">
+				<a href="https://jamaisvu.co.jp/Page/Journal/News/News_20191226/">年末年始期間の営業及び配送についてのご案内</a>
+			</div>
 			<!--- header PC --->
 			<div class="header__inner pc_flexOnly">
 				<div class="header__left">
