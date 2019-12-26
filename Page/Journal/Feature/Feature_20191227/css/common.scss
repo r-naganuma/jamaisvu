@@ -1,0 +1,178 @@
+@charset  "utf-8";
+
+$bp1100: 1100px;  // スマホ
+
+@mixin bp1100 {
+  @media (max-width: ($bp1100)) {
+    @content;
+  }
+}
+
+$bp1060: 1060px;  // スマホ
+
+@mixin bp1060 {
+  @media (max-width: ($bp1060)) {
+    @content;
+  }
+}
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+#Wrap{
+	.LPpageWrap{
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+		.journalWrap {
+
+			.journalWrap_cts{
+
+				.mainArea{
+					@include bp768 {
+						margin-bottom: 60px;
+					};
+
+					&_lead{
+						@include bp768 {
+							line-height: 24px;
+						};
+					}
+				}
+
+				.ctsArea{
+
+/*====================================================================
+*    TEMPLATE A
+/*==================================================================*/
+					
+					.A-wrap{
+						@include bp768 {
+							margin: 0 auto 60px;
+						};
+					}
+
+					.A-wrap_ttl{
+						line-height: 1;
+						margin-bottom: 40px;
+
+						@include bp768 {
+							line-height: 24px;
+							margin-bottom: 15px;
+						};
+					}
+
+					.A-wrap_pic{
+						@include bp768 {
+							margin-bottom: 5px;
+						};
+					}
+
+					.A-wrap_txt{
+						margin-bottom: 40px;
+
+						@include bp768 {
+							margin-bottom: 20px;
+						};
+					}
+
+/*====================================================================
+*    TEMPLATE C
+/*==================================================================*/
+					
+					.C-wrap{
+						display: flex;
+						justify-content: space-between;
+						margin-bottom: 0;
+
+						@include bp768 {
+							width: 100%;
+							margin: 0 auto;
+						};
+					}
+
+					.C-wrap_list{
+						width: 355px;
+						margin-bottom: 40px;
+
+						@include bp768 {
+							width: 49.25%;
+						};
+					}
+
+					.C-wrap_pic{
+						margin-bottom: 0;
+
+						@include bp768 {
+							margin-bottom: 0;
+						};
+					}
+
+/*====================================================================
+*    TEMPLATE F
+/*==================================================================*/
+					
+					.F-wrap{
+						@include bp768 {
+							margin: 0 auto 60px;
+						};
+
+						.A-wrap_ttl{
+							@include bp768 {
+								width: 89.33%;
+								margin: 0 auto 15px;
+							};
+						}
+
+						.A-wrap_txt{
+							@include bp768 {
+								width: 89.33%;
+								margin: 0 auto 20px;
+							};
+						}
+
+						.A-wrap_detail{
+							@include bp768 {
+								width: 89.33%;
+								margin: 0 auto;
+							};
+						}
+					}
+					
+					.F-wrap_box{
+						margin: 0 0 40px;
+						padding-top: 0;
+
+						@include bp768 {
+							margin: 0 0 40px;
+							padding-top: 0;
+						};
+					}
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+
+					&_btn{
+						margin: -40px auto 160px;
+
+						@include bp768 {
+							margin: 0 auto 80px;
+						};
+					}
+
+					.latestArea{
+						padding-top: 80px;
+						border-top: 1px solid #CCCCCC;
+					}
+				}
+			}
+		}
+	}
+}

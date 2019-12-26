@@ -49,7 +49,7 @@
                         <p>SHARE</p>
                     </li>
                     <li>
-                        <a href="http://twitter.com/share?url=https://jamaisvu.co.jp/Page/Journal/Column/Column_20191217/&text=ディレクター五味田 渉が語る「上質を纏う。素材の良さを追求した物づくり」 Vol.2" target="_blank">
+                        <a href="http://twitter.com/share?url=https://jamaisvu.co.jp/Page/Journal/Column/Column_20191224/&text=ディレクター五味田 渉が語る「上質を纏う。素材の良さを追求した物づくり」 Vol.2" target="_blank">
                             <img src="../../images/common/icn_tw.png" alt="">
                         </a>
                     </li>

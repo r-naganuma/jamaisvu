@@ -4149,6 +4149,36 @@ textarea::focus {
   margin-right: 10px;
 }
 
+#Wrap .pageCts_pdList--search .searchWrap {
+  position: relative;
+  padding-bottom: 42px;
+}
+
+#Wrap .pageCts_pdList--search .searchWrap .saleItemTxt {
+  text-align: center;
+  font-size: 12px;
+  color: #AD2E24;
+  line-height: 1;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #AD2E24;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .pageCts_pdList--search .searchWrap .saleItemTxt {
+    display: table;
+    position: inherit;
+    bottom: inherit;
+    left: inherit;
+    right: inherit;
+    margin: 0 auto 20px;
+  }
+}
+
 @media (max-width: 768px) {
   #Wrap .pageCts_pdList--search .searchBox {
     display: none;
@@ -5514,3 +5544,5 @@ textarea::focus {
     background-image: url("../Contents/ImagesPkg/user/productlist/btn_off.png");
   }
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -495,7 +495,6 @@
 		<%-- ▽レイアウト領域：レフトエリア▽ --%>
 		<div class="pageCts_pdList">
 			<div class="pageCts_pdList--search">
-				<p class="sp_contents searchBtnSp"><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_search_white.png" alt="">商品を絞り込む</p>
 				<uc:BodyProductAdvancedSearchBox runat="server" />
 			</div>
 				<%-- △レイアウト領域△ --%>
