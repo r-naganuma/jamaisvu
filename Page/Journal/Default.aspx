@@ -31,6 +31,16 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20191227">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191227journal.jpg">
+                    <p class="journalCat">FEATURE</p>
+                    <p class="journalTtl">
+                        冬を盛り上げる、最強白ニットの法則
+                    </p>
+                    <p class="journalDate">2019.12.27</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Column/Column_20191224">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191224journal.jpg">
                     <p class="journalCat">COLUMN</p>

@@ -215,7 +215,8 @@
                     <div class="F-wrap_box--main">
                         <img src="images/pic_f_03.jpg" alt="">
                         <p class="F-wrap_box--txt">
-                            <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930336111&cat=500011">ワイドリブプルオーバー ¥20,900(tax in)</a>
+                            <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930336111&cat=500011">ワイドリブプルオーバー ¥20,900(tax in)</a>,
+                            <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306161&cat=500061">ニットワイドパンツ ¥20,900(tax in)</a>
                         </p>
                     </div>
                     <div class="F-wrap_box--sub">
@@ -242,6 +243,23 @@
                         </div>
                     </a>
                     <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930336111&cat=500011" class="A-wrap_detail--btn">ITEM DETAIL</a>
+                </div>
+
+                <div class="A-wrap_detail">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306161&cat=500061" class="A-wrap_detail--box">
+                        <div class="A-wrap_detail--box--pic">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/1930306161_sub09_L.jpg" alt="">
+                        </div>
+                        <div class="A-wrap_detail--box--txt">
+                            <p class="detailTtl">ニットワイドパンツ</p>
+                            <p class="detailPrice">¥20,900(tax in)</p>
+                            <p class="detailTxt">
+                                素材:ハミルトンラムズウール    サイズ：FREE<br>
+                                カラー：サックス
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930306161&cat=500061" class="A-wrap_detail--btn">ITEM DETAIL</a>
                 </div>
             </div>
 
