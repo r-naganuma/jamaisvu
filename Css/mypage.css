@@ -692,6 +692,26 @@
   color: #C6C6C6;
 }
 
+#Wrap .userWrap .registWrap_box--input .inputBox_right textarea.inquirytext::-webkit-input-placeholder {
+  color: #999;
+  line-height: 1.8;
+}
+
+#Wrap .userWrap .registWrap_box--input .inputBox_right textarea.inquirytext:-ms-input-placeholder {
+  color: #999;
+  line-height: 1.8;
+}
+
+#Wrap .userWrap .registWrap_box--input .inputBox_right textarea.inquirytext::-ms-input-placeholder {
+  color: #999;
+  line-height: 1.8;
+}
+
+#Wrap .userWrap .registWrap_box--input .inputBox_right textarea.inquirytext::placeholder {
+  color: #999;
+  line-height: 1.8;
+}
+
 #Wrap .userWrap .registWrap_box--input .inputBox_right .nameArea {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1508,6 +1528,22 @@
   #Wrap .userWrap .registWrap.inquiryWrap .registWrap_box--input .inputBox_confirm .inputBox_left {
     color: #878787;
   }
+}
+
+#Wrap .userWrap .registWrap.inquiryWrap input::-webkit-input-placeholder {
+  color: #999;
+}
+
+#Wrap .userWrap .registWrap.inquiryWrap input:-ms-input-placeholder {
+  color: #999;
+}
+
+#Wrap .userWrap .registWrap.inquiryWrap input::-ms-input-placeholder {
+  color: #999;
+}
+
+#Wrap .userWrap .registWrap.inquiryWrap input::placeholder {
+  color: #999;
 }
 
 #Wrap .userWrap .userBread {
@@ -2439,3 +2475,5 @@
 .pdgT0 {
   padding-top: 0 !important;
 }
+
+/*# sourceMappingURL=mypage.css.map */

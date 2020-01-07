@@ -184,7 +184,7 @@
 			<%-- 問合せ内容 --%>
 				<dt class="inputBox_left must noCenter2">内容</dt>
 				<dd class="inputBox_right">
-					<asp:TextBox ID="tbInquiryText" runat="server" placeholder="ここにお問い合わせ内容を入力してください" TextMode="MultiLine" Rows="10" CssClass="inquirytext" Text=""></asp:TextBox>
+					<asp:TextBox ID="tbInquiryText" runat="server" placeholder="ここにお問い合わせ内容を入力してください。&#13;&#10;「返品・交換」に関するお問い合わせの場合は、お買い上げ明細書に記載の「受注番号」および返品理由（当店都合かお客様ご都合かでご案内が異なるため）も入力してください。" TextMode="MultiLine" Rows="10" CssClass="inquirytext" Text=""></asp:TextBox>
 					<asp:CustomValidator runat="Server"
 						ControlToValidate="tbInquiryText"
 						ValidationGroup="Inquiry"

@@ -594,6 +594,13 @@ $bp768: 768px;  // スマホ
 								&::placeholder{
 									color: #C6C6C6;
 								}
+
+								&.inquirytext{
+									&::placeholder{
+										color:#999;
+										line-height:1.8;
+									}
+								}
 							}
 
 							.nameArea{
@@ -1287,6 +1294,12 @@ $bp768: 768px;  // スマホ
 								color: #878787;
 							};
 						}
+					}
+				}
+
+				input{
+					&::placeholder{
+						color:#999;
 					}
 				}
 			}
