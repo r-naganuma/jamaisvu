@@ -655,7 +655,7 @@ iframe {
 	<%-- ▽商品セール価格有効▽ --%>
 	<div visible='<%# GetProductTimeSalesValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
 		<p class="productPrice"><span><strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))) %></strike></span>(tax in)</p>
-		<p class="productPrice">タイムセールス価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(this.ProductMaster)) %></span>(tax in)</p>
+		<p class="productPrice">セール価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(this.ProductMaster)) %></span>(tax in)</p>
 	</div>
 	<%-- △商品セール価格有効△ --%>
 	<%-- ▽商品特別価格有効▽ --%>

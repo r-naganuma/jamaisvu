@@ -1116,7 +1116,12 @@ span.error_message {
 
 
   <h4 visible='<%# ((CartObject)Container.DataItem).ShippingType == "100" %>' runat="server">通常配送商品<span></span></h4>
-  <h4 visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server">予約商品<span></span></h4>
+  <h4 visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server">
+    
+    予約商品
+    <span style="font-size: 10px;display: block;margin: 10px 0 0px;font-weight: normal;line-height: 1.6;">予約商品と通常配送商品につきましては同一カート内（同一ご注文番号）でご購入いただくことができません。（それぞれに送料が発生いたします。）<br>
+また、予約商品は全ての商品が揃い次第、一括配送させていただきます。予約商品の配送時期につきましては各商品ページよりご確認ください。</span>
+  </h4>
 
   <div class="list">
 <!--  <p class="ttl"><img src="../../Contents/ImagesPkg/cartlist/<%# this.ProductIncludedTaxFlg ? "sttl01.gif" : "sttl02.gif" %>" alt="商品名  単価（<%#: this.ProductPriceTextPrefix %>）  注文数  小計（<%#: this.ProductPriceTextPrefix %>）" width="847" height="12" /></p> -->

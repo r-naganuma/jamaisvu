@@ -135,7 +135,7 @@ $(function(){
 					<div class="inner_column">
 						<h4>注文方法</h4>
 						<p class="indentTxt">
-							１）欲しい商品が見つかったらサイズを選択し「カートに入れる」ボタンをクリックして下さい。
+							１）欲しい商品が見つかったらサイズを選択し「カートに入れる」ボタンをクリックしてください。
 						</p>
 						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide01.jpg" class="pc_contents">
 						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide01_sp.jpg" class="sp_contents">
@@ -157,7 +157,10 @@ $(function(){
 					<div class="inner_column">
 						<h4>予約商品</h4>
 						<p>
-							販売開始前の商品について、予約注文を承ります。商品ページで配送時期をご確認の上ご注文ください。
+							販売開始前の商品について、予約注文を承ります。商品ページで配送時期をご確認の上ご注文ください。<br>
+							なお、通常配送商品とあわせてご購入いただく場合、予約商品と通常配送商品とでカート（注文番号）が分かれますので、あらかじめご了承ください。（それぞれに送料が発生いたします）<br>
+							また、予約商品は全ての商品が揃い次第、一括配送をいたします。
+
 						</p>
 					</div>
 					<div class="inner_column">
@@ -173,9 +176,11 @@ $(function(){
 						</p>
 					</div>
 					<div class="inner_column">
-						<h4>注文のキャンセル</h4>
+						<h4>注文確定後のキャンセルおよび内容変更について</h4>
 						<p>
-							サイト内ではキャンセルいただけないため、<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_INQUIRY_INPUT) %>">お問い合わせ</a>よりご連絡ください。
+							ご注文確定後のキャンセルおよび内容変更(商品追加・商品削除・別商品への変更)は承ることができません。ご注文完了前に、【サイズ】・【カラー】・【価格】・【数量】等、ご注文内容にお間違いがないか必ずご確認ください。
+
+							<!-- サイト内ではキャンセルいただけないため、<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_INQUIRY_INPUT) %>">お問い合わせ</a>よりご連絡ください。 -->
 						</p>
 					</div>
 				</div>
@@ -216,10 +221,9 @@ $(function(){
 						</p>
 					</div>
 					<div class="inner_column">
-						<h4>配送時間</h4>
+						<h4>配送タイミング</h4>
 						<p>
-							配送地域・ご注文の時間帯により異なりますが、ご注文から7日以内でのお届けとなります。<br>
-							なお、ご注文の際にお届け時間指定が可能です。最短でのお届けをご希望の場合は、お届け時間を「指定なし」としてください。<br>
+							ご注文日から3営業日以内に出荷いたします。なお、ご注文の際にお届け時間指定が可能です。<br>
 							※お届け時間を指定いただいた場合でも、当日の交通事情や天候など、配送会社の発送状況などにより到着が遅延する場合があります。<br>
 							<br>
 							【時間帯の指定】<br>
@@ -233,8 +237,26 @@ $(function(){
 					<div class="inner_column">
 						<h4>配送先の変更</h4>
 						<p>
-							ショッピングカートの配送先指定画面か、マイページ「<a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_SHIPPING_LIST) %>">お届け先情報</a>」からご設定ください。
+							<!-- ショッピングカートの配送先指定画面か、マイページ「<a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_SHIPPING_LIST) %>">お届け先情報</a>」からご設定ください。 -->
+							出荷作業前であれば可能です。マイページ「<a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_SHIPPING_LIST) %>">お届け先情報</a>」よりご変更いただくか、<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_INQUIRY_INPUT) %>">お問い合わせ</a>よりご連絡ください。
+							既に出荷作業中のご注文につきましては、ご変更いただきましてもご変更前のご住所への配送となります。あらかじめご了承ください。
+
 						</p>
+					</div>
+					<div class="inner_column">
+						<h4>予約商品の配送について</h4>
+						<p>
+							予約商品は全ての商品が揃い次第、一括配送をいたします。<br><br><br>
+						</p>
+						<h4>ご注文のおまとめ配送について</h4>
+						<p>商品の配送はご注文毎となり、システム上ひとつにおまとめすることが出来かねます。<br>
+							誠に恐縮ではございますが、注文番号ごとの配送とさせていただいております。あらかじめご了承ください。<br><br><br></p>
+
+						<h4>一度配送した商品の再配達について</h4>
+						<p>長期不在などで配送した商品が当店に戻ってきた場合、やむを得ずキャンセル処理を行わせていただきますので十分にご注意ください。なお、一度配送した商品の再配達は承ることが出来かねますので、あらかじめご了承ください。ご希望がございましたら再度ご注文をお願いいたします。（再注文時にご希望の商品の在庫切れ等がございましてもご容赦ください。）<br>
+						クレジットカード決済のお取り消しにつきましては、決済が確定していた場合は、一度お引き落としとなり、後日クレジットカード会社よりご返金となりますので、あらかじめご了承ください。<br><br><br>
+						</p>
+						
 					</div>
 				</div>
 			</div>
@@ -243,10 +265,14 @@ $(function(){
 				<h3>返品・交換について</h3>
 				<div class="inner">
 					<div class="inner_column">
-						<h4>返品の条件</h4>
+						<h4>返品について</h4>
 						<p class="indentTxt1em">
 							・お客様都合での返品<br>
-							購入した商品の到着日から8日以内に限り可能です。<br class="pc_contents">この場合の送料はお客様にてご負担ください。但し、以下の条件に該当する場合、返品はできません。<br>
+							<!-- 購入した商品の到着日から8日以内に限り可能です。<br class="pc_contents">この場合の送料はお客様にてご負担ください。 -->
+							ご購入いただいた商品の到着日から7日以内に<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_INQUIRY_INPUT) %>">お問い合わせ</a>よりご連絡ください。
+							この場合、配送時の送料およびご返送時の送料はお客様ご負担となります。あらかじめご了承ください。
+
+							但し、以下の条件に該当する場合、返品はできません。<br>
 							<br>
 							①使用済み、お直しや洗濯、クリーニングをした商品<br>
 							②納品書を紛失した場合<br>
@@ -259,7 +285,8 @@ $(function(){
 					<div class="inner_column">
 						<p class="indentTxt1em">
 							・商品に不具合があった場合の返品<br>
-							お客様が購入した商品が以下の条件に該当する場合、商品の到着日から7日以内に限り、購入した商品を返品することができます。この場合の送料は当社が負担するものとします。<br>
+							お客様が購入した商品が以下の条件に該当する場合、<!-- 商品の到着日から7日以内に限り、購入した商品を返品することができます。この場合の送料は当社が負担するものとします。 -->ご購入いただいた商品の到着日から7日以内に<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_INQUIRY_INPUT) %>">お問い合わせ</a>よりご連絡ください。この場合、配送時の送料およびご返送時の送料は当店負担とさせていただきます。
+							<br>
 							<br>
 							①商品に瑕疵があった場合<br>
 							②ご注文内容と異なる商品が到着した場合<br>
@@ -268,17 +295,18 @@ $(function(){
 						</p>
 					</div>
 					<div class="inner_column">
-						<h4>交換の条件</h4>
+						<h4>交換について</h4>
 						<p>
-							お客様都合による商品の交換は承ることができません。但し、前項の通り商品に不具合があった場合は交換対応いたします。
+							お客様都合による商品の交換は承ることができません。但し、前項の通り商品に不具合があった場合は交換対応いたしますので、ご購入いただいた商品の到着日から7日以内に<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_INQUIRY_INPUT) %>">お問い合わせ</a>よりご連絡ください。
+
 						</p>
 					</div>
-					<div class="inner_column">
+<!-- 					<div class="inner_column">
 						<h4>返品・交換の流れ</h4>
 						<p>
 							まずは<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_INQUIRY_INPUT) %>">お問い合わせ</a>からご連絡ください。内容確認の上、スタッフから折り返しご連絡いたします。
 						</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
@@ -297,7 +325,7 @@ $(function(){
 						<h4>ニュースレター</h4>
 						<p>
 							おすすめ商品やイベント、セールなどの最新情報をメールで受け取れる会員サービスです。<br>
-							ニュースレターの登録・変更・停止は、マイページ内<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_MODIFY_INPUT) %>">会員情報確認・変更</a>よりお手続きください。<br>
+							ニュースレターの登録・変更・停止は、マイページ内<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_MODIFY_INPUT) %>">会員情報確認・変更</a>よりお手続き頂くか、<a href="mailto:contact@jamaisvu.co.jp?subject=会員情報確認・変更">contact@jamaisvu.co.jp</a>までご連絡をお願いいたします。<br>
 							<br>
 							※ニュースレターが届かない場合は、以下の設定をご確認ください。<br>
 							・迷惑メールボックスの設定解除<br>

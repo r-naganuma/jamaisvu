@@ -24,143 +24,143 @@
 
 <style>@charset "UTF-8";
 #Wrap .LPpageWrap {
-	width: 720px;
-	height: auto;
-	margin: auto;
+  width: 720px;
+  height: auto;
+  margin: auto;
 }
 
 @media screen and (max-width: 769px) {
-	#Wrap .LPpageWrap {
-		width: 90.4vw;
-	}
+  #Wrap .LPpageWrap {
+    width: 90.4vw;
+  }
 }
 
 #Wrap .LPpageWrap p, #Wrap .LPpageWrap li, #Wrap .LPpageWrap a, #Wrap .LPpageWrap h2, #Wrap .LPpageWrap h3, #Wrap .LPpageWrap h4 {
-	font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
 }
 
 #Wrap .LPpageWrap p, #Wrap .LPpageWrap li {
-	font-size: 14px;
-	letter-spacing: 0.08em;
-	line-height: 25.2px;
-	color: #333;
-	text-align: left;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 25.2px;
+  color: #333;
+  text-align: left;
 }
 
 @media screen and (max-width: 769px) {
-	#Wrap .LPpageWrap p, #Wrap .LPpageWrap li {
-		font-size: 13px;
-		letter-spacing: 0.08em;
-		line-height: 2;
-	}
+  #Wrap .LPpageWrap p, #Wrap .LPpageWrap li {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    line-height: 2;
+  }
 }
 
 #Wrap .LPpageWrap h2 {
-	font-size: 18px;
-	font-weight: bold;
-	text-align: left;
-	line-height: 32.4px;
-	letter-spacing: 0.04em;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 32.4px;
+  letter-spacing: 0.04em;
 }
 
 #Wrap .LPpageWrap .mgt40 {
-	margin-top: 40px !important;
+  margin-top: 40px !important;
 }
 
 #Wrap .LPpageWrap .topSpace__txt h2 {
-	text-align: center;
+  text-align: center;
 }
 
 #Wrap .LPpageWrap .privacyBox {
-	width: 720px;
+  width: 720px;
 }
 
 @media screen and (max-width: 769px) {
-	#Wrap .LPpageWrap .privacyBox {
-		width: 100%;
-		padding: 0;
-	}
+  #Wrap .LPpageWrap .privacyBox {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 #Wrap .LPpageWrap .privacyBox__contents {
-	margin-top: 80px;
+  margin-top: 80px;
 }
 
 @media screen and (max-width: 769px) {
-	#Wrap .LPpageWrap .privacyBox__contents__section {
-		font-size: 16px;
-		line-height: 28.8px;
-	}
+  #Wrap .LPpageWrap .privacyBox__contents__section {
+    font-size: 16px;
+    line-height: 28.8px;
+  }
 }
 
 #Wrap .LPpageWrap .privacyBox__contents__parts > li > h3 {
-	font-size: 14px;
-	letter-spacing: 0.04em;
-	line-height: 25.2px;
-	text-align: left;
-	margin-top: 30px;
-	margin-bottom: 0;
-	padding-bottom: 16.5px;
-	border-bottom: 1px solid #C0B6B3;
-	font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  line-height: 25.2px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 16.5px;
+  border-bottom: 1px solid #C0B6B3;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 769px) {
-	#Wrap .LPpageWrap .privacyBox__contents__parts > li > h3 {
-		font-size: 13px;
-		line-height: 26px;
-		margin-top: 32px;
-	}
+  #Wrap .LPpageWrap .privacyBox__contents__parts > li > h3 {
+    font-size: 13px;
+    line-height: 26px;
+    margin-top: 32px;
+  }
 }
 
 #Wrap .LPpageWrap .privacyBox__contents__parts p {
-	margin-top: 16.5px;
-	text-align: left;
+  margin-top: 16.5px;
+  text-align: left;
 }
 
 #Wrap .LPpageWrap .privacyBox__contents__parts__list {
-	margin-top: 30px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 769px) {
-	#Wrap .LPpageWrap .privacyBox__contents__parts__list {
-		margin-top: 40px;
-	}
+  #Wrap .LPpageWrap .privacyBox__contents__parts__list {
+    margin-top: 40px;
+  }
 }
 
 #Wrap .LPpageWrap .privacyBox__contents__parts__list li {
-	margin-top: 6px;
-	margin-bottom: 0;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 769px) {
-	#Wrap .LPpageWrap .privacyBox__contents__parts__list li {
-		margin-top: 6.5px;
-	}
+  #Wrap .LPpageWrap .privacyBox__contents__parts__list li {
+    margin-top: 6.5px;
+  }
 }
 
 #Wrap .LPpageWrap .privacyBox__contents__parts__list--large {
-	margin-top: 16.5px;
+  margin-top: 16.5px;
 }
 
 #Wrap .LPpageWrap .privacyBox__contents__parts__list--large li {
-	margin-top: 40px;
-	margin-bottom: 0;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 
 #Wrap .LPpageWrap .privacyBox__contents__parts__list--large li ul {
-	margin-top: 30px;
-	margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 #Wrap .LPpageWrap .privacyBox__contents__parts__list--large li ul > li {
-	margin-top: 6px;
-	margin-bottom: 0;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
 #Wrap .LPpageWrap .privacyBox .fusoku {
-	margin-top: 80px;
-	margin-bottom: 0;
+  margin-top: 80px;
+  margin-bottom: 0;
 }
 </style>
 <div class="LPpageWrap topSpace">
@@ -171,7 +171,7 @@
    <p>伊藤忠商事株式会社（以下、「当社」という）は、当社が提供するオンラインショッピングサイト<br>「JAMAIS VU 公式ブランドサイト」（以下、「本サイト」という）が提供するサービス（以下、「本サービス」という）をご利用いただくに際し遵守していただく規約（以下、「本規約」という）を以下の通り定めます。本サービスをご利用される方は、本規約の全ての条項に承諾のうえご利用ください。</p>
  </div>
 
-	<div class="privacyBox">
+  <div class="privacyBox">
 
 
     <div class="privacyBox__contents">
@@ -206,9 +206,9 @@
           <h3>第4条（入会）</h3>
           <p>会員への登録希望者は、本サイト上の新規登録ページにおいて必要事項を入力し､入会申込みをした時点で、本規約の内容を承諾したものとします。当社は、次の場合を除き､入会希望者の申請を承諾するものとします。</p>
           <ul class="privacyBox__contents__parts__list">
-            <li>1.	過去に本規約に基づき会員資格を剥奪されている場合</li>
-            <li>2.	申込内容に虚偽の申請があった場合</li>
-            <li>3.	その他、当社が会員として不適切と判断した場合</li>
+            <li>1.  過去に本規約に基づき会員資格を剥奪されている場合</li>
+            <li>2.  申込内容に虚偽の申請があった場合</li>
+            <li>3.  その他、当社が会員として不適切と判断した場合</li>
           </ul>
         </li>
         <li>
@@ -219,30 +219,30 @@
           <h3>第6条（会員の禁止行為）</h3>
           <p>当社は、会員がサービスを利用するにあたり、会員の次の行為を禁止します。</p>
           <ul class="privacyBox__contents__parts__list">
-            <li>1.	公序良俗に反する行為 ・ 法令に違反する行為</li>
-            <li>2.	犯罪に結びつく行為</li>
-            <li>3.	他の会員および第三者の著作権その他知的財産権を侵害する行為</li>
-            <li>4.	他の会員および第三者を誹謗､中傷しその他名誉を毀損する行為</li>
-            <li>5.	他の会員および第三者の財産､プライバシーを侵害する行為</li>
-            <li>6.	他の会員および第三者に不利益を与える行為</li>
-            <li>7.	他の会員のサービスの利用を妨げる行為</li>
-            <li>8.	当社の運営を妨害する行為（情報の改ざん、ウィルス等の入力･送信等）</li>
-            <li>9.	当社が認めていない営利目的の行為</li>
-            <li>10.	その他、当社が不適当と判断する行為</li>
+            <li>1.  公序良俗に反する行為 ・ 法令に違反する行為</li>
+            <li>2.  犯罪に結びつく行為</li>
+            <li>3.  他の会員および第三者の著作権その他知的財産権を侵害する行為</li>
+            <li>4.  他の会員および第三者を誹謗､中傷しその他名誉を毀損する行為</li>
+            <li>5.  他の会員および第三者の財産､プライバシーを侵害する行為</li>
+            <li>6.  他の会員および第三者に不利益を与える行為</li>
+            <li>7.  他の会員のサービスの利用を妨げる行為</li>
+            <li>8.  当社の運営を妨害する行為（情報の改ざん、ウィルス等の入力･送信等）</li>
+            <li>9.  当社が認めていない営利目的の行為</li>
+            <li>10. その他、当社が不適当と判断する行為</li>
           </ul>
         </li>
         <li>
           <h3>第7条（会員資格の停止および資格の抹消）</h3>
           <p>会員が次の項目のいずれかに該当した場合、当社は、会員への事前の承諾なしに、そのサービスの利用停止または会員資格の抹消を行うことができるものとします。</p>
           <ul class="privacyBox__contents__parts__list">
-            <li>1.	ＩＤ/パスワードを不正使用した場合</li>
-            <li>2.	入会申請内容に虚偽の事項があった場合</li>
-            <li>3.	本サイトの情報を改ざん､不正利用し、その他運営を故意に妨害した場合</li>
-            <li>4.	会員資格に不適当で抹消が必要であると当社が判断した場合</li>
-            <li>5.	過去に本規約違反をしたことなどにより会員登録抹消の処分を受けていることが判明した場合</li>
-            <li>6.	本サービスに関する料金などの支払債務の履行遅延その他の不履行があった場合</li>
-            <li>7.	会員に対し、差押、仮差押、仮処分、強制執行、破産の申し立てがなされた場合、または会員が破産、民事再生を申し立てた場合</li>
-            <li>8.	その他、本規約に違反した場合</li>
+            <li>1.  ＩＤ/パスワードを不正使用した場合</li>
+            <li>2.  入会申請内容に虚偽の事項があった場合</li>
+            <li>3.  本サイトの情報を改ざん､不正利用し、その他運営を故意に妨害した場合</li>
+            <li>4.  会員資格に不適当で抹消が必要であると当社が判断した場合</li>
+            <li>5.  過去に本規約違反をしたことなどにより会員登録抹消の処分を受けていることが判明した場合</li>
+            <li>6.  本サービスに関する料金などの支払債務の履行遅延その他の不履行があった場合</li>
+            <li>7.  会員に対し、差押、仮差押、仮処分、強制執行、破産の申し立てがなされた場合、または会員が破産、民事再生を申し立てた場合</li>
+            <li>8.  その他、本規約に違反した場合</li>
           </ul>
         </li>
         <li>
@@ -263,41 +263,41 @@
 
           <ul class="privacyBox__contents__parts__list--large">
             <li>
-              <h3>1.	購入</h3>
+              <h3>1.  購入</h3>
               <p>利用者は、本サービスを利用して商品を購入することができます。商品の購入を希望する場合、当社が指定する方法に従って商品の購入を申込むものとします。当該申込に対して、当社より承諾する旨の電子メールを利用者宛に発信した時点で利用者と当社との間に当該商品に関する売買契約が成立するものとします。ただし、本サービスの利用に関して不正行為または不適当な行為（通常の常識の範囲を超える大量注文・大量キャンセルなど）があった場合のほか、受取拒否・中長期の不在により会員の受領確認ができない場合には、当社は自社の判断により売買契約について取消、解除その他の適切な措置をとることができるものとします。</p>
             </li>
             <li>
-              <h3>2.	支払い方法</h3>
+              <h3>2.  支払い方法</h3>
               <p>支払い方法は、利用者本人名義のクレジットカードによる決済をもって行うものとします。なお、クレジットカードによる決済については、利用者がクレジットカード会社との間で別途契約する条件に従うこととし、利用者と当該クレジットカード会社等の間で紛争が発生した場合は、当該当事者双方で解決するものとし、当社には一切責任はないものとします。</p>
             </li>
             <li>
-              <h3>3.	配送</h3>
+              <h3>3.  配送</h3>
               <p>商品の引渡しは、ご注文の際に指定されたお届け先に商品が配送されたことをもって完了したものとします。 商品の出荷は日本国内のみに限らせていただきます。</p>
             </li>
             <li>
-              <h3>4.	利用者都合による返品</h3>
-              <p>利用者は、利用者都合により延着させた場合を除き、本サービスにより購入した商品の到着日から8日以内に限り、購入した商品を返品することができます。この場合の送料は利用者が負担するものとします。但し、以下の条件に該当する場合、返品はできません。</p>
+              <h3>4.  利用者都合による返品</h3>
+              <p>利用者は、本サービスにより購入した商品の到着日から7日以内にご連絡いただいた場合に限り、購入した商品を返品することができます。この場合の送料は利用者が負担するものとします。但し、以下の条件に該当する場合、返品はできません。</p>
               <ul>
-                <li>①	使用済み、お直しや洗濯、クリーニングをした商品</li>
-                <li>②	納品書を紛失した場合</li>
-                <li>③	商品タグ・ラベル・付属品を紛失した場合</li>
-                <li>④	返送時の商品（箱、商品の付属品を含みますが、これらに限りません）の状態がお届け時と比べて毀損、汚損、紛失等している場合</li>
-                <li>⑤	お客様の元で商品に臭いが付着したり、汚れ、傷が生じた場合</li>
-                <li>⑥	丈詰めをした商品</li>
+                <li>① 使用済み、お直しや洗濯、クリーニングをした商品</li>
+                <li>② 納品書を紛失した場合</li>
+                <li>③ 商品タグ・ラベル・付属品を紛失した場合</li>
+                <li>④ 返送時の商品（箱、商品の付属品を含みますが、これらに限りません）の状態がお届け時と比べて毀損、汚損、紛失等している場合</li>
+                <li>⑤ お客様の元で商品に臭いが付着したり、汚れ、傷が生じた場合</li>
+                <li>⑥ 丈詰めをした商品</li>
               </ul>
             </li>
             <li>
-              <h3>5.	当社瑕疵による返品</h3>
-              <p>利用者は、本サービスにより購入した商品が以下に定める条件に該当する場合、商品の到着日から7日以内に限り、購入した商品を返品することができます。この場合の送料は当社が負担するものとします。</p>
+              <h3>5.  当社瑕疵による返品</h3>
+              <p>利用者は、本サービスにより購入した商品が以下に定める条件に該当し、商品の到着日から7日以内にご連絡いただいた場合に限り、購入した商品を返品することができます。この場合の送料は当社が負担するものとします。</p>
               <ul>
-                <li>①	商品に瑕疵があった場合</li>
-                <li>②	ご注文内容と異なる商品が到着した場合</li>
-                <li>③	配送中に破損した商品の場合</li>
-                <li>④	商品が偽造品であることが判明した場合</li>
+                <li>① 商品に瑕疵があった場合</li>
+                <li>② ご注文内容と異なる商品が到着した場合</li>
+                <li>③ 配送中に破損した商品の場合</li>
+                <li>④ 商品が偽造品であることが判明した場合</li>
               </ul>
             </li>
             <li>
-              <h3>6.	交換</h3>
+              <h3>6.  交換</h3>
               <p>利用者の都合による商品の交換は承ることができません。</p>
             </li>
 
@@ -313,11 +313,11 @@
           <p>当社は、次の場合は､利用者への事前の通知､承諾なく､サービスの一部または全部の一時的な中断･停止及び、変更・追加・削除を行います。</p>
 
           <ul class="privacyBox__contents__parts__list">
-            <li>1.	システムトラブル等で緊急な保守点検が必要な場合</li>
-            <li>2.	第一種（電話会社等）および第二種電気通信事業者（プロバイダー等）の役務が提供されない場合</li>
-            <li>3.	火災､停電､天災地変、（地震･噴火･洪水･津波等）が発生し、サービスの提供ができない場合</li>
-            <li>4.	人為的災害（戦争､暴動､騒乱､労働争議等）によりサービスの提供ができないとき</li>
-            <li>5.	その他､当社が必要と判断した場合</li>
+            <li>1.  システムトラブル等で緊急な保守点検が必要な場合</li>
+            <li>2.  第一種（電話会社等）および第二種電気通信事業者（プロバイダー等）の役務が提供されない場合</li>
+            <li>3.  火災､停電､天災地変、（地震･噴火･洪水･津波等）が発生し、サービスの提供ができない場合</li>
+            <li>4.  人為的災害（戦争､暴動､騒乱､労働争議等）によりサービスの提供ができないとき</li>
+            <li>5.  その他､当社が必要と判断した場合</li>
 
           </ul>
 
@@ -350,22 +350,22 @@
     <div class="fusoku">
       <p>付則 （本規約の適用）<br>2019年9月9日　制定</p>
     </div>
-	</div>
+  </div>
 
-	<div class="userBread">
-		<ul>
-			<li>
-				<a href="<%= WebSanitizer.HtmlEncode(this.UnsecurePageProtocolAndHost + Constants.PATH_ROOT) %>">
-					トップ
-				</a>
-			</li>
-			<li> >
-				<a href="#">
-					利用規約
-				</a>
-			</li>
-		</ul>
-	</div>
+  <div class="userBread">
+    <ul>
+      <li>
+        <a href="<%= WebSanitizer.HtmlEncode(this.UnsecurePageProtocolAndHost + Constants.PATH_ROOT) %>">
+          トップ
+        </a>
+      </li>
+      <li> >
+        <a href="#">
+          利用規約
+        </a>
+      </li>
+    </ul>
+  </div>
 <%-- △編集可能領域△ --%>
 
 
