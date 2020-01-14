@@ -25,33 +25,82 @@
 
 <%-- ▽編集可能領域：コンテンツ▽ --%>
 	<div class="conceptPage">
-		<p class="conceptPage_txt1">
-			過去と未来　既知と未知<br>
-			いつだってその真ん中が心地良い
-		</p>
-		<p class="conceptPage_txt2">
-			Rather be wearing Jamais Vu.
-		</p>
-		<p class="conceptPage_txt3">
-			JAMAIS VUは<br class="sp_contents">「自由で正直なものづくりを大切にしたい」<br class="sp_contents">という考えから、<br>
-			素材から作り手に至るまで<br class="sp_contents">本当に良いものを追求し、<br>
-			流行に縛られないオーセンティックな製品を<br class="sp_contents">提案しています。
-		</p>
-		<p class="conceptPage_txt4">
-			世界各国から良質な素材を選りすぐり、<br class="sp_contents">信頼できる職人により手がけられた<br>
-			「日常でありながら特別」<br class="sp_contents">「シンプルでいながらスペシャル」<br class="sp_contents">「サイズレス・シーズンレス・エイジレス」な<br>
-			新しいニュートラルスタイルをご提案いたします。 
-		</p>
+		<div class="conceptPage_ttl">
+			<p>
+				RATHER<br>
+				BE<br>
+				WEARING<br>
+				JAMAIS<br>
+				VU.
+			</p>
+		</div>
+		<div class="conceptPage_about">
+			<div class="conceptPage_about--inner">
+				<div class="conceptPageCts">
+					<p class="conceptPageLead">
+						過去と未来  既知と未知<br>
+						いつだってその真ん中が心地良い
+					</p>
+					<p class="conceptPageTxt">
+						JAMAIS VUは「自由で正直なものづくりを大切にしたい」という考えから、<br class="pc_contents">素材から作り手に至るまで本当に良いものを追求し、<br class="pc_contents">流行に縛られないオーセンティックな製品を提案しています。<br>
+						<br>
+						世界各国から良質な素材を選りすぐり、信頼できる職人により手がけられた<br class="pc_contents">「日常でありながら特別」「シンプルでいながらスペシャル」<br class="pc_contents">「サイズレス・シーズンレス・エイジレス」な<br class="pc_contents">新しいニュートラルスタイルをご提案いたします。
+					</p>
+				</div>
+			</div>
+		</div>
 		<div class="conceptPage_material">
-			<p class="conceptPage_material--ttl">素材を知る</p>
-			<ul>
-				<li>
-					<a href="<%= Constants.PATH_ROOT %>Page/Concept/hamilton_lambs_wool.aspx">HAMILTON LAMBS WOOL</a>
-				</li>
-				<li>
-					<a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">MERINO OPTIMO</a>
-				</li>
-			</ul>
+			<p class="conceptPage_material--ttl">JAMAIS VUの素材を知る</p>
+			<div class="conceptPage_material--box">
+				<div class="materialList">
+					<a href="<%= Constants.PATH_ROOT %>Page/Concept/hamilton_lambs_wool.aspx">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_hamilton.png" alt="HAMILTON LAMBSWOOL">
+						<p>HAMILTON <br class="sp_contents">LAMBSWOOL</p>
+					</a>
+				</div>
+				<div class="materialList">
+					<a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_merino.png" alt="MERINO OPTIMO">
+						<p>MERINO OPTIMO</p>
+					</a>
+				</div>
+				<div class="materialList">
+					<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_suvin.png" alt="SUVIN COTTON">
+						<p>SUVIN COTTON</p>
+					<!-- </a> -->
+				</div>
+				<div class="materialList">
+					<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_one.png" alt="ONE COTTON">
+						<p>ONE COTTON</p>
+					<!-- </a> -->
+				</div>
+				<div class="materialList">
+					<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_peruvian.png" alt="PERUVIAN PIMA COTTON">
+						<p>PERUVIAN <br class="sp_contents">PIMA COTTON</p>
+					<!-- </a> -->
+				</div>
+				<div class="materialList">
+					<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_ice.png" alt="ICE COTTON">
+						<p>ICE COTTON</p>
+					<!-- </a> -->
+				</div>
+				<div class="materialList">
+					<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_bratac.png" alt="BRATAC SILK">
+						<p>BRATAC SILK</p>
+					<!-- </a> -->
+				</div>
+				<div class="materialList">
+					<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
+						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_terre.png" alt="TERRE  DE LIN">
+						<p>TERRE DE LIN</p>
+					<!-- </a> -->
+				</div>
+			</div>
 		</div>
 	</div>
 <%-- △編集可能領域△ --%>

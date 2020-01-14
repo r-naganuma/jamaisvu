@@ -2216,7 +2216,7 @@ textarea::focus {
 	}
 
 	.conceptPage{
-		width: 1060px;
+		/*width: 1060px;
 		margin: 65px auto 160px;
 		height: 610px;
 		background-image: url("../Contents/ImagesPkg/user/concept/concept_bg_pc.jpg");
@@ -2427,6 +2427,159 @@ textarea::focus {
 					      opacity: 1;
 					      color: #fff;
 					    }
+					}
+				}
+			}
+		}*/
+
+		margin: 0 0 120px;
+
+		@include bp768 {
+			margin: 0 auto 50px;
+		};
+
+		&_ttl{
+			position: relative;
+			width: 1060px;
+			margin: 0 auto;
+
+			@include bp768 {
+				width: 100%;
+			};
+
+			p{
+				position: absolute;
+				top: -233px;
+				left: 10px;
+				font-size: 80px;
+				font-family: 'Playfair Display', serif;
+				color: #5A5A5A;
+				letter-spacing: 0.02em;
+				line-height: 90px;
+
+				@include bp768 {
+					top: calc(-233 * (100vw / 750));
+					left: 25px;
+					font-size: 40px;
+					line-height: 45px;
+				};
+			}
+		}
+
+		&_about{
+			margin: 243px 0 100px;
+			width: 100%;
+			background: #F2EEED;
+			padding: 80px 0 100px;
+			box-sizing: border-box;
+
+			@include bp768 {
+				margin: calc(243 * (100vw / 750)) 0 70px;
+				padding: 152px 0 80px;
+			};
+
+			&--inner{
+				width: 1060px;
+				margin: 0 auto;
+
+				@include bp768 {
+					width: 89.33%;
+				};
+
+				.conceptPageCts{
+					width: 570px;
+					margin-left: auto;
+
+					@include bp768 {
+						width: 100%;
+						margin-left: 0;
+					};
+
+					.conceptPageLead{
+						font-size: 22px;
+						color: #5A5A5A;
+						line-height: 2;
+						letter-spacing: 0.03em;
+						margin-bottom: 50px;
+
+						@include bp768 {
+							font-size: 16px;
+							line-height: 30px;
+							margin-bottom: 40px;
+						};
+					}
+
+					.conceptPageTxt{
+						font-size: 14px;
+						color: #5A5A5A;
+						line-height: 2;
+						letter-spacing: 0.03em;
+
+						@include bp768 {
+							font-size: 13px;
+							line-height: 24px;
+						};
+					}
+				}
+			}
+		}
+
+		&_material{
+			width: 700px;
+			margin: 0 auto;
+
+			@include bp768 {
+				width: 86.67%;
+			};
+
+			&--ttl{
+				text-align: center;
+				font-size: 14px;
+				font-weight: 700;
+				color: #5A5A5A;
+				letter-spacing: 0.03em;
+				line-height: 1;
+				margin-bottom: 60px;
+
+				@include bp768 {
+					margin-bottom: 50px;
+				};
+			}
+
+			&--box{
+				display: flex;
+				flex-wrap: wrap;
+
+				@include bp768 {
+					justify-content: space-between;
+				};
+
+				.materialList{
+					width: 200px;
+					margin: 0 50px 80px 0;
+
+					@include bp768 {
+						width: 48.46%;
+						margin: 0 0 50px;
+					};
+
+					p{
+						font-family: interstate, sans-serif;
+						font-size: 13px;
+						color: #666666;
+						line-height: 1;
+						letter-spacing: 0.08em;
+						text-align: center;
+						margin-top: 10px;
+
+						@include bp768 {
+							font-size: 12px;
+							line-height: 14.5px;
+						};
+					}
+
+					&:nth-child(3n){
+						margin-right: 0;
 					}
 				}
 			}
