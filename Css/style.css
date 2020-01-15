@@ -3055,6 +3055,197 @@ textarea::focus {
   margin-right: 0;
 }
 
+#Wrap .conceptPage.suvinPage .suvinPage_ttl {
+  width: 200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_ttl {
+    width: 45.67%;
+  }
+}
+
+#Wrap .conceptPage.suvinPage .suvinPage_lead {
+  text-align: center;
+  color: #5A5A5A;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 2;
+  margin: 0 0 65px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_lead {
+    width: 89.33%;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0 auto 40px;
+    text-align: left;
+  }
+}
+
+#Wrap .conceptPage.suvinPage .suvinPage_about {
+  width: 920px;
+  margin: 120px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_about {
+    width: 89.33%;
+    margin: 60px auto 50px;
+    display: block;
+  }
+}
+
+#Wrap .conceptPage.suvinPage .suvinPage_about--txt {
+  width: 390px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_about--txt {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+#Wrap .conceptPage.suvinPage .suvinPage_about--txt .aboutTtl {
+  font-size: 30px;
+  color: #5A5A5A;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_about--txt .aboutTtl {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+
+#Wrap .conceptPage.suvinPage .suvinPage_about--txt .aboutTxt {
+  font-size: 14px;
+  color: #5A5A5A;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_about--txt .aboutTxt {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+#Wrap .conceptPage.suvinPage .suvinPage_about--pic {
+  width: 460px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_about--pic {
+    width: 100%;
+  }
+}
+
+#Wrap .conceptPage.suvinPage .suvinPage_cts {
+  background: #F2EEED;
+  padding: 120px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_cts {
+    padding: 50px 0;
+    margin-bottom: 70px;
+  }
+}
+
+#Wrap .conceptPage.suvinPage .suvinPage_cts--inner {
+  width: 920px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_cts--inner {
+    width: 89.33%;
+    display: block;
+  }
+}
+
+#Wrap .conceptPage.suvinPage .suvinPage_cts--inner .ctsPic {
+  width: 400.5px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_cts--inner .ctsPic {
+    width: 100%;
+  }
+}
+
+#Wrap .conceptPage.suvinPage .suvinPage_cts--inner .ctsTxt {
+  width: 460px;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_cts--inner .ctsTxt {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+#Wrap .conceptPage.suvinPage .suvinPage_cts--inner .ctsTxt_ttl {
+  font-size: 30px;
+  color: #5A5A5A;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_cts--inner .ctsTxt_ttl {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+
+#Wrap .conceptPage.suvinPage .suvinPage_cts--inner .ctsTxt_txt {
+  font-size: 14px;
+  color: #5A5A5A;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.suvinPage .suvinPage_cts--inner .ctsTxt_txt {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
 @media (max-width: 768px) {
   #Wrap .pageTop .sec {
     position: relative;

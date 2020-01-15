@@ -8,6 +8,7 @@
 <%-- ▽ユーザーコントロール宣言領域▽ --%>
 <%-- △ユーザーコントロール宣言領域△ --%>
 <%@ Page Title="CONCEPT｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="JAMAIS VU （ジャメヴ）の製品化までのストーリーページ。上質なニットが作られる製造工程をご紹介します。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="素材,JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
+<%@ Register TagPrefix="uc" TagName="Parts000TMPL_009" Src="~/Page/Parts/Parts000TMPL_009.ascx" %>
 <%--
 
 下記のタグはファイル情報保持用です。削除しないでください。
@@ -49,59 +50,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="conceptPage_material">
-			<p class="conceptPage_material--ttl">JAMAIS VUの素材を知る</p>
-			<div class="conceptPage_material--box">
-				<div class="materialList">
-					<a href="<%= Constants.PATH_ROOT %>Page/Concept/hamilton_lambs_wool.aspx">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_hamilton.png" alt="HAMILTON LAMBSWOOL">
-						<p>HAMILTON <br class="sp_contents">LAMBSWOOL</p>
-					</a>
-				</div>
-				<div class="materialList">
-					<a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_merino.png" alt="MERINO OPTIMO">
-						<p>MERINO OPTIMO</p>
-					</a>
-				</div>
-				<div class="materialList">
-					<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_suvin.png" alt="SUVIN COTTON">
-						<p>SUVIN COTTON</p>
-					<!-- </a> -->
-				</div>
-				<div class="materialList">
-					<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_one.png" alt="ONE COTTON">
-						<p>ONE COTTON</p>
-					<!-- </a> -->
-				</div>
-				<div class="materialList">
-					<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_peruvian.png" alt="PERUVIAN PIMA COTTON">
-						<p>PERUVIAN <br class="sp_contents">PIMA COTTON</p>
-					<!-- </a> -->
-				</div>
-				<div class="materialList">
-					<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_ice.png" alt="ICE COTTON">
-						<p>ICE COTTON</p>
-					<!-- </a> -->
-				</div>
-				<div class="materialList">
-					<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_bratac.png" alt="BRATAC SILK">
-						<p>BRATAC SILK</p>
-					<!-- </a> -->
-				</div>
-				<div class="materialList">
-					<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
-						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_terre.png" alt="TERRE  DE LIN">
-						<p>TERRE DE LIN</p>
-					<!-- </a> -->
-				</div>
-			</div>
-		</div>
+		<uc:Parts000TMPL_009 runat="server" />
 	</div>
 <%-- △編集可能領域△ --%>
 

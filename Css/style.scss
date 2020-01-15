@@ -2584,6 +2584,160 @@ textarea::focus {
 				}
 			}
 		}
+
+		&.suvinPage{
+			.suvinPage{
+				&_ttl{
+					width: 200px;
+					margin: 0 auto;
+
+					@include bp768 {
+						width: 45.67%;
+					};
+				}
+
+				&_lead{
+					text-align: center;
+					color: #5A5A5A;
+					font-size: 14px;
+					letter-spacing: 0.03em;
+					line-height: 2;
+					margin: 0 0 65px;
+
+					@include bp768 {
+						width: 89.33%;
+						font-size: 13px;
+						line-height: 24px;
+						margin: 0 auto 40px;
+						text-align: left;
+					};
+				}
+
+				&_about{
+					width: 920px;
+					margin: 120px auto;
+					display: flex;
+					justify-content: space-between;
+
+					@include bp768 {
+						width: 89.33%;
+						margin: 60px auto 50px;
+						display: block;
+					};
+
+					&--txt{
+						width: 390px;
+
+						@include bp768 {
+							width: 100%;
+							margin-bottom: 40px;
+						};
+
+						.aboutTtl{
+							font-size: 30px;
+							color: #5A5A5A;
+							line-height: 44px;
+							letter-spacing: 0.03em;
+							margin-bottom: 30px;
+
+							@include bp768 {
+								font-size: 26px;
+								line-height: 35px;
+							};
+						}
+
+						.aboutTxt{
+							font-size: 14px;
+							color: #5A5A5A;
+							line-height: 2;
+							letter-spacing: 0.03em;
+
+							@include bp768 {
+								font-size: 13px;
+								line-height: 24px;
+							};
+						}
+					}
+
+					&--pic{
+						width: 460px;
+
+						@include bp768 {
+							width: 100%;
+						};
+					}
+				}
+
+				&_cts{
+					background: #F2EEED;
+					padding: 120px 0;
+					box-sizing: border-box;
+					margin-bottom: 100px;
+
+					@include bp768 {
+						padding: 50px 0;
+						margin-bottom: 70px;
+					};
+
+					&--inner{
+						width: 920px;
+						margin: 0 auto;
+						display: flex;
+						justify-content: space-between;
+						align-items: flex-end;
+
+						@include bp768 {
+							width: 89.33%;
+							display: block;
+						};
+
+						.ctsPic{
+							width: 400.5px;
+							order: 1;
+
+							@include bp768 {
+								width: 100%;
+							};
+						}
+
+						.ctsTxt{
+							width: 460px;
+							order: 2;
+
+							@include bp768 {
+								width: 100%;
+								margin-bottom: 30px;
+							};
+
+							&_ttl{
+								font-size: 30px;
+								color: #5A5A5A;
+								line-height: 44px;
+								letter-spacing: 0.03em;
+								margin-bottom: 30px;
+
+								@include bp768 {
+									font-size: 26px;
+									line-height: 35px;
+								};
+							}
+
+							&_txt{
+								font-size: 14px;
+								color: #5A5A5A;
+								line-height: 2;
+								letter-spacing: 0.03em;
+
+								@include bp768 {
+									font-size: 13px;
+									line-height: 24px;
+								};
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	/*--- sec--concept ---*/
