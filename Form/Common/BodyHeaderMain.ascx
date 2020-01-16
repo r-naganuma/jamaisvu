@@ -219,11 +219,11 @@ function initializeFunctionJs() {
 										</ul>
 
 										<ul>
-											<!--<li>
+											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 													新着商品
 												</a>
-											</li>-->
+											</li>
 											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
 													セール
@@ -454,14 +454,14 @@ function initializeFunctionJs() {
 							<div class="nav_box">
 								<h3>商品タイプ</h3>
 								<ul>
-									<!--<li>
+									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 											新着商品
 										</a>
-										<div class="navUpdate">
+										<!-- <div class="navUpdate">
 											<p>10/21 UP</p>
-										</div>
-									</li>-->
+										</div> -->
+									</li>
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
 											セール

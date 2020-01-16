@@ -36,36 +36,36 @@
 				<p>SUVIN COTTON</p>
 			</a>
 		</div>
-		<div class="materialList">
-			<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
+		<!-- <div class="materialList">
+			<a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_one.png" alt="ONE COTTON">
 				<p>ONE COTTON</p>
-			<!-- </a> -->
+			</a>
 		</div>
 		<div class="materialList">
-			<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
+			<a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_peruvian.png" alt="PERUVIAN PIMA COTTON">
 				<p>PERUVIAN <br class="sp_contents">PIMA COTTON</p>
-			<!-- </a> -->
+			</a>
 		</div>
 		<div class="materialList">
-			<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
+			<a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_ice.png" alt="ICE COTTON">
 				<p>ICE COTTON</p>
-			<!-- </a> -->
+			</a>
 		</div>
 		<div class="materialList">
-			<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
+			<a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_bratac.png" alt="BRATAC SILK">
 				<p>BRATAC SILK</p>
-			<!-- </a> -->
+			</a>
 		</div>
 		<div class="materialList">
-			<!-- <a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx"> -->
+			<a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_terre.png" alt="TERRE  DE LIN">
 				<p>TERRE DE LIN</p>
-			<!-- </a> -->
-		</div>
+			</a>
+		</div> -->
 	</div>
 </div>
 <%-- △編集可能領域△ --%>
