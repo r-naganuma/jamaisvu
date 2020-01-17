@@ -31,6 +31,16 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200117">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200117journal.jpg">
+                    <p class="journalCat">FEATURE</p>
+                    <p class="journalTtl">
+                        SALE ITEM RANKING
+                    </p>
+                    <p class="journalDate">2020.01.17</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=%E3%82%BB%E3%83%BC%E3%83%AB&pno=1">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200114journal.jpg">
                     <p class="journalCat">NEWS</p>
