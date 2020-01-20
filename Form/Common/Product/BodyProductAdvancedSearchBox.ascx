@@ -241,6 +241,7 @@
 				<asp:ListItem>メリノオプティモ</asp:ListItem>
 				<asp:ListItem>フォークランドウール</asp:ListItem>
 				<asp:ListItem>ワンコットン</asp:ListItem>
+				<asp:ListItem>スビンコットン</asp:ListItem>
 			</asp:CheckBoxList>
 		</div>
 	</td>

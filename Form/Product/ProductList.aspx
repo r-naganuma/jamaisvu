@@ -455,6 +455,11 @@
 			$('.searchBox_list--material li:nth-child(4)').addClass("on");
 			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
+		if(document.URL.match("%e3%82%b9%e3%83%93%e3%83%b3%e3%82%b3%e3%83%83%e3%83%88%e3%83%b3")) {
+			$('.pdList_conditions .tagtag5').text('\u00a0/ スビンコットン');
+			$('.searchBox_list--material li:nth-child(5)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
+		}
 		if(document.URL.match("JUST")) {
 			$('.pdList_conditions .sizasize1').text('\u00a0/ JUST FIT');
 			$('.searchBox_list--size li:nth-child(1)').addClass("on");
@@ -526,7 +531,7 @@
 							検索条件
 						</dt>
 						<dd>
-							<span class="pdList_conditions--category"></span><span class="pdList_conditions--sale"></span><span class="pdList_conditions--color"></span><span class="pdList_conditions--size sizasize1"></span><span class="pdList_conditions--size sizasize2"></span><span class="pdList_conditions--size sizasize3"></span><span class="pdList_conditions--tag tagtag1"></span><span class="pdList_conditions--tag tagtag2"></span><span class="pdList_conditions--tag tagtag3"></span><span class="pdList_conditions--tag tagtag4"></span>
+							<span class="pdList_conditions--category"></span><span class="pdList_conditions--sale"></span><span class="pdList_conditions--color"></span><span class="pdList_conditions--size sizasize1"></span><span class="pdList_conditions--size sizasize2"></span><span class="pdList_conditions--size sizasize3"></span><span class="pdList_conditions--tag tagtag1"></span><span class="pdList_conditions--tag tagtag2"></span><span class="pdList_conditions--tag tagtag3"></span><span class="pdList_conditions--tag tagtag4"></span><span class="pdList_conditions--tag tagtag5"></span>
 						</dd>
 					</dl>
 				</div>
