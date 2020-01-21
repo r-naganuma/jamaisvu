@@ -39,6 +39,20 @@
 		</div>
 		<div class="journalTop_archive">
 	        <div class="journalTop_archive--list">
+				<a href="https://jamaisvu.co.jp/Page/Journal/Newarrival/Newarrival_20200121/">
+					<div class="journalTop_archive--list--pic">
+	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/newarrivals_200121journal.jpg">
+	                </div>
+					<div class="journalTop_archive--list--txt">
+		                <p class="journalCat">NEW ARRIVAL</p>
+		                <p class="journalTtl">
+		                	冬コーデを一新。春を始める新作トップス
+		                </p>
+		                <p class="journalDate">2020.01.21</p>
+		            </div>
+				</a>
+	        </div>
+	        <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200117/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200117journal.jpg">
@@ -66,7 +80,7 @@
 		            </div>
 				</a>
 	        </div>
-	        <div class="journalTop_archive--list">
+	        <!-- <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Column/Column_20191224/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191224journal.jpg">
@@ -77,20 +91,6 @@
 		                	「上質を纏う。素材の良さを追求した物づくり」 Vol.2
 		                </p>
 		                <p class="journalDate">2019.12.24</p>
-		            </div>
-				</a>
-	        </div>
-	        <!-- <div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20191220/">
-					<div class="journalTop_archive--list--pic">
-	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191220journal.jpg">
-	                </div>
-					<div class="journalTop_archive--list--txt">
-		                <p class="journalCat">RECOMMEND</p>
-		                <p class="journalTtl">
-		                	着心地を追求したJAMAIS VUの上質ハイネック
-		                </p>
-		                <p class="journalDate">2019.12.20</p>
 		            </div>
 				</a>
 	        </div> -->
