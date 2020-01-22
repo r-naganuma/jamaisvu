@@ -1119,8 +1119,7 @@ span.error_message {
   <h4 visible='<%# ((CartObject)Container.DataItem).ShippingType == "1001" %>' runat="server">
     
     予約商品
-    <span style="font-size: 10px;display: block;margin: 10px 0 0px;font-weight: normal;line-height: 1.6;">予約商品と通常配送商品につきましては同一カート内（同一ご注文番号）でご購入いただくことができません。（それぞれに送料が発生いたします。）<br>
-また、予約商品は全ての商品が揃い次第、一括配送させていただきます。予約商品の配送時期につきましては各商品ページよりご確認ください。</span>
+    <span style="font-size: 10px;display: block;margin: 10px 0 0px;font-weight: normal;line-height: 1.6;">通常配送商品とあわせてご購入いただく場合、予約商品と通常配送商品とでカート（注文番号）が分かれますので、あらかじめご了承ください。（それぞれに送料が発生いたします）また、予約商品は全ての商品が揃い次第、一括配送をいたします。予約商品の配送時期につきましては各商品ページよりご確認ください。</span>
   </h4>
 
   <div class="list">
