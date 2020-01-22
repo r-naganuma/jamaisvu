@@ -23,21 +23,49 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
-			<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20191206/">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=%E3%82%BB%E3%83%BC%E3%83%AB&pno=1">
 				<div class="journalTop_archive--list--pic">
-            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191206journal.jpg">
+            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200114journal.jpg">
                 </div>
 				<div class="journalTop_archive--list--txt">
-	                <p class="journalCat">FEATURE</p>
+	                <p class="journalCat">NEWS</p>
 	                <p class="journalTtl">
-	                	初回購入限定 ALL 50%OFF
+	                	対象アイテム拡大！全品50％OFF
 	                </p>
-	                <p class="journalDate">2019.12.06</p>
+	                <p class="journalDate">2020.01.14</p>
 	            </div>
 			</a>
 			<!-- -->
 		</div>
 		<div class="journalTop_archive">
+	        <div class="journalTop_archive--list">
+				<a href="https://jamaisvu.co.jp/Page/Journal/Newarrival/Newarrival_20200121/">
+					<div class="journalTop_archive--list--pic">
+	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/newarrivals_200121journal.jpg">
+	                </div>
+					<div class="journalTop_archive--list--txt">
+		                <p class="journalCat">NEW ARRIVAL</p>
+		                <p class="journalTtl">
+		                	冬コーデを一新。春を始める新作トップス
+		                </p>
+		                <p class="journalDate">2020.01.21</p>
+		            </div>
+				</a>
+	        </div>
+	        <div class="journalTop_archive--list">
+				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200117/">
+					<div class="journalTop_archive--list--pic">
+	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200117journal.jpg">
+	                </div>
+					<div class="journalTop_archive--list--txt">
+		                <p class="journalCat">FEATURE</p>
+		                <p class="journalTtl">
+		                	SALE ITEM RANKING
+		                </p>
+		                <p class="journalDate">2020.01.17</p>
+		            </div>
+				</a>
+	        </div>
 	        <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20191227/">
 					<div class="journalTop_archive--list--pic">
@@ -52,7 +80,7 @@
 		            </div>
 				</a>
 	        </div>
-	        <div class="journalTop_archive--list">
+	        <!-- <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Column/Column_20191224/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191224journal.jpg">
@@ -63,34 +91,6 @@
 		                	「上質を纏う。素材の良さを追求した物づくり」 Vol.2
 		                </p>
 		                <p class="journalDate">2019.12.24</p>
-		            </div>
-				</a>
-	        </div>
-	        <div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20191220/">
-					<div class="journalTop_archive--list--pic">
-	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191220journal.jpg">
-	                </div>
-					<div class="journalTop_archive--list--txt">
-		                <p class="journalCat">RECOMMEND</p>
-		                <p class="journalTtl">
-		                	着心地を追求したJAMAIS VUの上質ハイネック
-		                </p>
-		                <p class="journalDate">2019.12.20</p>
-		            </div>
-				</a>
-	        </div>
-	        <!-- <div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/Journal/Column/Column_20191217/">
-					<div class="journalTop_archive--list--pic">
-	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191217journal.jpg">
-	                </div>
-					<div class="journalTop_archive--list--txt">
-		                <p class="journalCat">COLUMN</p>
-		                <p class="journalTtl">
-		                	本当の意味でのラグジュアリー
-		                </p>
-		                <p class="journalDate">2019.12.17</p>
 		            </div>
 				</a>
 	        </div> -->

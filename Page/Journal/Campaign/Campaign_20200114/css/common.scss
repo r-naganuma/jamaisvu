@@ -1,0 +1,461 @@
+@charset  "utf-8";
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+@font-face {
+	font-family: 'gillsans';
+	src: url("../../../../../Font/gillsans.woff") format('woff'),
+		 url('../../../../../Font/gillsans.otf') format("opentype");
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+
+.pc_contents {
+	display: block!important;
+
+	@include bp768 {
+		display: none!important;
+	};
+}
+
+.sp_contents {
+  display: none!important;
+
+	@include bp768 {
+		display: block!important;
+	};
+}
+
+.pc_inline {
+	display: inline!important;
+
+	@include bp768 {
+		display: none!important;
+	};
+}
+
+.sp_inline {
+  display: none!important;
+
+	@include bp768 {
+		display: inline!important;
+	};
+}
+
+.campaignWrap {
+	width: 1080px;
+	margin: 0 auto 120px;
+	color: #333;
+	font-size: 13px;
+	line-height: 2;
+	letter-spacing: 0.03em;
+	font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+	font-weight: 400;
+
+	@include bp768 {
+		width: 100%;
+		padding: 0 18px;
+		box-sizing: border-box;
+	};
+
+	ul{
+		margin: 0;
+		padding: 0;
+
+		li{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	p{
+		margin: 0;
+		padding: 0;
+		line-height: 2;
+	}
+
+	a{
+		text-decoration: none;
+		color: #000;
+		font-weight: 300;
+		display: block;
+	}
+
+	img{
+		width: 100%;
+		display: block;
+	}
+
+	.mainArea{
+		width: 900px;
+		margin: 0 auto 80px;
+
+		@include bp768 {
+			width: 100vw;
+			margin: 0 auto 40px -18px;
+		};
+
+		p{
+			text-align: center;
+			margin-top: 80px;
+
+			@include bp768 {
+				margin-top: 40px;
+			};
+		}
+	}
+
+	h2{
+		span{
+			display: block;
+			color: #C0B6B3;
+			margin-top: 15px;
+			letter-spacing: 0.16em;
+			line-height: 1;
+			font-family: 'gillsans', 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+			font-size: 16px;
+		}
+	}
+
+	h3{
+		color: #333;
+		font-size: 20px;
+		line-height: 1;
+		letter-spacing: 0.03em;
+		font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+		font-weight: 700;
+		margin-bottom: 55px;
+		position: relative;
+		text-align: center;
+
+		@include bp768 {
+			font-size: 18px;
+			line-height: 1;
+		};
+
+		&::after{
+			content: "";
+			position: absolute;
+			bottom: -25px;
+			left: 0;
+			right: 0;
+			width: 40px;
+			height: 1px;
+			background: #C0B6B3;
+			margin: auto;
+		}
+	}
+
+	.aboutArea{
+		width: 548px;
+		margin: 0 auto 40px;
+
+		@include bp768 {
+			width: 100%;
+			margin: 0 auto 120px;
+		};
+
+		&_box{
+			display: flex;
+			justify-content: space-between;
+
+		@include bp768 {
+			display: block;
+		};
+
+			&--list{
+				&:nth-child(1){
+					width: 234px;
+
+					@include bp768 {
+						width: 60%;
+						margin: 0 auto 40px;
+					};
+				}
+
+				&:nth-child(2){
+					width: 214px;
+
+					@include bp768 {
+						width: 60%;
+						margin: 0 auto;
+					};
+				}
+
+				p{
+					line-height: 20px;
+					text-align: center;
+					font-weight: 700;
+					margin-top: 5px;
+
+					@include bp768 {
+						margin-top: 0;
+					};
+
+					span{
+						font-size: 11px;
+						color: #6F7579;
+						font-weight: normal;
+						display: block;
+
+						@include bp768 {
+							line-height: 14px;
+							margin-top: 10px;
+						};
+					}
+				}
+			}
+		}
+	}
+
+	.couponArea{
+		margin: 0 auto 80px;
+
+		@include bp768 {
+			margin: 0 auto 120px;
+		};
+
+		&_txt{
+			letter-spacing: 0.08em;
+			line-height: 1;
+			text-align: center;
+
+			@include bp768 {
+				letter-spacing: 0.03em;
+			};
+
+			&.txt01{
+				margin-bottom: 20px;
+			}
+
+			&.txt02{
+				margin-bottom: 10px;
+			}
+
+			&.txt03{
+				margin-bottom: 10px;
+
+				@include bp768 {
+					line-height: 19.5px;
+				};
+			}
+		}
+
+		&_code{
+			width: 200px;
+			height: 60px;
+			border: 1px solid #CCCCCC;
+			margin: 0 auto 40px;
+			border-radius: 2px;
+
+			@include bp768 {
+				margin: 0 auto 20px;
+			};
+
+			p{
+				font-size: 28px;
+				text-align: center;
+				line-height: 60px;
+			}
+		}
+
+		&_notice{
+			font-size: 11px;
+			color: #6F7579;
+			line-height: 19px;
+			text-align: center;
+
+			@include bp768 {
+				line-height: 19.5px;
+			};
+		}
+	}
+
+	.conditionsArea{
+		width: 860px;
+		margin: 0 auto 80px;
+
+		@include bp768 {
+			width: 100%;
+			margin: 0 auto 120px;
+		};
+
+		&_lead{
+			text-align: center;
+			margin-bottom: 22px;
+
+			@include bp768 {
+				margin-bottom: 14px;
+			};
+		}
+
+		&_box{
+			display: flex;
+			justify-content: space-between;
+
+			@include bp768 {
+				display: block;
+			};
+
+			&--list{
+				width: 240px;
+
+				@include bp768 {
+					width: 72%;
+					margin: 0 auto 30px;
+				};
+
+				img{
+					width: 180px !important;
+					margin: 0 auto 5px;
+
+					@include bp768 {
+						width: 75% !important;
+						margin: 0 auto;
+					};
+				}
+
+				p{
+					line-height: 22px;
+
+					@include bp768 {
+						line-height: 20px;
+					};
+
+					span{
+						font-size: 14px;
+						font-weight: 700;
+						display: block;
+						margin-bottom: 20px;
+						line-height: 1;
+						text-align: center;
+
+						@include bp768 {
+							font-size: 13px;
+						};
+					}
+				}
+			}
+		}
+	}
+
+	.flowArea{
+		width: 940px;
+		margin: 0 auto;
+
+		@include bp768 {
+			width: 94.4%;
+		};
+
+		&_step{
+			background: #F5F5F5;
+			padding: 30px 0;
+			display: flex;
+			align-items: center;
+			position: relative;
+			margin-bottom: 30px;
+
+			@include bp768 {
+				padding: 30px 20px;
+				box-sizing: border-box;
+				display: block;
+				margin-bottom: 40px;
+			};
+
+			&--num{
+				width: 154px;
+
+				@include bp768 {
+					width: 100%;
+					margin-bottom: 20px;
+				};
+
+				p{
+					font-size: 14px;
+					text-align: center;
+					font-weight: 700;
+					letter-spacing: 0;
+					line-height: 1;
+
+					@include bp768 {
+						font-size: 16px;
+					};
+				}
+			}
+
+			&--cts{
+				p{
+					@include bp768 {
+						font-size: 14px;
+						letter-spacing: 0;
+						line-height: 26px;
+					};
+
+					.fwBold{
+						font-weight: 700;
+					}
+
+					.fontS{
+						font-size: 12px;
+						line-height: 20px;
+						display: block;
+						margin-top: 5px;
+
+						@include bp768 {
+							margin-top: 20px;
+						};
+					}
+
+					.note{
+						font-size: 11px;
+						color: #6F7579;
+						display: block;
+						margin-top: 5px;
+
+						@include bp768 {
+							line-height: 18px;
+						};
+					}
+				}
+			}
+
+			&::after{
+				content: "";
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				margin-left: -15px;
+				border: 15px solid transparent;
+				border-top: 15px solid #F5F5F5;
+
+				@include bp768 {
+					margin-left: -25px;
+					border: 25px solid transparent;
+					border-top: 25px solid #F5F5F5;
+				};
+			}
+
+			&:last-child{
+				margin-bottom: 0;
+
+				&::after{
+					content: none;
+				}
+			}
+		}
+	}
+}

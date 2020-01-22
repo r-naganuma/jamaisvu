@@ -31,6 +31,36 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Newarrival/Newarrival_20200121">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/newarrivals_200121journal.jpg">
+                    <p class="journalCat">NEW ARRIVAL</p>
+                    <p class="journalTtl">
+                        冬コーデを一新。春を始める新作トップス
+                    </p>
+                    <p class="journalDate">2020.01.21</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200117">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200117journal.jpg">
+                    <p class="journalCat">FEATURE</p>
+                    <p class="journalTtl">
+                        SALE ITEM RANKING
+                    </p>
+                    <p class="journalDate">2020.01.17</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=%E3%82%BB%E3%83%BC%E3%83%AB&pno=1">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200114journal.jpg">
+                    <p class="journalCat">NEWS</p>
+                    <p class="journalTtl">
+                        対象アイテム拡大！全品50％OFF
+                    </p>
+                    <p class="journalDate">2020.01.14</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20191227">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191227journal.jpg">
                     <p class="journalCat">FEATURE</p>
@@ -90,7 +120,7 @@
                     <p class="journalDate">2019.12.10</p>
                 </a>
             </div>
-            <div class="journalWrap_box--list">
+            <!-- <div class="journalWrap_box--list">
 				<a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20191206">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191206journal.jpg">
                     <p class="journalCat">FEATURE</p>
@@ -99,7 +129,7 @@
                     </p>
                     <p class="journalDate">2019.12.06</p>
 				</a>
-            </div>
+            </div> -->
             <div class="journalWrap_box--list">
                 <a href="https://jamaisvu.co.jp/Page/topics/feature/feature_20191126/">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191126journal.jpg">
