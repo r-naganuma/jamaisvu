@@ -228,7 +228,17 @@
 		</li>
 	</ul>
 </div>
-
+<style>
+#Wrap .userWrap .registWrap_box--input .inputBox_right .nameArea dd {
+    width: 170px;
+}
+@media (max-width: 768px){
+#Wrap .userWrap .registWrap_box--input .inputBox_right .nameArea dd {
+    width: 85%;
+    margin-top: 16px;
+}
+}
+</style>
 <script type="text/javascript">
 <!--
 	bindExecAutoKana();

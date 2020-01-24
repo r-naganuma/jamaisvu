@@ -134,7 +134,8 @@
       <p>会社名：株式会社 Roseau Pensant
         <br>代表者 : 代表取締役　上原 英暢
         <br>所在地：東京都港区六本木7-3-16六本木インターナショナルアネックスビル4F
-        <br>URL：<a href="https://roseaupensant.jp/">https://roseaupensant.jp/</a></p>
+        <br>電話番号：03-5772-1344
+        <br>URL：<a href="https://roseaupensant.jp" target="_blank">https://roseaupensant.jp</a></p>
     </div>
     <div class="privacyBox__section">
       <h4>販売価格</h4>
@@ -166,7 +167,7 @@
       <h4>お問い合わせ先</h4>
       <p>ご購入いただいた商品の返品やその他ご質問のお問い合わせは<a href="https://jamaisvu.co.jp/Form/Inquiry/InquiryInput.aspx">こちら</a><br>
         <br>
-        メールマガジンの配信停止は<a href="https://jamaisvu.co.jp/Page/userGuide/#a06">こちら</a><br>
+        メールマガジンの配信停止は<a href="https://jamaisvu.co.jp/Page/userGuide/#a07">こちら</a><br>
         メールマガジン配信アドレス：<br class="sp_contents">info@jamaisvu.co.jp（※配信専用）</p>
     </div>
 

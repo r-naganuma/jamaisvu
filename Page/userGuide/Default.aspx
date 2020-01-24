@@ -322,7 +322,7 @@ $(function(){
 						<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/guide/guide_stepup.jpg" class="pic_rank">
 					</div>
 					<div class="inner_column">
-						<h4>ニュースレター</h4>
+						<h4 id="a07" style="padding-top: 80px">ニュースレター</h4>
 						<p>
 							おすすめ商品やイベント、セールなどの最新情報をメールで受け取れる会員サービスです。<br>
 							ニュースレターの登録・変更・停止は、マイページ内<a href="<%= WebSanitizer.HtmlEncode(this.SecurePageProtocolAndHost + Constants.PATH_ROOT + Constants.PAGE_FRONT_USER_MODIFY_INPUT) %>">会員情報確認・変更</a>よりお手続き頂くか、<a href="mailto:contact@jamaisvu.co.jp?subject=会員情報確認・変更">contact@jamaisvu.co.jp</a>までご連絡をお願いいたします。<br>
