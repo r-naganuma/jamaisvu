@@ -884,18 +884,27 @@
 						<p visible='<%# GetProductMemberRankPriceValid(Container.DataItem) %>' runat="server">
 						<span class="newPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem)) %>(tax in)</span>
 						<span class="oldPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span>
+						<span class="newPrice" visible='<%# GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">
+					        <%#: GetProductSpecialPriceValid(Container.DataItem)? Math.Floor(Convert.ToDecimal(GetProductSpecialPriceNumeric(Container.DataItem).Replace(",",""))/ Convert.ToDecimal(GetProductPriceNumeric(Container.DataItem).Replace(",","")) * 100): 0 %>%OFF
+						</span>
 						</p>
 
 						<%-- ▽商品セール価格有効▽ --%>
 						<p visible='<%# GetProductTimeSalesValid(Container.DataItem) %>' runat="server">
 							<span class="newPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %>(tax in)</span>
 							<span class="oldPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span>
+							<span class="newPrice" visible='<%# GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">
+						        <%#: GetProductSpecialPriceValid(Container.DataItem)? Math.Floor(Convert.ToDecimal(GetProductSpecialPriceNumeric(Container.DataItem).Replace(",",""))/ Convert.ToDecimal(GetProductPriceNumeric(Container.DataItem).Replace(",","")) * 100): 0 %>%OFF
+							</span>
 						</p>
 
 						<%-- ▽商品特別価格有効▽ --%>
 						<p visible='<%# GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">
 						<span class="newPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductSpecialPriceNumeric(Container.DataItem)) %>(tax in)</span>
 						<span class="oldPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span>
+						<span class="newPrice" visible='<%# GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">
+					        <%#: GetProductSpecialPriceValid(Container.DataItem)? Math.Floor(Convert.ToDecimal(GetProductSpecialPriceNumeric(Container.DataItem).Replace(",",""))/ Convert.ToDecimal(GetProductPriceNumeric(Container.DataItem).Replace(",","")) * 100): 0 %>%OFF
+						</span>
 						</p>
 
 						<%-- ▽商品通常価格有効▽ --%>
