@@ -650,18 +650,28 @@ iframe {
 	<div visible='<%# GetProductMemberRankPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
 		<p class="productPrice"><span><strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))) %></strike></span>(tax in)</p>
 		<p class="productPrice">会員ランク価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(this.ProductMaster)) %></span>(tax in)</p>
-		<p class="productPrice"><span visible='<%# GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
-	        <%#: GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))? Math.Floor(Convert.ToDecimal(GetProductSpecialPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",",""))/ Convert.ToDecimal(GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",","")) * 100): 0 %>%OFF
-		</span></p>
+		<p class="productPrice">
+			<span visible='<%# GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
+				<%#: GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))
+							? Math.Round((1 - (Convert.ToDecimal(GetProductSpecialPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",","")) 
+								/ Convert.ToDecimal(GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",",""))))*100)
+							: 0 %>%OFF
+			</span>
+		</p>
 	</div>
 	<%-- △商品会員ランク価格有効△ --%>
 	<%-- ▽商品セール価格有効▽ --%>
 	<div visible='<%# GetProductTimeSalesValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
 		<p class="productPrice"><span><strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))) %></strike></span>(tax in)</p>
 		<p class="productPrice">セール価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(this.ProductMaster)) %></span>(tax in)</p>
-		<p class="productPrice"><span visible='<%# GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
-	        <%#: GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))? Math.Floor(Convert.ToDecimal(GetProductSpecialPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",",""))/ Convert.ToDecimal(GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",","")) * 100): 0 %>%OFF
-		</span></p>
+		<p class="productPrice">
+			<span visible='<%# GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
+				<%#: GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))
+							? Math.Round((1 - (Convert.ToDecimal(GetProductSpecialPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",","")) 
+								/ Convert.ToDecimal(GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",",""))))*100)
+							: 0 %>%OFF
+			</span>
+		</p>
 	</div>
 	<%-- △商品セール価格有効△ --%>
 	<%-- ▽商品特別価格有効▽ --%>
@@ -669,9 +679,14 @@ iframe {
 		
 		<p class="productPrice"><span><%#: CurrencyManager.ToPrice(ProductPage.GetProductSpecialPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))) %></span>(tax in)</p>
 		<p class="productPrice sale_price"><span><strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))) %></strike></span>(tax in)</p>
-		<p class="productPrice"><span visible='<%# GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
-	        <%#: GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))? Math.Floor(Convert.ToDecimal(GetProductSpecialPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",",""))/ Convert.ToDecimal(GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",","")) * 100): 0 %>%OFF
-		</span></p>
+		<p class="productPrice">
+			<span visible='<%# GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
+				<%#: GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))
+							? Math.Round((1 - (Convert.ToDecimal(GetProductSpecialPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",","")) 
+								/ Convert.ToDecimal(GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",",""))))*100)
+							: 0 %>%OFF
+			</span>
+		</p>
 	</div>
 	<%-- △商品特別価格有効△ --%>
 	<%-- ▽商品通常価格有効▽ --%>

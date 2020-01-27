@@ -5620,15 +5620,21 @@ textarea::focus {
   color: #AD2E24;
 }
 
+@media (max-width: 768px) {
+  #Wrap .pageCts_pdList--cts .pdList_list--column .pdList_price p .newPrice {
+    line-height: 1.5;
+  }
+}
+
 #Wrap .pageCts_pdList--cts .pdList_list--column .pdList_price p .oldPrice {
   text-decoration: line-through;
-  margin-left: 10px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
   #Wrap .pageCts_pdList--cts .pdList_list--column .pdList_price p .oldPrice {
-    display: block;
-    margin: 5px 0 0 0;
+    margin: 5px 0 3px 0;
   }
 }
 

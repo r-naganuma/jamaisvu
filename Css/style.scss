@@ -4749,15 +4749,19 @@ textarea::focus {
 
 							.newPrice{
 								color: #AD2E24;
+
+								@include bp768 {
+									line-height: 1.5;
+								};
 							}
 
 							.oldPrice{
 								text-decoration: line-through;
-								margin-left: 10px;
+								display: block;
+								margin-bottom: 5px;
 
 								@include bp768 {
-									display: block;
-									margin: 5px 0 0 0;
+									margin: 5px 0 3px 0;
 								};
 							}
 						}
