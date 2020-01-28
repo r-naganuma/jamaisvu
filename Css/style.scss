@@ -1927,6 +1927,23 @@ textarea::focus {
 							line-height: 1;
 							letter-spacing: 0.01em;
 						}
+
+						&.priceOld{
+							text-decoration: line-through;
+						}
+
+						&.priceNew{
+							color: #AD2E24;
+							margin-top: 5px;
+
+							span{
+								color: #AD2E24;
+
+								&.off{
+									font-size: 13px;
+								}
+							}
+						}
 					}
 				}
 			}

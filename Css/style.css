@@ -2337,6 +2337,23 @@ textarea::focus {
   letter-spacing: 0.01em;
 }
 
+#Wrap .pageTop .itemsTop_box--list .itemsPrice.priceOld {
+  text-decoration: line-through;
+}
+
+#Wrap .pageTop .itemsTop_box--list .itemsPrice.priceNew {
+  color: #AD2E24;
+  margin-top: 5px;
+}
+
+#Wrap .pageTop .itemsTop_box--list .itemsPrice.priceNew span {
+  color: #AD2E24;
+}
+
+#Wrap .pageTop .itemsTop_box--list .itemsPrice.priceNew span.off {
+  font-size: 13px;
+}
+
 #Wrap .pageTop .categoryTop {
   width: 89.33%;
   margin: 0 auto 60px;

@@ -38,6 +38,20 @@
 			<!-- -->
 		</div>
 		<div class="journalTop_archive">
+			<div class="journalTop_archive--list">
+				<a href="https://jamaisvu.co.jp/Page/Journal/Column/Column_20200128/">
+					<div class="journalTop_archive--list--pic">
+	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_200128journal.jpg">
+	                </div>
+					<div class="journalTop_archive--list--txt">
+		                <p class="journalCat">COLUMN</p>
+		                <p class="journalTtl">
+		                	古着を愛し、新し着を温める
+		                </p>
+		                <p class="journalDate">2020.01.28</p>
+		            </div>
+				</a>
+	        </div>
 	        <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Newarrival/Newarrival_20200121/">
 					<div class="journalTop_archive--list--pic">
@@ -66,7 +80,7 @@
 		            </div>
 				</a>
 	        </div>
-	        <div class="journalTop_archive--list">
+	        <!-- <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20191227/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_191227journal.jpg">
@@ -77,20 +91,6 @@
 		                	冬を盛り上げる、最強白ニットの法則
 		                </p>
 		                <p class="journalDate">2019.12.27</p>
-		            </div>
-				</a>
-	        </div>
-	        <!-- <div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/Journal/Column/Column_20191224/">
-					<div class="journalTop_archive--list--pic">
-	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_191224journal.jpg">
-	                </div>
-					<div class="journalTop_archive--list--txt">
-		                <p class="journalCat">COLUMN</p>
-		                <p class="journalTtl">
-		                	「上質を纏う。素材の良さを追求した物づくり」 Vol.2
-		                </p>
-		                <p class="journalDate">2019.12.24</p>
 		            </div>
 				</a>
 	        </div> -->
