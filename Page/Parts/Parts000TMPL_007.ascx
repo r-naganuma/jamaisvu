@@ -112,7 +112,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930318131_L.jpg">
                 <p class="itemsName">ビッグカーディガン</p>
                 <p class="itemsPrice priceOld">¥26,400 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥13,200 <span>(tax in)</span> <span class="off">50%OFF</span></p>
+                <p class="itemsPrice priceNew">¥9,240 <span>(tax in)</span> <span class="off">65%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -120,7 +120,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930318165_L.jpg">
                 <p class="itemsName">ビッグカーディガン</p>
                 <p class="itemsPrice priceOld">¥26,400 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥13,200 <span>(tax in)</span> <span class="off">50%OFF</span></p>
+                <p class="itemsPrice priceNew">¥9,240 <span>(tax in)</span> <span class="off">65%OFF</span></p>
 			</a>
 		</div>
 	</div>

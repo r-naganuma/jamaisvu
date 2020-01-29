@@ -66,6 +66,12 @@
 				<p>TERRE DE LIN</p>
 			</a>
 		</div> -->
+		<div class="materialList">
+			<a href="<%= Constants.PATH_ROOT %>Page/Concept/ozone_finishing.aspx">
+				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_ozone.png" alt="OZONE FINISHING">
+				<p>OZONE FINISHING</p>
+			</a>
+		</div>
 	</div>
 </div>
 <%-- △編集可能領域△ --%>

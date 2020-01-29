@@ -651,9 +651,9 @@ iframe {
 		<p class="productPrice"><span><strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))) %></strike></span>(tax in)</p>
 		<p class="productPrice">会員ランク価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(this.ProductMaster)) %></span>(tax in)</p>
 		<p class="productPrice">
-			<span visible='<%# GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
-				<%#: GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))
-							? Math.Round((1 - (Convert.ToDecimal(GetProductSpecialPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",","")) 
+			<span visible='<%# GetProductMemberRankPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
+				<%#: GetProductMemberRankPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))
+							? Math.Round((1 - (Convert.ToDecimal(GetProductMemberRankPrice(this.ProductMaster).Replace(",","")) 
 								/ Convert.ToDecimal(GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",",""))))*100)
 							: 0 %>%OFF
 			</span>
@@ -665,9 +665,9 @@ iframe {
 		<p class="productPrice"><span><strike><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))) %></strike></span>(tax in)</p>
 		<p class="productPrice">セール価格:<span><%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(this.ProductMaster)) %></span>(tax in)</p>
 		<p class="productPrice">
-			<span visible='<%# GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
-				<%#: GetProductSpecialPriceValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))
-							? Math.Round((1 - (Convert.ToDecimal(GetProductSpecialPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",","")) 
+			<span visible='<%# GetProductTimeSalesValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)) %>' runat="server">
+				<%#: GetProductTimeSalesValid(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected))
+							? Math.Round((1 - (Convert.ToDecimal(GetProductTimeSalePriceNumeric(this.ProductMaster).Replace(",","")) 
 								/ Convert.ToDecimal(GetProductPriceNumeric(this.ProductMaster, (this.HasVariation == false) || (this.VariationSelected)).Replace(",",""))))*100)
 							: 0 %>%OFF
 			</span>

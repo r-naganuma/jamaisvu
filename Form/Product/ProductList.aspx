@@ -884,9 +884,9 @@
 						<p visible='<%# GetProductMemberRankPriceValid(Container.DataItem) %>' runat="server">
 						<span class="oldPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span>
 						<span class="newPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductMemberRankPrice(Container.DataItem)) %>(tax in)</span><br class="sp_contents">
-						<span class="newPrice" visible='<%# GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">
-							<%#: GetProductSpecialPriceValid(Container.DataItem)
-										? (Math.Round((1 - Convert.ToDecimal(GetProductSpecialPriceNumeric(Container.DataItem).Replace(",","")) 
+						<span class="newPrice" visible='<%# GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">							
+							<%#: GetProductMemberRankPriceValid(Container.DataItem)
+										? (Math.Round((1 - Convert.ToDecimal(GetProductMemberRankPrice(Container.DataItem).Replace(",","")) 
 											/ Convert.ToDecimal(GetProductPriceNumeric(Container.DataItem).Replace(",",""))) * 100)) 
 										: 0 %>%OFF
 						</span>
@@ -897,10 +897,10 @@
 							<span class="oldPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductPriceNumeric(Container.DataItem)) %>(tax in)</span>
 							<span class="newPrice"><%#: CurrencyManager.ToPrice(ProductPage.GetProductTimeSalePriceNumeric(Container.DataItem)) %>(tax in)</span><br class="sp_contents">
 							<span class="newPrice" visible='<%# GetProductSpecialPriceValid(Container.DataItem) %>' runat="server">
-								<%#: GetProductSpecialPriceValid(Container.DataItem)
-											? (Math.Round((1 - Convert.ToDecimal(GetProductSpecialPriceNumeric(Container.DataItem).Replace(",","")) 
+								<%#: GetProductTimeSalesValid(Container.DataItem)
+											? (Math.Round((1 - Convert.ToDecimal(GetProductTimeSalePriceNumeric(Container.DataItem).Replace(",","")) 
 												/ Convert.ToDecimal(GetProductPriceNumeric(Container.DataItem).Replace(",",""))) * 100)) 
-											: 0 %>%OFF
+											: 0 %>%OFF							
 							</span>
 						</p>
 
