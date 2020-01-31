@@ -25,16 +25,16 @@
 	</p>
 	<div class="itemsTop_box">
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930336161&cat=500061">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930336161_L.jpg">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930336131&cat=500031">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930336131_L.jpg">
                 <p class="itemsName">ワイドリブプルオーバー</p>
                 <p class="itemsPrice priceOld">¥20,900 <span>(tax in)</span></p>
                 <p class="itemsPrice priceNew">¥6,270 <span>(tax in)</span> <span class="off">70%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930336165&cat=500065">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930336165_L.jpg">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930336149&cat=500049">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930336149_L.jpg">
                 <p class="itemsName">ワイドリブプルオーバー</p>
                 <p class="itemsPrice priceOld">¥20,900 <span>(tax in)</span></p>
                 <p class="itemsPrice priceNew">¥6,270 <span>(tax in)</span> <span class="off">70%OFF</span></p>
@@ -50,24 +50,24 @@
 		</div>
 
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930317121&cat=500021">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930317121_L.jpg">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930317165&cat=500065">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930317165_L.jpg">
                 <p class="itemsName">ショートカーディガン</p>
                 <p class="itemsPrice priceOld">¥23,100 <span>(tax in)</span></p>
                 <p class="itemsPrice priceNew">¥6,930 <span>(tax in)</span> <span class="off">70%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930302165&cat=500065">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930302165_L.jpg">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930302111&cat=500011">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930302111_L.jpg">
                 <p class="itemsName">ビルトネックタートル</p>
                 <p class="itemsPrice priceOld">¥19,800 <span>(tax in)</span></p>
                 <p class="itemsPrice priceNew">¥5,940 <span>(tax in)</span> <span class="off">70%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930302149&cat=500049">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930302149_L.jpg">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930302131&cat=500031">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930302131_L.jpg">
                 <p class="itemsName">ビルトネックタートル</p>
                 <p class="itemsPrice priceOld">¥19,800 <span>(tax in)</span></p>
                 <p class="itemsPrice priceNew">¥5,940 <span>(tax in)</span> <span class="off">70%OFF</span></p>
