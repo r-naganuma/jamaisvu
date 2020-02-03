@@ -1,0 +1,164 @@
+#Wrap .LPpageWrap {
+  /*====================================================================
+*    ALL
+/*==================================================================*/
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea {
+    margin-bottom: 40px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea {
+  /*====================================================================
+*    TEMPLATE A
+/*==================================================================*/
+  /*====================================================================
+*    TEMPLATE B
+/*==================================================================*/
+  /*====================================================================
+*    TEMPLATE C
+/*==================================================================*/
+  /*====================================================================
+*    ALL
+/*==================================================================*/
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap {
+  margin-bottom: 80px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_pic {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_pic {
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl {
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .B-wrap_box {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .B-wrap_box {
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .B-wrap_txt {
+  margin-bottom: 0;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .B-wrap_txt {
+    margin-bottom: 0;
+    line-height: 24px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .B-wrap_box--pic {
+  width: 360px;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+@media (max-width: 1060px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .B-wrap_box--pic {
+    width: 89.33%;
+    margin: 0 auto 20px;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .B-wrap_box--txt {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+@media (max-width: 1060px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .B-wrap_box--txt {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .C-wrap {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .C-wrap {
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .C-wrap_list.last {
+    margin: 0 auto 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .C-wrap_pic {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .C-wrap_pic {
+    margin-bottom: 0;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea_btn {
+  margin: 0 auto 120px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea_btn {
+    margin: 0 auto 100px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea_box--list .archiveTtl {
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea_box--list .archiveTtl {
+    line-height: 21px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea {
+  padding-top: 80px;
+  border-top: 1px solid #CCCCCC;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_item ul li a p span span {
+  display: inline;
+  margin-top: 0;
+  color: #AD2E24;
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=common.css.map */

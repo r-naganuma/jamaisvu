@@ -29,7 +29,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930336131_L.jpg">
                 <p class="itemsName">ワイドリブプルオーバー</p>
                 <p class="itemsPrice priceOld">¥20,900 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥6,270 <span>(tax in)</span> <span class="off">70%OFF</span></p>
+                <p class="itemsPrice priceNew">¥8,360 <span>(tax in)</span> <span class="off">60%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -37,7 +37,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930336149_L.jpg">
                 <p class="itemsName">ワイドリブプルオーバー</p>
                 <p class="itemsPrice priceOld">¥20,900 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥6,270 <span>(tax in)</span> <span class="off">70%OFF</span></p>
+                <p class="itemsPrice priceNew">¥8,360 <span>(tax in)</span> <span class="off">60%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -45,7 +45,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930317131_L.jpg">
                 <p class="itemsName">ショートカーディガン</p>
                 <p class="itemsPrice priceOld">¥23,100 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥6,930 <span>(tax in)</span> <span class="off">70%OFF</span></p>
+                <p class="itemsPrice priceNew">¥9,240 <span>(tax in)</span> <span class="off">60%OFF</span></p>
 			</a>
 		</div>
 
@@ -54,7 +54,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930317165_L.jpg">
                 <p class="itemsName">ショートカーディガン</p>
                 <p class="itemsPrice priceOld">¥23,100 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥6,930 <span>(tax in)</span> <span class="off">70%OFF</span></p>
+                <p class="itemsPrice priceNew">¥9,240 <span>(tax in)</span> <span class="off">60%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -62,7 +62,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930302111_L.jpg">
                 <p class="itemsName">ビルトネックタートル</p>
                 <p class="itemsPrice priceOld">¥19,800 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥5,940 <span>(tax in)</span> <span class="off">70%OFF</span></p>
+                <p class="itemsPrice priceNew">¥7,920 <span>(tax in)</span> <span class="off">60%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -70,7 +70,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930302131_L.jpg">
                 <p class="itemsName">ビルトネックタートル</p>
                 <p class="itemsPrice priceOld">¥19,800 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥5,940 <span>(tax in)</span> <span class="off">70%OFF</span></p>
+                <p class="itemsPrice priceNew">¥7,920 <span>(tax in)</span> <span class="off">60%OFF</span></p>
 			</a>
 		</div>
 
@@ -79,7 +79,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930300131_L.jpg">
                 <p class="itemsName">ニットスウェット</p>
                 <p class="itemsPrice priceOld">¥17,600 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥6,160 <span>(tax in)</span> <span class="off">65%OFF</span></p>
+                <p class="itemsPrice priceNew">¥7,040 <span>(tax in)</span> <span class="off">60%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -87,7 +87,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930300161_L.jpg">
                 <p class="itemsName">ニットスウェット</p>
                 <p class="itemsPrice priceOld">¥17,600 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥6,160 <span>(tax in)</span> <span class="off">65%OFF</span></p>
+                <p class="itemsPrice priceNew">¥7,040 <span>(tax in)</span> <span class="off">60%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -95,7 +95,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930337165_L.jpg">
                 <p class="itemsName">ビルトネックプルオーバー</p>
                 <p class="itemsPrice priceOld">¥23,100 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥8,085 <span>(tax in)</span> <span class="off">65%OFF</span></p>
+                <p class="itemsPrice priceNew">¥9,240 <span>(tax in)</span> <span class="off">60%OFF</span></p>
 			</a>
 		</div>
 
@@ -104,7 +104,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/1930337111_sub01_L.jpg">
                 <p class="itemsName">ビルトネックプルオーバー</p>
                 <p class="itemsPrice priceOld">¥23,100 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥8,085 <span>(tax in)</span> <span class="off">65%OFF</span></p>
+                <p class="itemsPrice priceNew">¥9,240 <span>(tax in)</span> <span class="off">60%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -112,7 +112,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930318131_L.jpg">
                 <p class="itemsName">ビッグカーディガン</p>
                 <p class="itemsPrice priceOld">¥26,400 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥9,240 <span>(tax in)</span> <span class="off">65%OFF</span></p>
+                <p class="itemsPrice priceNew">¥10,560 <span>(tax in)</span> <span class="off">60%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -120,7 +120,7 @@
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/1930318165_L.jpg">
                 <p class="itemsName">ビッグカーディガン</p>
                 <p class="itemsPrice priceOld">¥26,400 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥9,240 <span>(tax in)</span> <span class="off">65%OFF</span></p>
+                <p class="itemsPrice priceNew">¥10,560 <span>(tax in)</span> <span class="off">60%OFF</span></p>
 			</a>
 		</div>
 	</div>
