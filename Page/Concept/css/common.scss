@@ -581,5 +581,115 @@ body{
 				}
 			}
 		}
+
+		/*====================================================================
+		*    BRATAC
+		/*==================================================================*/
+
+		&.bratacPage{
+			.bratacPage{
+				&_ttl{
+					width: 200px;
+					margin: 0 auto;
+
+					@include bp768 {
+						width: 38%;
+					};
+				}
+
+				&_lead{
+					text-align: center;
+					font-size: 14px;
+					line-height: 2;
+					letter-spacing: 0.03em;
+					color: #5A5A5A;
+					margin: 20px 0 70px;
+
+					@include bp768 {
+						width: 89.33%;
+						text-align: left;
+						font-size: 13px;
+						line-height: 24px;
+						margin: 20px auto 40px;
+					};
+				}
+
+				&_about{
+					width: 920px;
+					margin: 100px auto 120px;
+					display: flex;
+					justify-content: space-between;
+
+					@include bp768 {
+						width: 89.33%;
+						margin: 70px auto;
+						display: block;
+					};
+
+					&--txt{
+						width: 460px;
+
+						@include bp768 {
+							width: 100%;
+							margin-bottom: 30px;
+						};
+
+						.aboutTtl{
+							font-size: 30px;
+							color: #5A5A5A;
+							line-height: 44px;
+							letter-spacing: 0.03em;
+							margin-bottom: 20px;
+
+							@include bp768 {
+								font-size: 26px;
+								line-height: 35px;
+							};
+						}
+
+						.aboutTxt{
+							font-size: 14px;
+							color: #5A5A5A;
+							line-height: 2;
+							letter-spacing: 0.03em;
+
+							@include bp768 {
+								font-size: 13px;
+								line-height: 24px;
+							};
+						}
+					}
+
+					&--pic{
+						width: 460px;
+
+						@include bp768 {
+							width: 100%;
+						};
+					}
+
+					&.about02{
+						margin: 0 auto 160px;
+
+						@include bp768 {
+							margin: 0 auto 70px;
+						};
+
+						.bratacPage_about--txt{
+							order: 2;
+						}
+
+						.bratacPage_about--pic{
+							order: 1;
+							width: 400px;
+
+							@include bp768 {
+								width: 100%;
+							};
+						}
+					}
+				}
+			}
+		}
 	}
 }

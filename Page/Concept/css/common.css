@@ -25,6 +25,9 @@ body p {
   /*====================================================================
 		*    OZONE
 		/*==================================================================*/
+  /*====================================================================
+		*    BRATAC
+		/*==================================================================*/
 }
 
 @media (max-width: 768px) {
@@ -636,6 +639,134 @@ body p {
 
 @media (max-width: 768px) {
   #Wrap .conceptPage.ozonePage .ozonePage_cts--inner.inner03 .ctsTxt {
+    width: 100%;
+  }
+}
+
+#Wrap .conceptPage.bratacPage .bratacPage_ttl {
+  width: 200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.bratacPage .bratacPage_ttl {
+    width: 38%;
+  }
+}
+
+#Wrap .conceptPage.bratacPage .bratacPage_lead {
+  text-align: center;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: #5A5A5A;
+  margin: 20px 0 70px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.bratacPage .bratacPage_lead {
+    width: 89.33%;
+    text-align: left;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 20px auto 40px;
+  }
+}
+
+#Wrap .conceptPage.bratacPage .bratacPage_about {
+  width: 920px;
+  margin: 100px auto 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.bratacPage .bratacPage_about {
+    width: 89.33%;
+    margin: 70px auto;
+    display: block;
+  }
+}
+
+#Wrap .conceptPage.bratacPage .bratacPage_about--txt {
+  width: 460px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.bratacPage .bratacPage_about--txt {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+#Wrap .conceptPage.bratacPage .bratacPage_about--txt .aboutTtl {
+  font-size: 30px;
+  color: #5A5A5A;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.bratacPage .bratacPage_about--txt .aboutTtl {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+
+#Wrap .conceptPage.bratacPage .bratacPage_about--txt .aboutTxt {
+  font-size: 14px;
+  color: #5A5A5A;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.bratacPage .bratacPage_about--txt .aboutTxt {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+#Wrap .conceptPage.bratacPage .bratacPage_about--pic {
+  width: 460px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.bratacPage .bratacPage_about--pic {
+    width: 100%;
+  }
+}
+
+#Wrap .conceptPage.bratacPage .bratacPage_about.about02 {
+  margin: 0 auto 160px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.bratacPage .bratacPage_about.about02 {
+    margin: 0 auto 70px;
+  }
+}
+
+#Wrap .conceptPage.bratacPage .bratacPage_about.about02 .bratacPage_about--txt {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+#Wrap .conceptPage.bratacPage .bratacPage_about.about02 .bratacPage_about--pic {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  width: 400px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.bratacPage .bratacPage_about.about02 .bratacPage_about--pic {
     width: 100%;
   }
 }
