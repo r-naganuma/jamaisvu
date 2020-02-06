@@ -2647,6 +2647,66 @@ textarea::focus {
   }
 }
 
+#Wrap .pageTop .floating200206 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #Wrap .pageTop .floating200206 {
+    display: block;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1001;
+  }
+}
+
+#Wrap .pageTop .floating200206 a:hover {
+  opacity: .95;
+}
+
+@media (max-width: 768px) {
+  #Wrap .pageTop .floating200206 .button {
+    display: block;
+    border: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1002;
+    outline: none;
+    position: absolute;
+    top: calc(10 * (100vw / 750));
+    right: calc(10 * (100vw / 750));
+    width: calc(46 * (100vw / 750));
+    height: calc(46 * (100vw / 750));
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .pageTop .floating200206 .button span {
+    background-color: #1f2229;
+    width: 100%;
+    display: block;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+  }
+}
+
+#Wrap .pageTop .floating200206 .button span.bar1 {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#Wrap .pageTop .floating200206 .button span.bar2 {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 #Wrap .historyTop {
   width: 1060px;
   margin: 0 auto 160px;

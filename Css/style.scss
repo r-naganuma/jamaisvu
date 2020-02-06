@@ -2213,6 +2213,63 @@ textarea::focus {
 				}
 			}
 		}
+
+		.floating200206{
+			display: none;
+
+			@include bp768 {
+				display: block;
+				width: 100%;
+				bottom: 0;
+				left: 0;
+				position: fixed;
+				z-index: 1001;
+			};
+
+			a{
+				&:hover{
+					opacity: .95;
+				}
+			}
+
+			.button {
+
+				@include bp768 {
+					display: block;
+					border: none;
+					box-sizing: border-box;
+					cursor: pointer;
+					z-index: 1002;
+					outline: none;
+					position: absolute;
+					top: calc(10 * (100vw / 750));
+					right: calc(10 * (100vw / 750));
+					width: calc(46 * (100vw / 750));
+					height: calc(46 * (100vw / 750));
+				};
+
+				span {
+
+					@include bp768 {
+						background-color: #1f2229;
+						width: 100%;
+						display: block;
+						height: 1px;
+						width: 100%;
+						position: absolute;
+						top: 10px;
+					};
+
+					&.bar1{
+						transform: rotate(45deg);
+					}
+
+					&.bar2{
+						transform: rotate(-45deg);
+					}
+				}
+			}
+		}
 	}
 
 	.historyTop{
