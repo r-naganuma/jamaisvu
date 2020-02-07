@@ -39,7 +39,7 @@
                 <div class="mainArea_ttl--txt">
                     <p class="journalCat">FEATURE</p>
                     <h2>
-                        「SUVINオゾンニットパーカー」の<br class="sp_contents">着こなし方を<br class="pc_contents">身長別で紹介
+                        「SUVINオゾンニットパーカー」の<br>着こなし方を身長別で紹介
                     </h2>
                     <p class="journalDate">2020.02.07</p>
                 </div>
