@@ -460,6 +460,16 @@
 			$('.searchBox_list--material li:nth-child(5)').addClass("on");
 			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
 		}
+		if(document.URL.match("%e3%83%96%e3%83%a9%e3%82%bf%e3%82%af%e3%82%b7%e3%83%ab%e3%82%af")) {
+			$('.pdList_conditions .tagtag6').text('\u00a0/ ブラタクシルク');
+			$('.searchBox_list--material li:nth-child(6)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
+		}
+		if(document.URL.match("%e3%83%aa%e3%83%90%e3%83%86%e3%82%a3%e3%83%bc")) {
+			$('.pdList_conditions .tagtag7').text('\u00a0/ リバティー');
+			$('.searchBox_list--material li:nth-child(7)').addClass("on");
+			$('.searchBox_list--material').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--material li.on').text());
+		}
 		if(document.URL.match("JUST")) {
 			$('.pdList_conditions .sizasize1').text('\u00a0/ JUST FIT');
 			$('.searchBox_list--size li:nth-child(1)').addClass("on");
@@ -531,7 +541,7 @@
 							検索条件
 						</dt>
 						<dd>
-							<span class="pdList_conditions--category"></span><span class="pdList_conditions--sale"></span><span class="pdList_conditions--color"></span><span class="pdList_conditions--size sizasize1"></span><span class="pdList_conditions--size sizasize2"></span><span class="pdList_conditions--size sizasize3"></span><span class="pdList_conditions--tag tagtag1"></span><span class="pdList_conditions--tag tagtag2"></span><span class="pdList_conditions--tag tagtag3"></span><span class="pdList_conditions--tag tagtag4"></span><span class="pdList_conditions--tag tagtag5"></span>
+							<span class="pdList_conditions--category"></span><span class="pdList_conditions--sale"></span><span class="pdList_conditions--color"></span><span class="pdList_conditions--size sizasize1"></span><span class="pdList_conditions--size sizasize2"></span><span class="pdList_conditions--size sizasize3"></span><span class="pdList_conditions--tag tagtag1"></span><span class="pdList_conditions--tag tagtag2"></span><span class="pdList_conditions--tag tagtag3"></span><span class="pdList_conditions--tag tagtag4"></span><span class="pdList_conditions--tag tagtag5"></span><span class="pdList_conditions--tag tagtag6"></span><span class="pdList_conditions--tag tagtag7"></span>
 						</dd>
 					</dl>
 				</div>

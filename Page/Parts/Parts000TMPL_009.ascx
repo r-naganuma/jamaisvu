@@ -67,7 +67,7 @@
 			</a>
 		</div>
 		<div class="materialList">
-			<a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
+			<a href="<%= Constants.PATH_ROOT %>Page/Concept/peruvian_pima_cotton.aspx">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_peruvian.png" alt="PERUVIAN PIMA COTTON">
 				<p>PERUVIAN <br class="sp_contents">PIMA COTTON</p>
 			</a>

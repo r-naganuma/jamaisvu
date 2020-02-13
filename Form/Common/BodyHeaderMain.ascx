@@ -459,7 +459,7 @@ function initializeFunctionJs() {
 											新着商品
 										</a>
 										<div class="navUpdate">
-											<p>1/17 UP</p>
+											<p>2/13 UP</p>
 										</div>
 									</li>
 									<li>
