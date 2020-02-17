@@ -62,18 +62,18 @@
 				<p><a href="<%= WebSanitizer.HtmlEncode(Constants.PATH_ROOT + Constants.PAGE_FRONT_PASSWORD_REMINDER_INPUT) %>" class="loginPsForget">パスワードを忘れた方はこちら</a></p>
 			</div><!--dvLoginWrap-->
 			<div class="loginWrap_box--right">
-				<p class="loginTtl">外部サイトのIDで会員登録・ログイン</p>
-				<p class="loginTtl_catch">お持ちのアカウントで会員登録・ログインできます。</p>
-				<div class="socialBox">
-					<ul>
+				<!-- <p class="loginTtl">外部サイトのIDで会員登録・ログイン</p>
+				<p class="loginTtl_catch">お持ちのアカウントで会員登録・ログインできます。</p> -->
+				<div style="display: none;" class="socialBox">
+					<ul style="display: none;">
 						<%-- Facebook --%>
-						<li>
+						<li style="display: none;">
 							<a href="https://api.socialplus.jp/jamaisvu/jamaisvu/facebook/authenticate?extended_profile=true&display=page&callback=https://jamaisvu.co.jp/Form/User/UserRegistInput.aspx&registration=true&trcode=fb">
 								<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/fb_white.png" alt="Facebook">Facebookでログイン
 							</a>
 						</li>
 						<%-- Twitter --%>
-						<li>
+						<li style="display: none;">
 							<a href="https://api.socialplus.jp/jamaisvu/jamaisvu/twitter/authenticate?callback=https://jamaisvu.co.jp/Form/User/UserRegistInput.aspx">
 								<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/tw_white.png" alt="Twitter">Twitterでログイン
 							</a>

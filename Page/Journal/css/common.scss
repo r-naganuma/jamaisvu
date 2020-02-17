@@ -1041,6 +1041,118 @@ body{
 					}
 
 /*====================================================================
+*    TEMPLATE J
+/*==================================================================*/
+					
+					.J-wrap{
+						position: relative;
+						margin-bottom: 120px;
+						background: #FAFAFA;
+						padding: 40px 40px 40px 30px;
+						box-sizing: border-box;
+						display: flex;
+						justify-content: space-between;
+
+						@include bp768 {
+							width: 89.33%;
+							margin: 0 auto 80px;
+							padding: 20px 20px 16px 20px;
+							display: block;
+						};
+
+						&_pic{
+							width: 100px;
+
+							@include bp768 {
+								width: calc(160* (100vw / 750));
+								margin-bottom: 20px;
+							};
+						}
+
+						&_txt{
+							width: 550px;
+
+							@include bp768 {
+								width: 100%;
+							};
+
+							&--ttl{
+								margin-bottom: 20px;
+
+								@include bp768 {
+									margin: 0;
+									position: absolute;
+									top: calc(74* (100vw / 750));
+									left: calc(230* (100vw / 750));
+								};
+
+								.snsArea{
+									position: absolute;
+									top: 40px;
+									right: 40px;
+									display: flex;
+									justify-content: space-between;
+									width: 96px;
+
+									@include bp768 {
+										position: inherit;
+										top: inherit;
+										right: inherit;
+										width: calc(154* (100vw / 750));
+										margin-top: -10px;
+									};
+
+									&_ig{
+										width: 18px;
+
+										@include bp768 {
+											width: calc(37* (100vw / 750));
+										};
+									}
+
+									&_fb{
+										width: 10px;
+
+										@include bp768 {
+											width: calc(20* (100vw / 750));
+										};
+									}
+
+									&_tw{
+										width: 18px;
+
+										@include bp768 {
+											width: calc(37* (100vw / 750));
+										};
+									}
+								}
+
+								p{
+									line-height: 1;
+									font-size: 16px;
+									font-weight: 700;
+
+									@include bp768 {
+										font-size: 14px;
+									};
+								}
+							}
+
+							&--cts{
+								@include bp768 {
+									font-size: 14px;
+									line-height: 24px;
+								};
+
+								a{
+									display: inline;
+									text-decoration: underline;
+								}
+							}
+						}
+					}
+
+/*====================================================================
 *    ALL
 /*==================================================================*/
 

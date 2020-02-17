@@ -326,6 +326,9 @@ body {
 *    TEMPLATE F
 /*==================================================================*/
   /*====================================================================
+*    TEMPLATE J
+/*==================================================================*/
+  /*====================================================================
 *    ALL
 /*==================================================================*/
 }
@@ -1210,6 +1213,141 @@ body {
   }
 }
 
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap {
+  position: relative;
+  margin-bottom: 120px;
+  background: #FAFAFA;
+  padding: 40px 40px 40px 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap {
+    width: 89.33%;
+    margin: 0 auto 80px;
+    padding: 20px 20px 16px 20px;
+    display: block;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_pic {
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_pic {
+    width: calc(160* (100vw / 750));
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt {
+  width: 550px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt {
+    width: 100%;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl {
+    margin: 0;
+    position: absolute;
+    top: calc(74* (100vw / 750));
+    left: calc(230* (100vw / 750));
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 96px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea {
+    position: inherit;
+    top: inherit;
+    right: inherit;
+    width: calc(154* (100vw / 750));
+    margin-top: -10px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea_ig {
+  width: 18px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea_ig {
+    width: calc(37* (100vw / 750));
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea_fb {
+  width: 10px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea_fb {
+    width: calc(20* (100vw / 750));
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea_tw {
+  width: 18px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea_tw {
+    width: calc(37* (100vw / 750));
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl p {
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--cts {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--cts a {
+  display: inline;
+  text-decoration: underline;
+}
+
 #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea_btn {
   width: 320px;
   margin: 0 auto 235px;
@@ -1498,3 +1636,5 @@ body {
     opacity: 0;
   }
 }
+
+/*# sourceMappingURL=common.css.map */
