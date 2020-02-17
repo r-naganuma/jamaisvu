@@ -724,7 +724,7 @@ $(function () {
 
 		<div class="agreementTxt">
 			<p>
-				<a href="<%= Constants.PATH_ROOT %>Page/terms/" target="_blank">利用規約</a>にご同意のうえ、「登録内容を確認する」をクリックしてください。
+				<a href="<%= Constants.PATH_ROOT %>Page/terms/" target="_blank">利用規約</a>と<a href="https://jamaisvu.co.jp/Page/privacy_policy/" target="_blank">プライバシーポリシー</a>にご同意のうえ、「登録内容を確認する」をクリックしてください。
 			</p>
 		</div>
 

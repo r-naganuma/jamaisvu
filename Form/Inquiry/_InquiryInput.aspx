@@ -184,7 +184,7 @@
 			<%-- 問合せ内容 --%>
 				<dt class="inputBox_left must noCenter2">内容</dt>
 				<dd class="inputBox_right">
-					<asp:TextBox ID="tbInquiryText" runat="server" placeholder="ここにお問い合わせ内容をご入力ください。&#13;&#10;「返品・交換」に関するお問い合わせの場合は、以下もあわせてご入力ください。&#13;&#10;①お買い上げ明細書に記載の「受注番号」&#13;&#10;②返品・交換ご希望の商品名&#13;&#10;③返品・交換理由（当店都合/お客様ご都合）&#13;&#10;※交換につきましては当店都合の同商品のみ承ることが可能です。" TextMode="MultiLine" Rows="10" CssClass="inquirytext" Text=""></asp:TextBox>
+					<asp:TextBox ID="tbInquiryText" runat="server" placeholder="ここにお問い合わせ内容を入力してください。&#13;&#10;「返品・交換」に関するお問い合わせの場合は、お買い上げ明細書に記載の「受注番号」および返品理由（当店都合かお客様ご都合かでご案内が異なるため）も入力してください。" TextMode="MultiLine" Rows="10" CssClass="inquirytext" Text=""></asp:TextBox>
 					<asp:CustomValidator runat="Server"
 						ControlToValidate="tbInquiryText"
 						ValidationGroup="Inquiry"
@@ -232,16 +232,10 @@
 #Wrap .userWrap .registWrap_box--input .inputBox_right .nameArea dd {
     width: 170px;
 }
-#Wrap .userWrap .registWrap_box--input .inputBox_right textarea {
-    height: 183px;
-}
 @media (max-width: 768px){
 #Wrap .userWrap .registWrap_box--input .inputBox_right .nameArea dd {
     width: 85%;
     margin-top: 16px;
-}
-#Wrap .userWrap .registWrap_box--input .inputBox_right textarea {
-    height: 210px;
 }
 }
 </style>
