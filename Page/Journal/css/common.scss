@@ -1041,14 +1041,59 @@ body{
 					}
 
 /*====================================================================
-*    TEMPLATE J
+*    TEMPLATE H
 /*==================================================================*/
 					
-					.J-wrap{
+					.H-wrap{
+						width: 540px;
+						position: relative;
+						margin: 0 0 120px auto;
+
+						@include bp768 {
+							width: 72%;
+							margin: 0 0 80px auto;
+						};
+					}
+
+					.H-wrap_pic{
+						margin-bottom: 10px;
+
+						@include bp768 {
+							margin-bottom: 15px;
+						};
+					}
+
+					.H-wrap_txt{
+						margin-bottom: 10px;
+						font-size: 12px;
+
+						@include bp768 {
+							font-size: 11px;
+							line-height: 2;
+							margin: 0 20px 10px 0;
+						};
+
+						a{
+							font-size: 12px;
+							display: inline;
+							text-decoration: underline;
+
+							@include bp768 {
+								font-size: 11px;
+								line-height: 2;
+							};
+						}
+					}
+
+/*====================================================================
+*    TEMPLATE I
+/*==================================================================*/
+					
+					.I-wrap{
 						position: relative;
 						margin-bottom: 120px;
 						background: #FAFAFA;
-						padding: 40px 40px 40px 30px;
+						padding: 40px 30px;
 						box-sizing: border-box;
 						display: flex;
 						justify-content: space-between;
@@ -1078,28 +1123,23 @@ body{
 
 							&--ttl{
 								margin-bottom: 20px;
+								display: flex;
 
 								@include bp768 {
 									margin: 0;
 									position: absolute;
-									top: calc(74* (100vw / 750));
+									top: calc(100* (100vw / 750));
 									left: calc(230* (100vw / 750));
 								};
 
 								.snsArea{
-									position: absolute;
-									top: 40px;
-									right: 40px;
 									display: flex;
 									justify-content: space-between;
 									width: 96px;
+									margin-left: 20px;
 
 									@include bp768 {
-										position: inherit;
-										top: inherit;
-										right: inherit;
 										width: calc(154* (100vw / 750));
-										margin-top: -10px;
 									};
 
 									&_ig{
@@ -1374,18 +1414,18 @@ body{
 				}
 
 				&.on{
-					animation: fade_in .2s ease 0s forwards;
+					animation: fade_inItem .2s ease 0s forwards;
 				}
 
 				&.off{
-					animation: fade_out .2s ease 0s forwards;
+					animation: fade_outItem .2s ease 0s forwards;
 				}
 			}
 		}
 	}
 }
 
-@keyframes fade_in {
+@keyframes fade_inItem {
     0%{
         opacity: 0;
     }
@@ -1394,7 +1434,7 @@ body{
     }
 }
 
-@keyframes fade_out {
+@keyframes fade_outItem {
     0%{
         opacity: 1;
     }

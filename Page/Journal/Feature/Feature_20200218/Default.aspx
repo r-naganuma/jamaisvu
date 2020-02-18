@@ -85,7 +85,7 @@
                 <p class="E-wrap_txt">
                     <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010300161&cat=500061">SUVIN8Gスウェット　¥17,600(tax in)</a><br>
                     <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010307161&cat=500061">SUVIN オゾン５Gカーディガン ¥19,800(tax in)</a><br>
-                    <a href="">ぺルビアンピマコットンスリットネック ¥17,600(tax in)</a>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010253161&cat=500061">ぺルビアンピマコットンスリットネック ¥17,600(tax in)</a>
                 </p>
                 <p class="A-wrap_txt">
                     ジャメヴのブルーは、空や海を思わせるような、さわやかなカラーリングが特徴。<br class="pc_contents">クリーンで抜け感のある色調は気分もあがるもの。<br class="sp_contents">新しい季節の着こなしにぴったりです。<br class="pc_contents">差し色としても取り入れやすく、普段あまり色を着ない人でも抵抗がないのでは。合わせる色の範囲も広いですし、あまり迷うことなくコーディネートをつくることができます。
@@ -180,9 +180,9 @@
                     さらに、写真では小さいのですが、さまざまな色石を使ったピアスもON。ターコイズが使われているので、自然になじんでいます。ブルーを差し色でなくベーシックカラーをとらえると、配色の幅がぐっと広がって、色を使った着こなしがもっともっと楽しくなってきます。
                 </p>
                 <div class="A-wrap_detail">
-                    <a href="" class="A-wrap_detail--box">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010253161&cat=500061" class="A-wrap_detail--box">
                         <div class="A-wrap_detail--box--pic">
-                            <img src="" alt="">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010253161_sub07_L.jpg" alt="">
                         </div>
                         <div class="A-wrap_detail--box--txt">
                             <p class="detailTtl">ぺルビアンピマコットンスリットネック</p>
@@ -193,7 +193,7 @@
                             </p>
                         </div>
                     </a>
-                    <a href="" class="A-wrap_detail--btn">ITEM DETAIL</a>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010253161&cat=500061" class="A-wrap_detail--btn">ITEM DETAIL</a>
                 </div>
             </div>
 
@@ -207,29 +207,29 @@
                 <div class="J-wrap_txt">
                     <div class="J-wrap_txt--ttl">
                         <p>editor_kao</p>
-                        <!-- <div class="snsArea">
+                        <div class="snsArea">
                             <div class="snsArea_ig">
-                                <a href="" target="_blank">
+                                <a href="https://www.instagram.com/editor_kao/?hl=ja" target="_blank">
                                     <img src="images/icn_ig.png" alt="">
                                 </a>
                             </div>
-                            <div class="snsArea_fb">
-                                <a href="" target="_blank">
+                            <!-- <div class="snsArea_fb">
+                                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010253161&cat=500061" target="_blank">
                                     <img src="images/icn_fb.png" alt="">
                                 </a>
                             </div>
                             <div class="snsArea_tw">
-                                <a href="" target="_blank">
+                                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010253161&cat=500061" target="_blank">
                                     <img src="images/icn_tw.png" alt="">
                                 </a>
-                            </div>
-                        </div> -->
+                            </div> -->
+                        </div>
                     </div>
                     <p class="J-wrap_txt--cts">
                         フリーエディター。<br>
                         ファッション誌を手がける編集プロダクションに勤務の後、独立。<br class="pc_contents">現在は大人の実用ファッションを中心に、人物インタビューや日本の伝統文化など、ジャンルレスで雑誌やカタログ、ウェブで活動中。<br>
                         <br>
-                        また、3年目を迎えるインスタグラム<br class="sp_contents">＠editor_kaoでは私服コーディネートを紹介する傍ら、さまざまなブランドや百貨店とのコラボレーションも手がけている。
+                        また、3年目を迎えるインスタグラム<br class="sp_contents"><a href="https://www.instagram.com/editor_kao/?hl=ja" target="_blank">＠editor_kao</a>では私服コーディネートを紹介する傍ら、さまざまなブランドや百貨店とのコラボレーションも手がけている。
                     </p>
                 </div>
             </div>
@@ -295,8 +295,8 @@
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="" alt="">
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010253161&cat=500061">
+                    <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010253161_sub07_L.jpg" alt="">
                     <p>
                         ぺルビアンピマコットンスリットネック
                         <span>¥17,600(tax in)</span>

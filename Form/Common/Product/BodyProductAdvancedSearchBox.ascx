@@ -244,6 +244,7 @@
 				<asp:ListItem>スビンコットン</asp:ListItem>
 				<asp:ListItem>ブラタクシルク</asp:ListItem>
 				<asp:ListItem>リバティー</asp:ListItem>
+				<asp:ListItem>ペルビアンピマコットン</asp:ListItem>
 			</asp:CheckBoxList>
 		</div>
 	</td>

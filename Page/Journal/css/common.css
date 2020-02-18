@@ -326,7 +326,10 @@ body {
 *    TEMPLATE F
 /*==================================================================*/
   /*====================================================================
-*    TEMPLATE J
+*    TEMPLATE H
+/*==================================================================*/
+  /*====================================================================
+*    TEMPLATE I
 /*==================================================================*/
   /*====================================================================
 *    ALL
@@ -1213,11 +1216,60 @@ body {
   }
 }
 
-#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap {
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .H-wrap {
+  width: 540px;
+  position: relative;
+  margin: 0 0 120px auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .H-wrap {
+    width: 72%;
+    margin: 0 0 80px auto;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .H-wrap_pic {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .H-wrap_pic {
+    margin-bottom: 15px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .H-wrap_txt {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .H-wrap_txt {
+    font-size: 11px;
+    line-height: 2;
+    margin: 0 20px 10px 0;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .H-wrap_txt a {
+  font-size: 12px;
+  display: inline;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .H-wrap_txt a {
+    font-size: 11px;
+    line-height: 2;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap {
   position: relative;
   margin-bottom: 120px;
   background: #FAFAFA;
-  padding: 40px 40px 40px 30px;
+  padding: 40px 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1229,7 +1281,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap {
     width: 89.33%;
     margin: 0 auto 80px;
     padding: 20px 20px 16px 20px;
@@ -1237,44 +1289,44 @@ body {
   }
 }
 
-#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_pic {
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_pic {
   width: 100px;
 }
 
 @media (max-width: 768px) {
-  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_pic {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_pic {
     width: calc(160* (100vw / 750));
     margin-bottom: 20px;
   }
 }
 
-#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt {
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt {
   width: 550px;
 }
 
 @media (max-width: 768px) {
-  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt {
     width: 100%;
   }
 }
 
-#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl {
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--ttl {
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 768px) {
-  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--ttl {
     margin: 0;
     position: absolute;
-    top: calc(74* (100vw / 750));
+    top: calc(100* (100vw / 750));
     left: calc(230* (100vw / 750));
   }
 }
 
-#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea {
-  position: absolute;
-  top: 40px;
-  right: 40px;
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--ttl .snsArea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1282,68 +1334,65 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 96px;
+  margin-left: 20px;
 }
 
 @media (max-width: 768px) {
-  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea {
-    position: inherit;
-    top: inherit;
-    right: inherit;
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--ttl .snsArea {
     width: calc(154* (100vw / 750));
-    margin-top: -10px;
   }
 }
 
-#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea_ig {
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--ttl .snsArea_ig {
   width: 18px;
 }
 
 @media (max-width: 768px) {
-  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea_ig {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--ttl .snsArea_ig {
     width: calc(37* (100vw / 750));
   }
 }
 
-#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea_fb {
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--ttl .snsArea_fb {
   width: 10px;
 }
 
 @media (max-width: 768px) {
-  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea_fb {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--ttl .snsArea_fb {
     width: calc(20* (100vw / 750));
   }
 }
 
-#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea_tw {
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--ttl .snsArea_tw {
   width: 18px;
 }
 
 @media (max-width: 768px) {
-  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea_tw {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--ttl .snsArea_tw {
     width: calc(37* (100vw / 750));
   }
 }
 
-#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl p {
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--ttl p {
   line-height: 1;
   font-size: 16px;
   font-weight: 700;
 }
 
 @media (max-width: 768px) {
-  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl p {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--ttl p {
     font-size: 14px;
   }
 }
 
 @media (max-width: 768px) {
-  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--cts {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--cts {
     font-size: 14px;
     line-height: 24px;
   }
 }
 
-#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--cts a {
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap_txt--cts a {
   display: inline;
   text-decoration: underline;
 }
@@ -1592,16 +1641,16 @@ body {
 }
 
 #Wrap .LPpageWrap .journalWrap .journalWrap_item.on {
-  -webkit-animation: fade_in .2s ease 0s forwards;
-  animation: fade_in .2s ease 0s forwards;
+  -webkit-animation: fade_inItem .2s ease 0s forwards;
+  animation: fade_inItem .2s ease 0s forwards;
 }
 
 #Wrap .LPpageWrap .journalWrap .journalWrap_item.off {
-  -webkit-animation: fade_out .2s ease 0s forwards;
-  animation: fade_out .2s ease 0s forwards;
+  -webkit-animation: fade_outItem .2s ease 0s forwards;
+  animation: fade_outItem .2s ease 0s forwards;
 }
 
-@-webkit-keyframes fade_in {
+@-webkit-keyframes fade_inItem {
   0% {
     opacity: 0;
   }
@@ -1610,7 +1659,7 @@ body {
   }
 }
 
-@keyframes fade_in {
+@keyframes fade_inItem {
   0% {
     opacity: 0;
   }
@@ -1619,7 +1668,7 @@ body {
   }
 }
 
-@-webkit-keyframes fade_out {
+@-webkit-keyframes fade_outItem {
   0% {
     opacity: 1;
   }
@@ -1628,7 +1677,7 @@ body {
   }
 }
 
-@keyframes fade_out {
+@keyframes fade_outItem {
   0% {
     opacity: 1;
   }

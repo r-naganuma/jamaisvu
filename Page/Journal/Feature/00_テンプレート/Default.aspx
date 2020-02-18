@@ -295,6 +295,54 @@
             </div>
 
             <!-- //////////////////
+            /////// TEMPLATE H
+            ///////////////////////-->
+            <div class="H-wrap">
+                <img class="H-wrap_pic" src="images/pic_h_01.jpg" alt="">
+                <p class="H-wrap_txt">
+                    <a href="">ワンピース ¥18,700(tax in)</a>, <a href="">タンクトップ ¥23,100(tax in)</a>, スカート (スタイリスト私物), ブーツ (スタイリスト私物)</a>
+                </p>
+            </div>
+
+            <!-- //////////////////
+            /////// TEMPLATE I
+            ///////////////////////-->
+            <div class="I-wrap">
+                <div class="I-wrap_pic">
+                    <img src="images/pic_j_01.png" alt="">
+                </div>
+                <div class="I-wrap_txt">
+                    <div class="I-wrap_txt--ttl">
+                        <p>editor_kao</p>
+                        <div class="snsArea">
+                            <div class="snsArea_ig">
+                                <a href="" target="_blank">
+                                    <img src="images/icn_ig.png" alt="">
+                                </a>
+                            </div>
+                            <div class="snsArea_fb">
+                                <a href="" target="_blank">
+                                    <img src="images/icn_fb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="snsArea_tw">
+                                <a href="" target="_blank">
+                                    <img src="images/icn_tw.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="I-wrap_txt--cts">
+                        フリーエディター。<br>
+                        ファッション誌を手がける編集プロダクションに勤務の後、独立。<br>
+                        現在は大人の実用ファッションを中心に、人物インタビューや日本の伝統文化など、ジャンルレスで雑誌やカタログ、ウェブで活動中。<br>
+                        <br>
+                        また、3年目を迎えるインスタグラム<a href="" target="_blank">＠editor_kao</a>では私服コーディネートを紹介する傍ら、さまざまなブランドや百貨店とのコラボレーションも手がけている。
+                    </p>
+                </div>
+            </div>
+
+            <!-- //////////////////
             /////// BTN
             ///////////////////////-->
             <a href="" class="ctsArea_btn">◯◯のアイテムをもっとみる</a>

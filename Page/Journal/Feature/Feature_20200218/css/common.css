@@ -121,7 +121,7 @@
   position: relative;
   margin-bottom: 160px;
   background: #FAFAFA;
-  padding: 40px 40px 40px 30px;
+  padding: 40px 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
@@ -164,6 +164,9 @@
 
 #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl {
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 768px) {
@@ -176,9 +179,6 @@
 }
 
 #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea {
-  position: absolute;
-  top: 40px;
-  right: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,15 +186,12 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 96px;
+  margin-left: 20px;
 }
 
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .J-wrap_txt--ttl .snsArea {
-    position: inherit;
-    top: inherit;
-    right: inherit;
     width: calc(154* (100vw / 750));
-    margin-top: -10px;
   }
 }
 

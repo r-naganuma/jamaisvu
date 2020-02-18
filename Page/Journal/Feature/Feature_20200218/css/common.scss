@@ -136,7 +136,7 @@ $bp768: 768px;  // スマホ
 						position: relative;
 						margin-bottom: 160px;
 						background: #FAFAFA;
-						padding: 40px 40px 40px 30px;
+						padding: 40px 30px;
 						box-sizing: border-box;
 						display: flex;
 						justify-content: space-between;
@@ -166,6 +166,7 @@ $bp768: 768px;  // スマホ
 
 							&--ttl{
 								margin-bottom: 20px;
+								display: flex;
 
 								@include bp768 {
 									margin: 0;
@@ -175,19 +176,13 @@ $bp768: 768px;  // スマホ
 								};
 
 								.snsArea{
-									position: absolute;
-									top: 40px;
-									right: 40px;
 									display: flex;
 									justify-content: space-between;
 									width: 96px;
+									margin-left: 20px;
 
 									@include bp768 {
-										position: inherit;
-										top: inherit;
-										right: inherit;
 										width: calc(154* (100vw / 750));
-										margin-top: -10px;
 									};
 
 									&_ig{
