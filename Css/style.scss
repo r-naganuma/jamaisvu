@@ -3926,6 +3926,7 @@ textarea::focus {
 				padding-bottom: 42px;
 
 				.saleItemTxt{
+					width: 65%;
 					text-align: center;
 					font-size: 12px;
 					color: #AD2E24;
@@ -3939,6 +3940,7 @@ textarea::focus {
 					margin: 0 auto;
 
 					@include bp768 {
+						width: auto;
 						display: table;
 						position: inherit;
 						bottom: inherit;

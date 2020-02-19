@@ -466,9 +466,9 @@ function initializeFunctionJs() {
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
 											セール
 										</a>
-										<div class="navUpdate">
+										<!-- <div class="navUpdate">
 											<p>1/14 UP</p>
-										</div>
+										</div> -->
 									</li>
 								</ul>
 							</div>
