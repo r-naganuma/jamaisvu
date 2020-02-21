@@ -23,17 +23,16 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200218/">
+				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200221/">
 					<div class="journalTop_archive--list--pic">
-	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200218journal.jpg">
+	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200221journal.jpg">
 	                </div>
 					<div class="journalTop_archive--list--txt">
 		                <p class="journalCat">FEATURE</p>
 		                <p class="journalTtl">
-		                	JAMAIS VU×editor_kaoの<br>
-                        	「彩りのある着こなし」vol.1 &lt;Blue&gt;
+		                	春を先取りする、着映えカーディガン
 		                </p>
-		                <p class="journalDate">2020.02.18</p>
+		                <p class="journalDate">2020.02.21</p>
 		            </div>
 				</a>
 			<!-- -->
@@ -54,6 +53,21 @@
 				</a>
 	        </div>
 			<div class="journalTop_archive--list">
+				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200218/">
+					<div class="journalTop_archive--list--pic">
+	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200218journal.jpg">
+	                </div>
+					<div class="journalTop_archive--list--txt">
+		                <p class="journalCat">FEATURE</p>
+		                <p class="journalTtl">
+		                	JAMAIS VU×editor_kaoの<br>
+                        	「彩りのある着こなし」vol.1 &lt;Blue&gt;
+		                </p>
+		                <p class="journalDate">2020.02.18</p>
+		            </div>
+				</a>
+	        </div>
+			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200212/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200212journal.jpg">
@@ -67,7 +81,7 @@
 		            </div>
 				</a>
 	        </div>
-			<div class="journalTop_archive--list">
+			<!-- <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200210/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200210journal.jpg">
@@ -78,20 +92,6 @@
 		                	「SUVINオゾンニットパーカー」の<br>着こなし方を身長別で紹介
 		                </p>
 		                <p class="journalDate">2020.02.10</p>
-		            </div>
-				</a>
-	        </div>
-			<!-- <div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/Journal/Newarrival/Newarrival_20200204/">
-					<div class="journalTop_archive--list--pic">
-	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/newarrivals_200204journal.jpg">
-	                </div>
-					<div class="journalTop_archive--list--txt">
-		                <p class="journalCat">NEW ARRIVAL</p>
-		                <p class="journalTtl">
-		                	長く使い続けたい、サステナブルな名品
-		                </p>
-		                <p class="journalDate">2020.02.04</p>
 		            </div>
 				</a>
 	        </div> -->

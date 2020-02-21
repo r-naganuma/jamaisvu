@@ -125,20 +125,20 @@
                     ボタン以外の付属を削ぎ落としたシンプルなデザインは、素材の良さを引き立て、カジュアルな着こなしをしても品のある雰囲気に。ヒップ下まである着丈で気軽に羽織ることができ、パンツにもスカートにも合わせやすい、これを羽織れば間違いないと思わせてくれる一着です。
                 </p>
                 <div class="A-wrap_detail">
-                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010307159&cat=500059" class="A-wrap_detail--box">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010307111&cat=500011" class="A-wrap_detail--box">
                         <div class="A-wrap_detail--box--pic">
-                            <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010307159_sub08_L.jpg" alt="">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010307111_sub06_L.jpg" alt="">
                         </div>
                         <div class="A-wrap_detail--box--txt">
                             <p class="detailTtl">SUVIN オゾン５Gカーディガン</p>
                             <p class="detailPrice">¥19,800(tax in)</p>
                             <p class="detailTxt">
                                 素材:スビンコットン    サイズ：FREE<br>
-                                カラー：カーキ
+                                カラー：ホワイト
                             </p>
                         </div>
                     </a>
-                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010307159&cat=500059" class="A-wrap_detail--btn">ITEM DETAIL</a>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010307111&cat=500011" class="A-wrap_detail--btn">ITEM DETAIL</a>
                 </div>
                 <div class="A-wrap_detail">
                     <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010307141&cat=500041" class="A-wrap_detail--box">
@@ -187,22 +187,6 @@
                         </div>
                     </a>
                     <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930731117&cat=500017" class="A-wrap_detail--btn">ITEM DETAIL</a>
-                </div>
-                <div class="A-wrap_detail">
-                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010564159&cat=500059" class="A-wrap_detail--box">
-                        <div class="A-wrap_detail--box--pic">
-                            <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010564159_sub07_L.jpg" alt="">
-                        </div>
-                        <div class="A-wrap_detail--box--txt">
-                            <p class="detailTtl">ブラタクシルクキャミドレス</p>
-                            <p class="detailPrice">¥25,300(tax in)</p>
-                            <p class="detailTxt">
-                                素材:ブラタクシルク    サイズ：FREE<br>
-                                カラー：カーキ
-                            </p>
-                        </div>
-                    </a>
-                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010564159&cat=500059" class="A-wrap_detail--btn">ITEM DETAIL</a>
                 </div>
             </div>
 
@@ -286,7 +270,7 @@
                             <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010310125_sub08_L.jpg" alt="">
                         </div>
                         <div class="A-wrap_detail--box--txt">
-                            <p class="detailTtl">10SUVINスムースロングカーディガンオレンジ</p>
+                            <p class="detailTtl">10SUVINスムースロングカーディガン</p>
                             <p class="detailPrice">¥23,100(tax in)</p>
                             <p class="detailTxt">
                                 素材:スビンコットン    サイズ：FREE<br>
@@ -393,7 +377,7 @@
                 <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010310125&cat=500025">
                     <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010310125_sub08_L.jpg" alt="">
                     <p>
-                        10SUVINスムースロングカーディガンオレンジ
+                        10SUVINスムースロングカーディガン
                         <span>¥23,100(tax in)</span>
                     </p>
                 </a>
