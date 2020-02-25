@@ -293,12 +293,12 @@
 			$('.searchBox_list--category li:nth-child(2)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
-		// if(document.URL.match("cat=002")) {
-		// 	$('.pdList_conditions .pdList_conditions--category').text('シャツ・ブラウス');
-		// 	$('.breadcrumb ul li p').text('シャツ・ブラウス');
-		// 	$('.searchBox_list--category li:nth-child(3)').addClass("on");
-		// 	$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
-		// }
+		if(document.URL.match("cat=002")) {
+			$('.pdList_conditions .pdList_conditions--category').text('シャツ・ブラウス');
+			$('.breadcrumb ul li p').text('シャツ・ブラウス');
+			$('.searchBox_list--category li:nth-child(3)').addClass("on");
+			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		}
 		if(document.URL.match("cat=003")) {
 			$('.pdList_conditions .pdList_conditions--category').text('ニット');
 			$('.breadcrumb ul li p').text('ニット');
@@ -308,25 +308,25 @@
 		if(document.URL.match("cat=004")) {
 			$('.pdList_conditions .pdList_conditions--category').text('カットソー');
 			$('.breadcrumb ul li p').text('カットソー');
-			$('.searchBox_list--category li:nth-child(4)').addClass("on");
+			$('.searchBox_list--category li:nth-child(5)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=005")) {
 			$('.pdList_conditions .pdList_conditions--category').text('ワンピース');
 			$('.breadcrumb ul li p').text('ワンピース');
-			$('.searchBox_list--category li:nth-child(5)').addClass("on");
+			$('.searchBox_list--category li:nth-child(6)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=006")) {
 			$('.pdList_conditions .pdList_conditions--category').text('スカート');
 			$('.breadcrumb ul li p').text('スカート');
-			$('.searchBox_list--category li:nth-child(6)').addClass("on");
+			$('.searchBox_list--category li:nth-child(7)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=007")) {
 			$('.pdList_conditions .pdList_conditions--category').text('パンツ');
 			$('.breadcrumb ul li p').text('パンツ');
-			$('.searchBox_list--category li:nth-child(7)').addClass("on");
+			$('.searchBox_list--category li:nth-child(8)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=010")) {

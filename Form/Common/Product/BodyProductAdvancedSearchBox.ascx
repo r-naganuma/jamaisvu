@@ -52,9 +52,9 @@
 				<li>
 					<p>アウター</p>
 				</li>
-				<!-- <li>
+				<li>
 					<p>シャツ・ブラウス</p>
-				</li> -->
+				</li>
 				<li class="catParent catKnit">
 					<p>ニット</p>
 				</li>
