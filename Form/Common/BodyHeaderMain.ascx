@@ -176,11 +176,11 @@ function initializeFunctionJs() {
 													アウター
 												</a>
 											</li>
-											<!-- <li>
+											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=002&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 													シャツ・ブラウス
 												</a>
-											</li> -->
+											</li>
 											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=003&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 													ニット
@@ -486,11 +486,11 @@ function initializeFunctionJs() {
 											アウター
 										</a>
 									</li>
-									<!-- <li>
+									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=002&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 											シャツ・ブラウス
 										</a>
-									</li> -->
+									</li>
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=003&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 											ニット
