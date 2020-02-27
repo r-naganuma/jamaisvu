@@ -229,6 +229,11 @@ function initializeFunctionJs() {
 													セール
 												</a>
 											</li>
+											<li>
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=magazine&udns=2&fpfl=0&pno=1">
+													雑誌掲載アイテム
+												</a>
+											</li>
 										</ul>
 										<div class="hov_inner--pic">
 											<!-- <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/pic_item.jpg" alt=""> -->
@@ -459,7 +464,7 @@ function initializeFunctionJs() {
 											新着商品
 										</a>
 										<div class="navUpdate">
-											<p>2/20 UP</p>
+											<p>2/27 UP</p>
 										</div>
 									</li>
 									<li>
@@ -469,6 +474,11 @@ function initializeFunctionJs() {
 										<!-- <div class="navUpdate">
 											<p>1/14 UP</p>
 										</div> -->
+									</li>
+									<li>
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=magazine&udns=2&fpfl=0&pno=1">
+											雑誌掲載アイテム
+										</a>
 									</li>
 								</ul>
 							</div>

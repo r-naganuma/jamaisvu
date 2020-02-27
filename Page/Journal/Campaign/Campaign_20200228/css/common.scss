@@ -1,0 +1,556 @@
+@charset  "utf-8";
+
+$bp1100: 1100px;  // スマホ
+
+@mixin bp1100 {
+  @media (max-width: ($bp1100)) {
+    @content;
+  }
+}
+
+$bp1060: 1060px;  // スマホ
+
+@mixin bp1060 {
+  @media (max-width: ($bp1060)) {
+    @content;
+  }
+}
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+@font-face {
+	font-family: 'Times';
+    src: url("../../../../../Font/Times.eot");
+    src: url("../../../../../Font/Times.eot?#iefix") format('embedded-opentype'),
+         url("../../../../../Font/Times.woff") format('woff'),
+         url("../../../../../Font/Times.ttf") format('truetype');
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+
+.pc_contents {
+	display: block!important;
+
+	@include bp768 {
+		display: none!important;
+	};
+}
+
+.sp_contents {
+  display: none!important;
+
+	@include bp768 {
+		display: block!important;
+	};
+}
+
+#Wrap{
+	.LPpageWrap{
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+		.journalWrap {
+			width: 730px;
+			margin: 0 auto;
+			color: #333;
+			font-size: 13px;
+			line-height: 2;
+			letter-spacing: 0.03em;
+			font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+			-webkit-font-smoothing: antialiased;
+
+			@include bp768 {
+				width: 100%;
+				line-height: 24px;
+			};
+
+			ul{
+				margin: 0;
+				padding: 0;
+
+				li{
+					list-style-type: none;
+					padding: 0;
+					margin: 0;
+				}
+			}
+
+			p{
+				margin: 0;
+				padding: 0;
+				line-height: 2;
+
+				@include bp768 {
+					line-height: 24px;
+					word-break: normal;
+				};
+			}
+
+			a{
+				text-decoration: none;
+				color: #333;
+				font-weight: 300;
+				display: block;
+				transition: .2s;
+			}
+
+			img{
+				width: 100%;
+				display: block;
+			}
+
+			.journalWrap_cts{
+				width: 100%;
+
+/*====================================================================
+*    MAIN VISUAL
+/*==================================================================*/
+
+				.mainArea{
+					&_ttl{
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin: 28px 0 40px;
+						padding-bottom: 27px;
+						border-bottom: 1px solid #ccc;
+				
+						@include bp768 {
+							display: block;
+							width: 89.33%;
+							margin: 20px auto 40px;
+							padding-bottom: 20px;
+						};
+
+						&--txt{
+							width: 470px;
+							padding: 12px 0;
+							position: relative;
+
+							@include bp1060 {
+								width: 70%;
+							};
+				
+							@include bp768 {
+								width: 100%;
+								padding: 0;
+								margin-bottom: 10px;
+							};
+
+							.journalCat{
+								font-size: 14px;
+								color: #888888;
+								line-height: 1;
+								font-family: interstate, sans-serif;
+								font-weight: 500;
+				
+								@include bp768 {
+									font-size: 13.5px;
+								};
+							}
+
+							h2{
+								font-size: 16px;
+								letter-spacing: 0.03em;
+								font-weight: bold;
+								line-height: 28px;
+								color: #333;
+								text-align: left;
+								margin: 10px 0;
+								font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+				
+								@include bp768 {
+									line-height: 24px;
+									margin: 10px 0;
+									font-weight: 500;
+									font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+								};
+							}
+
+							.journalDate{
+								font-size: 12px;
+								color: #888888;
+								line-height: 1;
+								font-family: interstate, sans-serif;
+								font-weight: 500;
+
+								@include bp768 {
+									font-size: 11px;
+								};
+							}
+
+							&::after{
+								content: "";
+								position: absolute;
+								top: 0;
+								right: -13px;
+								bottom: 0;
+								width: 1px;
+								background: #ccc;
+
+								@include bp768 {
+									content: none;
+								};
+							}
+						}
+
+						&--sns{
+							width: 246px;
+							text-align: center;
+
+							@include bp1060 {
+								width: 30%;
+							};
+
+							@include bp768 {
+								width: 198px;
+								margin: 0 5.5px 0 auto;
+								text-align: right;
+							};
+
+							li{
+								display: inline-block;
+								vertical-align: middle;
+
+								p{
+									color: #5D5D5D;
+									font-size: 11px;
+									letter-spacing: 0.08em;
+									line-height: 1;
+									font-family: interstate, sans-serif;
+									font-weight: 400;
+
+									@include bp768 {
+										letter-spacing: 0;
+									};
+								}
+
+								&:nth-child(2){
+									width: 16px;
+									margin: 0 16px 0 20px;
+
+									@include bp768 {
+										width: 18.5px;
+										margin: 0 15px 0 20px;
+									};
+								}
+
+								&:nth-child(3){
+									width: 8.5px;
+
+									@include bp768 {
+										width: 9.5px;
+									};
+								}
+							}
+						}
+					}
+				}
+
+				.ctsArea{
+					@include bp768 {
+						width: 89.33%;
+						margin: 0 auto;
+					};
+
+					p, a{
+						text-align: center;
+					}
+				}
+
+/*====================================================================
+*    LEAD
+/*==================================================================*/
+				.leadArea{
+					margin-bottom: 80px;
+
+					&_ttl{
+						font-size: 16px;
+						font-weight: 700;
+						line-height: 30px;
+						margin-bottom: 30px;
+
+						@include bp768 {
+							line-height: 24px;
+							margin-bottom: 20px;
+						};
+					}
+				}
+
+/*====================================================================
+*    APPLY
+/*==================================================================*/
+				.applyArea{
+					width: 100%;
+					margin-bottom: 120px;
+					background-color: #FAFAFA;
+					padding: 40px 0;
+					box-sizing: border-box;
+
+					@include bp768 {
+						margin-bottom: 80px;
+						padding: 20px 0;
+					};
+
+					&_ttl{
+						font-size: 16px;
+						font-weight: 700;
+						line-height: 30px;
+						margin-bottom: 30px;
+
+						@include bp768 {
+							line-height: 24px;
+							margin-bottom: 20px;
+						};
+					}
+
+					&_btn{
+						width: 320px;
+						margin: 0 auto 20px;
+						background: #333;
+						color: #fff;
+						text-align: center;
+						position: relative;
+						padding: 15px 0;
+						box-sizing: border-box;
+						line-height: 16px;
+						font-weight: bold;
+						border: 1px solid #333;
+						transition: .2s;
+
+						@include bp768 {
+							width: 89.33%;
+							padding: 12px 0;
+							line-height: 24px;
+							font-weight: 500;
+						};
+
+						&::after{
+						    content: "";
+						    position: absolute;
+						    top: 0;
+						    bottom: 0;
+						    right: 20px;
+						    margin: auto;
+						    z-index: 1;
+						    display: block;
+						    width: 7px;
+						    height: 7px;
+						    -moz-transform: rotate(45deg);
+						    -webkit-transform: rotate(45deg);
+						    transform: rotate(45deg);
+						    border-top: 1px solid #fff;
+						    border-right: 1px solid #fff;
+
+							@include bp768 {
+						    	right: 15px;
+							};
+						}
+
+						&:hover{
+							border: 1px solid #333;
+							background: #fff;
+							color: #333;
+							opacity: 1;
+
+							&::after{
+							    border-top: 1px solid #333;
+							    border-right: 1px solid #333;
+							}
+						}
+					}
+
+					&_qr{
+						text-decoration: underline !important;
+					}
+				}
+
+/*====================================================================
+*    ITEM
+/*==================================================================*/
+				.itemArea{
+					width: 100%;
+					margin-bottom: 120px;
+
+					@include bp768 {
+						margin-bottom: 80px;
+					};
+
+					&_ttl{
+						font-size: 16px;
+						font-weight: 700;
+						line-height: 30px;
+						margin-bottom: 30px;
+
+						@include bp768 {
+							line-height: 24px;
+							margin-bottom: 20px;
+						};
+					}
+
+					&_lead{
+						margin-bottom: 30px;
+
+						@include bp768 {
+							margin-bottom: 40px;
+						};
+					}
+
+					&_box{
+						display: flex;
+						justify-content: space-between;
+						margin-bottom: 40px;
+
+						&--list{
+							width: 355px;
+
+							@include bp768 {
+								width: 49.25%;
+							};
+
+							.detailBtn{
+								width: 120px;
+								height: 30px;
+								line-height: 30px;
+								background: #333;
+								border-radius: 2px;
+								color: #fff;
+								font-family: interstate, sans-serif;
+								font-weight: 500;
+								font-size: 11px;
+								text-align: center;
+								border: 1px solid #333;
+								margin: 20px 0 0 auto;
+
+								@include bp768 {
+									width: 90px;
+									height: 25px;
+									line-height: 25px;
+									font-size: 10.5px;
+								};
+
+								&:hover{
+									background: #fff;
+									color: #333;
+									border: 1px solid #333;
+									opacity: 1;
+								}
+							}
+						}
+					}
+				}
+
+/*====================================================================
+*    CAMPAIGN
+/*==================================================================*/
+				.campaignArea{
+					width: 100%;
+					margin-bottom: 120px;
+					background-color: #FAFAFA;
+					padding: 40px 0;
+					box-sizing: border-box;
+
+					@include bp768 {
+						margin-bottom: 80px;
+						padding: 20px 0;
+					};
+
+					&_ttl{
+						font-size: 16px;
+						font-weight: 700;
+						line-height: 30px;
+						margin-bottom: 30px;
+
+						@include bp768 {
+							line-height: 24px;
+							margin-bottom: 20px;
+						};
+					}
+
+					&_btn{
+						width: 240px;
+						margin: 35px auto 9px;
+
+						@include bp768 {
+							width: 170px;
+							margin: 30px auto;
+						};
+					}
+
+					&_qr{
+						width: 240px;
+						margin: 0 auto;
+
+						@include bp768 {
+							width: 170px;
+						};
+					}
+
+					&_note{
+						width: 482px;
+						margin: 30px auto 0;
+
+						@include bp768 {
+							width: 100%;
+							margin: 20px auto 0;
+							padding: 0 5px;
+							box-sizing: border-box;
+						};
+
+						p{
+							text-indent: -1em;
+							padding-left: 1em;
+							text-align: left;
+						}
+					}
+				}
+
+/*====================================================================
+*    CONTACT
+/*==================================================================*/
+				.contactArea{
+					margin-bottom: 160px;
+
+					@include bp768 {
+						margin-bottom: 80px;
+					};
+
+					&_ttl{
+						font-size: 16px;
+						font-weight: 700;
+						line-height: 30px;
+						margin-bottom: 30px;
+
+						@include bp768 {
+							line-height: 24px;
+							margin-bottom: 20px;
+						};
+					}
+
+					a{
+						text-decoration: underline !important;
+						margin-top: 10px;
+
+						@include bp768 {
+							margin-top: 20px;
+						};
+					}
+				}
+			}
+		}
+	}
+}

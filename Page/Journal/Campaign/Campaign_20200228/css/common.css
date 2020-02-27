@@ -1,0 +1,612 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Times';
+  src: url("../../../../../Font/Times.eot");
+  src: url("../../../../../Font/Times.eot?#iefix") format("embedded-opentype"), url("../../../../../Font/Times.woff") format("woff"), url("../../../../../Font/Times.ttf") format("truetype");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+.pc_contents {
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  .pc_contents {
+    display: none !important;
+  }
+}
+
+.sp_contents {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .sp_contents {
+    display: block !important;
+  }
+}
+
+#Wrap .LPpageWrap {
+  /*====================================================================
+*    ALL
+/*==================================================================*/
+}
+
+#Wrap .LPpageWrap .journalWrap {
+  width: 730px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap {
+    width: 100%;
+    line-height: 24px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap ul {
+  margin: 0;
+  padding: 0;
+}
+
+#Wrap .LPpageWrap .journalWrap ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Wrap .LPpageWrap .journalWrap p {
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap p {
+    line-height: 24px;
+    word-break: normal;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 300;
+  display: block;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+#Wrap .LPpageWrap .journalWrap img {
+  width: 100%;
+  display: block;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts {
+  width: 100%;
+  /*====================================================================
+*    MAIN VISUAL
+/*==================================================================*/
+  /*====================================================================
+*    LEAD
+/*==================================================================*/
+  /*====================================================================
+*    APPLY
+/*==================================================================*/
+  /*====================================================================
+*    ITEM
+/*==================================================================*/
+  /*====================================================================
+*    CAMPAIGN
+/*==================================================================*/
+  /*====================================================================
+*    CONTACT
+/*==================================================================*/
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 28px 0 40px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl {
+    display: block;
+    width: 89.33%;
+    margin: 20px auto 40px;
+    padding-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt {
+  width: 470px;
+  padding: 12px 0;
+  position: relative;
+}
+
+@media (max-width: 1060px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt .journalCat {
+  font-size: 14px;
+  color: #888888;
+  line-height: 1;
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt .journalCat {
+    font-size: 13.5px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt h2 {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  line-height: 28px;
+  color: #333;
+  text-align: left;
+  margin: 10px 0;
+  font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt h2 {
+    line-height: 24px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt .journalDate {
+  font-size: 12px;
+  color: #888888;
+  line-height: 1;
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt .journalDate {
+    font-size: 11px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -13px;
+  bottom: 0;
+  width: 1px;
+  background: #ccc;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt::after {
+    content: none;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--sns {
+  width: 246px;
+  text-align: center;
+}
+
+@media (max-width: 1060px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--sns {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--sns {
+    width: 198px;
+    margin: 0 5.5px 0 auto;
+    text-align: right;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--sns li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--sns li p {
+  color: #5D5D5D;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  font-family: interstate, sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--sns li p {
+    letter-spacing: 0;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--sns li:nth-child(2) {
+  width: 16px;
+  margin: 0 16px 0 20px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--sns li:nth-child(2) {
+    width: 18.5px;
+    margin: 0 15px 0 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--sns li:nth-child(3) {
+  width: 8.5px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--sns li:nth-child(3) {
+    width: 9.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea {
+    width: 89.33%;
+    margin: 0 auto;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea p, #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea a {
+  text-align: center;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .leadArea {
+  margin-bottom: 80px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .leadArea_ttl {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .leadArea_ttl {
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .applyArea {
+  width: 100%;
+  margin-bottom: 120px;
+  background-color: #FAFAFA;
+  padding: 40px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .applyArea {
+    margin-bottom: 80px;
+    padding: 20px 0;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .applyArea_ttl {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .applyArea_ttl {
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .applyArea_btn {
+  width: 320px;
+  margin: 0 auto 20px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 15px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 16px;
+  font-weight: bold;
+  border: 1px solid #333;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .applyArea_btn {
+    width: 89.33%;
+    padding: 12px 0;
+    line-height: 24px;
+    font-weight: 500;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .applyArea_btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  z-index: 1;
+  display: block;
+  width: 7px;
+  height: 7px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .applyArea_btn::after {
+    right: 15px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .applyArea_btn:hover {
+  border: 1px solid #333;
+  background: #fff;
+  color: #333;
+  opacity: 1;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .applyArea_btn:hover::after {
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .applyArea_qr {
+  text-decoration: underline !important;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .itemArea {
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .itemArea {
+    margin-bottom: 80px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .itemArea_ttl {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .itemArea_ttl {
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .itemArea_lead {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .itemArea_lead {
+    margin-bottom: 40px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .itemArea_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .itemArea_box--list {
+  width: 355px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .itemArea_box--list {
+    width: 49.25%;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .itemArea_box--list .detailBtn {
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  background: #333;
+  border-radius: 2px;
+  color: #fff;
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  text-align: center;
+  border: 1px solid #333;
+  margin: 20px 0 0 auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .itemArea_box--list .detailBtn {
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 10.5px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .itemArea_box--list .detailBtn:hover {
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
+  opacity: 1;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .campaignArea {
+  width: 100%;
+  margin-bottom: 120px;
+  background-color: #FAFAFA;
+  padding: 40px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .campaignArea {
+    margin-bottom: 80px;
+    padding: 20px 0;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .campaignArea_ttl {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .campaignArea_ttl {
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .campaignArea_btn {
+  width: 240px;
+  margin: 35px auto 9px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .campaignArea_btn {
+    width: 170px;
+    margin: 30px auto;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .campaignArea_qr {
+  width: 240px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .campaignArea_qr {
+    width: 170px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .campaignArea_note {
+  width: 482px;
+  margin: 30px auto 0;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .campaignArea_note {
+    width: 100%;
+    margin: 20px auto 0;
+    padding: 0 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .campaignArea_note p {
+  text-indent: -1em;
+  padding-left: 1em;
+  text-align: left;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .contactArea {
+  margin-bottom: 160px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .contactArea {
+    margin-bottom: 80px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .contactArea_ttl {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .contactArea_ttl {
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .contactArea a {
+  text-decoration: underline !important;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .contactArea a {
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */
