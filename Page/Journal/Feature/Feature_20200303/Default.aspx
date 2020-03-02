@@ -1,0 +1,303 @@
+﻿<%--
+=========================================================================================================
+  Module      : カスタムページテンプレート画面(CustomPageTemplate.aspx)
+ ･･･････････････････････････････････････････････････････････････････････････････････････････････････････
+  Copyright   : Copyright w2solution Co.,Ltd. 2009 All Rights Reserved.
+=========================================================================================================
+--%>
+<%-- ▽ユーザーコントロール宣言領域▽ --%>
+<%-- △ユーザーコントロール宣言領域△ --%>
+<%@ Page Title="FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="FEATURE" MetaKeywords="TOPICS,トピックス,JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
+<%--
+
+下記のタグはファイル情報保持用です。削除しないでください。
+<%@ FileInfo LastChanged="ロゾパンサン" %>
+
+--%>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<%-- ▽編集可能領域：HEAD追加部分▽ --%>
+<link href='../../css/common.css?123' rel='stylesheet' type='text/css'>
+<link href='css/common.css?123' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.typekit.net/rzu4tgs.css">
+<%-- △編集可能領域△ --%>
+</asp:Content>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<div class="LPpageWrap topSpace">
+
+<%-- ▽編集可能領域：コンテンツ▽ --%>
+<div class="journalWrap">
+    <div class="journalWrap_cts">
+        <!-- //////////////////
+        /////// MAIN VISUAL 
+        ///////////////////////-->
+        <div class="mainArea">
+            <img class="pc_contents" src="images/mv_pc.jpg" alt="">
+            <img class="sp_contents" src="images/mv_sp.jpg" alt="">
+            <div class="mainArea_ttl">
+                <div class="mainArea_ttl--txt">
+                    <p class="journalCat">FEATURE</p>
+                    <h2>
+                        飽きがこない、<br>
+                        シンプルニットが愛され続ける秘密
+                    </h2>
+                    <p class="journalDate">2020.03.03</p>
+                </div>
+                <ul class="mainArea_ttl--sns">
+                    <li>
+                        <p>SHARE</p>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/share?url=https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200303/&text=飽きがこない、シンプルニットが愛され続ける秘密" target="_blank">
+                            <img src="../../images/common/icn_tw.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200303/" target="_blank">
+                            <img src="../../images/common/icn_fb.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="mainArea_lead">
+                今シーズンのJAMAIS VUのキーテクスチャ「オゾン加工」を施したシリーズの中で<br class="pc_contents">もっともシンプルでミニマルな「SUVIN5Gオゾンプルオーバー」<br>
+                <br>
+                ディテールまでこだわり抜いた隙のないルックスは、シンプルなのに他では買えないデザインです。<br class="pc_contents">合わせやすいのに平凡にならない、飽きが来ず長く使える、そんな優秀ニットの秘密をご紹介します。
+            </p>
+        </div>
+
+        <div class="ctsArea">
+
+            <!-- //////////////////
+            /////// TEMPLATE B
+            ///////////////////////-->
+            <div class="B-wrap">
+                <div class="B-wrap_box B-wrap_box2 B-wrap_sp_noFlex">
+                    <div class="B-wrap_box--pic">
+                        <img src="images/cont-01.jpg" alt="">
+                    </div>
+                    <div class="B-wrap_box--txt">
+                        <p class="B-wrap_txt">
+                            ワイドなスリーブデザインとゆったりとした身幅で着心地抜群のニット。ショルダーラインをなくすことで、上品なスタイリングも叶うデザインに。<br>
+                            <br>
+                            程よくゆとりのあるボトルネックと、長めに取った袖のリブが女性らしい華奢な印象を演出してくれます。<br>
+                            <br>
+                            <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010302131&cat=500031">SUVIN5Gオゾンプルオーバー<br>
+                            ¥17,600(tax in)</a><br>
+                            素材:スビンコットン / サイズ：FREE<br>
+                            カラー:ホワイト/ピンク/ベージュ/カーキ/サックス
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- //////////////////
+            /////// BTN
+            ///////////////////////-->
+            <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2010302&udns=2&fpfl=0&pno=1" class="ctsArea_btn">MORE ITEMS</a>
+
+            <!-- //////////////////
+            /////// TEMPLATE F
+            ///////////////////////-->
+            <div class="F-wrap">
+                <p class="F-wrap_ttl">程よい色落ち感がこなれた雰囲気を演出</p>
+                <div class="F-wrap_box">
+                    <div class="F-wrap_box--main">
+                        <img src="images/cont-02-01.jpg" alt="">
+                        <p class="F-wrap_box--txt">
+                            <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010302141&cat=500041">SUVIN5Gオゾンプルオーバー ¥17,600(tax in)</a>
+                        </p>
+                    </div>
+                    <div class="F-wrap_box--sub">
+                        <img src="images/cont-02-02.jpg" alt="">
+                    </div>
+                </div>
+                <p class="F-wrap_box--txt">
+                    「オゾン加工」という特殊な技法によって上質な素材にユーズド感を施すことが可能に。従来の半分以下の水の使用量で加工ができ、サステナブルさも忘れないJAMAIS VUらしい一着。
+                </p>
+            </div>
+
+            <!-- //////////////////
+            /////// TEMPLATE B
+            ///////////////////////-->
+            <div class="B-wrap B-wrap02">
+                <p class="A-wrap_ttl">
+                    いつものスタイリングを格上げする
+                </p>
+                <div class="B-wrap_box B-wrap_box2 B-wrap_sp_noFlex">
+                    <div class="B-wrap_box--pic">
+                        <img src="images/cont-03.jpg" alt="">
+                    </div>
+                    <div class="B-wrap_box--txt">
+                        <p class="B-wrap_txt">
+                            <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010302161&cat=500061">SUVIN5Gオゾンプルオーバー ¥17,600(tax in)</a>
+                            <br>
+                            <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010552111&cat=500011">ペルビアンピマコットンワンピース ¥19,800(tax in)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- //////////////////
+            /////// TEMPLATE B
+            ///////////////////////-->
+            <div class="B-wrap B-wrap03">
+                <div class="B-wrap_box B-wrap_box2 B-wrap_sp_noFlex">
+                    <div class="B-wrap_box--pic pic02">
+                        <img src="images/cont-04.jpg" alt="">
+                    </div>
+                    <div class="B-wrap_box--txt txt02">
+                        <p class="B-wrap_txt">
+                            <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010302159&cat=500059">SUVIN5Gオゾンプルオーバー ¥17,600(tax in)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- //////////////////
+            /////// TEMPLATE A 
+            ///////////////////////-->
+            <div class="A-wrap">
+                <p class="A-wrap_txt">
+                    こだわり抜かれたシルエットで、いつものアイテムと合わせても<br class="pc_contents">品のある女性らしさをプラスしてくれるスタイリングに。<br class="pc_contents">スカートと合わせてもパンツと合わせても綺麗にまとまる万能アイテムです。
+                </p>
+            </div>
+
+            <!-- //////////////////
+            /////// TEMPLATE H
+            ///////////////////////-->
+            <div class="H-wrap">
+                <p class="H-wrap_ttl">
+                    サラッと着れる滑らかな肌触り
+                </p>
+                <img class="H-wrap_pic" src="images/cont-05.jpg" alt="">
+                <p class="H-wrap_txt">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010302111&cat=500011">SUVIN5Gオゾンプルオーバー ¥17,600(tax in)</a><br>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010306211&cat=500011">SUVINオゾンニットパンツ ¥17,600(tax in)</a>
+                </p>
+                <p class="H-wrap_txt">
+                    シルクのような光沢感とカシミヤのようなしっとりとした風合いが特徴の「スビンコットン」を贅沢に使用。<br>
+                    太めの糸で仕上げることで素材の良さを最大限に生かし、ふんわりと柔らかい肌触りに仕上がっています。
+                </p>
+            </div>
+
+            <!-- //////////////////
+            /////// BTN
+            ///////////////////////-->
+            <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2010302&udns=2&fpfl=0&pno=1" class="ctsArea_btn">MORE ITEMS</a>
+
+            <!-- //////////////////
+            /////// Latest Post
+            ///////////////////////-->
+            <div class="latestArea">
+                <p class="latestArea_ttl">素材についてもっと知る</p>
+                <div class="latestArea_box">
+                    <div class="latestArea_box--list">
+                        <a href="<%= Constants.PATH_ROOT %>Page/Concept/suvin_cotton.aspx">
+                            <img src="images/suvin-bnr.jpg" class="pc_contents" alt="">
+                            <img src="images/suvin-bnr-sp.jpg" class="sp_contents" alt="">
+                            <p class="archiveTtl">
+                                SUVIN COTTON
+                            </p>
+                        </a>
+                    </div>
+                    <div class="latestArea_box--list">
+                        <a href="<%= Constants.PATH_ROOT %>Page/Concept/ozone_finishing.aspx">
+                            <img src="images/ozon-bnr.jpg" class="pc_contents" alt="">
+                            <img src="images/ozon-bnr-sp.jpg" class="sp_contents" alt="">
+                            <p class="archiveTtl">
+                                OZONE FINISHING
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- //////////////////
+    /////// 着用アイテムはこちら
+    ///////////////////////-->
+    <div class="journalWrap_item">
+        <p class="journalWrap_item--ttl">着用アイテムはこちら</p>
+        <ul>
+            <!-- 最大4個まで -->
+            <li>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010302131&cat=500031">
+                    <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010302131_sub08_L.jpg" alt="">
+                    <p>
+                        SUVIN5Gオゾンプルオーバー
+                        <span>¥17,600(tax in)</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010302141&cat=500041">
+                    <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010302141_sub07_L.jpg" alt="">
+                    <p>
+                        SUVIN5Gオゾンプルオーバー
+                        <span>¥17,600(tax in)</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010302161&cat=500061">
+                    <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010302161_sub06_L.jpg" alt="">
+                    <p>
+                        SUVIN5Gオゾンプルオーバー
+                        <span>¥17,600(tax in)</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010302159&cat=500059">
+                    <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010302159_sub07_L.jpg" alt="">
+                    <p>
+                        SUVIN5Gオゾンプルオーバー
+                        <span>¥17,600(tax in)</span>
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="journalWrap_item--btn">すべてのアイテムをみる</a>
+    </div>
+</div>
+<%-- △編集可能領域△ --%>
+
+
+</div>
+<script type="text/javascript">
+    $(window).on('scroll', function (){
+
+        var elem = $('.latestArea_ttl');
+        var isAnimate = 'off';
+
+        elem.each(function () {
+
+            var elemOffset = $(this).offset().top - 230;
+            var scrollPos = $(window).scrollTop();
+            var wh = $(window).height();
+
+            if(scrollPos > elemOffset - wh + (wh / 2) ){
+              $('.journalWrap_item').addClass(isAnimate);
+              $('.journalWrap_item').removeClass("on");
+            }else{
+                $('.journalWrap_item').removeClass(isAnimate);
+                $('.journalWrap_item').addClass("on");
+            }
+        });
+    });
+
+    $(function(){
+        //メニューエリアの高さを調整
+        function adjustMenuHeight() {
+            $('.journalWrap_item').height($(window).height() - 150);
+        }
+
+        $(window).on('load resize', function() {
+            adjustMenuHeight();
+        });
+    });
+</script>
+</asp:Content>
+

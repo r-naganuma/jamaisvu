@@ -1,0 +1,419 @@
+@charset  "utf-8";
+
+$bp1100: 1100px;  // スマホ
+
+@mixin bp1100 {
+  @media (max-width: ($bp1100)) {
+    @content;
+  }
+}
+
+$bp1060: 1060px;  // スマホ
+
+@mixin bp1060 {
+  @media (max-width: ($bp1060)) {
+    @content;
+  }
+}
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+.pc_inline {
+	display: inline!important;
+
+	@include bp768 {
+		display: none!important;
+	};
+}
+
+.sp_inline {
+  display: none!important;
+
+	@include bp768 {
+		display: inline!important;
+	};
+}
+
+#Wrap{
+	.LPpageWrap{
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+		.journalWrap {
+
+			.journalWrap_cts{
+
+				.mainArea{
+					margin-bottom: 80px;
+				
+					@include bp768 {
+						margin-bottom: 40px;
+					};
+
+					&_lead{
+						@include bp768 {
+							font-size: 14px;
+						};
+					}
+				}
+
+				.ctsArea{
+
+/*====================================================================
+*    TEMPLATE A
+/*==================================================================*/
+					
+					.A-wrap{
+						margin-bottom: 80px;
+
+						@include bp768 {
+							width: 89.33%;
+							margin: 0 auto 60px;
+						};
+					}
+
+					.A-wrap_ttl{
+						line-height: 1;
+						margin-bottom: 40px;
+
+						@include bp768 {
+							line-height: 1;
+						};
+					}
+
+					.A-wrap_txt{
+						margin-bottom: 0;
+
+						@include bp768 {
+							margin-bottom: 0;
+						};
+					}
+
+/*====================================================================
+*    TEMPLATE B
+/*==================================================================*/
+					
+					.B-wrap{
+						margin-bottom: 40px;
+
+						@include bp768 {
+							margin: 0 auto 40px;
+						};
+
+						&.B-wrap02{
+							width: 355px;
+							margin-bottom: 20px;
+
+							@include bp768 {
+								width: 89.33%;
+								margin: 0 auto 60px;
+							};
+
+							.B-wrap_box{
+								display: block;
+
+								.B-wrap_box--txt{
+									width: 100%;
+									margin-top: 15px;
+								}
+
+								.B-wrap_box--pic{
+									width: 100%;
+								}
+							}
+						}
+
+						&.B-wrap03{
+							width: 355px;
+							margin: -80px 0 40px auto;
+
+							@include bp768 {
+								width: 89.33%;
+								margin: 0 auto 60px;
+							};
+
+							.B-wrap_box{
+								display: block;
+
+								.B-wrap_box--txt{
+									width: 100%;
+									margin-top: 15px;
+								}
+
+								.B-wrap_box--pic{
+									width: 100%;
+								}
+							}
+						}
+					}
+					
+					.B-wrap_box{
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin-bottom: 0;
+
+						@include bp768 {
+							margin-bottom: 0;
+							flex-wrap: wrap;
+						};
+					}
+					
+					.B-wrap_box--txt{
+						width: 335px;
+
+						&.txt02{
+							order: 1;
+						}
+
+						@include bp1060 {
+							width: 47.01%;
+						};
+					}
+
+					.B-wrap_txt{
+						margin-bottom: 0;
+
+						@include bp768 {
+							margin-bottom: 0;
+						};
+					}
+					
+					.B-wrap_box--pic{
+						width: 355px;
+
+						&.pic02{
+							order: 2;
+						}
+
+						@include bp768 {
+							margin-bottom: 20px;
+						};
+					}
+
+					.B-wrap_sp_noFlex{
+						@include bp768 {
+							display: block;
+						};
+
+						.B-wrap_lead{
+							@include bp768 {
+								text-align: center;
+							};
+						}
+
+						.B-wrap_box--txt{
+							@include bp768 {
+								width: 100%;
+							};
+						}
+						
+						.B-wrap_ttl{
+							@include bp768 {
+								margin-bottom: 20px;
+							};
+						}
+
+						.B-wrap_box--pic{
+							@include bp768 {
+								width: 100%;
+								margin-bottom: 20px;
+							};
+						}
+					}
+
+/*====================================================================
+*    TEMPLATE F
+/*==================================================================*/
+					
+					.F-wrap{
+						margin-bottom: 80px;
+
+						@include bp768 {
+							margin: 0 auto 60px;
+						};
+					}
+
+					.F-wrap_ttl{
+						width: 100%;
+						position: inherit;
+						top: inherit;
+						right: inherit;
+						font-size: 16px;
+						line-height: 1;
+						font-weight: bold;
+						margin-bottom: 40px;
+
+						@include bp768 {
+							width: 89.33%;
+							margin: 0 auto 40px;
+							right: inherit;
+							line-height: 1;
+							font-weight: 500;
+						};
+					}
+
+					.F-wrap_box{
+						padding-top: 0;
+
+						@include bp768 {
+							padding-top: 0;
+						};
+					}
+
+					.F-wrap_box--txt{
+						font-size: 13px;
+
+						@include bp768 {
+							font-size: 13px;
+							line-height: 24px;
+							width: 89.33%;
+							margin: 10px auto 0;
+						};
+
+						a{
+							font-size: 13px;
+
+							@include bp768 {
+								font-size: 13px;
+								line-height: 24px;
+							};
+						}
+					}
+
+/*====================================================================
+*    TEMPLATE H
+/*==================================================================*/
+					
+					.H-wrap{
+						width: 100%;
+						margin: 0 0 80px 0;
+
+						@include bp768 {
+							width: 89.33%;
+							margin: 0 auto 60px;
+						};
+					}
+
+					.H-wrap_pic{
+						width: 540px;
+						margin-bottom: 0;
+
+						@include bp768 {
+							width: 100%;
+							margin-bottom: 0;
+						};
+					}
+
+					.H-wrap_txt{
+						margin-top: 15px;
+						font-size: 13px;
+
+						@include bp768 {
+							font-size: 13px;
+							line-height: 24px;
+							margin: 20px 0 0 0;
+						};
+
+						a{
+							font-size: 13px;
+						}
+					}
+
+					.H-wrap_ttl{
+						font-size: 16px;
+						line-height: 1;
+						font-weight: bold;
+						margin-bottom: 40px;
+
+						@include bp768 {
+							font-weight: 500;
+						};
+					}
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+
+					&_btn{
+						margin: 0 auto 120px;
+
+						@include bp768 {
+							margin: 0 auto 60px;
+						};
+					}
+
+					.latestArea{
+						&_ttl{
+							font-size: 16px;
+							font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+							font-weight: bold;
+
+							@include bp768 {
+								font-size: 16px;
+							};
+						}
+
+						&_box{
+							display: flex;
+							justify-content: space-between;
+
+							&--list{
+								width: 350px;
+
+								@include bp1060 {
+									width: 48.5%;
+								};
+
+								.archiveTtl{
+									font-size: 12px;
+									font-weight: bold;
+									line-height: 1;
+									margin: 15px 0 0;
+
+									@include bp768 {
+										font-size: 14px;
+										line-height: 1;
+										font-weight: 500;
+										margin: 10px 0 0;
+									};
+								}
+							}
+						}
+					}
+
+					.latestArea{
+						padding-top: 80px;
+						border-top: 1px solid #CCCCCC;
+					}
+				}
+			}
+
+			.journalWrap_item{
+				ul{
+					li{
+						a{
+							p{
+								span{
+									span{
+										display: inline;
+										margin-top: 0;
+										color: #AD2E24;
+										text-decoration: line-through;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
