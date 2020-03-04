@@ -52,7 +52,7 @@
 		            </div>
 				</a>
 	        </div>
-			<div class="journalTop_archive--list">
+			<!-- <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Campaign/Campaign_20200228/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/campaign_200228journal.jpg">
@@ -65,7 +65,7 @@
 		                <p class="journalDate">2020.02.28</p>
 		            </div>
 				</a>
-	        </div>
+	        </div> -->
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200221/">
 					<div class="journalTop_archive--list--pic">
@@ -80,7 +80,7 @@
 		            </div>
 				</a>
 	        </div>
-			<!-- <div class="journalTop_archive--list">
+			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200218/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200218journal.jpg">
@@ -94,7 +94,7 @@
 		                <p class="journalDate">2020.02.18</p>
 		            </div>
 				</a>
-	        </div> -->
+	        </div>
 		</div>
 		<div class="btnBoxver2 btn--more">
 			<a href="<%= Constants.PATH_ROOT %>Page/Journal/">READ MORE</a>

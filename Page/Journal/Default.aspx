@@ -40,7 +40,7 @@
                     <p class="journalDate">2020.03.03</p>
                 </a>
             </div>
-            <div class="journalWrap_box--list">
+            <!-- <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Campaign/Campaign_20200228">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/campaign_200228journal.jpg">
                     <p class="journalCat">COORDINATE</p>
@@ -49,7 +49,7 @@
                     </p>
                     <p class="journalDate">2020.02.28</p>
                 </a>
-            </div>
+            </div> -->
             <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200221">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200221journal.jpg">
