@@ -31,6 +31,16 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200310">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200310journal.jpg">
+                    <p class="journalCat">FEATURE</p>
+                    <p class="journalTtl">
+                        JAMAIS VU×editor_kaoの「彩りのある着こなし」vol.2 &lt;Beige&gt;
+                    </p>
+                    <p class="journalDate">2020.03.10</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200306">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200306journal.jpg">
                     <p class="journalCat">FEATURE</p>

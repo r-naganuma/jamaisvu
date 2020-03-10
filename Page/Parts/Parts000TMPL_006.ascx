@@ -23,16 +23,17 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200306/">
+				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200310/">
 					<div class="journalTop_archive--list--pic">
-	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200306journal.jpg">
+	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200310journal.jpg">
 	                </div>
 					<div class="journalTop_archive--list--txt">
 		                <p class="journalCat">FEATURE</p>
 		                <p class="journalTtl">
-		                	ベーシックにとどまらない、名品シャツLIST
+		                	JAMAIS VU×editor_kaoの<br>
+		                	「彩りのある着こなし」vol.2 &lt;Beige&gt;
 		                </p>
-		                <p class="journalDate">2020.03.06</p>
+		                <p class="journalDate">2020.03.10</p>
 		            </div>
 				</a>
 			<!-- -->
@@ -52,6 +53,20 @@
 		            </div>
 				</a>
 	        </div> -->
+			<div class="journalTop_archive--list">
+				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200306/">
+					<div class="journalTop_archive--list--pic">
+	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200306journal.jpg">
+	                </div>
+					<div class="journalTop_archive--list--txt">
+		                <p class="journalCat">FEATURE</p>
+		                <p class="journalTtl">
+		                	ベーシックにとどまらない、名品シャツLIST
+		                </p>
+		                <p class="journalDate">2020.03.06</p>
+		            </div>
+				</a>
+	        </div>
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200303/">
 					<div class="journalTop_archive--list--pic">
@@ -80,7 +95,7 @@
 		            </div>
 				</a>
 	        </div>
-			<div class="journalTop_archive--list">
+			<!-- <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200218/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200218journal.jpg">
@@ -94,7 +109,7 @@
 		                <p class="journalDate">2020.02.18</p>
 		            </div>
 				</a>
-	        </div>
+	        </div> -->
 		</div>
 		<div class="btnBoxver2 btn--more">
 			<a href="<%= Constants.PATH_ROOT %>Page/Journal/">READ MORE</a>
