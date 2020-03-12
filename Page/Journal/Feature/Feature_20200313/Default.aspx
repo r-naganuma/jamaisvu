@@ -1,0 +1,424 @@
+﻿<%--
+=========================================================================================================
+  Module      : カスタムページテンプレート画面(CustomPageTemplate.aspx)
+ ･･･････････････････････････････････････････････････････････････････････････････････････････････････････
+  Copyright   : Copyright w2solution Co.,Ltd. 2009 All Rights Reserved.
+=========================================================================================================
+--%>
+<%-- ▽ユーザーコントロール宣言領域▽ --%>
+<%-- △ユーザーコントロール宣言領域△ --%>
+<%@ Page Title="FEATURE｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="FEATURE" MetaKeywords="TOPICS,トピックス,JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
+<%--
+
+下記のタグはファイル情報保持用です。削除しないでください。
+<%@ FileInfo LastChanged="ロゾパンサン" %>
+
+--%>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<%-- ▽編集可能領域：HEAD追加部分▽ --%>
+<link href='../../css/common.css?123' rel='stylesheet' type='text/css'>
+<link href='css/common.css?123' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.typekit.net/rzu4tgs.css">
+<%-- △編集可能領域△ --%>
+</asp:Content>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<div class="LPpageWrap topSpace">
+
+<%-- ▽編集可能領域：コンテンツ▽ --%>
+<div class="journalWrap">
+    <div class="journalWrap_cts">
+        <!-- //////////////////
+        /////// MAIN VISUAL 
+        ///////////////////////-->
+        <div class="mainArea">
+            <img class="pc_contents" src="images/mv_pc.jpg" alt="">
+            <img class="sp_contents" src="images/mv_sp.jpg" alt="">
+            <div class="mainArea_ttl">
+                <div class="mainArea_ttl--txt">
+                    <p class="journalCat">FEATURE</p>
+                    <h2>
+                        夏先まで重宝する、<br>
+                        頼れるリブニット
+                    </h2>
+                    <p class="journalDate">2020.03.13</p>
+                </div>
+                <ul class="mainArea_ttl--sns">
+                    <li>
+                        <p>SHARE</p>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/share?url=https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200313/&text=夏先まで重宝する、頼れるリブニット" target="_blank">
+                            <img src="../../images/common/icn_tw.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200313/" target="_blank">
+                            <img src="../../images/common/icn_fb.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="mainArea_lead">
+                冬の落ち着いたカラーから一新、春は華やかなニットが勢ぞろいする季節。<br>
+                気分が晴れやかになる春ニットを、着心地よく長く着ることが出来るように素材を追求。<br>
+                春だけで終わらせない、ワンランク上のリブニットが完成しました。
+            </p>
+        </div>
+
+        <div class="ctsArea">
+
+            <!-- //////////////////
+            /////// TEMPLATE C
+            ///////////////////////-->
+            <div class="C-wrap">
+                <div class="C-wrap_list">
+                    <img class="C-wrap_pic" src="images/pic_c_01.jpg" alt="">
+                    <div class="C-wrap_detail">
+                        <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010314165&cat=500065" class="C-wrap_detail--box">
+                            <div class="C-wrap_detail--box--pic">
+                                <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010314165_sub07_L.jpg" alt="">
+                            </div>
+                            <div class="C-wrap_detail--box--txt">
+                                <p class="detailTtl">ICE COTTTON リブヘンリーネック</p>
+                                <p class="detailPrice">¥14,300(tax in)</p>
+                                <p class="detailTxt">
+                                    素材:アイスコットン / サイズ：FREE<br>
+                                    カラー：ブルー
+                                </p>
+                            </div>
+                        </a>
+                        <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010314165&cat=500065" class="C-wrap_detail--btn">ITEM DETAIL</a>
+                    </div>
+                </div>
+                <div class="C-wrap_list">
+                    <img class="C-wrap_pic" src="images/pic_c_02.jpg" alt="">
+                    <div class="C-wrap_detail">
+                        <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010315111&cat=500011" class="C-wrap_detail--box">
+                            <div class="C-wrap_detail--box--pic">
+                                <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010315111_sub06_L.jpg" alt="">
+                            </div>
+                            <div class="C-wrap_detail--box--txt">
+                                <p class="detailTtl">ICE COTTTON リブカーディガン</p>
+                                <p class="detailPrice">¥15,400(tax in)</p>
+                                <p class="detailTxt">
+                                    素材:アイスコットン / サイズ：FREE<br>
+                                    カラー：ホワイト
+                                </p>
+                            </div>
+                        </a>
+                        <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010315111&cat=500011" class="C-wrap_detail--btn">ITEM DETAIL</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- //////////////////
+            /////// TEMPLATE A 
+            ///////////////////////-->
+            <div class="A-wrap A-wrap00">
+                <p class="A-wrap_txt">
+                    スイスの名門紡績メーカーが開発した「 ICE COTTON」を贅沢に使用。最大の特徴は「接触冷感」。<br>
+                    ひんやりとしたドライなタッチが湿度の高い時期にも肌離れ良く快適で、夏場まで心地よく使用できます。<br>
+                    飽きのこないミニマルなデザインで、レイヤードでも1枚でも着やすいデザイン。<br>
+                    プルオーバータイプだけでなく、下までボタンがついたカーディガンタイプも。
+                </p>
+                <p class="A-wrap_ttl">
+                    color variation
+                </p>
+                <img class="A-wrap_pic" src="images/pic_a_01.jpg" alt="">
+            </div>
+
+            <!-- //////////////////
+            /////// BTN
+            ///////////////////////-->
+            <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&udns=2&fpfl=0&_material=%E3%82%A2%E3%82%A4%E3%82%B9%E3%82%B3%E3%83%83%E3%83%88%E3%83%B3&pno=1" class="ctsArea_btn">MORE</a>
+
+            <!-- //////////////////
+            /////// TEMPLATE D
+            ///////////////////////-->
+            <div class="D-wrap">
+                <p class="A-wrap_ttl">
+                    心地よいフィット感で、<br class="sp_contents">どんなコーデにも寄り添うデザイン
+                </p>
+                <img class="D-wrap_pic" src="images/pic_d_01.jpg" alt="">
+                <div class="D-wrap_box">
+                    <div class="D-wrap_box--pic">
+                        <img src="images/pic_d_02.jpg" alt="">
+                    </div>
+                </div>
+                <p class="A-wrap_txt">
+                    伸縮性が高く、心地良く身体にフィットしてくれるデザイン。<br class="pc_contents">繊細なリブの上品さと、サラッと着れるカジュアルさを合わせ持ち、ルールに囚われず自分らしく楽しむことができるアイテムです。<br class="sp_contents">レイヤードでもかさばらず、毎日のコーディネートを楽にしてくれます。
+                </p>
+                <div class="A-wrap_detail">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010564161&cat=500061" class="A-wrap_detail--box">
+                        <div class="A-wrap_detail--box--pic">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010564161_sub07_L.jpg" alt="">
+                        </div>
+                        <div class="A-wrap_detail--box--txt">
+                            <p class="detailTtl">ブラタクシルクキャミドレス</p>
+                            <p class="detailPrice">¥25,300(tax in)</p>
+                            <p class="detailTxt">
+                                素材:ブラタクシルク    サイズ：FREE<br>
+                                カラー：サックス
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010564161&cat=500061" class="A-wrap_detail--btn">ITEM DETAIL</a>
+                </div>
+                <div class="A-wrap_detail">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010314115&cat=500015" class="A-wrap_detail--box">
+                        <div class="A-wrap_detail--box--pic">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010314115_sub06_L.jpg" alt="">
+                        </div>
+                        <div class="A-wrap_detail--box--txt">
+                            <p class="detailTtl">ICE COTTON リブヘンリーネック</p>
+                            <p class="detailPrice">¥14,300(tax in)</p>
+                            <p class="detailTxt">
+                                素材:アイスコットン   サイズ：FREE<br>
+                                カラー：グレー
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010314115&cat=500015" class="A-wrap_detail--btn">ITEM DETAIL</a>
+                </div>
+            </div>
+
+            <!-- //////////////////
+            /////// BTN
+            ///////////////////////-->
+            <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&udns=2&fpfl=0&_material=%E3%82%A2%E3%82%A4%E3%82%B9%E3%82%B3%E3%83%83%E3%83%88%E3%83%B3&pno=1" class="ctsArea_btn">MORE</a>
+
+            <!-- //////////////////
+            /////// TEMPLATE A 
+            ///////////////////////-->
+            <div class="A-wrap">
+                <p class="A-wrap_ttl">
+                    女性らしさが惹き立つディティール
+                </p>
+                <img class="A-wrap_pic" src="images/pic_a_02.jpg" alt="">
+                <p class="A-wrap_txt">
+                    ラインが気になるぴったりニットも、ハーフスリーブにすることで気になる部分をしっかりカバー。<br>
+                    縦のラインが強調される細かいリブのデザインですらりとした印象に。<br>
+                    ゆったりめのボトムスやフレアスカートと合わせればメリハリのあるスタイルアップコーデが叶います。
+                </p>
+                <div class="A-wrap_detail">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010314111&cat=500011" class="A-wrap_detail--box">
+                        <div class="A-wrap_detail--box--pic">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010314111_sub07_L.jpg" alt="">
+                        </div>
+                        <div class="A-wrap_detail--box--txt">
+                            <p class="detailTtl">ICE COTTON リブヘンリーネック</p>
+                            <p class="detailPrice">¥14,300(tax in)</p>
+                            <p class="detailTxt">
+                                素材:アイスコットン   サイズ：FREE<br>
+                                カラー：ホワイト
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010314111&cat=500011" class="A-wrap_detail--btn">ITEM DETAIL</a>
+                </div>
+                <div class="A-wrap_detail">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930731117&cat=500017" class="A-wrap_detail--box">
+                        <div class="A-wrap_detail--box--pic">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/1930731117_sub10_L.jpg" alt="">
+                        </div>
+                        <div class="A-wrap_detail--box--txt">
+                            <p class="detailTtl">フリーサイズテーパード</p>
+                            <p class="detailPrice">¥23,100(tax in)</p>
+                            <p class="detailTxt">
+                                素材:メリノオプティモ    サイズ：FREE<br>
+                                カラー：チャコールグレー
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930731117&cat=500017" class="A-wrap_detail--btn">ITEM DETAIL</a>
+                </div>
+            </div>
+
+            <!-- //////////////////
+            /////// BTN
+            ///////////////////////-->
+            <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&udns=2&fpfl=0&_material=%E3%82%A2%E3%82%A4%E3%82%B9%E3%82%B3%E3%83%83%E3%83%88%E3%83%B3&pno=1" class="ctsArea_btn">MORE</a>
+
+            <!-- //////////////////
+            /////// TEMPLATE F
+            ///////////////////////-->
+            <div class="F-wrap">
+                <p class="A-wrap_ttl">
+                    前開きでも着れるカーディガンタイプも
+                </p>
+                <div class="F-wrap_box">
+                    <div class="F-wrap_box--main">
+                        <img src="images/pic_f_01.jpg" alt="">
+                    </div>
+                    <div class="F-wrap_box--sub">
+                        <img src="images/pic_f_02.jpg" alt="">
+                    </div>
+                </div>
+                <p class="A-wrap_txt">
+                    下までボタンがついたカーディガンタイプのデザインも。<br class="pc_contents">前を全てしめてプルオーバーとして着こなすのも上品な雰囲気で大人可愛い着こなしに。
+                </p>
+                <div class="A-wrap_detail">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010315165&cat=500065" class="A-wrap_detail--box">
+                        <div class="A-wrap_detail--box--pic">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010315165_sub08_L.jpg" alt="">
+                        </div>
+                        <div class="A-wrap_detail--box--txt">
+                            <p class="detailTtl">ICE COTTON リブカーディガン</p>
+                            <p class="detailPrice">¥15,400(tax in)</p>
+                            <p class="detailTxt">
+                                素材:アイスコットン    サイズ：FREE<br>
+                                カラー：ブルー
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010315165&cat=500065" class="A-wrap_detail--btn">ITEM DETAIL</a>
+                </div>
+                <div class="A-wrap_detail">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010306211&cat=500011" class="A-wrap_detail--box">
+                        <div class="A-wrap_detail--box--pic">
+                            <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010306211_sub09_L.jpg" alt="">
+                        </div>
+                        <div class="A-wrap_detail--box--txt">
+                            <p class="detailTtl">SUVINオゾンニットパンツ</p>
+                            <p class="detailPrice">¥17,600(tax in)</p>
+                            <p class="detailTxt">
+                                素材:スビンコットン    サイズ：JUST FIT LOOSE<br>
+                                カラー：ホワイト
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010306211&cat=500011" class="A-wrap_detail--btn">ITEM DETAIL</a>
+                </div>
+            </div>
+
+            <!-- //////////////////
+            /////// BTN
+            ///////////////////////-->
+            <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&udns=2&fpfl=0&_material=%E3%82%A2%E3%82%A4%E3%82%B9%E3%82%B3%E3%83%83%E3%83%88%E3%83%B3&pno=1" class="ctsArea_btn">MORE</a>
+
+            <!-- //////////////////
+            /////// Latest Post
+            ///////////////////////-->
+            <div class="latestArea">
+                <p class="latestArea_ttl">Latest Post</p>
+                <div class="latestArea_box">
+                    <div class="latestArea_box--list">
+                        <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200310">
+                            <img src="images/archive01_pc.jpg" class="pc_contents" alt="">
+                            <img src="images/archive01_sp.jpg" class="sp_contents" alt="">
+                            <p class="archiveTtl">
+                                JAMAIS VU×editor_kaoの<br>
+                                「彩りのある着こなし」vol.2 &lt;Beige&gt;
+                            </p>
+                            <p class="archiveDate">
+                                2020.03.10
+                            </p>
+                        </a>
+                    </div>
+                    <div class="latestArea_box--list">
+                        <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200306">
+                            <img src="images/archive02_pc.jpg" class="pc_contents" alt="">
+                            <img src="images/archive02_sp.jpg" class="sp_contents" alt="">
+                            <p class="archiveTtl">
+                                ベーシックにとどまらない、名品シャツLIST
+                            </p>
+                            <p class="archiveDate">
+                                2020.03.06
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- //////////////////
+    /////// 着用アイテムはこちら
+    ///////////////////////-->
+    <div class="journalWrap_item">
+        <p class="journalWrap_item--ttl">着用アイテムはこちら</p>
+        <ul>
+            <!-- 最大4個まで -->
+            <li>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010314165&cat=500065">
+                    <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010314165_sub07_L.jpg" alt="">
+                    <p>
+                        ICE COTTON<br>
+                        リブヘンリーネック
+                        <span>¥14,300(tax in)</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010315111&cat=500011">
+                    <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010315111_sub06_L.jpg" alt="">
+                    <p>
+                        ICE COTTON<br>
+                        リブカーディガン
+                        <span>¥15,400(tax in)</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010564161&cat=500061">
+                    <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/2010564161_sub07_L.jpg" alt="">
+                    <p>
+                        ブラタクシルクキャミドレス
+                        <span>¥25,300(tax in)</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=1930731117&cat=500017">
+                    <img src="<%= Constants.PATH_ROOT %>Contents/ProductSubImages/0/1930731117_sub10_L.jpg" alt="">
+                    <p>
+                        フリーサイズテーパード
+                        <span>¥23,100(tax in)</span>
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="journalWrap_item--btn">すべてのアイテムをみる</a>
+    </div>
+</div>
+<%-- △編集可能領域△ --%>
+
+
+</div>
+<script type="text/javascript">
+    $(window).on('scroll', function (){
+
+        var elem = $('.latestArea_ttl');
+        var isAnimate = 'off';
+
+        elem.each(function () {
+
+            var elemOffset = $(this).offset().top - 230;
+            var scrollPos = $(window).scrollTop();
+            var wh = $(window).height();
+
+            if(scrollPos > elemOffset - wh + (wh / 2) ){
+              $('.journalWrap_item').addClass(isAnimate);
+              $('.journalWrap_item').removeClass("on");
+            }else{
+                $('.journalWrap_item').removeClass(isAnimate);
+                $('.journalWrap_item').addClass("on");
+            }
+        });
+    });
+
+    $(function(){
+        //メニューエリアの高さを調整
+        function adjustMenuHeight() {
+            $('.journalWrap_item').height($(window).height() - 150);
+        }
+
+        $(window).on('load resize', function() {
+            adjustMenuHeight();
+        });
+    });
+</script>
+</asp:Content>
+
