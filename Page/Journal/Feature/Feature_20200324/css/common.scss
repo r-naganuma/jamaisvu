@@ -1,0 +1,292 @@
+@charset  "utf-8";
+
+$bp1100: 1100px;  // スマホ
+
+@mixin bp1100 {
+  @media (max-width: ($bp1100)) {
+    @content;
+  }
+}
+
+$bp1060: 1060px;  // スマホ
+
+@mixin bp1060 {
+  @media (max-width: ($bp1060)) {
+    @content;
+  }
+}
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+#Wrap{
+	.LPpageWrap{
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+		.journalWrap {
+
+			.journalWrap_cts{
+
+				.mainArea{
+					margin-bottom: 80px;
+				
+					@include bp768 {
+						margin-bottom: 60px;
+					};
+				}
+
+				.anchorArea{
+					margin-bottom: 120px;
+				
+					@include bp768 {
+						width: 89.33%;
+						margin: 0 auto 60px;
+					};
+
+					.A-wrap_detail{
+						width: 100%;
+						margin-bottom: 40px;
+					}
+
+					.A-wrap_detail--box{
+						padding: 30px 20px 30px 30px;
+
+						@include bp768 {
+							display: block;
+							padding: 20px 15px 20px;
+						};
+					}
+
+					.A-wrap_detail--box--pic{
+						width: 240px;
+
+						@include bp768 {
+							width: 100%;
+							margin-bottom: 20px;
+						};
+					}
+
+					.A-wrap_detail--box--txt{
+						width: 420px;
+
+						@include bp768 {
+							width: 100%;
+						};
+
+						.detailTtl{
+							@include bp768 {
+								font-size: 14px;
+							};
+						}
+
+						.detailPrice{
+							margin-bottom: 10px;
+
+							@include bp768 {
+								font-size: 14px;
+								margin-bottom: 0;
+							};
+						}
+
+						.detailCts{
+							margin-top: 25px;
+
+							@include bp768 {
+								margin-top: 20px;
+							};
+						}
+					}
+
+					&_box{
+						display: flex;
+						justify-content: space-between;
+
+						&--list{
+							width: 230px;
+							height: 48px;
+							border: 1px solid #333;
+							border-radius: 2px;
+
+							@include bp768 {
+								width: 31.34%;
+								height: 35px;
+							};
+
+							a{
+								line-height: 48px;
+								text-align: center;
+								position: relative;
+								font-weight: bold;
+
+								@include bp768 {
+									line-height: 35px;
+								};
+
+								&::after{
+									content: "";
+									position: absolute;
+									top: 0;
+									bottom: 0;
+									right: 17px;
+									margin: auto;
+									z-index: 1;
+									display: block;
+									width: 7px;
+									height: 7px;
+									-moz-transform: rotate(135deg);
+									-webkit-transform: rotate(135deg);
+									transform: rotate(135deg);
+									border-top: 1px solid #333;
+									border-right: 1px solid #333;
+
+									@include bp768 {
+										right: 8.5px;
+										width: 4.5px;
+										height: 4.5px;
+									};
+								}
+
+								&:hover{
+									opacity: 1;
+									background-color: #333;
+									color: #fff;
+
+									&::after{
+										border-top: 1px solid #fff;
+										border-right: 1px solid #fff;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.ctsArea{
+
+/*====================================================================
+*    TEMPLATE A
+/*==================================================================*/
+					
+					.A-wrap{
+						@include bp768 {
+							margin: 0 auto 60px;
+						};
+					}
+
+					.A-wrap_ttl{
+						line-height: 1;
+						margin-bottom: 40px;
+
+						@include bp768 {
+							line-height: 24px;
+							margin-bottom: 20px;
+						};
+					}
+
+					.A-wrap_pic{
+						@include bp768 {
+							margin-bottom: 5px;
+						};
+					}
+
+					.A-wrap_txt{
+						margin-bottom: 40px;
+
+						@include bp768 {
+							margin-bottom: 20px;
+						};
+					}
+
+/*====================================================================
+*    TEMPLATE C
+/*==================================================================*/
+					
+					.C-wrap{
+						display: flex;
+						justify-content: space-between;
+						margin-bottom: 0;
+
+						@include bp768 {
+							width: 100%;
+							margin: 0 auto;
+						};
+					}
+
+					.C-wrap_list{
+						width: 355px;
+						margin: 0 0 40px;
+
+						@include bp768 {
+							width: 49.25%;
+						};
+					}
+
+					.C-wrap_pic{
+						margin-bottom: 0;
+
+						@include bp768 {
+							margin-bottom: 0;
+						};
+					}
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+
+					&_btn{
+						margin: -40px auto 160px;
+
+						@include bp768 {
+							margin: 0 auto 100px;
+						};
+					}
+
+					.latestArea{
+						&_box{
+							&--list{
+								.archiveTtl{
+									line-height: 2;
+
+									@include bp768 {
+										line-height: 21px;
+									};
+								}
+							}
+						}
+					}
+
+					.latestArea{
+						padding-top: 80px;
+						border-top: 1px solid #CCCCCC;
+					}
+				}
+			}
+
+			.journalWrap_item{
+				ul{
+					li{
+						a{
+							p{
+								span{
+									span{
+										display: inline;
+										margin-top: 0;
+										color: #AD2E24;
+										text-decoration: line-through;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
