@@ -31,6 +31,9 @@ body p {
   /*====================================================================
 		*    PERUVIAN PIMA COTTON
 		/*==================================================================*/
+  /*====================================================================
+		*    one cotton
+		/*==================================================================*/
 }
 
 @media (max-width: 768px) {
@@ -902,6 +905,154 @@ body p {
 
 @media (max-width: 768px) {
   #Wrap .conceptPage.peruvianPage .peruvianPage_aboutWrap {
+    padding: 50px 0;
+    margin-bottom: 70px;
+  }
+}
+
+#Wrap .conceptPage.onePage .onePage_ttl {
+  width: 130px;
+  margin: 0 auto 70px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.onePage .onePage_ttl {
+    width: 28%;
+    margin: 0 auto 40px;
+  }
+}
+
+#Wrap .conceptPage.onePage .onePage_lead {
+  text-align: center;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: #5A5A5A;
+  margin: 0 0 70px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.onePage .onePage_lead {
+    width: 89.33%;
+    text-align: left;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0 auto 16px;
+  }
+}
+
+#Wrap .conceptPage.onePage .onePage_about {
+  width: 920px;
+  margin: 120px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.onePage .onePage_about {
+    width: 89.33%;
+    margin: 60px auto;
+    display: block;
+  }
+}
+
+#Wrap .conceptPage.onePage .onePage_about--txt {
+  width: 420px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.onePage .onePage_about--txt {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+#Wrap .conceptPage.onePage .onePage_about--txt .aboutTtl {
+  font-size: 30px;
+  color: #5A5A5A;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.onePage .onePage_about--txt .aboutTtl {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+
+#Wrap .conceptPage.onePage .onePage_about--txt .aboutTxt {
+  font-size: 14px;
+  color: #5A5A5A;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.onePage .onePage_about--txt .aboutTxt {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+#Wrap .conceptPage.onePage .onePage_about--pic {
+  width: 460px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.onePage .onePage_about--pic {
+    width: 100%;
+  }
+}
+
+#Wrap .conceptPage.onePage .onePage_about.about02 .onePage_about--txt {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  width: 460px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.onePage .onePage_about.about02 .onePage_about--txt {
+    width: 100%;
+  }
+}
+
+#Wrap .conceptPage.onePage .onePage_about.about02 .onePage_about--pic {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  width: 400px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.onePage .onePage_about.about02 .onePage_about--pic {
+    width: 100%;
+  }
+}
+
+#Wrap .conceptPage.onePage .onePage_about.about03 {
+  margin: 0 auto;
+}
+
+#Wrap .conceptPage.onePage .onePage_aboutWrap {
+  background: #F2EEED;
+  padding: 120px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.onePage .onePage_aboutWrap {
     padding: 50px 0;
     margin-bottom: 70px;
   }

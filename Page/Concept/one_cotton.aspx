@@ -1,0 +1,99 @@
+﻿<%--
+=========================================================================================================
+  Module      : カスタムページテンプレート画面(CustomPageTemplate.aspx)
+ ･･･････････････････････････････････････････････････････････････････････････････････････････････････････
+  Copyright   : Copyright w2solution Co.,Ltd. 2009 All Rights Reserved.
+=========================================================================================================
+--%>
+<%-- ▽ユーザーコントロール宣言領域▽ --%>
+<%-- △ユーザーコントロール宣言領域△ --%>
+<%@ Page Title="CONCEPT｜JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store" MetaDescription="JAMAIS VU （ジャメヴ）の製品化までのストーリーページ。上質なニットが作られる製造工程をご紹介します。「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。" MetaKeywords="素材,JAMAIS VU,ジャメヴ,ジャメブ,通販,ファッション通販,Official Online Store,オンラインストア" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
+<%@ Register TagPrefix="uc" TagName="Parts000TMPL_009" Src="~/Page/Parts/Parts000TMPL_009.ascx" %>
+<%--
+
+下記のタグはファイル情報保持用です。削除しないでください。
+<%@ FileInfo LastChanged="ロゾパンサン" %>
+
+--%>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<%-- ▽編集可能領域：HEAD追加部分▽ --%>
+<link href='css/common.css?123' rel='stylesheet' type='text/css'>
+<%-- △編集可能領域△ --%>
+</asp:Content>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<div class="LPpageWrap topSpace">
+
+<%-- ▽編集可能領域：コンテンツ▽ --%>
+	<div class="conceptPage onePage">
+		<div class="onePage_ttl">
+			<img src="images/one_cotton/icn_one.png" alt="one cotton">
+		</div>
+		<p class="onePage_lead">
+			ONE COTTON は、インドから日本、そして農家から消費者のみなさんへと1つの思いがこめられたコットン。<br class="pc_contents">環境にも農家にもやさしいオーガニックコットンを、<br class="pc_contents">トレーサビリティを大事にしながら広げていく活動から生まれたコットンです。 
+		</p>
+		<div class="onePage_main">
+			<img class="pc_contents" src="images/one_cotton/one_mv.jpg" alt="one cotton">
+			<img class="sp_contents" src="images/one_cotton/one_mv_sp.jpg" alt="one cotton">
+		</div>
+		<div class="onePage_about">
+			<div class="onePage_about--txt">
+				<p class="aboutTtl">
+					ORGANIC,<br class="sp_contents">NATURE,<br class="sp_contents">ETHICAL
+				</p>
+				<p class="aboutTxt">
+					ORGANIC,NATURE,ETHICAL <br>
+					その頭文字をとったONE COTTON。<br>
+					オーガニックコットン、それを作るのは<br class="sp_contents">簡単ではありません。<br>
+					農家の人々の努力、それを支えるパートナーの協力に<br class="sp_contents">よって<br class="pc_contents">できあがる1つの作品です。
+
+				</p>
+			</div>
+			<div class="onePage_about--pic">
+				<img src="images/one_cotton/img_01_01.jpg" alt="one cotton">
+			</div>
+		</div>
+		<div class="onePage_about about02">
+			<div class="onePage_about--txt">
+				<p class="aboutTtl">
+					なぜ<br>オーガニックがよいのか
+				</p>
+				<p class="aboutTxt">
+					なぜオーガニックなのか、どのようにして作られるのか、どうしたら広がっていくのか。<br>
+					実はあまり消費者の方々にあまり知られていないのが現状です。<br>
+					<br>
+					コットンの栽培には多くの化学薬品が使用されています。<br class="pc_contents">コットン畑はインドの全耕作地の5％に過ぎないにもかかわらず、国内で消費される農薬の半分の量が、コットン栽培に使われています。<br>
+					<br>
+					オーガニックコットンは、生産者の人々の健康や環境を大きく改善するために大事なものなのです。
+				</p>
+			</div>
+			<div class="onePage_about--pic">
+				<img src="images/one_cotton/img_02_01.jpg" alt="one cotton">
+			</div>
+		</div>
+		<div class="onePage_aboutWrap">
+			<div class="onePage_about about03">
+				<div class="onePage_about--txt">
+					<p class="aboutTtl">
+						トレーサビリティ
+					</p>
+					<p class="aboutTxt">
+						ONE COTTONを作り出すまでの工程は、農家が畑で綿を栽培・収穫して、それをジニング（綿繰り）工場で種と綿に分け、綿を紡績工場に送って糸にするまで、どこで行われたかを見える形にする、トレーサビリティを大事にしています。<br>
+						<br>
+						広いインドでのその作業にはまだまだ苦労もありますが、インドに足しげく通うことで、この活動を確かなものにしていきます。
+					</p>
+				</div>
+				<div class="onePage_about--pic">
+					<img src="images/one_cotton/img_03_01.png" alt="one cotton">
+				</div>
+			</div>
+		</div>
+		<uc:Parts000TMPL_009 runat="server" />
+	</div>
+<%-- △編集可能領域△ --%>
+
+
+</div>
+</asp:Content>
+

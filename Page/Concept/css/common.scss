@@ -805,5 +805,132 @@ body{
 				}
 			}
 		}
+
+		/*====================================================================
+		*    one cotton
+		/*==================================================================*/
+
+		&.onePage{
+			.onePage{
+				&_ttl{
+					width: 130px;
+					margin: 0 auto 70px;
+
+					@include bp768 {
+						width: 28%;
+						margin: 0 auto 40px;
+					};
+				}
+
+				&_lead{
+					text-align: center;
+					font-size: 14px;
+					line-height: 2;
+					letter-spacing: 0.03em;
+					color: #5A5A5A;
+					margin: 0 0 70px;
+
+					@include bp768 {
+						width: 89.33%;
+						text-align: left;
+						font-size: 13px;
+						line-height: 24px;
+						margin: 0 auto 16px;
+					};
+				}
+
+				&_about{
+					width: 920px;
+					margin: 120px auto;
+					display: flex;
+					justify-content: space-between;
+					align-items: flex-end;
+
+					@include bp768 {
+						width: 89.33%;
+						margin: 60px auto;
+						display: block;
+					};
+
+					&--txt{
+						width: 420px;
+
+						@include bp768 {
+							width: 100%;
+							margin-bottom: 30px;
+						};
+
+						.aboutTtl{
+							font-size: 30px;
+							color: #5A5A5A;
+							line-height: 44px;
+							letter-spacing: 0.03em;
+							margin-bottom: 20px;
+
+							@include bp768 {
+								font-size: 26px;
+								line-height: 35px;
+							};
+						}
+
+						.aboutTxt{
+							font-size: 14px;
+							color: #5A5A5A;
+							line-height: 2;
+							letter-spacing: 0.03em;
+
+							@include bp768 {
+								font-size: 13px;
+								line-height: 24px;
+							};
+						}
+					}
+
+					&--pic{
+						width: 460px;
+
+						@include bp768 {
+							width: 100%;
+						};
+					}
+
+					&.about02{
+						.onePage_about--txt{
+							order: 2;
+							width: 460px;
+
+							@include bp768 {
+								width: 100%;
+							};
+						}
+
+						.onePage_about--pic{
+							order: 1;
+							width: 400px;
+
+							@include bp768 {
+								width: 100%;
+							};
+						}
+					}
+
+					&.about03{
+						margin: 0 auto;
+					}
+				}
+
+				&_aboutWrap{
+					background: #F2EEED;
+					padding: 120px 0;
+					box-sizing: border-box;
+					margin-bottom: 100px;
+
+					@include bp768 {
+						padding: 50px 0;
+						margin-bottom: 70px;
+					};
+				}
+			}
+		}
 	}
 }
