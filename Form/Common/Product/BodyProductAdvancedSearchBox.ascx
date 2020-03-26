@@ -22,7 +22,7 @@
 </asp:UpdatePanel>
 <%-- ▽編集可能領域：コンテンツ▽ --%>
 <div id="dvProductAdvancedSearch" runat="server" class="dvProductAdvancedSearch searchWrap">
-<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="saleItemTxt">3/12新作商品入荷</a>
+<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="saleItemTxt">3/26新作商品入荷</a>
 <p class="sp_contents searchBtnSp"><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_search_white.png" alt="">商品を絞り込む</p>
 <div class="searchBox">
 <p class="sp_contents searchBtnCloseSp">商品を絞り込む</p>
@@ -246,6 +246,7 @@
 				<asp:ListItem>リバティー</asp:ListItem>
 				<asp:ListItem>ペルビアンピマコットン</asp:ListItem>
 				<asp:ListItem>アイスコットン</asp:ListItem>
+				<asp:ListItem>和紙繊維</asp:ListItem>
 			</asp:CheckBoxList>
 		</div>
 	</td>
