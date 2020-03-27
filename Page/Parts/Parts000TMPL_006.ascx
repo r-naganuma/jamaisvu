@@ -23,6 +23,22 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
+				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200327/">
+					<div class="journalTop_archive--list--pic">
+	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200327journal.jpg">
+	                </div>
+					<div class="journalTop_archive--list--txt">
+		                <p class="journalCat">FEATURE</p>
+		                <p class="journalTtl">
+		                	普段着がひときわ華やぐ。<br>この春選びたいカーディガン2Type
+		                </p>
+		                <p class="journalDate">2020.03.27</p>
+		            </div>
+				</a>
+			<!-- -->
+		</div>
+		<div class="journalTop_archive">
+			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200324/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200324journal.jpg">
@@ -35,9 +51,7 @@
 		                <p class="journalDate">2020.03.24</p>
 		            </div>
 				</a>
-			<!-- -->
-		</div>
-		<div class="journalTop_archive">
+	        </div>
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200319/">
 					<div class="journalTop_archive--list--pic">
@@ -66,7 +80,7 @@
 		            </div>
 				</a>
 	        </div>
-			<div class="journalTop_archive--list">
+			<!-- <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200313/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200313journal.jpg">
@@ -77,21 +91,6 @@
 		                	夏先まで重宝する、頼れるリブニット
 		                </p>
 		                <p class="journalDate">2020.03.13</p>
-		            </div>
-				</a>
-	        </div>
-			<!-- <div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200310/">
-					<div class="journalTop_archive--list--pic">
-	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200310journal.jpg">
-	                </div>
-					<div class="journalTop_archive--list--txt">
-		                <p class="journalCat">FEATURE</p>
-		                <p class="journalTtl">
-		                	JAMAIS VU×editor_kaoの<br>
-		                	「彩りのある着こなし」vol.2 &lt;Beige&gt;
-		                </p>
-		                <p class="journalDate">2020.03.10</p>
 		            </div>
 				</a>
 	        </div> -->
