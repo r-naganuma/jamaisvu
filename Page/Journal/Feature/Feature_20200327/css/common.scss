@@ -40,12 +40,6 @@ $bp768: 768px;  // スマホ
 					@include bp768 {
 						margin-bottom: 80px;
 					};
-
-					&_lead{
-						@include bp768 {
-							font-size: 14px;
-						};
-					}
 				}
 
 				.ctsArea{
@@ -55,7 +49,7 @@ $bp768: 768px;  // スマホ
 /*==================================================================*/
 					
 					.A-wrap{
-						margin-bottom: 40px;
+						margin-bottom: 80px;
 
 						@include bp768 {
 							margin: 0 auto 40px;
@@ -63,9 +57,9 @@ $bp768: 768px;  // スマホ
 					}
 
 					.A-wrap_ttl{
-						font-size: 18px;
+						font-size: 11px;
 						line-height: 1;
-						margin-bottom: 20px;
+						margin-bottom: 40px;
 
 						@include bp768 {
 							font-size: 16px;
@@ -75,161 +69,11 @@ $bp768: 768px;  // スマホ
 					}
 
 					.A-wrap_txt{
-						margin-bottom: 20px;
+						margin-bottom: 0;
 
 						@include bp768 {
 							font-size: 14px;
 							margin-bottom: 20px;
-						};
-					}
-
-/*====================================================================
-*    TEMPLATE C
-/*==================================================================*/
-					
-					.C-wrap{
-						display: flex;
-						justify-content: space-between;
-						margin-bottom: 0;
-
-						@include bp768 {
-							width: 100%;
-							margin: 0 auto;
-							display: block;
-						};
-					}
-
-					.C-wrap_list{
-						width: 355px;
-						margin: 0 0 40px;
-
-						@include bp768 {
-							width: 100%;
-							margin: 0 0 40px;
-						};
-
-						&:last-child{
-							margin: 0 0 20px;
-						}
-					}
-
-					.C-wrap_pic{
-						margin-bottom: 0;
-
-						@include bp768 {
-							margin-bottom: 0;
-						};
-					}
-
-/*====================================================================
-*    TEMPLATE D
-/*==================================================================*/
-					
-					.D-wrap{
-						margin-bottom: 40px;
-
-						@include bp768 {
-							margin: 0 auto 40px;
-						};
-
-						.A-wrap_txt{
-							@include bp768 {
-								width: 89.33%;
-								margin-left: auto;
-								margin-right: auto;
-							};
-						}
-
-						.A-wrap_detail{
-							@include bp768 {
-								width: 89.33%;
-								margin-left: auto;
-								margin-right: auto;
-							};
-						}
-					}
-
-					.D-wrap_ttl{
-						width: 189.5px;
-						top: 28px;
-						left: 89px;
-
-						@include bp768 {
-							width: 25.07%;
-							left: 52px;
-						};
-					}
-
-					.D-wrap_box{
-						margin: -120px 0 40px 0;
-
-						@include bp768 {
-							margin: -60px 0 20px 0;
-						};
-					}
-
-					.D-wrap_pic{
-						padding-top: 0;
-
-						@include bp768 {
-							padding-top: 0;
-						};
-					}
-
-/*====================================================================
-*    TEMPLATE F
-/*==================================================================*/
-					
-					.F-wrap{
-						margin-bottom: 40px;
-
-						@include bp768 {
-							margin: 0 auto 40px;
-						};
-
-						.A-wrap_txt{
-							@include bp768 {
-								width: 89.33%;
-								margin-left: auto;
-								margin-right: auto;
-							};
-						}
-
-						.A-wrap_detail{
-							@include bp768 {
-								width: 89.33%;
-								margin-left: auto;
-								margin-right: auto;
-							};
-						}
-					}
-
-					.F-wrap_ttl{
-						width: 191.5px;
-						top: 30px;
-						right: 205px;
-
-						@include bp1060 {
-							width: 25.33%;
-							right: 112.3px;
-						};
-					}
-
-					.F-wrap_box{
-						margin: 0 0 40px;
-						padding-top: 0;
-
-						@include bp768 {
-							margin: 0 0 10px;
-							padding-top: 0;
-						};
-					}
-
-					.F-wrap_box--sub{
-						margin: 336px 0 0 0;
-
-						@include bp1060 {
-							margin: 157px 0 0 0;
 						};
 					}
 
