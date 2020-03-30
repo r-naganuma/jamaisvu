@@ -48,7 +48,7 @@
 					<h3>
 						<%#: ValueText.GetValueText(Constants.TABLE_ORDER, Constants.FIELD_ORDER_ORDER_STATUS, Eval(Constants.FIELD_ORDER_ORDER_STATUS)) %><%#: (string)Eval(Constants.FIELD_ORDER_SHIPPED_CHANGED_KBN) == Constants.FLG_ORDER_SHIPPED_CHANGED_KBN_CHANAGED ? "（変更有り）" : "" %><br class="sp_contents">
 						<span class="historyTtlSpan">注文日：<%#: DateTimeUtility.ToStringFromRegion(Eval(Constants.FIELD_ORDER_ORDER_DATE), DateTimeUtility.FormatType.ShortDate2Letter) %></span>
-						<span class="historyTtlSpan">発送予定日：<%#: GetScheduledShippingDate(Eval(Constants.FIELD_ORDER_ORDER_ID).ToString()) %></span>
+						<!-- <span class="historyTtlSpan">発送予定日：<%#: GetScheduledShippingDate(Eval(Constants.FIELD_ORDER_ORDER_ID).ToString()) %></span> -->
 					</h3>
 					<div class="registWrap_box--input orderHistoryList">
 						<div class="orderHistoryList_left">
@@ -94,12 +94,12 @@
 								<dd>
 									<%#: Eval(Constants.FIELD_ORDER_ORDER_PAYMENT_KBN) %>
 								</dd> -->
-								<dt>
+<!-- 								<dt>
 									配送希望日
 								</dt>
 								<dd>
 									<%# WebSanitizer.HtmlEncodeChangeToBr(GetShippingDate(Eval(Constants.FIELD_ORDER_ORDER_ID).ToString())) %>
-								</dd>
+								</dd> -->
 							</dl>
 							<a href='<%#: Constants.PATH_ROOT + Constants.PAGE_FRONT_ORDER_HISTORY_DETAIL + "?" + Constants.REQUEST_KEY_ORDER_ID + "=" + HttpUtility.UrlEncode((string)Eval(Constants.FIELD_ORDER_ORDER_ID)) %>' class="orderHistoryBtnDetail">購入履歴詳細</a>
 						</div>
