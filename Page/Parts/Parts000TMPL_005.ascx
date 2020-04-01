@@ -19,10 +19,10 @@
 	<div class="mainVisualRev_slide">
 	    <div class="mainVisualRev_main">
 	        <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_main01.jpg" alt="">
-	        <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_sp01.png" alt="">
+	        <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_sp01.jpg" alt="">
 	    </div>
 	    <div class="mainVisualRev_sub pc_contents">
-	        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_sub01.png" alt="">
+	        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_sub01.jpg" alt="">
 	    </div>
 	</div>
 	<div class="mainVisualRev_slide">
@@ -37,19 +37,10 @@
 	<div class="mainVisualRev_slide">
 	    <div class="mainVisualRev_main">
 	        <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_main03.jpg" alt="">
-	        <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_sp03.png" alt="">
+	        <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_sp03.jpg" alt="">
 	    </div>
 	    <div class="mainVisualRev_sub pc_contents">
-	        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_sub03.png" alt="">
-	    </div>
-	</div>
-	<div class="mainVisualRev_slide">
-	    <div class="mainVisualRev_main">
-	        <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_main04.jpg" alt="">
-	        <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_sp04.png" alt="">
-	    </div>
-	    <div class="mainVisualRev_sub pc_contents">
-	        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_sub04.png" alt="">
+	        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_sub03.jpg" alt="">
 	    </div>
 	</div>
 </div>
