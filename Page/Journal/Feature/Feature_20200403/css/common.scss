@@ -1,0 +1,308 @@
+@charset  "utf-8";
+
+$bp1100: 1100px;  // スマホ
+
+@mixin bp1100 {
+  @media (max-width: ($bp1100)) {
+    @content;
+  }
+}
+
+$bp1060: 1060px;  // スマホ
+
+@mixin bp1060 {
+  @media (max-width: ($bp1060)) {
+    @content;
+  }
+}
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+
+.pc_inline {
+	display: inline!important;
+
+	@include bp768 {
+		display: none!important;
+	};
+}
+
+.sp_inline {
+  display: none!important;
+
+	@include bp768 {
+		display: inline!important;
+	};
+}
+
+#Wrap{
+	.LPpageWrap{
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+		.journalWrap {
+
+			.journalWrap_cts{
+
+				.mainArea{
+					margin-bottom: 80px;
+				
+					@include bp768 {
+						margin-bottom: 40px;
+					};
+
+					&_lead{
+						text-align: center;
+				
+						@include bp768 {
+							font-size: 14px;
+						};
+					}
+				}
+
+				.ctsArea{
+
+					.couponArea{
+						&_txt01{
+							font-weight: bold;
+							font-size: 20px;
+							line-height: 26px;
+							text-align: center;
+							margin-bottom: 20px;
+				
+							@include bp768 {
+								font-size: 16.5px;
+								line-height: 32px;
+								margin-bottom: 5px;
+								font-weight: 500;
+							};
+						}
+
+						&_txt02{
+							text-align: center;
+						}
+
+						&_txt03{
+							line-height: 1;
+							text-align: center;
+							margin: 20px 0 10px;
+							letter-spacing: 0.08em;
+				
+							@include bp768 {
+								margin: 20px 0 5px;
+							};
+						}
+
+						&_code{
+							width: 200px;
+							height: 60px;
+							border: 1px solid #CCCCCC;
+							margin: 0 auto 20px;
+
+							p{
+								font-size: 28px;
+								text-align: center;
+								line-height: 60px;
+								letter-spacing: 0.1em;
+								font-family: "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, Lato, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+								font-weight: 400;
+							}
+						}
+
+						&_txt04{
+							text-align: center;
+						}
+
+						&_note{
+							line-height: 1;
+							color: #6F7579;
+							text-align: center;
+							margin-top: 20px;
+				
+							@include bp768 {
+								line-height: 24px;
+							};
+
+							& + .couponArea_note{
+								margin: 10px 0 40px;
+							}
+						}
+					}
+
+/*====================================================================
+*    TEMPLATE A
+/*==================================================================*/
+					
+					.A-wrap{
+						margin-bottom: 40px;
+
+						@include bp768 {
+							margin: 0 auto 40px;
+						};
+					}
+
+					.A-wrap_pic{
+						margin-bottom: 40px;
+
+						@include bp768 {
+							margin-bottom: 20px;
+						};
+					}
+
+					.A-wrap_ttl{
+						font-size: 18px;
+						line-height: 1;
+						margin-bottom: 40px;
+
+						@include bp768 {
+							font-size: 16px;
+							line-height: 1;
+							margin-bottom: 20px;
+						};
+					}
+
+					.A-wrap_txt{
+						@include bp768 {
+							font-size: 14px;
+						};
+
+						span{
+							font-weight: bold;
+							display: block;
+							margin-bottom: 10px;
+
+							@include bp768 {
+								font-size: 14px;
+								margin-bottom: 20px;
+								font-weight: 500;
+							};
+						}
+					}
+
+/*====================================================================
+*    TEMPLATE F
+/*==================================================================*/
+					
+					.F-wrap{
+						margin-bottom: 40px;
+
+						@include bp768 {
+							margin: 0 auto 40px;
+						};
+
+						.A-wrap_ttl{
+							@include bp768 {
+								width: 89.33%;
+								margin-left: auto;
+								margin-right: auto;
+							};
+						}
+
+						.A-wrap_txt{
+							@include bp768 {
+								width: 89.33%;
+								margin-left: auto;
+								margin-right: auto;
+							};
+						}
+
+						.A-wrap_detail{
+							@include bp768 {
+								width: 89.33%;
+								margin-left: auto;
+								margin-right: auto;
+							};
+						}
+					}
+
+					.F-wrap_box{
+						margin: 0 0 40px;
+						padding-top: 0;
+
+						@include bp768 {
+							margin: 0 0 20px;
+							padding-top: 0;
+						};
+					}
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+
+					&_btn{
+						margin: 0 auto 120px;
+
+						@include bp768 {
+							margin: 0 auto 80px;
+						};
+
+						&.btn02{
+							margin-bottom: 40px;
+
+							@include bp768 {
+								width: 100%;
+								margin-bottom: 40px;
+							};
+						}
+
+						&.btn03{
+							margin-bottom: 160px;
+
+							@include bp768 {
+								margin-bottom: 80px;
+							};
+						}
+					}
+
+					.latestArea{
+						&_box{
+							&--list{
+								.archiveTtl{
+									line-height: 2;
+
+									@include bp768 {
+										line-height: 21px;
+									};
+								}
+							}
+						}
+					}
+
+					.latestArea{
+						padding-top: 80px;
+						border-top: 1px solid #CCCCCC;
+					}
+				}
+			}
+
+			.journalWrap_item{
+				ul{
+					li{
+						a{
+							p{
+								span{
+									span{
+										display: inline;
+										margin-top: 0;
+										color: #AD2E24;
+										text-decoration: line-through;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
