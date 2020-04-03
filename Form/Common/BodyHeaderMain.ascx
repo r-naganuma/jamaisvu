@@ -39,19 +39,19 @@ function initializeFunctionJs() {
 	});
 
 	if (document.URL.match("Journal")) {
-	  $(".header__nav--list li:nth-child(2)").addClass("on");
+	  $(".header__nav--list li.navJournal").addClass("on");
 	}
 
 	if (document.URL.match("styling")) {
-	  $(".header__nav--list li:nth-child(3)").addClass("on");
+	  $(".header__nav--list li.navStyle").addClass("on");
 	}
 
 	if (document.URL.match("lookbook")) {
-	  $(".header__nav--list li:nth-child(4)").addClass("on");
+	  $(".header__nav--list li.navLookbook").addClass("on");
 	}
 
 	if (document.URL.match("Concept")) {
-	  $(".header__nav--list li:nth-child(5)").addClass("on");
+	  $(".header__nav--list li.navConcept").addClass("on");
 	} //ヘッダーメニューマウスオーバー
 
 
@@ -159,7 +159,7 @@ function initializeFunctionJs() {
 					</h1>
 					<nav class="header__nav">
 						<ul class="header__nav--list">
-							<li class="menuOpen">
+							<li class="menuOpen navItems">
 								<div class="listColumn">
 									<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="period">ITEMS</a>
 								</div>
@@ -224,11 +224,11 @@ function initializeFunctionJs() {
 													新着商品
 												</a>
 											</li>
-											<li>
+											<!-- <li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
 													セール
 												</a>
-											</li>
+											</li> -->
 											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=magazine&udns=2&fpfl=0&pno=1">
 													雑誌掲載アイテム
@@ -241,22 +241,22 @@ function initializeFunctionJs() {
 									</div>
 								</div>
 							</li>
-							<li>
+							<li class="navJournal">
 								<div class="listColumn">
 									<a href="<%= Constants.PATH_ROOT %>Page/Journal/" class="period">JOURNAL</a>
 								</div>
 							</li>
-							<li>
+							<li class="navStyle">
 								<div class="listColumn">
 									<a href="<%= Constants.PATH_ROOT %>Page/styling/" class="period">STYLE IDEA</a>
 								</div>
 							</li>
-							<li>
+							<!-- <li class="navLookbook">
 								<div class="listColumn">
 									<a href="<%= Constants.PATH_ROOT %>Page/lookbook/" class="period">LOOKBOOK</a>
 								</div>
-							</li>
-							<li>
+							</li> -->
+							<li class="navConcept">
 								<div class="listColumn">
 									<a href="<%= Constants.PATH_ROOT %>Page/Concept/" class="period">CONCEPT</a>
 								</div>
@@ -464,17 +464,14 @@ function initializeFunctionJs() {
 											新着商品
 										</a>
 										<div class="navUpdate">
-											<p>3/26 UP</p>
+											<p>4/2 UP</p>
 										</div>
 									</li>
-									<li>
+									<!-- <li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
 											セール
 										</a>
-										<!-- <div class="navUpdate">
-											<p>1/14 UP</p>
-										</div> -->
-									</li>
+									</li> -->
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=magazine&udns=2&fpfl=0&pno=1">
 											雑誌掲載アイテム
@@ -552,11 +549,11 @@ function initializeFunctionJs() {
 											STYLE IDEA
 										</a>
 									</li>
-									<li>
+									<!-- <li>
 										<a href="<%= Constants.PATH_ROOT %>Page/lookbook/">
 											LOOKBOOK
 										</a>
-									</li>
+									</li> -->
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Page/Concept/">
 											CONCEPT
