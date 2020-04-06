@@ -1,0 +1,173 @@
+@charset  "utf-8";
+
+$bp1100: 1100px;  // スマホ
+
+@mixin bp1100 {
+  @media (max-width: ($bp1100)) {
+    @content;
+  }
+}
+
+$bp1060: 1060px;  // スマホ
+
+@mixin bp1060 {
+  @media (max-width: ($bp1060)) {
+    @content;
+  }
+}
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+
+.pc_inline {
+	display: inline!important;
+
+	@include bp768 {
+		display: none!important;
+	};
+}
+
+.sp_inline {
+  display: none!important;
+
+	@include bp768 {
+		display: inline!important;
+	};
+}
+
+#Wrap{
+	.LPpageWrap{
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+		.journalWrap {
+
+			.journalWrap_cts{
+
+				.mainArea{
+					margin-bottom: 80px;
+				
+					@include bp768 {
+						margin-bottom: 80px;
+					};
+
+					&_lead{
+						@include bp768 {
+							font-size: 14px;
+						};
+					}
+				}
+
+				.ctsArea{
+
+/*====================================================================
+*    TEMPLATE A
+/*==================================================================*/
+					
+					.A-wrap{
+						margin-bottom: 80px;
+
+						@include bp768 {
+							margin: 0 auto 40px;
+						};
+					}
+
+					.A-wrap_pic{
+						margin-bottom: 40px;
+
+						@include bp768 {
+							margin-bottom: 20px;
+						};
+					}
+
+					.A-wrap_ttl{
+						line-height: 1;
+						margin-bottom: 20px;
+						text-align: center;
+
+						@include bp768 {
+							line-height: 1;
+							margin-bottom: 20px;
+						};
+					}
+
+					.A-wrap_txt{
+						@include bp768 {
+							font-size: 14px;
+							margin-bottom: 20px;
+						};
+
+						span{
+							font-weight: bold;
+
+							@include bp768 {
+								font-size: 14px;
+								font-weight: 500;
+							};
+						}
+					}
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+
+					&_btn{
+						margin: 0 auto 160px;
+
+						@include bp768 {
+							margin: 0 auto 80px;
+						};
+					}
+
+					.latestArea{
+						&_box{
+							&--list{
+								.archiveTtl{
+									line-height: 2;
+
+									@include bp768 {
+										line-height: 21px;
+									};
+								}
+							}
+						}
+					}
+
+					.latestArea{
+						padding-top: 80px;
+						border-top: 1px solid #CCCCCC;
+					}
+				}
+			}
+
+			.journalWrap_item{
+				ul{
+					li{
+						a{
+							p{
+								span{
+									span{
+										display: inline;
+										margin-top: 0;
+										color: #AD2E24;
+										text-decoration: line-through;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
