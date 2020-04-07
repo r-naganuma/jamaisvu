@@ -36,12 +36,6 @@
 				<p>SUVIN COTTON</p>
 			</a>
 		</div>
-		<!-- <div class="materialList">
-			<a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
-				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_ice.png" alt="ICE COTTON">
-				<p>ICE COTTON</p>
-			</a>
-		</div> -->
 		<div class="materialList">
 			<a href="<%= Constants.PATH_ROOT %>Page/Concept/bratac_silk.aspx">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_bratac.png" alt="BRATAC SILK">
@@ -70,6 +64,12 @@
 			<a href="<%= Constants.PATH_ROOT %>Page/Concept/one_cotton.aspx">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_one.png" alt="ONE COTTON">
 				<p>ONE COTTON</p>
+			</a>
+		</div>
+		<div class="materialList">
+			<a href="<%= Constants.PATH_ROOT %>Page/Concept/ice_cotton.aspx">
+				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_ice.png" alt="SPOERRY ICE COTTON">
+				<p>SPOERRY ICE COTTON</p>
 			</a>
 		</div>
 	</div>
