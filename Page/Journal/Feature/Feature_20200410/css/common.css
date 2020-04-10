@@ -1,0 +1,329 @@
+#Wrap .LPpageWrap {
+  /*====================================================================
+*    ALL
+/*==================================================================*/
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea {
+    margin-bottom: 60px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea {
+  margin-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea {
+    width: 89.33%;
+    margin: 0 auto 60px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea .A-wrap_detail {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea .A-wrap_detail--box {
+  padding: 30px 20px 30px 30px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea .A-wrap_detail--box {
+    display: block;
+    padding: 20px 15px 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea .A-wrap_detail--box--pic {
+  width: 240px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea .A-wrap_detail--box--pic {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea .A-wrap_detail--box--txt {
+  width: 420px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea .A-wrap_detail--box--txt {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea .A-wrap_detail--box--txt .detailTtl {
+    font-size: 14px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea .A-wrap_detail--box--txt .detailPrice {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea .A-wrap_detail--box--txt .detailPrice {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea .A-wrap_detail--box--txt .detailCts {
+  margin-top: 25px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea .A-wrap_detail--box--txt .detailCts {
+    margin-top: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea_box--list {
+  width: 230px;
+  height: 48px;
+  border: 1px solid #333;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea_box--list {
+    width: 31.34%;
+    height: 35px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea_box--list a {
+  line-height: 48px;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea_box--list a {
+    line-height: 35px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea_box--list a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 17px;
+  margin: auto;
+  z-index: 1;
+  display: block;
+  width: 7px;
+  height: 7px;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea_box--list a::after {
+    right: 8.5px;
+    width: 4.5px;
+    height: 4.5px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea_box--list a:hover {
+  opacity: 1;
+  background-color: #333;
+  color: #fff;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .anchorArea_box--list a:hover::after {
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea {
+  /*====================================================================
+*    TEMPLATE A
+/*==================================================================*/
+  /*====================================================================
+*    TEMPLATE D
+/*==================================================================*/
+  /*====================================================================
+*    TEMPLATE F
+/*==================================================================*/
+  /*====================================================================
+*    ALL
+/*==================================================================*/
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap {
+    margin: 0 auto 60px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl {
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl {
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl span {
+  display: block;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl span {
+    margin-top: 10px;
+    line-height: 1;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_pic {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_pic {
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_txt {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_txt {
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .D-wrap {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .D-wrap {
+    width: 100vw;
+    margin: 0 0 40px -20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .D-wrap_pic {
+  padding-top: 0;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .D-wrap_pic {
+    padding-top: 0;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .D-wrap_box {
+  margin: -120px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .D-wrap_box {
+    margin: -60px 0 0 0;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .F-wrap {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .F-wrap {
+    width: 100vw;
+    margin: 0 0 40px -20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .F-wrap_box {
+  margin: 0;
+  padding-top: 0;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .F-wrap_box {
+    margin: 0;
+    padding-top: 0;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .F-wrap_box--sub {
+  margin: 336px 0 0 0;
+}
+
+@media (max-width: 1060px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .F-wrap_box--sub {
+    margin: 157px 0 0 0;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea_btn {
+  margin: -40px auto 160px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea_btn {
+    margin: 0 auto 100px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea_box--list .archiveTtl {
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea_box--list .archiveTtl {
+    line-height: 21px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea {
+  padding-top: 80px;
+  border-top: 1px solid #CCCCCC;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_item ul li a p span span {
+  display: inline;
+  margin-top: 0;
+  color: #AD2E24;
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=common.css.map */
