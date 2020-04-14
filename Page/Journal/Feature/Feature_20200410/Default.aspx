@@ -233,26 +233,26 @@
                 <p class="latestArea_ttl">Latest Post</p>
                 <div class="latestArea_box">
                     <div class="latestArea_box--list">
-                        <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200403">
+                        <a href="<%= Constants.PATH_ROOT %>Page/Journal/Column/Column_20200331">
                             <img src="images/archive01_pc.jpg" class="pc_contents" alt="">
                             <img src="images/archive01_sp.jpg" class="sp_contents" alt="">
-                            <p class="archiveTtl">
-                                心地良さを感じる、大人のリラックスウェア
-                            </p>
-                            <p class="archiveDate">
-                                2020.04.03
-                            </p>
-                        </a>
-                    </div>
-                    <div class="latestArea_box--list">
-                        <a href="<%= Constants.PATH_ROOT %>Page/Journal/Column/Column_20200331">
-                            <img src="images/archive02_pc.jpg" class="pc_contents" alt="">
-                            <img src="images/archive02_sp.jpg" class="sp_contents" alt="">
                             <p class="archiveTtl">
                                 カーディガン効果
                             </p>
                             <p class="archiveDate">
                                 2020.03.31
+                            </p>
+                        </a>
+                    </div>
+                    <div class="latestArea_box--list">
+                        <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200327">
+                            <img src="images/archive02_pc.jpg" class="pc_contents" alt="">
+                            <img src="images/archive02_sp.jpg" class="sp_contents" alt="">
+                            <p class="archiveTtl">
+                                普段着がひときわ華やぐ。この春選びたいカーディガン2Type
+                            </p>
+                            <p class="archiveDate">
+                                2020.03.27
                             </p>
                         </a>
                     </div>
