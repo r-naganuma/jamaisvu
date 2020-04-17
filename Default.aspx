@@ -62,15 +62,16 @@
         <%-- △HISTORY△ --%>
     </div>
 
-    <!-- <div class="floating200206">
-        <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=%E3%82%BB%E3%83%BC%E3%83%AB&pno=1">
-            <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating200206_sp.jpg" alt="">
+    <div class="floating200124">
+        <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=0417sale&udns=2&fpfl=0&pno=1">
+            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating200417_pc.png" alt="">
+            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating200417_sp.jpg" alt="">
         </a>
         <div class="button">
             <span class="bar1"></span>
             <span class="bar2"></span>
         </div>
-    </div> -->
+    </div>
 </div>
 <script type="text/javascript">
 $(function(){
@@ -95,8 +96,8 @@ $(function(){
     $("#Wrap .pageTop .mainVisualRev").css("padding-top", height);
 })
 
-    $("#Wrap .pageTop .floating200206 .button").click(function() {
-        $(".floating200206").fadeOut();
+    $("#Wrap .pageTop .floating200124 .button").click(function() {
+        $(".floating200124").fadeOut();
     })
 </script>
 <!--- page end --->

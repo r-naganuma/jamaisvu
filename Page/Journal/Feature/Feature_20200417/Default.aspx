@@ -72,7 +72,7 @@
             <!-- //////////////////
             /////// BTN
             ///////////////////////-->
-            <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="ctsArea_btn">対象アイテム一覧はこちら</a>
+            <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=0417sale&udns=2&fpfl=0&pno=1" class="ctsArea_btn">対象アイテム一覧はこちら</a>
 
             <div class="A-wrap">
                 <p class="A-wrap_ttl">
