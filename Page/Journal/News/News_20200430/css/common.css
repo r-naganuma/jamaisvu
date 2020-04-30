@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'gillsans';
+  src: url("../../../../../Font/gillsans.woff") format("woff"), url("../../../../../Font/gillsans.otf") format("opentype");
+}
+
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+@media screen and (min-width: 769px) {
+  .sp_content {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 374px) {
+  .sm_contents {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .pc_content {
+    display: none !important;
+  }
+}
+
+#Wrap .featureWrap {
+  width: 850px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap {
+    width: 89.33%;
+    font-size: 13px;
+  }
+}
+
+#Wrap .featureWrap ul {
+  margin: 0;
+  padding: 0;
+}
+
+#Wrap .featureWrap ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Wrap .featureWrap p {
+  margin: 0;
+  padding: 0;
+  line-height: 26px;
+  text-align: center;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap p {
+    line-height: 2;
+  }
+}
+
+#Wrap .featureWrap a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 300;
+  display: block;
+}
+
+#Wrap .featureWrap img {
+  width: 100%;
+  display: block;
+}
+
+#Wrap .featureWrap h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#Wrap .featureWrap .mainArea {
+  padding-top: 50px;
+  margin: 0 auto 60px;
+}
+
+#Wrap .featureWrap .mainArea h2 {
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  text-align: center;
+  font-size: 24px;
+  color: #2E0E02;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .mainArea h2 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+#Wrap .featureWrap .mainArea p {
+  font-size: 14px;
+  margin-top: 50px;
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+  letter-spacing: 0.04em;
+  line-height: 25.2px;
+  text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+  #Wrap .featureWrap .mainArea p {
+    margin-top: 40px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 2;
+  }
+}
+
+#Wrap .featureWrap .ctsList {
+  margin-bottom: 60px;
+}
+
+#Wrap .featureWrap .ctsList_ttl {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#Wrap .featureWrap .ctsList_txt {
+  text-align: left;
+}
+
+#Wrap .featureWrap .ctsList_txt span {
+  font-weight: 700;
+  color: #AD2E24;
+}
+
+#Wrap .featureWrap .lastArea {
+  margin-bottom: 80px;
+}
+
+#Wrap .featureWrap .lastArea p {
+  text-align: left;
+}
+
+/*# sourceMappingURL=common.css.map */

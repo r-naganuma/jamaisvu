@@ -146,9 +146,9 @@ function initializeFunctionJs() {
 		
 		<!--- header --->
 		<header class="header">
-			<!-- <div class="header_fixedArea">
-				<a href="https://jamaisvu.co.jp/Page/Journal/News/News_20191226/">年末年始期間の営業及び配送についてのご案内</a>
-			</div> -->
+			<div class="header_fixedArea">
+				<a href="https://jamaisvu.co.jp/Page/Journal/News/News_20200430/">ゴールデンウィーク期間の休業に関するお知らせ</a>
+			</div>
 			<!--- header PC --->
 			<div class="header__inner pc_flexOnly">
 				<div class="header__left">
