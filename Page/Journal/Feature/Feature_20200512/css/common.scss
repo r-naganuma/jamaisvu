@@ -1,0 +1,192 @@
+@charset  "utf-8";
+
+$bp1100: 1100px;  // スマホ
+
+@mixin bp1100 {
+  @media (max-width: ($bp1100)) {
+    @content;
+  }
+}
+
+$bp1060: 1060px;  // スマホ
+
+@mixin bp1060 {
+  @media (max-width: ($bp1060)) {
+    @content;
+  }
+}
+
+$bp768: 768px;  // スマホ
+
+@mixin bp768 {
+  @media (max-width: ($bp768)) {
+    @content;
+  }
+}
+
+.pc_inline {
+	display: inline!important;
+
+	@include bp768 {
+		display: none!important;
+	};
+}
+
+.sp_inline {
+  display: none!important;
+
+	@include bp768 {
+		display: inline!important;
+	};
+}
+
+#Wrap{
+	.LPpageWrap{
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+		.journalWrap {
+
+			.journalWrap_cts{
+
+				.mainArea{
+					margin-bottom: 80px;
+				
+					@include bp768 {
+						margin-bottom: 60px;
+					};
+				}
+
+				.ctsArea{
+
+/*====================================================================
+*    TEMPLATE A
+/*==================================================================*/
+
+					.A-wrap_pic{
+						margin-bottom: 40px;
+
+						@include bp768 {
+							margin-bottom: 20px;
+						};
+
+						&.pic02{
+							@include bp768 {
+								margin-bottom: 40px;
+							};
+						}
+					}
+
+					.A-wrap_ttl{
+						line-height: 1;
+						margin-bottom: 40px;
+
+						@include bp768 {
+							margin-bottom: 20px;
+						};
+					}
+
+					.A-wrap_txt{
+						margin-bottom: 40px;
+
+						@include bp768 {
+							margin-bottom: 20px;
+						};
+					}
+
+					.A-wrap_detail--box{
+						@include bp768 {
+							padding: 10px;
+						};
+					}
+
+/*====================================================================
+*    TEMPLATE F
+/*==================================================================*/
+
+					.F-wrap_box{
+						margin: 0 0 40px;
+						padding-top: 0;
+
+						@include bp768 {
+							margin: 0 0 40px -20px;
+							padding-top: 0;
+							width: 100vw;
+						};
+					}
+
+					.F-wrap_box--sub{
+						margin: 336px 0 0 0;
+
+						@include bp1060 {
+							margin: 157px 0 0 0;
+						};
+					}
+
+/*====================================================================
+*    ALL
+/*==================================================================*/
+
+					&_btn{
+						margin: -40px auto 160px;
+
+						@include bp768 {
+							margin: 0 auto 100px;
+						};
+					}
+
+					.latestArea{
+						&_box{
+							&--list{
+								.archiveTtl{
+									line-height: 2;
+
+									@include bp768 {
+										line-height: 21px;
+									};
+								}
+							}
+						}
+					}
+
+					.latestArea{
+						padding-top: 80px;
+						border-top: 1px solid #CCCCCC;
+					}
+				}
+			}
+
+			.journalWrap_item{
+				ul{
+					li{
+
+						div{
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+
+							img{
+								width: 60px;
+							}
+
+							p{
+								width: 200px;
+								font-size: 12px;
+								font-weight: bold;
+
+								span{
+									line-height: 1;
+									font-size: 12px;
+									display: block;
+									margin-top: 5px;
+									font-weight: normal;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
