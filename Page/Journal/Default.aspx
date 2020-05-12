@@ -31,6 +31,16 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200512">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200512journal.jpg">
+                    <p class="journalCat">FEATURE</p>
+                    <p class="journalTtl">
+                        クリス-ウェブ 佳子 コラボアイテム発売決定！
+                    </p>
+                    <p class="journalDate">2020.05.12</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200424">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200424journal.jpg">
                     <p class="journalCat">FEATURE</p>
