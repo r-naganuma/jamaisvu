@@ -54,21 +54,6 @@
 				</a>
 	        </div>
 			<div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200417/">
-					<div class="journalTop_archive--list--pic">
-	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200417journal.jpg">
-	                </div>
-					<div class="journalTop_archive--list--txt">
-		                <p class="journalCat">FEATURE</p>
-		                <p class="journalTtl">
-		                	25%OFF キャンペーン<br>
-		                	おうちで過ごす時に、きっと気分を上げてくれる服を
-		                </p>
-		                <p class="journalDate">2020.04.17</p>
-		            </div>
-				</a>
-	        </div>
-			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200410/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200410journal.jpg">
@@ -82,7 +67,7 @@
 		            </div>
 				</a>
 	        </div>
-			<!-- <div class="journalTop_archive--list">
+			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Column/Column_20200331/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_200331journal.jpg">
@@ -95,7 +80,7 @@
 		                <p class="journalDate">2020.03.31</p>
 		            </div>
 				</a>
-	        </div> -->
+	        </div>
 		</div>
 		<div class="btnBoxver2 btn--more">
 			<a href="<%= Constants.PATH_ROOT %>Page/Journal/">READ MORE</a>

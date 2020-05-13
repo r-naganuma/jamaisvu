@@ -62,7 +62,7 @@
         <%-- △HISTORY△ --%>
     </div>
 
-    <div class="floating200124">
+    <!-- <div class="floating200124">
         <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=0417sale&udns=2&fpfl=0&pno=1">
             <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating200417_pc.png" alt="">
             <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating200417_sp.jpg" alt="">
@@ -71,7 +71,7 @@
             <span class="bar1"></span>
             <span class="bar2"></span>
         </div>
-    </div>
+    </div> -->
 </div>
 <script type="text/javascript">
 $(function(){
