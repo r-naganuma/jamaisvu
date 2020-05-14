@@ -121,7 +121,7 @@ $bp768: 768px;  // スマホ
 						}
 					}
 
-					.A-wrap_detail--box{
+					.A-wrap_detail--box.detail02{
 						@include bp768 {
 							padding: 10px;
 						};

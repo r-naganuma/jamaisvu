@@ -87,7 +87,7 @@
                     ジャケットのインナーからワンピースやコンビネゾンと重ねてもライトで自分らしいレイヤードスタイルが完成するスペシャルトップスです。
                 </p>
                 <div class="A-wrap_detail">
-                    <div class="A-wrap_detail--box">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010323111&cat=500011" class="A-wrap_detail--box">
                         <div class="A-wrap_detail--box--pic">
                             <img src="images/item_01.jpg" alt="">
                         </div>
@@ -99,7 +99,8 @@
                                 カラー：ホワイト/ブラック/イエロー
                             </p>
                         </div>
-                    </div>
+                    </a>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010323111&cat=500011" class="A-wrap_detail--btn">ITEM DETAIL</a>
                 </div>
             </div>
 
@@ -116,7 +117,7 @@
                     なめらかで落ち感のある素材を生かしたストレートなシルエットにフロントもシームレスジップ仕様にするなど付属を極力削ぎ落としたミニマルなデザインに、クリス-ウェブ 佳子さんらしいスパイスの効いた存在感のあるバックのバックル。バックルはモダンなアクセントとしてだけでなく、着る人の身長を選ばずベルトでサイジングが自由自在という新しいアプローチが秀逸です。
                 </p>
                 <div class="A-wrap_detail">
-                    <div class="A-wrap_detail--box">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010575149&cat=500049" class="A-wrap_detail--box">
                         <div class="A-wrap_detail--box--pic">
                             <img src="images/item_02.jpg" alt="">
                         </div>
@@ -128,9 +129,15 @@
                                 カラー：ブラウン/ブラック
                             </p>
                         </div>
-                    </div>
+                    </a>
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010575149&cat=500049" class="A-wrap_detail--btn">ITEM DETAIL</a>
                 </div>
             </div>
+
+            <!-- //////////////////
+            /////// BTN
+            ///////////////////////-->
+            <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=collabitem1&udns=2&fpfl=0&pno=1" class="ctsArea_btn">アイテム詳細を見る</a>
 
             <!-- //////////////////
             /////// Latest Post
@@ -176,22 +183,22 @@
         <ul>
             <!-- 最大4個まで -->
             <li>
-                <div>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010323111&cat=500011">
                     <img src="images/item_01.jpg" alt="">
                     <p>
                         バックレースアップリブニット
                         <span>¥15,400(tax in)</span>
                     </p>
-                </div>
+                </a>
             </li>
             <li>
-                <div>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010575149&cat=500049">
                     <img src="images/item_02.jpg" alt="">
                     <p>
                         バックバックルコンビネゾン
                         <span>¥28,600(tax in)</span>
                     </p>
-                </div>
+                </a>
             </li>
         </ul>
         <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="journalWrap_item--btn">すべてのアイテムをみる</a>
