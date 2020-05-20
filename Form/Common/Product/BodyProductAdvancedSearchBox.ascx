@@ -22,7 +22,8 @@
 </asp:UpdatePanel>
 <%-- ▽編集可能領域：コンテンツ▽ --%>
 <div id="dvProductAdvancedSearch" runat="server" class="dvProductAdvancedSearch searchWrap">
-<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="saleItemTxt">5/14新作商品入荷</a>
+<!-- <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="saleItemTxt">5/14新作商品入荷</a> -->
+<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=collabitem1&udns=2&fpfl=0&pno=1" class="saleItemTxt collaboItemTxt">クリス-ウェブ 佳子<br>コラボアイテム販売開始</a>
 <p class="sp_contents searchBtnSp"><img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/common/icon_search_white.png" alt="">商品を絞り込む</p>
 <div class="searchBox">
 <p class="sp_contents searchBtnCloseSp">商品を絞り込む</p>
@@ -317,4 +318,21 @@
 	  $(".catKnit ul").slideToggle();
 	});
 </script>
+
+<style type="text/css">
+	#Wrap .pageCts_pdList--search .searchWrap .saleItemTxt.collaboItemTxt{
+		border: none;
+		text-decoration: underline;
+		width: 100%;
+		line-height: 1.5;
+		bottom: -10px;
+	}
+	@media screen and (max-width: 768px){
+		#Wrap .pageCts_pdList--search .searchWrap .saleItemTxt.collaboItemTxt{
+			display: block;
+			text-align: center;
+			bottom: inherit;
+		}
+	}
+</style>
 <%-- △編集可能領域△ --%>

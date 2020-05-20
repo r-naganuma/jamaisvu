@@ -30,7 +30,7 @@
 					<div class="journalTop_archive--list--txt">
 		                <p class="journalCat">COLUMN</p>
 		                <p class="journalTtl">
-		                	アイディアは3つに絞る
+		                	クリス-ウェブ 佳子 連載コラム<br>アイディアは3つに絞る
 		                </p>
 		                <p class="journalDate">2020.05.14</p>
 		            </div>

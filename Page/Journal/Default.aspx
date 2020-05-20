@@ -35,7 +35,7 @@
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/column_200514journal.jpg">
                     <p class="journalCat">COLUMN</p>
                     <p class="journalTtl">
-                        アイディアは3つに絞る
+                        クリス-ウェブ 佳子 連載コラム アイディアは3つに絞る
                     </p>
                     <p class="journalDate">2020.05.14</p>
                 </a>
