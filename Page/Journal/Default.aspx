@@ -31,6 +31,16 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200526">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200526journal.jpg">
+                    <p class="journalCat">FEATURE</p>
+                    <p class="journalTtl">
+                        モデル、Kanocoさんが伝える“私らしいスタイル”vol.2
+                    </p>
+                    <p class="journalDate">2020.05.26</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200522">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200522journal.jpg">
                     <p class="journalCat">FEATURE</p>
