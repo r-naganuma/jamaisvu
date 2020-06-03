@@ -65,7 +65,8 @@
 			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010321159&cat=500059">
                 <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010321159_sub07_L.jpg">
                 <p class="itemsName">【kanoco着用】SUVIN半袖ニットスウェット</p>
-                <p class="itemsPrice">¥14,300 <span>(tax in)</span></p>
+                <p class="itemsPrice priceOld">¥14,300 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥10,010 <span>(tax in)</span> <span class="off">30%OFF</span></p>
 			</a>
 		</div>
 
@@ -73,14 +74,16 @@
 			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010318211&cat=500011">
                 <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010318211_sub07_L.jpg">
                 <p class="itemsName">【kanoco着用】SUVINフィットカーディガンハーフ</p>
-                <p class="itemsPrice">¥16,500 <span>(tax in)</span></p>
+                <p class="itemsPrice priceOld">¥16,500 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥11,550 <span>(tax in)</span> <span class="off">30%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
 			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010322151&cat=500051">
                 <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2010322151_L.jpg">
                 <p class="itemsName">SUVINラグランニットスウェット</p>
-                <p class="itemsPrice">¥14,300 <span>(tax in)</span></p>
+                <p class="itemsPrice priceOld">¥14,300 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥10,010 <span>(tax in)</span> <span class="off">30%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
