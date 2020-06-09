@@ -37,6 +37,9 @@ body p {
   /*====================================================================
 		*    ice cotton
 		/*==================================================================*/
+  /*====================================================================
+		*    terredelin
+		/*==================================================================*/
 }
 
 @media (max-width: 768px) {
@@ -1194,6 +1197,144 @@ body p {
   #Wrap .conceptPage.icePage .icePage_aboutWrap {
     padding: 40px 0 50px;
     margin-bottom: 60px;
+  }
+}
+
+#Wrap .conceptPage.terredelin .terredelin_ttl {
+  width: 162px;
+  margin: 0 auto 80px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.terredelin .terredelin_ttl {
+    width: 27.33%;
+    margin: 0 auto 40px;
+  }
+}
+
+#Wrap .conceptPage.terredelin .terredelinLead {
+  width: 552px;
+  margin: 120px auto 80px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.terredelin .terredelinLead {
+    width: 80.27%;
+    margin: 60px auto 75px;
+  }
+}
+
+#Wrap .conceptPage.terredelin .terredelin_about {
+  width: 920px;
+  margin: 0 auto 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.terredelin .terredelin_about {
+    width: 89.33%;
+    margin: 0 auto 60px;
+    display: block;
+  }
+}
+
+#Wrap .conceptPage.terredelin .terredelin_about--txt {
+  width: 460px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.terredelin .terredelin_about--txt {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+#Wrap .conceptPage.terredelin .terredelin_about--txt .aboutTtl {
+  font-size: 30px;
+  color: #5A5A5A;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.terredelin .terredelin_about--txt .aboutTtl {
+    font-size: 23px;
+    line-height: 35px;
+  }
+}
+
+#Wrap .conceptPage.terredelin .terredelin_about--txt .aboutTxt {
+  font-size: 14px;
+  color: #5A5A5A;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.terredelin .terredelin_about--txt .aboutTxt {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+#Wrap .conceptPage.terredelin .terredelin_about--pic {
+  width: 400px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.terredelin .terredelin_about--pic {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.terredelin .terredelin_about.about01 .terredelin_about--pic {
+    width: 73.88%;
+    margin: 0 auto;
+  }
+}
+
+#Wrap .conceptPage.terredelin .terredelin_about.about02 {
+  margin: 0 auto;
+}
+
+#Wrap .conceptPage.terredelin .terredelin_about.about02 .terredelin_about--txt {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+#Wrap .conceptPage.terredelin .terredelin_about.about02 .terredelin_about--txt .aboutTxtBox01 {
+  margin-bottom: 40px;
+}
+
+#Wrap .conceptPage.terredelin .terredelin_about.about02 .terredelin_about--pic {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+#Wrap .conceptPage.terredelin .terredelin_aboutWrap {
+  background: #F2EEED;
+  padding: 120px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 160px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .conceptPage.terredelin .terredelin_aboutWrap {
+    padding: 50px 0 60px;
+    margin-bottom: 80px;
   }
 }
 
