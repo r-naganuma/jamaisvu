@@ -42,12 +42,6 @@
 				<p>BRATAC SILK</p>
 			</a>
 		</div>
-		<!-- <div class="materialList">
-			<a href="<%= Constants.PATH_ROOT %>Page/Concept/merino_optimo.aspx">
-				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_terre.png" alt="TERRE  DE LIN">
-				<p>TERRE DE LIN</p>
-			</a>
-		</div> -->
 		<div class="materialList">
 			<a href="<%= Constants.PATH_ROOT %>Page/Concept/ozone_finishing.aspx">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_ozone.png" alt="OZONE FINISHING">
@@ -70,6 +64,12 @@
 			<a href="<%= Constants.PATH_ROOT %>Page/Concept/ice_cotton.aspx">
 				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_ice.png" alt="SPOERRY ICE COTTON">
 				<p>SPOERRY ICE COTTON</p>
+			</a>
+		</div>
+		<div class="materialList">
+			<a href="<%= Constants.PATH_ROOT %>Page/Concept/terredelin.aspx">
+				<img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/concept/icn_terredelin.png" alt="TERRE DE LIN">
+				<p>TERRE DE LIN</p>
 			</a>
 		</div>
 	</div>
