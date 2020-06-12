@@ -90,7 +90,7 @@
                         </div>
                         <div class="A-wrap_detail--box--txt">
                             <p class="detailTtl">SUVINニットTシャツ</p>
-                            <p class="detailPrice">¥15,400(tax in) <span>※セールのため変動あり</span></p>
+                            <p class="detailPrice sale">¥10,780(tax in) 30%OFF</p>
                             <p class="detailTxt">
                                 素材:スビンコットン    サイズ：JUST FIT / LOOSE<br>
                                 カラー：ホワイト
