@@ -44,6 +44,7 @@ $(function(){
           $('.btmbtn').removeClass('is-fixed');
       }
   });
+  $('input[name="ctl00$ContentPlaceHolder1$rCartList$ctl00$cbOwnerMailFlg"]').prop('checked', true);
 });
 </script>
 <link href="../../Css/rp/OrderShipping.css" rel="stylesheet">
@@ -1226,7 +1227,7 @@ $(function(){
         <dl>
         <dt id="dtShippingTime" visible="<%# CanInputTimeSet(Container.ItemIndex) %>" runat="server">配送希望時間帯</dt>
         <dd id="ddShippingTime" visible="<%# CanInputTimeSet(Container.ItemIndex) %>" runat="server" class="last">
-          <asp:DropDownList id="ddlShippingTime" runat="server" DataSource="<%# GetShippingTimeList(Container.ItemIndex) %>" DataTextField="Text" DataValueField="Value" SelectedValue="<%# GetShippingTime((CartObject)Container.DataItem, Container.ItemIndex) %>"></asp:DropDownList>
+          <asp:DropDownList id="ddlShippingTime" runat="server" DataSource="<%# GetShippingTimeList(Container.ItemIndex) %>" DataTextField="Text" DataValueField="Value" SelectedValue="<%# GetShippingTime(Container.ItemIndex) %>"></asp:DropDownList>
 
         </dd>
         </dl>
