@@ -140,7 +140,10 @@
 					ez.swaptheimage(image, zoom_image);
 				});
 			});
-			twttr.widgets.load(); //Reload twitter button
+			if (typeof twttr !== 'undefined')
+			{
+				twttr.widgets.load(); //Reload twitter button
+			}
 
 		}
 	}
@@ -1350,7 +1353,7 @@ if(video!=""){
 <div class="sp_contents">
 	<div class="detail_change">
 		<a href="" data="id_description_wrap__left">アイテム説明</a>
-		<a href="" class="active" data="id_description_wrap__right">詳細</a>
+		<a href="" class="active" data="id_description_wrap__right">サイズ詳細</a>
 	</div>
 </div>
 <div class="id_description_wrap">
@@ -1360,7 +1363,7 @@ if(video!=""){
 		<div><%# GetProductDataHtml("desc_detail1") %></div>
 	</div>
 	<div class="id_description_wrap__right">
-		<h2 class="id_title">詳細</h2>
+		<h2 class="id_title">サイズ詳細</h2>
 		<!-- 商品詳細2 -->
 		<div id="detailTwo">
 		<%# GetProductDataHtml("desc_detail2") %>
