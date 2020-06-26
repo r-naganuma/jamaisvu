@@ -23,6 +23,22 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
+				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200626/">
+					<div class="journalTop_archive--list--pic">
+	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200626/images/mv_pc.jpg">
+	                </div>
+					<div class="journalTop_archive--list--txt">
+		                <p class="journalCat">FEATURE</p>
+		                <p class="journalTtl">
+		                	JAMAIS VU×editor_kaoの<br>「彩りのある着こなし」vol.4 &lt;Black&gt;
+		                </p>
+		                <p class="journalDate">2020.06.26</p>
+		            </div>
+				</a>
+			<!-- -->
+		</div>
+		<div class="journalTop_archive">
+			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200612/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200612journal.jpg">
@@ -35,9 +51,7 @@
 		                <p class="journalDate">2020.06.12</p>
 		            </div>
 				</a>
-			<!-- -->
-		</div>
-		<div class="journalTop_archive">
+	        </div>
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200605/">
 					<div class="journalTop_archive--list--pic">
@@ -66,7 +80,7 @@
 		            </div>
 				</a>
 	        </div>
-			<div class="journalTop_archive--list">
+			<!-- <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200529/">
 					<div class="journalTop_archive--list--pic">
 	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200529journal.jpg">
@@ -77,20 +91,6 @@
 		                	モデル、Kanocoさんが伝える“私らしいスタイル”vol.3
 		                </p>
 		                <p class="journalDate">2020.05.29</p>
-		            </div>
-				</a>
-	        </div>
-			<!-- <div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200526/">
-					<div class="journalTop_archive--list--pic">
-	            		<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200526journal.jpg">
-	                </div>
-					<div class="journalTop_archive--list--txt">
-		                <p class="journalCat">FEATURE</p>
-		                <p class="journalTtl">
-		                	モデル、Kanocoさんが伝える“私らしいスタイル”vol.2
-		                </p>
-		                <p class="journalDate">2020.05.26</p>
 		            </div>
 				</a>
 	        </div> -->

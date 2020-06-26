@@ -110,7 +110,8 @@
 			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010317141&cat=500041">
                 <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010317141_sub06_L.jpg">
                 <p class="itemsName">ペイパーポロシャツ</p>
-                <p class="itemsPrice">¥17,600 <span>(tax in)</span></p>
+                <p class="itemsPrice priceOld">¥17,600 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥12,320 <span>(tax in)</span> <span class="off">30%OFF</span></p>
 			</a>
 		</div>
 	</div>
