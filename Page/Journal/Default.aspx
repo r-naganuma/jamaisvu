@@ -31,6 +31,16 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200717">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200717/images/mv_pc.jpg">
+                    <p class="journalCat">FEATURE</p>
+                    <p class="journalTtl">
+                        JAMAIS VU POP UP STORE 開催 ！
+                    </p>
+                    <p class="journalDate">2020.07.17</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200626">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200626/images/mv_pc.jpg">
                     <p class="journalCat">FEATURE</p>
