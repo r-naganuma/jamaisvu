@@ -248,6 +248,7 @@
 				<asp:ListItem>ペルビアンピマコットン</asp:ListItem>
 				<asp:ListItem>アイスコットン</asp:ListItem>
 				<asp:ListItem>和紙繊維</asp:ListItem>
+				<asp:ListItem>その他</asp:ListItem>
 			</asp:CheckBoxList>
 		</div>
 	</td>
