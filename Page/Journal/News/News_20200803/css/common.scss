@@ -1,0 +1,164 @@
+$breakpoints: (
+  'sm': 'screen and (max-width: 374px)',
+  'nsm': 'screen and (min-width: 374px)',
+  'md': 'screen and (max-width: 769px)',
+  'pc': 'screen and (min-width: 769px)',
+  'lg': 'screen and (max-width: 1000px)',
+  'xl': 'screen and (max-width: 1200px)',
+)
+!default;
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin noto {
+  font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+}
+
+@font-face {
+	font-family: 'gillsans';
+	src: url("../../../../../Font/gillsans.woff") format('woff'),
+		 url('../../../../../Font/gillsans.otf') format("opentype");
+}
+
+
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+
+@include mq("pc") {
+  .sp_content {
+    display: none!important;
+  }
+}
+@include mq("nsm") {
+  .sm_contents {
+    display: none!important;
+  }
+}
+@include mq() {
+  .pc_content {
+    display: none!important;
+  }
+}
+
+#Wrap .featureWrap{
+	width: 850px;
+  margin: 0 auto;
+	color: #333;
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: 0.08em;
+	font-weight: 400;
+
+	@include mq() {
+    width: 89.33%;
+    font-size: 13px;
+	};
+
+	ul{
+		margin: 0;
+		padding: 0;
+
+		li{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	p{
+		margin: 0;
+		padding: 0;
+		line-height: 26px;
+    text-align: center;
+    @include noto;
+		@include mq() {
+			line-height: 2;
+		};
+	}
+
+	a{
+		text-decoration: none;
+		color: #000;
+		font-weight: 300;
+		display: block;
+	}
+
+	img{
+		width: 100%;
+		display: block;
+	}
+
+  h2{
+    text-align: center;
+    margin: {
+    top: 0;
+    bottom: 0;
+    }
+  }
+
+	.mainArea{
+    padding-top: 50px;
+		margin: 0 auto 60px;
+
+    h2{
+      font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'Open Sans',"ＭＳ Ｐゴシック","MS PGothic",Helvetica, sans-serif;
+      text-align: center;
+      font-size: 24px;
+      color: #2E0E02;
+      letter-spacing: 0.08em;
+      line-height: 1;
+      font-weight: 500;
+      @include mq(){
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+
+    p{
+      font-size: 14px;
+      margin-top: 50px;
+      @include noto;
+      letter-spacing: 0.04em;
+      line-height: 25.2px;
+      text-align: center;
+      @include mq(){
+        margin-top: 40px;
+        text-align: left;
+        font-size: 13px;
+        line-height: 2;
+      }
+    }
+  }
+
+  .ctsList{
+    margin-bottom: 60px;
+
+    &_ttl{
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    &_txt{
+      text-align: left;
+
+      span{
+        font-weight: 700;
+        color: #AD2E24;
+      }
+    }
+  }
+
+  .lastArea{
+    margin-bottom: 80px;
+
+    p{
+      text-align: left;
+    }
+  }
+}
