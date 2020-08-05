@@ -16,7 +16,7 @@
 --%>
 <%-- ▽編集可能領域：コンテンツ▽ --%>
 <div class="mainVisualRev">
-	<!-- <div class="mainVisualRev_slide">
+	<div class="mainVisualRev_slide">
 	    <div class="mainVisualRev_main">
 	        <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_main01.jpg" alt="">
 	        <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_sp01.jpg" alt="">
@@ -24,7 +24,7 @@
 	    <div class="mainVisualRev_sub pc_contents">
 	        <img src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_sub01.jpg" alt="">
 	    </div>
-	</div> -->
+	</div>
 	<div class="mainVisualRev_slide">
 	    <div class="mainVisualRev_main">
 	        <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/mv_main02.jpg" alt="">
