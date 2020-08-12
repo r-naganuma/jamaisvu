@@ -23,16 +23,16 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200717/">
+				<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 					<div class="journalTop_archive--list--pic">
-						<img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200717/images/mv_pc.jpg">
+						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200812journal.jpg">
 					</div>
 					<div class="journalTop_archive--list--txt">
 						<p class="journalCat">FEATURE</p>
 						<p class="journalTtl">
-							JAMAIS VU POP UP STORE 開催 ！
+							NEW ARRIVAL
 						</p>
-						<p class="journalDate">2020.07.17</p>
+						<p class="journalDate">2020.08.12</p>
 					</div>
 				</a>
 			<!-- -->

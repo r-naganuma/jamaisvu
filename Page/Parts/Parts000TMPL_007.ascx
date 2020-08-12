@@ -41,48 +41,50 @@
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010318251&cat=500051">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010318251_sub05_L.jpg">
-                <p class="itemsName">SUVINフィットカーディガンハーフ</p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010435159&cat=500059">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010435159_sub07_L.jpg">
+                <p class="itemsName">SUVINワッフルワンピース</p>
                 <p class="itemsPrice priceOld">¥16,500 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥9,900 <span>(tax in)</span> <span class="off">40%OFF</span></p>
+                <p class="itemsPrice priceNew">¥8,250 <span>(tax in)</span> <span class="off">50%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010317141&cat=500041">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010317141_sub06_L.jpg">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010317151&cat=500051">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010317151_sub05_L.jpg">
                 <p class="itemsName">ペイパーポロシャツ</p>
                 <p class="itemsPrice priceOld">¥17,600 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥12,320 <span>(tax in)</span> <span class="off">30%OFF</span></p>
+                <p class="itemsPrice priceNew">¥8,800 <span>(tax in)</span> <span class="off">50%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010338111&cat=500011">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2010338111_L.jpg">
-                <p class="itemsName">テレデランリネンニットTシャツ</p>
-                <p class="itemsPrice priceOld">¥13,200 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥9,240 <span>(tax in)</span> <span class="off">30%OFF</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2030580119&cat=500019">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2030580119_L.jpg">
-                <p class="itemsName">【スタイリスト NIMU コラボ】オールウェイズワンピース</p>
-                <p class="itemsPrice">¥26,400 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010323121&cat=500021">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010323121_sub06_L.jpg">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010323119&cat=500019">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2010323119_L.jpg">
                 <p class="itemsName">【クリス-ウェブ 佳子コラボ】バックレースアップリブニット</p>
-                <p class="itemsPrice">¥15,400 <span>(tax in)</span></p>
+                <p class="itemsPrice priceOld">¥15,400 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥7,700 <span>(tax in)</span> <span class="off">50%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031011199&cat=500099">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2031011159_L.jpg">
-                <p class="itemsName">ミックスヤーンリブクルーニット</p>
-                <p class="itemsPrice">¥17,600 <span>(tax in)</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010340141&cat=500041">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2010340141_L.jpg">
+                <p class="itemsName">テレデランリネンノースリーブ</p>
+                <p class="itemsPrice priceOld">¥12,100 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥6,050 <span>(tax in)</span> <span class="off">50%OFF</span></p>
+			</a>
+		</div>
+		<div class="itemsTop_box--list">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010322141&cat=500041">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010322141_sub05_L.jpg">
+                <p class="itemsName">SUVINラグランニットスウェット</p>
+                <p class="itemsPrice priceOld">¥14,300 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥7,150 <span>(tax in)</span> <span class="off">50%OFF</span></p>
+			</a>
+		</div>
+		<div class="itemsTop_box--list">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010552149&cat=500049">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2010552149_L.jpg">
+                <p class="itemsName">ペルビアンピマコットンワンピース</p>
+                <p class="itemsPrice">¥19,800 <span>(tax in)</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -93,25 +95,25 @@
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010314119&cat=500019">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010314119_sub01_L.jpg">
-                <p class="itemsName">ICE COTTON リブヘンリーネック</p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031010121&cat=500021">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2031010121_sub01_L.jpg">
+                <p class="itemsName">ミックスヤーンノースリーブニット</p>
+                <p class="itemsPrice">¥17,600 <span>(tax in)</span></p>
+			</a>
+		</div>
+		<div class="itemsTop_box--list">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010318251&cat=500051">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010318251_sub05_L.jpg">
+                <p class="itemsName">SUVINフィットカーディガンハーフ</p>
+                <p class="itemsPrice priceOld">¥16,500 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥8,250 <span>(tax in)</span> <span class="off">50%OFF</span></p>
+			</a>
+		</div>
+		<div class="itemsTop_box--list">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010316165&cat=500065">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010316165_sub05_L.jpg">
+                <p class="itemsName">ICE COTTON リブノースリーブ</p>
                 <p class="itemsPrice">¥14,300 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010575149&cat=500049">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010575149_sub08_L.jpg">
-                <p class="itemsName">【クリス-ウェブ 佳子コラボ】バックバックルコンビネゾン</p>
-                <p class="itemsPrice">¥28,600 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010322151&cat=500051">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010322151_sub06_L.jpg">
-                <p class="itemsName">SUVINラグランニットスウェット</p>
-                <p class="itemsPrice priceOld">¥14,300 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥8,580 <span>(tax in)</span> <span class="off">40%OFF</span></p>
 			</a>
 		</div>
 	</div>
