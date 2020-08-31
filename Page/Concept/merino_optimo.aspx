@@ -149,7 +149,7 @@
 			</div> -->
 		</div>
 
-		<div class="conceptBox_item">
+		<!-- <div class="conceptBox_item">
 			<p class="conceptBox_item--ttl">
 				MERINO OPTIMO を使ったアイテム
 			</p>
@@ -203,7 +203,7 @@
 			<div class="conceptBox_item--btn">
 				<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_material=%e3%83%a1%e3%83%aa%e3%83%8e%e3%82%aa%e3%83%97%e3%83%86%e3%82%a3%e3%83%a2&pno=1">MORE</a>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="conceptBox_other">
 			<p class="conceptBox_other--ttl">

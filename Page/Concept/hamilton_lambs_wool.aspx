@@ -151,7 +151,7 @@
 			</div> -->
 		</div>
 
-		<div class="conceptBox_item">
+		<!-- <div class="conceptBox_item">
 			<p class="conceptBox_item--ttl">
 				HAMILTON LAMBS WOOL を使ったアイテム
 			</p>
@@ -205,7 +205,7 @@
 			<div class="conceptBox_item--btn">
 				<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_material=%e3%83%8f%e3%83%9f%e3%83%ab%e3%83%88%e3%83%b3%e3%83%a9%e3%83%a0%e3%82%ba%e3%82%a6%e3%83%bc%e3%83%ab&pno=1">MORE</a>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="conceptBox_other">
 			<p class="conceptBox_other--ttl">
