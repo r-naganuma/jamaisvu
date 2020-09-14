@@ -55,17 +55,18 @@
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031011121&cat=500021">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2031011121_L.jpg">
-                <p class="itemsName">ミックスヤーンリブクルーニット</p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031112136&cat=500036">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2031112136_L.jpg">
+                <p class="itemsName">SUVIN 矢振りPO</p>
                 <p class="itemsPrice">¥17,600 <span>(tax in)</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2030276119&cat=500019">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2030276119_sub06_L.jpg">
-                <p class="itemsName">【スタイリスト NIMU コラボ】ボーイズシャツ</p>
-                <p class="itemsPrice">¥19,800 <span>(tax in)</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010318241&cat=500041">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010318241_sub05_L.jpg">
+                <p class="itemsName">SUVINフィットカーディガンハーフ</p>
+                <p class="itemsPrice priceOld">¥16,500 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥8,250 <span>(tax in)</span> <span class="off">50%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -76,9 +77,9 @@
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031021165&cat=500065">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2031021165_sub07_L.jpg">
-                <p class="itemsName">メリノオプティモ　ライトノースリーブ</p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2030275163&cat=500063">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2030275163_sub07_L.jpg">
+                <p class="itemsName">ペルビアンピマコットンスリットネック</p>
                 <p class="itemsPrice">¥17,600 <span>(tax in)</span></p>
 			</a>
 		</div>
