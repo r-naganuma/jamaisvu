@@ -30,7 +30,7 @@
 	<h2>JOURNAL</h2>
 	<div class="journalWrap_box">
     	<ul>
-            <div class="journalWrap_box--list">
+            <!-- <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200917">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200917/images/mv_pc.jpg">
                     <p class="journalCat">FEATURE</p>
@@ -39,7 +39,7 @@
                     </p>
                     <p class="journalDate">2020.09.17</p>
                 </a>
-            </div>
+            </div> -->
             <div class="journalWrap_box--list">
                 <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200812journal.jpg">
