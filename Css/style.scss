@@ -1174,6 +1174,59 @@ textarea::focus {
 								letter-spacing: 0.04em;
 							}
 						}
+
+						.catChildParent{
+							position: relative;
+
+							p{
+								color: #3D3D3D;
+								line-height: 1;
+								font-size: 14px;
+							}
+
+							&:before{
+								content: "";
+								position: absolute;
+								top: 0;
+								right: 10px;
+								margin: auto;
+								z-index: 1;
+								display: block;
+								width: 9px;
+								height: 9px;
+								transform: rotate(135deg);
+								border-top: 1.5px solid #3D3D3D;
+								border-right: 1.5px solid #3D3D3D;
+
+								@include bp768 {
+									right: 16px;
+									border-top: 1.5px solid #2E0E02;
+									border-right: 1.5px solid #2E0E02;
+								};
+							}
+
+							&.on{
+								&::before{
+									transform: rotate(135deg);
+									animation: arrowRotate .5s ease 0s forwards;
+									top: 4px;
+								}
+							}
+						}
+
+						.catChild{
+							display: none;
+							margin-top: 10px;
+							
+							li{
+								padding: 13px 28px;
+
+								&:last-child{
+									border-bottom: none;
+									padding-bottom: 0;
+								}
+							}
+						}
 					}
 				}
 

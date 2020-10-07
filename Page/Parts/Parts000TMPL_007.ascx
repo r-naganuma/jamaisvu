@@ -25,12 +25,12 @@
 	</p>
 	<div class="itemsTop_box">
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010323119&cat=500019">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2010323119_L.jpg">
-                <p class="itemsName">【クリス-ウェブ 佳子コラボ】バックレースアップリブニット</p>
-                <p class="itemsPrice priceOld">¥15,400 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥7,700 <span>(tax in)</span> <span class="off">50%OFF</span></p>
-                <!-- <p class="itemsPrice">¥23,100 <span>(tax in)</span></p> -->
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031247159&cat=500059">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2031247159_L.jpg">
+                <p class="itemsName">メリノオプティモ ワイドリブカーディガン</p>
+                <!-- <p class="itemsPrice priceOld">¥15,400 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥7,700 <span>(tax in)</span> <span class="off">50%OFF</span></p> -->
+                <p class="itemsPrice">¥22,000 <span>(tax in)</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -62,11 +62,10 @@
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010318241&cat=500041">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010318241_sub05_L.jpg">
-                <p class="itemsName">SUVINフィットカーディガンハーフ</p>
-                <p class="itemsPrice priceOld">¥16,500 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥8,250 <span>(tax in)</span> <span class="off">50%OFF</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031219142&cat=500042">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2031219142_L.jpg">
+                <p class="itemsName">メリノオプティモ　ワイドカーデ</p>
+                <p class="itemsPrice">¥22,000 <span>(tax in)</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">

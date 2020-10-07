@@ -330,8 +330,8 @@
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
 		if(document.URL.match("cat=010")) {
-			$('.pdList_conditions .pdList_conditions--category').text('タートルネック');
-			$('.breadcrumb ul li p').text('タートルネック');
+			$('.pdList_conditions .pdList_conditions--category').text('タートル');
+			$('.breadcrumb ul li p').text('タートル');
 			$('.searchBox_list--category .catKnit_child li:nth-child(1)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
@@ -347,24 +347,42 @@
 			$('.searchBox_list--category .catKnit_child li:nth-child(3)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
-		if(document.URL.match("cat=013")) {
-			$('.pdList_conditions .pdList_conditions--category').text('クルーネック');
-			$('.breadcrumb ul li p').text('クルーネック');
+		if(document.URL.match("cat=016")) {
+			$('.pdList_conditions .pdList_conditions--category').text('プルオーバー');
+			$('.breadcrumb ul li p').text('プルオーバー');
 			$('.searchBox_list--category .catKnit_child li:nth-child(4)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
-		if(document.URL.match("cat=014")) {
-			$('.pdList_conditions .pdList_conditions--category').text('ボートネック');
-			$('.breadcrumb ul li p').text('ボートネック');
+		if(document.URL.match("cat=017")) {
+			$('.pdList_conditions .pdList_conditions--category').text('ベスト');
+			$('.breadcrumb ul li p').text('ベスト');
 			$('.searchBox_list--category .catKnit_child li:nth-child(5)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
-		if(document.URL.match("cat=015")) {
-			$('.pdList_conditions .pdList_conditions--category').text('ミドルゲージ');
-			$('.breadcrumb ul li p').text('ミドルゲージ');
+		if(document.URL.match("cat=018")) {
+			$('.pdList_conditions .pdList_conditions--category').text('半袖・ノースリーブ');
+			$('.breadcrumb ul li p').text('半袖・ノースリーブ');
 			$('.searchBox_list--category .catKnit_child li:nth-child(6)').addClass("on");
 			$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
 		}
+		//if(document.URL.match("cat=013")) {
+		//	$('.pdList_conditions .pdList_conditions--category').text('クルーネック');
+		//	$('.breadcrumb ul li p').text('クルーネック');
+		//	$('.searchBox_list--category .catKnit_child li:nth-child(4)').addClass("on");
+		//	$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		//}
+		//if(document.URL.match("cat=014")) {
+		//	$('.pdList_conditions .pdList_conditions--category').text('ボートネック');
+		//	$('.breadcrumb ul li p').text('ボートネック');
+		//	$('.searchBox_list--category .catKnit_child li:nth-child(5)').addClass("on");
+		//	$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		//}
+		//if(document.URL.match("cat=015")) {
+		//	$('.pdList_conditions .pdList_conditions--category').text('ミドルゲージ');
+		//	$('.breadcrumb ul li p').text('ミドルゲージ');
+		//	$('.searchBox_list--category .catKnit_child li:nth-child(6)').addClass("on");
+		//	$('.searchBox_list--category').siblings(".searchBox_list--ttlSelect").text($('.searchBox_list--category li.on').text());
+		//}
 		// if(document.URL.match("cat=008")) {
 		// 	$('.pdList_conditions .pdList_conditions--category').text('帽子');
 		// 	$('.breadcrumb ul li p').text('帽子');

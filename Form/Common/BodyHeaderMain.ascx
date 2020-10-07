@@ -136,6 +136,11 @@ function initializeFunctionJs() {
 		}
 	});
 
+    $('.nav_box .catChildParent').on('click', function(){
+      $(this).toggleClass("on");
+      $(this).next('.catChild').slideToggle(350);
+    });
+
 	
     $("meta[name='viewport']").attr("content","width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
 }
@@ -224,11 +229,11 @@ function initializeFunctionJs() {
 													新着商品
 												</a>
 											</li>
-											<li>
+											<!-- <li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
 													セールアイテム
 												</a>
-											</li>
+											</li> -->
 											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=magazine&udns=2&fpfl=0&pno=1">
 													雑誌掲載アイテム
@@ -251,11 +256,11 @@ function initializeFunctionJs() {
 									<a href="<%= Constants.PATH_ROOT %>Page/Journal/" class="period">JOURNAL</a>
 								</div>
 							</li>
-							<li class="navStyle">
+							<!-- <li class="navStyle">
 								<div class="listColumn">
 									<a href="<%= Constants.PATH_ROOT %>Page/styling/" class="period">STYLE IDEA</a>
 								</div>
-							</li>
+							</li> -->
 							<!-- <li class="navLookbook">
 								<div class="listColumn">
 									<a href="<%= Constants.PATH_ROOT %>Page/lookbook/" class="period">LOOKBOOK</a>
@@ -472,11 +477,11 @@ function initializeFunctionJs() {
 											<p>10/1 UP</p>
 										</div>
 									</li>
-									<li>
+									<!-- <li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
 											セールアイテム
 										</a>
-									</li>
+									</li> -->
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=magazine&udns=2&fpfl=0&pno=1">
 											雑誌掲載アイテム
@@ -509,9 +514,46 @@ function initializeFunctionJs() {
 										</a>
 									</li>
 									<li>
-										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=003&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
-											ニット
-										</a>
+										<div class="catChildParent">
+											<p>ニット</p>
+										</div>
+										<ul class="catChild">
+											<li>
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=010&dpcnt=24&img=2&sort=07&udns=2&fpfl=0&pno=1">
+													タートル
+												</a>
+											</li>
+											<li>
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=011&dpcnt=24&img=2&sort=07&udns=2&fpfl=0&pno=1">
+													パーカー
+												</a>
+											</li>
+											<li>
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=012&dpcnt=24&img=2&sort=07&udns=2&fpfl=0&pno=1">
+													カーディガン
+												</a>
+											</li>
+											<li>
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=016&dpcnt=24&img=2&sort=07&udns=2&fpfl=0&pno=1">
+													プルオーバー
+												</a>
+											</li>
+											<li>
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=017&dpcnt=24&img=2&sort=07&udns=2&fpfl=0&pno=1">
+													ベスト
+												</a>
+											</li>
+											<li>
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=018&dpcnt=24&img=2&sort=07&udns=2&fpfl=0&pno=1">
+													半袖・ノースリーブ
+												</a>
+											</li>
+											<li>
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=003&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+													全てのニットを見る
+												</a>
+											</li>
+										</ul>
 									</li>
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=004&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
@@ -554,11 +596,11 @@ function initializeFunctionJs() {
 											JOURNAL
 										</a>
 									</li>
-									<li>
+									<!-- <li>
 										<a href="<%= Constants.PATH_ROOT %>Page/styling/">
 											STYLE IDEA
 										</a>
-									</li>
+									</li> -->
 									<!-- <li>
 										<a href="<%= Constants.PATH_ROOT %>Page/lookbook/">
 											LOOKBOOK
