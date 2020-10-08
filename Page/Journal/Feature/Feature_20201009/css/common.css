@@ -204,11 +204,12 @@
           align-items: center;
   width: 96px;
   margin-left: 20px;
+  margin-right: 10%;
 }
 
 @media (max-width: 768px) {
   .I-wrap_txt--ttl .snsArea {
-    width: calc(154* (100vw / 750));
+    width: calc(270* (100vw / 750));
   }
 }
 
@@ -293,7 +294,7 @@
 
 @media (max-width: 768px) {
   .add1009-box {
-    width: 89.93% !important;
+    width: 94% !important;
   }
 }
 
@@ -303,7 +304,7 @@
 
 @media (max-width: 768px) {
   .add1009-box__child .itemI {
-    width: 95.6% !important;
+    width: 91.6% !important;
     margin: 0 auto;
   }
 }

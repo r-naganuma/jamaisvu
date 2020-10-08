@@ -219,9 +219,10 @@ $bp768: 768px;  // スマホ
 				align-items: center;
 				width: 96px;
 				margin-left: 20px;
+				margin-right: 10%;
 
 				@include bp768 {
-					width: calc(154* (100vw / 750));
+					width: calc(270* (100vw / 750));
 				};
 
 				&_ig{
@@ -293,13 +294,13 @@ $bp768: 768px;  // スマホ
 	width: 730px;
 	margin: 60px auto 0;
 	@include bp768 {
-		width: 89.93% !important;
+		width: 94% !important;
 	}
 
 	&__child .itemI {
 		width: 354px !important;
 		@include bp768 {
-			width: 95.6% !important;
+			width: 91.6% !important;
 			margin: 0 auto;
 		}
 	}
