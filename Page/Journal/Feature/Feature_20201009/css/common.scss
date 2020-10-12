@@ -219,7 +219,6 @@ $bp768: 768px;  // スマホ
 				align-items: center;
 				width: 96px;
 				margin-left: 20px;
-				margin-right: 10%;
 
 				@include bp768 {
 					width: calc(270* (100vw / 750));
@@ -324,6 +323,7 @@ $bp768: 768px;  // スマホ
 	}
 	@include bp768 {
 		width: 89.33%;
+		line-height: 46px;
 	}
 }
 
@@ -347,6 +347,7 @@ $bp768: 768px;  // スマホ
 	}
 	@include bp768 {
 		width: 89.33%;
+		line-height: 46px;
 	}
 }
 
@@ -354,6 +355,9 @@ $bp768: 768px;  // スマホ
 
 #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt h2 {
 	font-weight: bold;	
+	@include bp768 {
+		font-weight: 500;
+	}
 }
 
 #Wrap .LPpageWrap .journalWrap .A-wrap_ttl {
@@ -362,6 +366,7 @@ $bp768: 768px;  // スマホ
 	margin-bottom: 20px;
 	@include bp768 {
 		font-size: calc(31 * (100vw / 750));
+		font-weight: 500;
 	}
 }
 @media (max-width: 768px){

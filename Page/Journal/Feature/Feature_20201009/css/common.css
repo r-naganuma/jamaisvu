@@ -204,7 +204,6 @@
           align-items: center;
   width: 96px;
   margin-left: 20px;
-  margin-right: 10%;
 }
 
 @media (max-width: 768px) {
@@ -332,6 +331,7 @@
 @media (max-width: 768px) {
   .ctsArea_btn1009 {
     width: 89.33%;
+    line-height: 46px;
   }
 }
 
@@ -360,11 +360,18 @@
 @media (max-width: 768px) {
   .ctsArea_Allbtn1009 {
     width: 89.33%;
+    line-height: 46px;
   }
 }
 
 #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt h2 {
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt h2 {
+    font-weight: 500;
+  }
 }
 
 #Wrap .LPpageWrap .journalWrap .A-wrap_ttl {
@@ -376,6 +383,7 @@
 @media (max-width: 768px) {
   #Wrap .LPpageWrap .journalWrap .A-wrap_ttl {
     font-size: calc(31 * (100vw / 750));
+    font-weight: 500;
   }
 }
 
