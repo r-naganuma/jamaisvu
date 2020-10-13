@@ -23,6 +23,23 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
+				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201013/">
+					<div class="journalTop_archive--list--pic">
+						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201013journal.jpg">
+					</div>
+					<div class="journalTop_archive--list--txt">
+						<p class="journalCat">FEATURE</p>
+						<p class="journalTtl">
+							JAMAIS VU POP UP STORE 開催 ！
+						</p>
+						<p class="journalDate">2020.10.13</p>
+					</div>
+				</a>
+			<!-- -->
+		</div>
+
+		<div class="journalTop_archive">
+			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 					<div class="journalTop_archive--list--pic">
 						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200812journal.jpg">
@@ -35,9 +52,7 @@
 						<p class="journalDate">2020.08.12</p>
 					</div>
 				</a>
-			<!-- -->
-		</div>
-		<div class="journalTop_archive">
+			</div>
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200626/">
 					<div class="journalTop_archive--list--pic">
@@ -66,7 +81,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="journalTop_archive--list">
+<!-- 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200605/">
 					<div class="journalTop_archive--list--pic">
 						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200605journal.jpg">
@@ -79,7 +94,7 @@
 						<p class="journalDate">2020.06.05</p>
 					</div>
 				</a>
-			</div>
+			</div> -->
 		</div>
 		<div class="btnBoxver2 btn--more">
 			<a href="<%= Constants.PATH_ROOT %>Page/Journal/">READ MORE</a>

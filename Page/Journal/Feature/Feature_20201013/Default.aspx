@@ -19,11 +19,13 @@
 <link href='../../css/common.css?123' rel='stylesheet' type='text/css'>
 <link href='css/common.css?123' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://use.typekit.net/rzu4tgs.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <%-- △編集可能領域△ --%>
 </asp:Content>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<div id="Wrap">
 <div class="LPpageWrap topSpace">
 
 <%-- ▽編集可能領域：コンテンツ▽ --%>
@@ -42,7 +44,7 @@
                         JAMAIS VU<br>
                         POP UP STORE 開催 ！
                     </h2>
-                    <p class="journalDate">2020.07.17</p>
+                    <p class="journalDate">2020.10.13</p>
                 </div>
                 <ul class="mainArea_ttl--sns">
                     <li>
@@ -61,7 +63,12 @@
                 </ul>
             </div>
             <p class="mainArea_lead">
-                この度、ブランド初となるPOP UP SHOPの開催が決定！<br class="pc_contents">サイズレス・シーズンレス・エイジレスで楽しめる、サスティナブルマインドを持ったJAMAIS VUがお届けする商品を、是非この機会に直接手に取り、お楽しみください。
+                実際に手に取ってみたい・試してみたいという多くのお客様の声にお答えして<br class="pc_contents">
+                渋谷西武・高島屋STYLLE & EDIT各店にてポップアップストアをOPENします。<br class="pc_contents">
+                渋谷西武のは無人ストアとなっており、お客様ご自身で自由にご試着いただける<br class="pc_contents">
+                新しい形のポップアップに。（ご購入はQRコードより。）<br class="pc_contents">
+                高島屋のポップアップではディレクター長尾悦美さんとのコラボレーションアイテムも販売いたします。
+
             </p>
         </div>
 
@@ -72,52 +79,84 @@
             ///////////////////////-->
             <div class="A-wrap">
                 <p class="A-wrap_ttl">
-                    JAMAIS VU POP UP STORE <br class="sp_contents">＠ 渋谷パルコ
+                    「JAMAIS VU FITTING ROOM」＠渋谷西武<br class="pc_contents">
+                    〜接客なしで自由に試せて購入できる、<br class="sp_contents">初のセルフフィッティングPOP UP STORE〜<br class="pc_contents">
+                </p>
+                
+                <p class="A-wrap_txt">
+                    
+                    【 場所 】西武渋谷店A館3階往路モーションスペース<br>
+                    【 期間 】2020.10.20（Tue）〜2020.10.26（Mon）10:00~20:00<br>
+                    <br>
+                    ※その場では試着のみで、商品についているタグからオンラインでの購入となります。
                 </p>
                 <img class="A-wrap_pic" src="images/pic_a_01.jpg" alt="">
-                <p class="A-wrap_txt">
-                    【 会期 】7.23（木・祝）- 8.2（日）<br>
-                    【 場所 】渋谷パルコ 1F GATE<br>
-                    <a href="https://shibuya.parco.jp/" target="_blank">https://shibuya.parco.jp/</a><br>
-                    <br>
-                    会期中購入者全員にノベルティとして、<br>
-                    素材にこだわるジャメヴが得意とする着心地抜群のTシャツのプレゼントをいたします。
+            </div>
+
+
+                        <!-- //////////////////
+            /////// TEMPLATE A 
+            ///////////////////////-->
+            <div class="A-wrap A-wrap2__mb">
+                <p class="A-wrap_ttl2">
+                    「JAMAIS VU POP UP STORE」＠STYLE &EDIT<br class="pc_contents">
+                    <br class="sp_contents">ディレクター長尾悦美さんとの<br class="sp_contents">コラボアイテムもローンチ
                 </p>
+                
+                <p class="A-wrap_txt">
+                    
+                    高島屋　STYLE &EDIT各店<br>
+                    <br>
+                    日本橋店<span class="sp_none">&nbsp;:&nbsp;</span><br class="sp_contents">2020.10.21（WED）〜2020.11.3（TUE）　10:30~19:30<br>
+                    新宿<span class="sp_none">&nbsp;:&nbsp;</span><br class="sp_contents">2020.10.21（WED）〜2020.11.3（TUE）　10:00~20:00<br class="sp_contents"> ※別注のみ<br>
+                    大阪店<span class="sp_none">&nbsp;:&nbsp;</span><br class="sp_contents">2020.10.21（WED）〜2020.11.3（TUE）　10:00~20:00<br>
+                    横浜店<span class="sp_none">&nbsp;:&nbsp;</span><br class="sp_contents">2020.11.6（FRI）〜2020.11.17（TUE）　10:00~20:00<br>
+                    玉川店<span class="sp_none">&nbsp;:&nbsp;</span><br class="sp_contents">2020.11.20（FRI）〜2020.12.1（TUE）　10:00~20:00<br>
+                    ※その場では試着のみで、商品についているタグからオンラインでの購入となります。
+                </p>
+                <img class="A-wrap_pic" src="images/pic_a_02.jpg" alt="">
             </div>
 
             <!-- //////////////////
             /////// Latest Post
             ///////////////////////-->
-            <div class="latestArea">
-                <p class="latestArea_ttl">Latest Post</p>
-                <div class="latestArea_box">
-                    <div class="latestArea_box--list">
-                        <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200626">
-                            <picture>
-                                <source media="(max-width: 769px)" srcset="images/archive01_sp.jpg">
-                                <img src="images/archive01_pc.jpg" alt="">
-                            </picture>
-                            <p class="archiveTtl">
-                                JAMAIS VU×editor_kaoの「彩りのある着こなし」vol.4 &lt;Black&gt;
-                            </p>
-                            <p class="archiveDate">
-                                2020.06.26
-                            </p>
-                        </a>
-                    </div>
-                    <div class="latestArea_box--list">
-                        <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200612">
-                            <picture>
-                                <source media="(max-width: 769px)" srcset="images/archive02_sp.jpg">
-                                <img src="images/archive02_pc.jpg" alt="">
-                            </picture>
-                            <p class="archiveTtl">
-                                素材にこだわる、上質サマーニット
-                            </p>
-                            <p class="archiveDate">
-                                2020.06.12
-                            </p>
-                        </a>
+            <div class="ctsArea">
+                <!-- //////////////////
+                /////// Latest Post
+                ///////////////////////-->
+                <div class="latestArea">
+                    <p class="latestArea_ttl">Latest Post</p>
+                    <div class="latestArea_box">
+                        <div class="latestArea_box--list">
+                            <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200717">
+                                <picture>
+                                    <source media="(max-width: 769px)" srcset="images/archive01_sp.jpg">
+                                    <img src="images/archive01_pc.jpg" alt="">
+                                </picture>
+                                <p class="archiveTtl">
+                                    JAMAIS VU
+                                    POP UP STORE 開催 ！
+                                </p>
+                                <p class="archiveDate">
+                                    2020.07.17
+                                </p>
+                            </a>
+                        </div>
+                        <div class="latestArea_box--list">
+                            <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200626">
+                                <picture>
+                                    <source media="(max-width: 769px)" srcset="images/archive02_sp.jpg">
+                                    <img src="images/archive02_pc.jpg" alt="">
+                                </picture>
+                                <p class="archiveTtl">
+                                    JAMAIS VU×editor_kaoの
+                                    「彩りのある着こなし」vol.4 &lt;Black&gt;
+                                </p>
+                                <p class="archiveDate">
+                                    2020.06.26
+                                </p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -132,48 +171,48 @@
         <ul>
             <!-- 最大4個まで -->
             <li>
-                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010319251&cat=500051">
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031118151&cat=500051">
                     <img src="images/item_01.jpg" alt="">
                     <p>
-                        SUVINニットTシャツ
-                        <span class="sale">¥10,780(tax in) 30%OFF</span>
+                        メリノオプティモ 18G ハイネック
+                        <span>¥23,100(tax in)</span>
                     </p>
                 </a>
             </li>
             <li>
-                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010322111&cat=500011">
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031241241&cat=500041">
                     <img src="images/item_02.jpg" alt="">
                     <p>
-                        SUVINラグランニットスウェット
-                        <span class="sale">¥10,010(tax in) 30%OFF</span>
+                        メリノオプティモ<br>フィットカーディガン
+                        <span>¥22,000(tax in)</span>
                     </p>
                 </a>
             </li>
             <li>
-                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010306261&cat=500061">
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031247149&cat=500049">
                     <img src="images/item_03.jpg" alt="">
                     <p>
-                        SUVINオゾンニットパンツ
-                        <span>¥17,600(tax in)</span>
+                        メリノオプティモ<br>ワイドリブカーディガン
+                        <span>¥22,000(tax in)</span>
                     </p>
                 </a>
             </li>
             <li>
-                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010323121&cat=500021">
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031122142&cat=500042">
                     <img src="images/item_04.jpg" alt="">
                     <p>
-                        バックレースアップリブニット
-                        <span>¥15,400(tax in)</span>
+                        メリノオプティモ　18Ｇポロ
+                        <span>¥22,000(tax in)</span>
                     </p>
                 </a>
             </li>
         </ul>
-        <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="journalWrap_item--btn">すべてのアイテムをみる</a>
+        <a href="" class="journalWrap_item--btn">すべてのアイテムをみる</a>
     </div>
 </div>
 <%-- △編集可能領域△ --%>
 
-
+</div>
 </div>
 <script type="text/javascript">
     $(window).on('scroll', function (){
@@ -183,7 +222,7 @@
 
         elem.each(function () {
 
-            var elemOffset = $(this).offset().top - 230;
+            var elemOffset = $(this).offset().top;
             var scrollPos = $(window).scrollTop();
             var wh = $(window).height();
 
@@ -195,6 +234,7 @@
                 $('.journalWrap_item').addClass("on");
             }
         });
+
     });
 
     $(function(){
@@ -208,5 +248,24 @@
         });
     });
 </script>
+<style>
+    .sp_none {
+        display: inline-block;
+    }
+    @media (max-width: 768px) {
+        .sp_none {
+        display: none;
+    }
+    }
+
+    #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl2 {
+        font-size: 16px;
+    }
+    @media (max-width: 768px) {
+    #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl2 {
+        font-size: calc(27 * (100vw / 750));
+    }
+    }
+</style>
 </asp:Content>
 
