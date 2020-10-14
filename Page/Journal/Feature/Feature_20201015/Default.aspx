@@ -83,7 +83,7 @@
                     順調にオンラインショッピングを<br class="sp_contents">楽しみ始めた4月中旬でした。
                 </p>
                 <p class="A-wrap_txt">
-                    サイトを見て、「黒や白ではない、ニュアンスのあるカ<br class="sp_contents">ラーが多いな」というのが第一印象。<br class="pc_contents"><br class="sp_contents">
+                    サイトを見て、「黒や白ではない、ニュアンスのあるカ<br class="sp_contents">ラーが多くていいな」というのが第一印象。<br class="pc_contents"><br class="sp_contents">
                     スーパーやコンビニくらいしか行くことができず、<br class="sp_contents">行動範囲が狭いからこそ、<br class="pc_contents">
                     気分が上がるカラーを求めて<br class="sp_contents">いたのかもしれません。
                 </p>
@@ -120,22 +120,7 @@
                 </p>
             </div>
 
-            <div class="A-wrap_detail">
-                <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2031122&udns=0&fpfl=0&pno=1" class="A-wrap_detail--box">
-                    <div class="A-wrap_detail--box--pic">
-                        <img src="images/item_a_01.jpg" alt="">
-                    </div>
-                    <div class="A-wrap_detail--box--txt">
-                        <p class="detailTtl">メリノオプティモ　18G ポロ</p>
-                        <p class="detailPrice">¥22,000(tax in)</p>
-                        <p class="detailTxt">
-                            素材：メリノオプティモ<br> 
-                            カラー：ブラウン
-                        </p>
-                    </div>
-                </a>
-                <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2031122&udns=0&fpfl=0&pno=1" class="A-wrap_detail--btn">ITEM DETAIL</a>
-            </div>
+
             <div class="A-wrap_detail">
                 <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2031241&udns=0&fpfl=0&pno=1" class="A-wrap_detail--box">
                     <div class="A-wrap_detail--box--pic">
@@ -151,6 +136,22 @@
                     </div>
                 </a>
                 <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2031241&udns=0&fpfl=0&pno=1" class="A-wrap_detail--btn">ITEM DETAIL</a>
+            </div>
+            <div class="A-wrap_detail">
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2031122&udns=0&fpfl=0&pno=1" class="A-wrap_detail--box">
+                    <div class="A-wrap_detail--box--pic">
+                        <img src="images/item_a_01.jpg" alt="">
+                    </div>
+                    <div class="A-wrap_detail--box--txt">
+                        <p class="detailTtl">メリノオプティモ　18G ポロ</p>
+                        <p class="detailPrice">¥22,000(tax in)</p>
+                        <p class="detailTxt">
+                            素材：メリノオプティモ<br> 
+                            カラー：ブラウン
+                        </p>
+                    </div>
+                </a>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2031122&udns=0&fpfl=0&pno=1" class="A-wrap_detail--btn">ITEM DETAIL</a>
             </div>
             <div class="A-wrap_detail">
                 <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2031146&udns=0&fpfl=0&pno=1" class="A-wrap_detail--box">
@@ -178,6 +179,21 @@
                 </p>
             </div>
             <div class="A-wrap_detail">
+                <a href="" class="A-wrap_detail--box">
+                    <div class="A-wrap_detail--box--pic">
+                        <img src="images/item_a_05.jpg" alt="">
+                    </div>
+                    <div class="A-wrap_detail--box--txt">
+                        <p class="detailTtl">ハミルトンミドルゲージプルオーバー</p>
+                        <p class="detailPrice">Coming Soon</p>
+                        <p class="detailTxt">
+                            素材：ハミルトンラムズウール<br>   
+                            カラー：ブラウン
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="A-wrap_detail">
                 <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2031132&udns=0&fpfl=0&pno=1" class="A-wrap_detail--box">
                     <div class="A-wrap_detail--box--pic">
                         <img src="images/item_a_04.jpg" alt="">
@@ -193,21 +209,7 @@
                 </a>
                 <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2031132&udns=0&fpfl=0&pno=1" class="A-wrap_detail--btn">ITEM DETAIL</a>
             </div>
-            <div class="A-wrap_detail">
-                <a href="" class="A-wrap_detail--box">
-                    <div class="A-wrap_detail--box--pic">
-                        <img src="images/item_a_05.jpg" alt="">
-                    </div>
-                    <div class="A-wrap_detail--box--txt">
-                        <p class="detailTtl">ハミルトンミドルゲージプルオーバー</p>
-                        <p class="detailPrice">Coming soon</p>
-                        <p class="detailTxt">
-                            素材：ハミルトンラムズウール<br>   
-                            カラー：ブラウン
-                        </p>
-                    </div>
-                </a>
-            </div>
+
             <div class="A-wrap">
                 <p class="A-wrap_txt">
                     <br>
@@ -278,7 +280,7 @@
                         <p>エディター 小林 文</p>
                         <div class="snsArea">
                             <div class="snsArea_ig">
-                                <a href="" target="_blank">
+                                <a href="https://www.instagram.com/kobayashi_bun/?hl=ja" target="_blank">
                                     <img src="images/icn_ig.png" alt="">
                                 </a>
                             </div>
@@ -289,7 +291,7 @@
                         人材系企業に営業職として勤務。28歳でエディターを志し、転身。<br class="pc_contents">
                         現在はフリーランスのファッションエディターとして小学館『Oggi』、<br class="pc_contents">
                         講談社『mi-mollet』などで活躍中。またアパレルブランドや百貨店との商品開発、<br class="pc_contents">
-                        トークイベント、コラム執筆も担当。Instagram＠kobayashi_bunでは、<br class="pc_contents">
+                        トークイベント、コラム執筆も担当。Instagram<a href="https://www.instagram.com/kobayashi_bun/?hl=ja" target="_blank">＠kobayashi_bun</a>では、<br class="pc_contents">
                         日々のリアルなコーディネートを更新中。
                     </p>
                 </div>
@@ -351,20 +353,20 @@
         <ul>
             <!-- 最大4個まで -->
             <li>
-                <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2031122&udns=0&fpfl=0&pno=1">
-                    <img src="images/link_01.jpg" alt="">
-                    <p>
-                        メリノオプティモ　18Ｇポロ
-                        <span>¥22,000(tax in)</span>
-                    </p>
-                </a>
-            </li>
-            <li>
                 <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2031241&udns=0&fpfl=0&pno=1">
                     <img src="images/link_02.jpg" alt="">
                     <p>
                         メリノオプティモ<br>
                         フィットカーディガン
+                        <span>¥22,000(tax in)</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=2031122&udns=0&fpfl=0&pno=1">
+                    <img src="images/link_01.jpg" alt="">
+                    <p>
+                        メリノオプティモ　18Ｇポロ
                         <span>¥22,000(tax in)</span>
                     </p>
                 </a>
@@ -405,6 +407,25 @@
 
 </div>
 </div>
+<style>
+    @media (max-width: 768px){
+        #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea_ttl--txt h2 {
+            font-weight: bold;
+        }
+    }
+    #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap {
+    margin-bottom: 0px;
+    }
+    #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap {
+        margin-top: 120px;
+    }
+    @media (max-width: 768px){
+        #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .I-wrap {
+        margin-top: 180px;
+    }
+    }
+</style>
+
 <script type="text/javascript">
     $(window).on('scroll', function (){
 
