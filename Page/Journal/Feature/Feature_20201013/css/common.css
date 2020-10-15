@@ -1,0 +1,148 @@
+/*====================================================================
+*    Responsive
+/*==================================================================*/
+.pc_inline {
+  display: inline !important;
+}
+
+@media (max-width: 768px) {
+  .pc_inline {
+    display: none !important;
+  }
+}
+
+.sp_inline {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .sp_inline {
+    display: inline !important;
+  }
+}
+
+#Wrap .LPpageWrap {
+  /*====================================================================
+*    ALL
+/*==================================================================*/
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .mainArea {
+    margin-bottom: 80px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea {
+  /*====================================================================
+*    TEMPLATE A
+/*==================================================================*/
+  /*====================================================================
+*    ALL
+/*==================================================================*/
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap {
+    margin: 0 auto 90px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_pic {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_pic {
+    margin-bottom: 20px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl {
+  line-height: 1.875;
+  margin-bottom: 40px;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl {
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-size: calc(30 * (100vw / 750));
+    text-align: center;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl2 {
+  line-height: 1.875;
+  margin-bottom: 40px;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_ttl2 {
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-size: calc(27 * (100vw / 750));
+    text-align: center;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_txt {
+  margin-bottom: 40px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap_txt a {
+  text-decoration: none;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .A-wrap2__mb {
+  margin-bottom: 200px;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea_btn {
+  margin: 0 auto 160px;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea_btn {
+    margin: 0 auto 80px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea_box--list .archiveTtl {
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  #Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea_box--list .archiveTtl {
+    line-height: 21px;
+  }
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_cts .ctsArea .latestArea {
+  padding-top: 80px;
+  border-top: 1px solid #CCCCCC;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_item ul li a p span span {
+  display: inline;
+  margin-top: 0;
+  color: #AD2E24;
+  text-decoration: line-through;
+}
+
+#Wrap .LPpageWrap .journalWrap .journalWrap_item ul li a p span.sale {
+  color: #AD2E24;
+}
+/*# sourceMappingURL=common.css.map */
