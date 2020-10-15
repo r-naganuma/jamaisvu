@@ -31,6 +31,17 @@
 	<div class="journalWrap_box">
     	<ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20201015">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201015journal.jpg">
+                    <p class="journalCat">FEATURE</p>
+                    <p class="journalTtl">
+                        エディター小林 文リコメンド　“季節になじむニット” の話
+                        前編／秋のこっくりカラーニット
+                    </p>
+                    <p class="journalDate">2020.10.15</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20201013">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201013journal.jpg">
                     <p class="journalCat">FEATURE</p>
