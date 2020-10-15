@@ -30,7 +30,7 @@
 					<div class="journalTop_archive--list--txt">
 						<p class="journalCat">FEATURE</p>
 						<p class="journalTtl">
-							エディター小林 文リコメンド　“季節になじむニット” の話
+							エディター小林 文リコメンド　“季節になじむニット” の話<br>
 							前編／秋のこっくりカラーニット
 						</p>
 						<p class="journalDate">2020.10.15</p>
