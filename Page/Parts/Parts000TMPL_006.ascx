@@ -23,6 +23,24 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
+				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201015/">
+					<div class="journalTop_archive--list--pic">
+						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201015journal.jpg">
+					</div>
+					<div class="journalTop_archive--list--txt">
+						<p class="journalCat">FEATURE</p>
+						<p class="journalTtl">
+							エディター小林 文リコメンド　“季節になじむニット” の話<br>
+							前編／秋のこっくりカラーニット
+						</p>
+						<p class="journalDate">2020.10.15</p>
+					</div>
+				</a>
+			<!-- -->
+		</div>
+
+		<div class="journalTop_archive">
+			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201013/">
 					<div class="journalTop_archive--list--pic">
 						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201013journal.jpg">
@@ -35,10 +53,7 @@
 						<p class="journalDate">2020.10.13</p>
 					</div>
 				</a>
-			<!-- -->
-		</div>
-
-		<div class="journalTop_archive">
+			</div>
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 					<div class="journalTop_archive--list--pic">
@@ -67,7 +82,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="journalTop_archive--list">
+<!-- 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200612/">
 					<div class="journalTop_archive--list--pic">
 						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200612journal.jpg">
@@ -78,20 +93,6 @@
 							素材にこだわる、上質サマーニット
 						</p>
 						<p class="journalDate">2020.06.12</p>
-					</div>
-				</a>
-			</div>
-<!-- 			<div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200605/">
-					<div class="journalTop_archive--list--pic">
-						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200605journal.jpg">
-					</div>
-					<div class="journalTop_archive--list--txt">
-						<p class="journalCat">FEATURE</p>
-						<p class="journalTtl">
-							モデル、Kanocoさんが伝える“私らしいスタイル”vol.5
-						</p>
-						<p class="journalDate">2020.06.05</p>
 					</div>
 				</a>
 			</div> -->
