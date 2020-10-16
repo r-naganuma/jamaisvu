@@ -255,7 +255,7 @@
             <div class="A-wrap">
                 <p class="A-wrap_txt">
                     <br>
-                    なんと、これら7点のニット、すべて同じメリノ種のウ<br class="sp_contents">ールを使用しているそう。<br class="pc_contents">
+                    「なんと、こちら7点のニット、もとをたどれば2つのウ<br class="sp_contents">ールを使用しているそう。<br class="pc_contents">
                     混合率や編み方を変えること<br class="sp_contents">で、バリエーション豊かにつくることができるんだ<br class="sp_contents">とか。<br class="pc_contents">
                     「なるほど〜」と勉強になります。
                 </p>
