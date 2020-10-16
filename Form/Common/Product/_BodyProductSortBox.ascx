@@ -6,10 +6,8 @@
 =========================================================================================================
 --%>
 <%@ control language="c#" autoeventwireup="true" inherits="Form_Common_Product_BodyProductSortBox, App_Web_bodyproductsortbox.ascx.acb385f3" %>
-<%@ Import Namespace="ProductListDispSetting" %>
 <div class="pdList_sort">
 <%--- 表示件数 ---%>
-<% if (ProductListDispSettingUtility.CountSetting.Length > 1) { %>
 <!-- <asp:Repeater ID="rNumberDisplayLinks" runat="server">
 	<HeaderTemplate>
 	<div class="box clearFix">
@@ -32,10 +30,8 @@
 	</div>
 	</FooterTemplate>
 </asp:Repeater> -->
-<% } %>
 
 <%--- 並び替え ---%>
-<% if (ProductListDispSettingUtility.SortSetting.Length > 1) { %>
 <asp:Repeater ID="rSortList" runat="server">
 	<HeaderTemplate>
 	<div class="pdList_sort--list sortChange">
@@ -60,51 +56,35 @@
 	</div>
 	</FooterTemplate>
 </asp:Repeater>
-<% } %>
 
-<!-- <% if (ProductListDispSettingUtility.ImgSetting.Length > 1) { %>
-<asp:Repeater ID="rImgList" runat="server">
-	<HeaderTemplate>
-	<div class="box clearFix">
+<!-- <div class="box clearFix">
 	<p class="title">表示切替</p>
 	<ul class="nav clearFix">
-	</HeaderTemplate>
-		<ItemTemplate>
-		<%--- 未選択 ---%>
-		<li visible='<%# this.DispImageKbn != ((ProductListDispSettingModel)Container.DataItem).SettingId %>' runat="server"><a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateImageDispTypeUrl(((ProductListDispSettingModel)Container.DataItem).SettingId)) %>"><%# WebSanitizer.HtmlEncode(((ProductListDispSettingModel)Container.DataItem).SettingName)%></a></li>
-		<%--- 選択中 ---%>
-		<li visible='<%# this.DispImageKbn == ((ProductListDispSettingModel)Container.DataItem).SettingId %>' class='active' runat="server">
-		<%# WebSanitizer.HtmlEncode(((ProductListDispSettingModel)Container.DataItem).SettingName)%></li>
-		</ItemTemplate>
-	<FooterTemplate>
+		<li<%if (this.IsDispImageKbnOn) {%> class="active"<% } %>><%if (this.IsDispImageKbnOn == false) {%>
+		<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateImageDispTypeUrl(Constants.KBN_REQUEST_DISP_IMG_KBN_ON)) %>">一覧</a><%}else{%>一覧<%} %></li>
+		<li<%if (this.IsDispImageKbnWindowsShopping) {%> class="active"<% } %>><%if (this.IsDispImageKbnWindowsShopping == false) {%>
+		<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateImageDispTypeUrl(Constants.KBN_REQUEST_DIST_IMG_KBN_WINDOWSHOPPING)) %>">ウィンドウショッピング</a><%}else{%>ウィンドウショッピング<%} %></li>
 	</ul>
-	</div>
-	</FooterTemplate>
-</asp:Repeater>
-<% } %> -->
+</div> -->
 
-<% if (ProductListDispSettingUtility.StockSetting.Length > 1) { %>
 <%--- 在庫有無 ---%>
-<asp:Repeater ID="rStockList" runat="server">
-	<HeaderTemplate>
-		<div class="pdList_sort--list sortItem">
-		<p class="sortTtl">在庫</p>
-		<ul>
-	</HeaderTemplate>
-	<ItemTemplate>
-		<%--- 未選択 ---%>
-		<li visible='<%# this.UndisplayNostock != ((ProductListDispSettingModel)Container.DataItem).SettingId %>' runat="server"><a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateDisplayStockUrl(((ProductListDispSettingModel)Container.DataItem).SettingId)) %>"><%# WebSanitizer.HtmlEncode(((ProductListDispSettingModel)Container.DataItem).SettingName)%></a></li>
-		<%--- 選択中 ---%>
-		<li visible='<%# this.UndisplayNostock == ((ProductListDispSettingModel)Container.DataItem).SettingId %>' class='active' runat="server">
-			<%# WebSanitizer.HtmlEncode(((ProductListDispSettingModel)Container.DataItem).SettingName)%></li>
-	</ItemTemplate>
-	<FooterTemplate>
-	</ul>
+	<div class="pdList_sort--list sortItem">
+	<p class="sortTtl">在庫</p>
+	<ul>
+		<li<%if (this.UndisplayNostock == Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK){%> class="active"<% } %>><%if (this.UndisplayNostock != Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK){%>
+		<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateDisplayStockUrl(Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK)) %>">すべての商品</a><%}
+		else{%>すべての商品<%} %></li>
+		<li<%if (this.UndisplayNostock == Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_UNDISPLAY_NOSTOCK){%> class="active"<% } %>><%if (this.UndisplayNostock != Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_UNDISPLAY_NOSTOCK){%>
+		<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateDisplayStockUrl(Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_UNDISPLAY_NOSTOCK)) %>">在庫あり</a><%}
+		else{%>在庫あり<%} %></li>
+		<!-- <li<%if (this.UndisplayNostock == Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK_BOTTOM){%> class="active"<% } %>><%if (this.UndisplayNostock != Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK_BOTTOM){%>
+		<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateDisplayStockUrl(Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK_BOTTOM)) %>">すべて表示(在庫あり優先)</a><%}
+		else{%>すべて表示(在庫あり優先)<%} %></li> -->
+		<!-- <li<%if (this.UndisplayNostock == Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK_ONLY){%> class="active"<% } %>><%if (this.UndisplayNostock != Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK_ONLY){%>
+		<a href="<%# WebSanitizer.UrlAttrHtmlEncode(CreateDisplayStockUrl(Constants.KBN_PRODUCT_LIST_UNDISPLAY_NOSTOCK_PRODUCT_DISPLAY_NOSTOCK_ONLY)) %>">在庫無しのみ表示</a><%}
+		else{%>在庫無しのみ表示<%} %></li> -->
+		</ul>
 	</div>
-	</FooterTemplate>
-</asp:Repeater>
-<% } %>
-
 <% if (Constants.FIXEDPURCHASE_OPTION_ENABLED) {%>
 <%--- 定期購入フィルタ ---%>
 <!-- <div class="box clearFix">
