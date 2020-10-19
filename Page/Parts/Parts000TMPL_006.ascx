@@ -23,6 +23,24 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
+				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201019/">
+					<div class="journalTop_archive--list--pic">
+						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201019journal.jpg">
+					</div>
+					<div class="journalTop_archive--list--txt">
+						<p class="journalCat">FEATURE</p>
+						<p class="journalTtl">
+							ディレクター長尾 悦美×JAMAIS VU<br>
+							コラボアイテム発売開始
+						</p>
+						<p class="journalDate">2020.10.19</p>
+					</div>
+				</a>
+			<!-- -->
+		</div>
+
+		<div class="journalTop_archive">
+			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201015/">
 					<div class="journalTop_archive--list--pic">
 						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201015journal.jpg">
@@ -30,16 +48,13 @@
 					<div class="journalTop_archive--list--txt">
 						<p class="journalCat">FEATURE</p>
 						<p class="journalTtl">
-							エディター小林 文リコメンド　“季節になじむニット” の話<br>
+							エディター小林 文リコメンド　“季節になじむニット” の話
 							前編／秋のこっくりカラーニット
 						</p>
 						<p class="journalDate">2020.10.15</p>
 					</div>
 				</a>
-			<!-- -->
-		</div>
-
-		<div class="journalTop_archive">
+			</div>
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201013/">
 					<div class="journalTop_archive--list--pic">
@@ -68,7 +83,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="journalTop_archive--list">
+<!-- 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200626/">
 					<div class="journalTop_archive--list--pic">
 						<img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200626/images/mv_pc.jpg">
@@ -79,20 +94,6 @@
 							JAMAIS VU×editor_kaoの<br>「彩りのある着こなし」vol.4 &lt;Black&gt;
 						</p>
 						<p class="journalDate">2020.06.26</p>
-					</div>
-				</a>
-			</div>
-<!-- 			<div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200612/">
-					<div class="journalTop_archive--list--pic">
-						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200612journal.jpg">
-					</div>
-					<div class="journalTop_archive--list--txt">
-						<p class="journalCat">FEATURE</p>
-						<p class="journalTtl">
-							素材にこだわる、上質サマーニット
-						</p>
-						<p class="journalDate">2020.06.12</p>
 					</div>
 				</a>
 			</div> -->
