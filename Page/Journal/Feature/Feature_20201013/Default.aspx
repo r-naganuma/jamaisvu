@@ -108,7 +108,7 @@
                     高島屋　STYLE &EDIT各店<br>
                     <br>
                     日本橋店<span class="sp_none">&nbsp;:&nbsp;</span><br class="sp_contents">2020.10.21（WED）〜2020.11.3（TUE）　10:30~19:30<br>
-                    新宿<span class="sp_none">&nbsp;:&nbsp;</span><br class="sp_contents">2020.10.21（WED）〜2020.11.3（TUE）　10:00~20:00<br class="sp_contents"> ※別注のみ<br>
+                    新宿店<span class="sp_none">&nbsp;:&nbsp;</span><br class="sp_contents">2020.10.21（WED）〜2020.11.3（TUE）　10:00~20:00<br class="sp_contents"> ※別注のみ<br>
                     大阪店<span class="sp_none">&nbsp;:&nbsp;</span><br class="sp_contents">2020.10.21（WED）〜2020.11.3（TUE）　10:00~20:00<br>
                     横浜店<span class="sp_none">&nbsp;:&nbsp;</span><br class="sp_contents">2020.11.6（FRI）〜2020.11.17（TUE）　10:00~20:00<br>
                     玉川店<span class="sp_none">&nbsp;:&nbsp;</span><br class="sp_contents">2020.11.20（FRI）〜2020.12.1（TUE）　10:00~20:00<br>
