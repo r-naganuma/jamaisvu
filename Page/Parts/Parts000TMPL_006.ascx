@@ -23,6 +23,24 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
+				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201020/">
+					<div class="journalTop_archive--list--pic">
+						<img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20201020/images/mv_pc.jpg">
+					</div>
+					<div class="journalTop_archive--list--txt">
+						<p class="journalCat">FEATURE</p>
+						<p class="journalTtl">
+							エディター小林 文リコメンド　“季節になじむニット” の話<br>
+							後編／冬のミルキーカラーニット
+						</p>
+						<p class="journalDate">2020.10.20</p>
+					</div>
+				</a>
+			<!-- -->
+		</div>
+
+		<div class="journalTop_archive">
+			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201019/">
 					<div class="journalTop_archive--list--pic">
 						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201019journal.jpg">
@@ -36,10 +54,7 @@
 						<p class="journalDate">2020.10.19</p>
 					</div>
 				</a>
-			<!-- -->
-		</div>
-
-		<div class="journalTop_archive">
+			</div>
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201015/">
 					<div class="journalTop_archive--list--pic">
@@ -69,7 +84,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="journalTop_archive--list">
+			<!-- <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 					<div class="journalTop_archive--list--pic">
 						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_200812journal.jpg">
@@ -80,20 +95,6 @@
 							NEW ARRIVAL
 						</p>
 						<p class="journalDate">2020.08.12</p>
-					</div>
-				</a>
-			</div>
-<!-- 			<div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200626/">
-					<div class="journalTop_archive--list--pic">
-						<img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20200626/images/mv_pc.jpg">
-					</div>
-					<div class="journalTop_archive--list--txt">
-						<p class="journalCat">FEATURE</p>
-						<p class="journalTtl">
-							JAMAIS VU×editor_kaoの<br>「彩りのある着こなし」vol.4 &lt;Black&gt;
-						</p>
-						<p class="journalDate">2020.06.26</p>
 					</div>
 				</a>
 			</div> -->

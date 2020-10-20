@@ -25,18 +25,18 @@
 	</p>
 	<div class="itemsTop_box">
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031132149&cat=500049">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2031132149_sub08_L.jpg">
-                <p class="itemsName">ハミルトンモックネックプルオーバー</p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2030856111&cat=500011">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2030856111_L.jpg">
+                <p class="itemsName">【長尾悦美さんコラボ】ハミルトンハンドウォーマーニット</p>
                 <!-- <p class="itemsPrice priceOld">¥15,400 <span>(tax in)</span></p>
                 <p class="itemsPrice priceNew">¥7,700 <span>(tax in)</span> <span class="off">50%OFF</span></p> -->
-                <p class="itemsPrice">¥20,900 <span>(tax in)</span></p>
+                <p class="itemsPrice">¥22,000 <span>(tax in)</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031122149&cat=500049">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2031122149_L.jpg">
-                <p class="itemsName">メリノオプティモ　18Ｇポロ</p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2030255155&cat=500055">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2030255155_sub07_L.jpg">
+                <p class="itemsName">【長尾悦美さんコラボ】ハミルトンスキッパーニット</p>
                 <p class="itemsPrice">¥22,000 <span>(tax in)</span></p>
 			</a>
 		</div>
