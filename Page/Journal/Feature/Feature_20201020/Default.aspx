@@ -291,7 +291,7 @@
                                 <img src="images/archive01_pc.jpg" alt="">
                             </picture>
                             <p class="archiveTtl">
-                                ディレクター長尾 悦美×JAMAIS VU<br>コラボアイテム発売開始
+                                ディレクター長尾 悦美×JAMAIS VU<br>コラボアイテム発売開始・来店イベント開催決定
                             </p>
                             <p class="archiveDate">
                                 2020.10.19

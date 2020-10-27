@@ -46,7 +46,7 @@
                     <p class="journalCat">FEATURE</p>
                     <p class="journalTtl">
                         ディレクター長尾 悦美×JAMAIS VU
-                        コラボアイテム発売開始
+                        コラボアイテム発売開始・来店イベント開催決定
                     </p>
                     <p class="journalDate">2020.10.19</p>
                 </a>
