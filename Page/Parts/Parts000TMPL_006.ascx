@@ -23,38 +23,53 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201020/">
-					<div class="journalTop_archive--list--pic">
-						<img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20201020/images/mv_pc.jpg">
-					</div>
-					<div class="journalTop_archive--list--txt">
-						<p class="journalCat">FEATURE</p>
-						<p class="journalTtl">
-							エディター小林 文リコメンド　“季節になじむニット” の話<br>
-							後編／冬のミルキーカラーニット
-						</p>
-						<p class="journalDate">2020.10.20</p>
-					</div>
-				</a>
+			<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201029/">
+				<div class="journalTop_archive--list--pic">
+					<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201029journal.jpg">
+				</div>
+				<div class="journalTop_archive--list--txt">
+					<p class="journalCat">FEATURE</p>
+					<p class="journalTtl">
+						自分らしく着こなす、大本命ニット
+					</p>
+					<p class="journalDate">2020.10.29</p>
+				</div>
+			</a>
 			<!-- -->
 		</div>
 
-		<div class="journalTop_archive">
-			<div class="journalTop_archive--list">
-				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201019/">
-					<div class="journalTop_archive--list--pic">
-						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201019journal.jpg">
-					</div>
-					<div class="journalTop_archive--list--txt">
-						<p class="journalCat">FEATURE</p>
-						<p class="journalTtl">
-							ディレクター長尾 悦美×JAMAIS VU<br>
-							コラボアイテム発売開始
-						</p>
-						<p class="journalDate">2020.10.19</p>
-					</div>
-				</a>
-			</div>
+
+			<div class="journalTop_archive">
+				<div class="journalTop_archive--list">
+					<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201019/">
+						<div class="journalTop_archive--list--pic">
+							<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201019journal.jpg">
+						</div>
+						<div class="journalTop_archive--list--txt">
+							<p class="journalCat">FEATURE</p>
+							<p class="journalTtl">
+								ディレクター長尾 悦美×JAMAIS VU<br>
+								コラボアイテム発売開始・来店イベント開催決定
+							</p>
+							<p class="journalDate">2020.10.19</p>
+						</div>
+					</a>
+				</div>
+				<div class="journalTop_archive--list">
+					<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201020/">
+						<div class="journalTop_archive--list--pic">
+							<img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20201020/images/mv_pc.jpg">
+						</div>
+						<div class="journalTop_archive--list--txt">
+							<p class="journalCat">FEATURE</p>
+							<p class="journalTtl">
+								エディター小林 文リコメンド　“季節になじむニット” の話
+								後編／冬のミルキーカラーニット
+							</p>
+							<p class="journalDate">2020.10.20</p>
+						</div>
+					</a>
+				</div>
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201015/">
 					<div class="journalTop_archive--list--pic">
@@ -70,7 +85,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="journalTop_archive--list">
+<!-- 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201013/">
 					<div class="journalTop_archive--list--pic">
 						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201013journal.jpg">
@@ -83,7 +98,7 @@
 						<p class="journalDate">2020.10.13</p>
 					</div>
 				</a>
-			</div>
+			</div> -->
 			<!-- <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&cicon=1&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
 					<div class="journalTop_archive--list--pic">
