@@ -31,6 +31,17 @@
 	<div class="journalWrap_box">
         <ul>
             <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20201105">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201105journal.jpg">
+                    <p class="journalCat">FEATURE</p>
+                    <p class="journalTtl">
+                        モデル、Kanocoさんに聞く
+                        自分だけの「MY RULE」
+                    </p>
+                    <p class="journalDate">2020.11.05</p>
+                </a>
+            </div>
+            <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20201029">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201029journal.jpg">
                     <p class="journalCat">FEATURE</p>
