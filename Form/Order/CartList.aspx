@@ -1013,6 +1013,16 @@ span.error_message {
   color: #2E0E02; }
 
 
+/* 201111 */
+.shoppingCart__notice{
+  margin: 0 0 10px;
+}
+
+.shoppingCart__notice p{
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 </style>
 <link href="../../Css/rp/CartList.css" rel="stylesheet">
 <div class="load_wrap"></div>
@@ -1755,6 +1765,9 @@ function bodyPageLoad(){
       <%if (this.CartList.Items.Count != 0) {%>
       <p class="">総合計（税込）<strong><%: CurrencyManager.ToPrice(this.CartList.PriceCartListTotal) %></strong></p>
       <%} %>
+    </div>
+    <div class="shoppingCart__notice">
+      <p>※クーポンコードは支払い方法選択画面にてご入力お願いします</p>
     </div>
     <ul>
       <%if (this.CartList.Items.Count != 0) {%>
