@@ -62,16 +62,16 @@
         <%-- △HISTORY△ --%>
     </div>
 
-    <!-- <div class="floating200124">
-        <a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20200917/">
-            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating200924_pc.png" alt="">
-            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating200924_sp.jpg" alt="">
+    <div class="floating200124">
+        <a href="https://lin.ee/eFUXOly" target="_blank">
+            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating201113_pc.png" alt="">
+            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating201113_sp.jpg" alt="">
         </a>
         <div class="button">
             <span class="bar1"></span>
             <span class="bar2"></span>
         </div>
-    </div> -->
+    </div>
 </div>
 <script type="text/javascript">
 $(function(){
