@@ -229,11 +229,11 @@ function initializeFunctionJs() {
 													新着商品
 												</a>
 											</li>
-											<!-- <li>
+											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
 													セールアイテム
 												</a>
-											</li> -->
+											</li>
 											<li>
 												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=magazine&udns=2&fpfl=0&pno=1">
 													雑誌掲載アイテム
@@ -477,11 +477,11 @@ function initializeFunctionJs() {
 											<p>10/1 UP</p>
 										</div> -->
 									</li>
-									<!-- <li>
+									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
 											セールアイテム
 										</a>
-									</li> -->
+									</li>
 									<li>
 										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=magazine&udns=2&fpfl=0&pno=1">
 											雑誌掲載アイテム
