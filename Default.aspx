@@ -63,9 +63,9 @@
     </div>
 
     <div class="floating200124">
-        <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&udns=2&fpfl=0&_sale=%e3%82%bb%e3%83%bc%e3%83%ab&pno=1">
-            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating201125_pc.png" alt="">
-            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating201125_sp.jpg" alt="">
+        <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=coupon30&udns=0&fpfl=0&pno=1">
+            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating201207_pc.png" alt="">
+            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating201207_sp.jpg" alt="">
         </a>
         <div class="button">
             <span class="bar1"></span>
