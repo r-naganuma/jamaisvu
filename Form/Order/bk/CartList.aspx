@@ -539,7 +539,7 @@ h2.cart1_h2 {
 
 @media (max-width: 768px) {
   #ctl00_ContentPlaceHolder1_upUpdatePanel #CartList div.productList div.couponBox {
-    display: none; } }
+    display: block !important; } }
 
 #ctl00_ContentPlaceHolder1_upUpdatePanel .productList {
   width: 71.42857% !important;
@@ -556,8 +556,8 @@ h2.cart1_h2 {
   display: none; }
 
 #ctl00_ContentPlaceHolder1_upUpdatePanel .couponBox {
-  opacity: 0;
-  visibility: hidden; }
+  opacity: 1 !important;
+  visibility: visible !important; }
 
 #ctl00_ContentPlaceHolder1_upUpdatePanel .couponBox .box {
   background: none; }
@@ -1766,9 +1766,9 @@ function bodyPageLoad(){
       <p class="">総合計（税込）<strong><%: CurrencyManager.ToPrice(this.CartList.PriceCartListTotal) %></strong></p>
       <%} %>
     </div>
-    <div class="shoppingCart__notice">
+    <!-- <div class="shoppingCart__notice">
       <p>※クーポンコードは支払い方法選択画面にてご入力お願いします</p>
-    </div>
+    </div> -->
     <ul>
       <%if (this.CartList.Items.Count != 0) {%>
       <%-- UPDATE PANELの外のイベントを呼び出す --%>

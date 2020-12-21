@@ -1023,6 +1023,96 @@ span.error_message {
   line-height: 1.5;
 }
 
+
+
+.couponUseUse{
+	color: #ffffff !important;
+	background: #968680 !important;
+	display: block;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	padding: 0 !important;
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none !important;
+	border-radius: 2px;
+	letter-spacing: 0.08em;
+	position: relative;
+}
+
+.couponUseUse::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 8px;
+	margin: auto;
+	z-index: 1;
+	display: block;
+	width: 7px;
+	height: 7px;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+
+
+.couponNotUse{
+	font-size: 14px;
+	color: #2E0E02 !important;
+	text-decoration: none !important;
+	background: #fff !important;
+	display: block;
+	line-height: 64px;
+	width: 320px;
+	height: 64px;
+	padding: 0 !important;
+	text-align: center;
+	border-radius: 2px;
+	border: 1px solid #968680;
+	background-image: none;
+	margin: 5px auto;
+	position: relative;
+	font-weight: 700;
+}
+
+.couponNotUse::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 23px;
+	margin: auto;
+	z-index: 1;
+	display: block;
+	width: 7px;
+	height: 7px;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-top: 1.5px solid #2E0E02;
+	border-right: 1.5px solid #2E0E02;
+}
+
+.sp_ib{
+	display: none !important;
+}
+
+@media (max-width: 768px) {
+	.sp_ib{
+		display: inline-block !important;
+  }
+  
+  div#hgcCouponList{width:94%!important;margin:-250px auto 0 auto!important;left:0!important;right:0;padding:0 10px}div#hgcCouponList .sp_contents{display:block!important;text-align:left!important;display:inline-block!important;width:120px;margin:0 20px 0 0;position:relative}div#hgcCouponList .sp_contents:after{content:":";display:block;position:absolute;right:0;top:0}div#hgcCouponList tr{display:block;padding:15px 0 15px 0;overflow:hidden;border-bottom:1px solid #e3e3e3}div#hgcCouponList td{display:block!important;text-align:left!important;display:inline-block!important;width:100%!important;display:block!important;float:left!important;position:relative;border:none!important}div#hgcCouponList td:nth-child(5){text-align:center}div#hgcCouponList a#ctl00_ContentPlaceHolder1_rCartList_ctl00_lbCouponBoxClose,div#hgcCouponList a#ctl00_ContentPlaceHolder1_rCartList_ctl01_lbCouponBoxClose{position:relative;top:25px}div#hgcCouponList tr:first-child{display:none}div#hgcCouponList tr{display:block}
+}
+
 </style>
 <link href="../../Css/rp/CartList.css" rel="stylesheet">
 <div class="load_wrap"></div>
@@ -1277,6 +1367,53 @@ function bodyPageLoad(){
         $(this).parent().remove();
       }
  });
+	$(".shoppingCart").each(function(x){
+		$(this).addClass("sc"+x);
+	});
+	$(".sc1").css("display","none");
+	if($("dl.bgc.p_red.op3 .minus").text()!=""){
+		$(".couponwrap .coupon").text($("dl.bgc.p_red.op3 .minus").text());
+
+	}else{
+		$(".couponwrap").remove();
+	}
+	
+	if($("#ctl00_ContentPlaceHolder1_rCartList_ctl00_ddlCouponList option:selected").text()!=""){
+		$(".copupon_wrap_box").text("");
+		$(".copupon_wrap_box").text($("#ctl00_ContentPlaceHolder1_rCartList_ctl00_ddlCouponList option:selected").text());
+
+	}else{
+		$(".copupon_wrap_box").remove();
+	}
+
+
+	if($(window).width()<768){
+		if($(".sc1").length){
+			 $(".add_cart_box").html("");
+			 // $(".copupon_wrap_box").text("");
+			 $(".add_cart_box").html($(".sc0"));
+			 $(".couponwrap .coupon").text($("dl.bgc.p_red.op3 .minus").text());
+			 console.log("test")
+		}else{
+			
+		}
+
+	}else{
+
+	$('#ctl00_ContentPlaceHolder1_rCartList_ctl00_lbShowCouponBox').click(function () {
+		$('body').addClass('active');
+	});
+	
+	$('.couponUseUse').click(function () {
+		$('body').removeClass('active');
+	});
+	
+	$('.couponNotUse').click(function () {
+		$('body').removeClass('active');
+	});
+
+
+	}
 }
 
 
@@ -1546,8 +1683,7 @@ function bodyPageLoad(){
     <!-- <img src="../../Contents/ImagesPkg/common/ttl_coupon.gif" alt="クーポンを使う" width="262" height="23" /> -->
     
   </p>
-  <div id="divCouponInputMethod" runat="server"
-    style="font-size: 10px; padding: 10px 10px 0px 10px; font-family: 'Lucida Grande','メイリオ',Meiryo,'Hiragino Kaku Gothic ProN', sans-serif; color: #333;">
+  <div id="divCouponInputMethod" runat="server" style="font-size: 10px; padding: 10px 10px 0px 10px; font-family: 'Lucida Grande','メイリオ',Meiryo,'Hiragino Kaku Gothic ProN', sans-serif; color: #333;">
     <asp:RadioButtonList runat="server" AutoPostBack="true" ID="rblCouponInputMethod"
       OnSelectedIndexChanged="rblCouponInputMethod_SelectedIndexChanged" OnDataBinding="rblCouponInputMethod_DataBinding"
       DataSource="<%# GetCouponInputMethod() %>" DataTextField="Text" DataValueField="Value" RepeatColumns="2" RepeatDirection="Horizontal"></asp:RadioButtonList>
@@ -1577,52 +1713,65 @@ function bodyPageLoad(){
     border: 1px solid #cccccc; border-radius: 4px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); white-space: nowrap;"
     OnClick="lbShowCouponBox_Click" ></asp:LinkButton>
   </div><!--boxbtm-->
+	<!-- <p class="copupon_wrap_box"></p>
+	<p class="couponwrap">クーポン<span class="coupon"></span></p>
+	<p class="shoppingCart__title"></p> -->
   </div><!--box-->
   <div runat="server" id="hgcCouponBox" style="z-index: 1; top: 0; left: 0; width: 100%; height: 120%; position: fixed; background-color: rgba(128, 128, 128, 0.75);"
     Visible='<%# ((CartObject)Container.DataItem).CouponBoxVisible %>'>
-  <div id="hgcCouponList" style="width: 800px; height: 500px; top: 50%; left: 50%; text-align: center; border: 2px solid #aaa; background: #fff; position: fixed; z-index: 2; margin:-250px 0 0 -400px;">
-  <h2 style="height: 20px; color: #fff; background-color: #000; font-size: 16px; padding: 3px 0px; border-bottom: solid 1px #ccc; ">クーポンBOX</h2>
-  <div style="height: 400px; overflow: auto;">
+  <div id="hgcCouponList" style="width: 960px; height: 500px; top: 55%; left: 50%; text-align: center; background: #fff; position: fixed; z-index: 2; margin:-250px 0 0 -500px;">
+  <h2 style="display: none; height: 20px; color: #fff; background-color: #000; font-size: 16px; padding: 3px 0px; border-bottom: solid 1px #ccc; width: initial; width: auto; ">クーポンBOX</h2>
+  <div style="height: 400px; overflow: auto;" class="spScrollBar">
   <asp:Repeater ID="rCouponList" ItemType="UserCouponDetailInfo" Runat="server" DataSource="<%# GetUsableCoupons((CartObject)Container.DataItem) %>">
     <HeaderTemplate>
     <table>
       <tr>
-        <th style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:150px;">クーポンコード</th>
-        <th style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:230px;">クーポン名</th>
-        <th style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:100px;">割引金額<br />/割引率</th>
-        <th style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:70px;">利用可能回数</th>
-        <th style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:350px;">有効期限</th>
-        <th style="border-bottom-style:solid; border-bottom-width:1px; background-color:#ececec; padding:10px; text-align:center;width:100px;"></th>
+        <th class="th_first th1" style="background-color:#EAE6E5; padding:10px; text-align:center;width:98px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">クーポン<br>
+          コード</th>
+        <th class="th_first th2" style="background-color:#EAE6E5; padding:10px; text-align:center;width:215px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">クーポン名</th>
+        <th class="th_first th3" style="background-color:#EAE6E5; padding:10px; text-align:center;width:90px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">金額</th>
+        <th class="th_first th4" style="background-color:#EAE6E5; padding:10px; text-align:center;width:80px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">利用回数</th>
+        <th class="th_first th5" style="background-color:#EAE6E5; padding:10px; text-align:center;width:178px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">有効期限</th>
+				<th class="th_first th6" style="background-color:#EAE6E5; padding:10px; text-align:center;width:204px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">利用条件</th>
+        <th class="th_first th7" style="background-color:#EAE6E5; padding:10px; text-align:center;width:110px; color: #333; letter-spacing: 0.08em; line-height: 19.5px;"></th>
       </tr>
     </HeaderTemplate>
     <ItemTemplate>
       <tr>
-        <td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:150px; background-color: white;">
+        <td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:98px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
+					<div class="sp_contents" style="vertical-align: top;"><span class="c_code">クーポンコード</span></div>
           <%#: Item.CouponCode %><br />
           <asp:HiddenField runat="server" ID="hfCouponBoxCouponCode" Value="<%# Item.CouponCode %>" />
         </td>
-        <td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:230px; background-color: white;"
+        <td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:215px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;"
           title="<%#: Item.CouponDispDiscription %>">
-          <%#: Item.CouponDispName %>
+					<div class="sp_contents" style="vertical-align: top;"><span class="c_code">クーポン名</span></div>
+          <p class="pc_contents"><%#: Item.CouponDispName %></p>
+					<p class="sp_ib" style="width: 53%;"><%#: Item.CouponDispName %></p>
         </td>
-        <td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:70px; background-color: white;">
+        <td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:90px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
+					<div class="sp_contents"><span class="c_code">割引金額</span></div>
           <%#: (StringUtility.ToEmpty(Item.DiscountPrice) != "")
               ? CurrencyManager.ToPrice(Item.DiscountPrice)
               : (StringUtility.ToEmpty(Item.DiscountRate) != "")
                 ? StringUtility.ToEmpty(Item.DiscountRate) + "%"
                 : "-" %>
         </td>
-        <td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:70px; background-color: white;">
+        <td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:80px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
+					<div class="sp_contents" style="vertical-align: top;"><span class="c_code">利用可能回数</span></div>
           <%#: GetCouponCount(Item) %>
         </td>
-        <td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:350px; background-color: white;">
+        <td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left; text-align:center;width:178px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px; white-space: nowrap;">
+					<div class="sp_contents" style="vertical-align: top;"><span class="c_code">有効期限</span></div>
           <%#: DateTimeUtility.ToStringFromRegion(Item.ExpireEnd, DateTimeUtility.FormatType.LongDateHourMinute1Letter) %>
         </td>
-        <td style="border-bottom-style:solid; border-bottom-width:1px; padding:10px 8px; text-align:left; text-align:center;width:100px; background-color: white;">
-          <asp:LinkButton runat="server" id="lbCouponSelect" OnClick="lbCouponSelect_Click" style="color: #ffffff !important; background-color: #000 !important;
-            border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); display: inline-block;
-            padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; text-align: center; vertical-align: middle; cursor: pointer;
-            border: 1px solid #cccccc; border-radius: 4px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); white-space: nowrap;">このクーポンを使う</asp:LinkButton>
+				<td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; text-align:left !important; text-align:center;width:204px; background-color: white; color: #333; letter-spacing: 0.08em; line-height: 19.5px;">
+					<div class="sp_contents" style="vertical-align: top;"><span class="c_code">利用条件</span></div>
+					<p class="pc_contents"><%#: Item.CouponDiscription %></p>
+					<p class="sp_ib" style="width: 53%;"><%#: Item.CouponDiscription %></p>
+				</td>
+        <td style="border-bottom: 1px solid #EAE6E5; padding:10px 8px; width:110px;">
+          <asp:LinkButton runat="server" id="lbCouponSelect" OnClick="lbCouponSelect_Click" class="couponUseUse">使う</asp:LinkButton>
         </td>
       </tr>
     </ItemTemplate>
@@ -1632,10 +1781,7 @@ function bodyPageLoad(){
   </asp:Repeater>
   </div>
   <div style="width: 100%; height: 50px; display: block; z-index: 3">
-    <asp:LinkButton ID="lbCouponBoxClose" OnClick="lbCouponBoxClose_Click" runat="server"
-      style="padding: 8px 12px; font-size: 14px; color: #333; text-decoration: none; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-      display: inline-block; line-height: 18px; color: #333333; text-align: center; vertical-align: middle; border-radius: 5px; cursor: pointer; background-color: #f5f5f5;
-      border: 1px solid #cccccc; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); text-decoration: none; background-image: none; margin: 5px auto">クーポンを利用しない</asp:LinkButton>
+    <asp:LinkButton ID="lbCouponBoxClose" OnClick="lbCouponBoxClose_Click" runat="server" class="couponNotUse">クーポンを使わない</asp:LinkButton>
   </div>
   </div>
   </div>

@@ -230,12 +230,12 @@ function initializeFunctionJs() {
 												</a>
 											</li>
 											<li>
-												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=outlet&udns=2&fpfl=0&pno=1">
 													アウトレット
 												</a>
 											</li>
 											<li>
-												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=magazine&udns=2&fpfl=0&pno=1">
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=sale&udns=2&fpfl=0&pno=1">
 													セールアイテム
 												</a>
 											</li>
@@ -478,12 +478,12 @@ function initializeFunctionJs() {
 										</div> -->
 									</li>
 									<li>
-										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&_sale=セール&pno=1">
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=outlet&udns=2&fpfl=0&pno=1">
 											アウトレット
 										</a>
 									</li>
 									<li>
-										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=magazine&udns=2&fpfl=0&pno=1">
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=sale&udns=2&fpfl=0&pno=1">
 											セールアイテム
 										</a>
 									</li>
