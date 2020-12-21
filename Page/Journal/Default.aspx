@@ -31,6 +31,7 @@
 	<div class="journalWrap_box">
         <ul>
             <div class="journalWrap_box--list">
+<<<<<<< HEAD
                 <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=sale&udns=2&fpfl=0&pno=1">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201221journal.jpg">
                     <p class="journalCat">FEATURE</p>
@@ -41,6 +42,8 @@
                 </a>
             </div>
             <div class="journalWrap_box--list">
+=======
+>>>>>>> d8ebca3cf8909e6288693979172c6b1905257977
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20201112">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201112journal.jpg">
                     <p class="journalCat">FEATURE</p>
