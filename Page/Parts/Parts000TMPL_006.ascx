@@ -23,18 +23,50 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=sale&udns=2&fpfl=0&pno=1">
-				<div class="journalTop_archive--list--pic">
-					<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201221journal.jpg">
-				</div>
-				<div class="journalTop_archive--list--txt">
-					<p class="journalCat">FEATURE</p>
-					<p class="journalTtl">
-                        WINTER SALE 開催！MAX40%OFF
-					</p>
-					<p class="journalDate">2020.12.21</p>
-				</div>
-			</a>
+			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210101000000", "yyyyMMddHHmmss", null))) && (((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) < (DateTime.ParseExact("20210114115959", "yyyyMMddHHmmss", null)))){ %>
+				<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=sale&udns=2&fpfl=0&pno=1">
+					<div class="journalTop_archive--list--pic">
+						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201221journal.jpg">
+					</div>
+					<div class="journalTop_archive--list--txt">
+						<p class="journalCat">FEATURE</p>
+						<p class="journalTtl">
+							WINTER SALE 開催！MAX40%OFF
+						</p>
+						<p class="journalDate">2020.12.21</p>
+					</div>
+				</a>
+			<% } %>
+
+			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210114120000", "yyyyMMddHHmmss", null))) && (((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) < (DateTime.ParseExact("20210121115959", "yyyyMMddHHmmss", null)))){ %>
+				<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=sale&udns=2&fpfl=0&pno=1">
+					<div class="journalTop_archive--list--pic">
+						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_210114journal.jpg">
+					</div>
+					<div class="journalTop_archive--list--txt">
+						<p class="journalCat">FEATURE</p>
+						<p class="journalTtl">
+							MORE SALE 開催！MAX60%OFF
+						</p>
+						<p class="journalDate">2021.01.14</p>
+					</div>
+				</a>
+			<% } %>
+
+			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210121120000", "yyyyMMddHHmmss", null)))){ %>
+				<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=sale&udns=2&fpfl=0&pno=1">
+					<div class="journalTop_archive--list--pic">
+						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_210121journal.jpg">
+					</div>
+					<div class="journalTop_archive--list--txt">
+						<p class="journalCat">FEATURE</p>
+						<p class="journalTtl">
+							FINAL SALE 開催！MAX70%OFF
+						</p>
+						<p class="journalDate">2021.01.21</p>
+					</div>
+				</a>
+			<% } %>
 			<!-- -->
 		</div>
 
