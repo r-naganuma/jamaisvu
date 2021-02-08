@@ -27,6 +27,10 @@
 <%-- etc --%>
 <script type="text/javascript" charset="Shift_JIS" src="<%= Constants.PATH_ROOT %>Js/AC_ActiveX.js"></script>
 <script type="text/javascript" charset="Shift_JIS" src="<%= Constants.PATH_ROOT %>Js/AC_RunActiveContent.js"></script>
+<%-- slick --%>
+<link href="<%= Constants.PATH_ROOT %>Js/Slick/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="<%= Constants.PATH_ROOT %>Js/Slick/slick.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="<%= Constants.PATH_ROOT %>Js/Slick/slick.min.js"></script>
 <%-- クライアント検証用モジュール --%>
 <script type="text/javascript" charset="UTF-8" src="<%= Constants.PATH_ROOT %><%= Constants.PAGE_FRONT_VALIDATE_SCRIPT %>"></script>
 
@@ -59,10 +63,13 @@
 <meta property="og:title" content="JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store">
 <meta property="og:url" content="https://jamaisvu.co.jp">
 <meta property="og:image" content="<%= Constants.PATH_ROOT %>maintenance/icon/ogp.jpg">
-<meta property="og:description" content="「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案。">
+<meta property="og:description" content="ジャメヴは「自由で正直なものづくり」にこだわり、世界各国から選び抜かれた良質な素材と職人の高度な技術に裏付けられた、流行に縛られないオーセンティックな洋服を提案します。">
 <meta property="og:site_name" content="JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store">
 <meta property="og:type" content="website" />
 <meta property="fb:app_id" content="196146594601788">
+
+<meta name="facebook-domain-verification" content="lo1mzgd0uplwwe8q4i0cik1qvgxgw9" />
+
 <%if (SmartPhoneUtility.CheckSmartPhoneSite(Request.Path) == false) { %>
 <%-- SmartPhoneでない場合 --%>
 <%} else {%>
