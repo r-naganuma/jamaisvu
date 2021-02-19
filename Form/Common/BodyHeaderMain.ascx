@@ -166,13 +166,14 @@ function initializeFunctionJs() {
 						<ul class="header__nav--list">
 							<li class="menuOpen navItems">
 								<div class="listColumn">
-									<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="period">ITEMS</a>
+									<!-- <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1" class="period">ITEMS</a> -->
+									<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=all&udns=0&fpfl=0&pno=1" class="period">ITEMS</a>
 								</div>
 								<div class="header__nav--hov">
 									<div class="hov_inner">
 										<ul>
 											<li>
-												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+												<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=all&udns=0&fpfl=0&pno=1">
 													すべて
 												</a>
 											</li>
@@ -499,7 +500,7 @@ function initializeFunctionJs() {
 								<h3>カテゴリー</h3>
 								<ul>
 									<li>
-										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=15&img=2&sort=07&udns=2&fpfl=0&pno=1">
+										<a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=all&udns=0&fpfl=0&pno=1">
 											すべて
 										</a>
 									</li>

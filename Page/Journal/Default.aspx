@@ -30,6 +30,29 @@
 	<h2>JOURNAL</h2>
 	<div class="journalWrap_box">
         <ul>
+			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210219180000", "yyyyMMddHHmmss", null))) && (((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) < (DateTime.ParseExact("20210221235959", "yyyyMMddHHmmss", null)))){ %>
+                <div class="journalWrap_box--list">
+                    <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=0219knit&udns=0&fpfl=0&pno=1">
+                        <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_210219journal.jpg">
+                        <p class="journalCat">FEATURE</p>
+                        <p class="journalTtl">
+                            KNIT FAIR 対象アイテム 30%OFF
+                        </p>
+                        <p class="journalDate">2021.02.19</p>
+                    </a>
+                </div>
+			<% } %>
+            <div class="journalWrap_box--list">
+                <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20210129">
+                    <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_210129journal.jpg">
+                    <p class="journalCat">FEATURE</p>
+                    <p class="journalTtl">
+                        伊勢丹新宿店
+                        POP UP STORE開催決定！
+                    </p>
+                    <p class="journalDate">2021.01.29</p>
+                </a>
+            </div> 
 			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210101000000", "yyyyMMddHHmmss", null))) && (((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) < (DateTime.ParseExact("20210114115959", "yyyyMMddHHmmss", null)))){ %>
                 <div class="journalWrap_box--list">
                     <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=sale&udns=2&fpfl=0&pno=1">
@@ -68,7 +91,7 @@
                     </a>
                 </div>
             <% } %>
-            
+
             <div class="journalWrap_box--list">
                 <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20201112">
                     <img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_201112journal.jpg">
