@@ -75,8 +75,7 @@
     </div> -->
     <% } %>
 
-    <% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210201180000", "yyyyMMddHHmmss", null)))){ %>
-        <!-- <div class="floating200124">
+        <div class="floating200124">
             <a href="https://lin.ee/eFUXOly" target="_blank">
                 <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating210201_pc.png" alt="">
                 <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating210201_sp.jpg" alt="">
@@ -85,8 +84,7 @@
                 <span class="bar1"></span>
                 <span class="bar2"></span>
             </div>
-        </div> -->
-    <% } %>
+        </div> 
 </div>
 <script type="text/javascript">
 $(function(){
