@@ -1,0 +1,213 @@
+﻿
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<%-- ▽編集可能領域：HEAD追加部分▽ --%>
+<link href='../../css/common.css?12345' rel='stylesheet' type='text/css'>
+<link href='css/common.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.typekit.net/rzu4tgs.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<%-- △編集可能領域△ --%>
+</asp:Content>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+<style>
+    .mb {
+        margin-bottom:118px !important;
+    }
+    #Wrap .LPpageWrap .journalWrap .journalWrap_item {
+        display: none;
+    }
+</style>
+<div id="Wrap">
+<div class="LPpageWrap topSpace">
+
+<%-- ▽編集可能領域：コンテンツ▽ --%>
+<div class="journalWrap">
+    <div class="journalWrap_cts">
+        <!-- //////////////////
+        /////// MAIN VISUAL 
+        ///////////////////////-->
+        <div class="mainArea">
+            <img class="pc_contents" src="images/mv_pc.jpg" alt="">
+            <img class="sp_contents" src="images/mv_sp.jpg" alt="">
+            <div class="mainArea_ttl">
+                <div class="mainArea_ttl--txt">
+                    <p class="journalCat">FEATURE</p>
+                    <h2>
+                        POP UP STORE「Stay home, stay fun」開催<br>
+                        西武渋谷店
+                    </h2>
+                    <p class="journalDate">2021.3.22</p>
+                </div>
+                <ul class="mainArea_ttl--sns">
+                    <li>
+                        <p>SHARE</p>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/share?url=https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201029/&text=エディター小林 文リコメンド　“季節になじむニット” の話後編／冬のミルキーカラーニット" target="_blank">
+                            <img src="../../images/common/icn_tw.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201029/" target="_blank">
+                            <img src="../../images/common/icn_fb.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="ctsArea">
+
+            <!-- //////////////////
+            /////// TEMPLATE A 
+            ///////////////////////-->
+            <div class="A-wrap">
+                <p class="A-wrap_txt">
+                    通常ECサイトのみで販売しているD2Cブランドを集めたポップアップストア<br class="pc_contents">
+                    「Stay home，stay fun」第二弾が西武渋谷店で開催決定。<br class="pc_contents">
+                    “お家時間を贅沢に過ごす働く30代女子の部屋”をコンセプトに5つのD2Cブランドが集結。<br class="pc_contents">
+                    ワイン、シャンデリアなど様々なジャンルとともにアパレル部門からはJAMAIS VUが登場します。<br class="pc_contents">
+                    <br class="pc_contents">
+                    売場は働く30代女子の部屋をイメージしたスペースとなっており、販売員は常駐せず、お客様は自由に商品を試し、<br class="pc_contents">
+                    商品についているQRコード付きのタグからご自身のスマートフォンなどでその場で購入する事が可能です。
+                </p>
+                <p class="A-wrap_ttl">
+                    POP UP STORE「Stay home, stay fun」 ＠ 西武渋谷店
+                </p>
+            </div>
+                <div class="garalleyBox">
+                    <div class="img01">
+                        <img src="images/slide1-1.jpg" alt="">
+                    </div>
+                </div>
+            <div class="A-wrap">
+                <p class="A-wrap_txt mb">
+                    【 期間 】<br>
+                    3.23(火) - 4.5(月)<br>
+                    【 場所 】<br>
+                    西武渋谷店A館3階=プロモーションスペース<br>
+                    【 ブランド 】<br>
+                    JAMAIS VU (アパレル)、mellow (サプリ)、和もん (漬物)、CONOMINI (ワイン)、キムソンヘ (シャンデリア)                  
+                </p>
+
+            </div>
+
+
+
+
+            <!-- //////////////////
+            /////// Latest Post
+            ///////////////////////-->
+            <div class="latestArea">
+                <p class="latestArea_ttl">Latest Post</p>
+                <div class="latestArea_box">
+                    <div class="latestArea_box--list">
+                        <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20201112">
+                            <picture>
+                                <source media="(max-width: 769px)" srcset="images/archive01_sp.png">
+                                <img src="images/archive01_pc.png" alt="">
+                            </picture>
+                            <p class="archiveTtl">
+                                伊勢丹新宿店<br>
+                                POP UP STORE開催決定！
+                            </p>
+                            <p class="archiveDate">
+                                2020.11.29
+                            </p>
+                        </a>
+                    </div>
+                    <div class="latestArea_box--list">
+                        <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20201112">
+                            <picture>
+                                <source media="(max-width: 769px)" srcset="images/archive02_sp.jpg">
+                                <img src="images/archive02_pc.jpg" alt="">
+                            </picture>
+                            <p class="archiveTtl">
+                                モデル、kanocoさんに聞く<br>
+                                自分だけの「MY RULE」
+                            </p>
+                            <p class="archiveDate">
+                                2020.11.12
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- //////////////////
+    /////// 着用アイテムはこちら
+    ///////////////////////-->
+    <div class="journalWrap_item">
+        <p class="journalWrap_item--ttl">レコメンドアイテムはこちら</p>
+        <ul>
+            <!-- 最大4個まで -->
+            <li>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031133149&cat=500049">
+                    <img src="images/item_a_01.jpg" alt="">
+                    <p>
+                        ハミルトンルーズフィット<br>
+                        タートル
+                        <span>¥23,100(tax in)</span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031132161&cat=500061">
+                    <img src="images/item_a_02.jpg" alt="">
+                    <p>
+                        ハミルトンモックネック<br>
+                        プルオーバー
+                        <span>¥20,900(tax in)</span>
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=1112kanoco&udns=0&fpfl=0&pno=1" class="journalWrap_item--btn">すべてのアイテムをみる</a>
+    </div>
+</div>
+<%-- △編集可能領域△ --%>
+
+</div>
+</div>
+<script type="text/javascript">
+    $(window).on('scroll', function (){
+
+        var elem = $('.latestArea_ttl');
+        var isAnimate = 'off';
+
+        elem.each(function () {
+
+            var elemOffset = $(this).offset().top;
+            var scrollPos = $(window).scrollTop();
+            var wh = $(window).height();
+
+            if(scrollPos > elemOffset - wh + (wh / 2) ){
+              $('.journalWrap_item').addClass(isAnimate);
+              $('.journalWrap_item').removeClass("on");
+            }else{
+                $('.journalWrap_item').removeClass(isAnimate);
+                $('.journalWrap_item').addClass("on");
+            }
+        });
+
+    });
+
+    $(function(){
+        //メニューエリアの高さを調整
+        function adjustMenuHeight() {
+            $('.journalWrap_item').height($(window).height() - 150);
+        }
+
+        $(window).on('load resize', function() {
+            adjustMenuHeight();
+        });
+    });
+</script>
+</asp:Content>
+
