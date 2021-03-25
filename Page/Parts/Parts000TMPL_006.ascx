@@ -23,21 +23,21 @@
 		</h2>
 		<div class="journalTop_new">
 			<!-- aタグコピーで -->
-			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210219180000", "yyyyMMddHHmmss", null))) && (((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) < (DateTime.ParseExact("20210221235959", "yyyyMMddHHmmss", null)))){ %>
-				<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=0219knit&udns=0&fpfl=0&pno=1">
-					<div class="journalTop_archive--list--pic">
-						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_210219journal.jpg">
-					</div>
-					<div class="journalTop_archive--list--txt">
-						<p class="journalCat">FEATURE</p>
-						<p class="journalTtl">
-							KNIT FAIR 対象アイテム 30%OFF
-						</p>
-						<p class="journalDate">2021.02.19</p>
-					</div>
-				</a>
+			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210322120000", "yyyyMMddHHmmss", null)))){ %>
+			<a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20210322">
+				<div class="journalTop_archive--list--pic">
+					<img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20210322/images/mv_pc.jpg">
+				</div>
+				<div class="journalTop_archive--list--txt">
+					<p class="journalCat">FEATURE</p>
+					<p class="journalTtl">
+						POP UP STORE「Stay home, stay fun」開催 西武渋谷店
+					</p>
+					<p class="journalDate">2021.03.22</p>
+				</div>
+			</a>
 			<% } %>
-			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210222000000", "yyyyMMddHHmmss", null)))){ %>
+			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210219180000", "yyyyMMddHHmmss", null))) && (((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) < (DateTime.ParseExact("20210322115900", "yyyyMMddHHmmss", null)))){ %>
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20210129/">
 					<div class="journalTop_archive--list--pic">
 						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_210129journal.jpg">
@@ -57,7 +57,7 @@
 
 
 		<div class="journalTop_archive">
-			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210219180000", "yyyyMMddHHmmss", null))) && (((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) < (DateTime.ParseExact("20210221235959", "yyyyMMddHHmmss", null)))){ %>
+			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210322120000", "yyyyMMddHHmmss", null)))){ %>
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20210129/">
 					<div class="journalTop_archive--list--pic">
@@ -103,7 +103,7 @@
 					</div>
 				</a>
 			</div>
-			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210222000000", "yyyyMMddHHmmss", null)))){ %>
+			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210222000000", "yyyyMMddHHmmss", null))) && (((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) < (DateTime.ParseExact("20210322115900", "yyyyMMddHHmmss", null)))){ %>
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201105/">
 					<div class="journalTop_archive--list--pic">

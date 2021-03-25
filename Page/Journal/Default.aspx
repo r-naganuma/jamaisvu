@@ -30,6 +30,19 @@
 	<h2>JOURNAL</h2>
 	<div class="journalWrap_box">
         <ul>
+			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210322120000", "yyyyMMddHHmmss", null)))){ %>
+                <div class="journalWrap_box--list">
+                    <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20210322">
+                        <img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20210322/images/mv_pc.jpg">
+                        <p class="journalCat">FEATURE</p>
+                        <p class="journalTtl">
+                            POP UP STORE「Stay home, stay fun」開催 西武渋谷店
+                        </p>
+                        <p class="journalDate">2021.03.22</p>
+                    </a>
+                </div>
+            <% } %>
+
 			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210219180000", "yyyyMMddHHmmss", null))) && (((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) < (DateTime.ParseExact("20210221235959", "yyyyMMddHHmmss", null)))){ %>
                 <div class="journalWrap_box--list">
                     <a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=0219knit&udns=0&fpfl=0&pno=1">
