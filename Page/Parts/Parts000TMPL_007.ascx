@@ -41,10 +41,10 @@
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111212125&cat=500025">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2111212125_sub07_M.jpg?91837">
-                <p class="itemsName">アイスコットンワンピースカーディガン</p>
-                <p class="itemsPrice">¥18,700 <span>(tax in)</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111004165&cat=500065">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2111004165_M.jpg?91837">
+                <p class="itemsName">SUVINオゾン加工ショートスリーブ</p>
+                <p class="itemsPrice">¥15,400 <span>(tax in)</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -55,10 +55,10 @@
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111122157&cat=50057">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2111122157_M.jpg?91837">
-                <p class="itemsName">SUVINコットンシアータートルネック</p>
-                <p class="itemsPrice">¥9,900 <span>(tax in)</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010253161&cat=500061">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2010253161_M.jpg?91837">
+                <p class="itemsName">ペルビアンピマコットンスリットネック</p>
+                <p class="itemsPrice">¥17,600 <span>(tax in)</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
@@ -98,11 +98,10 @@
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2030276112&cat=500012">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2030276112_sub07_M.jpg?91837">
-                <p class="itemsName">ボーイズシャツ</p>
-                <p class="itemsPrice priceOld">¥19,800 <span>(tax in)</span></p>
-                <p class="itemsPrice priceNew">¥11,880 <span>(tax in)</span> <span class="off">40%OFF</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010552111&cat=500011">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2010552111_M.jpg?91837">
+                <p class="itemsName">ペルビアンピマコットンワンピース</p>
+                <p class="itemsPrice">¥19,800 <span>(tax in)</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">

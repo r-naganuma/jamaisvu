@@ -74,7 +74,7 @@
 				</a>
 			</div>
 			<% } %>
-			<div class="journalTop_archive--list">
+			<!-- <div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=sale&udns=2&fpfl=0&pno=1">
 					<div class="journalTop_archive--list--pic">
 						<img src="<%= Constants.PATH_ROOT %>Page/Journal/images/feature_210121journal.jpg">
@@ -87,7 +87,7 @@
 						<p class="journalDate">2021.01.21</p>
 					</div>
 				</a>
-			</div>
+			</div> -->
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201112/">
 					<div class="journalTop_archive--list--pic">
@@ -103,7 +103,6 @@
 					</div>
 				</a>
 			</div>
-			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210222000000", "yyyyMMddHHmmss", null))) && (((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) < (DateTime.ParseExact("20210322115900", "yyyyMMddHHmmss", null)))){ %>
 			<div class="journalTop_archive--list">
 				<a href="https://jamaisvu.co.jp/Page/Journal/Feature/Feature_20201105/">
 					<div class="journalTop_archive--list--pic">
@@ -119,7 +118,6 @@
 					</div>
 				</a>
 			</div>
-			<% } %>
 		</div>
 		<div class="btnBoxver2 btn--more">
 			<a href="<%= Constants.PATH_ROOT %>Page/Journal/">READ MORE</a>
