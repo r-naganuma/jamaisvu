@@ -74,17 +74,19 @@
         </div>
     </div> -->
     <% } %>
-
-        <div class="floating200124">
-            <a href="https://lin.ee/eFUXOly" target="_blank">
-                <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating210201_pc.png" alt="">
-                <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating210201_sp.jpg" alt="">
-            </a>
-            <div class="button">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-            </div>
-        </div> 
+    <!-- <div class="floating200124">
+        <a
+            href="https://jamaisvu.co.jp/Form/Product/ProductList.aspx?shop=0&cat=&dpcnt=24&img=2&sort=07&swrd=shirt3000off&udns=0&fpfl=0&pno=1">
+            <img class="pc_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating210409_pc.png?91827"
+                alt="">
+            <img class="sp_contents" src="<%= Constants.PATH_ROOT %>Contents/ImagesPkg/user/top/floating210409_sp.jpg"
+                alt="">
+        </a>
+        <div class="button">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+        </div>
+    </div> -->
 </div>
 <script type="text/javascript">
 $(function(){
