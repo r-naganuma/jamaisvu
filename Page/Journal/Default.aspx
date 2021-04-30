@@ -30,6 +30,19 @@
 	<h2>JOURNAL</h2>
 	<div class="journalWrap_box">
         <ul>
+			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210503120000", "yyyyMMddHHmmss", null)))){ %>
+                <div class="journalWrap_box--list">
+                    <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20210503">
+                        <img src="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20210503/images/mv_pc.jpg">
+                        <p class="journalCat">FEATURE</p>
+                        <p class="journalTtl">
+                            ディレクター長尾 悦美×JAMAIS VU コラボアイテム第二弾
+                        </p>
+                        <p class="journalDate">2021.05.03</p>
+                    </a>
+                </div>
+            <% } %>
+            
 			<% if ((((this.Request.Url.Query.Contains("param")) ? (DateTime.ParseExact(this.Request.QueryString["param"], "yyyyMMddHHmmss", null)) : DateTime.Now) > (DateTime.ParseExact("20210322120000", "yyyyMMddHHmmss", null)))){ %>
                 <div class="journalWrap_box--list">
                     <a href="<%= Constants.PATH_ROOT %>Page/Journal/Feature/Feature_20210322">
