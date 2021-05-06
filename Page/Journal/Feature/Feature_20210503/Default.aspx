@@ -151,7 +151,7 @@
                     ドライでライトな和紙素材をざっくり編み込み、風通しが良く夏場でもさらりと心地よいニットベスト。<br>
                     深めのすっきりとしたVネックで女性らしさを出しながら、リラックス感あるデザインに仕上げました。
                 </p>
-                <div class="A-wrap_detail">
+                <!-- <div class="A-wrap_detail">
                     <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2121003119" class="A-wrap_detail--box">
                         <div class="A-wrap_detail--box--pic">
                             <img src="images/link_04.jpg" alt="">
@@ -166,7 +166,7 @@
                         </div>
                     </a>
                     <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2121003119" class="A-wrap_detail--btn">ITEM DETAIL</a>
-                </div>
+                </div> -->
                 <div class="A-wrap_detail">
                     <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2121003123" class="A-wrap_detail--box">
                         <div class="A-wrap_detail--box--pic">
@@ -183,6 +183,9 @@
                     </a>
                     <a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2121003123" class="A-wrap_detail--btn">ITEM DETAIL</a>
                 </div>
+                <p class="A-wrap_txt">
+                    ※ブラックは高島屋限定となります。
+                </p>
             </div>
 
             <!-- //////////////////
