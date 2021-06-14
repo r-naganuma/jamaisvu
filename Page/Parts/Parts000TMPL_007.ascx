@@ -25,90 +25,100 @@
 	</p>
 	<div class="itemsTop_box">
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111515155&cat=500055">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2111515155_M.jpg?91837">
-                <p class="itemsName">アイスコットンアシンメトリースカート</p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2121201140&cat=500042">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2121201140_M.jpg?91837">
+                <p class="itemsName">【長尾悦美さんコラボ】ICE COTTON アシンメトリーカーディガン</p>
                 <!-- <p class="itemsPrice priceOld">¥23,100 <span>(tax in)</span></p>
                 <p class="itemsPrice priceNew">¥16,170 <span>(tax in)</span> <span class="off">30%OFF</span></p> -->
-                <p class="itemsPrice">¥15,400 <span>(tax in)</span></p>
+                <p class="itemsPrice">¥19,800 <span>(tax in)</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111114117&cat=500017">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2111114117_sub07_M.jpg?91837">
-                <p class="itemsName">アイスコットンビルトネックヘンリー</p>
-                <p class="itemsPrice">¥15,400 <span>(tax in)</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2121102123&cat=500023">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2121102123_sub05_M.jpg?91837">
+                <p class="itemsName">【長尾悦美さんコラボ】ペーパースクエアーネックプルオーバー</p>
+                <p class="itemsPrice">¥18,700 <span>(tax in)</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111004165&cat=500065">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2111004165_M.jpg?91837">
-                <p class="itemsName">SUVINオゾン加工ショートスリーブ</p>
-                <p class="itemsPrice">¥15,400 <span>(tax in)</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111212117&cat=500017">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2111212117_sub07_M.jpg?91837">
+                <p class="itemsName">アイスコットンワンピースカーディガン</p>
+                <p class="itemsPrice priceOld">¥18,700 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥11,220 <span>(tax in)</span> <span class="off">40%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
 			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111118163&cat=500063">
                 <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2111118163_sub07_M.jpg?91837">
                 <p class="itemsName">SUVINコットンシアードルマンスウェット</p>
-                <p class="itemsPrice">¥9,900 <span>(tax in)</span></p>
+                <p class="itemsPrice priceOld">¥9,900 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥5,940 <span>(tax in)</span> <span class="off">40%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010253161&cat=500061">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2010253161_M.jpg?91837">
-                <p class="itemsName">ペルビアンピマコットンスリットネック</p>
-                <p class="itemsPrice">¥17,600 <span>(tax in)</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111404211&cat=500011">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2111404211_M.jpg?91837">
+                <p class="itemsName">SUVINオゾン加工ニットパンツ</p>
+                <p class="itemsPrice priceOld">¥15,400 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥9,240 <span>(tax in)</span> <span class="off">40%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111216143&cat=500043">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2111216143_sub07_M.jpg?91837">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111114125&cat=500025">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2111114125_sub07_M.jpg?91837">
+                <p class="itemsName">アイスコットンビルトネックヘンリー</p>
+                <p class="itemsPrice priceOld">¥15,400 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥9,240 <span>(tax in)</span> <span class="off">40%OFF</span></p>
+			</a>
+		</div>
+		<div class="itemsTop_box--list">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111216129&cat=50029">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2111216129_M.jpg?91837">
                 <p class="itemsName">SUVINコットンスウェットカーディガン</p>
-                <p class="itemsPrice">¥12,100 <span>(tax in)</span></p>
+                <p class="itemsPrice priceOld">¥12,100 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥7,260 <span>(tax in)</span> <span class="off">40%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111109129&cat=50029">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2111109129_sub07_M.jpg?91837">
-                <p class="itemsName">18Gブイプルオーバー</p>
-                <p class="itemsPrice">¥18,700 <span>(tax in)</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111010143&cat=500043">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2111010143_sub07_M.jpg?91837">
+                <p class="itemsName">18Gノースリーブベスト</p>
+                <p class="itemsPrice priceOld">¥14,300 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥8,580 <span>(tax in)</span> <span class="off">40%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111219161&cat=500061">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2111219161_sub07_M.jpg?91837">
-                <p class="itemsName">SUVIN オゾン加工５Gカーディガン</p>
-                <p class="itemsPrice">¥19,800 <span>(tax in)</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111004111&cat=500011">
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2111004111_M.jpg?91837">
+                <p class="itemsName">SUVINオゾン加工ショートスリーブ</p>
+                <p class="itemsPrice priceOld">¥15,400 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥9,240 <span>(tax in)</span> <span class="off">40%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2031416211&cat=500011">
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2031416211_sub07_M.jpg?91837">
-                <p class="itemsName">SUVINオゾンニットパンツ</p>
-                <p class="itemsPrice">¥17,600 <span>(tax in)</span></p>
-			</a>
-		</div>
-		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111208157&cat=50057">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111201161&cat=500065">
                 <!-- <img src="https://jamaisvu.co.jp/Contents/ImagesPkg/user/top/topItem_210115_01.png"> -->
-                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2111208157_sub07_M.jpg?91837">
-                <p class="itemsName">18Gワイドカーディガン</p>
-                <p class="itemsPrice">¥18,700 <span>(tax in)</span></p>
+                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2111201161_M.jpg?91837">
+                <p class="itemsName">SUVIN オゾン加工5Gプルオーバー</p>
+                <p class="itemsPrice priceOld">¥17,600 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥10,560 <span>(tax in)</span> <span class="off">40%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010552111&cat=500011">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2010552111_M.jpg?91837">
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2010552151&cat=500051">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2010552151_sub07_M.jpg?91837">
                 <p class="itemsName">ペルビアンピマコットンワンピース</p>
-                <p class="itemsPrice">¥19,800 <span>(tax in)</span></p>
+                <p class="itemsPrice priceOld">¥19,800 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥11,880 <span>(tax in)</span> <span class="off">40%OFF</span></p>
 			</a>
 		</div>
 		<div class="itemsTop_box--list">
-			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2111213125&cat=500025">
-                <img src="https://jamaisvu.co.jp/Contents/ProductImages/0/2111213125_M.jpg?91837">
-                <p class="itemsName">アイスコットンポロカーディガン</p>
-                <p class="itemsPrice">¥15,400 <span>(tax in)</span></p>
+			<a href="https://jamaisvu.co.jp/Form/Product/ProductDetail.aspx?shop=0&pid=2030276119&cat=500019">
+                <img src="https://jamaisvu.co.jp/Contents/ProductSubImages/0/2030276119_sub06_M.jpg?91837">
+                <p class="itemsName">ボーイズシャツ</p>
+                <p class="itemsPrice priceOld">¥19,800 <span>(tax in)</span></p>
+                <p class="itemsPrice priceNew">¥9,900 <span>(tax in)</span> <span class="off">50%OFF</span></p>
 			</a>
 		</div>
 	</div>
